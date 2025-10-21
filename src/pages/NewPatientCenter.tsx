@@ -107,15 +107,18 @@ export default function NewPatientCenter() {
                     <Globe className="text-emerald-700" size={24} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-gray-900 text-lg mb-2">Website</h4>
+                    <h4 className="font-bold text-gray-900 text-lg mb-2">Schedule Online</h4>
                     <a
-                      href="https://vaneverychiropractic.com"
+                      href="https://www.vaneverychiropractic.com/contact-us/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-emerald-700 text-lg hover:underline"
+                      className="text-emerald-700 text-lg hover:underline block mb-2"
                     >
-                      vaneverychiropractic.com
+                      Visit Van Every Chiropractic Contact Page
                     </a>
+                    <p className="text-gray-600 text-sm">
+                      Schedule your appointment online or learn more about our services
+                    </p>
                   </div>
                 </div>
               </div>
