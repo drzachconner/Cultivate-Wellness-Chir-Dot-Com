@@ -87,9 +87,20 @@ export default function ScheduleAppointment() {
               </p>
               <a
                 href="tel:+1-248-616-0900"
-                className="block w-full bg-white text-blue-900 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition text-center shadow-md"
+                className="block w-full bg-white text-blue-900 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition text-center shadow-md mb-4"
               >
                 (248) 616-0900
+              </a>
+              <p className="text-blue-50 mb-4 text-center">
+                Or schedule online:
+              </p>
+              <a
+                href="https://www.vaneverychiropractic.com/contact-us/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full bg-white text-blue-900 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition text-center shadow-md"
+              >
+                Schedule Online
               </a>
               <p className="text-blue-100 text-sm mt-4 text-center">
                 Please mention you're coming from Cultivate Wellness Chiropractic
