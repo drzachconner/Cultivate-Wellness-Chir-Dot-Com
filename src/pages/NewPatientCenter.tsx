@@ -112,13 +112,10 @@ export default function NewPatientCenter() {
                       href="https://www.vaneverychiropractic.com/contact-us/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-emerald-700 text-lg hover:underline block mb-2"
+                      className="inline-block bg-emerald-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-800 transition-colors duration-200"
                     >
-                      Visit Van Every Chiropractic Contact Page
+                      Schedule At Van Every Chiropractic
                     </a>
-                    <p className="text-gray-600 text-sm">
-                      Schedule your appointment online or learn more about our services
-                    </p>
                   </div>
                 </div>
               </div>
