@@ -190,45 +190,6 @@ export default function TalskyTonal() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Professional Documentation & Resources
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Access comprehensive documentation systems designed for optimal patient care and practice management
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-              <img
-                src="/images/px-docs-logo.svg"
-                alt="PX Docs - Pediatric Documentation System"
-                className="w-full max-w-sm mx-auto mb-6"
-              />
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">PX Docs</h3>
-              <p className="text-gray-700 text-center">
-                Comprehensive pediatric documentation system for specialized chiropractic care
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-              <img
-                src="/images/talsky-docs-logo.svg"
-                alt="Talsky Docs - Tonal Documentation System"
-                className="w-full max-w-sm mx-auto mb-6"
-              />
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">Talsky Docs</h3>
-              <p className="text-gray-700 text-center">
-                Specialized documentation for Talsky Tonal Chiropractic methodology
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
