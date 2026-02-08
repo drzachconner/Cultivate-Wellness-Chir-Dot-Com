@@ -102,7 +102,7 @@ export default function AnswerHub() {
         image: '/images/hero-family.webp',
         datePublished: '2024-01-15',
         dateModified: '2025-10-20',
-        author: 'Dr. Zach Talsky',
+        author: 'Dr. Zach Conner',
         url: '/answers',
         wordCount: 2800,
       })} />

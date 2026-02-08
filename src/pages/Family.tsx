@@ -51,7 +51,7 @@ export default function Family() {
           image: '/images/family-adjustment.webp',
           datePublished: '2024-01-10',
           dateModified: '2025-10-20',
-          author: 'Dr. Zach Talsky',
+          author: 'Dr. Zach Conner',
           url: '/family',
           therapy: {
             name: 'Family Chiropractic Care',

@@ -23,13 +23,13 @@ export const SITE = {
   // DOCTOR / PRACTITIONER INFO
   // ============================================
   doctor: {
-    fullName: 'Dr. Zach Talsky',
+    fullName: 'Dr. Zach Conner',
     firstName: 'Zach',
-    lastName: 'Talsky',
+    lastName: 'Conner',
     honorificPrefix: 'Dr.',
     honorificSuffix: 'DC',
     credentials: 'DC, CACCP',
-    title: 'Doctor of Chiropractic',
+    title: 'Neurologically-Focused Chiropractor',
     bio: 'Dr. Zach specializes in family chiropractic care with a focus on pediatric and prenatal wellness. He believes in empowering families through natural, holistic healthcare.',
     education: 'Life University College of Chiropractic',
     educationWikidata: 'https://www.wikidata.org/wiki/Q6545465',

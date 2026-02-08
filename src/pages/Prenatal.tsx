@@ -51,7 +51,7 @@ export default function Prenatal() {
           image: '/images/hero-family.webp',
           datePublished: '2024-01-10',
           dateModified: '2025-10-20',
-          author: 'Dr. Zach Talsky',
+          author: 'Dr. Zach Conner',
           url: '/prenatal',
           therapy: {
             name: 'Prenatal Chiropractic Care',

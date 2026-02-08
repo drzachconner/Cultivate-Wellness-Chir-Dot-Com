@@ -51,7 +51,7 @@ export default function Pediatric() {
           image: '/images/pediatric-care.webp',
           datePublished: '2024-01-10',
           dateModified: '2025-10-20',
-          author: 'Dr. Zach Talsky',
+          author: 'Dr. Zach Conner',
           url: '/pediatric',
           therapy: {
             name: 'Pediatric Chiropractic Care',

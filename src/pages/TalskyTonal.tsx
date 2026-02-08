@@ -59,7 +59,7 @@ export default function TalskyTonal() {
           image: '/images/Talsky at source2.jpg',
           datePublished: '2024-01-10',
           dateModified: '2025-10-20',
-          author: 'Dr. Zach Talsky',
+          author: 'Dr. Zach Conner',
           url: '/talsky-tonal-chiropractic',
           therapy: {
             name: 'Talsky Tonal Chiropractic',

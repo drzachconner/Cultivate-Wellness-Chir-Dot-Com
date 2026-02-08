@@ -19,7 +19,7 @@ interface AuthorBylineProps {
 
 export default function AuthorByline({
   author = {
-    name: 'Dr. Zach Talsky',
+    name: 'Dr. Zach Conner',
     credentials: 'Doctor of Chiropractic, Palmer College',
     image: '/images/dr-zach.webp',
     bio: 'Board-certified chiropractor specializing in pediatric, prenatal, and family care.',

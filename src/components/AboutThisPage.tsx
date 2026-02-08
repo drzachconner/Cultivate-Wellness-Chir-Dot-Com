@@ -26,7 +26,7 @@ export default function AboutThisPage({
   topicUrl,
   wikidataId,
   author = {
-    name: 'Dr. Zach Talsky',
+    name: 'Dr. Zach Conner',
     credentials: 'DC, Pediatric Specialist',
   },
   reviewedBy,

@@ -26,7 +26,7 @@ export default function ThreeWaysToSleep() {
           image: '/images/sleep-guide.webp',
           datePublished: '2024-01-01',
           dateModified: '2025-10-20',
-          author: 'Dr. Zach Talsky',
+          author: 'Dr. Zach Conner',
           url: '/3-ways-to-sleep',
         })}
       />
