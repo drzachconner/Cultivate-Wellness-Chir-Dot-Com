@@ -54,6 +54,11 @@ function ScrollToTop() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    // Move focus to main content for accessibility (SPA navigation)
+    const mainContent = document.getElementById('main');
+    if (mainContent) {
+      mainContent.focus();
+    }
   }, [pathname]);
 
   return null;
@@ -85,7 +90,7 @@ function App() {
       <AITrafficTracker />
       <div className="min-h-screen flex flex-col">
         <Header />
-        <main id="main" className="flex-grow">
+        <main id="main" className="flex-grow" tabIndex={-1} style={{ outline: 'none' }}>
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<Home />} />

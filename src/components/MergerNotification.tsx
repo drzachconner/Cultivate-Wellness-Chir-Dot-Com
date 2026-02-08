@@ -22,7 +22,7 @@ export default function MergerNotification() {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 max-w-sm animate-slide-in">
+    <div className="fixed bottom-[340px] right-4 z-40 max-w-sm animate-slide-in max-md:bottom-[400px]">
       <div
         className="bg-white rounded-lg shadow-2xl overflow-hidden border-2 transition-all duration-300"
         style={{ borderColor: '#053e67' }}

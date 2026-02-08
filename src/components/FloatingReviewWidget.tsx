@@ -59,7 +59,9 @@ export default function FloatingReviewWidget() {
   const avatarColor = colors[colorIndex];
 
   return (
-    <div
+    <aside
+      role="complementary"
+      aria-label="Customer reviews"
       className={`fixed bottom-24 right-4 z-40 max-w-xs bg-white rounded-lg shadow-xl border border-gray-200 transition-all duration-300 max-md:bottom-36 ${
         isAnimating ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
       }`}
@@ -109,8 +111,10 @@ export default function FloatingReviewWidget() {
           </a>
         </div>
 
-        {/* Review text */}
-        <p className="text-sm text-gray-700 leading-relaxed line-clamp-4">{review.text}</p>
+        {/* Review text - aria-live for screen reader announcements */}
+        <p className="text-sm text-gray-700 leading-relaxed line-clamp-4" aria-live="polite" aria-atomic="true">
+          {review.text}
+        </p>
 
         {/* Pagination dots */}
         <div className="flex justify-center gap-1.5 mt-3">
@@ -126,6 +130,6 @@ export default function FloatingReviewWidget() {
           ))}
         </div>
       </div>
-    </div>
+    </aside>
   );
 }
