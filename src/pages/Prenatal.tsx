@@ -5,7 +5,6 @@ import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { medicalWebPageSchema } from '../lib/schema';
 import { Heart, Baby, Smile, Activity } from 'lucide-react';
 import CTABanner from '../components/CTABanner';
-import Breadcrumbs from '../components/Breadcrumbs';
 
 export default function Prenatal() {
   const benefits = [
@@ -83,10 +82,6 @@ export default function Prenatal() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Breadcrumbs
-            items={[{ name: 'Prenatal' }]}
-            className="mb-8"
-          />
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             Why Choose Prenatal Chiropractic?
           </h2>

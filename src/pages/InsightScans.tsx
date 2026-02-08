@@ -3,7 +3,6 @@ import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { medicalWebPageSchema } from '../lib/schema';
 import { Activity, Heart, Brain, TrendingUp } from 'lucide-react';
 import CTABanner from '../components/CTABanner';
-import Breadcrumbs from '../components/Breadcrumbs';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
 
@@ -76,10 +75,6 @@ export default function InsightScans() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Breadcrumbs
-            items={[{ name: 'INSiGHT Scans' }]}
-            className="mb-8"
-          />
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               The Power of The Central Nervous System

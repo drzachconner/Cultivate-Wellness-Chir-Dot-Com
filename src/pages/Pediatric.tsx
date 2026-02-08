@@ -4,7 +4,6 @@ import { Baby, Heart, Shield, Smile } from 'lucide-react';
 import CTABanner from '../components/CTABanner';
 import { medicalWebPageSchema } from '../lib/schema';
 import AboutThisPage from '../components/AboutThisPage';
-import Breadcrumbs from '../components/Breadcrumbs';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
 
@@ -83,10 +82,6 @@ export default function Pediatric() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Breadcrumbs
-            items={[{ name: 'Pediatric' }]}
-            className="mb-8"
-          />
           <AboutThisPage
             topic="Pediatric Chiropractic Care"
             topicUrl="https://en.wikipedia.org/wiki/Chiropractic"
