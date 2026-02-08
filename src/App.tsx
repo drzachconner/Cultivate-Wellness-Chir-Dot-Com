@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MobileCTA from './components/MobileCTA';
 import MergerNotification from './components/MergerNotification';
+import FloatingReviewWidget from './components/FloatingReviewWidget';
 import JsonLd from './components/JsonLd';
 import { organizationSchema, personSchema, localBusinessSchema } from './lib/schema';
 import { trackAITraffic } from './lib/analytics';
@@ -116,6 +117,7 @@ function App() {
         <Footer />
         <MobileCTA />
         <MergerNotification />
+        <FloatingReviewWidget />
       </div>
     </BrowserRouter>
   );
