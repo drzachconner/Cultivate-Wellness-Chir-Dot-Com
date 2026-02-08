@@ -22,7 +22,7 @@ export const services = [
     description: 'The cultivation of a thriving and healthy family starts during the perinatal period. Trained in the Webster Technique along with a gentle, neuro-focused approach, we provide premier care and support for moms from conception to postnatal care.',
     icon: 'heart',
     slug: '/prenatal',
-    image: '/images/hero-family.webp',
+    image: '/images/prenatal-care.webp',
   },
   {
     id: 'family',
@@ -30,6 +30,6 @@ export const services = [
     description: 'Parenting does not have to mean constant fatigue, stress, and burnout. At Cultivate Wellness, we ease the journey with neuro-focused chiropractic care, promoting restful sleep, increased energy, and emotional balance for the whole family!',
     icon: 'users',
     slug: '/family',
-    image: '/images/family-adjustment.webp',
+    image: '/images/family-care.webp',
   },
 ];

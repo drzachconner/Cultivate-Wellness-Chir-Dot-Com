@@ -36,7 +36,7 @@ export default function Prenatal() {
         title="Prenatal Chiropractic"
         description="Safe, effective chiropractic care for expectant mothers throughout pregnancy."
         canonical="/prenatal"
-        ogImage="/images/hero-family.webp"
+        ogImage="/images/prenatal-care.webp"
       />
       <JsonLd
         data={breadcrumbJsonLd([
@@ -48,7 +48,7 @@ export default function Prenatal() {
         data={medicalWebPageSchema({
           headline: 'Prenatal Chiropractic Care for Expectant Mothers',
           description: 'Safe, gentle chiropractic care for pregnancy including the Webster Technique. Support optimal fetal positioning, reduce pregnancy discomfort, and prepare for easier labor and delivery.',
-          image: '/images/hero-family.webp',
+          image: '/images/prenatal-care.webp',
           datePublished: '2024-01-10',
           dateModified: '2025-10-20',
           author: 'Dr. Zach Conner',
@@ -64,7 +64,7 @@ export default function Prenatal() {
       <section className="relative py-32 bg-gray-900">
         <div className="absolute inset-0">
           <img
-            src="/images/hero-family.webp"
+            src="/images/prenatal-care.webp"
             loading="eager"
             alt="Prenatal Chiropractic Care"
             className="w-full h-full object-cover opacity-40"

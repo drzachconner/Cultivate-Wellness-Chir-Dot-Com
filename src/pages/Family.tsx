@@ -36,7 +36,7 @@ export default function Family() {
         title="Family Wellness"
         description="Comprehensive chiropractic care for the whole family at every stage of life."
         canonical="/family"
-        ogImage="/images/hero-family.webp"
+        ogImage="/images/family-care.webp"
       />
       <JsonLd
         data={breadcrumbJsonLd([
@@ -48,7 +48,7 @@ export default function Family() {
         data={medicalWebPageSchema({
           headline: 'Family Chiropractic Care for All Ages',
           description: 'Comprehensive neuro-focused chiropractic care for the whole family. From newborns to grandparents, we provide age-appropriate care promoting wellness, natural healing, and enhanced quality of life.',
-          image: '/images/family-adjustment.webp',
+          image: '/images/family-care.webp',
           datePublished: '2024-01-10',
           dateModified: '2025-10-20',
           author: 'Dr. Zach Conner',
@@ -64,7 +64,7 @@ export default function Family() {
       <section className="relative py-32 bg-gray-900">
         <div className="absolute inset-0">
           <img
-            src="/images/family-adjustment.webp"
+            src="/images/family-care.webp"
             loading="eager"
             alt="Family Wellness"
             className="w-full h-full object-cover opacity-40"

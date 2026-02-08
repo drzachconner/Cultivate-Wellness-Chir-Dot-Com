@@ -180,7 +180,7 @@ export const SITE = {
       name: 'Prenatal Chiropractic Care',
       shortName: 'Prenatal',
       slug: '/prenatal',
-      image: '/images/hero-family.webp',
+      image: '/images/prenatal-care.webp',
       description: 'Gentle chiropractic care for expecting mothers to support a healthy pregnancy and optimal birth outcomes.',
     },
     {
@@ -188,7 +188,7 @@ export const SITE = {
       name: 'Family Chiropractic Care',
       shortName: 'Family',
       slug: '/family',
-      image: '/images/family-adjustment.webp',
+      image: '/images/family-care.webp',
       description: 'Comprehensive chiropractic care for the whole family, promoting optimal nervous system function.',
     },
   ],
