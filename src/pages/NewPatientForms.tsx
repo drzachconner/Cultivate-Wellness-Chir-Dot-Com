@@ -1,32 +1,22 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { MapPin, Phone, Globe } from 'lucide-react';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function NewPatientForms() {
-  useSeo({
-    title: 'New Patient Forms',
-    description: 'Important information about scheduling new patient appointments.',
-    canonical: '/new-patient-forms',
-  });
-
-  useEffect(() => {
-    const breadcrumbScript = document.createElement('script');
-    breadcrumbScript.type = 'application/ld+json';
-    breadcrumbScript.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'New Patient Forms', url: `https://${SITE.domain}/new-patient-forms` },
-    ]));
-    document.head.appendChild(breadcrumbScript);
-
-    return () => {
-      document.head.removeChild(breadcrumbScript);
-    };
-  }, []);
-
   return (
     <>
+      <Seo
+        title="New Patient Forms"
+        description="Important information about scheduling new patient appointments."
+        canonical="/new-patient-forms"
+        ogImage="/images/schedule-hero.webp"
+      />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Home', url: `https://${SITE.domain}/` },
+        { name: 'New Patient Forms', url: `https://${SITE.domain}/new-patient-forms` },
+      ])} />
       <section className="py-16 bg-gradient-to-br from-primary-light/10 to-primary-light/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 text-center mb-6">

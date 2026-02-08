@@ -1,32 +1,22 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function Contact() {
-  useSeo({
-    title: 'Contact Us',
-    description: 'Get in touch with Cultivate Wellness Chiropractic. Call, email, or visit us.',
-    canonical: '/contact-us',
-  });
-
-  useEffect(() => {
-    const breadcrumbScript = document.createElement('script');
-    breadcrumbScript.type = 'application/ld+json';
-    breadcrumbScript.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'Contact', url: `https://${SITE.domain}/contact-us` },
-    ]));
-    document.head.appendChild(breadcrumbScript);
-
-    return () => {
-      document.head.removeChild(breadcrumbScript);
-    };
-  }, []);
-
   return (
     <>
+      <Seo
+        title="Contact Us"
+        description="Get in touch with Cultivate Wellness Chiropractic. Call, email, or visit us."
+        canonical="/contact-us"
+        ogImage="/images/contact-hero.webp"
+      />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Home', url: `https://${SITE.domain}/` },
+        { name: 'Contact', url: `https://${SITE.domain}/contact-us` },
+      ])} />
       <section className="relative py-32 bg-gray-900 min-h-[400px] flex items-center">
         <div className="absolute inset-0 z-0">
           <img
@@ -120,7 +110,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">Office Hours</h3>
                     <div className="text-gray-700">
-                      {SITE.hours.map((hour) => (
+                      {SITE.hours.display.map((hour) => (
                         <p key={hour}>{hour}</p>
                       ))}
                     </div>

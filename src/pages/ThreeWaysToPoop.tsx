@@ -1,31 +1,24 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function ThreeWaysToPoop() {
-  useSeo({
-    title: '3 Ways to Poop Better - Free Guide',
-    description: 'Download our free guide with practical tips to support healthy digestion and elimination for your child.',
-    canonical: '/3-ways-to-poop',
-  });
-
-  useEffect(() => {
-    const breadcrumbScript = document.createElement('script');
-    breadcrumbScript.type = 'application/ld+json';
-    breadcrumbScript.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: '3 Ways to Poop Better', url: `https://${SITE.domain}/3-ways-to-poop` },
-    ]));
-    document.head.appendChild(breadcrumbScript);
-
-    return () => {
-      document.head.removeChild(breadcrumbScript);
-    };
-  }, []);
-
   return (
     <>
+      <Seo
+        title="3 Ways to Poop Better - Free Guide"
+        description="Download our free guide with practical tips to support healthy digestion and elimination for your child."
+        canonical="/3-ways-to-poop"
+        ogImage="/images/pooping-guide.webp"
+      />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', url: `https://${SITE.domain}/` },
+          { name: '3 Ways to Poop Better', url: `https://${SITE.domain}/3-ways-to-poop` },
+        ])}
+      />
+
       <section className="relative py-24 bg-cover bg-center" style={{ backgroundImage: 'url(/images/pooping-guide.webp)' }}>
         <div className="absolute inset-0 bg-white/80"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

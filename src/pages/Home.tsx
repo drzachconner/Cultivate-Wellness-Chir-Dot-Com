@@ -1,56 +1,69 @@
-import { useSeo } from '../hooks/useSeo';
-import { SITE } from '../data/site';
+import { SITE, aggregateRating } from '../data/site';
 import { Link } from 'react-router-dom';
 import ServicesGrid from '../components/ServicesGrid';
 import TestimonialSlider from '../components/TestimonialSlider';
 import CTABanner from '../components/CTABanner';
-import { useEffect } from 'react';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
+import { aggregateRatingSchema, reviewSchema } from '../lib/schema';
 
 export default function Home() {
-  useSeo({
-    title: SITE.name,
-    description: SITE.description,
-    canonical: '/',
-  });
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Chiropractor",
-      "name": SITE.name,
-      "description": SITE.description,
-      "image": `https://${SITE.domain}/logo.svg`,
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": SITE.address.street,
-        "addressLocality": SITE.address.city,
-        "addressRegion": SITE.address.region,
-        "postalCode": SITE.address.postal,
-        "addressCountry": SITE.address.country,
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": SITE.geo.latitude,
-        "longitude": SITE.geo.longitude,
-      },
-      "telephone": SITE.phone,
-      "url": `https://${SITE.domain}`,
-      "openingHours": SITE.hours,
-      "hasMap": `https://maps.google.com/?q=${encodeURIComponent(SITE.address.street + ', ' + SITE.address.city + ', ' + SITE.address.region)}`,
-      "priceRange": SITE.priceRange,
-      "sameAs": Object.values(SITE.socials),
-    });
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
   return (
     <>
+      <Seo
+        title={SITE.name}
+        description={SITE.description}
+        canonical="/"
+        ogImage="/images/hero-family.webp"
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Chiropractor",
+          "name": SITE.name,
+          "description": SITE.description,
+          "image": `https://${SITE.domain}/logo.svg`,
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": SITE.address.street,
+            "addressLocality": SITE.address.city,
+            "addressRegion": SITE.address.region,
+            "postalCode": SITE.address.postal,
+            "addressCountry": SITE.address.country,
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": SITE.geo.latitude,
+            "longitude": SITE.geo.longitude,
+          },
+          "telephone": SITE.phone,
+          "url": `https://${SITE.domain}`,
+          "openingHours": SITE.hours.shortFormat,
+          "hasMap": `https://maps.google.com/?q=${encodeURIComponent(SITE.address.street + ', ' + SITE.address.city + ', ' + SITE.address.region)}`,
+          "priceRange": SITE.priceRange,
+          "sameAs": Object.values(SITE.socials),
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": aggregateRating.ratingValue,
+            "reviewCount": aggregateRating.reviewCount,
+            "bestRating": 5,
+            "worstRating": 1,
+          },
+        }}
+      />
+      <JsonLd data={aggregateRatingSchema(aggregateRating)} />
+      {SITE.testimonials.map((t) => (
+        <JsonLd
+          key={t.id}
+          data={reviewSchema({
+            author: t.name,
+            datePublished: t.datePublished,
+            reviewBody: t.text,
+            ratingValue: t.rating,
+          })}
+        />
+      ))}
+
       <section className="relative bg-gray-800">
         <img
           src="/images/hero-family.webp"
@@ -115,6 +128,7 @@ export default function Home() {
                   src="/images/rhkn-guide.webp"
                   alt="Raising Healthy Kids Naturally"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
               <div className="p-4">
@@ -133,6 +147,7 @@ export default function Home() {
                   src="/images/sleep-guide.webp"
                   alt="3 Ways to Improve Your Child's Sleep"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
               <div className="p-4">
@@ -151,6 +166,7 @@ export default function Home() {
                   src="/images/pooping-guide.webp"
                   alt="3 Ways to Get Your Child Pooping"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
               <div className="p-4">
@@ -169,6 +185,7 @@ export default function Home() {
                   src="/images/transitions-guide.webp"
                   alt="3 Steps to Smoothing Transitions for Sensory Kids"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
               <div className="p-4">
@@ -198,6 +215,7 @@ export default function Home() {
                 src="/images/dr-zach.webp"
                 alt="Dr. Zach Conner"
                 className="w-full h-full object-cover scale-110"
+                loading="lazy"
               />
             </div>
             <div>
@@ -233,6 +251,7 @@ export default function Home() {
                 src="/images/family-adjustment.webp"
                 alt="Family with children by the lake"
                 className="rounded-lg shadow-lg w-full"
+                loading="lazy"
               />
             </div>
           </div>
@@ -254,6 +273,7 @@ export default function Home() {
               src="/images/office-hours.webp"
               alt="Office Hours Schedule"
               className="w-full max-w-2xl rounded-xl shadow-lg"
+              loading="lazy"
             />
           </div>
         </div>

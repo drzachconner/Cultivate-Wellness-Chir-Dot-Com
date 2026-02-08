@@ -1,31 +1,13 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
+import { medicalWebPageSchema } from '../lib/schema';
 import { Activity, Heart, Brain, TrendingUp } from 'lucide-react';
 import CTABanner from '../components/CTABanner';
+import Breadcrumbs from '../components/Breadcrumbs';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function InsightScans() {
-  useSeo({
-    title: 'INSiGHT Scans - Advanced Nervous System Assessment',
-    description: 'We don\'t guess, we test. Using INSiGHT Scans, we craft tailored care plans for your child\'s unique neurological needs through advanced scanning technology.',
-    canonical: '/insight-scans',
-  });
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'INSiGHT Scans', url: `https://${SITE.domain}/insight-scans` },
-    ]));
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
   const scanTypes = [
     {
       icon: Activity,
@@ -46,6 +28,32 @@ export default function InsightScans() {
 
   return (
     <>
+      <Seo
+        title="INSiGHT Scans - Advanced Nervous System Assessment"
+        description="We don't guess, we test. Using INSiGHT Scans, we craft tailored care plans for your child's unique neurological needs through advanced scanning technology."
+        canonical="/insight-scans"
+        ogImage="/images/insight-hero.webp"
+      />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Home', url: `https://${SITE.domain}/` },
+        { name: 'INSiGHT Scans', url: `https://${SITE.domain}/insight-scans` },
+      ])} />
+      <JsonLd
+        data={medicalWebPageSchema({
+          headline: 'INSiGHT Scans - Advanced Nervous System Assessment',
+          description: 'State-of-the-art INSiGHT scanning technology for objective nervous system assessment. NeuroThermal, HRV, and EMG scans provide the CORE Score to guide personalized chiropractic care plans.',
+          image: '/images/insight-hero.webp',
+          datePublished: '2024-01-10',
+          dateModified: '2025-10-20',
+          author: 'Dr. Zach Talsky',
+          url: '/insight-scans',
+          therapy: {
+            name: 'INSiGHT Nervous System Scanning',
+            description: 'Non-invasive NeuroThermal, HRV, and EMG scanning technology to measure nervous system function and create personalized care plans',
+          },
+          wordCount: 1000,
+        })}
+      />
       <section className="relative py-32 bg-gray-900 min-h-[500px] flex items-center">
         <div className="absolute inset-0 z-0">
           <img
@@ -68,6 +76,10 @@ export default function InsightScans() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs
+            items={[{ name: 'INSiGHT Scans' }]}
+            className="mb-8"
+          />
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               The Power of The Central Nervous System

@@ -1,36 +1,27 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { MapPin, Phone, Globe } from 'lucide-react';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function NewPatientCenter() {
-  useSeo({
-    title: 'New Patient Center',
-    description: 'Everything you need to know before your first visit to Cultivate Wellness Chiropractic.',
-    canonical: '/new-patient-center',
-  });
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'New Patient Center', url: `https://${SITE.domain}/new-patient-center` },
-    ]));
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
   return (
     <>
+      <Seo
+        title="New Patient Center"
+        description="Everything you need to know before your first visit to Cultivate Wellness Chiropractic."
+        canonical="/new-patient-center"
+        ogImage="/images/schedule-hero.webp"
+      />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Home', url: `https://${SITE.domain}/` },
+        { name: 'New Patient Center', url: `https://${SITE.domain}/new-patient-center` },
+      ])} />
       <section className="relative py-32 bg-gray-900 min-h-[400px] flex items-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1593612605566-fc2e271cb68f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
+            src="/images/schedule-hero.webp"
+            loading="eager"
             alt="New Patient Center"
             className="w-full h-full object-cover"
           />

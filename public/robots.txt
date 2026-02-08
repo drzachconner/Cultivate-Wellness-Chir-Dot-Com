@@ -68,3 +68,12 @@ Allow: /
 
 Sitemap: https://cultivatewellnesschiro.com/sitemap.xml
 Host: https://cultivatewellnesschiro.com
+
+# ====================================================================
+# AI DISCOVERY FILES
+# ====================================================================
+# llms.txt provides structured information for AI models
+# See: https://llmstxt.org/
+
+# LLMs.txt location (for AI discoverability)
+# https://cultivatewellnesschiro.com/llms.txt

@@ -1,33 +1,22 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { team } from '../data/team';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import CTABanner from '../components/CTABanner';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function AboutUs() {
-  useSeo({
-    title: 'About Us',
-    description: 'Meet our team of dedicated chiropractors committed to your family\'s wellness.',
-    canonical: '/about-us',
-  });
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'About Us', url: `https://${SITE.domain}/about-us` },
-    ]));
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
   return (
     <>
+      <Seo
+        title="About Us"
+        description="Meet our team of dedicated chiropractors committed to your family's wellness."
+        canonical="/about-us"
+        ogImage="/images/family-adjustment.webp"
+      />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Home', url: `https://${SITE.domain}/` },
+        { name: 'About Us', url: `https://${SITE.domain}/about-us` },
+      ])} />
       <section className="relative py-32 bg-gray-900">
         <div className="absolute inset-0 z-0">
           <img
@@ -110,7 +99,8 @@ export default function AboutUs() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?w=800&h=600&fit=crop"
+                src="/images/family-adjustment.webp"
+                loading="lazy"
                 alt="Family with children by the lake"
                 className="rounded-xl shadow-lg w-full"
               />

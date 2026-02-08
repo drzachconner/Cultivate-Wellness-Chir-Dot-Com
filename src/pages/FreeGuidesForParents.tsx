@@ -1,31 +1,11 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { Download } from 'lucide-react';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function FreeGuidesForParents() {
-  useSeo({
-    title: 'Free Guides for Parents',
-    description: 'Download free guides to help your child thrive. Expert advice on sleep, digestion, transitions, and natural wellness.',
-    canonical: '/free-guides-for-parents',
-  });
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'Free Guides for Parents', url: `https://${SITE.domain}/free-guides-for-parents` },
-    ]));
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
   const guides = [
     {
       title: 'Raising Healthy Kids Naturally',
@@ -55,6 +35,16 @@ export default function FreeGuidesForParents() {
 
   return (
     <>
+      <Seo
+        title="Free Guides for Parents"
+        description="Download free guides to help your child thrive. Expert advice on sleep, digestion, transitions, and natural wellness."
+        canonical="/free-guides-for-parents"
+        ogImage="/images/guides-hero-new.webp"
+      />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Home', url: `https://${SITE.domain}/` },
+        { name: 'Free Guides for Parents', url: `https://${SITE.domain}/free-guides-for-parents` },
+      ])} />
       <section className="relative py-32 bg-gray-900 min-h-[400px] flex items-center">
         <div className="absolute inset-0 z-0">
           <img

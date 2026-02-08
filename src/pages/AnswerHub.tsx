@@ -1,18 +1,12 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { faqSchema, articleSchema } from '../lib/schema';
 import { HelpCircle, Baby, Users, Heart } from 'lucide-react';
 import AuthorByline from '../components/AuthorByline';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function AnswerHub() {
-  useSeo({
-    title: 'Common Questions About Chiropractic Care',
-    description: 'Get answers to frequently asked questions about pediatric, prenatal, and family chiropractic care at Cultivate Wellness Chiropractic.',
-    canonical: '/answers',
-  });
-
   const categories = [
     {
       icon: Baby,
@@ -84,37 +78,25 @@ export default function AnswerHub() {
     },
   ];
 
-  useEffect(() => {
-    const scripts: HTMLScriptElement[] = [];
-
-    const breadcrumbScript = document.createElement('script');
-    breadcrumbScript.type = 'application/ld+json';
-    breadcrumbScript.text = JSON.stringify(
-      breadcrumbJsonLd([
+  return (
+    <>
+      <Seo
+        title="Common Questions About Chiropractic Care"
+        description="Get answers to frequently asked questions about pediatric, prenatal, and family chiropractic care at Cultivate Wellness Chiropractic."
+        canonical="/answers"
+        ogImage="/images/family-adjustment.webp"
+      />
+      <JsonLd data={breadcrumbJsonLd([
         { name: 'Home', url: `https://${SITE.domain}/` },
         { name: 'Answers', url: `https://${SITE.domain}/answers` },
-      ])
-    );
-    document.head.appendChild(breadcrumbScript);
-    scripts.push(breadcrumbScript);
-
-    const faqScript = document.createElement('script');
-    faqScript.type = 'application/ld+json';
-    faqScript.text = JSON.stringify(
-      faqSchema(
+      ])} />
+      <JsonLd data={faqSchema(
         faqs.map((faq) => ({
           question: faq.question,
           answer: faq.answer,
         }))
-      )
-    );
-    document.head.appendChild(faqScript);
-    scripts.push(faqScript);
-
-    const articleScript = document.createElement('script');
-    articleScript.type = 'application/ld+json';
-    articleScript.text = JSON.stringify(
-      articleSchema({
+      )} />
+      <JsonLd data={articleSchema({
         headline: 'Common Questions About Chiropractic Care',
         description: 'Comprehensive answers to frequently asked questions about pediatric, prenatal, and family chiropractic care.',
         image: '/images/hero-family.webp',
@@ -123,22 +105,7 @@ export default function AnswerHub() {
         author: 'Dr. Zach Talsky',
         url: '/answers',
         wordCount: 2800,
-      })
-    );
-    document.head.appendChild(articleScript);
-    scripts.push(articleScript);
-
-    return () => {
-      scripts.forEach((script) => {
-        if (script.parentNode) {
-          document.head.removeChild(script);
-        }
-      });
-    };
-  }, []);
-
-  return (
-    <>
+      })} />
       <section className="relative py-24 bg-gradient-to-br from-emerald-700 to-emerald-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">

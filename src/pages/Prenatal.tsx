@@ -1,31 +1,13 @@
-import { useSeo } from '../hooks/useSeo';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
+import { medicalWebPageSchema } from '../lib/schema';
 import { Heart, Baby, Smile, Activity } from 'lucide-react';
 import CTABanner from '../components/CTABanner';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 export default function Prenatal() {
-  useSeo({
-    title: 'Prenatal Chiropractic',
-    description: 'Safe, effective chiropractic care for expectant mothers throughout pregnancy.',
-    canonical: '/prenatal',
-  });
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'Prenatal', url: `https://${SITE.domain}/prenatal` },
-    ]));
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
   const benefits = [
     {
       icon: Heart,
@@ -51,10 +33,40 @@ export default function Prenatal() {
 
   return (
     <>
+      <Seo
+        title="Prenatal Chiropractic"
+        description="Safe, effective chiropractic care for expectant mothers throughout pregnancy."
+        canonical="/prenatal"
+        ogImage="/images/hero-family.webp"
+      />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', url: `https://${SITE.domain}/` },
+          { name: 'Prenatal', url: `https://${SITE.domain}/prenatal` },
+        ])}
+      />
+      <JsonLd
+        data={medicalWebPageSchema({
+          headline: 'Prenatal Chiropractic Care for Expectant Mothers',
+          description: 'Safe, gentle chiropractic care for pregnancy including the Webster Technique. Support optimal fetal positioning, reduce pregnancy discomfort, and prepare for easier labor and delivery.',
+          image: '/images/hero-family.webp',
+          datePublished: '2024-01-10',
+          dateModified: '2025-10-20',
+          author: 'Dr. Zach Talsky',
+          url: '/prenatal',
+          therapy: {
+            name: 'Prenatal Chiropractic Care',
+            description: 'Gentle chiropractic adjustments and the Webster Technique to support expectant mothers through pregnancy and postpartum recovery',
+          },
+          wordCount: 800,
+        })}
+      />
+
       <section className="relative py-32 bg-gray-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1568043625493-2b0633c7c491?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
+            src="/images/hero-family.webp"
+            loading="eager"
             alt="Prenatal Chiropractic Care"
             className="w-full h-full object-cover opacity-40"
           />
@@ -71,6 +83,10 @@ export default function Prenatal() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs
+            items={[{ name: 'Prenatal' }]}
+            className="mb-8"
+          />
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             Why Choose Prenatal Chiropractic?
           </h2>

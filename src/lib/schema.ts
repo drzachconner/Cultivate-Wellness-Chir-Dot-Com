@@ -1,4 +1,9 @@
-import { SITE } from '../data/site';
+import { SITE, aggregateRating as siteAggregateRating, activeSocials } from '../data/site';
+
+/**
+ * Schema.org structured data generators
+ * All values are derived from the SITE config - no hardcoded office-specific data
+ */
 
 export function organizationSchema() {
   return {
@@ -6,15 +11,15 @@ export function organizationSchema() {
     '@type': 'MedicalBusiness',
     '@id': `https://${SITE.domain}/#organization`,
     name: SITE.name,
-    alternateName: 'Cultivate Wellness',
+    alternateName: SITE.shortName,
     url: `https://${SITE.domain}`,
-    logo: `https://${SITE.domain}/images/logo.webp`,
-    image: `https://${SITE.domain}/images/hero-family.webp`,
+    logo: `https://${SITE.domain}${SITE.images.logo}`,
+    image: `https://${SITE.domain}${SITE.images.heroFamily}`,
     description: SITE.description,
     priceRange: SITE.priceRange,
     telephone: SITE.phone,
     email: SITE.email,
-    foundingDate: '2020',
+    foundingDate: SITE.foundingYear,
     address: {
       '@type': 'PostalAddress',
       streetAddress: SITE.address.street,
@@ -37,123 +42,78 @@ export function organizationSchema() {
       },
       geoRadius: '30000',
     },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Friday',
-        opens: '15:00',
-        closes: '18:30',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Saturday',
-        opens: '08:00',
-        closes: '13:00',
-      },
-    ],
+    openingHoursSpecification: SITE.hours.structured.map((hours) => ({
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: hours.dayOfWeek,
+      opens: hours.opens,
+      closes: hours.closes,
+    })),
     sameAs: [
-      SITE.socials.facebook,
-      SITE.socials.instagram,
-      SITE.socials.tiktok,
-      SITE.socials.youtube,
-      `https://www.google.com/maps/place/?q=place_id:ChIJBQUKW2fJJIgRZoaJtd9K7ac`,
+      ...activeSocials.map((s) => s.url),
+      `https://www.google.com/maps/place/?q=place_id:${SITE.googlePlaceId}`,
     ],
-    hasMap: `https://www.google.com/maps/place/Cultivate+Wellness+Chiropractic/@${SITE.geo.latitude},${SITE.geo.longitude}`,
+    hasMap: `https://www.google.com/maps/place/${encodeURIComponent(SITE.name)}/@${SITE.geo.latitude},${SITE.geo.longitude}`,
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Chiropractic Services',
-      itemListElement: [
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'MedicalProcedure',
-            name: 'Pediatric Chiropractic Care',
-            description: 'Specialized chiropractic care for children, supporting their nervous system development and overall wellness.',
-          },
+      itemListElement: SITE.services.map((service) => ({
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'MedicalProcedure',
+          name: service.name,
+          description: service.description,
         },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'MedicalProcedure',
-            name: 'Prenatal Chiropractic Care',
-            description: 'Gentle chiropractic care for expecting mothers to support a healthy pregnancy and optimal birth outcomes.',
-          },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'MedicalProcedure',
-            name: 'Family Chiropractic Care',
-            description: 'Comprehensive chiropractic care for the whole family, promoting optimal nervous system function.',
-          },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'MedicalProcedure',
-            name: 'Talsky Tonal Chiropractic',
-            description: 'Advanced neurologically-focused chiropractic technique for gentle, effective nervous system optimization.',
-          },
-        },
-      ],
+      })),
     },
   };
 }
 
 export function personSchema() {
+  const doctor = SITE.doctor;
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    '@id': `https://${SITE.domain}/#dr-zach`,
-    name: 'Dr. Zach Talsky',
-    givenName: 'Zach',
-    familyName: 'Talsky',
-    honorificPrefix: 'Dr.',
-    honorificSuffix: 'DC',
-    jobTitle: 'Doctor of Chiropractic',
-    description: 'Board-certified chiropractor specializing in pediatric, prenatal, and family care. Certified teacher of Talsky Tonal Chiropractic.',
-    image: `https://${SITE.domain}/images/dr-zach.webp`,
-    url: `https://${SITE.domain}/meet-dr-zach`,
+    '@id': `https://${SITE.domain}/#${doctor.schemaId}`,
+    name: doctor.fullName,
+    givenName: doctor.firstName,
+    familyName: doctor.lastName,
+    honorificPrefix: doctor.honorificPrefix,
+    honorificSuffix: doctor.honorificSuffix,
+    jobTitle: doctor.title,
+    description: doctor.bio,
+    image: `https://${SITE.domain}${doctor.image}`,
+    url: `https://${SITE.domain}${doctor.pageSlug}`,
     worksFor: {
       '@id': `https://${SITE.domain}/#organization`,
     },
     alumniOf: {
       '@type': 'CollegeOrUniversity',
-      name: 'Life University College of Chiropractic',
-      sameAs: 'https://www.wikidata.org/wiki/Q6545465',
+      name: doctor.education,
+      sameAs: doctor.educationWikidata,
     },
-    hasCredential: [
-      {
-        '@type': 'EducationalOccupationalCredential',
-        credentialCategory: 'degree',
-        name: 'Doctor of Chiropractic',
-      },
-    ],
-    knowsAbout: [
-      {
-        '@type': 'Thing',
-        name: 'Pediatric Chiropractic',
-        url: `https://${SITE.domain}/pediatric`,
-      },
-      {
-        '@type': 'Thing',
-        name: 'Prenatal Chiropractic',
-        url: `https://${SITE.domain}/prenatal`,
-      },
-      {
-        '@type': 'Thing',
-        name: 'Talsky Tonal Chiropractic',
-        url: `https://${SITE.domain}/talsky-tonal-chiropractic`,
-      },
-      'Neurological Development',
-      'Family Wellness',
-      'Webster Technique',
-      'INSiGHT Scans',
-    ],
-    sameAs: [
-      SITE.socials.facebook,
-      SITE.socials.youtube,
-    ],
+    hasCredential: doctor.certifications.map((cert) => ({
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: cert.type,
+      name: cert.name,
+    })),
+    knowsAbout: doctor.expertise.map((expertise) => {
+      // Check if this expertise has a matching service page
+      const matchingService = SITE.services.find((s) =>
+        expertise.toLowerCase().includes(s.shortName.toLowerCase())
+      );
+      if (matchingService) {
+        return {
+          '@type': 'Thing',
+          name: expertise,
+          url: `https://${SITE.domain}${matchingService.slug}`,
+        };
+      }
+      return expertise;
+    }),
+    sameAs: activeSocials
+      .filter((s) => ['facebook', 'youtube', 'linkedin'].includes(s.platform))
+      .map((s) => s.url),
   };
 }
 
@@ -180,11 +140,11 @@ export function localBusinessSchema() {
       longitude: SITE.geo.longitude,
     },
     priceRange: SITE.priceRange,
-    image: `https://${SITE.domain}/images/hero-family.webp`,
-    openingHours: ['Fr 15:00-18:30', 'Sa 08:00-13:00'],
+    image: `https://${SITE.domain}${SITE.images.heroFamily}`,
+    openingHours: SITE.hours.shortFormat,
     areaServed: {
       '@type': 'City',
-      name: 'Rochester Hills',
+      name: SITE.address.city,
     },
   };
 }
@@ -210,7 +170,7 @@ export function articleSchema(article: {
   image: string;
   datePublished: string;
   dateModified: string;
-  author: string;
+  author?: string;
   url: string;
   reviewedBy?: {
     name: string;
@@ -218,6 +178,9 @@ export function articleSchema(article: {
   };
   wordCount?: number;
 }) {
+  const doctor = SITE.doctor;
+  const authorName = article.author || doctor.fullName;
+
   return {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
@@ -229,10 +192,10 @@ export function articleSchema(article: {
     lastReviewed: article.dateModified,
     author: {
       '@type': 'Person',
-      name: article.author,
-      '@id': `https://${SITE.domain}/#dr-zach`,
-      jobTitle: 'Doctor of Chiropractic',
-      hasCredential: 'Doctor of Chiropractic',
+      name: authorName,
+      '@id': `https://${SITE.domain}/#${doctor.schemaId}`,
+      jobTitle: doctor.title,
+      hasCredential: doctor.honorificSuffix,
     },
     ...(article.reviewedBy && {
       reviewedBy: {
@@ -296,19 +259,22 @@ export function howToSchema(howTo: {
   };
 }
 
-export function aggregateRatingSchema(rating: {
+export function aggregateRatingSchema(rating?: {
   ratingValue: number;
   reviewCount: number;
   bestRating?: number;
   worstRating?: number;
 }) {
+  // Use provided rating or fall back to computed site rating
+  const ratingData = rating || siteAggregateRating;
+
   return {
     '@context': 'https://schema.org',
     '@type': 'AggregateRating',
-    ratingValue: rating.ratingValue,
-    reviewCount: rating.reviewCount,
-    bestRating: rating.bestRating || 5,
-    worstRating: rating.worstRating || 1,
+    ratingValue: ratingData.ratingValue,
+    reviewCount: ratingData.reviewCount,
+    bestRating: ratingData.bestRating || 5,
+    worstRating: ratingData.worstRating || 1,
     itemReviewed: {
       '@id': `https://${SITE.domain}/#organization`,
     },
@@ -348,7 +314,7 @@ export function medicalWebPageSchema(page: {
   image: string;
   datePublished: string;
   dateModified: string;
-  author: string;
+  author?: string;
   url: string;
   condition?: {
     name: string;
@@ -366,6 +332,9 @@ export function medicalWebPageSchema(page: {
   };
   wordCount?: number;
 }) {
+  const doctor = SITE.doctor;
+  const authorName = page.author || doctor.fullName;
+
   return {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
@@ -398,10 +367,10 @@ export function medicalWebPageSchema(page: {
     }),
     author: {
       '@type': 'Person',
-      name: page.author,
-      '@id': `https://${SITE.domain}/#dr-zach`,
-      jobTitle: 'Doctor of Chiropractic',
-      hasCredential: 'Doctor of Chiropractic',
+      name: authorName,
+      '@id': `https://${SITE.domain}/#${doctor.schemaId}`,
+      jobTitle: doctor.title,
+      hasCredential: doctor.honorificSuffix,
     },
     ...(page.reviewedBy && {
       reviewedBy: {

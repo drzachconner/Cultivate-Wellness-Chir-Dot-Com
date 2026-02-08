@@ -1,32 +1,22 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { Calendar, Clock, Phone } from 'lucide-react';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function RequestAppointment() {
-  useSeo({
-    title: 'Request an Appointment',
-    description: 'Schedule your chiropractic appointment online or call us today.',
-    canonical: '/request-an-appointment',
-  });
-
-  useEffect(() => {
-    const breadcrumbScript = document.createElement('script');
-    breadcrumbScript.type = 'application/ld+json';
-    breadcrumbScript.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'Request Appointment', url: `https://${SITE.domain}/request-an-appointment` },
-    ]));
-    document.head.appendChild(breadcrumbScript);
-
-    return () => {
-      document.head.removeChild(breadcrumbScript);
-    };
-  }, []);
-
   return (
     <>
+      <Seo
+        title="Request an Appointment"
+        description="Schedule your chiropractic appointment online or call us today."
+        canonical="/request-an-appointment"
+        ogImage="/images/schedule-hero.webp"
+      />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Home', url: `https://${SITE.domain}/` },
+        { name: 'Request Appointment', url: `https://${SITE.domain}/request-an-appointment` },
+      ])} />
       <section className="py-16 bg-gradient-to-br from-primary-light/10 to-primary-light/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 text-center mb-6">
@@ -66,7 +56,7 @@ export default function RequestAppointment() {
               <div className="flex items-start gap-4 mb-6">
                 <Clock size={24} className="text-primary-dark flex-shrink-0 mt-1" />
                 <div className="space-y-2">
-                  {SITE.hours.map((hour) => (
+                  {SITE.hours.display.map((hour) => (
                     <p key={hour} className="text-gray-700 text-lg">
                       {hour}
                     </p>

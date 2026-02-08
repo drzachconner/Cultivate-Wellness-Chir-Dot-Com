@@ -1,31 +1,13 @@
-import { useSeo } from '../hooks/useSeo';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
+import { medicalWebPageSchema } from '../lib/schema';
 import { Users, Heart, Shield, Sparkles } from 'lucide-react';
 import CTABanner from '../components/CTABanner';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 export default function Family() {
-  useSeo({
-    title: 'Family Wellness',
-    description: 'Comprehensive chiropractic care for the whole family at every stage of life.',
-    canonical: '/family',
-  });
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'Family', url: `https://${SITE.domain}/family` },
-    ]));
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
   const benefits = [
     {
       icon: Users,
@@ -51,10 +33,40 @@ export default function Family() {
 
   return (
     <>
+      <Seo
+        title="Family Wellness"
+        description="Comprehensive chiropractic care for the whole family at every stage of life."
+        canonical="/family"
+        ogImage="/images/hero-family.webp"
+      />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', url: `https://${SITE.domain}/` },
+          { name: 'Family', url: `https://${SITE.domain}/family` },
+        ])}
+      />
+      <JsonLd
+        data={medicalWebPageSchema({
+          headline: 'Family Chiropractic Care for All Ages',
+          description: 'Comprehensive neuro-focused chiropractic care for the whole family. From newborns to grandparents, we provide age-appropriate care promoting wellness, natural healing, and enhanced quality of life.',
+          image: '/images/family-adjustment.webp',
+          datePublished: '2024-01-10',
+          dateModified: '2025-10-20',
+          author: 'Dr. Zach Talsky',
+          url: '/family',
+          therapy: {
+            name: 'Family Chiropractic Care',
+            description: 'Whole-family chiropractic wellness care supporting nervous system function, preventative health, and natural healing for all ages',
+          },
+          wordCount: 900,
+        })}
+      />
+
       <section className="relative py-32 bg-gray-900">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1506836467174-27f1042aa48c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080"
+            src="/images/family-adjustment.webp"
+            loading="eager"
             alt="Family Wellness"
             className="w-full h-full object-cover opacity-40"
           />
@@ -71,6 +83,10 @@ export default function Family() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs
+            items={[{ name: 'Family' }]}
+            className="mb-8"
+          />
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             Why Families Choose Us
           </h2>

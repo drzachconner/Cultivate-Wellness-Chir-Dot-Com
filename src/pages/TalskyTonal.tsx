@@ -1,31 +1,13 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
+import { medicalWebPageSchema } from '../lib/schema';
 import { Brain, Heart, Users, Sparkles, Activity, Target } from 'lucide-react';
 import CTABanner from '../components/CTABanner';
+import Breadcrumbs from '../components/Breadcrumbs';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function TalskyTonal() {
-  useSeo({
-    title: 'Talsky Tonal Chiropractic',
-    description: 'Learn about our gentle, neurologically-focused Talsky Tonal Chiropractic approach that restores nervous system function and promotes proactive healing.',
-    canonical: '/talsky-tonal-chiropractic',
-  });
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'Talsky Tonal Chiropractic', url: `https://${SITE.domain}/talsky-tonal-chiropractic` },
-    ]));
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
   const principles = [
     {
       icon: Brain,
@@ -61,6 +43,32 @@ export default function TalskyTonal() {
 
   return (
     <>
+      <Seo
+        title="Talsky Tonal Chiropractic"
+        description="Learn about our gentle, neurologically-focused Talsky Tonal Chiropractic approach that restores nervous system function and promotes proactive healing."
+        canonical="/talsky-tonal-chiropractic"
+        ogImage="/images/Talsky at source2.jpg"
+      />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Home', url: `https://${SITE.domain}/` },
+        { name: 'Talsky Tonal Chiropractic', url: `https://${SITE.domain}/talsky-tonal-chiropractic` },
+      ])} />
+      <JsonLd
+        data={medicalWebPageSchema({
+          headline: 'Talsky Tonal Chiropractic - Neurologically-Focused Care',
+          description: 'Advanced Talsky Tonal Chiropractic technique for gentle, neurologically-focused care. Release accumulated stress patterns, restore nervous system integrity, and promote never-ending optimization.',
+          image: '/images/Talsky at source2.jpg',
+          datePublished: '2024-01-10',
+          dateModified: '2025-10-20',
+          author: 'Dr. Zach Talsky',
+          url: '/talsky-tonal-chiropractic',
+          therapy: {
+            name: 'Talsky Tonal Chiropractic',
+            description: 'Advanced neurologically-focused chiropractic technique using bio-feedback to release stress patterns and restore optimal nervous system function',
+          },
+          wordCount: 1500,
+        })}
+      />
       <section className="relative py-32 bg-gray-900 min-h-[500px] flex items-center">
         <div className="absolute inset-0 z-0">
           <img
@@ -83,6 +91,10 @@ export default function TalskyTonal() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs
+            items={[{ name: 'Talsky Tonal Chiropractic' }]}
+            className="mb-8"
+          />
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">What is Talsky Tonal Chiropractic?</h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">

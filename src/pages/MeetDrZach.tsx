@@ -1,33 +1,23 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import CTABanner from '../components/CTABanner';
 import { Link } from 'react-router-dom';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function MeetDrZach() {
-  useSeo({
-    title: 'Meet Dr. Zach Conner',
-    description: 'Learn about Dr. Zach Conner, founder of Cultivate Wellness Chiropractic, and his mission to bring transformative neurologically-focused chiropractic care to families.',
-    canonical: '/meet-dr-zach',
-  });
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'Meet Dr. Zach', url: `https://${SITE.domain}/meet-dr-zach` },
-    ]));
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
   return (
     <>
+      <Seo
+        title="Meet Dr. Zach Conner"
+        description="Learn about Dr. Zach Conner, founder of Cultivate Wellness Chiropractic, and his mission to bring transformative neurologically-focused chiropractic care to families."
+        canonical="/meet-dr-zach"
+        ogImage="/images/dr-zach.webp"
+      />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Home', url: `https://${SITE.domain}/` },
+        { name: 'Meet Dr. Zach', url: `https://${SITE.domain}/meet-dr-zach` },
+      ])} />
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

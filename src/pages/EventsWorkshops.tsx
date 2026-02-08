@@ -1,32 +1,12 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import CTABanner from '../components/CTABanner';
 import { Link } from 'react-router-dom';
 import { Calendar, Users, BookOpen, Heart, Brain } from 'lucide-react';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function EventsWorkshops() {
-  useSeo({
-    title: 'Workshops For Parents',
-    description: 'Join our educational workshops designed to help parents understand chiropractic care and support their children\'s wellness journey.',
-    canonical: '/events-workshops',
-  });
-
-  useEffect(() => {
-    const breadcrumbScript = document.createElement('script');
-    breadcrumbScript.type = 'application/ld+json';
-    breadcrumbScript.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'Workshops For Parents', url: `https://${SITE.domain}/events-workshops` },
-    ]));
-    document.head.appendChild(breadcrumbScript);
-
-    return () => {
-      document.head.removeChild(breadcrumbScript);
-    };
-  }, []);
-
   const upcomingTopics = [
     {
       icon: Brain,
@@ -57,6 +37,16 @@ export default function EventsWorkshops() {
 
   return (
     <>
+      <Seo
+        title="Workshops For Parents"
+        description="Join our educational workshops designed to help parents understand chiropractic care and support their children's wellness journey."
+        canonical="/events-workshops"
+        ogImage="/images/hero-family.webp"
+      />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Home', url: `https://${SITE.domain}/` },
+        { name: 'Workshops For Parents', url: `https://${SITE.domain}/events-workshops` },
+      ])} />
       <section className="py-16 bg-gradient-to-br from-primary to-primary-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-heading font-bold text-center mb-6">

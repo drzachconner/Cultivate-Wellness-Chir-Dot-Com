@@ -1,10 +1,22 @@
 import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import { hydrateRoot, createRoot } from 'react-dom/client';
+import { HelmetProvider } from 'react-helmet-async';
 import App from './App.tsx';
 import './index.css';
 
-createRoot(document.getElementById('root')!).render(
+const container = document.getElementById('root')!;
+
+const app = (
   <StrictMode>
-    <App />
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </StrictMode>
 );
+
+// If the root already has content (pre-rendered), hydrate; otherwise render fresh
+if (container.hasChildNodes()) {
+  hydrateRoot(container, app);
+} else {
+  createRoot(container).render(app);
+}

@@ -1,15 +1,15 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
+import Seo from '../components/Seo';
 
 export default function Privacy() {
-  useSeo({
-    title: 'Privacy Policy',
-    description: 'Privacy policy and disclaimer for Cultivate Wellness Chiropractic.',
-    canonical: '/privacy',
-  });
-
   return (
     <>
+      <Seo
+        title="Privacy Policy"
+        description="Privacy policy and disclaimer for Cultivate Wellness Chiropractic."
+        canonical="/privacy"
+        ogImage="/images/hero-family.webp"
+      />
       <section className="py-16 bg-gradient-to-br from-primary-light/10 to-primary-light/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 text-center mb-6">

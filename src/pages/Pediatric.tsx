@@ -1,61 +1,14 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { Baby, Heart, Shield, Smile } from 'lucide-react';
 import CTABanner from '../components/CTABanner';
 import { medicalWebPageSchema } from '../lib/schema';
 import AboutThisPage from '../components/AboutThisPage';
+import Breadcrumbs from '../components/Breadcrumbs';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function Pediatric() {
-  useSeo({
-    title: 'Pediatric Chiropractic',
-    description: 'Specialized pediatric chiropractic care for infants and children to support healthy development.',
-    canonical: '/pediatric',
-  });
-
-  useEffect(() => {
-    const scripts: HTMLScriptElement[] = [];
-
-    const breadcrumbScript = document.createElement('script');
-    breadcrumbScript.type = 'application/ld+json';
-    breadcrumbScript.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'Pediatric', url: `https://${SITE.domain}/pediatric` },
-    ]));
-    document.head.appendChild(breadcrumbScript);
-    scripts.push(breadcrumbScript);
-
-    const medicalScript = document.createElement('script');
-    medicalScript.type = 'application/ld+json';
-    medicalScript.text = JSON.stringify(
-      medicalWebPageSchema({
-        headline: 'Pediatric Chiropractic Care for Children & Infants',
-        description: 'Specialized chiropractic care for infants and children, supporting healthy nervous system development, addressing colic, sleep issues, developmental challenges, and promoting overall wellness from birth through adolescence.',
-        image: '/images/pediatric-care.webp',
-        datePublished: '2024-01-10',
-        dateModified: '2025-10-20',
-        author: 'Dr. Zach Talsky',
-        url: '/pediatric',
-        therapy: {
-          name: 'Pediatric Chiropractic Care',
-          description: 'Gentle, specialized chiropractic adjustments tailored for developing spines and nervous systems from birth through adolescence',
-        },
-        wordCount: 1200,
-      })
-    );
-    document.head.appendChild(medicalScript);
-    scripts.push(medicalScript);
-
-    return () => {
-      scripts.forEach((script) => {
-        if (script.parentNode) {
-          document.head.removeChild(script);
-        }
-      });
-    };
-  }, []);
-
   const benefits = [
     {
       icon: Baby,
@@ -81,6 +34,35 @@ export default function Pediatric() {
 
   return (
     <>
+      <Seo
+        title="Pediatric Chiropractic"
+        description="Specialized pediatric chiropractic care for infants and children to support healthy development."
+        canonical="/pediatric"
+        ogImage="/images/pediatric-care.webp"
+      />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: 'Home', url: `https://${SITE.domain}/` },
+          { name: 'Pediatric', url: `https://${SITE.domain}/pediatric` },
+        ])}
+      />
+      <JsonLd
+        data={medicalWebPageSchema({
+          headline: 'Pediatric Chiropractic Care for Children & Infants',
+          description: 'Specialized chiropractic care for infants and children, supporting healthy nervous system development, addressing colic, sleep issues, developmental challenges, and promoting overall wellness from birth through adolescence.',
+          image: '/images/pediatric-care.webp',
+          datePublished: '2024-01-10',
+          dateModified: '2025-10-20',
+          author: 'Dr. Zach Talsky',
+          url: '/pediatric',
+          therapy: {
+            name: 'Pediatric Chiropractic Care',
+            description: 'Gentle, specialized chiropractic adjustments tailored for developing spines and nervous systems from birth through adolescence',
+          },
+          wordCount: 1200,
+        })}
+      />
+
       <section className="relative py-32 bg-gray-900">
         <div className="absolute inset-0">
           <img
@@ -101,6 +83,10 @@ export default function Pediatric() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs
+            items={[{ name: 'Pediatric' }]}
+            className="mb-8"
+          />
           <AboutThisPage
             topic="Pediatric Chiropractic Care"
             topicUrl="https://en.wikipedia.org/wiki/Chiropractic"

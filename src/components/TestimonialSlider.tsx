@@ -1,5 +1,5 @@
 import { Star } from 'lucide-react';
-import { testimonials } from '../data/testimonials';
+import { SITE } from '../data/site';
 
 export default function TestimonialSlider() {
   return (
@@ -15,7 +15,7 @@ export default function TestimonialSlider() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => (
+          {SITE.testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
               className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition"

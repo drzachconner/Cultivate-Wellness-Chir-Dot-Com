@@ -1,32 +1,22 @@
-import { useSeo } from '../hooks/useSeo';
 import { SITE } from '../data/site';
-import { useEffect } from 'react';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { MapPin, Phone, Globe, Calendar } from 'lucide-react';
+import Seo from '../components/Seo';
+import JsonLd from '../components/JsonLd';
 
 export default function ScheduleAppointment() {
-  useSeo({
-    title: 'Schedule an Appointment',
-    description: 'Schedule your appointment with Dr. Zach at Van Every Family Chiropractic Center in Royal Oak.',
-    canonical: '/schedule-appointment',
-  });
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(breadcrumbJsonLd([
-      { name: 'Home', url: `https://${SITE.domain}/` },
-      { name: 'Schedule Appointment', url: `https://${SITE.domain}/schedule-appointment` },
-    ]));
-    document.head.appendChild(script);
-
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
-
   return (
     <>
+      <Seo
+        title="Schedule an Appointment"
+        description="Schedule your appointment with Dr. Zach at Van Every Family Chiropractic Center in Royal Oak."
+        canonical="/schedule-appointment"
+        ogImage="/images/schedule-hero.webp"
+      />
+      <JsonLd data={breadcrumbJsonLd([
+        { name: 'Home', url: `https://${SITE.domain}/` },
+        { name: 'Schedule Appointment', url: `https://${SITE.domain}/schedule-appointment` },
+      ])} />
       <section className="relative py-32 bg-gray-900 min-h-[400px] flex items-center">
         <div className="absolute inset-0 z-0">
           <img

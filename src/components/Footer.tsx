@@ -53,7 +53,7 @@ export default function Footer() {
                   className="flex items-center gap-2 text-gray-400 hover:text-white transition"
                 >
                   <Phone size={16} />
-                  {'phoneDisplay' in SITE ? SITE.phoneDisplay : SITE.phone}
+                  {SITE.phoneDisplay}
                 </a>
               </li>
               <li>
@@ -80,7 +80,7 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Hours</h3>
             <ul className="space-y-2 text-sm text-gray-400">
-              {SITE.hours.map((hour) => (
+              {SITE.hours.display.map((hour) => (
                 <li key={hour}>{hour}</li>
               ))}
             </ul>
