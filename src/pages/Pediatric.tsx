@@ -3,7 +3,6 @@ import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { Baby, Heart, Shield, Smile } from 'lucide-react';
 import CTABanner from '../components/CTABanner';
 import { medicalWebPageSchema } from '../lib/schema';
-import AboutThisPage from '../components/AboutThisPage';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
 
@@ -82,30 +81,6 @@ export default function Pediatric() {
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AboutThisPage
-            topic="Pediatric Chiropractic Care"
-            topicUrl="https://en.wikipedia.org/wiki/Chiropractic"
-            wikidataId="Q184711"
-            datePublished="2024-01-10"
-            dateModified="2025-10-20"
-            sources={[
-              {
-                name: 'International Chiropractic Pediatric Association',
-                url: 'https://www.icpa4kids.com/',
-              },
-              {
-                name: 'CDC Child Development',
-                url: 'https://www.cdc.gov/child-development/',
-              },
-            ]}
-            keyFacts={[
-              'Safe for infants from birth with specialized gentle techniques',
-              'Supports healthy nervous system development',
-              'May help with colic, sleep issues, and developmental challenges',
-              '80% of parents report improvement in first 4-8 weeks',
-            ]}
-          />
-
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
             Benefits for Your Child
           </h2>
