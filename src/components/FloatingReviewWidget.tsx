@@ -60,7 +60,7 @@ export default function FloatingReviewWidget() {
 
   return (
     <div
-      className={`fixed bottom-4 left-4 z-50 max-w-xs bg-white rounded-lg shadow-xl border border-gray-200 transition-all duration-300 ${
+      className={`fixed bottom-24 right-4 z-40 max-w-xs bg-white rounded-lg shadow-xl border border-gray-200 transition-all duration-300 max-md:bottom-36 ${
         isAnimating ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
       }`}
       style={{ maxWidth: '280px' }}

@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import MobileCTA from './components/MobileCTA';
 import MergerNotification from './components/MergerNotification';
 import FloatingReviewWidget from './components/FloatingReviewWidget';
+import ChatbotWidget from './components/ChatbotWidget';
 import JsonLd from './components/JsonLd';
 import { organizationSchema, personSchema, localBusinessSchema } from './lib/schema';
 import { trackAITraffic } from './lib/analytics';
@@ -118,6 +119,7 @@ function App() {
         <MobileCTA />
         <MergerNotification />
         <FloatingReviewWidget />
+        <ChatbotWidget />
       </div>
     </BrowserRouter>
   );
