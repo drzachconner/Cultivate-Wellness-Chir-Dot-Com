@@ -3,13 +3,14 @@ import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
+import ContactForm from '../components/ContactForm';
 
 export default function Contact() {
   return (
     <>
       <Seo
-        title="Contact Us"
-        description="Get in touch with Cultivate Wellness Chiropractic. Call, email, or visit us."
+        title="Contact Us | Rochester Hills Chiropractor"
+        description="Contact Cultivate Wellness Chiropractic in Rochester Hills, MI. Call (248) 221-1118 or schedule online. Serving families with gentle, neuro-focused care."
         canonical="/contact-us"
         ogImage="/images/contact-hero.webp"
       />
@@ -44,7 +45,7 @@ export default function Contact() {
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="bg-emerald-100 w-12 h-12 rounded-lg flex items-center justify-center">
+                    <div className="bg-primary-light/20 w-12 h-12 rounded-lg flex items-center justify-center">
                       <Phone size={24} className="text-primary-dark" />
                     </div>
                   </div>
@@ -61,7 +62,7 @@ export default function Contact() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="bg-emerald-100 w-12 h-12 rounded-lg flex items-center justify-center">
+                    <div className="bg-primary-light/20 w-12 h-12 rounded-lg flex items-center justify-center">
                       <Mail size={24} className="text-primary-dark" />
                     </div>
                   </div>
@@ -78,7 +79,7 @@ export default function Contact() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="bg-emerald-100 w-12 h-12 rounded-lg flex items-center justify-center">
+                    <div className="bg-primary-light/20 w-12 h-12 rounded-lg flex items-center justify-center">
                       <MapPin size={24} className="text-primary-dark" />
                     </div>
                   </div>
@@ -103,7 +104,7 @@ export default function Contact() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="bg-emerald-100 w-12 h-12 rounded-lg flex items-center justify-center">
+                    <div className="bg-primary-light/20 w-12 h-12 rounded-lg flex items-center justify-center">
                       <Clock size={24} className="text-primary-dark" />
                     </div>
                   </div>
@@ -121,13 +122,7 @@ export default function Contact() {
 
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-8">Send Us a Message</h2>
-              <iframe
-                src="https://form.jotform.com/232538433981058"
-                width="100%"
-                height="700"
-                style={{ border: 0 }}
-                title="Contact Form"
-              />
+              <ContactForm />
             </div>
           </div>
         </div>

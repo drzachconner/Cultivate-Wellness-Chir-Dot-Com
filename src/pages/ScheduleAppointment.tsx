@@ -25,7 +25,7 @@ export default function ScheduleAppointment() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="absolute inset-0 z-0 bg-gradient-to-r from-emerald-900/70 to-primary-dark/70" />
+        <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary-dark/70 to-primary-dark/70" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-bold text-white text-center mb-6">
             Schedule an Appointment
@@ -38,7 +38,7 @@ export default function ScheduleAppointment() {
 
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-emerald-50 border-2 border-emerald-200 rounded-xl p-8 mb-8">
+          <div className="bg-primary-light/10 border-2 border-primary-light/30 rounded-xl p-8 mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
               We've Merged with Van Every Family Chiropractic Center
             </h2>
@@ -49,19 +49,19 @@ export default function ScheduleAppointment() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div className="bg-gradient-to-br from-emerald-700 to-emerald-800 text-white rounded-xl p-8 shadow-lg">
+            <div className="bg-gradient-to-br from-primary-accent to-primary-accent text-white rounded-xl p-8 shadow-lg">
               <div className="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
                 <Calendar size={32} />
               </div>
               <h3 className="text-2xl font-bold mb-4 text-center">Current Cultivate Wellness Practice Members</h3>
-              <p className="text-emerald-50 mb-6 text-center">
+              <p className="text-primary-light mb-6 text-center">
                 Schedule your appointment at CWC here:
               </p>
               <a
                 href={SITE.janeUrlWithUtm}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full bg-white text-emerald-700 py-4 rounded-lg font-bold text-lg hover:bg-emerald-50 transition text-center shadow-md"
+                className="block w-full bg-white text-primary-dark py-4 rounded-lg font-bold text-lg hover:bg-primary-light/10 transition text-center shadow-md"
               >
                 Schedule at CWC
               </a>
@@ -106,8 +106,8 @@ export default function ScheduleAppointment() {
             <div className="space-y-4">
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <div className="flex items-start gap-4">
-                  <div className="bg-emerald-100 p-3 rounded-lg">
-                    <MapPin className="text-emerald-700" size={24} />
+                  <div className="bg-primary-light/20 p-3 rounded-lg">
+                    <MapPin className="text-primary-dark" size={24} />
                   </div>
                   <div className="flex-1">
                     <h4 className="font-bold text-gray-900 text-lg mb-2">Location</h4>
@@ -119,7 +119,7 @@ export default function ScheduleAppointment() {
                       href="https://www.google.com/maps/search/?api=1&query=4203+Rochester+Rd+Royal+Oak+MI+48073"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-emerald-700 hover:underline text-sm mt-2 inline-block"
+                      className="text-primary-dark hover:underline text-sm mt-2 inline-block"
                     >
                       Get Directions
                     </a>
@@ -129,14 +129,14 @@ export default function ScheduleAppointment() {
 
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <div className="flex items-start gap-4">
-                  <div className="bg-emerald-100 p-3 rounded-lg">
-                    <Phone className="text-emerald-700" size={24} />
+                  <div className="bg-primary-light/20 p-3 rounded-lg">
+                    <Phone className="text-primary-dark" size={24} />
                   </div>
                   <div className="flex-1">
                     <h4 className="font-bold text-gray-900 text-lg mb-2">Phone</h4>
                     <a
                       href="tel:+1-248-616-0900"
-                      className="text-emerald-700 text-xl font-bold hover:underline"
+                      className="text-primary-dark text-xl font-bold hover:underline"
                     >
                       (248) 616-0900
                     </a>
@@ -146,8 +146,8 @@ export default function ScheduleAppointment() {
 
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <div className="flex items-start gap-4">
-                  <div className="bg-emerald-100 p-3 rounded-lg">
-                    <Globe className="text-emerald-700" size={24} />
+                  <div className="bg-primary-light/20 p-3 rounded-lg">
+                    <Globe className="text-primary-dark" size={24} />
                   </div>
                   <div className="flex-1">
                     <h4 className="font-bold text-gray-900 text-lg mb-2">Website</h4>
@@ -155,7 +155,7 @@ export default function ScheduleAppointment() {
                       href="https://vaneverychiropractic.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-emerald-700 text-lg hover:underline"
+                      className="text-primary-dark text-lg hover:underline"
                     >
                       vaneverychiropractic.com
                     </a>
@@ -164,7 +164,7 @@ export default function ScheduleAppointment() {
               </div>
             </div>
 
-            <div className="bg-emerald-700 text-white rounded-lg p-6 text-center">
+            <div className="bg-primary-dark text-white rounded-lg p-6 text-center">
               <p className="text-lg">
                 Thank you for your continued trust and support. We look forward to serving you at our new location!
               </p>

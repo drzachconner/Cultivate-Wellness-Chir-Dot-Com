@@ -93,7 +93,7 @@ export default function InsightScans() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-primary-light/10 to-emerald-50/30">
+      <section className="py-16 bg-gradient-to-br from-primary-light/10 to-primary-light/10/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
             The Three INSiGHT Scans
@@ -101,7 +101,7 @@ export default function InsightScans() {
           <div className="grid md:grid-cols-3 gap-8">
             {scanTypes.map((scan, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                <div className="bg-emerald-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                <div className="bg-primary-light/20 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
                   <scan.icon size={28} className="text-primary-dark" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{scan.title}</h3>
@@ -136,7 +136,7 @@ export default function InsightScans() {
                 Score, which helps us track your progress throughout your care journey and make
                 data-driven decisions about your treatment plan.
               </p>
-              <div className="bg-emerald-50 border-l-4 border-emerald-700 p-6 rounded-lg">
+              <div className="bg-primary-light/10 border-l-4 border-primary-dark p-6 rounded-lg">
                 <p className="text-lg text-gray-900 font-medium">
                   Regular scanning allows us to monitor changes and optimize your care for the best
                   possible outcomes.
@@ -151,7 +151,7 @@ export default function InsightScans() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-8">
-              <TrendingUp size={48} className="text-emerald-300" />
+              <TrendingUp size={48} className="text-primary-light" />
             </div>
             <h2 className="text-3xl font-bold mb-8 text-center">Our Commitment</h2>
             <p className="text-xl text-white/90 text-center leading-relaxed mb-8">

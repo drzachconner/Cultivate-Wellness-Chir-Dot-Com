@@ -33,8 +33,8 @@ export default function Family() {
   return (
     <>
       <Seo
-        title="Family Wellness"
-        description="Comprehensive chiropractic care for the whole family at every stage of life."
+        title="Family Chiropractor Rochester Hills, MI"
+        description="Comprehensive family chiropractic care in Rochester Hills, MI. Gentle, neuro-focused care for all ages from newborns to seniors. Schedule your visit!"
         canonical="/family"
         ogImage="/images/family-care.webp"
       />
@@ -89,7 +89,7 @@ export default function Family() {
             {benefits.map((benefit, index) => (
               <div key={index} className="flex gap-4 p-6 bg-gray-50 rounded-xl">
                 <div className="flex-shrink-0">
-                  <div className="bg-emerald-100 w-12 h-12 rounded-lg flex items-center justify-center">
+                  <div className="bg-primary-light/20 w-12 h-12 rounded-lg flex items-center justify-center">
                     <benefit.icon size={24} className="text-primary-dark" />
                   </div>
                 </div>

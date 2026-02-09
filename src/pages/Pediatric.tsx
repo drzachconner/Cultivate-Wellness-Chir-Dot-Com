@@ -33,8 +33,8 @@ export default function Pediatric() {
   return (
     <>
       <Seo
-        title="Pediatric Chiropractic"
-        description="Specialized pediatric chiropractic care for infants and children to support healthy development."
+        title="Pediatric Chiropractor Rochester Hills, MI"
+        description="Specialized pediatric chiropractic in Rochester Hills for infants & children. Gentle care for colic, sleep issues, autism & developmental challenges. Book today!"
         canonical="/pediatric"
         ogImage="/images/pediatric-care.webp"
       />
@@ -88,7 +88,7 @@ export default function Pediatric() {
             {benefits.map((benefit, index) => (
               <div key={index} className="flex gap-4 p-6 bg-gray-50 rounded-xl">
                 <div className="flex-shrink-0">
-                  <div className="bg-emerald-100 w-12 h-12 rounded-lg flex items-center justify-center">
+                  <div className="bg-primary-light/20 w-12 h-12 rounded-lg flex items-center justify-center">
                     <benefit.icon size={24} className="text-primary-dark" />
                   </div>
                 </div>

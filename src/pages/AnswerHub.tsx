@@ -1,4 +1,5 @@
 import { SITE } from '../data/site';
+import { Link } from 'react-router-dom';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { faqSchema, articleSchema } from '../lib/schema';
 import { HelpCircle, Baby, Users, Heart } from 'lucide-react';
@@ -21,7 +22,7 @@ export default function AnswerHub() {
     {
       icon: Users,
       title: 'Family Care',
-      color: 'bg-emerald-100 text-emerald-700',
+      color: 'bg-primary-light/20 text-primary-dark',
     },
   ];
 
@@ -106,14 +107,14 @@ export default function AnswerHub() {
         url: '/answers',
         wordCount: 2800,
       })} />
-      <section className="relative py-24 bg-gradient-to-br from-emerald-700 to-emerald-900">
+      <section className="relative py-24 bg-gradient-to-br from-primary-accent to-primary-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <HelpCircle className="mx-auto mb-6 text-white" size={64} />
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
               Common Questions About Chiropractic Care
             </h1>
-            <p className="text-xl text-emerald-50 max-w-3xl mx-auto">
+            <p className="text-xl text-primary-light max-w-3xl mx-auto">
               Get expert answers to your questions about pediatric, prenatal, and family chiropractic care
             </p>
           </div>
@@ -143,8 +144,8 @@ export default function AnswerHub() {
               <div key={index} className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
                 <div className="p-6">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 bg-emerald-100 p-2 rounded-lg">
-                      <HelpCircle className="text-emerald-700" size={24} />
+                    <div className="flex-shrink-0 bg-primary-light/20 p-2 rounded-lg">
+                      <HelpCircle className="text-primary-dark" size={24} />
                     </div>
                     <div className="flex-1">
                       <span className="inline-block px-3 py-1 bg-gray-100 text-gray-700 text-xs font-semibold rounded-full mb-3">
@@ -159,23 +160,23 @@ export default function AnswerHub() {
             ))}
           </article>
 
-          <aside className="mt-12 bg-emerald-700 rounded-xl p-8 text-center">
+          <aside className="mt-12 bg-primary-dark rounded-xl p-8 text-center">
             <h2 className="text-2xl font-bold text-white mb-4">Still Have Questions?</h2>
-            <p className="text-emerald-50 mb-6">
+            <p className="text-primary-light mb-6">
               We're here to help! Contact us directly or schedule a consultation to discuss your specific concerns.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact-us"
-                className="inline-block bg-white text-emerald-700 px-8 py-3 rounded-lg font-bold hover:bg-emerald-50 transition"
+              <Link
+                to="/contact-us"
+                className="inline-block bg-white text-primary-dark px-8 py-3 rounded-lg font-bold hover:bg-primary-light/10 transition"
               >
                 Contact Us
-              </a>
+              </Link>
               <a
                 href={SITE.janeUrlWithUtm}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-emerald-900 text-white px-8 py-3 rounded-lg font-bold hover:bg-emerald-950 transition"
+                className="inline-block bg-primary-accent text-white px-8 py-3 rounded-lg font-bold hover:bg-primary transition"
               >
                 Schedule Appointment
               </a>

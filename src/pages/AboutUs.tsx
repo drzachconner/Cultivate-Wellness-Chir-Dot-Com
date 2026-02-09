@@ -1,4 +1,5 @@
 import { SITE } from '../data/site';
+import { Link } from 'react-router-dom';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import CTABanner from '../components/CTABanner';
 import Seo from '../components/Seo';
@@ -8,8 +9,8 @@ export default function AboutUs() {
   return (
     <>
       <Seo
-        title="About Us"
-        description="Meet our team of dedicated chiropractors committed to your family's wellness."
+        title="About Us | Chiropractor Rochester Hills, MI"
+        description="Meet Dr. Zach Conner and our team at Cultivate Wellness Chiropractic in Rochester Hills, MI. Gentle, neuro-focused care for families and children with special needs."
         canonical="/about-us"
         ogImage="/images/family-adjustment.webp"
       />
@@ -32,12 +33,12 @@ export default function AboutUs() {
           <p className="text-xl sm:text-2xl text-white mb-8 max-w-3xl mx-auto">
             Gentle and specific "nerve-first" approach to pediatric, prenatal, and family care.
           </p>
-          <a
-            href="/new-patient-center"
+          <Link
+            to="/new-patient-center"
             className="inline-block bg-primary-dark text-white px-10 py-4 rounded-lg text-lg font-medium hover:bg-primary-accent transition shadow-xl"
           >
             New Patient Center
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -55,15 +56,15 @@ export default function AboutUs() {
             </p>
             <p className="text-lg text-gray-700 mb-6">
               Dr. Zach is one of two certified teachers of Talsky Tonal, bringing advanced expertise in this neurologically-focused approach. This gentle technique uses bio-feedback responses to identify where the body is holding unnecessary tension, empowering the body to release accumulated stress patterns and restore optimal nervous system function.{' '}
-              <a href="/talsky-tonal-chiropractic" className="text-primary-dark font-semibold hover:text-primary-accent underline">
+              <Link to="/talsky-tonal-chiropractic" className="text-primary-dark font-semibold hover:text-primary-accent underline">
                 Learn more about Talsky Tonal Chiropractic →
-              </a>
+              </Link>
             </p>
             <p className="text-lg text-gray-700 mb-6">
               At Cultivate Wellness, we don't guess, we test! Our state-of-the-art and non-invasive{' '}
-              <a href="/insight-scans" className="text-primary-dark font-semibold hover:text-primary-accent underline">
+              <Link to="/insight-scans" className="text-primary-dark font-semibold hover:text-primary-accent underline">
                 INSiGHT scanning technology
-              </a>
+              </Link>
               {' '}allows us to measure the function and performance of your nervous system accurately, ensuring we understand precisely what's happening in your body and how best to assist you.
             </p>
 

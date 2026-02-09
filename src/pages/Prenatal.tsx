@@ -33,8 +33,8 @@ export default function Prenatal() {
   return (
     <>
       <Seo
-        title="Prenatal Chiropractic"
-        description="Safe, effective chiropractic care for expectant mothers throughout pregnancy."
+        title="Prenatal Chiropractor Rochester Hills, MI"
+        description="Safe prenatal chiropractic in Rochester Hills using Webster Technique. Relieve back pain, support optimal fetal positioning. Serving expectant mothers!"
         canonical="/prenatal"
         ogImage="/images/prenatal-care.webp"
       />
@@ -89,7 +89,7 @@ export default function Prenatal() {
             {benefits.map((benefit, index) => (
               <div key={index} className="flex gap-4 p-6 bg-gray-50 rounded-xl">
                 <div className="flex-shrink-0">
-                  <div className="bg-emerald-100 w-12 h-12 rounded-lg flex items-center justify-center">
+                  <div className="bg-primary-light/20 w-12 h-12 rounded-lg flex items-center justify-center">
                     <benefit.icon size={24} className="text-primary-dark" />
                   </div>
                 </div>

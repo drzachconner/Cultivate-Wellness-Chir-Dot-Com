@@ -62,7 +62,7 @@ export default function FloatingReviewWidget() {
     <aside
       role="complementary"
       aria-label="Customer reviews"
-      className={`fixed bottom-4 left-4 z-40 max-w-xs bg-white rounded-lg shadow-xl border border-gray-200 transition-all duration-300 max-md:bottom-20 ${
+      className={`fixed bottom-4 left-4 z-40 max-w-xs bg-white rounded-lg shadow-xl border border-gray-200 transition-all duration-300 hidden md:block ${
         isAnimating ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
       }`}
       style={{ maxWidth: '280px' }}
@@ -123,7 +123,7 @@ export default function FloatingReviewWidget() {
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-1.5 h-1.5 rounded-full transition-colors ${
-                index === currentIndex ? 'bg-emerald-600' : 'bg-gray-300'
+                index === currentIndex ? 'bg-primary-dark' : 'bg-gray-300'
               }`}
               aria-label={`Go to review ${index + 1}`}
             />

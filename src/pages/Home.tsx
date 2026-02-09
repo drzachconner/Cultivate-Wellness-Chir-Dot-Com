@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <Seo
-        title={SITE.name}
-        description={SITE.description}
+        title="Pediatric & Prenatal Chiropractor Rochester Hills, MI"
+        description="Expert pediatric & prenatal chiropractor in Rochester Hills, MI. Dr. Zach Conner specializes in gentle, neurologically-focused care for families. Book today!"
         canonical="/"
         ogImage="/images/hero-family.webp"
       />
@@ -75,7 +75,7 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Experts in Drug-Free Pediatric, Prenatal, and Family Health Care!
+            Pediatric & Prenatal Chiropractor in Rochester Hills, MI
           </h1>
           <p className="text-lg sm:text-xl text-gray-700 mb-6 leading-relaxed">
             "Our primary focus is your family's health and happiness. We specialize in <span className="text-primary-600 font-semibold">gentle, neuro-focused chiropractic care</span>. Whether the journey involves autism, epilepsy, special needs, or well baby checks and family wellness, our team is more than prepared to cultivate the best healing experience possible."
@@ -84,12 +84,12 @@ export default function Home() {
             - Dr. Zach Conner<br />
             <span className="text-primary-600">Rochester Hills, MI Chiropractor</span>
           </p>
-          <a
-            href="/events-workshops"
+          <Link
+            to="/events-workshops"
             className="inline-block bg-primary-dark text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-primary-accent transition shadow-lg"
           >
             Workshops For Parents
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -177,7 +177,7 @@ export default function Home() {
               </div>
             </Link>
             <Link
-              to="/3-steps-transition"
+              to="/free-guides-for-parents"
               className="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow"
             >
               <div className="aspect-video overflow-hidden">
@@ -222,12 +222,12 @@ export default function Home() {
               <p className="text-lg text-gray-700 mb-6">
                 Cultivate Wellness is led by Dr. Zach Conner, <span className="font-semibold">an esteemed educator and practitioner of Talsky Tonal Chiropractic, a gentle, highly effective neuro-focused approach to care.</span> From your first visit, expect to be embraced as part of our Cultivate Wellness family as we journey together towards a healthier, happier life.
               </p>
-              <a
-                href="/meet-dr-zach"
+              <Link
+                to="/meet-dr-zach"
                 className="inline-block bg-primary-dark text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-accent transition"
               >
                 Meet Dr. Zach
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -50,7 +50,7 @@ export default function AuthorByline({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       )}
-      <div className="bg-gray-50 border-l-4 border-emerald-600 rounded-lg p-6 my-8">
+      <div className="bg-gray-50 border-l-4 border-primary-dark rounded-lg p-6 my-8">
         <div className="flex items-start gap-4">
           {author.image && (
             <img
@@ -61,10 +61,10 @@ export default function AuthorByline({
           )}
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-2">
-              <User size={16} className="text-emerald-700" />
+              <User size={16} className="text-primary-dark" />
               <span className="font-bold text-gray-900">
                 {author.url ? (
-                  <a href={author.url} className="hover:text-emerald-700 transition">
+                  <a href={author.url} className="hover:text-primary-dark transition">
                     {author.name}
                   </a>
                 ) : (
@@ -73,7 +73,7 @@ export default function AuthorByline({
               </span>
             </div>
             <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
-              <Award size={14} className="text-emerald-600" />
+              <Award size={14} className="text-primary-dark" />
               <span>{author.credentials}</span>
             </div>
             {author.bio && <p className="text-sm text-gray-700 mb-3">{author.bio}</p>}
@@ -90,7 +90,7 @@ export default function AuthorByline({
               {modifiedDate && (
                 <div className="flex items-center gap-1">
                   <Calendar size={12} />
-                  <span className="font-semibold text-emerald-700">
+                  <span className="font-semibold text-primary-dark">
                     Last Updated: <time dateTime={modifiedDate}>{new Date(modifiedDate).toLocaleDateString()}</time>
                   </span>
                 </div>

@@ -89,7 +89,7 @@ export default function AboutThisPage({
 
         {reviewedBy && (
           <div className="flex items-start gap-2">
-            <Award className="text-emerald-600 mt-0.5" size={16} />
+            <Award className="text-primary-dark mt-0.5" size={16} />
             <span className="font-semibold text-gray-700 min-w-[100px]">Reviewed By:</span>
             <span className="text-gray-900">
               {reviewedBy.name}, {reviewedBy.credentials}
@@ -110,9 +110,9 @@ export default function AboutThisPage({
         </div>
 
         <div className="flex items-start gap-2">
-          <Calendar className="text-emerald-600 mt-0.5" size={16} />
+          <Calendar className="text-primary-dark mt-0.5" size={16} />
           <span className="font-semibold text-gray-700 min-w-[100px]">Last Updated:</span>
-          <time dateTime={dateModified} className="text-emerald-700 font-semibold">
+          <time dateTime={dateModified} className="text-primary-dark font-semibold">
             {new Date(dateModified).toLocaleDateString('en-US', {
               year: 'numeric',
               month: 'long',

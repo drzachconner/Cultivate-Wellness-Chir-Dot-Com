@@ -14,7 +14,7 @@ export const SITE = {
   name: 'Cultivate Wellness Chiropractic',
   shortName: 'Cultivate Wellness', // Used for alternate name in schema
   domain: 'cultivatewellnesschiro.com',
-  description: 'Experts in Drug-Free Pediatric, Prenatal, and Family Health Care! Gentle, neuro-focused chiropractic care.',
+  description: 'Pediatric, prenatal & family chiropractor in Rochester Hills, MI. Dr. Zach Conner provides gentle, neuro-focused care for children and families.',
   tagline: 'Helping Your Family Thrive, Naturally',
   foundingYear: '2020',
   priceRange: '$$',
@@ -156,7 +156,7 @@ export const SITE = {
   // BRANDING COLORS (update tailwind.config.js to match)
   // ============================================
   colors: {
-    themeColor: '#047857', // Primary theme color (emerald)
+    themeColor: '#002d4e', // Primary dark (navy)
     primaryDark: '#002d4e',
     primary: '#6383ab',
     primaryLight: '#73b7ce',

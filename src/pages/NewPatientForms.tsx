@@ -30,7 +30,7 @@ export default function NewPatientForms() {
 
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-emerald-50 border-2 border-emerald-200 rounded-xl p-8 mb-8">
+          <div className="bg-primary-light/10 border-2 border-primary-light/30 rounded-xl p-8 mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
               We've Merged with Van Every Family Chiropractic Center
             </h2>
@@ -49,14 +49,14 @@ export default function NewPatientForms() {
             <div className="space-y-6">
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <div className="flex items-start gap-4">
-                  <div className="bg-emerald-100 p-3 rounded-lg">
-                    <Phone className="text-emerald-700" size={24} />
+                  <div className="bg-primary-light/20 p-3 rounded-lg">
+                    <Phone className="text-primary-dark" size={24} />
                   </div>
                   <div className="flex-1">
                     <h4 className="font-bold text-gray-900 text-lg mb-2">Call to Schedule</h4>
                     <a
                       href="tel:+1-248-616-0900"
-                      className="text-emerald-700 text-2xl font-bold hover:underline block mb-2"
+                      className="text-primary-dark text-2xl font-bold hover:underline block mb-2"
                     >
                       (248) 616-0900
                     </a>
@@ -70,8 +70,8 @@ export default function NewPatientForms() {
 
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <div className="flex items-start gap-4">
-                  <div className="bg-emerald-100 p-3 rounded-lg">
-                    <MapPin className="text-emerald-700" size={24} />
+                  <div className="bg-primary-light/20 p-3 rounded-lg">
+                    <MapPin className="text-primary-dark" size={24} />
                   </div>
                   <div className="flex-1">
                     <h4 className="font-bold text-gray-900 text-lg mb-2">Location</h4>
@@ -85,8 +85,8 @@ export default function NewPatientForms() {
 
               <div className="bg-white rounded-lg p-6 shadow-sm">
                 <div className="flex items-start gap-4">
-                  <div className="bg-emerald-100 p-3 rounded-lg">
-                    <Globe className="text-emerald-700" size={24} />
+                  <div className="bg-primary-light/20 p-3 rounded-lg">
+                    <Globe className="text-primary-dark" size={24} />
                   </div>
                   <div className="flex-1">
                     <h4 className="font-bold text-gray-900 text-lg mb-2">Website</h4>
@@ -94,7 +94,7 @@ export default function NewPatientForms() {
                       href="https://vaneverychiropractic.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-emerald-700 text-lg hover:underline"
+                      className="text-primary-dark text-lg hover:underline"
                     >
                       vaneverychiropractic.com
                     </a>
@@ -103,7 +103,7 @@ export default function NewPatientForms() {
               </div>
             </div>
 
-            <div className="bg-emerald-700 text-white rounded-lg p-6 text-center">
+            <div className="bg-primary-dark text-white rounded-lg p-6 text-center">
               <p className="text-lg">
                 Thank you for your continued trust and support. We look forward to serving you at our
                 new location!

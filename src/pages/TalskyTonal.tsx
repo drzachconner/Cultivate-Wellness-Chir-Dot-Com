@@ -43,8 +43,8 @@ export default function TalskyTonal() {
   return (
     <>
       <Seo
-        title="Talsky Tonal Chiropractic"
-        description="Learn about our gentle, neurologically-focused Talsky Tonal Chiropractic approach that restores nervous system function and promotes proactive healing."
+        title="Talsky Tonal Chiropractic | Rochester Hills, MI"
+        description="Talsky Tonal Chiropractic in Rochester Hills - gentle, neurologically-focused care. Dr. Zach Conner is a certified teacher of this advanced technique. Book today!"
         canonical="/talsky-tonal-chiropractic"
         ogImage="/images/Talsky at source2.jpg"
       />
@@ -108,7 +108,7 @@ export default function TalskyTonal() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-br from-primary-light/10 to-emerald-50/30">
+      <section className="py-16 bg-gradient-to-br from-primary-light/10 to-primary-light/10/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
             Core Principles of Talsky Tonal Chiropractic
@@ -116,7 +116,7 @@ export default function TalskyTonal() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {principles.map((principle, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                <div className="bg-emerald-100 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+                <div className="bg-primary-light/20 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
                   <principle.icon size={28} className="text-primary-dark" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{principle.title}</h3>
@@ -219,7 +219,7 @@ export default function TalskyTonal() {
               {' '}to measure your nervous system function accurately. We don't guess, we test! This allows us to create custom care plans tailored
               to your unique needs and track your progress objectively.
             </p>
-            <div className="bg-emerald-700 text-white p-8 rounded-xl mt-8">
+            <div className="bg-primary-dark text-white p-8 rounded-xl mt-8">
               <h3 className="text-2xl font-bold mb-4">Experience the Difference</h3>
               <p className="text-lg mb-6">
                 Discover how Talsky Tonal Chiropractic can help you and your family achieve optimal
