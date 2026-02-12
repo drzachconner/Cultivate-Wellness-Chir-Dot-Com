@@ -44,32 +44,38 @@ TALSKY TONAL CHIROPRACTIC (CRITICAL - READ CAREFULLY)
 IMPORTANT: Talsky Tonal is NOT about "correcting misalignments" or "adjusting the spine." This is a completely different approach.
 
 What it IS:
-- A neurologically-focused technique developed by Dr. Marvin Talsky in 2001
-- Dr. Talsky has been practicing since 1965 (graduated Palmer College of Chiropractic 1963)
-- Dr. Talsky also co-founded the Torque Release Technique in 1995
-- Focuses on spinal cord TENSION over spinal cord pressure — tone is "the expression of vibratory frequencies through matter"
-- Uses a vitalistic, moment-to-moment analysis of the entire spinal system (tailbone through cranial bones)
-- Adjustments use a gentle pressure input with a finger contact, taking only a few seconds
-- NO traditional bone cracking or forceful manipulations — non-manipulative approach
-- Corrections don't stop when you get off the table — they continue with your body's movements and breathing
-- Empowers the body to release "stress stuck on" (also called subluxation in chiropractic terms)
+- A paradigm shift in chiropractic care, developed by Dr. Marvin Talsky in 2001
+- Dr. Talsky has been practicing since 1965 (graduated Palmer College of Chiropractic 1963) and co-founded the Torque Release Technique in 1995
+- Rather than simply addressing symptoms, TTC focuses on finding and releasing accumulated stress patterns in the body, restoring the integrity and function of the nervous system so the body can heal and perform at its optimal level
+- Engages the nervous system directly to promote never-ending neurological optimization
+- Uses a vitalistic, moment-to-moment analysis of the entire spinal system (tailbone through cranial bones) to identify exactly where the body is holding unnecessary tension
+- Emphasizes spinal cord TENSION over spinal cord pressure
+- Gentle, specific adjustments using a finger contact — no traditional bone cracking or forceful manipulations
+- The corrections continue working with the body's movements and breathing even after the visit
+- Empowers the body to release "stress stuck on" rather than forcing change from the outside
 
 How it works - "Stress Stuck On" concept:
-- When overwhelmed by stress, the body increases tension and holds it until it receives information that it's safe to release
-- These tension patterns accumulate in layers (filling the "stress bucket")
-- Your body can only hold so much stress before symptoms occur and brain-body communication is interfered with
-- Talsky Tonal finds this "stress stuck on" and gives your body the space, permission, and information it needs to release these layers
-- The body learns to better adjust itself over time
-- Leads to "never-ending optimization" with continued care
+- When overwhelmed by stress, the body increases tension and holds it until it receives information that it's safe to release — this is "stress stuck on" (subluxation in chiropractic terms)
+- These tension patterns accumulate in layers upon layers, filling the "stress bucket"
+- Your body can only hold so much stress before symptoms start to occur and the brain's ability to properly communicate with the rest of the body becomes interfered with
+- TTC finds this "stress stuck on" and gives the body the space, permission, and information it needs to release these layers of held tension
+- The body then learns how to better and better adjust itself — this is empowering to the body rather than forcing it
+- Leads to the potential of never-ending optimization with continued wellness care
 
-Key philosophy: "Less is more" - precise, effective adjustments without over-treating
+Core Principles:
+- Neurologically Focused: Engages the nervous system directly to restore its integrity and function
+- Safe, Gentle & Effective: Respects the intelligence of the body — no traditional bone cracking, just very specific adjustments that work with the body's natural healing ability
+- Vitalistic Analysis: Moment-to-moment analysis to identify exactly where tension is being held
+- Pro-Active Healing: Emphasizes proactive healing and wellness rather than reactive symptom management
+- "Less is More": Precise, effective adjustments that facilitate the body's natural healing process without over-treating
 
 Benefits:
-- Addresses root causes, not just symptoms
-- Particularly effective for children with sensory processing differences, developmental challenges, autism, ADHD
-- Safe for all ages from newborns to seniors
-- Promotes continuous neurological improvement
+- Goes beyond symptom relief to restore nervous system function and optimal performance
 - Enhances the body's own innate ability to heal
+- Particularly effective for children with special needs, sensory processing differences, and developmental challenges
+- Safe and appropriate for patients of all ages — from newborns to seniors
+- Supports continuous neurological improvement and overall quality of life
+- Facilitates never-ending neurological optimization, helping the body adapt and thrive throughout life's changes
 
 ═══════════════════════════════════════════════════════════════
 INSIGHT SCANS - "WE DON'T GUESS, WE TEST"
