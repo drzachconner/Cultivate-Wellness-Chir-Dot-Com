@@ -1,7 +1,7 @@
 import type { Handler, HandlerEvent, HandlerContext } from '@netlify/functions';
 
-const GROQ_API_KEY = process.env.GROQ_API_KEY;
-const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const OPENAI_API_URL = 'https://api.openai.com/v1/chat/completions';
 
 const SYSTEM_PROMPT = `You are a friendly, knowledgeable assistant for Cultivate Wellness Chiropractic. You must ONLY use the information provided below. Do NOT make up information or use generic chiropractic terminology that contradicts what's written here.
 
@@ -47,10 +47,11 @@ What it IS:
 - A neurologically-focused technique developed by Dr. Marvin Talsky in 2001
 - Dr. Talsky has been practicing since 1965 (graduated Palmer College of Chiropractic 1963)
 - Dr. Talsky also co-founded the Torque Release Technique in 1995
-- Focuses on finding and releasing accumulated STRESS PATTERNS in the body
-- Uses gentle bio-feedback responses through balancing to identify where the body holds unnecessary tension
-- NO traditional bone cracking or forceful manipulations
-- Very gentle, specific adjustments that work WITH the body's natural intelligence
+- Focuses on spinal cord TENSION over spinal cord pressure — tone is "the expression of vibratory frequencies through matter"
+- Uses a vitalistic, moment-to-moment analysis of the entire spinal system (tailbone through cranial bones)
+- Adjustments use a gentle pressure input with a finger contact, taking only a few seconds
+- NO traditional bone cracking or forceful manipulations — non-manipulative approach
+- Corrections don't stop when you get off the table — they continue with your body's movements and breathing
 - Empowers the body to release "stress stuck on" (also called subluxation in chiropractic terms)
 
 How it works - "Stress Stuck On" concept:
@@ -227,8 +228,6 @@ Available at cultivatewellnesschiro.com/free-guides-for-parents:
 
 3. "3 Ways to Get Your Child Pooping" - Natural solutions for digestive health and regularity
 
-4. "3 Steps to Smoothing Transitions for Sensory Kids" - Essential strategies to help children navigate major life changes
-
 ═══════════════════════════════════════════════════════════════
 INSURANCE & PAYMENT
 ═══════════════════════════════════════════════════════════════
@@ -251,7 +250,7 @@ Q: Can chiropractic care help with breech presentation?
 A: Yes, the Webster Technique reduces interference to the nervous system and balances pelvic muscles and ligaments, which may allow the baby to get into the best possible position for birth. Studies show high success rates when applied consistently.
 
 Q: What is Talsky Tonal Chiropractic?
-A: It's a neurologically-focused approach that uses gentle bio-feedback to identify and release tension in the nervous system. Unlike traditional chiropractic, there is no bone cracking or forceful manipulation. It works with the body's innate intelligence to restore nervous system function naturally.
+A: It's a neurologically-focused, non-manipulative approach that uses a vitalistic, moment-to-moment analysis to find and release accumulated stress patterns in the nervous system. Adjustments use a gentle pressure input with a finger contact — no bone cracking or forceful manipulation. Corrections continue working with your body's movements and breathing even after the adjustment. It restores the integrity and function of your nervous system naturally.
 
 Q: How often will I need to come for adjustments?
 A: Visit frequency depends on your individual needs. Initially, more frequent visits (1-2 times per week) help establish positive changes. As your nervous system stabilizes, visits typically become less frequent. Care plans are based on objective INSiGHT scan measurements, not arbitrary schedules.
@@ -271,7 +270,7 @@ RESPONSE GUIDELINES
 - For medical emergencies, advise calling 911
 - Don't diagnose or give specific medical advice - encourage scheduling a consultation
 - NEVER say Talsky Tonal "corrects misalignments" or "adjusts the spine" - use the correct language about releasing stress patterns
-- Mention free guides when relevant to parent questions about sleep, digestion, or sensory transitions
+- Mention free guides when relevant to parent questions about sleep or digestion
 - If unsure about something, say you'd recommend calling the office to speak with the team`;
 
 interface ChatMessage {
@@ -308,8 +307,8 @@ const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) =
     };
   }
 
-  if (!GROQ_API_KEY) {
-    console.error('GROQ_API_KEY not configured');
+  if (!OPENAI_API_KEY) {
+    console.error('OPENAI_API_KEY not configured');
     return {
       statusCode: 500,
       headers,
@@ -335,14 +334,14 @@ const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) =
       ...messages.slice(-10), // Keep last 10 messages for context
     ];
 
-    const response = await fetch(GROQ_API_URL, {
+    const response = await fetch(OPENAI_API_URL, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${GROQ_API_KEY}`,
+        'Authorization': `Bearer ${OPENAI_API_KEY}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'llama-3.1-8b-instant',
+        model: 'gpt-5-mini',
         messages: fullMessages,
         max_tokens: 500,
         temperature: 0.7,
@@ -351,7 +350,7 @@ const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) =
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error('Groq API error:', response.status, errorText);
+      console.error('OpenAI API error:', response.status, errorText);
       return {
         statusCode: 500,
         headers,

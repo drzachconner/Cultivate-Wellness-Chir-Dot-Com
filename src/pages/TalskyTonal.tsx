@@ -25,8 +25,8 @@ export default function TalskyTonal() {
     },
     {
       icon: Sparkles,
-      title: 'Bio-Feedback Approach',
-      description: 'Utilizes gentle bio-feedback responses through balancing to identify exactly where the body is holding unnecessary tension, allowing precise and targeted care.',
+      title: 'Vitalistic Analysis',
+      description: 'Uses a vitalistic, moment-to-moment analysis of the entire spinal system — from tailbone through cranial bones — to identify exactly where the body is holding unnecessary tension.',
     },
     {
       icon: Activity,
@@ -63,7 +63,7 @@ export default function TalskyTonal() {
           url: '/talsky-tonal-chiropractic',
           therapy: {
             name: 'Talsky Tonal Chiropractic',
-            description: 'Advanced neurologically-focused chiropractic technique using bio-feedback to release stress patterns and restore optimal nervous system function',
+            description: 'Advanced neurologically-focused chiropractic technique using a vitalistic, moment-to-moment analysis to release stress patterns and restore optimal nervous system function',
           },
           wordCount: 1500,
         })}
@@ -144,10 +144,12 @@ export default function TalskyTonal() {
             </p>
             <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-8">How Talsky Tonal Chiropractic Works</h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Talsky Tonal Chiropractic utilizes gentle bio-feedback responses through balancing to identify
-              exactly where your body is holding onto tension that it no longer needs. Instead of forceful
-              manipulations, this approach uses gentle and very specific adjustments that respect your body's
-              intelligence.
+              Talsky Tonal Chiropractic emphasizes spinal cord tension over spinal cord pressure, using a
+              vitalistic, moment-to-moment analysis of the entire spinal system — from tailbone through cranial
+              bones — to identify exactly where your body is holding onto tension that it no longer needs.
+              Instead of forceful manipulations, adjustments use a gentle pressure input with a finger contact,
+              taking only a few seconds. The corrections don't stop when you get off the table —
+              they continue working with your body's movements and breathing.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               TTC finds this "stress stuck on" and gives your body the space, permission, and information it

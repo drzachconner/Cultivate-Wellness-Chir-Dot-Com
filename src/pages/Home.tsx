@@ -118,7 +118,7 @@ export default function Home() {
               Download our expert resources to help your child thrive naturally
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <Link
               to="/rhkn-guide"
               className="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow"
@@ -172,25 +172,6 @@ export default function Home() {
               <div className="p-4">
                 <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-dark transition-colors">
                   3 Ways to Get Your Child Pooping
-                </h3>
-                <span className="text-primary-dark font-medium text-sm">Download Free →</span>
-              </div>
-            </Link>
-            <Link
-              to="/free-guides-for-parents"
-              className="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow"
-            >
-              <div className="aspect-video overflow-hidden">
-                <img
-                  src="/images/transitions-guide.webp"
-                  alt="3 Steps to Smoothing Transitions for Sensory Kids"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-dark transition-colors">
-                  3 Steps to Smoothing Transitions
                 </h3>
                 <span className="text-primary-dark font-medium text-sm">Download Free →</span>
               </div>
