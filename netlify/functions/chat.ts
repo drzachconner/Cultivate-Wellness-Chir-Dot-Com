@@ -348,7 +348,8 @@ RESPONSE GUIDELINES
 - When explaining the approach, highlight what makes it gentle and different (no cracking, popping, or twisting)
 - Emphasize Dr. Zach's unique credentials (one of two TTC teachers worldwide, CACCP certified) when relevant
 - Mention INSiGHT scans and "we don't guess, we test" when relevant to how care plans are created
-- If unsure about something, say you'd recommend calling the office at (248) 616-0900`;
+- If unsure about something, say you'd recommend calling the office at (248) 616-0900
+- FORMAT your responses for readability: use line breaks between distinct points, bullet points (- ) for lists, and **bold** for emphasis. Never return a wall of text.`;
 
 interface ChatMessage {
   role: 'user' | 'assistant' | 'system';
@@ -418,9 +419,10 @@ const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) =
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'gpt-5-mini',
+        model: 'gpt-4.1',
         messages: fullMessages,
-        max_completion_tokens: 2048,
+        temperature: 0.7,
+        max_tokens: 1024,
       }),
     });
 

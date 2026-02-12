@@ -14,6 +14,47 @@ const QUICK_QUESTIONS = [
   'First visit info',
 ];
 
+function formatMessage(text: string) {
+  // Split into paragraphs on double newlines
+  const paragraphs = text.split(/\n\n+/);
+
+  return paragraphs.map((para, pIdx) => {
+    const lines = para.split('\n');
+    const elements: React.ReactNode[] = [];
+
+    lines.forEach((line, lIdx) => {
+      // Bold: **text**
+      const parts = line.split(/(\*\*[^*]+\*\*)/g);
+      const formatted = parts.map((part, i) => {
+        if (part.startsWith('**') && part.endsWith('**')) {
+          return <strong key={i}>{part.slice(2, -2)}</strong>;
+        }
+        return part;
+      });
+
+      // Bullet points
+      const bulletMatch = line.match(/^[-•]\s+(.*)/);
+      if (bulletMatch) {
+        elements.push(
+          <div key={`${pIdx}-${lIdx}`} className="flex gap-1.5 ml-1">
+            <span className="shrink-0">•</span>
+            <span>{formatted}</span>
+          </div>
+        );
+      } else {
+        if (lIdx > 0) elements.push(<br key={`br-${pIdx}-${lIdx}`} />);
+        elements.push(<span key={`${pIdx}-${lIdx}`}>{formatted}</span>);
+      }
+    });
+
+    return (
+      <p key={pIdx} className={pIdx > 0 ? 'mt-2' : ''}>
+        {elements}
+      </p>
+    );
+  });
+}
+
 export default function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
@@ -165,7 +206,7 @@ export default function ChatbotWidget() {
                       : 'bg-white text-gray-800 shadow-sm border border-gray-100 rounded-bl-none'
                   }`}
                 >
-                  {message.content}
+                  {message.role === 'assistant' ? formatMessage(message.content) : message.content}
                 </div>
               </div>
             ))}
