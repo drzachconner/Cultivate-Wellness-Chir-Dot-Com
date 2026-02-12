@@ -12,6 +12,10 @@ const QUICK_QUESTIONS = [
   'How do I schedule?',
   'What ages do you see?',
   'First visit info',
+  'Do you help with ADHD?',
+  'Do you help with autism?',
+  'Do you help with fertility?',
+  'Do you help with sciatica?',
 ];
 
 function formatMessage(text: string) {
