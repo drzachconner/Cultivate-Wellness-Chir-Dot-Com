@@ -18,8 +18,33 @@ const QUICK_QUESTIONS = [
   'Do you help with sciatica?',
 ];
 
+function formatInline(text: string, keyPrefix: string): React.ReactNode[] {
+  // Process bold and links in inline text
+  // Split on bold (**text**) and markdown links [text](url)
+  const tokens = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+  return tokens.map((token, i) => {
+    if (token.startsWith('**') && token.endsWith('**')) {
+      return <strong key={`${keyPrefix}-b${i}`}>{token.slice(2, -2)}</strong>;
+    }
+    const linkMatch = token.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (linkMatch) {
+      return (
+        <a
+          key={`${keyPrefix}-a${i}`}
+          href={linkMatch[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary-dark underline hover:text-primary-accent break-all"
+        >
+          {linkMatch[1]}
+        </a>
+      );
+    }
+    return token;
+  });
+}
+
 function formatMessage(text: string) {
-  // Split into paragraphs on double newlines
   const paragraphs = text.split(/\n\n+/);
 
   return paragraphs.map((para, pIdx) => {
@@ -27,20 +52,13 @@ function formatMessage(text: string) {
     const elements: React.ReactNode[] = [];
 
     lines.forEach((line, lIdx) => {
-      // Bold: **text**
-      const parts = line.split(/(\*\*[^*]+\*\*)/g);
-      const formatted = parts.map((part, i) => {
-        if (part.startsWith('**') && part.endsWith('**')) {
-          return <strong key={i}>{part.slice(2, -2)}</strong>;
-        }
-        return part;
-      });
+      const formatted = formatInline(line, `${pIdx}-${lIdx}`);
 
       // Bullet points
       const bulletMatch = line.match(/^[-•]\s+(.*)/);
       if (bulletMatch) {
         elements.push(
-          <div key={`${pIdx}-${lIdx}`} className="flex gap-1.5 ml-1">
+          <div key={`${pIdx}-${lIdx}`} className="flex gap-1.5 ml-1 mt-1">
             <span className="shrink-0">•</span>
             <span>{formatted}</span>
           </div>
@@ -52,7 +70,7 @@ function formatMessage(text: string) {
     });
 
     return (
-      <p key={pIdx} className={pIdx > 0 ? 'mt-2' : ''}>
+      <p key={pIdx} className={pIdx > 0 ? 'mt-3' : ''}>
         {elements}
       </p>
     );
