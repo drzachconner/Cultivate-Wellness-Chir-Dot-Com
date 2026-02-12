@@ -343,7 +343,7 @@ const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) =
       body: JSON.stringify({
         model: 'gpt-5-mini',
         messages: fullMessages,
-        max_tokens: 500,
+        max_completion_tokens: 500,
         temperature: 0.7,
       }),
     });
