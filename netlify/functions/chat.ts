@@ -67,7 +67,7 @@ What it IS:
 - Dr. Talsky has been practicing since 1965 (graduated Palmer College of Chiropractic 1963) and co-founded the Torque Release Technique in 1995
 - Rather than simply addressing symptoms, TTC focuses on finding and releasing accumulated stress patterns in the body, restoring the integrity and function of the nervous system so the body can heal and perform at its optimal level
 - Engages the nervous system directly to promote never-ending neurological optimization
-- Uses a vitalistic, moment-to-moment analysis of the entire spinal system (tailbone through cranial bones) to identify exactly where the body is holding unnecessary tension
+- Uses a vitalistic, moment-to-moment analysis of the entire spinal system to identify exactly where the body is holding unnecessary tension
 - Emphasizes spinal cord TENSION over spinal cord pressure
 - Gentle, specific adjustments using a finger contact — no traditional bone cracking or forceful manipulations
 - The corrections continue working with the body's movements and breathing even after the visit

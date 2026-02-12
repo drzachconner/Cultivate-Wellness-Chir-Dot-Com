@@ -26,7 +26,7 @@ export default function TalskyTonal() {
     {
       icon: Sparkles,
       title: 'Vitalistic Analysis',
-      description: 'Uses a vitalistic, moment-to-moment analysis of the entire spinal system — from tailbone through cranial bones — to identify exactly where the body is holding unnecessary tension.',
+      description: 'Uses a vitalistic, moment-to-moment analysis of the entire spinal system to identify exactly where the body is holding unnecessary tension.',
     },
     {
       icon: Activity,
