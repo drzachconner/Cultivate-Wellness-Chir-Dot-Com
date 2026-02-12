@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Calendar, Users, BookOpen, Heart, Brain } from 'lucide-react';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
+import WorkshopSignupForm from '../components/WorkshopSignupForm';
 
 export default function EventsWorkshops() {
   const upcomingTopics = [
@@ -97,16 +98,10 @@ export default function EventsWorkshops() {
               <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4 text-center">
                 Be the First to Know
               </h2>
-              <p className="text-lg text-gray-700 mb-6 text-center">
+              <p className="text-lg text-gray-700 mb-8 text-center">
                 Sign up to be notified when our next workshop is scheduled.
               </p>
-              <iframe
-                src="https://form.jotform.com/232585320612147"
-                width="100%"
-                height="500"
-                style={{ border: 0 }}
-                title="Workshop Notification Signup"
-              />
+              <WorkshopSignupForm />
             </div>
           </div>
         </div>

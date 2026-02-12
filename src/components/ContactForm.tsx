@@ -1,103 +1,48 @@
 import { useState, FormEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { SITE } from '../data/site';
+import { Loader2 } from 'lucide-react';
 
 export default function ContactForm() {
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     setError('');
-    setSuccess(false);
 
     const formData = new FormData(e.currentTarget);
-    const rawData = Object.fromEntries(formData);
-
     const data = {
-      name: rawData.name as string,
-      email: rawData.email as string,
-      phone: rawData.phone as string,
-      message: rawData.message as string,
+      _formType: 'contact',
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      phone: formData.get('phone') as string,
+      message: formData.get('message') as string,
     };
 
     try {
-      const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-      const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-
-      console.log('=== Contact Form Debug ===');
-      console.log('Supabase URL:', supabaseUrl);
-      console.log('Has Anon Key:', !!supabaseAnonKey);
-      console.log('Form data:', { ...data, message: data.message?.substring(0, 50) });
-
-      if (!supabaseUrl || !supabaseAnonKey) {
-        throw new Error('Supabase configuration missing');
-      }
-
-      const apiUrl = `${supabaseUrl}/functions/v1/send-contact-email`;
-      console.log('Calling API:', apiUrl);
-
-      const response = await fetch(apiUrl, {
+      const response = await fetch('/.netlify/functions/form-handler', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${supabaseAnonKey}`,
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
 
-      console.log('Response status:', response.status);
-      console.log('Response OK:', response.ok);
-
       if (!response.ok) {
-        const errorText = await response.text();
-        console.error('Response error:', errorText);
-        throw new Error(`Server returned ${response.status}`);
+        throw new Error('Failed to send message');
       }
 
-      const responseText = await response.text();
-      console.log('Response text:', responseText);
-
-      let result;
-      try {
-        result = JSON.parse(responseText);
-        console.log('Parsed result:', result);
-      } catch {
-        console.error('Failed to parse JSON response');
-        throw new Error('Invalid response from server');
-      }
-
-      if (result.ok || response.status === 200) {
-        console.log('SUCCESS! Showing success message');
-        setError('');
-        setSuccess(true);
-        e.currentTarget.reset();
-        setTimeout(() => setSuccess(false), 5000);
-      } else {
-        console.error('Result not OK:', result);
-        throw new Error(result.error || 'Failed to send');
-      }
+      navigate('/thanks');
     } catch (err) {
-      console.error('=== Contact Form Error ===');
-      console.error(err);
+      console.error('Contact form error:', err);
       setError('Failed to send. Please check your connection or call us directly.');
-    } finally {
       setLoading(false);
     }
   };
 
   return (
     <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-4">
-      {success && (
-        <div
-          role="status"
-          aria-live="polite"
-          className="p-4 bg-green-100 text-green-800 rounded-lg"
-        >
-          Message sent! We'll reply within 24 hours.
-        </div>
-      )}
       {error && (
         <div role="alert" aria-live="assertive" className="p-4 bg-red-100 text-red-800 rounded-lg">
           {error}
@@ -106,7 +51,7 @@ export default function ContactForm() {
 
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-          Name
+          Name *
         </label>
         <input
           id="name"
@@ -116,13 +61,13 @@ export default function ContactForm() {
           maxLength={120}
           required
           autoComplete="name"
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark focus:border-transparent"
         />
       </div>
 
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-          Email
+          Email *
         </label>
         <input
           id="email"
@@ -132,12 +77,8 @@ export default function ContactForm() {
           required
           autoComplete="email"
           inputMode="email"
-          aria-describedby="email-help"
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark focus:border-transparent"
         />
-        <p id="email-help" className="text-xs text-gray-500 mt-1">
-          We'll only use this to contact you about your inquiry.
-        </p>
       </div>
 
       <div>
@@ -148,37 +89,42 @@ export default function ContactForm() {
           id="phone"
           type="tel"
           name="phone"
-          placeholder="555-123-4567"
+          placeholder="(555) 555-5555"
           autoComplete="tel"
           inputMode="tel"
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark focus:border-transparent"
         />
       </div>
 
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-          Message
+          Message *
         </label>
         <textarea
           id="message"
           name="message"
-          placeholder="Your message..."
+          placeholder="How can we help you?"
           required
           minLength={10}
           maxLength={2000}
           rows={5}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark focus:border-transparent resize-none"
         ></textarea>
       </div>
-
-      <input type="hidden" name="company" defaultValue="" />
 
       <button
         type="submit"
         disabled={loading}
-        className="w-full px-4 py-3 bg-primary-dark text-white font-semibold rounded-lg hover:bg-primary-accent disabled:opacity-50 disabled:cursor-not-allowed transition"
+        className="w-full px-4 py-3 bg-primary-dark text-white font-semibold rounded-lg hover:bg-primary-accent disabled:opacity-50 disabled:cursor-not-allowed transition flex items-center justify-center gap-2"
       >
-        {loading ? 'Sending...' : 'Send Message'}
+        {loading ? (
+          <>
+            <Loader2 className="animate-spin" size={20} />
+            Sending...
+          </>
+        ) : (
+          'Send Message'
+        )}
       </button>
 
       <p className="text-xs text-gray-600 mt-2">

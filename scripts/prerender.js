@@ -25,13 +25,13 @@ const routes = [
   '/privacy',
   '/thanks',
   '/3-ways-to-poop',
-  '/3-steps-transition',
   '/rhkn-guide',
   '/3-ways-to-sleep',
   '/free-guides-for-parents',
   '/talsky-tonal-chiropractic',
   '/insight-scans',
   '/answers',
+  '/thank-you-for-your-submission',
 ];
 
 async function prerender() {

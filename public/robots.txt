@@ -1,10 +1,12 @@
 # Cultivate Wellness Chiropractic - Robots Configuration
 # Last updated: 2025-10-20
 
-# Default crawlers - Allow all content except thank you pages
+# Default crawlers - Allow all content except private pages
 User-agent: *
 Allow: /
 Disallow: /thanks
+Disallow: /thank-you-for-your-submission
+Disallow: /guides/
 
 # Google Search - Full access
 User-agent: Googlebot

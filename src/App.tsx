@@ -19,7 +19,6 @@ const Prenatal = lazy(() => import('./pages/Prenatal'));
 const Family = lazy(() => import('./pages/Family'));
 const NewPatientCenter = lazy(() => import('./pages/NewPatientCenter'));
 const NewPatientForms = lazy(() => import('./pages/NewPatientForms'));
-const RequestAppointment = lazy(() => import('./pages/RequestAppointment'));
 const ScheduleAppointment = lazy(() => import('./pages/ScheduleAppointment'));
 const EventsWorkshops = lazy(() => import('./pages/EventsWorkshops'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -27,13 +26,13 @@ const Privacy = lazy(() => import('./pages/Privacy'));
 const Thanks = lazy(() => import('./pages/Thanks'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const ThreeWaysToPoop = lazy(() => import('./pages/ThreeWaysToPoop'));
-const ThreeStepsTransition = lazy(() => import('./pages/ThreeStepsTransition'));
 const RHKNGuide = lazy(() => import('./pages/RHKNGuide'));
 const ThreeWaysToSleep = lazy(() => import('./pages/ThreeWaysToSleep'));
 const FreeGuidesForParents = lazy(() => import('./pages/FreeGuidesForParents'));
 const TalskyTonal = lazy(() => import('./pages/TalskyTonal'));
 const InsightScans = lazy(() => import('./pages/InsightScans'));
 const AnswerHub = lazy(() => import('./pages/AnswerHub'));
+const ThankYouSubmission = lazy(() => import('./pages/ThankYouSubmission'));
 
 // Loading fallback for lazy-loaded pages
 function PageLoader() {
@@ -109,13 +108,13 @@ function App() {
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/thanks" element={<Thanks />} />
               <Route path="/3-ways-to-poop" element={<ThreeWaysToPoop />} />
-              <Route path="/3-steps-transition" element={<ThreeStepsTransition />} />
               <Route path="/rhkn-guide" element={<RHKNGuide />} />
               <Route path="/3-ways-to-sleep" element={<ThreeWaysToSleep />} />
               <Route path="/free-guides-for-parents" element={<FreeGuidesForParents />} />
               <Route path="/talsky-tonal-chiropractic" element={<TalskyTonal />} />
               <Route path="/insight-scans" element={<InsightScans />} />
               <Route path="/answers" element={<AnswerHub />} />
+              <Route path="/thank-you-for-your-submission" element={<ThankYouSubmission />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

@@ -2,6 +2,7 @@ import { SITE } from '../data/site';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
+import GuideForm from '../components/GuideForm';
 
 export default function ThreeWaysToPoop() {
   return (
@@ -35,17 +36,11 @@ export default function ThreeWaysToPoop() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Download Your Free Guide</h2>
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 mb-8">
               Discover three simple, effective strategies to support your child's digestive health naturally.
-              Fill out the form below to receive your guide instantly.
+              Fill out the form below to receive your guide instantly via email.
             </p>
-            <iframe
-              src="https://form.jotform.com/232886042433153"
-              width="100%"
-              height="700"
-              style={{ border: 0 }}
-              title="3 Ways to Poop Better Guide"
-            />
+            <GuideForm guideId="3-ways-to-poop" />
           </div>
         </div>
       </section>

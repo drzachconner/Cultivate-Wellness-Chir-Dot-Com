@@ -37,3 +37,8 @@
 /robots.txt
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=3600
+
+# Private guides - prevent search indexing
+/guides/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, no-cache

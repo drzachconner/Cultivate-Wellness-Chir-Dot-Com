@@ -9,8 +9,8 @@ export default function MeetDrZach() {
   return (
     <>
       <Seo
-        title="Meet Dr. Zach Conner"
-        description="Learn about Dr. Zach Conner, founder of Cultivate Wellness Chiropractic, and his mission to bring transformative neurologically-focused chiropractic care to families."
+        title="Meet Dr. Zach Conner | Rochester Hills Chiropractor"
+        description="Dr. Zach Conner, Rochester Hills chiropractor and certified Talsky Tonal teacher. Specializing in pediatric, prenatal & family chiropractic care. Learn more!"
         canonical="/meet-dr-zach"
         ogImage="/images/dr-zach.webp"
       />
@@ -45,7 +45,7 @@ export default function MeetDrZach() {
                 My Chiropractic Journey 🌱
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                I am on a mission to bring this transformative chiropractic care to my community. My journey as a chiropractor began at Life University, where I attended over 60 seminars on various chiropractic techniques. During this time, I was drawn towards Talsky Tonal Chiropractic because of its respect for the intelligence of the body and its highly effective, yet very gentle application. It was a passion that led me to become one of only two authorized teachers for this work.
+                I am on a mission to bring this transformative chiropractic care to my community. My journey as a chiropractor began at Life University, where I attended over 60 seminars on various chiropractic techniques. During this time, I was drawn towards <a href="https://talskytonal.com" target="_blank" rel="noopener noreferrer" className="text-primary-dark font-semibold hover:text-primary-accent underline">Talsky Tonal Chiropractic</a> because of its respect for the intelligence of the body and its highly effective, yet very gentle application. It was a passion that led me to become one of only two authorized teachers for this work.
               </p>
             </div>
 

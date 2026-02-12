@@ -93,7 +93,7 @@ export default function TalskyTonal() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">What is Talsky Tonal Chiropractic?</h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Talsky Tonal Chiropractic is an advanced chiropractic approach developed by Dr. Marvin
+              <a href="https://talskytonal.com" target="_blank" rel="noopener noreferrer" className="text-primary-dark font-semibold hover:text-primary-accent underline">Talsky Tonal Chiropractic</a> is an advanced chiropractic approach developed by Dr. Marvin
               Talsky in 2001. Dr. Talsky, who has been practicing since 1965 and graduated from Palmer
               College of Chiropractic in 1963, co-founded the renowned Torque Release Technique in 1995
               before developing this unique tonal method.

@@ -25,19 +25,13 @@ export default function FreeGuidesForParents() {
       image: '/images/pooping-guide.webp',
       link: '/3-ways-to-poop',
     },
-    {
-      title: '3 Steps to Smoothing Transitions for Sensory Kids',
-      description: 'Essential strategies to help your child navigate major life changes with ease.',
-      image: '/images/transitions-guide.webp',
-      link: '/3-steps-transition',
-    },
   ];
 
   return (
     <>
       <Seo
         title="Free Guides for Parents"
-        description="Download free guides to help your child thrive. Expert advice on sleep, digestion, transitions, and natural wellness."
+        description="Download free guides to help your child thrive. Expert advice on sleep, digestion, and natural wellness."
         canonical="/free-guides-for-parents"
         ogImage="/images/guides-hero-new.webp"
       />
@@ -59,7 +53,7 @@ export default function FreeGuidesForParents() {
             Free Guides for Parents
           </h1>
           <p className="text-lg text-white text-center max-w-3xl mx-auto">
-            Download our expert guides to help your child thrive naturally. From better sleep to smoother transitions, we're here to support your family's wellness journey.
+            Download our expert guides to help your child thrive naturally. From better sleep to healthy digestion, we're here to support your family's wellness journey.
           </p>
         </div>
       </section>

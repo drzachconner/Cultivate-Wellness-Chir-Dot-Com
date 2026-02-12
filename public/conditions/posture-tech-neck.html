@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Neck & Posture Problems | Cultivate Wellness Chiropractic</title>
+  <meta name="description" content="Chiropractic care for tech neck and modern posture problems in Rochester Hills, MI. Drug-free solutions for forward head posture and screen-related spinal stress.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif; line-height: 1.7; color: #333; background: #f8f9fa; }
+    h1, h2, h3, h4 { font-family: 'Work Sans', 'Segoe UI', Arial, sans-serif; }
+    .container { max-width: 900px; margin: 0 auto; background: white; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+    .header { background: linear-gradient(135deg, #002d4e 0%, #405e84 100%); color: white; padding: 50px 40px; text-align: center; }
+    .header h1 { font-size: 2.2em; margin-bottom: 10px; }
+    .header .subtitle { font-size: 1.1em; opacity: 0.9; }
+    .content { padding: 40px; }
+    h2 { color: #002d4e; font-size: 1.6em; margin: 35px 0 20px 0; padding-bottom: 10px; border-bottom: 3px solid #6383ab; }
+    h3 { color: #405e84; font-size: 1.3em; margin: 25px 0 15px 0; }
+    p { margin-bottom: 15px; }
+    ul, ol { margin: 15px 0 20px 25px; }
+    li { margin-bottom: 10px; }
+    .highlight { background: #e8f4fc; padding: 20px; border-left: 4px solid #6383ab; margin: 25px 0; border-radius: 0 8px 8px 0; }
+    .posture-box { background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 25px; border-radius: 8px; margin: 25px 0; border: 2px solid #6383ab; }
+    .posture-box h3 { color: #002d4e; margin-bottom: 15px; }
+    .symptom-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; margin: 25px 0; }
+    .symptom-card { background: #f0f7ff; padding: 15px; border-radius: 8px; text-align: center; }
+    .symptom-card .icon { font-size: 2em; margin-bottom: 10px; }
+    .approach-card { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #002d4e; }
+    .results-box { background: #e8f5e9; padding: 20px; border-left: 4px solid #4caf50; margin: 25px 0; border-radius: 0 8px 8px 0; }
+    .tips-box { background: #fff8e1; padding: 20px; border-left: 4px solid #ffc107; margin: 25px 0; border-radius: 0 8px 8px 0; }
+    .stat-box { background: #002d4e; color: white; padding: 25px; border-radius: 8px; margin: 25px 0; text-align: center; }
+    .stat-box .number { font-size: 3em; font-weight: 700; color: #6383ab; }
+    .stat-box p { margin: 10px 0 0 0; font-size: 1.1em; }
+    .exercise-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin: 25px 0; }
+    .exercise-card { background: #f0f7ff; padding: 20px; border-radius: 8px; border-left: 4px solid #405e84; }
+    .exercise-card h4 { color: #002d4e; margin-bottom: 10px; }
+    .children-alert { background: #ffebee; padding: 20px; border-left: 4px solid #e57373; margin: 25px 0; border-radius: 0 8px 8px 0; }
+
+    /* CTA Banner */
+    .cta-banner {
+      background: #002d4e;
+      color: white;
+      padding: 50px 40px;
+      text-align: center;
+    }
+    .cta-banner h3 {
+      color: white;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+    .cta-banner p {
+      font-size: 1.1em;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: #002d4e;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+    .cta-btn:hover {
+      background: #405e84;
+      color: white;
+    }
+
+    /* Back Link */
+    .back-link {
+      display: inline-block;
+      padding: 15px 40px;
+      color: #6383ab;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .back-link:hover { color: #002d4e; }
+
+    @media (max-width: 768px) {
+      .header { padding: 40px 20px; }
+      .header h1 { font-size: 1.8em; }
+      .content { padding: 20px; }
+      .symptom-grid { grid-template-columns: 1fr 1fr; }
+      .stat-box .number { font-size: 2.2em; }
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Tech Neck & Posture Problems - Chiropractic Care",
+  "description": "Chiropractic care for tech neck, forward head posture, and modern posture problems at Cultivate Wellness Chiropractic in Rochester Hills, MI.",
+  "url": "https://cultivatewellnesschiro.com/conditions/posture-tech-neck.html",
+  "publisher": {
+    "@type": "Chiropractor",
+    "name": "Cultivate Wellness Chiropractic",
+    "telephone": "(248) 221-1118",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1460 Walton Blvd., Ste. 210",
+      "addressLocality": "Rochester Hills",
+      "addressRegion": "MI",
+      "postalCode": "48309"
+    },
+    "url": "https://cultivatewellnesschiro.com"
+  },
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Tech Neck",
+    "alternateName": ["Forward Head Posture", "Text Neck", "Computer Neck"],
+    "associatedAnatomy": {
+      "@type": "AnatomicalStructure",
+      "name": "Cervical Spine"
+    }
+  }
+}
+</script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Tech Neck & Posture Problems</h1>
+      <div class="subtitle">Restoring Spinal Alignment in the Digital Age</div>
+    </div>
+
+    <div class="content">
+      <p>In today's screen-dominated world, poor posture has become an epidemic. "Tech neck"—the forward head position from constantly looking down at devices—affects millions of people of all ages. At Cultivate Wellness Chiropractic, we help restore proper spinal alignment and nervous system function using gentle, effective chiropractic care.</p>
+
+      <div class="highlight">
+        <strong>Did you know?</strong> For every inch your head moves forward from its natural position, it adds approximately 10 extra pounds of pressure on your cervical spine. Many people carry their head 2-3 inches forward, placing 20-30 extra pounds of stress on their neck!
+      </div>
+
+      <h2>What Is Tech Neck?</h2>
+
+      <p>Tech neck (also called "text neck" or "forward head posture") is a modern postural syndrome caused by the repetitive stress of looking down at screens, phones, tablets, and computers. Over time, this position causes:</p>
+
+      <ul>
+        <li>Forward migration of the head relative to the shoulders</li>
+        <li>Rounding of the upper back (kyphosis)</li>
+        <li>Tight, shortened muscles in the front of the neck</li>
+        <li>Weak, overstretched muscles in the back of the neck and upper back</li>
+        <li>Loss of the natural cervical curve</li>
+        <li>Increased stress on spinal discs, joints, and nerves</li>
+      </ul>
+
+      <div class="stat-box">
+        <div class="number">5+ Hours</div>
+        <p>Average daily screen time for American adults—not including work</p>
+      </div>
+
+      <h2>Modern Posture Problems</h2>
+
+      <p>Tech neck is just one aspect of the postural crisis we face today. Other common issues include:</p>
+
+      <h3>Sedentary Lifestyle Effects</h3>
+      <ul>
+        <li><strong>Prolonged sitting:</strong> Weakens core and gluteal muscles, tightens hip flexors</li>
+        <li><strong>Desk work posture:</strong> Shoulders rolled forward, chin jutting out</li>
+        <li><strong>Couch slouching:</strong> Compression of the lumbar spine</li>
+        <li><strong>Car commuting:</strong> Hours in unsupportive positions</li>
+      </ul>
+
+      <h3>Common Postural Patterns We See</h3>
+      <ul>
+        <li><strong>Forward head carriage:</strong> Head positioned in front of shoulders</li>
+        <li><strong>Rounded shoulders:</strong> Protracted scapulae and tight pectorals</li>
+        <li><strong>Hyperkyphosis:</strong> Excessive upper back curvature ("hunchback")</li>
+        <li><strong>Anterior pelvic tilt:</strong> Excessive lower back curve from tight hip flexors</li>
+        <li><strong>Sway back posture:</strong> Hips pushed forward with flattened lower back</li>
+      </ul>
+
+      <h2>Effects on Spine & Nervous System</h2>
+
+      <div class="posture-box">
+        <h3>The Cascade of Dysfunction</h3>
+        <p>Poor posture isn't just a cosmetic concern—it fundamentally affects how your body functions:</p>
+        <ul style="margin-top: 15px;">
+          <li><strong>Spinal misalignment (subluxation):</strong> Vertebrae shift out of proper position</li>
+          <li><strong>Disc degeneration:</strong> Abnormal loading accelerates wear and tear</li>
+          <li><strong>Nerve interference:</strong> Compressed or irritated nerves affect organ function</li>
+          <li><strong>Muscle imbalance:</strong> Some muscles become tight, others weak and inhibited</li>
+          <li><strong>Reduced lung capacity:</strong> Slouching limits breathing and oxygen intake</li>
+          <li><strong>Impaired circulation:</strong> Poor posture restricts blood flow</li>
+          <li><strong>Mood and energy effects:</strong> Research links posture to depression and fatigue</li>
+        </ul>
+      </div>
+
+      <h3>Common Symptoms of Poor Posture</h3>
+
+      <div class="symptom-grid">
+        <div class="symptom-card">
+          <div class="icon">😣</div>
+          <h4>Neck Pain</h4>
+          <p>Chronic tension and stiffness</p>
+        </div>
+        <div class="symptom-card">
+          <div class="icon">🤕</div>
+          <h4>Headaches</h4>
+          <p>Tension and cervicogenic types</p>
+        </div>
+        <div class="symptom-card">
+          <div class="icon">💪</div>
+          <h4>Shoulder Pain</h4>
+          <p>Upper trapezius tightness</p>
+        </div>
+        <div class="symptom-card">
+          <div class="icon">🔙</div>
+          <h4>Upper Back Pain</h4>
+          <p>Between the shoulder blades</p>
+        </div>
+        <div class="symptom-card">
+          <div class="icon">✋</div>
+          <h4>Arm Tingling</h4>
+          <p>Nerve compression symptoms</p>
+        </div>
+        <div class="symptom-card">
+          <div class="icon">😴</div>
+          <h4>Fatigue</h4>
+          <p>Poor posture drains energy</p>
+        </div>
+        <div class="symptom-card">
+          <div class="icon">😮‍💨</div>
+          <h4>Breathing Issues</h4>
+          <p>Reduced lung expansion</p>
+        </div>
+        <div class="symptom-card">
+          <div class="icon">🤯</div>
+          <h4>Jaw Problems</h4>
+          <p>TMJ dysfunction</p>
+        </div>
+      </div>
+
+      <h2>Forward Head Posture: A Closer Look</h2>
+
+      <p>Forward head posture (FHP) deserves special attention because it's so prevalent and has such significant effects:</p>
+
+      <h3>How FHP Develops</h3>
+      <ol>
+        <li>Repeated looking down at devices</li>
+        <li>Suboccipital muscles (base of skull) tighten to keep eyes level</li>
+        <li>Deep neck flexors become weak and inhibited</li>
+        <li>Upper cervical joints become hypermobile (unstable)</li>
+        <li>Lower cervical joints become hypomobile (restricted)</li>
+        <li>Pattern becomes "locked in" over time</li>
+      </ol>
+
+      <h3>Why It Matters</h3>
+      <p>The upper cervical spine is particularly critical because:</p>
+      <ul>
+        <li>It houses the brain stem—the "master control center" for vital functions</li>
+        <li>Blood flow to the brain passes through vertebral arteries here</li>
+        <li>The vagus nerve, affecting digestion and relaxation, originates nearby</li>
+        <li>Proprioceptive input (body position sense) is dense in this region</li>
+        <li>Misalignment here affects the entire spine's compensation patterns</li>
+      </ul>
+
+      <h2>Children and Screens</h2>
+
+      <div class="children-alert">
+        <h3>A Growing Concern for Our Kids</h3>
+        <p>Children are particularly vulnerable to tech neck and postural problems:</p>
+        <ul style="margin-top: 15px;">
+          <li><strong>Developing spines:</strong> Still forming and highly adaptable—for better or worse</li>
+          <li><strong>Earlier exposure:</strong> Children now use devices from toddler age</li>
+          <li><strong>More screen time:</strong> Average child: 5-7 hours daily</li>
+          <li><strong>Heavier heads:</strong> Children's heads are proportionally larger relative to their bodies</li>
+          <li><strong>Weaker musculature:</strong> Still developing neck and postural muscles</li>
+          <li><strong>Poor ergonomics:</strong> Adult-sized furniture and devices</li>
+        </ul>
+        <p style="margin-top: 15px;"><strong>Early intervention is crucial.</strong> Postural patterns established in childhood often persist into adulthood and become progressively harder to correct.</p>
+      </div>
+
+      <h3>Signs Your Child May Have Posture Problems</h3>
+      <ul>
+        <li>Head noticeably forward when standing naturally</li>
+        <li>Rounded shoulders or "hunched" appearance</li>
+        <li>Complaints of neck or back pain</li>
+        <li>Headaches, especially after screen use</li>
+        <li>Difficulty sitting up straight</li>
+        <li>One shoulder higher than the other</li>
+        <li>Fatigue and difficulty concentrating</li>
+      </ul>
+
+      <h2>Our Approach</h2>
+
+      <div class="approach-card">
+        <h3>1. Comprehensive Posture & Spinal Assessment</h3>
+        <p>We begin with a thorough evaluation including:</p>
+        <ul>
+          <li>Detailed posture analysis from multiple angles</li>
+          <li>Range of motion testing</li>
+          <li>Neurological examination</li>
+          <li>COREscore testing to assess nervous system function</li>
+          <li>Spinal palpation to identify areas of restriction and subluxation</li>
+          <li>Discussion of lifestyle factors and daily habits</li>
+        </ul>
+      </div>
+
+      <div class="approach-card">
+        <h3>2. Gentle Chiropractic Adjustments</h3>
+        <p>Using Talsky Tonal Chiropractic (TTC) techniques, we address:</p>
+        <ul>
+          <li>Upper cervical misalignments affecting head position</li>
+          <li>Thoracic subluxations contributing to rounded posture</li>
+          <li>Spinal tension patterns that perpetuate poor posture</li>
+          <li>Nervous system interference affecting muscle tone and function</li>
+        </ul>
+        <p style="margin-top: 15px;">Our approach is gentle and precise—no twisting, cracking, or forceful manipulation.</p>
+      </div>
+
+      <div class="approach-card">
+        <h3>3. Progressive Care & Education</h3>
+        <p>Posture correction takes time. We support your progress through:</p>
+        <ul>
+          <li>Regular adjustments to reinforce proper alignment</li>
+          <li>Ergonomic guidance for work and home</li>
+          <li>Postural exercises and stretches</li>
+          <li>Progress tracking with periodic re-evaluations</li>
+          <li>Lifestyle modifications to prevent recurrence</li>
+        </ul>
+      </div>
+
+      <h2>Exercises & Tips for Better Posture</h2>
+
+      <div class="tips-box">
+        <h3>Ergonomic Quick Wins</h3>
+        <ul>
+          <li><strong>Screen at eye level:</strong> Top of monitor at or slightly below eye height</li>
+          <li><strong>Phone posture:</strong> Bring device to face, don't bring face to device</li>
+          <li><strong>Take breaks:</strong> Every 20-30 minutes, look up and move</li>
+          <li><strong>Standing desk option:</strong> Alternate between sitting and standing</li>
+          <li><strong>Supportive chair:</strong> Lumbar support, feet flat on floor</li>
+          <li><strong>Sleep position:</strong> Proper pillow height to maintain neutral neck</li>
+        </ul>
+      </div>
+
+      <div class="exercise-grid">
+        <div class="exercise-card">
+          <h4>Chin Tucks</h4>
+          <p>Gently draw your chin straight back (like making a "double chin") while keeping eyes level. Hold 5 seconds, repeat 10 times. This strengthens deep neck flexors and counteracts forward head posture.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Doorway Stretch</h4>
+          <p>Stand in a doorway with arms at 90 degrees on the frame. Step forward gently until you feel a stretch across your chest and front of shoulders. Hold 30 seconds. Helps open tight pectorals from rounding forward.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Scapular Squeezes</h4>
+          <p>Squeeze shoulder blades together and slightly down, as if trying to put them in your back pockets. Hold 5 seconds, repeat 10 times. Strengthens rhomboids and lower traps.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Wall Angels</h4>
+          <p>Stand with back against wall, arms in "goalpost" position. Slowly slide arms up and down while keeping contact with wall. 10 repetitions. Great for thoracic mobility and posture awareness.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Thoracic Extension</h4>
+          <p>Using a foam roller placed horizontally across mid-back, gently extend backward over it. Move roller to different levels of thoracic spine. Helps restore upper back curve.</p>
+        </div>
+        <div class="exercise-card">
+          <h4>Neck Stretches</h4>
+          <p>Gently tilt ear toward shoulder, hold 30 seconds each side. For deeper stretch, place hand on opposite side of head with light pressure. Releases tight upper trapezius and scalenes.</p>
+        </div>
+      </div>
+
+      <p><strong>Important:</strong> These exercises complement but don't replace chiropractic care. If you experience pain with any exercise, stop and discuss with us at your next visit.</p>
+
+      <h2>What Patients Report</h2>
+
+      <div class="results-box">
+        <p>While individual results vary, patients commonly experience:</p>
+        <ul style="margin-top: 15px;">
+          <li>Significant reduction in neck pain and stiffness</li>
+          <li>Fewer tension headaches</li>
+          <li>Improved range of motion in neck and shoulders</li>
+          <li>Visibly better posture—standing taller</li>
+          <li>Less fatigue and more energy</li>
+          <li>Better breathing and reduced chest tightness</li>
+          <li>Improved sleep quality</li>
+          <li>Greater awareness of posture throughout the day</li>
+          <li>Ability to work at computers longer without discomfort</li>
+          <li>Reduced reliance on pain medication</li>
+        </ul>
+        <p style="margin-top: 15px;"><em>"I didn't realize how much my posture was affecting everything until it started improving. I breathe better, sleep better, and have so much less pain at work."</em></p>
+      </div>
+
+      <h2>Getting Started</h2>
+
+      <p>Ready to address your tech neck and posture concerns? Here's how to begin:</p>
+
+      <ol>
+        <li><strong>Schedule a consultation:</strong> We'll discuss your posture concerns, symptoms, and daily habits</li>
+        <li><strong>Comprehensive evaluation:</strong> Including posture analysis, spinal exam, and neurological testing</li>
+        <li><strong>Clear findings report:</strong> We'll show you exactly what we found and explain our recommendations</li>
+        <li><strong>Gentle care plan:</strong> TTC adjustments tailored to your specific postural patterns</li>
+        <li><strong>Ongoing support:</strong> Exercises, ergonomic guidance, and progress monitoring</li>
+      </ol>
+
+      <p>It's never too early—or too late—to improve your posture. The sooner you address postural stress, the easier it is to correct and the less long-term damage accumulates.</p>
+
+      <div class="highlight">
+        <strong>For parents:</strong> If your child spends significant time on devices, a posture check is a wise investment in their long-term spinal health. We love working with families to establish healthy habits early.
+      </div>
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="cta-banner">
+      <h3>Correct Your Posture Naturally</h3>
+      <p>Discover how gentle chiropractic care can help restore your spinal alignment and relieve tech neck symptoms.</p>
+      <a href="https://cultivatewellnesschiro.janeapp.com/" class="cta-btn">
+        Schedule Your Posture Assessment
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+      </a>
+    </div>
+
+    <a href="index.html" class="back-link">&larr; Back to All Conditions</a>
+  </div>
+</body>
+</html>
