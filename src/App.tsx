@@ -33,6 +33,8 @@ const TalskyTonal = lazy(() => import('./pages/TalskyTonal'));
 const InsightScans = lazy(() => import('./pages/InsightScans'));
 const AnswerHub = lazy(() => import('./pages/AnswerHub'));
 const ThankYouSubmission = lazy(() => import('./pages/ThankYouSubmission'));
+const ConditionIndex = lazy(() => import('./pages/conditions/ConditionIndex'));
+const ConditionPageWrapper = lazy(() => import('./pages/conditions/ConditionPageWrapper'));
 
 // Loading fallback for lazy-loaded pages
 function PageLoader() {
@@ -115,6 +117,8 @@ function App() {
               <Route path="/insight-scans" element={<InsightScans />} />
               <Route path="/answers" element={<AnswerHub />} />
               <Route path="/thank-you-for-your-submission" element={<ThankYouSubmission />} />
+              <Route path="/conditions" element={<ConditionIndex />} />
+              <Route path="/conditions/:slug" element={<ConditionPageWrapper />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

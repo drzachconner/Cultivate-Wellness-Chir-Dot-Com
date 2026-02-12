@@ -1,0 +1,55 @@
+import {
+  Baby, Heart, Shield, Smile, Brain, Activity, Zap, Target,
+  Eye, Ear, Moon, Sun, Flame, Wind, Droplets, Stethoscope,
+  HandHeart, Users, Sparkles, TrendingUp, Clock, AlertCircle,
+  CheckCircle, Star, Bone, Dumbbell, Leaf, ThermometerSun,
+  Puzzle, Lightbulb, HeartPulse, Flower2, TreePine, Waves,
+  CircleDot, ScanLine, Hand, Footprints, Milestone, type LucideIcon,
+} from 'lucide-react';
+
+const ICON_MAP: Record<string, LucideIcon> = {
+  baby: Baby,
+  heart: Heart,
+  shield: Shield,
+  smile: Smile,
+  brain: Brain,
+  activity: Activity,
+  zap: Zap,
+  target: Target,
+  eye: Eye,
+  ear: Ear,
+  moon: Moon,
+  sun: Sun,
+  flame: Flame,
+  wind: Wind,
+  droplets: Droplets,
+  stethoscope: Stethoscope,
+  'hand-heart': HandHeart,
+  users: Users,
+  sparkles: Sparkles,
+  'trending-up': TrendingUp,
+  clock: Clock,
+  'alert-circle': AlertCircle,
+  'check-circle': CheckCircle,
+  star: Star,
+  bone: Bone,
+  dumbbell: Dumbbell,
+  leaf: Leaf,
+  'thermometer-sun': ThermometerSun,
+  puzzle: Puzzle,
+  lightbulb: Lightbulb,
+  'heart-pulse': HeartPulse,
+  flower: Flower2,
+  'tree-pine': TreePine,
+  waves: Waves,
+  'circle-dot': CircleDot,
+  'scan-line': ScanLine,
+  hand: Hand,
+  footprints: Footprints,
+  milestone: Milestone,
+};
+
+export function resolveIcon(name?: string): LucideIcon {
+  if (!name) return Star;
+  return ICON_MAP[name] || Star;
+}
