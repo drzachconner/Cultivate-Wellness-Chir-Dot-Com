@@ -62,6 +62,7 @@ export default function ChatbotWidget() {
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -90,6 +91,25 @@ export default function ChatbotWidget() {
       document.body.style.overflow = '';
     };
   }, [isOpen]);
+
+  // Show tooltip after delay to promote chatbot (8s to avoid overlap with MergerNotification)
+  useEffect(() => {
+    if (sessionStorage.getItem('chatTooltipDismissed')) return;
+    const timer = setTimeout(() => {
+      setShowTooltip(true);
+    }, 8000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const dismissTooltip = () => {
+    setShowTooltip(false);
+    sessionStorage.setItem('chatTooltipDismissed', 'true');
+  };
+
+  const handleOpenChat = () => {
+    setIsOpen(true);
+    if (showTooltip) dismissTooltip();
+  };
 
   const sendMessage = async (text: string) => {
     if (!text.trim() || isLoading) return;
@@ -148,10 +168,27 @@ export default function ChatbotWidget() {
 
   return (
     <>
+      {/* Chat Tooltip */}
+      {!isOpen && showTooltip && (
+        <div className="fixed bottom-20 right-4 z-50 max-md:bottom-36 animate-bounce">
+          <div className="bg-white rounded-lg shadow-lg border border-gray-200 px-4 py-2.5 flex items-center gap-2">
+            <span className="text-sm font-medium text-gray-800">Ask me anything!</span>
+            <button
+              onClick={dismissTooltip}
+              className="text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label="Dismiss tooltip"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+          <div className="w-3 h-3 bg-white border-b border-r border-gray-200 rotate-45 absolute -bottom-1.5 right-6" />
+        </div>
+      )}
+
       {/* Chat Button */}
       {!isOpen && (
         <button
-          onClick={() => setIsOpen(true)}
+          onClick={handleOpenChat}
           className="fixed bottom-4 right-4 z-50 w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-105 bg-primary-dark hover:bg-primary-accent max-md:bottom-20"
           aria-label="Open chat"
         >
