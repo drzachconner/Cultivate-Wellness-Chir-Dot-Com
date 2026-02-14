@@ -1,4 +1,4 @@
-# Netlify SPA redirect - serve index.html for all routes
-# This allows React Router to handle client-side routing
+# SPA fallback - serve index.html for all routes
+# Allows React Router to handle client-side routing
 
-/*    /index.html   200
+/* /index.html 200

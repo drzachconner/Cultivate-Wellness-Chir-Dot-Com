@@ -1,6 +1,7 @@
-import type { Handler, HandlerEvent, HandlerContext } from '@netlify/functions';
+interface Env {
+  OPENAI_API_KEY: string;
+}
 
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const OPENAI_API_URL = 'https://api.openai.com/v1/chat/completions';
 
 const SYSTEM_PROMPT = `You are a friendly, knowledgeable assistant for Cultivate Wellness Chiropractic. You must ONLY use the information provided below. Do NOT make up information or use generic chiropractic terminology that contradicts what's written here.
@@ -452,11 +453,26 @@ interface RequestBody {
   messages: ChatMessage[];
 }
 
-const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) => {
-  // CORS headers
-  const allowedOrigins = ['https://www.cultivatewellnesschiro.com', 'https://cultivatewellnesschiro.com'];
-  const origin = event.headers?.origin || '';
-  const corsOrigin = allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
+const allowedOrigins = ['https://www.cultivatewellnesschiro.com', 'https://cultivatewellnesschiro.com'];
+
+function getCorsOrigin(request: Request): string {
+  const origin = request.headers.get('Origin') || '';
+  return allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
+}
+
+export const onRequestOptions: PagesFunction<Env> = async (context) => {
+  return new Response(null, {
+    status: 204,
+    headers: {
+      'Access-Control-Allow-Origin': getCorsOrigin(context.request),
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    },
+  });
+};
+
+export const onRequestPost: PagesFunction<Env> = async (context) => {
+  const corsOrigin = getCorsOrigin(context.request);
   const headers = {
     'Access-Control-Allow-Origin': corsOrigin,
     'Access-Control-Allow-Headers': 'Content-Type',
@@ -464,38 +480,25 @@ const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) =
     'Content-Type': 'application/json',
   };
 
-  // Handle preflight
-  if (event.httpMethod === 'OPTIONS') {
-    return { statusCode: 204, headers, body: '' };
-  }
+  const apiKey = context.env.OPENAI_API_KEY;
 
-  if (event.httpMethod !== 'POST') {
-    return {
-      statusCode: 405,
-      headers,
-      body: JSON.stringify({ error: 'Method not allowed' }),
-    };
-  }
-
-  if (!OPENAI_API_KEY) {
+  if (!apiKey) {
     console.error('OPENAI_API_KEY not configured');
-    return {
-      statusCode: 500,
+    return new Response(JSON.stringify({ error: 'Chat service not configured' }), {
+      status: 500,
       headers,
-      body: JSON.stringify({ error: 'Chat service not configured' }),
-    };
+    });
   }
 
   try {
-    const body: RequestBody = JSON.parse(event.body || '{}');
+    const body: RequestBody = await context.request.json();
     const { messages } = body;
 
     if (!messages || !Array.isArray(messages)) {
-      return {
-        statusCode: 400,
+      return new Response(JSON.stringify({ error: 'Messages array required' }), {
+        status: 400,
         headers,
-        body: JSON.stringify({ error: 'Messages array required' }),
-      };
+      });
     }
 
     // Prepend system prompt
@@ -507,7 +510,7 @@ const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) =
     const response = await fetch(OPENAI_API_URL, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${OPENAI_API_KEY}`,
+        'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
@@ -521,29 +524,24 @@ const handler: Handler = async (event: HandlerEvent, _context: HandlerContext) =
     if (!response.ok) {
       const errorText = await response.text();
       console.error('OpenAI API error:', response.status, errorText);
-      return {
-        statusCode: 500,
+      return new Response(JSON.stringify({ error: 'Failed to get response from AI' }), {
+        status: 500,
         headers,
-        body: JSON.stringify({ error: 'Failed to get response from AI' }),
-      };
+      });
     }
 
-    const data = await response.json();
+    const data: any = await response.json();
     const reply = data.choices?.[0]?.message?.content || "I'm sorry, I couldn't generate a response. Please try again.";
 
-    return {
-      statusCode: 200,
+    return new Response(JSON.stringify({ reply }), {
+      status: 200,
       headers,
-      body: JSON.stringify({ reply }),
-    };
+    });
   } catch (error) {
     console.error('Chat function error:', error);
-    return {
-      statusCode: 500,
+    return new Response(JSON.stringify({ error: 'Internal server error' }), {
+      status: 500,
       headers,
-      body: JSON.stringify({ error: 'Internal server error' }),
-    };
+    });
   }
 };
-
-export { handler };

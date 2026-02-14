@@ -1,9 +1,11 @@
-import type { Handler } from '@netlify/functions';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || 'zachary.riles.conner@gmail.com';
-const BREVO_API_KEY = process.env.BREVO_API_KEY;
+interface Env {
+  RESEND_API_KEY: string;
+  NOTIFICATION_EMAIL?: string;
+  BREVO_API_KEY?: string;
+}
+
 const SITE_URL = 'https://www.cultivatewellnesschiro.com';
 
 // Guide configuration
@@ -11,31 +13,29 @@ const GUIDES: Record<string, { title: string; pdfUrl: string; subject: string }>
   'rhkn-guide': {
     title: 'Raising Healthy Kids Naturally',
     pdfUrl: `${SITE_URL}/guides/raising-healthy-kids-naturally.pdf`,
-    subject: '🌿 FREE PDF: Raising Healthy Kids Naturally',
+    subject: '\u{1F33F} FREE PDF: Raising Healthy Kids Naturally',
   },
   '3-ways-to-sleep': {
     title: '3 Ways to Improve Your Child\'s Sleep',
     pdfUrl: `${SITE_URL}/guides/3-ways-to-sleep.pdf`,
-    subject: '😴 3 Ways to Improve Your Child\'s Sleep (Free PDF)',
+    subject: '\u{1F634} 3 Ways to Improve Your Child\'s Sleep (Free PDF)',
   },
   '3-ways-to-poop': {
     title: '3 Ways to Get Your Child Pooping',
     pdfUrl: `${SITE_URL}/guides/3-ways-to-poop.pdf`,
-    subject: '👶 3 Ways to Get Your Child Pooping (Free PDF)',
+    subject: '\u{1F476} 3 Ways to Get Your Child Pooping (Free PDF)',
   },
 };
 
 // Add contact to Brevo
-async function addToBrevo(email: string, firstName: string, listId: number = 2) {
-  if (!BREVO_API_KEY) return;
-
+async function addToBrevo(email: string, firstName: string, brevoApiKey: string, listId: number = 2) {
   try {
     const response = await fetch('https://api.brevo.com/v3/contacts', {
       method: 'POST',
       headers: {
         'accept': 'application/json',
         'content-type': 'application/json',
-        'api-key': BREVO_API_KEY,
+        'api-key': brevoApiKey,
       },
       body: JSON.stringify({
         email,
@@ -151,11 +151,26 @@ function generateNotificationEmail(formType: string, data: Record<string, string
   `.trim();
 }
 
-export const handler: Handler = async (event) => {
-  // CORS headers
-  const allowedOrigins = ['https://www.cultivatewellnesschiro.com', 'https://cultivatewellnesschiro.com'];
-  const origin = event.headers?.origin || '';
-  const corsOrigin = allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
+const allowedOrigins = ['https://www.cultivatewellnesschiro.com', 'https://cultivatewellnesschiro.com'];
+
+function getCorsOrigin(request: Request): string {
+  const origin = request.headers.get('Origin') || '';
+  return allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
+}
+
+export const onRequestOptions: PagesFunction<Env> = async (context) => {
+  return new Response(null, {
+    status: 204,
+    headers: {
+      'Access-Control-Allow-Origin': getCorsOrigin(context.request),
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    },
+  });
+};
+
+export const onRequestPost: PagesFunction<Env> = async (context) => {
+  const corsOrigin = getCorsOrigin(context.request);
   const headers = {
     'Access-Control-Allow-Origin': corsOrigin,
     'Access-Control-Allow-Headers': 'Content-Type',
@@ -163,31 +178,20 @@ export const handler: Handler = async (event) => {
     'Content-Type': 'application/json',
   };
 
-  // Handle preflight
-  if (event.httpMethod === 'OPTIONS') {
-    return { statusCode: 204, headers, body: '' };
-  }
-
-  if (event.httpMethod !== 'POST') {
-    return {
-      statusCode: 405,
-      headers,
-      body: JSON.stringify({ error: 'Method not allowed' }),
-    };
-  }
-
   try {
-    const data = JSON.parse(event.body || '{}');
+    const resend = new Resend(context.env.RESEND_API_KEY);
+    const notificationEmail = context.env.NOTIFICATION_EMAIL || 'zachary.riles.conner@gmail.com';
+
+    const data = await context.request.json() as Record<string, any>;
     const formType = data._formType || 'contact';
     const firstName = data.firstName || data.name?.split(' ')[0] || 'Parent';
     const email = data.email;
 
     if (!email) {
-      return {
-        statusCode: 400,
+      return new Response(JSON.stringify({ error: 'Email is required' }), {
+        status: 400,
         headers,
-        body: JSON.stringify({ error: 'Email is required' }),
-      };
+      });
     }
 
     // Send notification email to owner
@@ -201,7 +205,7 @@ export const handler: Handler = async (event) => {
 
     await resend.emails.send({
       from: 'Cultivate Wellness <forms@cultivatewellnesschiro.com>',
-      to: NOTIFICATION_EMAIL,
+      to: notificationEmail,
       subject: notificationSubject,
       html: generateNotificationEmail(formType, data),
     });
@@ -219,19 +223,19 @@ export const handler: Handler = async (event) => {
     }
 
     // Add to Brevo contact list
-    await addToBrevo(email, firstName);
+    if (context.env.BREVO_API_KEY) {
+      await addToBrevo(email, firstName, context.env.BREVO_API_KEY);
+    }
 
-    return {
-      statusCode: 200,
+    return new Response(JSON.stringify({ success: true }), {
+      status: 200,
       headers,
-      body: JSON.stringify({ success: true }),
-    };
+    });
   } catch (error) {
     console.error('Form handler error:', error);
-    return {
-      statusCode: 500,
+    return new Response(JSON.stringify({ error: 'Failed to process form submission' }), {
+      status: 500,
       headers,
-      body: JSON.stringify({ error: 'Failed to process form submission' }),
-    };
+    });
   }
 };
