@@ -26,9 +26,11 @@ Chiropractic clinic website for Dr. Zach Conner. React + TypeScript + Vite + Tai
 ## Cloudflare Pages Config
 - **Project name**: cultivate-wellness-chiro
 - **Pages URL**: cultivate-wellness-chiro.pages.dev
-- **Custom domains**: cultivatewellnesschiro.com, www.cultivatewellnesschiro.com
+- **Custom domains**: cultivatewellnesschiro.com, www.cultivatewellnesschiro.com (both live, SSL working)
 - **Domain registrar**: Squarespace (nameservers updated to Cloudflare Feb 2026)
 - **GitHub**: github.com/drzachconner/Cultivate-Wellness-Chir-Dot-Com
+- **Auto-deploy**: GitHub Actions (`.github/workflows/deploy.yml`) — push to main triggers build + deploy
+- **GitHub secrets set**: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID
 - **Build command**: `npm run build`
 - **Build output**: `dist`
 - **Functions dir**: `functions/` (auto-detected by Cloudflare Pages)
@@ -46,10 +48,14 @@ Chiropractic clinic website for Dr. Zach Conner. React + TypeScript + Vite + Tai
 - `public/_redirects` handles SPA fallback
 - `public/_headers` handles security and caching headers
 
+## Status (as of Feb 14, 2026)
+- Site is LIVE on both cultivatewellnesschiro.com and www.cultivatewellnesschiro.com
+- SSL working, auto-deploy working (GitHub Actions)
+- Migrated from Netlify to Cloudflare Pages (completed)
+
 ## Still TODO
-- Verify chatbot and contact form work on custom domain (SSL provisioning in progress)
-- Connect GitHub repo to Cloudflare Pages for auto-deploy (currently manual deploy via wrangler)
+- Verify chatbot and contact form work on custom domain
 - Rotate API keys (Groq, Resend, Brevo) — current ones in .env may be exposed in git history
 - Re-enable SSG prerendering once basic build works (change build command back to `build:ssg`)
 - Data inconsistency: site.ts still has old Rochester Hills address, but merger notification references new Royal Oak location
-- Cancel Netlify subscription after both sites fully verified
+- Cancel Netlify subscription after both sites fully verified on Cloudflare
