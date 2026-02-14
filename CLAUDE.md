@@ -25,13 +25,18 @@ Chiropractic clinic website for Dr. Zach Conner. React + TypeScript + Vite + Tai
 
 ## Cloudflare Pages Config
 - **Project name**: cultivate-wellness-chiro
-- **URL**: www.cultivatewellnesschiro.com
+- **Pages URL**: cultivate-wellness-chiro.pages.dev
+- **Custom domains**: cultivatewellnesschiro.com, www.cultivatewellnesschiro.com
+- **Domain registrar**: Squarespace (nameservers updated to Cloudflare Feb 2026)
 - **GitHub**: github.com/drzachconner/Cultivate-Wellness-Chir-Dot-Com
 - **Build command**: `npm run build`
 - **Build output**: `dist`
 - **Functions dir**: `functions/` (auto-detected by Cloudflare Pages)
 - **Config file**: `wrangler.toml`
-- **Env vars needed in Cloudflare Pages**: OPENAI_API_KEY, RESEND_API_KEY, BREVO_API_KEY, NOTIFICATION_EMAIL
+- **Compatibility**: `nodejs_compat` flag, date `2024-09-23`
+- **DNS zone**: cultivatewellnesschiro.com (zone ID: 00d364c0d7d8bae4f050fc53e14a2ffb)
+- **Cloudflare account ID**: a353a0ba5d6753a262466e799f1d960c
+- **Env vars set in Cloudflare Pages**: OPENAI_API_KEY, RESEND_API_KEY, BREVO_API_KEY, NOTIFICATION_EMAIL
 
 ## Cloudflare Pages Functions
 - Functions use the `onRequestPost` / `onRequestOptions` export pattern
@@ -42,9 +47,9 @@ Chiropractic clinic website for Dr. Zach Conner. React + TypeScript + Vite + Tai
 - `public/_headers` handles security and caching headers
 
 ## Still TODO
-- Set env vars in Cloudflare Pages dashboard: OPENAI_API_KEY, RESEND_API_KEY, BREVO_API_KEY, NOTIFICATION_EMAIL
+- Verify chatbot and contact form work on custom domain (SSL provisioning in progress)
+- Connect GitHub repo to Cloudflare Pages for auto-deploy (currently manual deploy via wrangler)
 - Rotate API keys (Groq, Resend, Brevo) — current ones in .env may be exposed in git history
 - Re-enable SSG prerendering once basic build works (change build command back to `build:ssg`)
-- Verify chatbot and contact form work after migration
 - Data inconsistency: site.ts still has old Rochester Hills address, but merger notification references new Royal Oak location
-- Update DNS to point to Cloudflare Pages
+- Cancel Netlify subscription after both sites fully verified
