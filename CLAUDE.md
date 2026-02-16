@@ -59,3 +59,110 @@ Chiropractic clinic website for Dr. Zach Conner. React + TypeScript + Vite + Tai
 - Re-enable SSG prerendering once basic build works (change build command back to `build:ssg`)
 - Data inconsistency: site.ts still has old Rochester Hills address, but merger notification references new Royal Oak location
 - Cancel Netlify subscription after both sites fully verified on Cloudflare
+
+## Directory Structure
+
+```
+Cultivate-Wellness-Chir-Dot-Com/
+├── .github/workflows/deploy.yml   # GitHub Actions → Cloudflare Pages
+├── functions/api/
+│   ├── chat.ts                    # AI chatbot (OpenAI GPT-5 Mini)
+│   └── form-handler.ts           # Contact form + guide download handler
+├── public/
+│   ├── images/                    # Optimized site assets
+│   ├── _headers                   # Security + caching headers
+│   ├── _redirects                 # SPA fallback
+│   ├── sitemap.xml
+│   └── robots.txt
+├── scripts/
+│   ├── prerender.js               # Puppeteer SSG prerender script
+│   └── extract-content.js         # Content extraction utility
+├── src/
+│   ├── components/
+│   │   ├── conditions/            # Condition-specific page components (7 files)
+│   │   ├── Header.tsx / Footer.tsx
+│   │   ├── ChatbotWidget.tsx      # Public AI chatbot
+│   │   ├── ContactForm.tsx / GuideForm.tsx
+│   │   ├── Hero.tsx / CTABanner.tsx
+│   │   ├── FloatingReviewWidget.tsx
+│   │   ├── MergerNotification.tsx # Practice merger banner
+│   │   └── Seo.tsx / JsonLd.tsx   # SEO + structured data
+│   ├── data/site.ts               # Single source of truth (business info)
+│   ├── lib/schema.ts              # Schema.org generators
+│   ├── pages/                     # Route-level page components
+│   ├── hooks/                     # Custom React hooks
+│   └── App.tsx / main.tsx / routes.ts
+├── supabase/                      # Supabase config (if used)
+├── wrangler.toml                  # Cloudflare Pages config
+├── tailwind.config.js
+├── vite.config.ts
+└── package.json
+```
+
+## Development Conventions
+
+- **Framework**: React 18 + TypeScript + Vite 5 + Tailwind CSS 3
+- **Routing**: React Router 7 with lazy-loaded pages via `React.lazy()`
+- **Data pattern**: All business info centralized in `src/data/site.ts` — pages consume this, never hardcode
+- **Schema**: `src/lib/schema.ts` generates Schema.org JSON-LD from `site.ts`
+- **Serverless**: Cloudflare Pages Functions use `onRequestPost` / `onRequestOptions` exports; env vars via `context.env`
+- **Styling**: Tailwind utility classes with custom brand color palette
+- **SEO**: Every page includes `<Seo>` and `<JsonLd>` components
+- **SSG**: Custom Puppeteer prerender script (`scripts/prerender.js`) — currently disabled, to be re-enabled
+- **Condition pages**: 7 reusable components in `src/components/conditions/` (Hero, Approach, Benefits, FAQ, Outcomes, Symptoms, Related)
+
+## Workflow
+
+```bash
+# Development
+npm install          # Install dependencies
+npm run dev          # Vite dev server with HMR
+
+# Build & Deploy
+npm run build        # Production build to dist/
+# npm run build:ssg  # SSG build (disabled, re-enable after basic build verified)
+
+# Auto-deploy: push to main → GitHub Actions → Cloudflare Pages
+git push origin main
+
+# Prerendering (manual)
+node scripts/prerender.js
+```
+
+## Environment Variables
+
+| Variable | Location | Purpose |
+|----------|----------|---------|
+| `OPENAI_API_KEY` | Cloudflare Pages | GPT-5 Mini chatbot in `functions/api/chat.ts` |
+| `RESEND_API_KEY` | Cloudflare Pages | Transactional email via Resend |
+| `BREVO_API_KEY` | Cloudflare Pages | Email marketing list signup |
+| `NOTIFICATION_EMAIL` | Cloudflare Pages | Contact form notification recipient |
+| `CLOUDFLARE_API_TOKEN` | GitHub Secrets | Deploy to Cloudflare Pages |
+| `CLOUDFLARE_ACCOUNT_ID` | GitHub Secrets | Cloudflare account identifier |
+
+## Security
+
+- `.env` is in `.gitignore` — never commit credentials
+- API keys may be exposed in early git history — rotation recommended (see TODO)
+- Cloudflare Pages Functions access secrets via `context.env`, not `process.env`
+- `public/_headers` sets security headers (CSP, X-Frame-Options, etc.)
+- Resend SDK instantiated inside handlers to avoid leaking env vars at module scope
+
+## Subagent Orchestration
+
+| Agent | When to Use |
+|-------|-------------|
+| `codebase-explorer` | Before modifying shared data (`site.ts`, `schema.ts`) or understanding component dependencies |
+| `pre-push-validator` | Before every push — lint, type-check, build verification |
+| `secrets-env-auditor` | Before commits — scan for leaked API keys (especially given git history exposure) |
+| `security-scanner` | After changes to `functions/api/chat.ts` or `form-handler.ts` (auth, input validation) |
+| `browser-navigator` | Test chatbot widget, contact form, guide download, floating review widget |
+| `docs-weaver` | After adding new pages or modifying API endpoints |
+| `performance-profiler` | After adding new lazy-loaded routes or enabling SSG prerendering |
+
+## MCP Connections
+
+| Server | Purpose |
+|--------|---------|
+| `filesystem` | Read/write project files during development |
+| `gdrive-mcp` | Access Google Drive assets (images, documents) if needed |
