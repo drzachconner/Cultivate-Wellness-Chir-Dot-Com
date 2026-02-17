@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from 'react';
-import { MessageCircle, X, Send, Loader2 } from 'lucide-react';
+import { useState, useRef, useEffect, useCallback } from 'react';
+import { MessageCircle, X, Send, Loader2, Mic } from 'lucide-react';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -77,6 +77,13 @@ function formatMessage(text: string) {
   });
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const SpeechRecognitionCtor: (new () => any) | null =
+  typeof window !== 'undefined'
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    ? (window as any).SpeechRecognition ?? (window as any).webkitSpeechRecognition ?? null
+    : null;
+
 export default function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
@@ -85,8 +92,56 @@ export default function ChatbotWidget() {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
+  const [isListening, setIsListening] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const recognitionRef = useRef<any>(null);
+
+  const stopListening = useCallback(() => {
+    recognitionRef.current?.stop();
+    setIsListening(false);
+  }, []);
+
+  const toggleListening = useCallback(() => {
+    if (isListening) { stopListening(); return; }
+    if (!SpeechRecognitionCtor) return;
+
+    const recognition = new SpeechRecognitionCtor();
+    recognition.lang = 'en-US';
+    recognition.interimResults = true;
+    recognition.continuous = true;
+
+    let finalTranscript = '';
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    recognition.onresult = (event: any) => {
+      let interim = '';
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        const t = event.results[i][0].transcript;
+        if (event.results[i].isFinal) { finalTranscript += t; } else { interim += t; }
+      }
+      setInput((prev) => {
+        const prefix = prev ? prev.trimEnd() + ' ' : '';
+        return prefix + finalTranscript + interim;
+      });
+    };
+
+    recognition.onerror = () => { setIsListening(false); };
+    recognition.onend = () => { setIsListening(false); recognitionRef.current = null; };
+
+    recognitionRef.current = recognition;
+    recognition.start();
+    setIsListening(true);
+  }, [isListening, stopListening]);
+
+  useEffect(() => {
+    if (isLoading && isListening) stopListening();
+  }, [isLoading, isListening, stopListening]);
+
+  useEffect(() => {
+    return () => { recognitionRef.current?.stop(); };
+  }, []);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -300,6 +355,24 @@ export default function ChatbotWidget() {
           {/* Input Form */}
           <form onSubmit={handleSubmit} className="p-3 border-t border-gray-200 bg-white shrink-0">
             <div className="flex gap-2 items-center">
+              {SpeechRecognitionCtor && (
+                <button
+                  type="button"
+                  onClick={toggleListening}
+                  className={`w-11 h-11 shrink-0 flex items-center justify-center rounded-lg transition-colors ${
+                    isListening ? 'text-red-500' : 'text-gray-400 hover:text-gray-600'
+                  }`}
+                  disabled={isLoading}
+                  aria-label={isListening ? 'Stop dictation' : 'Start dictation'}
+                >
+                  <span className="relative flex items-center justify-center">
+                    <Mic className="w-5 h-5" />
+                    {isListening && (
+                      <span className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 bg-red-500 rounded-full animate-pulse" />
+                    )}
+                  </span>
+                </button>
+              )}
               <input
                 ref={inputRef}
                 type="text"
