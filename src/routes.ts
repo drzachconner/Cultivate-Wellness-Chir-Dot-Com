@@ -33,10 +33,15 @@ export const routes = [
   '/conditions/bedwetting-enuresis',
   '/conditions/torticollis',
   '/conditions/sensory-processing-disorder',
+  '/conditions/plagiocephaly',
+  '/conditions/tongue-tie-lip-tie',
+  '/conditions/developmental-delays',
+  '/conditions/speech-language-delays',
   // Pregnancy & Women
   '/conditions/breastfeeding-latch-issues',
   '/conditions/postpartum-recovery',
   '/conditions/webster-technique',
+  '/conditions/pregnancy-back-pain',
   // Neurological
   '/conditions/pandas-pans',
   '/conditions/seizure-disorders',
@@ -49,6 +54,10 @@ export const routes = [
   '/conditions/tmj-jaw-pain',
   '/conditions/posture-tech-neck',
   '/conditions/vertigo-dizziness',
+  '/conditions/whiplash-auto-injury',
+  '/conditions/pinched-nerves',
+  '/conditions/disc-herniation-degenerative',
+  '/conditions/spinal-stenosis',
   // General Wellness
   '/conditions/allergies-respiratory',
   '/conditions/digestive-gi-issues',
@@ -57,10 +66,16 @@ export const routes = [
   '/conditions/chronic-fatigue',
   '/conditions/fibromyalgia',
   '/conditions/gentle-chiropractic',
+  '/conditions/asthma',
+  '/conditions/acid-reflux-gerd',
+  '/conditions/ibs',
+  '/conditions/arthritis',
   // Special Populations
   '/conditions/senior-care',
   '/conditions/pots-dysautonomia',
   '/conditions/sports-performance',
   '/conditions/lyme-disease',
   '/conditions/scoliosis',
+  '/conditions/concussion-post-concussion',
+  '/conditions/long-covid',
 ];

@@ -10,11 +10,16 @@ import { earInfections } from './pediatric/ear-infections';
 import { bedwettingEnuresis } from './pediatric/bedwetting-enuresis';
 import { torticollis } from './pediatric/torticollis';
 import { sensoryProcessing } from './pediatric/sensory-processing-disorder';
+import { plagiocephaly } from './pediatric/plagiocephaly';
+import { tongueTieLipTie } from './pediatric/tongue-tie-lip-tie';
+import { developmentalDelays } from './pediatric/developmental-delays';
+import { speechLanguageDelays } from './pediatric/speech-language-delays';
 
 // Pregnancy & Women
 import { breastfeedingLatch } from './pregnancy-women/breastfeeding-latch-issues';
 import { postpartumRecovery } from './pregnancy-women/postpartum-recovery';
 import { websterTechnique } from './pregnancy-women/webster-technique';
+import { pregnancyBackPain } from './pregnancy-women/pregnancy-back-pain';
 
 // Neurological
 import { pandasPans } from './neurological/pandas-pans';
@@ -29,6 +34,10 @@ import { carpalTunnel } from './adult-pain/carpal-tunnel';
 import { tmjJawPain } from './adult-pain/tmj-jaw-pain';
 import { postureTechNeck } from './adult-pain/posture-tech-neck';
 import { vertigoDizziness } from './adult-pain/vertigo-dizziness';
+import { whiplashAutoInjury } from './adult-pain/whiplash-auto-injury';
+import { pinchedNerves } from './adult-pain/pinched-nerves';
+import { discHerniationDegenerative } from './adult-pain/disc-herniation-degenerative';
+import { spinalStenosis } from './adult-pain/spinal-stenosis';
 
 // General Wellness
 import { allergiesRespiratory } from './general-wellness/allergies-respiratory';
@@ -38,6 +47,10 @@ import { anxietyStress } from './general-wellness/anxiety-stress';
 import { chronicFatigue } from './general-wellness/chronic-fatigue';
 import { fibromyalgia } from './general-wellness/fibromyalgia';
 import { gentleChiropractic } from './general-wellness/gentle-chiropractic';
+import { asthma } from './general-wellness/asthma';
+import { acidRefluxGerd } from './general-wellness/acid-reflux-gerd';
+import { ibs } from './general-wellness/ibs';
+import { arthritis } from './general-wellness/arthritis';
 
 // Special Populations
 import { seniorCare } from './special-populations/senior-care';
@@ -45,6 +58,8 @@ import { potsDysautonomia } from './special-populations/pots-dysautonomia';
 import { sportsPerformance } from './special-populations/sports-performance';
 import { lymeDisease } from './special-populations/lyme-disease';
 import { scoliosis } from './special-populations/scoliosis';
+import { concussionPostConcussion } from './special-populations/concussion-post-concussion';
+import { longCovid } from './special-populations/long-covid';
 
 const ALL_CONDITIONS: ConditionPageData[] = [
   // Pediatric
@@ -56,10 +71,15 @@ const ALL_CONDITIONS: ConditionPageData[] = [
   bedwettingEnuresis,
   torticollis,
   sensoryProcessing,
+  plagiocephaly,
+  tongueTieLipTie,
+  developmentalDelays,
+  speechLanguageDelays,
   // Pregnancy & Women
   breastfeedingLatch,
   postpartumRecovery,
   websterTechnique,
+  pregnancyBackPain,
   // Neurological
   pandasPans,
   seizureDisorders,
@@ -72,6 +92,10 @@ const ALL_CONDITIONS: ConditionPageData[] = [
   tmjJawPain,
   postureTechNeck,
   vertigoDizziness,
+  whiplashAutoInjury,
+  pinchedNerves,
+  discHerniationDegenerative,
+  spinalStenosis,
   // General Wellness
   allergiesRespiratory,
   digestiveGiIssues,
@@ -80,12 +104,18 @@ const ALL_CONDITIONS: ConditionPageData[] = [
   chronicFatigue,
   fibromyalgia,
   gentleChiropractic,
+  asthma,
+  acidRefluxGerd,
+  ibs,
+  arthritis,
   // Special Populations
   seniorCare,
   potsDysautonomia,
   sportsPerformance,
   lymeDisease,
   scoliosis,
+  concussionPostConcussion,
+  longCovid,
 ];
 
 export function getConditionBySlug(slug: string): ConditionPageData | undefined {
