@@ -110,11 +110,11 @@ export default function WhatToExpect() {
                 </div>
 
                 {/* Text - right on even, left on odd (desktop) */}
-                <div className={`relative ${index % 2 === 1 ? 'md:order-1' : ''}`}>
-                  <span className="absolute -top-6 -left-3 text-8xl font-bold text-primary-dark/10 select-none pointer-events-none">
+                <div className={`${index % 2 === 1 ? 'md:order-1' : ''}`}>
+                  <div className="w-10 h-10 rounded-full bg-primary-dark flex items-center justify-center text-white font-bold text-sm mb-3">
                     {step.number}
-                  </span>
-                  <h3 className="relative text-2xl font-bold text-gray-900 mb-4">
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
                     {step.title}
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
