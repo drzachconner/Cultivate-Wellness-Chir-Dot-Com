@@ -100,7 +100,7 @@ export default function ConditionPage({ data }: Props) {
         </section>
       )}
 
-      {data.symptoms && <ConditionSymptoms data={data.symptoms} />}
+      {data.symptoms && <ConditionSymptoms data={data.symptoms} currentSlug={data.slug} />}
       {data.benefits && <ConditionBenefits data={data.benefits} />}
       {data.approach && <ConditionApproach data={data.approach} />}
       {data.outcomes && <ConditionOutcomes data={data.outcomes} />}

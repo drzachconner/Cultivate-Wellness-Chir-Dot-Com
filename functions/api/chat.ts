@@ -361,7 +361,7 @@ PEDIATRIC CONDITIONS:
 
 PREGNANCY & WOMEN'S HEALTH:
 
-- Breastfeeding & Latch Issues (/conditions/breastfeeding-latch-issues): Gentle support for nursing difficulties. Key signs: latch problems, side preference, fussy feeding, clicking sounds, poor weight gain. How we help: restores neck mobility, releases jaw tension, improves nerve function controlling sucking/swallowing. Outcomes: deeper latch, nursing both sides, pain-free feeding.
+- Breastfeeding & Latch Issues (/conditions/breastfeeding-latch-issues): Gentle support for nursing difficulties. Key signs: latch problems, side preference, fussy feeding, clicking sounds, poor weight gain. How we help: restores neck mobility, releases jaw tension, removes neurological interference affecting the nerves that control sucking, swallowing, and jaw function. Releases "stress stuck on" and held tension patterns in the neurospinal system. Outcomes: deeper latch, nursing both sides, pain-free feeding.
 
 - Postpartum Recovery (/conditions/postpartum-recovery): Supporting recovery after baby. Key concerns: back/neck/shoulder strain, pelvic pain/instability, wrist pain, nursing posture pain, fatigue. Outcomes: reduced pain, comfortable breastfeeding, improved pelvic stability, better energy, faster recovery.
 

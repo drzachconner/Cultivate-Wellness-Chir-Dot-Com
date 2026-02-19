@@ -128,7 +128,7 @@ export default function MergerNotification() {
       )}
 
       {/* Desktop: Original card design - centered at bottom */}
-      <div className="hidden md:block fixed bottom-4 left-1/2 -translate-x-1/2 z-40 max-w-sm animate-slide-in">
+      <div className="hidden md:block w-full animate-slide-in">
         <div
           className="bg-white rounded-lg shadow-2xl overflow-hidden border-2 transition-all duration-300"
           style={{ borderColor: '#002d4e' }}

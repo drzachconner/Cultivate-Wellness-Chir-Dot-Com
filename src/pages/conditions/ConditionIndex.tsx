@@ -35,11 +35,11 @@ export default function ConditionIndex() {
           />
         </div>
         <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary-dark/70 to-primary/60" />
+        <Breadcrumbs
+          items={[{ name: 'Conditions' }]}
+          className="absolute top-4 left-4 sm:left-6 lg:left-8 z-20 text-white/80 [&_a]:text-white/80 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white/50"
+        />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Breadcrumbs
-            items={[{ name: 'Conditions' }]}
-            className="mb-6 text-white/80 [&_a]:text-white/80 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white/50"
-          />
           <h1 className="text-4xl sm:text-5xl font-bold text-white text-center mb-6">
             Conditions We Help
           </h1>

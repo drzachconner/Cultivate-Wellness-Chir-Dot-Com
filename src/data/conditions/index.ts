@@ -144,5 +144,28 @@ export function getGroupedConditions(): Array<{
     .filter((g) => g.conditions.length > 0);
 }
 
+/**
+ * Find a condition whose title matches the given text (case-insensitive).
+ * Returns the slug if found, null otherwise.
+ * Checks exact match first, then substring containment in both directions.
+ */
+export function findConditionSlugByTitle(text: string): string | null {
+  const normalized = text.toLowerCase().trim();
+
+  // Exact match
+  for (const c of ALL_CONDITIONS) {
+    if (c.title.toLowerCase() === normalized) return c.slug;
+  }
+
+  // Substring: condition title contained in text, or text contained in condition title
+  for (const c of ALL_CONDITIONS) {
+    const condTitle = c.title.toLowerCase();
+    if (normalized.length >= 4 && condTitle.includes(normalized)) return c.slug;
+    if (condTitle.length >= 4 && normalized.includes(condTitle)) return c.slug;
+  }
+
+  return null;
+}
+
 export { CATEGORY_ORDER, CATEGORY_LABELS };
 export type { ConditionPageData, ConditionCategory };

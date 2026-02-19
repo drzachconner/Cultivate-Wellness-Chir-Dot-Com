@@ -280,7 +280,7 @@ export default function ChatbotWidget() {
     <>
       {/* Chat Tooltip */}
       {!isOpen && showTooltip && (
-        <div className="fixed bottom-20 right-4 z-50 max-md:bottom-36 animate-bounce">
+        <div className="fixed bottom-20 right-4 z-50 max-md:bottom-36">
           <div className="bg-white rounded-lg shadow-lg border border-gray-200 px-4 py-2.5 flex items-center gap-2">
             <span className="text-sm font-medium text-gray-800">Ask me anything!</span>
             <button

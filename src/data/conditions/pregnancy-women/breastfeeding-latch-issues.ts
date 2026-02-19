@@ -9,19 +9,19 @@ export const breastfeedingLatch: ConditionPageData = {
   seo: {
     title: 'Breastfeeding & Latch Issues | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic care for breastfeeding and latch difficulties. Dr. Zach at Cultivate Wellness helps identify and address structural issues affecting your baby\'s ability to nurse.',
+      'Gentle chiropractic care for breastfeeding and latch difficulties. Dr. Zach at Cultivate Wellness helps identify and release nervous system tension affecting your baby\'s ability to nurse.',
   },
   intro: [
-    'Struggling to breastfeed your newborn can be exhausting, frustrating, and heartbreaking. If you\'ve tried everything -- different positions, lactation consultants, nipple shields -- and your baby still struggles to latch or nurse effectively, there may be a structural component that gentle chiropractic care can address.',
-    'Effective breastfeeding requires coordinated movement of the jaw, tongue, neck, and cranial bones. Birth -- especially long, difficult, or assisted deliveries -- can create subtle misalignments in the upper cervical spine and cranial structures that affect the muscles and nerves involved in sucking, swallowing, and jaw function. Addressing these underlying structural issues can be the key to a successful breastfeeding journey.',
+    'Struggling to breastfeed your newborn can be exhausting, frustrating, and heartbreaking. If you\'ve tried everything -- different positions, lactation consultants, nipple shields -- and your baby still struggles to latch or nurse effectively, there may be tension on the nervous system that gentle chiropractic care can address.',
+    'Effective breastfeeding requires coordinated movement of the jaw, tongue, neck, and cranial bones. Birth -- especially long, difficult, or assisted deliveries -- can create "stress stuck on" in the neurospinal system, particularly around the brainstem, that interferes with the nerves involved in sucking, swallowing, and jaw function. Releasing this held tension can be the key to a successful breastfeeding journey.',
   ],
   highlightBox: {
     icon: 'heart',
     label: 'Important Reminder',
-    text: 'Breastfeeding shouldn\'t hurt. If nursing is painful or your baby is struggling, there\'s often a fixable reason. Birth can cause subluxations that affect the muscles and nerves needed for effective nursing. Don\'t give up -- let us help identify what\'s getting in the way.',
+    text: 'Breastfeeding shouldn\'t hurt. If nursing is painful or your baby is struggling, there\'s often a fixable reason. Birth can leave "stress stuck on" in the nervous system, creating held tension patterns that interfere with the nerves needed for effective nursing. Don\'t give up -- let us help identify what\'s getting in the way.',
   },
   symptoms: {
-    sectionTitle: 'Signs Your Baby May Have Structural Issues Affecting Nursing',
+    sectionTitle: 'Signs Your Baby May Have Nervous System Tension Affecting Nursing',
     items: [
       {
         icon: 'baby',
@@ -78,13 +78,13 @@ export const breastfeedingLatch: ConditionPageData = {
         icon: 'hand',
         title: 'Releases Jaw Tension',
         description:
-          'Allows proper mouth opening for a deep, effective latch. Addresses the muscular and structural components affecting jaw function.',
+          'Allows proper mouth opening for a deep, effective latch. Releases the held tension patterns affecting jaw function.',
       },
       {
         icon: 'brain',
         title: 'Improves Nerve Function',
         description:
-          'The nerves controlling sucking, swallowing, and tongue movement work better when spinal interference is removed.',
+          'The nerves controlling sucking, swallowing, and tongue movement work better when neurological interference is removed.',
       },
       {
         icon: 'sparkles',
@@ -102,12 +102,12 @@ export const breastfeedingLatch: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We evaluate your baby\'s spine, cranium, jaw, and neck mobility. We take a detailed history of the birth and feeding patterns to understand what structural factors may be contributing to the difficulty.',
+          'We evaluate your baby\'s nervous system using INSiGHT scans and assess jaw, neck, and cranial mobility. We take a detailed history of the birth and feeding patterns to understand where "stress stuck on" may be creating tension that\'s contributing to the difficulty.',
       },
       {
         title: 'Ultra-Gentle Adjustments',
         description:
-          'Using lighter pressure than you\'d use to check a ripe tomato, we address cervical misalignments, jaw tension, and cranial restrictions. There is no cracking or popping -- ever. Baby often sleeps through adjustments.',
+          'Using lighter pressure than you\'d use to check a ripe tomato, we address cervical misalignments, jaw tension, and cranial restrictions while releasing held tension patterns in the neurospinal system. There is no cracking or popping -- ever. Baby often sleeps through adjustments.',
       },
       {
         title: 'Team Coordination & Follow-Up',
@@ -148,12 +148,12 @@ export const breastfeedingLatch: ConditionPageData = {
     {
       question: 'Do you work with lactation consultants?',
       answer:
-        'Absolutely. Breastfeeding issues often require a team approach. We coordinate with lactation consultants (IBCLCs), pediatricians, pediatric dentists, and speech/feeding therapists. Chiropractic addresses the structural component while other providers address technique, supply, and other factors.',
+        'Absolutely. Breastfeeding issues often require a team approach. We coordinate with lactation consultants (IBCLCs), pediatricians, pediatric dentists, and speech/feeding therapists. Chiropractic addresses the neurospinal tension component while other providers address technique, supply, and other factors.',
     },
     {
       question: 'When should I bring my baby in?',
       answer:
-        'As soon as you notice feeding difficulties. Newborns are welcome at any age -- we see babies as young as hours old. The sooner structural issues are addressed, the sooner breastfeeding can improve. Don\'t wait until you\'re at the point of giving up.',
+        'As soon as you notice feeding difficulties. Newborns are welcome at any age -- we see babies as young as hours old. The sooner nervous system tension is addressed, the sooner breastfeeding can improve. Don\'t wait until you\'re at the point of giving up.',
     },
   ],
   relatedConditions: [
@@ -172,13 +172,13 @@ export const breastfeedingLatch: ConditionPageData = {
     condition: {
       name: 'Breastfeeding Difficulties',
       description:
-        'Problems with infant breastfeeding including poor latch, side preference, painful nursing, and inefficient milk transfer, often related to structural issues in the infant\'s neck, jaw, or cranium.',
+        'Problems with infant breastfeeding including poor latch, side preference, painful nursing, and inefficient milk transfer, often related to nervous system tension from the birth process affecting the brainstem and neurospinal system.',
       wikipediaUrl: 'https://en.wikipedia.org/wiki/Breastfeeding_difficulties',
     },
     therapy: {
       name: 'Chiropractic Care',
       description:
-        'Ultra-gentle chiropractic adjustments for infants addressing cervical, cranial, and jaw misalignments that affect the muscles and nerves involved in sucking, swallowing, and effective breastfeeding.',
+        'Ultra-gentle neurologically-focused chiropractic care for infants, releasing held tension patterns in the neurospinal system that interfere with the nerves involved in sucking, swallowing, and effective breastfeeding.',
     },
     datePublished: '2026-02-12',
     dateModified: '2026-02-12',
