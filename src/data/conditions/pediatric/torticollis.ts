@@ -9,7 +9,7 @@ export const torticollis: ConditionPageData = {
   seo: {
     title: 'Torticollis Treatment for Babies | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic care for infant torticollis (wry neck). Dr. Zach at Cultivate Wellness uses ultra-gentle techniques to help your baby move freely and develop properly.',
+      'Gentle chiropractic care for infant torticollis (wry neck). At Cultivate Wellness, we use ultra-gentle techniques to help your baby move freely and develop properly.',
   },
   intro: [
     'Is your baby\'s head always tilted to one side? Do they have trouble turning their head both ways? Your baby may have torticollis -- a common condition that responds remarkably well to gentle chiropractic care. At Cultivate Wellness, we specialize in helping infants with torticollis using extremely gentle techniques.',
@@ -87,7 +87,7 @@ export const torticollis: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Torticollis',
     description:
-      'Dr. Zach provides extraordinarily gentle care designed specifically for infants with torticollis.',
+      'We provide extraordinarily gentle care designed specifically for infants with torticollis.',
     steps: [
       {
         title: 'Thorough Evaluation',
@@ -123,7 +123,7 @@ export const torticollis: ConditionPageData = {
     {
       question: 'Is chiropractic safe for my baby\'s torticollis?',
       answer:
-        'Yes. Dr. Zach uses incredibly gentle techniques designed specifically for infants. The pressure is about what you\'d use to check a ripe tomato -- lighter than light. There is no cracking or popping. Babies often fall asleep during their adjustments. Parents are with their baby the entire time.',
+        'Yes. Our doctors use incredibly gentle techniques designed specifically for infants. The pressure is about what you\'d use to check a ripe tomato -- lighter than light. There is no cracking or popping. Babies often fall asleep during their adjustments. Parents are with their baby the entire time.',
     },
     {
       question: 'What causes torticollis?',
@@ -138,7 +138,7 @@ export const torticollis: ConditionPageData = {
     {
       question: 'How many visits will my baby need?',
       answer:
-        'Most babies show significant improvement within 4-8 visits, typically scheduled 1-2 times per week initially. Dr. Zach will monitor progress and adjust the care plan based on your baby\'s response.',
+        'Most babies show significant improvement within 4-8 visits, typically scheduled 1-2 times per week initially. Our team will monitor progress and adjust the care plan based on your baby\'s response.',
     },
     {
       question: 'What other issues can torticollis cause?',

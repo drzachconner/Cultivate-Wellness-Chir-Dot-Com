@@ -9,7 +9,7 @@ export const digestiveGiIssues: ConditionPageData = {
   seo: {
     title: 'Digestive & GI Issues | Chiropractic Care Rochester Hills, MI',
     description:
-      'Natural chiropractic support for digestive issues, IBS, acid reflux, and gut health in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses the gut-brain connection.',
+      'Natural chiropractic support for digestive issues, IBS, acid reflux, and gut health in Rochester Hills, MI. At Cultivate Wellness, we address the gut-brain connection.',
   },
   intro: [
     'Digestive problems affect millions of people, often despite medication and dietary changes. What many do not realize is that the nervous system plays a crucial role in digestive function. At Cultivate Wellness, we address the nerve interference that may be contributing to your digestive issues.',
@@ -87,7 +87,7 @@ export const digestiveGiIssues: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach',
     description:
-      'Dr. Zach takes a thorough approach to digestive health, focusing on the nervous system connections that control your gut function.',
+      'Our team takes a thorough approach to digestive health, focusing on the nervous system connections that control your gut function.',
     steps: [
       {
         title: 'Comprehensive Assessment',
@@ -128,7 +128,7 @@ export const digestiveGiIssues: ConditionPageData = {
     {
       question: 'Can chiropractic care help with infant digestive issues like colic?',
       answer:
-        'Yes. Birth can be stressful to an infant\'s spine, and many babies with colic, reflux, constipation, and gas pain respond remarkably well to gentle chiropractic care. Dr. Zach uses extremely gentle techniques specifically adapted for infants.',
+        'Yes. Birth can be stressful to an infant\'s spine, and many babies with colic, reflux, constipation, and gas pain respond remarkably well to gentle chiropractic care. Our doctors use extremely gentle techniques specifically adapted for infants.',
     },
     {
       question: 'Should I continue seeing my gastroenterologist?',
@@ -138,7 +138,7 @@ export const digestiveGiIssues: ConditionPageData = {
     {
       question: 'How quickly will my digestion improve?',
       answer:
-        'Every person responds differently. Some patients notice improvement in digestive symptoms within the first few visits, while chronic conditions may take longer. Dr. Zach will track your progress through regular re-evaluations and adjust your care plan accordingly.',
+        'Every person responds differently. Some patients notice improvement in digestive symptoms within the first few visits, while chronic conditions may take longer. We will track your progress through regular re-evaluations and adjust your care plan accordingly.',
     },
     {
       question: 'Is chiropractic care safe if I have Crohn\'s or colitis?',
@@ -155,7 +155,7 @@ export const digestiveGiIssues: ConditionPageData = {
   cta: {
     title: 'Ready to Support Your Digestive Health?',
     description:
-      'Discover how addressing your nervous system may help your gut. Schedule a consultation with Dr. Zach today.',
+      'Discover how addressing your nervous system may help your gut. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

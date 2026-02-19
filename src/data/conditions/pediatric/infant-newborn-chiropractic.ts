@@ -9,7 +9,7 @@ export const infantNewborn: ConditionPageData = {
   seo: {
     title: 'Infant & Newborn Chiropractic Care | Rochester Hills, MI',
     description:
-      'Ultra-gentle chiropractic care for newborns and infants. Dr. Zach at Cultivate Wellness helps with colic, feeding issues, torticollis, and birth trauma in Rochester Hills, MI.',
+      'Ultra-gentle chiropractic care for newborns and infants. At Cultivate Wellness, we help with colic, feeding issues, torticollis, and birth trauma in Rochester Hills, MI.',
   },
   intro: [
     'The first months and years of life are the most critical for your baby\'s development. At Cultivate Wellness, we specialize in caring for the tiniest patients -- from hours-old newborns to curious toddlers taking their first steps. Our ultra-gentle techniques ensure your baby gets the best possible start.',
@@ -87,7 +87,7 @@ export const infantNewborn: ConditionPageData = {
   approach: {
     sectionTitle: 'What to Expect at Your Baby\'s First Visit',
     description:
-      'Dr. Zach takes a thorough, gentle approach to evaluating and caring for your infant.',
+      'Our team takes a thorough, gentle approach to evaluating and caring for your infant.',
     steps: [
       {
         title: 'Detailed History & Examination',
@@ -123,7 +123,7 @@ export const infantNewborn: ConditionPageData = {
     {
       question: 'Is chiropractic safe for newborns?',
       answer:
-        'Absolutely. Dr. Zach uses techniques specifically designed for infants. The pressure is about the same as checking a ripe tomato -- incredibly light. There is no cracking or popping. Babies routinely sleep through their adjustments. Research confirms the safety of pediatric chiropractic care.',
+        'Absolutely. Our doctors use techniques specifically designed for infants. The pressure is about the same as checking a ripe tomato -- incredibly light. There is no cracking or popping. Babies routinely sleep through their adjustments. Research confirms the safety of pediatric chiropractic care.',
     },
     {
       question: 'When should I bring my newborn in?',
@@ -138,12 +138,12 @@ export const infantNewborn: ConditionPageData = {
     {
       question: 'How many visits will my baby need?',
       answer:
-        'Every baby is different. Some respond quickly with just a few visits, while others benefit from regular care over several weeks. Dr. Zach will create a plan tailored to your baby\'s specific needs and adjust it based on their response.',
+        'Every baby is different. Some respond quickly with just a few visits, while others benefit from regular care over several weeks. We will create a plan tailored to your baby\'s specific needs and adjust it based on their response.',
     },
     {
       question: 'Any tips for the first visit?',
       answer:
-        'Bring a fed, rested baby when possible. Many parents schedule appointments right after nursing. And don\'t worry if baby fusses -- Dr. Zach is an expert at working with wiggly, crying babies!',
+        'Bring a fed, rested baby when possible. Many parents schedule appointments right after nursing. And don\'t worry if baby fusses -- our team is experienced at working with wiggly, crying babies!',
     },
   ],
   relatedConditions: [
@@ -155,7 +155,7 @@ export const infantNewborn: ConditionPageData = {
   cta: {
     title: 'Give Your Baby the Best Start',
     description:
-      'Schedule your newborn\'s first chiropractic evaluation today. Dr. Zach provides the gentlest care for your littlest family member.',
+      'Schedule your newborn\'s first chiropractic evaluation today. Our team provides the gentlest care for your littlest family member.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

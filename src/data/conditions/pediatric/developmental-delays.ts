@@ -9,7 +9,7 @@ export const developmentalDelays: ConditionPageData = {
   seo: {
     title: 'Developmental Delays Chiropractic Support | Rochester Hills, MI',
     description:
-      'Gentle chiropractic care to support children with developmental delays in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps optimize nervous system function for better milestone achievement.',
+      'Gentle chiropractic care to support children with developmental delays in Rochester Hills, MI. At Cultivate Wellness, we help optimize nervous system function for better milestone achievement.',
   },
   intro: [
     'When your child isn\'t meeting developmental milestones on time, it can be an anxious and confusing experience. At Cultivate Wellness, we support children with developmental delays by optimizing the nervous system that drives every aspect of growth -- from rolling over and crawling to walking, talking, and social engagement.',
@@ -80,14 +80,14 @@ export const developmentalDelays: ConditionPageData = {
         icon: 'hand',
         title: 'Extraordinarily Gentle',
         description:
-          'Dr. Zach uses fingertip pressure appropriate for each child\'s age and size. Children often enjoy their visits, and many parents are amazed at how comfortable the process is.',
+          'We use fingertip pressure appropriate for each child\'s age and size. Children often enjoy their visits, and many parents are amazed at how comfortable the process is.',
       },
     ],
   },
   approach: {
     sectionTitle: 'Our Approach to Developmental Support',
     description:
-      'Dr. Zach takes a comprehensive, whole-child approach that works alongside your child\'s existing care team.',
+      'Our team takes a comprehensive, whole-child approach that works alongside your child\'s existing care team.',
     steps: [
       {
         title: 'Comprehensive Evaluation',
@@ -128,7 +128,7 @@ export const developmentalDelays: ConditionPageData = {
     {
       question: 'Is chiropractic safe for children with developmental delays?',
       answer:
-        'Yes. Dr. Zach uses extraordinarily gentle techniques that are adapted to each child\'s age, size, and needs. There is no cracking or forceful manipulation. The techniques we use are safe for children of all ages and developmental levels.',
+        'Yes. Our doctors use extraordinarily gentle techniques that are adapted to each child\'s age, size, and needs. There is no cracking or forceful manipulation. The techniques we use are safe for children of all ages and developmental levels.',
     },
     {
       question: 'How does a spinal misalignment affect development?',
@@ -143,7 +143,7 @@ export const developmentalDelays: ConditionPageData = {
     {
       question: 'How many visits before we see improvement?',
       answer:
-        'Every child responds differently. Some parents notice changes within the first few visits, while others see gradual improvement over weeks. Dr. Zach performs regular evaluations and adjusts the care plan based on your child\'s progress.',
+        'Every child responds differently. Some parents notice changes within the first few visits, while others see gradual improvement over weeks. We perform regular evaluations and adjust the care plan based on your child\'s progress.',
     },
   ],
   relatedConditions: [
@@ -155,7 +155,7 @@ export const developmentalDelays: ConditionPageData = {
   cta: {
     title: 'Support Your Child\'s Development',
     description:
-      'Gentle, neurologically-focused chiropractic care may help your child reach their milestones. Schedule an evaluation with Dr. Zach today.',
+      'Gentle, neurologically-focused chiropractic care may help your child reach their milestones. Schedule an evaluation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

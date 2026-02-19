@@ -9,7 +9,7 @@ export const sensoryProcessing: ConditionPageData = {
   seo: {
     title: 'Sensory Processing Disorder | Chiropractic Support in Rochester Hills, MI',
     description:
-      'Gentle, neurologically-focused chiropractic care for children with sensory processing differences. Dr. Zach at Cultivate Wellness supports better sensory regulation naturally.',
+      'Gentle, neurologically-focused chiropractic care for children with sensory processing differences. At Cultivate Wellness, we support better sensory regulation naturally.',
   },
   intro: [
     'Sensory Processing Disorder affects how the brain receives and responds to information from the senses. For children with SPD, everyday experiences can be overwhelming, confusing, or underwhelming. At Cultivate Wellness, we specialize in supporting children with sensory differences through gentle, neurologically-focused care.',
@@ -97,7 +97,7 @@ export const sensoryProcessing: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to SPD',
     description:
-      'Dr. Zach specializes in caring for children with sensory and developmental differences, bringing deep understanding and patience to every visit.',
+      'Our team specializes in caring for children with sensory and developmental differences, bringing deep understanding and patience to every visit.',
     steps: [
       {
         title: 'Sensory-Sensitive Evaluation',
@@ -164,7 +164,7 @@ export const sensoryProcessing: ConditionPageData = {
   cta: {
     title: 'Help Your Child Navigate Their Sensory World',
     description:
-      'Schedule a consultation to learn how gentle, neurologically-focused chiropractic care can support your child\'s sensory processing. Dr. Zach provides patient, sensory-sensitive care.',
+      'Schedule a consultation to learn how gentle, neurologically-focused chiropractic care can support your child\'s sensory processing. We provide patient, sensory-sensitive care.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

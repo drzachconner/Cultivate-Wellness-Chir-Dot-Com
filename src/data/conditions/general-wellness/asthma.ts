@@ -9,7 +9,7 @@ export const asthma: ConditionPageData = {
   seo: {
     title: 'Asthma & Breathing Support | Chiropractic Care Rochester Hills, MI',
     description:
-      'Natural chiropractic support for asthma and breathing difficulties in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps optimize respiratory nervous system function.',
+      'Natural chiropractic support for asthma and breathing difficulties in Rochester Hills, MI. At Cultivate Wellness, we help optimize respiratory nervous system function.',
   },
   intro: [
     'Asthma and breathing difficulties affect millions of people of all ages, often requiring daily medication and limiting activity. While chiropractic care does not treat asthma directly, it supports the nervous system function that controls your respiratory system. At Cultivate Wellness, many patients report significant improvement in their breathing after beginning our gentle, neurologically-focused care.',
@@ -87,7 +87,7 @@ export const asthma: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Respiratory Support',
     description:
-      'Dr. Zach takes a whole-body approach to supporting your respiratory health through nervous system optimization.',
+      'We take a whole-body approach to supporting your respiratory health through nervous system optimization.',
     steps: [
       {
         title: 'Comprehensive Assessment',
@@ -133,7 +133,7 @@ export const asthma: ConditionPageData = {
     {
       question: 'Can children with asthma benefit from chiropractic care?',
       answer:
-        'Yes. Children respond particularly well to gentle chiropractic care. Many parents report significant improvement in their child\'s asthma symptoms, reduced need for medications, and fewer respiratory infections after beginning care with Dr. Zach.',
+        'Yes. Children respond particularly well to gentle chiropractic care. Many parents report significant improvement in their child\'s asthma symptoms, reduced need for medications, and fewer respiratory infections after beginning care with us.',
     },
     {
       question: 'How does a spinal misalignment affect breathing?',
@@ -143,7 +143,7 @@ export const asthma: ConditionPageData = {
     {
       question: 'How many visits before I notice improvement?',
       answer:
-        'Results vary. Some patients notice easier breathing within the first few visits, while chronic asthma may take longer to show improvement. Dr. Zach will evaluate your progress regularly and adjust your care plan accordingly.',
+        'Results vary. Some patients notice easier breathing within the first few visits, while chronic asthma may take longer to show improvement. Our team will evaluate your progress regularly and adjust your care plan accordingly.',
     },
   ],
   relatedConditions: [
@@ -155,7 +155,7 @@ export const asthma: ConditionPageData = {
   cta: {
     title: 'Breathe Easier Naturally',
     description:
-      'Discover how optimizing your nervous system may support better respiratory function. Schedule a consultation with Dr. Zach today.',
+      'Discover how optimizing your nervous system may support better respiratory function. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

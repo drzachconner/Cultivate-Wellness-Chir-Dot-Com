@@ -9,7 +9,7 @@ export const colicInfantDigestive: ConditionPageData = {
   seo: {
     title: 'Colic & Infant Digestive Issues | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic care for colic, reflux, and infant digestive distress. Dr. Zach at Cultivate Wellness addresses the nervous system factors contributing to your baby\'s discomfort.',
+      'Gentle chiropractic care for colic, reflux, and infant digestive distress. At Cultivate Wellness, we address the nervous system factors contributing to your baby\'s discomfort.',
   },
   intro: [
     'Few things are more distressing for parents than a baby who won\'t stop crying. Colic affects up to 25% of infants, leaving families exhausted and desperate for answers. At Cultivate Wellness, we offer gentle, effective care that addresses the underlying nervous system factors contributing to colic and infant digestive distress.',
@@ -87,7 +87,7 @@ export const colicInfantDigestive: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Infant Colic',
     description:
-      'Dr. Zach takes a thorough, gentle approach to helping your baby find comfort.',
+      'Our team takes a thorough, gentle approach to helping your baby find comfort.',
     steps: [
       {
         title: 'Detailed History & Examination',
@@ -123,12 +123,12 @@ export const colicInfantDigestive: ConditionPageData = {
     {
       question: 'Is chiropractic safe for a colicky newborn?',
       answer:
-        'Yes. Dr. Zach uses incredibly gentle techniques designed specifically for infants. The pressure is lighter than you\'d use to check a ripe tomato. There is no cracking or popping. Babies often sleep through their adjustments, and many visibly relax during care.',
+        'Yes. Our doctors use incredibly gentle techniques designed specifically for infants. The pressure is lighter than you\'d use to check a ripe tomato. There is no cracking or popping. Babies often sleep through their adjustments, and many visibly relax during care.',
     },
     {
       question: 'How quickly will we see results?',
       answer:
-        'While every baby is unique, many parents notice improvement within 1 to 3 visits. Some babies show dramatic reduction in crying after the very first adjustment. Dr. Zach will create a care plan tailored to your baby and monitor progress closely.',
+        'While every baby is unique, many parents notice improvement within 1 to 3 visits. Some babies show dramatic reduction in crying after the very first adjustment. We will create a care plan tailored to your baby and monitor progress closely.',
     },
     {
       question: 'What other digestive issues can chiropractic help with?',
@@ -155,7 +155,7 @@ export const colicInfantDigestive: ConditionPageData = {
   cta: {
     title: 'Help Your Baby Find Comfort',
     description:
-      'Gentle chiropractic care may be the answer you\'ve been searching for. You\'re not alone, and there is hope. Schedule a consultation with Dr. Zach today.',
+      'Gentle chiropractic care may be the answer you\'ve been searching for. You\'re not alone, and there is hope. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

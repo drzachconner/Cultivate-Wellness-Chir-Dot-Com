@@ -9,7 +9,7 @@ export const autismNeurodevelopmental: ConditionPageData = {
   seo: {
     title: 'Autism & Neurodevelopmental Care | Chiropractic Support in Rochester Hills, MI',
     description:
-      'Gentle, neurologically-focused chiropractic care for children with autism and neurodevelopmental conditions. Dr. Zach at Cultivate Wellness supports better regulation and quality of life.',
+      'Gentle, neurologically-focused chiropractic care for children with autism and neurodevelopmental conditions. At Cultivate Wellness, we support better regulation and quality of life.',
   },
   intro: [
     'At Cultivate Wellness, we have deep expertise and genuine passion for caring for children and adults with autism spectrum disorder (ASD), sensory processing differences, and other neurodevelopmental conditions. Our gentle, neurologically-focused approach helps optimize nervous system function, supporting better regulation, communication, and quality of life.',
@@ -87,7 +87,7 @@ export const autismNeurodevelopmental: ConditionPageData = {
   approach: {
     sectionTitle: 'How We Work with Your Child',
     description:
-      'Dr. Zach has dedicated his practice to caring for children with sensory and developmental differences, bringing unique expertise in working with the delicate nervous systems of neurodivergent individuals.',
+      'Our team has dedicated this practice to caring for children with sensory and developmental differences, bringing unique expertise in working with the delicate nervous systems of neurodivergent individuals.',
     steps: [
       {
         title: 'Getting Comfortable First',
@@ -128,7 +128,7 @@ export const autismNeurodevelopmental: ConditionPageData = {
     {
       question: 'Is chiropractic safe for children with autism?',
       answer:
-        'Yes. Dr. Zach uses extremely gentle techniques that are specifically adapted for children with sensory sensitivities. There is no cracking or forceful manipulation. His gentle, patient approach and deep understanding of sensory sensitivities make him exceptionally effective with this population -- including many children who have struggled with other healthcare experiences.',
+        'Yes. Our doctors use extremely gentle techniques that are specifically adapted for children with sensory sensitivities. There is no cracking or forceful manipulation. Our gentle, patient approach and deep understanding of sensory sensitivities make us exceptionally effective with this population -- including many children who have struggled with other healthcare experiences.',
     },
     {
       question: 'How do you handle children who are sensitive to touch?',
@@ -155,7 +155,7 @@ export const autismNeurodevelopmental: ConditionPageData = {
   cta: {
     title: 'Your Child Deserves Specialized Care',
     description:
-      'Schedule a consultation to learn how our neurodevelopmental expertise can support your family. Dr. Zach provides compassionate, sensory-sensitive care tailored to your child\'s unique needs.',
+      'Schedule a consultation to learn how our neurodevelopmental expertise can support your family. We provide compassionate, sensory-sensitive care tailored to your child\'s unique needs.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

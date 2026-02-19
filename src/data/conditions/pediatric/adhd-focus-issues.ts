@@ -9,7 +9,7 @@ export const adhdFocusIssues: ConditionPageData = {
   seo: {
     title: 'ADHD & Focus Issues | Chiropractic Support in Rochester Hills, MI',
     description:
-      'Drug-free, neurologically-focused chiropractic care for ADHD and focus challenges in children and adults. Dr. Zach at Cultivate Wellness helps improve attention, concentration, and self-regulation naturally.',
+      'Drug-free, neurologically-focused chiropractic care for ADHD and focus challenges in children and adults. At Cultivate Wellness, we help improve attention, concentration, and self-regulation naturally.',
   },
   intro: [
     'Attention Deficit Hyperactivity Disorder (ADHD) affects millions of children and adults, impacting their ability to focus, regulate emotions, and navigate daily life. At Cultivate Wellness, we offer a drug-free, neurologically-focused approach that addresses the underlying nervous system factors contributing to attention and focus challenges.',
@@ -97,7 +97,7 @@ export const adhdFocusIssues: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to ADHD Support',
     description:
-      'Dr. Zach takes a thorough, individualized approach to supporting children and adults with ADHD and focus challenges.',
+      'Our team takes a thorough, individualized approach to supporting children and adults with ADHD and focus challenges.',
     steps: [
       {
         title: 'Comprehensive Neurological Assessment',
@@ -138,7 +138,7 @@ export const adhdFocusIssues: ConditionPageData = {
     {
       question: 'Is chiropractic care safe for children with ADHD?',
       answer:
-        'Yes. Dr. Zach uses extremely gentle techniques that are specifically adapted for children. There is no cracking or forceful manipulation. The adjustments are so light that many children find them relaxing and enjoyable.',
+        'Yes. We use extremely gentle techniques that are specifically adapted for children. There is no cracking or forceful manipulation. The adjustments are so light that many children find them relaxing and enjoyable.',
     },
     {
       question: 'Can my child continue taking ADHD medication while under chiropractic care?',
@@ -148,7 +148,7 @@ export const adhdFocusIssues: ConditionPageData = {
     {
       question: 'How many visits will my child need before seeing improvement?',
       answer:
-        'Every child is different. Some families notice improvements within the first few weeks, while others may take longer. Dr. Zach will perform regular progress evaluations and adjust the care plan based on your child\'s response. A typical initial care plan involves visits two to three times per week for the first several weeks.',
+        'Every child is different. Some families notice improvements within the first few weeks, while others may take longer. Our team will perform regular progress evaluations and adjust the care plan based on your child\'s response. A typical initial care plan involves visits two to three times per week for the first several weeks.',
     },
     {
       question: 'Do you work with adults who have ADHD?',
@@ -158,7 +158,7 @@ export const adhdFocusIssues: ConditionPageData = {
     {
       question: 'What should I expect at the first visit?',
       answer:
-        'The first visit includes a comprehensive consultation where Dr. Zach will review your child\'s history, concerns, and goals. This is followed by a neurological evaluation including scanning technology to objectively measure nervous system function. Dr. Zach will then explain his findings and recommend a personalized care plan.',
+        'The first visit includes a comprehensive consultation where we will review your child\'s history, concerns, and goals. This is followed by a neurological evaluation including scanning technology to objectively measure nervous system function. Our team will then explain the findings and recommend a personalized care plan.',
     },
   ],
   relatedConditions: [
@@ -170,7 +170,7 @@ export const adhdFocusIssues: ConditionPageData = {
   cta: {
     title: 'Help Your Child Focus and Thrive',
     description:
-      'Discover how neurologically-focused chiropractic care can support attention and concentration naturally. Schedule a consultation with Dr. Zach today.',
+      'Discover how neurologically-focused chiropractic care can support attention and concentration naturally. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

@@ -9,7 +9,7 @@ export const earInfections: ConditionPageData = {
   seo: {
     title: 'Ear Infections in Children | Chiropractic Care Rochester Hills, MI',
     description:
-      'Drug-free chiropractic care for recurrent ear infections in children. Dr. Zach at Cultivate Wellness helps break the cycle with gentle, neurologically-focused adjustments.',
+      'Drug-free chiropractic care for recurrent ear infections in children. At Cultivate Wellness, we help break the cycle with gentle, neurologically-focused adjustments.',
   },
   intro: [
     'Ear infections (otitis media) are one of the most common reasons children visit the doctor -- and one of the top reasons for antibiotic prescriptions. But what if there was a drug-free way to help your child break the cycle of recurrent ear infections? At Cultivate Wellness, we\'ve helped countless children find relief through gentle, neurologically-focused chiropractic care.',
@@ -77,7 +77,7 @@ export const earInfections: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Ear Infections',
     description:
-      'Dr. Zach takes a comprehensive approach to helping your child break free from the cycle of recurrent ear infections.',
+      'Our team takes a comprehensive approach to helping your child break free from the cycle of recurrent ear infections.',
     steps: [
       {
         title: 'Comprehensive Evaluation',
@@ -117,7 +117,7 @@ export const earInfections: ConditionPageData = {
     {
       question: 'Is this safe for young children?',
       answer:
-        'Yes. Dr. Zach uses extremely gentle techniques adapted specifically for children. There is no cracking or forceful manipulation. The adjustments are so gentle that babies and toddlers often sleep through them or barely notice.',
+        'Yes. Our doctors use extremely gentle techniques adapted specifically for children. There is no cracking or forceful manipulation. The adjustments are so gentle that babies and toddlers often sleep through them or barely notice.',
     },
     {
       question: 'Should we stop antibiotics?',
@@ -144,7 +144,7 @@ export const earInfections: ConditionPageData = {
   cta: {
     title: 'Break the Ear Infection Cycle',
     description:
-      'Discover how gentle chiropractic care can help your child find lasting relief from recurrent ear infections. Schedule a consultation with Dr. Zach today.',
+      'Discover how gentle chiropractic care can help your child find lasting relief from recurrent ear infections. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

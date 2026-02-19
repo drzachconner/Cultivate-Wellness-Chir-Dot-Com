@@ -9,7 +9,7 @@ export const tongueTieLipTie: ConditionPageData = {
   seo: {
     title: 'Tongue Tie & Lip Tie Chiropractic Support | Rochester Hills, MI',
     description:
-      'Gentle chiropractic support for babies with tongue tie and lip tie in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps optimize oral function and nervous system coordination for better feeding.',
+      'Gentle chiropractic support for babies with tongue tie and lip tie in Rochester Hills, MI. At Cultivate Wellness, we help optimize oral function and nervous system coordination for better feeding.',
   },
   intro: [
     'Tongue tie (ankyloglossia) and lip tie are conditions where the frenulum -- the small band of tissue connecting the tongue to the floor of the mouth or the lip to the gum -- is too tight or short, restricting movement. These tethered oral tissues can significantly affect breastfeeding, bottle feeding, and your baby\'s overall comfort. At Cultivate Wellness, we provide gentle chiropractic support that complements the care your baby receives from lactation consultants and pediatric dentists.',
@@ -87,7 +87,7 @@ export const tongueTieLipTie: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Tongue Tie & Lip Tie Support',
     description:
-      'Dr. Zach works as part of your baby\'s care team, alongside lactation consultants, pediatric dentists, and your pediatrician.',
+      'Our team works as part of your baby\'s care team, alongside lactation consultants, pediatric dentists, and your pediatrician.',
     steps: [
       {
         title: 'Comprehensive Evaluation',
@@ -132,17 +132,17 @@ export const tongueTieLipTie: ConditionPageData = {
     {
       question: 'How soon after a frenectomy can my baby be adjusted?',
       answer:
-        'Many providers recommend chiropractic care within 24-48 hours after the release to help the body integrate the new range of motion. Dr. Zach will coordinate timing with your releasing provider.',
+        'Many providers recommend chiropractic care within 24-48 hours after the release to help the body integrate the new range of motion. Our team will coordinate timing with your releasing provider.',
     },
     {
       question: 'Is the adjustment safe for a newborn?',
       answer:
-        'Yes. Dr. Zach uses incredibly gentle techniques designed specifically for infants. The pressure is lighter than what you\'d use to test a ripe tomato. There is no cracking or forceful manipulation. Parents stay with their baby throughout, and babies often sleep through their adjustments.',
+        'Yes. Our doctors use incredibly gentle techniques designed specifically for infants. The pressure is lighter than what you\'d use to test a ripe tomato. There is no cracking or forceful manipulation. Parents stay with their baby throughout, and babies often sleep through their adjustments.',
     },
     {
       question: 'How do I know if my baby has a tongue tie?',
       answer:
-        'A qualified lactation consultant (IBCLC) or pediatric dentist trained in tethered oral tissues is the best resource for diagnosis. Signs include painful latch, clicking during feeding, poor weight gain, excessive gas/reflux, and milk leaking from the mouth. Dr. Zach can also screen for these signs and refer you appropriately.',
+        'A qualified lactation consultant (IBCLC) or pediatric dentist trained in tethered oral tissues is the best resource for diagnosis. Signs include painful latch, clicking during feeding, poor weight gain, excessive gas/reflux, and milk leaking from the mouth. Our team can also screen for these signs and refer you appropriately.',
     },
   ],
   relatedConditions: [
@@ -154,7 +154,7 @@ export const tongueTieLipTie: ConditionPageData = {
   cta: {
     title: 'Support Your Baby\'s Feeding Journey',
     description:
-      'If your baby has a tongue tie or lip tie, gentle chiropractic care can help. Schedule an evaluation with Dr. Zach today.',
+      'If your baby has a tongue tie or lip tie, gentle chiropractic care can help. Schedule an evaluation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

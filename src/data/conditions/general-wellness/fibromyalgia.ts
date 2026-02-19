@@ -9,7 +9,7 @@ export const fibromyalgia: ConditionPageData = {
   seo: {
     title: 'Fibromyalgia Support | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle, neurologically-focused chiropractic care for fibromyalgia in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps reduce pain, improve sleep, and support quality of life.',
+      'Gentle, neurologically-focused chiropractic care for fibromyalgia in Rochester Hills, MI. At Cultivate Wellness, we help reduce pain, improve sleep, and support quality of life.',
   },
   intro: [
     'Living with fibromyalgia means dealing with widespread pain, fatigue, and often feeling misunderstood. At Cultivate Wellness, we recognize fibromyalgia as a real condition that affects real people. Our gentle, neurologically-focused approach can help reduce pain, improve sleep, and support your overall quality of life.',
@@ -97,7 +97,7 @@ export const fibromyalgia: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Fibromyalgia',
     description:
-      'Dr. Zach understands fibromyalgia requires an exceptionally gentle, patient-centered approach that adapts to how you are feeling each visit.',
+      'Our team understands fibromyalgia requires an exceptionally gentle, patient-centered approach that adapts to how you are feeling each visit.',
     steps: [
       {
         title: 'Sensitive Assessment',
@@ -148,7 +148,7 @@ export const fibromyalgia: ConditionPageData = {
     {
       question: 'How often will I need to come in?',
       answer:
-        'Every fibromyalgia patient is different. Dr. Zach will recommend a care plan based on your initial evaluation and adjust it as you progress. We typically start gently and increase frequency only as your body demonstrates it can handle more. Results vary from person to person.',
+        'Every fibromyalgia patient is different. We will recommend a care plan based on your initial evaluation and adjust it as you progress. We typically start gently and increase frequency only as your body demonstrates it can handle more. Results vary from person to person.',
     },
     {
       question: 'Do you work with my other doctors?',
@@ -165,7 +165,7 @@ export const fibromyalgia: ConditionPageData = {
   cta: {
     title: 'Gentle Support for Fibromyalgia',
     description:
-      'Experience care designed for sensitive bodies. Schedule a consultation with Dr. Zach to learn how our gentle approach can help.',
+      'Experience care designed for sensitive bodies. Schedule a consultation with our team to learn how our gentle approach can help.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

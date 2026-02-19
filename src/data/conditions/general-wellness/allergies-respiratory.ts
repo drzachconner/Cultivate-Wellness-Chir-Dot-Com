@@ -9,7 +9,7 @@ export const allergiesRespiratory: ConditionPageData = {
   seo: {
     title: 'Allergies & Respiratory Support | Chiropractic Care Rochester Hills, MI',
     description:
-      'Natural chiropractic support for allergies, asthma, and respiratory issues in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps optimize nervous system and immune function.',
+      'Natural chiropractic support for allergies, asthma, and respiratory issues in Rochester Hills, MI. At Cultivate Wellness, we help optimize nervous system and immune function.',
   },
   intro: [
     'Allergies, asthma, and respiratory issues affect millions of people, often requiring ongoing medication. While chiropractic care does not treat allergies directly, it supports the nervous system and immune function that regulate your body\'s response to allergens. At Cultivate Wellness, many patients find significant improvement in their symptoms through regular chiropractic care.',
@@ -97,7 +97,7 @@ export const allergiesRespiratory: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach',
     description:
-      'Dr. Zach takes a comprehensive, whole-body approach to supporting your immune and respiratory health through nervous system optimization.',
+      'We take a comprehensive, whole-body approach to supporting your immune and respiratory health through nervous system optimization.',
     steps: [
       {
         title: 'Full Assessment',
@@ -143,7 +143,7 @@ export const allergiesRespiratory: ConditionPageData = {
     {
       question: 'Can children benefit from chiropractic care for allergies?',
       answer:
-        'Yes. Children\'s nervous systems are highly responsive to chiropractic care. Many parents report significant improvements in their child\'s allergies, asthma, chronic ear infections, and respiratory health after beginning care with Dr. Zach.',
+        'Yes. Children\'s nervous systems are highly responsive to chiropractic care. Many parents report significant improvements in their child\'s allergies, asthma, chronic ear infections, and respiratory health after beginning care with our team.',
     },
     {
       question: 'Should I stop taking my allergy medications?',
@@ -153,7 +153,7 @@ export const allergiesRespiratory: ConditionPageData = {
     {
       question: 'How many visits before I notice improvement in my allergies?',
       answer:
-        'Every person responds differently. Some patients notice improvements within the first few weeks, while others may take longer. Dr. Zach will perform regular evaluations and adjust your care plan based on your progress.',
+        'Every person responds differently. Some patients notice improvements within the first few weeks, while others may take longer. Our team will perform regular evaluations and adjust your care plan based on your progress.',
     },
   ],
   relatedConditions: [
@@ -165,7 +165,7 @@ export const allergiesRespiratory: ConditionPageData = {
   cta: {
     title: 'Support Your Immune System Naturally',
     description:
-      'Discover how nervous system care may help with allergies and respiratory health. Schedule a consultation with Dr. Zach today.',
+      'Discover how nervous system care may help with allergies and respiratory health. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

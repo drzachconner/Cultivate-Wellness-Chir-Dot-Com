@@ -9,7 +9,7 @@ export const plagiocephaly: ConditionPageData = {
   seo: {
     title: 'Plagiocephaly (Flat Head) Treatment | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic care for plagiocephaly (flat head syndrome) in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses the underlying causes to support healthy head shape development.',
+      'Gentle chiropractic care for plagiocephaly (flat head syndrome) in Rochester Hills, MI. At Cultivate Wellness, we address the underlying causes to support healthy head shape development.',
   },
   intro: [
     'If you\'ve noticed a flat spot on your baby\'s head, you\'re not alone -- plagiocephaly (flat head syndrome) affects nearly half of all infants to some degree. At Cultivate Wellness, we help address the underlying factors that contribute to uneven head shape, using extraordinarily gentle techniques designed specifically for newborns and infants.',
@@ -68,7 +68,7 @@ export const plagiocephaly: ConditionPageData = {
         icon: 'hand',
         title: 'Ultra-Gentle Techniques',
         description:
-          'Dr. Zach uses fingertip pressure lighter than you\'d use to check a ripe tomato. No cracking, no popping -- many babies sleep through their adjustments.',
+          'We use fingertip pressure lighter than you\'d use to check a ripe tomato. No cracking, no popping -- many babies sleep through their adjustments.',
       },
       {
         icon: 'zap',
@@ -87,7 +87,7 @@ export const plagiocephaly: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Plagiocephaly',
     description:
-      'Dr. Zach provides gentle, comprehensive care that addresses the factors contributing to your baby\'s flat spot.',
+      'We provide gentle, comprehensive care that addresses the factors contributing to your baby\'s flat spot.',
     steps: [
       {
         title: 'Thorough Evaluation',
@@ -122,17 +122,17 @@ export const plagiocephaly: ConditionPageData = {
     {
       question: 'How early can my baby be checked for plagiocephaly?',
       answer:
-        'Babies can be evaluated within the first few weeks of life. In fact, the earlier we identify and address contributing factors like cervical misalignment, the faster the head shape typically improves. Dr. Zach regularly sees newborns just days old.',
+        'Babies can be evaluated within the first few weeks of life. In fact, the earlier we identify and address contributing factors like cervical misalignment, the faster the head shape typically improves. Our doctors regularly see newborns just days old.',
     },
     {
       question: 'Is chiropractic safe for a baby with a flat head?',
       answer:
-        'Yes. Dr. Zach uses incredibly gentle techniques specifically designed for infants. The pressure is lighter than what you\'d use to check a ripe tomato. There is no cracking or twisting. Parents are with their baby the entire time, and babies often sleep through their adjustments.',
+        'Yes. Our doctors use incredibly gentle techniques specifically designed for infants. The pressure is lighter than what you\'d use to check a ripe tomato. There is no cracking or twisting. Parents are with their baby the entire time, and babies often sleep through their adjustments.',
     },
     {
       question: 'Will my baby need a helmet?',
       answer:
-        'Many babies improve with chiropractic care, repositioning, and tummy time alone -- especially when addressed early. In moderate to severe cases, helmet therapy may be recommended in addition to chiropractic care. Dr. Zach will give you an honest assessment and work alongside your pediatrician or craniofacial specialist.',
+        'Many babies improve with chiropractic care, repositioning, and tummy time alone -- especially when addressed early. In moderate to severe cases, helmet therapy may be recommended in addition to chiropractic care. Our team will give you an honest assessment and work alongside your pediatrician or craniofacial specialist.',
     },
     {
       question: 'What causes plagiocephaly?',
@@ -142,7 +142,7 @@ export const plagiocephaly: ConditionPageData = {
     {
       question: 'How many visits will my baby need?',
       answer:
-        'Most babies show visible improvement within 4-8 visits, especially when started early. Dr. Zach monitors progress at each visit and adjusts the care plan based on your baby\'s response. Frequency is typically 1-2 visits per week initially.',
+        'Most babies show visible improvement within 4-8 visits, especially when started early. We monitor progress at each visit and adjust the care plan based on your baby\'s response. Frequency is typically 1-2 visits per week initially.',
     },
     {
       question: 'Does plagiocephaly cause developmental problems?',
@@ -159,7 +159,7 @@ export const plagiocephaly: ConditionPageData = {
   cta: {
     title: 'Support Your Baby\'s Healthy Development',
     description:
-      'Early intervention for plagiocephaly leads to faster improvement. Schedule a gentle evaluation for your baby with Dr. Zach today.',
+      'Early intervention for plagiocephaly leads to faster improvement. Schedule a gentle evaluation for your baby with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

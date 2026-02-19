@@ -9,7 +9,7 @@ interface StatItem {
 }
 
 const stats: StatItem[] = [
-  { label: 'Google Rating', value: 4.9, suffix: '', decimals: 1 },
+  { label: 'Google Rating', value: 5.0, suffix: '', decimals: 1 },
   { label: 'Google Reviews', value: 100, suffix: '+' },
   { label: 'Years Experience', value: 10, suffix: '+' },
   { label: 'Families Served', value: 1000, suffix: '+' },

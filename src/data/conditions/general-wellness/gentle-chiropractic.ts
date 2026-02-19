@@ -9,7 +9,7 @@ export const gentleChiropractic: ConditionPageData = {
   seo: {
     title: 'Gentle Chiropractic - No Cracking | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic care with no cracking, twisting, or forceful adjustments in Rochester Hills, MI. Dr. Zach at Cultivate Wellness uses advanced techniques for comfortable, effective results.',
+      'Gentle chiropractic care with no cracking, twisting, or forceful adjustments in Rochester Hills, MI. At Cultivate Wellness, we use advanced techniques for comfortable, effective results.',
   },
   intro: [
     'Nervous about chiropractic care because you have heard about (or experienced) the cracking, popping, and twisting of traditional adjustments? You are not alone. Many people avoid chiropractic care they desperately need because they are afraid of forceful manipulation. At Cultivate Wellness, we specialize in gentle techniques that deliver excellent results without any of the things that make people nervous.',
@@ -87,7 +87,7 @@ export const gentleChiropractic: ConditionPageData = {
   approach: {
     sectionTitle: 'What to Expect',
     description:
-      'Dr. Zach explains everything before doing it. There are no surprises, no sudden movements, and no discomfort.',
+      'We explain everything before doing it. There are no surprises, no sudden movements, and no discomfort.',
     steps: [
       {
         title: 'No Cracking or Popping',
@@ -102,7 +102,7 @@ export const gentleChiropractic: ConditionPageData = {
       {
         title: 'Clear Communication',
         description:
-          'Dr. Zach explains everything before doing it. You will always know what to expect. We go at your pace and check in with you throughout the process to ensure you feel safe and comfortable.',
+          'Our team explains everything before doing it. You will always know what to expect. We go at your pace and check in with you throughout the process to ensure you feel safe and comfortable.',
       },
     ],
   },
@@ -138,7 +138,7 @@ export const gentleChiropractic: ConditionPageData = {
     {
       question: 'I had a bad experience at another chiropractor. Will this be different?',
       answer:
-        'We hear this frequently, and yes -- our approach is fundamentally different. Dr. Zach uses only gentle, instrument-based and light-touch techniques. There is no cracking, no sudden movements, and no forceful manipulation. We explain everything before we do it, and you are always in control of your care.',
+        'We hear this frequently, and yes -- our approach is fundamentally different. We use only gentle, instrument-based and light-touch techniques. There is no cracking, no sudden movements, and no forceful manipulation. We explain everything before we do it, and you are always in control of your care.',
     },
     {
       question: 'Can babies and children really be adjusted?',
@@ -155,7 +155,7 @@ export const gentleChiropractic: ConditionPageData = {
   cta: {
     title: 'Experience Truly Gentle Chiropractic',
     description:
-      'If you have been avoiding chiropractic care because of fear, give us a try. Schedule a consultation with Dr. Zach and discover a different kind of chiropractic experience.',
+      'If you have been avoiding chiropractic care because of fear, give us a try. Schedule a consultation with us and discover a different kind of chiropractic experience.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

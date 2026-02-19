@@ -9,7 +9,7 @@ export const speechLanguageDelays: ConditionPageData = {
   seo: {
     title: 'Speech & Language Delays Chiropractic Support | Rochester Hills, MI',
     description:
-      'Gentle chiropractic care to support children with speech and language delays in Rochester Hills, MI. Dr. Zach at Cultivate Wellness optimizes nervous system function for better communication.',
+      'Gentle chiropractic care to support children with speech and language delays in Rochester Hills, MI. At Cultivate Wellness, we optimize nervous system function for better communication.',
   },
   intro: [
     'When your child struggles to communicate -- whether they\'re late to talk, hard to understand, or having difficulty processing language -- it affects every aspect of their life. At Cultivate Wellness, we support children with speech and language delays by addressing the nervous system function that underlies all communication.',
@@ -87,7 +87,7 @@ export const speechLanguageDelays: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Supporting Speech & Language',
     description:
-      'Dr. Zach provides gentle care focused on the neurological foundations of communication, working as part of your child\'s care team.',
+      'Our team provides gentle care focused on the neurological foundations of communication, working as part of your child\'s care team.',
     steps: [
       {
         title: 'Neurological Assessment',
@@ -133,7 +133,7 @@ export const speechLanguageDelays: ConditionPageData = {
     {
       question: 'Is this safe for toddlers and young children?',
       answer:
-        'Yes. Dr. Zach uses gentle techniques adapted to each child\'s age and size. The adjustments use light fingertip pressure with no cracking or forceful manipulation. Children typically tolerate the care well, and many enjoy their visits.',
+        'Yes. Our doctors use gentle techniques adapted to each child\'s age and size. The adjustments use light fingertip pressure with no cracking or forceful manipulation. Children typically tolerate the care well, and many enjoy their visits.',
     },
     {
       question: 'Should we continue speech therapy while seeing a chiropractor?',
@@ -143,7 +143,7 @@ export const speechLanguageDelays: ConditionPageData = {
     {
       question: 'At what age can my child start chiropractic care?',
       answer:
-        'Children of any age can benefit from gentle chiropractic care. Dr. Zach regularly sees newborns through teenagers. The earlier nervous system interference is addressed, the better the foundation for development. However, it\'s never too late to start.',
+        'Children of any age can benefit from gentle chiropractic care. Our doctors regularly see newborns through teenagers. The earlier nervous system interference is addressed, the better the foundation for development. However, it\'s never too late to start.',
     },
   ],
   relatedConditions: [
@@ -155,7 +155,7 @@ export const speechLanguageDelays: ConditionPageData = {
   cta: {
     title: 'Support Your Child\'s Communication',
     description:
-      'Gentle, neurologically-focused chiropractic care may help unlock your child\'s communication potential. Schedule an evaluation with Dr. Zach today.',
+      'Gentle, neurologically-focused chiropractic care may help unlock your child\'s communication potential. Schedule an evaluation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {
