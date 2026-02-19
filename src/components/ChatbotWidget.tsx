@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { MessageCircle, X, Send, Loader2, Mic } from 'lucide-react';
+import { MessageCircle, X, Minus, Send, Loader2, Mic } from 'lucide-react';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -19,10 +19,10 @@ const QUICK_QUESTIONS = [
 ];
 
 function formatInline(text: string, keyPrefix: string): React.ReactNode[] {
-  // Process bold and links in inline text
-  // Split on bold (**text**) and markdown links [text](url)
-  const tokens = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+  // Split on bold (**text**), markdown links [text](url), and bare URLs
+  const tokens = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\)|https?:\/\/[^\s),]+)/g);
   return tokens.map((token, i) => {
+    if (!token) return null;
     if (token.startsWith('**') && token.endsWith('**')) {
       return <strong key={`${keyPrefix}-b${i}`}>{token.slice(2, -2)}</strong>;
     }
@@ -34,9 +34,23 @@ function formatInline(text: string, keyPrefix: string): React.ReactNode[] {
           href={linkMatch[2]}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-primary-dark underline hover:text-primary-accent break-all"
+          className="text-blue-600 underline hover:text-blue-800 break-all"
         >
           {linkMatch[1]}
+        </a>
+      );
+    }
+    if (/^https?:\/\//.test(token)) {
+      const label = token.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+      return (
+        <a
+          key={`${keyPrefix}-u${i}`}
+          href={token}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 underline hover:text-blue-800 break-all"
+        >
+          {label}
         </a>
       );
     }
@@ -197,6 +211,9 @@ export default function ChatbotWidget() {
     setIsLoading(true);
 
     try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 15_000);
+
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -206,27 +223,43 @@ export default function ChatbotWidget() {
             content: m.content,
           })),
         }),
+        signal: controller.signal,
       });
 
-      const data = await response.json();
+      clearTimeout(timeout);
 
-      if (response.ok && data.reply) {
-        setMessages((prev) => [...prev, { role: 'assistant', content: data.reply }]);
-      } else {
+      if (response.status === 429) {
         setMessages((prev) => [
           ...prev,
           {
             role: 'assistant',
-            content: "I'm sorry, I'm having trouble connecting. Please call (248) 616-0900.",
+            content: "I'm getting a lot of questions right now. Please wait a moment and try again.",
           },
         ]);
+      } else {
+        const data = await response.json();
+
+        if (response.ok && data.reply) {
+          setMessages((prev) => [...prev, { role: 'assistant', content: data.reply }]);
+        } else {
+          setMessages((prev) => [
+            ...prev,
+            {
+              role: 'assistant',
+              content: "I'm sorry, I'm having trouble connecting. Please call (248) 616-0900.",
+            },
+          ]);
+        }
       }
-    } catch {
+    } catch (err) {
+      const isTimeout = err instanceof DOMException && err.name === 'AbortError';
       setMessages((prev) => [
         ...prev,
         {
           role: 'assistant',
-          content: "I'm sorry, I'm having trouble connecting. Please call (248) 616-0900.",
+          content: isTimeout
+            ? "That took too long. Please try again or call (248) 616-0900."
+            : "I'm having trouble connecting. Please check your connection or call (248) 616-0900.",
         },
       ]);
     } finally {
@@ -278,9 +311,9 @@ export default function ChatbotWidget() {
         <button
           onClick={() => setIsOpen(false)}
           className="hidden md:flex fixed bottom-4 right-4 z-50 w-14 h-14 rounded-full shadow-lg items-center justify-center transition-all duration-300 hover:scale-105 bg-gray-600"
-          aria-label="Close chat"
+          aria-label="Minimize chat"
         >
-          <X className="w-6 h-6 text-white" />
+          <Minus className="w-6 h-6 text-white" />
         </button>
       )}
 
@@ -300,9 +333,9 @@ export default function ChatbotWidget() {
             <button
               onClick={() => setIsOpen(false)}
               className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors shrink-0"
-              aria-label="Close chat"
+              aria-label="Minimize chat"
             >
-              <X className="w-5 h-5" />
+              <Minus className="w-5 h-5" />
             </button>
           </div>
 

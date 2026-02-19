@@ -1,3 +1,5 @@
+import { isAllowed, getClientIP } from '../lib/rate-limit';
+
 interface Env {
   OPENAI_API_KEY: string;
 }
@@ -480,6 +482,15 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     'Content-Type': 'application/json',
   };
 
+  // Rate limit: 60 requests per minute per IP
+  const clientIP = getClientIP(context.request);
+  if (!isAllowed(`chat:${clientIP}`, 60, 60_000)) {
+    return new Response(JSON.stringify({ error: 'Too many requests. Please wait a moment.' }), {
+      status: 429,
+      headers: { ...headers, 'Retry-After': '60' },
+    });
+  }
+
   const apiKey = context.env.OPENAI_API_KEY;
 
   if (!apiKey) {
@@ -499,6 +510,16 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         status: 400,
         headers,
       });
+    }
+
+    // Validate message lengths (2000 char limit per message)
+    for (const msg of messages) {
+      if (typeof msg.content === 'string' && msg.content.length > 2000) {
+        return new Response(JSON.stringify({ error: 'Message too long. Please keep messages under 2000 characters.' }), {
+          status: 400,
+          headers,
+        });
+      }
     }
 
     // Prepend system prompt

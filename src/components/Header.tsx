@@ -144,7 +144,7 @@ export default function Header() {
           {isConditionsOpen && (
             <div
               ref={conditionsRef}
-              className="absolute top-full left-0 right-0 bg-white shadow-xl rounded-b-lg border-t border-gray-100 z-50"
+              className="absolute top-full left-0 right-0 bg-white shadow-xl rounded-b-lg border-t border-gray-100 z-50 max-h-[calc(100vh-4rem)] overflow-y-auto"
             >
               <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
                 {groupedConditions.map((group) => (
@@ -182,7 +182,7 @@ export default function Header() {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <div className="xl:hidden py-4 space-y-2">
+            <div className="xl:hidden py-4 space-y-2 max-h-[calc(100vh-4rem)] overflow-y-auto">
               {navBefore.map((link) => (
                 <Link
                   key={link.to}

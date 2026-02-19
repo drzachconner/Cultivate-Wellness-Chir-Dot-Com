@@ -1,4 +1,5 @@
 import { Resend } from 'resend';
+import { isAllowed, getClientIP } from '../lib/rate-limit';
 
 interface Env {
   RESEND_API_KEY: string;
@@ -7,6 +8,15 @@ interface Env {
 }
 
 const SITE_URL = 'https://www.cultivatewellnesschiro.com';
+
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
 
 // Guide configuration
 const GUIDES: Record<string, { title: string; pdfUrl: string; subject: string }> = {
@@ -129,7 +139,7 @@ function generateGuideEmail(firstName: string, guide: { title: string; pdfUrl: s
 function generateNotificationEmail(formType: string, data: Record<string, string>) {
   const fields = Object.entries(data)
     .filter(([key]) => !key.startsWith('_'))
-    .map(([key, value]) => `<tr><td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">${key}</td><td style="padding: 8px; border: 1px solid #ddd;">${value}</td></tr>`)
+    .map(([key, value]) => `<tr><td style="padding: 8px; border: 1px solid #ddd; font-weight: bold;">${escapeHtml(key)}</td><td style="padding: 8px; border: 1px solid #ddd;">${escapeHtml(String(value))}</td></tr>`)
     .join('');
 
   return `
@@ -178,6 +188,15 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     'Content-Type': 'application/json',
   };
 
+  // Rate limit: 10 requests per minute per IP
+  const clientIP = getClientIP(context.request);
+  if (!isAllowed(`form:${clientIP}`, 10, 60_000)) {
+    return new Response(JSON.stringify({ error: 'Too many submissions. Please wait a moment.' }), {
+      status: 429,
+      headers: { ...headers, 'Retry-After': '60' },
+    });
+  }
+
   try {
     const resend = new Resend(context.env.RESEND_API_KEY);
     const notificationEmail = context.env.NOTIFICATION_EMAIL || 'zachary.riles.conner@gmail.com';
@@ -189,6 +208,31 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
 
     if (!email) {
       return new Response(JSON.stringify({ error: 'Email is required' }), {
+        status: 400,
+        headers,
+      });
+    }
+
+    // Server-side validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return new Response(JSON.stringify({ error: 'Invalid email format' }), {
+        status: 400,
+        headers,
+      });
+    }
+
+    const name = data.name || data.firstName || '';
+    if (name.length > 200) {
+      return new Response(JSON.stringify({ error: 'Name is too long' }), {
+        status: 400,
+        headers,
+      });
+    }
+
+    const message = data.message || '';
+    if (message.length > 5000) {
+      return new Response(JSON.stringify({ error: 'Message is too long' }), {
         status: 400,
         headers,
       });
