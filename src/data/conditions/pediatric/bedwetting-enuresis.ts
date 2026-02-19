@@ -9,7 +9,7 @@ export const bedwettingEnuresis: ConditionPageData = {
   seo: {
     title: 'Bedwetting & Enuresis | Chiropractic Care Rochester Hills, MI',
     description:
-      'Drug-free chiropractic care for childhood bedwetting (nocturnal enuresis). Dr. Zach at Cultivate Wellness addresses the nervous system factors controlling bladder function.',
+      'Drug-free chiropractic care for childhood bedwetting (nocturnal enuresis). At Cultivate Wellness, we address the nervous system factors controlling bladder function.',
   },
   intro: [
     'Bedwetting (nocturnal enuresis) is stressful for children and parents alike. If your child is still wetting the bed past age 5-6, you\'re not alone -- and there may be a solution you haven\'t considered. Chiropractic care has helped many children overcome bedwetting by addressing the underlying nervous system issues that control bladder function.',
@@ -82,7 +82,7 @@ export const bedwettingEnuresis: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Bedwetting',
     description:
-      'Dr. Zach takes a comprehensive, compassionate approach to helping your child achieve dry nights.',
+      'Our team takes a comprehensive, compassionate approach to helping your child achieve dry nights.',
     steps: [
       {
         title: 'Spinal & Neurological Evaluation',
@@ -127,7 +127,7 @@ export const bedwettingEnuresis: ConditionPageData = {
     {
       question: 'How many visits will my child need?',
       answer:
-        'Every child is different. Some respond quickly within a few weeks, while others may take a few months. Dr. Zach will track progress and adjust the care plan based on your child\'s response. Consistency with appointments is important for the best results.',
+        'Every child is different. Some respond quickly within a few weeks, while others may take a few months. We will track progress and adjust the care plan based on your child\'s response. Consistency with appointments is important for the best results.',
     },
     {
       question: 'What can we do at home to help?',
@@ -148,7 +148,7 @@ export const bedwettingEnuresis: ConditionPageData = {
   cta: {
     title: 'Give Your Child Dry Nights',
     description:
-      'Schedule a consultation to see if gentle chiropractic care can help your child overcome bedwetting. Dr. Zach provides compassionate, effective care in a judgment-free environment.',
+      'Schedule a consultation to see if gentle chiropractic care can help your child overcome bedwetting. We provide compassionate, effective care in a judgment-free environment.',
     buttonText: 'Book Your Consultation',
   },
   schema: {
