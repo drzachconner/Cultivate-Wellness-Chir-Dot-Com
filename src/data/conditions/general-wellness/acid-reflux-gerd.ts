@@ -9,7 +9,7 @@ export const acidRefluxGerd: ConditionPageData = {
   seo: {
     title: 'Acid Reflux & GERD Relief | Chiropractic Care Rochester Hills, MI',
     description:
-      'Natural chiropractic support for acid reflux and GERD in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses the nervous system connection for lasting digestive comfort.',
+      'Natural chiropractic support for acid reflux and GERD in Rochester Hills, MI. At Cultivate Wellness, we address the nervous system connection for lasting digestive comfort.',
   },
   intro: [
     'Acid reflux and GERD (gastroesophageal reflux disease) are more than just heartburn -- they can significantly affect your quality of life, disrupt sleep, and lead to long-term complications if left unmanaged. At Cultivate Wellness, we support patients with reflux by addressing the nervous system function that controls digestion, rather than simply suppressing acid production.',
@@ -87,7 +87,7 @@ export const acidRefluxGerd: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Reflux Support',
     description:
-      'Dr. Zach takes a comprehensive approach to supporting your digestive comfort through nervous system optimization.',
+      'We take a comprehensive approach to supporting your digestive comfort through nervous system optimization.',
     steps: [
       {
         title: 'Digestive & Neurological Assessment',
@@ -142,7 +142,7 @@ export const acidRefluxGerd: ConditionPageData = {
     {
       question: 'How many visits before I see improvement?',
       answer:
-        'Every person responds differently. Some patients notice improvement within the first few visits, while chronic GERD may take longer. Dr. Zach will evaluate your progress regularly and adjust care accordingly.',
+        'Every person responds differently. Some patients notice improvement within the first few visits, while chronic GERD may take longer. We will evaluate your progress regularly and adjust care accordingly.',
     },
   ],
   relatedConditions: [
@@ -154,7 +154,7 @@ export const acidRefluxGerd: ConditionPageData = {
   cta: {
     title: 'Find Digestive Comfort Naturally',
     description:
-      'Discover how nervous system care may help with acid reflux and GERD. Schedule a consultation with Dr. Zach today.',
+      'Discover how nervous system care may help with acid reflux and GERD. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

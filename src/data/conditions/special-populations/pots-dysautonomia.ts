@@ -9,7 +9,7 @@ export const potsDysautonomia: ConditionPageData = {
   seo: {
     title: 'POTS & Dysautonomia Support | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic support for POTS and dysautonomia in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps improve autonomic nervous system function naturally.',
+      'Gentle chiropractic support for POTS and dysautonomia in Rochester Hills, MI. At Cultivate Wellness, we help improve autonomic nervous system function naturally.',
   },
   intro: [
     'POTS (Postural Orthostatic Tachycardia Syndrome) and other forms of dysautonomia affect the autonomic nervous system -- the part of your nervous system that controls involuntary functions like heart rate, blood pressure, digestion, and temperature regulation. At Cultivate Wellness, we offer supportive care that addresses the underlying nervous system dysfunction contributing to these challenging conditions.',
@@ -97,7 +97,7 @@ export const potsDysautonomia: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Dysautonomia',
     description:
-      'Dr. Zach is familiar with dysautonomia and takes your symptoms seriously, adapting care to your unique needs each visit.',
+      'Our team is familiar with dysautonomia and takes your symptoms seriously, adapting care to your unique needs each visit.',
     steps: [
       {
         title: 'Comprehensive Assessment',
@@ -153,7 +153,7 @@ export const potsDysautonomia: ConditionPageData = {
     {
       question: 'How long does it take to see improvement?',
       answer:
-        'Every patient is different. Some notice improvements within the first few weeks, while others take longer. Dysautonomia is a complex condition, and improvement is often gradual. Dr. Zach uses objective HRV testing to track your progress and adjust your care plan accordingly.',
+        'Every patient is different. Some notice improvements within the first few weeks, while others take longer. Dysautonomia is a complex condition, and improvement is often gradual. We use objective HRV testing to track your progress and adjust your care plan accordingly.',
     },
   ],
   relatedConditions: [
@@ -165,7 +165,7 @@ export const potsDysautonomia: ConditionPageData = {
   cta: {
     title: 'Support for Your Nervous System',
     description:
-      'Learn how gentle chiropractic care may help with your dysautonomia symptoms. Schedule a consultation with Dr. Zach today.',
+      'Learn how gentle chiropractic care may help with your dysautonomia symptoms. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

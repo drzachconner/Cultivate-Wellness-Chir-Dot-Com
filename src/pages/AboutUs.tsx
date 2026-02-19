@@ -10,7 +10,7 @@ export default function AboutUs() {
     <>
       <Seo
         title="About Us | Chiropractor Rochester Hills, MI"
-        description="Meet Dr. Zach Conner and our team at Cultivate Wellness Chiropractic in Rochester Hills, MI. Gentle, neuro-focused care for families and children with special needs."
+        description="Meet the team at Cultivate Wellness Chiropractic in Rochester Hills, MI. Gentle, neuro-focused care for families and children with special needs."
         canonical="/about-us"
         ogImage="/images/family-adjustment.webp"
       />
@@ -55,7 +55,7 @@ export default function AboutUs() {
               We take a "nerve first" approach through our specialized practice of Talsky Tonal Chiropractic. This unique and gentle yet powerful technique respects the intelligence of the body. It's particularly effective for children with special needs and has profound effects on people of all ages and backgrounds.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              Dr. Zach is one of two certified teachers of Talsky Tonal, bringing advanced expertise in this neurologically-focused approach. This gentle, non-manipulative technique uses a vitalistic, moment-to-moment analysis of the entire spinal system to identify where the body is holding unnecessary tension, empowering the body to release accumulated stress patterns and restore optimal nervous system function.{' '}
+              Our team includes one of two certified teachers of Talsky Tonal, bringing advanced expertise in this neurologically-focused approach. This gentle, non-manipulative technique uses a vitalistic, moment-to-moment analysis of the entire spinal system to identify where the body is holding unnecessary tension, empowering the body to release accumulated stress patterns and restore optimal nervous system function.{' '}
               <Link to="/talsky-tonal-chiropractic" className="text-primary-dark font-semibold hover:text-primary-accent underline">
                 Learn more about Talsky Tonal Chiropractic →
               </Link>

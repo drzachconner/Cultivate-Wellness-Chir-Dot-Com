@@ -9,7 +9,7 @@ export const scoliosis: ConditionPageData = {
   seo: {
     title: 'Scoliosis Care | Chiropractic Treatment Rochester Hills, MI',
     description:
-      'Gentle chiropractic scoliosis care for children and adults in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps reduce pain, improve function, and monitor curve progression.',
+      'Gentle chiropractic scoliosis care for children and adults in Rochester Hills, MI. At Cultivate Wellness, we help reduce pain, improve function, and monitor curve progression.',
   },
   intro: [
     'Scoliosis -- an abnormal lateral curvature of the spine, often with rotation -- affects millions of people. Whether you are a parent who just learned your child has scoliosis, a teen dealing with the condition, or an adult managing long-term scoliosis, chiropractic care can help improve function, reduce pain, and in some cases help slow curve progression.',
@@ -87,7 +87,7 @@ export const scoliosis: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Scoliosis',
     description:
-      'Dr. Zach takes a comprehensive approach to scoliosis care, tailored to the patient\'s age, curve type, and individual needs.',
+      'Our team takes a comprehensive approach to scoliosis care, tailored to the patient\'s age, curve type, and individual needs.',
     steps: [
       {
         title: 'Thorough Evaluation & Curve Assessment',
@@ -160,7 +160,7 @@ export const scoliosis: ConditionPageData = {
   cta: {
     title: 'Scoliosis Evaluation',
     description:
-      'Get a comprehensive spinal assessment and personalized care plan. Schedule a consultation with Dr. Zach today.',
+      'Get a comprehensive spinal assessment and personalized care plan. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

@@ -9,7 +9,7 @@ export const pregnancyBackPain: ConditionPageData = {
   seo: {
     title: 'Pregnancy Back Pain Relief | Chiropractic Care Rochester Hills, MI',
     description:
-      'Safe, gentle chiropractic care for back pain during pregnancy in Rochester Hills, MI. Dr. Zach at Cultivate Wellness provides drug-free relief that supports you and your baby.',
+      'Safe, gentle chiropractic care for back pain during pregnancy in Rochester Hills, MI. At Cultivate Wellness, we provide drug-free relief that supports you and your baby.',
   },
   intro: [
     'Back pain during pregnancy is incredibly common -- up to 70% of pregnant women experience it. But "common" doesn\'t mean you have to suffer through it. At Cultivate Wellness, we provide safe, gentle, drug-free relief for pregnancy-related back pain that is specifically adapted for the needs of expectant mothers.',
@@ -87,7 +87,7 @@ export const pregnancyBackPain: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Pregnancy Care',
     description:
-      'Dr. Zach provides gentle, pregnancy-specific care designed for comfort and safety throughout every stage.',
+      'We provide gentle, pregnancy-specific care designed for comfort and safety throughout every stage.',
     steps: [
       {
         title: 'Prenatal Evaluation',
@@ -133,7 +133,7 @@ export const pregnancyBackPain: ConditionPageData = {
     {
       question: 'How often should I come in during pregnancy?',
       answer:
-        'This depends on your symptoms and stage of pregnancy. Many patients start with weekly visits during symptomatic phases and adjust frequency as they improve. Dr. Zach will recommend a plan based on your specific needs.',
+        'This depends on your symptoms and stage of pregnancy. Many patients start with weekly visits during symptomatic phases and adjust frequency as they improve. Our team will recommend a plan based on your specific needs.',
     },
     {
       question: 'Will I need to lie face-down?',
@@ -160,7 +160,7 @@ export const pregnancyBackPain: ConditionPageData = {
   cta: {
     title: 'Enjoy a More Comfortable Pregnancy',
     description:
-      'Don\'t suffer through pregnancy back pain. Schedule a gentle evaluation with Dr. Zach today.',
+      'Don\'t suffer through pregnancy back pain. Schedule a gentle evaluation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

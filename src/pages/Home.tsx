@@ -88,7 +88,7 @@ function ConditionsDropdown() {
 }
 
 export default function Home() {
-  // Parallax for Dr. Zach portrait
+  // Parallax for portrait
   const bioSectionRef = useRef<HTMLElement>(null);
   const portraitRef = useRef<HTMLDivElement>(null);
 
@@ -112,7 +112,7 @@ export default function Home() {
     <>
       <Seo
         title="Pediatric & Prenatal Chiropractor Rochester Hills, MI"
-        description="Expert pediatric & prenatal chiropractor in Rochester Hills, MI. Dr. Zach Conner specializes in gentle, neurologically-focused care for families. Book today!"
+        description="Expert pediatric & prenatal chiropractor in Rochester Hills, MI. Our team specializes in gentle, neurologically-focused care for families. Book today!"
         canonical="/"
         ogImage="/images/hero-family.webp"
       />
@@ -182,8 +182,14 @@ export default function Home() {
         <AnimateOnScroll>
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Pediatric & Prenatal Chiropractor in Rochester Hills, MI
+              Experts in Light Force Tonal Chiropractic Care
             </h1>
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading font-semibold text-primary-dark mb-3">
+              Helping Families Thrive Through Nervous System-Focused Chiropractic Care
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 mb-8 italic">
+              We are rooted in the understanding that your body has an innate ability to heal itself.
+            </p>
             <p className="text-lg sm:text-xl text-gray-700 mb-6 leading-relaxed">
               "Our primary focus is your family's health and happiness. We specialize in <span className="text-primary-600 font-semibold">gentle, neuro-focused chiropractic care</span>. Whether the journey involves autism, epilepsy, special needs, or well baby checks and family wellness, our team is more than prepared to cultivate the best healing experience possible."
             </p>
@@ -197,6 +203,26 @@ export default function Home() {
             >
               Workshops For Parents
             </Link>
+          </div>
+        </AnimateOnScroll>
+      </section>
+
+      {/* Hope. Answers. Help. */}
+      <section className="py-20 bg-white">
+        <AnimateOnScroll>
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-heading font-bold text-primary-dark leading-tight mb-8">
+              A place for Hope.<br />
+              Answers. Help.
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              At Cultivate Wellness, our office is intentionally designed to care
+              for families and children at every stage. From well baby checks and
+              family wellness care, to the toughest of cases — autism, epilepsy,
+              and special needs — we are ready to care for you. Our unique light
+              force, tonal chiropractic care and patient-centered approach is what
+              truly sets us apart.
+            </p>
           </div>
         </AnimateOnScroll>
       </section>
@@ -286,7 +312,7 @@ export default function Home() {
       {/* Gradient: gray-50 → white */}
       <SectionGradient from="gray-50" to="white" />
 
-      {/* Dr. Zach Bio with Parallax */}
+      {/* Our Team Bio with Parallax */}
       <section ref={bioSectionRef} className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -303,13 +329,13 @@ export default function Home() {
             <AnimateOnScroll direction="right">
               <div>
                 <p className="text-lg text-gray-700 mb-6">
-                  Cultivate Wellness is led by Dr. Zach Conner, <span className="font-semibold">an esteemed educator and practitioner of <Link to="/talsky-tonal-chiropractic" className="underline hover:text-primary-accent">Talsky Tonal Chiropractic</Link>, a gentle, highly effective neuro-focused approach to care.</span> From your first visit, expect to be embraced as part of our Cultivate Wellness family as we journey together towards a healthier, happier life.
+                  At Cultivate Wellness, our team is led by Dr. Zach Conner, <span className="font-semibold">an esteemed educator and practitioner of <Link to="/talsky-tonal-chiropractic" className="underline hover:text-primary-accent">Talsky Tonal Chiropractic</Link>, a gentle, highly effective neuro-focused approach to care.</span> From your first visit, expect to be embraced as part of our Cultivate Wellness family as we journey together towards a healthier, happier life.
                 </p>
                 <Link
                   to="/meet-dr-zach"
                   className="inline-block border-2 border-primary-dark text-primary-dark px-6 py-3 rounded-lg font-medium hover:bg-primary-dark hover:text-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
                 >
-                  Meet Dr. Zach
+                  Meet Our Team
                 </Link>
               </div>
             </AnimateOnScroll>
@@ -349,9 +375,6 @@ export default function Home() {
 
       {/* Office Hours */}
       <OfficeHours />
-
-      {/* Gradient: white → gray-50 */}
-      <SectionGradient from="white" to="gray-50" />
 
       {/* Testimonials */}
       <TestimonialSlider />

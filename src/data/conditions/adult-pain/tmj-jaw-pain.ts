@@ -9,7 +9,7 @@ export const tmjJawPain: ConditionPageData = {
   seo: {
     title: 'TMJ & Jaw Pain Treatment | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic treatment for TMJ and jaw pain in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses the jaw-neck connection for lasting relief.',
+      'Gentle chiropractic treatment for TMJ and jaw pain in Rochester Hills, MI. At Cultivate Wellness, we address the jaw-neck connection for lasting relief.',
   },
   intro: [
     'Do you suffer from jaw pain, clicking, popping, or difficulty opening your mouth? TMJ disorders affect millions of people and can cause debilitating pain that impacts eating, speaking, and quality of life. At Cultivate Wellness, we address TMJ issues by treating the often-overlooked connection between your jaw and your cervical spine.',
@@ -97,7 +97,7 @@ export const tmjJawPain: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to TMJ Relief',
     description:
-      'Dr. Zach takes a comprehensive approach that addresses both the jaw and the cervical spine for complete TMJ relief.',
+      'We take a comprehensive approach that addresses both the jaw and the cervical spine for complete TMJ relief.',
     steps: [
       {
         title: 'Comprehensive Evaluation',
@@ -138,7 +138,7 @@ export const tmjJawPain: ConditionPageData = {
     {
       question: 'How quickly will I see results?',
       answer:
-        'Most patients notice improvement within 4-6 visits. Some experience relief after their first adjustment, especially when cervical correction improves jaw alignment. Chronic TMJ cases may take longer, but Dr. Zach will track your progress and adjust the plan accordingly.',
+        'Most patients notice improvement within 4-6 visits. Some experience relief after their first adjustment, especially when cervical correction improves jaw alignment. Chronic TMJ cases may take longer, but our team will track your progress and adjust the plan accordingly.',
     },
     {
       question: 'Is the treatment painful?',
@@ -165,7 +165,7 @@ export const tmjJawPain: ConditionPageData = {
   cta: {
     title: 'Stop Suffering from TMJ Pain',
     description:
-      'Discover how addressing the jaw-neck connection can provide lasting TMJ relief. Schedule your evaluation with Dr. Zach today.',
+      'Discover how addressing the jaw-neck connection can provide lasting TMJ relief. Schedule your evaluation with us today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

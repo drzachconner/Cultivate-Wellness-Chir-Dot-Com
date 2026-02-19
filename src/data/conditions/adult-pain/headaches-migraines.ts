@@ -9,7 +9,7 @@ export const headachesMigraines: ConditionPageData = {
   seo: {
     title: 'Headaches & Migraines Relief | Chiropractic Care Rochester Hills, MI',
     description:
-      'Drug-free chiropractic relief for headaches and migraines in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses the root cause of head pain naturally.',
+      'Drug-free chiropractic relief for headaches and migraines in Rochester Hills, MI. At Cultivate Wellness, we address the root cause of head pain naturally.',
   },
   intro: [
     'Headaches and migraines can be debilitating, affecting your work, relationships, and quality of life. At Cultivate Wellness, we offer a natural, drug-free approach that addresses the underlying causes of head pain rather than just masking symptoms with medication.',
@@ -87,7 +87,7 @@ export const headachesMigraines: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Headache Relief',
     description:
-      'Dr. Zach takes a thorough approach to understanding what\'s causing YOUR headaches and creating a personalized plan for lasting relief.',
+      'We take a thorough approach to understanding what\'s causing YOUR headaches and creating a personalized plan for lasting relief.',
     steps: [
       {
         title: 'Thorough Assessment',
@@ -128,12 +128,12 @@ export const headachesMigraines: ConditionPageData = {
     {
       question: 'How quickly will I see results?',
       answer:
-        'Many patients notice a reduction in headache frequency and intensity within the first few weeks of care. Some experience relief after their very first visit. Chronic headache sufferers may take longer, but Dr. Zach will track your progress and adjust the care plan accordingly.',
+        'Many patients notice a reduction in headache frequency and intensity within the first few weeks of care. Some experience relief after their very first visit. Chronic headache sufferers may take longer, but we will track your progress and adjust the care plan accordingly.',
     },
     {
       question: 'Can children receive chiropractic care for headaches?',
       answer:
-        'Absolutely. Children suffer from headaches too, often from birth trauma, heavy backpacks, screen time, and stress. Our gentle techniques are perfectly suited for children. Dr. Zach has specialized training in pediatric care.',
+        'Absolutely. Children suffer from headaches too, often from birth trauma, heavy backpacks, screen time, and stress. Our gentle techniques are perfectly suited for children. Our doctors have specialized training in pediatric care.',
     },
     {
       question: 'Should I stop my headache medications?',
@@ -155,7 +155,7 @@ export const headachesMigraines: ConditionPageData = {
   cta: {
     title: 'Break Free From Headache Pain',
     description:
-      'Discover how gentle, neurologically-focused chiropractic care can help you find lasting relief from headaches and migraines. Schedule a consultation with Dr. Zach today.',
+      'Discover how gentle, neurologically-focused chiropractic care can help you find lasting relief from headaches and migraines. Schedule a consultation with us today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

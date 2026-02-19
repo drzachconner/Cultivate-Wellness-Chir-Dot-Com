@@ -15,7 +15,7 @@ export default function ConditionIndex() {
     <>
       <Seo
         title="Conditions We Help | Chiropractic Care in Rochester Hills, MI"
-        description="Explore the conditions we support at Cultivate Wellness Chiropractic. From pediatric concerns to adult pain, Dr. Zach provides gentle, neurologically-focused care for the whole family."
+        description="Explore the conditions we support at Cultivate Wellness Chiropractic. From pediatric concerns to adult pain, our team provides gentle, neurologically-focused care for the whole family."
         canonical="/conditions"
       />
       <JsonLd
@@ -44,7 +44,7 @@ export default function ConditionIndex() {
             Conditions We Help
           </h1>
           <p className="text-lg text-white text-center max-w-3xl mx-auto">
-            At Cultivate Wellness, Dr. Zach provides gentle, neurologically-focused chiropractic care for a wide range of conditions affecting children, expecting mothers, and families.
+            At Cultivate Wellness, our team provides gentle, neurologically-focused chiropractic care for a wide range of conditions affecting children, expecting mothers, and families.
           </p>
         </div>
       </section>

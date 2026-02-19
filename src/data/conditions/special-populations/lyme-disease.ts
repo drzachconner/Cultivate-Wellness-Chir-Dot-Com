@@ -9,7 +9,7 @@ export const lymeDisease: ConditionPageData = {
   seo: {
     title: 'Lyme Disease Support | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic support for Lyme disease recovery in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps optimize nervous system function alongside your medical treatment.',
+      'Gentle chiropractic support for Lyme disease recovery in Rochester Hills, MI. At Cultivate Wellness, we help optimize nervous system function alongside your medical treatment.',
   },
   intro: [
     'Lyme disease and its co-infections can wreak havoc on the nervous system, causing a wide array of symptoms that affect every aspect of life. At Cultivate Wellness, we offer supportive care that focuses on optimizing nervous system function -- helping your body heal alongside your Lyme-literate medical treatment.',
@@ -97,7 +97,7 @@ export const lymeDisease: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Gentle Approach for Lyme Patients',
     description:
-      'Dr. Zach understands that Lyme patients are often highly sensitive and need an exceptionally gentle approach.',
+      'Our team understands that Lyme patients are often highly sensitive and need an exceptionally gentle approach.',
     steps: [
       {
         title: 'Individualized Assessment',
@@ -165,7 +165,7 @@ export const lymeDisease: ConditionPageData = {
   cta: {
     title: 'Support for Your Lyme Journey',
     description:
-      'Gentle, nervous system-focused care for those battling Lyme disease. Schedule a consultation with Dr. Zach today.',
+      'Gentle, nervous system-focused care for those battling Lyme disease. Schedule a consultation with us today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

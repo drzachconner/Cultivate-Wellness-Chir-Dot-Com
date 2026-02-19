@@ -9,7 +9,7 @@ export const ibs: ConditionPageData = {
   seo: {
     title: 'IBS (Irritable Bowel Syndrome) Support | Chiropractic Care Rochester Hills, MI',
     description:
-      'Natural chiropractic support for IBS in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses the gut-brain connection for better digestive function and comfort.',
+      'Natural chiropractic support for IBS in Rochester Hills, MI. At Cultivate Wellness, we address the gut-brain connection for better digestive function and comfort.',
   },
   intro: [
     'Irritable bowel syndrome (IBS) is a frustrating condition that affects millions of people, causing abdominal pain, bloating, and unpredictable bowel habits that disrupt daily life. At Cultivate Wellness, we support patients with IBS by addressing the nervous system dysfunction that plays a central role in this gut-brain disorder.',
@@ -87,7 +87,7 @@ export const ibs: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to IBS Support',
     description:
-      'Dr. Zach takes a whole-body approach to supporting digestive health through nervous system optimization.',
+      'We take a whole-body approach to supporting digestive health through nervous system optimization.',
     steps: [
       {
         title: 'Comprehensive Assessment',
@@ -143,7 +143,7 @@ export const ibs: ConditionPageData = {
     {
       question: 'How many visits before I notice digestive improvement?',
       answer:
-        'Results vary. Some patients notice changes within the first few visits, while chronic IBS may take longer. Dr. Zach evaluates your progress regularly. Many patients report gradual but meaningful improvement over the first 4-8 weeks of care.',
+        'Results vary. Some patients notice changes within the first few visits, while chronic IBS may take longer. Our team evaluates your progress regularly. Many patients report gradual but meaningful improvement over the first 4-8 weeks of care.',
     },
   ],
   relatedConditions: [
@@ -155,7 +155,7 @@ export const ibs: ConditionPageData = {
   cta: {
     title: 'Support Your Digestive Health Naturally',
     description:
-      'Discover how addressing the gut-brain connection may help with IBS. Schedule a consultation with Dr. Zach today.',
+      'Discover how addressing the gut-brain connection may help with IBS. Schedule a consultation with us today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

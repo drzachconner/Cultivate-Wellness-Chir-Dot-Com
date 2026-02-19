@@ -9,7 +9,7 @@ export const chronicFatigue: ConditionPageData = {
   seo: {
     title: 'Chronic Fatigue Support | Chiropractic Care Rochester Hills, MI',
     description:
-      'Natural chiropractic support for chronic fatigue and ME/CFS in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses the nervous system factors draining your energy.',
+      'Natural chiropractic support for chronic fatigue and ME/CFS in Rochester Hills, MI. At Cultivate Wellness, we address the nervous system factors draining your energy.',
   },
   intro: [
     'Are you exhausted all the time, no matter how much you sleep? Does even simple activity leave you drained? Chronic fatigue can steal your quality of life, making it hard to work, care for your family, or enjoy anything. While there is no simple fix, chiropractic care addresses a frequently overlooked piece of the puzzle: nervous system function.',
@@ -87,7 +87,7 @@ export const chronicFatigue: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Chronic Fatigue',
     description:
-      'Dr. Zach understands that chronic fatigue patients need a gentle, paced approach that does not overwhelm an already depleted system.',
+      'Our team understands that chronic fatigue patients need a gentle, paced approach that does not overwhelm an already depleted system.',
     steps: [
       {
         title: 'Nervous System Assessment',
@@ -128,12 +128,12 @@ export const chronicFatigue: ConditionPageData = {
     {
       question: 'How long before I start feeling better?',
       answer:
-        'Chronic conditions take time to improve -- expect weeks to months for meaningful changes. Some patients notice subtle improvements early, while for others it takes longer. Dr. Zach will track your progress objectively and adjust your care plan as needed. Healing is not always linear.',
+        'Chronic conditions take time to improve -- expect weeks to months for meaningful changes. Some patients notice subtle improvements early, while for others it takes longer. We will track your progress objectively and adjust your care plan as needed. Healing is not always linear.',
     },
     {
       question: 'Will the adjustments make me more tired at first?',
       answer:
-        'Some patients experience temporary increased fatigue in the early stages of care as their nervous system begins to shift. This is normal and usually short-lived. Dr. Zach paces your care carefully to minimize this effect and will never overwhelm your system.',
+        'Some patients experience temporary increased fatigue in the early stages of care as their nervous system begins to shift. This is normal and usually short-lived. We pace your care carefully to minimize this effect and will never overwhelm your system.',
     },
     {
       question: 'Do you work with patients who have Long COVID fatigue?',
@@ -155,7 +155,7 @@ export const chronicFatigue: ConditionPageData = {
   cta: {
     title: 'Ready to Feel Like Yourself Again?',
     description:
-      'Schedule your evaluation and start reclaiming your energy. Dr. Zach will create a personalized, gentle care plan designed for your needs.',
+      'Schedule your evaluation and start reclaiming your energy. Our team will create a personalized, gentle care plan designed for your needs.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

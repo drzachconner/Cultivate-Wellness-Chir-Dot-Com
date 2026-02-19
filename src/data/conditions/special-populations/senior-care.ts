@@ -9,7 +9,7 @@ export const seniorCare: ConditionPageData = {
   seo: {
     title: 'Senior Care & Healthy Aging | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic care for seniors in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps maintain mobility, reduce pain, improve balance, and support independent living.',
+      'Gentle chiropractic care for seniors in Rochester Hills, MI. At Cultivate Wellness, our team helps maintain mobility, reduce pain, improve balance, and support independent living.',
   },
   intro: [
     'Aging does not have to mean declining health, chronic pain, or loss of independence. At Cultivate Wellness, we help seniors maintain mobility, reduce pain, improve balance, and enjoy a better quality of life -- all through gentle, safe chiropractic care tailored specifically for mature bodies.',
@@ -87,7 +87,7 @@ export const seniorCare: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Senior-Safe Approach',
     description:
-      'Dr. Zach understands that senior patients need especially gentle care with comfortable positioning and a respectful pace.',
+      'Our team understands that senior patients need especially gentle care with comfortable positioning and a respectful pace.',
     steps: [
       {
         title: 'Thorough, Age-Appropriate Evaluation',
@@ -123,7 +123,7 @@ export const seniorCare: ConditionPageData = {
     {
       question: 'Is chiropractic care safe for seniors with osteoporosis?',
       answer:
-        'Yes. Our gentle, neurologically-focused approach uses controlled, gentle force that is safe for patients with bone density concerns. There is no rotation, twisting, or high-velocity manipulation. Dr. Zach adapts the technique specifically for your needs.',
+        'Yes. Our gentle, neurologically-focused approach uses controlled, gentle force that is safe for patients with bone density concerns. There is no rotation, twisting, or high-velocity manipulation. Our doctors adapt the technique specifically for your needs.',
     },
     {
       question: 'I have arthritis. Can you still help me?',
@@ -155,7 +155,7 @@ export const seniorCare: ConditionPageData = {
   cta: {
     title: 'Age Well, Live Well',
     description:
-      'Discover how gentle chiropractic care can improve your quality of life and help you maintain independence. Schedule a consultation with Dr. Zach today.',
+      'Discover how gentle chiropractic care can improve your quality of life and help you maintain independence. Schedule a consultation with us today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

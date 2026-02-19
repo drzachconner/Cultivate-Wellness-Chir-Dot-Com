@@ -9,7 +9,7 @@ export const pandasPans: ConditionPageData = {
   seo: {
     title: 'PANDAS & PANS Support | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle, neurologically-focused chiropractic support for children with PANDAS and PANS in Rochester Hills, MI. Dr. Zach at Cultivate Wellness offers complementary nervous system care.',
+      'Gentle, neurologically-focused chiropractic support for children with PANDAS and PANS in Rochester Hills, MI. At Cultivate Wellness, we offer complementary nervous system care.',
   },
   intro: [
     'PANDAS and PANS are conditions where the body\'s immune response triggers sudden, dramatic neuropsychiatric symptoms in children. These conditions can be frightening for families, and finding effective support is crucial. At Cultivate Wellness, we offer gentle, nervous system-focused care that can support children dealing with these challenging conditions alongside their medical treatment.',
@@ -97,7 +97,7 @@ export const pandasPans: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to PANDAS/PANS Support',
     description:
-      'Dr. Zach takes an extremely gentle, individualized approach when working with children who have PANDAS or PANS, recognizing their unique sensitivities.',
+      'Our team takes an extremely gentle, individualized approach when working with children who have PANDAS or PANS, recognizing their unique sensitivities.',
     steps: [
       {
         title: 'Comprehensive Neurological Assessment',
@@ -138,7 +138,7 @@ export const pandasPans: ConditionPageData = {
     {
       question: 'Is chiropractic safe for children with PANDAS/PANS?',
       answer:
-        'Yes. Dr. Zach uses extremely gentle techniques specifically adapted for sensitive children. There is no cracking or forceful manipulation. The adjustments are so light that most children find them calming and comfortable. We adjust our approach based on your child\'s sensitivities each visit.',
+        'Yes. We use extremely gentle techniques specifically adapted for sensitive children. There is no cracking or forceful manipulation. The adjustments are so light that most children find them calming and comfortable. We adjust our approach based on your child\'s sensitivities each visit.',
     },
     {
       question: 'How does chiropractic complement medical treatment?',
@@ -148,7 +148,7 @@ export const pandasPans: ConditionPageData = {
     {
       question: 'How many visits will my child need?',
       answer:
-        'Every child with PANDAS/PANS is different, and symptoms can fluctuate. Dr. Zach will create an individualized care plan and perform regular progress evaluations. We adapt the frequency and intensity of care based on your child\'s response and current symptom levels.',
+        'Every child with PANDAS/PANS is different, and symptoms can fluctuate. Our team will create an individualized care plan and perform regular progress evaluations. We adapt the frequency and intensity of care based on your child\'s response and current symptom levels.',
     },
     {
       question: 'Will you communicate with our child\'s other doctors?',
@@ -165,7 +165,7 @@ export const pandasPans: ConditionPageData = {
   cta: {
     title: 'Supportive Care for Your Child',
     description:
-      'Learn how gentle chiropractic care may support your child\'s PANDAS/PANS recovery. Schedule a consultation with Dr. Zach today.',
+      'Learn how gentle chiropractic care may support your child\'s PANDAS/PANS recovery. Schedule a consultation with us today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

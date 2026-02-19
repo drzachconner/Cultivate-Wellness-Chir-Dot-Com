@@ -16,7 +16,7 @@ export default function Header() {
 
   const navLinks = [
     { to: '/about-us', label: 'About Us' },
-    { to: '/meet-dr-zach', label: 'Meet Dr. Zach' },
+    { to: '/meet-dr-zach', label: 'Meet Our Team' },
     { to: '/talsky-tonal-chiropractic', label: 'Talsky Tonal' },
     { to: '/new-patient-center', label: 'New Patients' },
     { to: '/free-guides-for-parents', label: 'Free Guides' },
@@ -51,7 +51,7 @@ export default function Header() {
     setIsMobileConditionsOpen(false);
   }, [location.pathname]);
 
-  const navBefore = navLinks.slice(0, 4); // About Us, Meet Dr. Zach, Talsky Tonal, New Patients
+  const navBefore = navLinks.slice(0, 4); // About Us, Meet Our Team, Talsky Tonal, New Patients
   const navAfter = navLinks.slice(4);      // Free Guides, Contact
 
   return (

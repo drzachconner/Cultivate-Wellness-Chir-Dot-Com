@@ -9,10 +9,10 @@ export const sportsPerformance: ConditionPageData = {
   seo: {
     title: 'Sports & Athletic Performance | Chiropractic Care Rochester Hills, MI',
     description:
-      'Sports chiropractic care for athletes in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps enhance performance, speed recovery, and prevent injuries naturally.',
+      'Sports chiropractic care for athletes in Rochester Hills, MI. At Cultivate Wellness, we help enhance performance, speed recovery, and prevent injuries naturally.',
   },
   intro: [
-    'Whether you are a professional athlete, weekend warrior, or youth sports participant, chiropractic care can help you perform at your best, recover faster, and prevent injuries. At Cultivate Wellness, Dr. Zach uses advanced techniques that give athletes a real competitive advantage.',
+    'Whether you are a professional athlete, weekend warrior, or youth sports participant, chiropractic care can help you perform at your best, recover faster, and prevent injuries. At Cultivate Wellness, we use advanced techniques that give athletes a real competitive advantage.',
     'Nearly all NFL teams, most NBA teams, and countless Olympic athletes have chiropractors as part of their healthcare team. Chiropractic care is not just for injuries -- it is a performance enhancer. Proper spinal alignment ensures optimal nerve communication, allowing your muscles to fire more effectively, your reactions to be faster, and your body to recover more efficiently.',
   ],
   highlightBox: {
@@ -87,7 +87,7 @@ export const sportsPerformance: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Sports Care Approach',
     description:
-      'Dr. Zach evaluates your biomechanics, identifies imbalances, and understands the demands of your specific sport.',
+      'Our team evaluates your biomechanics, identifies imbalances, and understands the demands of your specific sport.',
     steps: [
       {
         title: 'Biomechanical Assessment',
@@ -155,7 +155,7 @@ export const sportsPerformance: ConditionPageData = {
   cta: {
     title: 'Elevate Your Performance',
     description:
-      'Join the athletes who gain their competitive edge through chiropractic care. Schedule a consultation with Dr. Zach today.',
+      'Join the athletes who gain their competitive edge through chiropractic care. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

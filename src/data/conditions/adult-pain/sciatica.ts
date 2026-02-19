@@ -9,7 +9,7 @@ export const sciatica: ConditionPageData = {
   seo: {
     title: 'Sciatica Treatment | Chiropractic Care Rochester Hills, MI',
     description:
-      'Drug-free chiropractic relief for sciatica and sciatic nerve pain in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses the root cause for lasting relief.',
+      'Drug-free chiropractic relief for sciatica and sciatic nerve pain in Rochester Hills, MI. At Cultivate Wellness, we address the root cause for lasting relief.',
   },
   intro: [
     'Sciatica can be debilitating -- that shooting pain down your leg that makes it hard to sit, stand, walk, or sleep. At Cultivate Wellness, we\'ve helped many patients find lasting relief from sciatica without drugs or surgery, using gentle techniques that address the root cause of your pain.',
@@ -87,7 +87,7 @@ export const sciatica: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Sciatica Relief',
     description:
-      'Dr. Zach takes a thorough approach to finding exactly what\'s causing YOUR sciatica and creating a targeted plan for relief.',
+      'We take a thorough approach to finding exactly what\'s causing YOUR sciatica and creating a targeted plan for relief.',
     steps: [
       {
         title: 'Comprehensive Evaluation',
@@ -127,7 +127,7 @@ export const sciatica: ConditionPageData = {
     {
       question: 'How quickly will I feel better?',
       answer:
-        'Many patients feel improvement after their first visit. Most sciatica cases respond well within 4-8 weeks of care. Our gentle techniques mean no additional pain or discomfort during treatment. However, every case is different and Dr. Zach will give you an honest assessment of your expected timeline.',
+        'Many patients feel improvement after their first visit. Most sciatica cases respond well within 4-8 weeks of care. Our gentle techniques mean no additional pain or discomfort during treatment. However, every case is different and our team will give you an honest assessment of your expected timeline.',
     },
     {
       question: 'Is your approach safe for severe sciatica?',
@@ -154,7 +154,7 @@ export const sciatica: ConditionPageData = {
   cta: {
     title: 'Get Sciatica Relief Today',
     description:
-      'Don\'t accept sciatic pain as a way of life. Schedule your evaluation with Dr. Zach and start feeling better.',
+      'Don\'t accept sciatic pain as a way of life. Schedule your evaluation with us and start feeling better.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

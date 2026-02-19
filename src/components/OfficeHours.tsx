@@ -14,7 +14,7 @@ const days = [
 export default function OfficeHours() {
   return (
     <AnimateOnScroll>
-      <section className="py-16 bg-white">
+      <section className="pt-16 pb-8 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-heading font-bold text-gray-900 mb-8 text-center">
             Office Hours

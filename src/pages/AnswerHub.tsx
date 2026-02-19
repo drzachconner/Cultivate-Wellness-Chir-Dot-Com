@@ -29,7 +29,7 @@ export default function AnswerHub() {
   const faqs = [
     {
       question: 'Is chiropractic care safe for infants and children?',
-      answer: 'Yes, pediatric chiropractic care is extremely safe when performed by a trained professional. Dr. Zach uses gentle, specialized techniques appropriate for infants and children. The adjustments are very light - about the pressure you would use to test a tomato for ripeness. Research shows pediatric chiropractic care has an excellent safety record.',
+      answer: 'Yes, pediatric chiropractic care is extremely safe when performed by a trained professional. Our team uses gentle, specialized techniques appropriate for infants and children. The adjustments are very light - about the pressure you would use to test a tomato for ripeness. Research shows pediatric chiropractic care has an excellent safety record.',
       category: 'Pediatric Care',
     },
     {
@@ -64,7 +64,7 @@ export default function AnswerHub() {
     },
     {
       question: 'How often will I need to come for adjustments?',
-      answer: 'Visit frequency depends on your individual needs and care goals. Initially, more frequent visits (1-2 times per week) help establish positive changes. As your nervous system stabilizes, visits typically become less frequent. Dr. Zach creates custom care plans based on objective measurements from INSiGHT scans, not arbitrary schedules.',
+      answer: 'Visit frequency depends on your individual needs and care goals. Initially, more frequent visits (1-2 times per week) help establish positive changes. As your nervous system stabilizes, visits typically become less frequent. Our team creates custom care plans based on objective measurements from INSiGHT scans, not arbitrary schedules.',
       category: 'Family Care',
     },
     {

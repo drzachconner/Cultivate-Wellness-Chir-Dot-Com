@@ -9,7 +9,7 @@ export const sleepDisorders: ConditionPageData = {
   seo: {
     title: 'Sleep Disorders | Chiropractic Care Rochester Hills, MI',
     description:
-      'Natural, drug-free chiropractic support for sleep disorders in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses the nervous system factors disrupting your sleep.',
+      'Natural, drug-free chiropractic support for sleep disorders in Rochester Hills, MI. At Cultivate Wellness, we address the nervous system factors disrupting your sleep.',
   },
   intro: [
     'Quality sleep is essential for health, healing, and wellbeing -- yet millions struggle with sleep problems. While there are many causes of poor sleep, nervous system dysfunction is often an overlooked contributor. At Cultivate Wellness, we help address the neurological factors that may be keeping you from the rest you need.',
@@ -97,7 +97,7 @@ export const sleepDisorders: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Better Sleep',
     description:
-      'Dr. Zach takes a comprehensive approach to identifying and addressing the nervous system factors that may be disrupting your sleep.',
+      'We take a comprehensive approach to identifying and addressing the nervous system factors that may be disrupting your sleep.',
     steps: [
       {
         title: 'Comprehensive Assessment',
@@ -143,7 +143,7 @@ export const sleepDisorders: ConditionPageData = {
     {
       question: 'How quickly will I see sleep improvements?',
       answer:
-        'Many patients notice sleep improvements within the first few visits. Some experience better sleep the very first night after an adjustment. However, chronic sleep problems may take longer to fully resolve as the nervous system rebalances. Dr. Zach will track your progress and adjust care accordingly.',
+        'Many patients notice sleep improvements within the first few visits. Some experience better sleep the very first night after an adjustment. However, chronic sleep problems may take longer to fully resolve as the nervous system rebalances. Our team will track your progress and adjust care accordingly.',
     },
     {
       question: 'Can I stop taking sleep medications?',
@@ -165,7 +165,7 @@ export const sleepDisorders: ConditionPageData = {
   cta: {
     title: 'Ready for Better Sleep?',
     description:
-      'Discover how nervous system care may help you and your family rest better. Schedule a consultation with Dr. Zach today.',
+      'Discover how nervous system care may help you and your family rest better. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

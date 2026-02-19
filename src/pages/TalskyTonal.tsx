@@ -44,7 +44,7 @@ export default function TalskyTonal() {
     <>
       <Seo
         title="Talsky Tonal Chiropractic | Rochester Hills, MI"
-        description="Talsky Tonal Chiropractic in Rochester Hills - gentle, neurologically-focused care. Dr. Zach Conner is a certified teacher of this advanced technique. Book today!"
+        description="Talsky Tonal Chiropractic in Rochester Hills - gentle, neurologically-focused care. Our team includes certified teachers of this advanced technique. Book today!"
         canonical="/talsky-tonal-chiropractic"
         ogImage="/images/Talsky at source2.jpg"
       />
@@ -213,10 +213,10 @@ export default function TalskyTonal() {
               Expert Talsky Tonal Care at Cultivate Wellness
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Dr. Zach is one of two certified teachers of Talsky Tonal Chiropractic,
+              Our team includes one of two certified teachers of Talsky Tonal Chiropractic,
               bringing the highest level of expertise in this specialized technique to our community.
               With a special interest in caring for children with sensory and developmental differences,
-              Dr. Zach has witnessed the profound transformative effects this gentle approach can have
+              we have witnessed the profound transformative effects this gentle approach can have
               on patients of all ages and backgrounds.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">

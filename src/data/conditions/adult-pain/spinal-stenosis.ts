@@ -9,7 +9,7 @@ export const spinalStenosis: ConditionPageData = {
   seo: {
     title: 'Spinal Stenosis Relief | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic care for spinal stenosis in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps manage symptoms and improve mobility without surgery.',
+      'Gentle chiropractic care for spinal stenosis in Rochester Hills, MI. At Cultivate Wellness, we help manage symptoms and improve mobility without surgery.',
   },
   intro: [
     'Spinal stenosis -- the narrowing of the spinal canal that puts pressure on the spinal cord and nerves -- can cause pain, numbness, and difficulty walking that significantly impacts your quality of life. At Cultivate Wellness, we help patients with spinal stenosis manage their symptoms and improve function using gentle, conservative care.',
@@ -87,7 +87,7 @@ export const spinalStenosis: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Spinal Stenosis',
     description:
-      'Dr. Zach provides careful, individualized care specifically adapted for the needs of stenosis patients.',
+      'Our team provides careful, individualized care specifically adapted for the needs of stenosis patients.',
     steps: [
       {
         title: 'Thorough Assessment',
@@ -128,17 +128,17 @@ export const spinalStenosis: ConditionPageData = {
     {
       question: 'Is it safe to adjust someone with spinal stenosis?',
       answer:
-        'Yes -- with the right approach. Forceful manipulation is not appropriate for stenosis. Our gentle, neurologically-focused techniques use light, precise contact specifically suited for this condition. Dr. Zach evaluates each patient thoroughly and adapts care to their specific situation.',
+        'Yes -- with the right approach. Forceful manipulation is not appropriate for stenosis. Our gentle, neurologically-focused techniques use light, precise contact specifically suited for this condition. We evaluate each patient thoroughly and adapt care to their specific situation.',
     },
     {
       question: 'Will I need surgery for spinal stenosis?',
       answer:
-        'Most cases of spinal stenosis can be managed conservatively. Surgery is typically reserved for severe cases with progressive weakness, loss of bladder/bowel control, or failure to respond to conservative care. Dr. Zach will give you an honest assessment and refer you if surgical consultation is appropriate.',
+        'Most cases of spinal stenosis can be managed conservatively. Surgery is typically reserved for severe cases with progressive weakness, loss of bladder/bowel control, or failure to respond to conservative care. We will give you an honest assessment and refer you if surgical consultation is appropriate.',
     },
     {
       question: 'How often will I need to come in?',
       answer:
-        'Since spinal stenosis is a chronic, degenerative condition, ongoing care is often beneficial. After an initial phase of more frequent visits to reduce symptoms, many patients transition to a maintenance schedule of 1-2 visits per month. Dr. Zach will recommend a plan based on your specific needs.',
+        'Since spinal stenosis is a chronic, degenerative condition, ongoing care is often beneficial. After an initial phase of more frequent visits to reduce symptoms, many patients transition to a maintenance schedule of 1-2 visits per month. Our team will recommend a plan based on your specific needs.',
     },
     {
       question: 'Does spinal stenosis always get worse?',
@@ -155,7 +155,7 @@ export const spinalStenosis: ConditionPageData = {
   cta: {
     title: 'Manage Spinal Stenosis Gently',
     description:
-      'Gentle chiropractic care can help you stay active and independent. Schedule your evaluation with Dr. Zach today.',
+      'Gentle chiropractic care can help you stay active and independent. Schedule your evaluation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ScanSearch, ClipboardList, Hand, Sparkles } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
 
 interface Step {
@@ -19,7 +19,7 @@ const steps: Step[] = [
     image: '/images/insight-scan-child.png',
     imageAlt: 'Child receiving INSiGHT neurological scan with mother present',
     description:
-      'Non-invasive INSiGHT neurological scans measure how the nervous system is functioning — including thermal, EMG, and HRV readings. These painless scans take just minutes and give Dr. Zach a clear picture of stress patterns in your child\'s (or your) nervous system.',
+      'Non-invasive INSiGHT neurological scans measure how the nervous system is functioning — including thermal, EMG, and HRV readings. These painless scans take just minutes and give our team a clear picture of stress patterns in your child\'s (or your) nervous system.',
     expandedTitle: 'About the INSiGHT Scans',
     expandedContent: [
       'Thermal Scan — Measures temperature differences along the spine, revealing areas where the autonomic nervous system may be under stress.',
@@ -30,10 +30,10 @@ const steps: Step[] = [
   {
     number: '02',
     title: 'Your Second Visit — Report of Findings & First Adjustment',
-    image: '/images/insight-report.jpeg',
+    image: '/images/insight-corescore-report.jpeg',
     imageAlt: 'INSiGHT neurological scan report showing CORESCORE results',
     description:
-      'Dr. Zach walks you through your scan results in detail, explains what the findings mean, presents a personalized care plan tailored to your family\'s needs, and — if appropriate — performs your first gentle Talsky Tonal adjustment.',
+      'Our team walks you through your scan results in detail, explains what the findings mean, presents a personalized care plan tailored to your family\'s needs, and — if appropriate — performs your first gentle Talsky Tonal adjustment.',
     expandedTitle: 'What to Expect During Your Report',
     expandedContent: [
       'A detailed walkthrough of your INSiGHT scan results with easy-to-understand visuals showing exactly where stress patterns exist in the nervous system.',
@@ -43,7 +43,40 @@ const steps: Step[] = [
   },
 ];
 
-function Accordion({ title, items }: { title: string; items: string[] }) {
+interface DifferentiatorItem {
+  icon: typeof ScanSearch;
+  title: string;
+  content: string;
+}
+
+const differentiators: DifferentiatorItem[] = [
+  {
+    icon: ScanSearch,
+    title: 'Testing, Not Guessing',
+    content:
+      'Our INSiGHT scans measure stress and tension in the autonomic nervous system with precision — including thermal, surface EMG, and heart rate variability readings. Objective data means we never guess about what\'s going on inside your body.',
+  },
+  {
+    icon: ClipboardList,
+    title: 'Care Plans Built For You',
+    content:
+      'By combining a thorough case history with your INSiGHT scan findings, we create a care plan uniquely tailored to your needs. Every recommendation is backed by data and designed to help your body heal at its own pace.',
+  },
+  {
+    icon: Hand,
+    title: 'Gentle Adjustments',
+    content:
+      'Our tonal adjustments work with your body\'s natural rhythms — no cracking, popping, or twisting required. This gentle, low-force approach is safe for all ages, from newborns to grandparents.',
+  },
+  {
+    icon: Sparkles,
+    title: 'Noticeable Results',
+    content:
+      'Many families notice changes right away — improved breathing, reduced tension, better sleep patterns, and a calmer nervous system. Early shifts show your body is already beginning to function the way it was designed to.',
+  },
+];
+
+function StepAccordion({ title, items }: { title: string; items: string[] }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -86,11 +119,16 @@ export default function WhatToExpect() {
               What to Expect
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Your journey to better health starts with understanding. Here's what your first two visits look like.
+              From the moment you walk into Cultivate Wellness Chiropractic, whether you're a new
+              patient or an experienced one, you'll be welcomed into a warm and inviting community.
+              Our office is designed to create a calming, home-like atmosphere, ensuring you feel
+              comfortable and cared for from the start. We want you to feel like you belong and that
+              you're part of our family.
             </p>
           </div>
         </AnimateOnScroll>
 
+        {/* Visit Steps */}
         <div className="space-y-16">
           {steps.map((step, index) => (
             <AnimateOnScroll key={step.number} delay={index * 200}>
@@ -99,17 +137,14 @@ export default function WhatToExpect() {
                   index % 2 === 1 ? 'md:direction-rtl' : ''
                 }`}
               >
-                {/* Image - left on even, right on odd (desktop) */}
                 <div className={`${index % 2 === 1 ? 'md:order-2' : ''}`}>
                   <img
                     src={step.image}
                     alt={step.imageAlt}
-                    className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3]"
+                    className="rounded-2xl shadow-lg w-full object-contain"
                     loading="lazy"
                   />
                 </div>
-
-                {/* Text - right on even, left on odd (desktop) */}
                 <div className={`${index % 2 === 1 ? 'md:order-1' : ''}`}>
                   <div className="w-10 h-10 rounded-full bg-primary-dark flex items-center justify-center text-white font-bold text-sm mb-3">
                     {step.number}
@@ -120,8 +155,36 @@ export default function WhatToExpect() {
                   <p className="text-gray-700 leading-relaxed">
                     {step.description}
                   </p>
-                  <Accordion title={step.expandedTitle} items={step.expandedContent} />
+                  <StepAccordion title={step.expandedTitle} items={step.expandedContent} />
                 </div>
+              </div>
+            </AnimateOnScroll>
+          ))}
+        </div>
+
+        {/* Divider */}
+        <div className="flex items-center justify-center my-16">
+          <div className="h-px bg-gray-200 flex-1" />
+          <span className="px-6 text-sm font-heading font-semibold text-primary tracking-widest uppercase">
+            What Sets Us Apart
+          </span>
+          <div className="h-px bg-gray-200 flex-1" />
+        </div>
+
+        {/* Differentiator Cards */}
+        <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
+          {differentiators.map((item, index) => (
+            <AnimateOnScroll key={index} delay={index * 100}>
+              <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow h-full">
+                <div className="w-12 h-12 rounded-xl bg-primary-dark/10 flex items-center justify-center mb-4">
+                  <item.icon size={24} className="text-primary-dark" />
+                </div>
+                <h3 className="text-xl font-heading font-bold text-gray-900 mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {item.content}
+                </p>
               </div>
             </AnimateOnScroll>
           ))}

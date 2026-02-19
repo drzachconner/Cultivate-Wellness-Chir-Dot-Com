@@ -9,7 +9,7 @@ export const anxietyStress: ConditionPageData = {
   seo: {
     title: 'Anxiety & Stress Support | Chiropractic Care Rochester Hills, MI',
     description:
-      'Natural chiropractic support for anxiety and chronic stress in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps restore nervous system balance for a calmer, more resilient life.',
+      'Natural chiropractic support for anxiety and chronic stress in Rochester Hills, MI. At Cultivate Wellness, we help restore nervous system balance for a calmer, more resilient life.',
   },
   intro: [
     'Anxiety and chronic stress have reached epidemic proportions in our society. While there are many approaches to managing these challenges, one often-overlooked factor is the state of your nervous system. At Cultivate Wellness, we help restore balance to your nervous system, supporting your body\'s natural ability to adapt to stress.',
@@ -87,7 +87,7 @@ export const anxietyStress: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Anxiety & Stress',
     description:
-      'Dr. Zach uses gentle techniques that are particularly well-suited for anxious patients -- no cracking, no sudden movements, no startling.',
+      'We use gentle techniques that are particularly well-suited for anxious patients -- no cracking, no sudden movements, no startling.',
     steps: [
       {
         title: 'Nervous System Assessment with HRV',
@@ -128,7 +128,7 @@ export const anxietyStress: ConditionPageData = {
     {
       question: 'Is chiropractic care a replacement for therapy or medication?',
       answer:
-        'No. Chiropractic care is a wonderful complement to mental health treatment, not a replacement. If you are struggling with anxiety, we encourage you to work with a mental health professional alongside your chiropractic care. Dr. Zach is happy to coordinate with your other providers.',
+        'No. Chiropractic care is a wonderful complement to mental health treatment, not a replacement. If you are struggling with anxiety, we encourage you to work with a mental health professional alongside your chiropractic care. We are happy to coordinate with your other providers.',
     },
     {
       question: 'What is HRV and why does it matter for anxiety?',
@@ -143,7 +143,7 @@ export const anxietyStress: ConditionPageData = {
     {
       question: 'How often should I be adjusted for anxiety and stress?',
       answer:
-        'The frequency depends on your individual needs and how your nervous system responds. Dr. Zach will recommend a personalized care plan based on your initial evaluation. Many patients with anxiety benefit from more frequent visits initially, tapering as their nervous system stabilizes.',
+        'The frequency depends on your individual needs and how your nervous system responds. Our team will recommend a personalized care plan based on your initial evaluation. Many patients with anxiety benefit from more frequent visits initially, tapering as their nervous system stabilizes.',
     },
   ],
   relatedConditions: [
@@ -155,7 +155,7 @@ export const anxietyStress: ConditionPageData = {
   cta: {
     title: 'Find Your Calm',
     description:
-      'Discover how nervous system care may help you manage stress and anxiety naturally. Schedule a consultation with Dr. Zach today.',
+      'Discover how nervous system care may help you manage stress and anxiety naturally. Schedule a consultation with us today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

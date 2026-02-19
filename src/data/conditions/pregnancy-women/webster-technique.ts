@@ -9,10 +9,10 @@ export const websterTechnique: ConditionPageData = {
   seo: {
     title: 'Webster Technique | Pregnancy Chiropractic Rochester Hills, MI',
     description:
-      'ICPA Webster Certified chiropractic care for pregnant mothers. Dr. Zach at Cultivate Wellness provides gentle sacral analysis and pelvic balancing throughout pregnancy.',
+      'ICPA Webster Certified chiropractic care for pregnant mothers. At Cultivate Wellness, our team provides gentle sacral analysis and pelvic balancing throughout pregnancy.',
   },
   intro: [
-    'The Webster Technique is a specific chiropractic sacral analysis and diversified adjustment designed to reduce the effects of sacral subluxation and improve neurobiomechanical function in the mother\'s pelvis. At Cultivate Wellness, Dr. Zach is certified in the Webster Technique through the International Chiropractic Pediatric Association (ICPA).',
+    'The Webster Technique is a specific chiropractic sacral analysis and diversified adjustment designed to reduce the effects of sacral subluxation and improve neurobiomechanical function in the mother\'s pelvis. At Cultivate Wellness, our doctors are certified in the Webster Technique through the International Chiropractic Pediatric Association (ICPA).',
     'As defined by the ICPA: "The Webster Technique is a specific chiropractic sacral analysis and diversified adjustment. The goal of the adjustment is to reduce the effects of sacral subluxation and/or SI joint dysfunction. In so doing, neurobiomechanical function in the sacral/pelvic region is improved." This technique can be beneficial throughout all trimesters of pregnancy to support pelvic function as the mother\'s body changes.',
   ],
   highlightBox: {
@@ -87,12 +87,12 @@ export const websterTechnique: ConditionPageData = {
   approach: {
     sectionTitle: 'The Webster Technique Process',
     description:
-      'Dr. Zach is ICPA Webster Certified, ensuring proper knowledge and skill in this specific sacral analysis and adjustment technique.',
+      'Our doctors are ICPA Webster Certified, ensuring proper knowledge and skill in this specific sacral analysis and adjustment technique.',
     steps: [
       {
         title: 'Sacral Analysis & Assessment',
         description:
-          'Dr. Zach evaluates the position and movement of your sacrum (the triangular bone at the base of your spine), along with your pelvis, associated muscles, and ligaments. You\'ll be positioned safely and comfortably using pregnancy pillows or specialized tables.',
+          'We evaluate the position and movement of your sacrum (the triangular bone at the base of your spine), along with your pelvis, associated muscles, and ligaments. You\'ll be positioned safely and comfortably using pregnancy pillows or specialized tables.',
       },
       {
         title: 'Gentle Sacral Adjustment & Soft Tissue Work',
@@ -138,7 +138,7 @@ export const websterTechnique: ConditionPageData = {
     {
       question: 'Is the Webster Technique safe during pregnancy?',
       answer:
-        'Yes. The technique is gentle and specifically designed for pregnant mothers. You\'ll be positioned safely and comfortably throughout the adjustment. Dr. Zach has completed specialized ICPA training to ensure proper technique and safety.',
+        'Yes. The technique is gentle and specifically designed for pregnant mothers. You\'ll be positioned safely and comfortably throughout the adjustment. Our doctors have completed specialized ICPA training to ensure proper technique and safety.',
     },
     {
       question: 'Do you work with my OB or midwife?',
@@ -148,7 +148,7 @@ export const websterTechnique: ConditionPageData = {
     {
       question: 'How often will I need to come in?',
       answer:
-        'Frequency is determined based on your individual needs and response to care. Some mothers benefit from weekly visits, while others come more or less frequently depending on their symptoms and stage of pregnancy. Dr. Zach will recommend a schedule that works best for you.',
+        'Frequency is determined based on your individual needs and response to care. Some mothers benefit from weekly visits, while others come more or less frequently depending on their symptoms and stage of pregnancy. We will recommend a schedule that works best for you.',
     },
   ],
   relatedConditions: [
@@ -159,7 +159,7 @@ export const websterTechnique: ConditionPageData = {
   cta: {
     title: 'Support Your Body During Pregnancy',
     description:
-      'Schedule your Webster Technique consultation with Dr. Zach today. ICPA Webster Certified care for a more comfortable, balanced pregnancy.',
+      'Schedule your Webster Technique consultation with our team today. ICPA Webster Certified care for a more comfortable, balanced pregnancy.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

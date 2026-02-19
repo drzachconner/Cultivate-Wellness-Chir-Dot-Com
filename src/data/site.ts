@@ -14,7 +14,7 @@ export const SITE = {
   name: 'Cultivate Wellness Chiropractic',
   shortName: 'Cultivate Wellness', // Used for alternate name in schema
   domain: 'cultivatewellnesschiro.com',
-  description: 'Pediatric, prenatal & family chiropractor in Rochester Hills, MI. Dr. Zach Conner provides gentle, neuro-focused care for children and families.',
+  description: 'Pediatric, prenatal & family chiropractor in Rochester Hills, MI. Our team provides gentle, neuro-focused care for children and families.',
   tagline: 'Helping Your Family Thrive, Naturally',
   foundingYear: '2020',
   priceRange: '$$',
@@ -30,7 +30,7 @@ export const SITE = {
     honorificSuffix: 'DC',
     credentials: 'DC',
     title: 'Neurologically-Focused Chiropractor',
-    bio: 'Dr. Zach specializes in family chiropractic care with a focus on pediatric and prenatal wellness. He believes in empowering families through natural, holistic healthcare.',
+    bio: 'Our team specializes in family chiropractic care with a focus on pediatric and prenatal wellness. We believe in empowering families through natural, holistic healthcare.',
     education: 'Life University College of Chiropractic',
     educationWikidata: 'https://www.wikidata.org/wiki/Q6545465',
     image: '/images/dr-zach.webp',

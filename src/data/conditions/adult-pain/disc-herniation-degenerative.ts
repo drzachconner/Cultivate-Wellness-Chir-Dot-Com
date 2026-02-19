@@ -9,7 +9,7 @@ export const discHerniationDegenerative: ConditionPageData = {
   seo: {
     title: 'Disc Herniation & Degenerative Disc | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic care for disc herniation and degenerative disc disease in Rochester Hills, MI. Dr. Zach at Cultivate Wellness provides non-surgical relief that addresses the root cause.',
+      'Gentle chiropractic care for disc herniation and degenerative disc disease in Rochester Hills, MI. At Cultivate Wellness, we provide non-surgical relief that addresses the root cause.',
   },
   intro: [
     'Disc herniations and degenerative disc disease are among the most common causes of back pain, neck pain, and radiating nerve symptoms. At Cultivate Wellness, we help patients with disc problems find relief and improve function using gentle, conservative care that avoids the risks of surgery and the cycle of pain medication.',
@@ -87,7 +87,7 @@ export const discHerniationDegenerative: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Disc Problems',
     description:
-      'Dr. Zach provides careful, evidence-based care tailored to the specific nature and severity of your disc condition.',
+      'We provide careful, evidence-based care tailored to the specific nature and severity of your disc condition.',
     steps: [
       {
         title: 'Comprehensive Evaluation',
@@ -143,7 +143,7 @@ export const discHerniationDegenerative: ConditionPageData = {
     {
       question: 'How many visits will I need?',
       answer:
-        'Disc conditions vary widely in severity. Mild cases may improve in a few weeks, while more significant herniations may require several months of care. Dr. Zach will give you a realistic assessment and track your progress at regular intervals.',
+        'Disc conditions vary widely in severity. Mild cases may improve in a few weeks, while more significant herniations may require several months of care. Our team will give you a realistic assessment and track your progress at regular intervals.',
     },
   ],
   relatedConditions: [
@@ -155,7 +155,7 @@ export const discHerniationDegenerative: ConditionPageData = {
   cta: {
     title: 'Get Relief From Disc Problems',
     description:
-      'Gentle chiropractic care may help you avoid surgery and find lasting relief. Schedule your evaluation with Dr. Zach today.',
+      'Gentle chiropractic care may help you avoid surgery and find lasting relief. Schedule your evaluation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

@@ -9,7 +9,7 @@ export const longCovid: ConditionPageData = {
   seo: {
     title: 'Long COVID & Post-Viral Recovery | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic support for long COVID and post-viral recovery in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses nervous system dysfunction for better recovery.',
+      'Gentle chiropractic support for long COVID and post-viral recovery in Rochester Hills, MI. At Cultivate Wellness, we address nervous system dysfunction for better recovery.',
   },
   intro: [
     'If you\'re dealing with persistent symptoms months after a COVID-19 infection or other viral illness -- fatigue, brain fog, heart palpitations, and more -- you\'re not alone, and you\'re not imagining it. At Cultivate Wellness, we support patients with long COVID and post-viral syndromes by addressing the nervous system dysfunction that plays a central role in these conditions.',
@@ -92,7 +92,7 @@ export const longCovid: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Post-Viral Recovery',
     description:
-      'Dr. Zach provides careful, gentle care specifically adapted for the heightened sensitivity of post-viral patients.',
+      'We provide careful, gentle care specifically adapted for the heightened sensitivity of post-viral patients.',
     steps: [
       {
         title: 'Comprehensive Assessment',
@@ -143,7 +143,7 @@ export const longCovid: ConditionPageData = {
     {
       question: 'Will my symptoms come back if I stop chiropractic care?',
       answer:
-        'Many patients experience lasting improvement as their nervous system recovers. Some benefit from ongoing maintenance care, especially while their body continues to heal. Dr. Zach will help you determine the right long-term plan for your situation.',
+        'Many patients experience lasting improvement as their nervous system recovers. Some benefit from ongoing maintenance care, especially while their body continues to heal. Our team will help you determine the right long-term plan for your situation.',
     },
     {
       question: 'How does this differ from other long COVID treatments?',
@@ -160,7 +160,7 @@ export const longCovid: ConditionPageData = {
   cta: {
     title: 'Support Your Post-Viral Recovery',
     description:
-      'If long COVID is affecting your quality of life, gentle nervous system care may help. Schedule an evaluation with Dr. Zach today.',
+      'If long COVID is affecting your quality of life, gentle nervous system care may help. Schedule an evaluation with us today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

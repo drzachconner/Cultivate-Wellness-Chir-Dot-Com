@@ -9,7 +9,7 @@ export const arthritis: ConditionPageData = {
   seo: {
     title: 'Arthritis & Joint Pain Relief | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic care for arthritis and joint pain in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps manage symptoms and improve mobility without forceful manipulation.',
+      'Gentle chiropractic care for arthritis and joint pain in Rochester Hills, MI. At Cultivate Wellness, we help manage symptoms and improve mobility without forceful manipulation.',
   },
   intro: [
     'Arthritis affects millions of Americans, causing pain, stiffness, and reduced mobility that can significantly impact daily life. At Cultivate Wellness, we help patients with arthritis manage their symptoms and maintain joint function using gentle, neurologically-focused care that is specifically designed for sensitive joints.',
@@ -87,7 +87,7 @@ export const arthritis: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Arthritis Support',
     description:
-      'Dr. Zach provides careful, individualized care specifically adapted for arthritis patients.',
+      'We provide careful, individualized care specifically adapted for arthritis patients.',
     steps: [
       {
         title: 'Joint & Spinal Assessment',
@@ -133,7 +133,7 @@ export const arthritis: ConditionPageData = {
     {
       question: 'Will I need to come in regularly?',
       answer:
-        'Since arthritis is a chronic condition, regular care often provides the best outcomes. After an initial phase to reduce symptoms, many patients transition to a maintenance schedule that keeps their joints moving well and manages discomfort. Dr. Zach will recommend a plan based on your needs.',
+        'Since arthritis is a chronic condition, regular care often provides the best outcomes. After an initial phase to reduce symptoms, many patients transition to a maintenance schedule that keeps their joints moving well and manages discomfort. We will recommend a plan based on your needs.',
     },
     {
       question: 'Can chiropractic help rheumatoid arthritis?',
@@ -155,7 +155,7 @@ export const arthritis: ConditionPageData = {
   cta: {
     title: 'Manage Arthritis Gently & Effectively',
     description:
-      'Our gentle approach is designed for sensitive joints. Schedule an evaluation with Dr. Zach today.',
+      'Our gentle approach is designed for sensitive joints. Schedule an evaluation with us today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

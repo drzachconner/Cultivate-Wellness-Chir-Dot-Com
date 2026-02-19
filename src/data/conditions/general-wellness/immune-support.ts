@@ -9,7 +9,7 @@ export const immuneSupport: ConditionPageData = {
   seo: {
     title: 'Immune System Support | Chiropractic Care Rochester Hills, MI',
     description:
-      'Strengthen your immune system naturally with neurologically-focused chiropractic care in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps optimize nervous system function for better immunity.',
+      'Strengthen your immune system naturally with neurologically-focused chiropractic care in Rochester Hills, MI. At Cultivate Wellness, we help optimize nervous system function for better immunity.',
   },
   intro: [
     'Your immune system is your body\'s defense force, protecting you from illness and infection. But did you know that your nervous system directly controls and coordinates your immune response? At Cultivate Wellness, we help optimize your nervous system function to support a healthy, responsive immune system.',
@@ -87,7 +87,7 @@ export const immuneSupport: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Immune Support',
     description:
-      'Dr. Zach supports your immune function by optimizing the nervous system that controls it.',
+      'We support your immune function by optimizing the nervous system that controls it.',
     steps: [
       {
         title: 'Nervous System Evaluation',
@@ -131,7 +131,7 @@ export const immuneSupport: ConditionPageData = {
     {
       question: 'How often should I get adjusted for immune support?',
       answer:
-        'The frequency depends on your individual needs and health goals. Dr. Zach will recommend a care plan based on your initial evaluation. Many patients seeking wellness and immune support find that regular visits -- weekly or biweekly -- help maintain optimal nervous system function.',
+        'The frequency depends on your individual needs and health goals. Our team will recommend a care plan based on your initial evaluation. Many patients seeking wellness and immune support find that regular visits -- weekly or biweekly -- help maintain optimal nervous system function.',
     },
     {
       question: 'Can my whole family benefit from immune-supporting chiropractic care?',
@@ -153,7 +153,7 @@ export const immuneSupport: ConditionPageData = {
   cta: {
     title: 'Support Your Immune System Naturally',
     description:
-      'Give your body the best chance to stay healthy. Schedule a consultation with Dr. Zach to learn how nervous system care can strengthen your natural defenses.',
+      'Give your body the best chance to stay healthy. Schedule a consultation with our team to learn how nervous system care can strengthen your natural defenses.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

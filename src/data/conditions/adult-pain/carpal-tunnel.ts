@@ -9,7 +9,7 @@ export const carpalTunnel: ConditionPageData = {
   seo: {
     title: 'Carpal Tunnel Treatment | Chiropractic Care Rochester Hills, MI',
     description:
-      'Non-surgical chiropractic treatment for carpal tunnel syndrome in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses nerve compression along the entire pathway.',
+      'Non-surgical chiropractic treatment for carpal tunnel syndrome in Rochester Hills, MI. At Cultivate Wellness, we address nerve compression along the entire pathway.',
   },
   intro: [
     'If you\'re experiencing numbness, tingling, or pain in your hand and wrist, you may have been told you have carpal tunnel syndrome. Before considering surgery, discover how chiropractic care can often provide significant relief by addressing nerve interference throughout the entire pathway -- not just at the wrist.',
@@ -87,7 +87,7 @@ export const carpalTunnel: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Carpal Tunnel Relief',
     description:
-      'Dr. Zach evaluates the entire nerve pathway to find ALL sources of compression, not just the wrist.',
+      'Our team evaluates the entire nerve pathway to find ALL sources of compression, not just the wrist.',
     steps: [
       {
         title: 'Full Nerve Pathway Assessment',
@@ -132,7 +132,7 @@ export const carpalTunnel: ConditionPageData = {
     {
       question: 'Should I try chiropractic before surgery?',
       answer:
-        'In most cases, yes. Conservative care should be attempted before considering surgical intervention. Many patients find complete relief through chiropractic care without surgery. If your condition requires surgical consultation, Dr. Zach will refer you appropriately.',
+        'In most cases, yes. Conservative care should be attempted before considering surgical intervention. Many patients find complete relief through chiropractic care without surgery. If your condition requires surgical consultation, we will refer you appropriately.',
     },
     {
       question: 'Can you help if I\'ve already had surgery but still have symptoms?',
@@ -142,7 +142,7 @@ export const carpalTunnel: ConditionPageData = {
     {
       question: 'How many visits will I need?',
       answer:
-        'This varies based on the severity and duration of your symptoms and how many compression sites are involved. Many patients notice improvement within the first few visits. Dr. Zach will create a personalized care plan and monitor your progress closely.',
+        'This varies based on the severity and duration of your symptoms and how many compression sites are involved. Many patients notice improvement within the first few visits. Our team will create a personalized care plan and monitor your progress closely.',
     },
   ],
   relatedConditions: [
@@ -154,7 +154,7 @@ export const carpalTunnel: ConditionPageData = {
   cta: {
     title: 'Get Relief Without Surgery',
     description:
-      'Find out if chiropractic care can help your carpal tunnel symptoms. Schedule a consultation with Dr. Zach today.',
+      'Find out if chiropractic care can help your carpal tunnel symptoms. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

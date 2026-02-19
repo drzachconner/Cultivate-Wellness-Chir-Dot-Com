@@ -9,7 +9,7 @@ export const concussionPostConcussion: ConditionPageData = {
   seo: {
     title: 'Concussion & Post-Concussion Recovery | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic support for concussion and post-concussion syndrome in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses the cervical spine and nervous system for better recovery.',
+      'Gentle chiropractic support for concussion and post-concussion syndrome in Rochester Hills, MI. At Cultivate Wellness, we address the cervical spine and nervous system for better recovery.',
   },
   intro: [
     'A concussion is more than just a bump on the head -- it\'s a traumatic brain injury that can cause symptoms lasting weeks, months, or even years. At Cultivate Wellness, we support concussion and post-concussion syndrome (PCS) recovery by addressing the cervical spine injuries and nervous system dysfunction that almost always accompany head trauma.',
@@ -92,7 +92,7 @@ export const concussionPostConcussion: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Concussion Support',
     description:
-      'Dr. Zach provides careful, evidence-informed care as part of your concussion recovery team.',
+      'We provide careful, evidence-informed care as part of your concussion recovery team.',
     steps: [
       {
         title: 'Comprehensive Neurological Assessment',
@@ -160,7 +160,7 @@ export const concussionPostConcussion: ConditionPageData = {
   cta: {
     title: 'Support Your Concussion Recovery',
     description:
-      'The cervical spine component of concussion is often the missing piece. Schedule an evaluation with Dr. Zach today.',
+      'The cervical spine component of concussion is often the missing piece. Schedule an evaluation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

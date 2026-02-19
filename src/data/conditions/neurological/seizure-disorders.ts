@@ -9,7 +9,7 @@ export const seizureDisorders: ConditionPageData = {
   seo: {
     title: 'Seizure Disorder Support | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle, complementary chiropractic support for seizure disorders and epilepsy in Rochester Hills, MI. Dr. Zach at Cultivate Wellness optimizes nervous system function alongside medical care.',
+      'Gentle, complementary chiropractic support for seizure disorders and epilepsy in Rochester Hills, MI. At Cultivate Wellness, our team optimizes nervous system function alongside medical care.',
   },
   intro: [
     'Seizure disorders, including epilepsy, are neurological conditions characterized by abnormal electrical activity in the brain. At Cultivate Wellness, we offer gentle, supportive care that focuses on optimizing nervous system function -- a complementary approach that many families find helpful alongside their medical treatment.',
@@ -87,7 +87,7 @@ export const seizureDisorders: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Seizure Support',
     description:
-      'Dr. Zach takes extra precautions and uses the gentlest possible techniques when working with seizure patients, with a focus on safety and neurological support.',
+      'Our team takes extra precautions and uses the gentlest possible techniques when working with seizure patients, with a focus on safety and neurological support.',
     steps: [
       {
         title: 'Thorough Evaluation & Safety Planning',
@@ -128,7 +128,7 @@ export const seizureDisorders: ConditionPageData = {
     {
       question: 'Is chiropractic safe for someone with seizures?',
       answer:
-        'Yes, when performed by a trained practitioner using appropriate techniques. Dr. Zach uses extremely gentle methods with no forceful manipulation. We take extra precautions with seizure patients, including careful monitoring during and after adjustments and clear communication about any concerns.',
+        'Yes, when performed by a trained practitioner using appropriate techniques. Our team uses extremely gentle methods with no forceful manipulation. We take extra precautions with seizure patients, including careful monitoring during and after adjustments and clear communication about any concerns.',
     },
     {
       question: 'Should I stop my seizure medication to try chiropractic?',
@@ -138,7 +138,7 @@ export const seizureDisorders: ConditionPageData = {
     {
       question: 'Do you work with children who have seizures?',
       answer:
-        'Yes. Many of our seizure patients are children. Pediatric adjustments use even lighter force, and Dr. Zach has advanced training in caring for neurologically complex children. We keep parents fully informed and involved throughout the process.',
+        'Yes. Many of our seizure patients are children. Pediatric adjustments use even lighter force, and our doctors have advanced training in caring for neurologically complex children. We keep parents fully informed and involved throughout the process.',
     },
     {
       question: 'Will you communicate with my neurologist?',
@@ -155,7 +155,7 @@ export const seizureDisorders: ConditionPageData = {
   cta: {
     title: 'Complementary Neurological Support',
     description:
-      'Learn how gentle chiropractic care may support your seizure management plan. Schedule a consultation with Dr. Zach today.',
+      'Learn how gentle chiropractic care may support your seizure management plan. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

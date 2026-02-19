@@ -9,7 +9,7 @@ export const pinchedNerves: ConditionPageData = {
   seo: {
     title: 'Pinched Nerve Relief | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic care for pinched nerves in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses the root cause of nerve compression for lasting relief without drugs or surgery.',
+      'Gentle chiropractic care for pinched nerves in Rochester Hills, MI. At Cultivate Wellness, we address the root cause of nerve compression for lasting relief without drugs or surgery.',
   },
   intro: [
     'A pinched nerve can cause sharp pain, numbness, tingling, or weakness that disrupts your daily life. Whether it\'s in your neck, back, or extremities, the underlying cause is often the same: a spinal misalignment or structural issue compressing or irritating a nerve. At Cultivate Wellness, we address the root cause of nerve compression using gentle, neurologically-focused techniques.',
@@ -74,7 +74,7 @@ export const pinchedNerves: ConditionPageData = {
         icon: 'shield',
         title: 'Non-Surgical Alternative',
         description:
-          'Many patients find relief through chiropractic care, avoiding the risks and recovery time associated with surgery. Dr. Zach will give you an honest assessment of whether conservative care can help your specific situation.',
+          'Many patients find relief through chiropractic care, avoiding the risks and recovery time associated with surgery. We will give you an honest assessment of whether conservative care can help your specific situation.',
       },
       {
         icon: 'trending-up',
@@ -87,7 +87,7 @@ export const pinchedNerves: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Pinched Nerves',
     description:
-      'Dr. Zach identifies exactly where and why the nerve is being compressed, then addresses the cause with gentle precision.',
+      'Our team identifies exactly where and why the nerve is being compressed, then addresses the cause with gentle precision.',
     steps: [
       {
         title: 'Precise Diagnosis',
@@ -122,7 +122,7 @@ export const pinchedNerves: ConditionPageData = {
     {
       question: 'How do I know if I have a pinched nerve?',
       answer:
-        'Common signs include sharp or shooting pain that radiates down an arm or leg, numbness or tingling in a specific pattern, muscle weakness, and symptoms that change with neck or back position. Dr. Zach can perform specific neurological tests to determine whether a pinched nerve is causing your symptoms.',
+        'Common signs include sharp or shooting pain that radiates down an arm or leg, numbness or tingling in a specific pattern, muscle weakness, and symptoms that change with neck or back position. Our doctors can perform specific neurological tests to determine whether a pinched nerve is causing your symptoms.',
     },
     {
       question: 'Is it safe to adjust a pinched nerve?',
@@ -132,7 +132,7 @@ export const pinchedNerves: ConditionPageData = {
     {
       question: 'How long does a pinched nerve take to heal?',
       answer:
-        'Many patients experience significant relief within a few weeks of care. The timeline depends on the cause and severity of compression, how long the nerve has been compressed, and your overall health. Dr. Zach will give you a realistic expectation based on your specific findings.',
+        'Many patients experience significant relief within a few weeks of care. The timeline depends on the cause and severity of compression, how long the nerve has been compressed, and your overall health. We will give you a realistic expectation based on your specific findings.',
     },
     {
       question: 'Can a pinched nerve heal on its own?',
@@ -142,7 +142,7 @@ export const pinchedNerves: ConditionPageData = {
     {
       question: 'When should I consider surgery for a pinched nerve?',
       answer:
-        'Surgery is typically a last resort. Signs that may indicate the need for surgical consultation include progressive muscle weakness, loss of bladder or bowel control, or failure to respond to conservative care. Dr. Zach will always refer appropriately if your condition requires medical intervention.',
+        'Surgery is typically a last resort. Signs that may indicate the need for surgical consultation include progressive muscle weakness, loss of bladder or bowel control, or failure to respond to conservative care. We will always refer appropriately if your condition requires medical intervention.',
     },
   ],
   relatedConditions: [
@@ -154,7 +154,7 @@ export const pinchedNerves: ConditionPageData = {
   cta: {
     title: 'Find Relief From Nerve Pain',
     description:
-      'Don\'t let a pinched nerve control your life. Schedule an evaluation with Dr. Zach to find the source and start healing.',
+      'Don\'t let a pinched nerve control your life. Schedule an evaluation with our team to find the source and start healing.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

@@ -138,7 +138,7 @@ export default function EventsWorkshops() {
             <div className="bg-gray-50 p-8 rounded-xl text-center">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Schedule a Consultation</h3>
               <p className="text-gray-700 mb-6">
-                Ready to start your family's wellness journey? Book a consultation with Dr. Zach today.
+                Ready to start your family's wellness journey? Book a consultation with our team today.
               </p>
               <a
                 href={SITE.janeUrlWithUtm}

@@ -9,7 +9,7 @@ export const vertigoDizziness: ConditionPageData = {
   seo: {
     title: 'Vertigo & Dizziness Treatment | Chiropractic Care Rochester Hills, MI',
     description:
-      'Effective chiropractic treatment for vertigo and dizziness in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses the cervical-vestibular connection for lasting relief.',
+      'Effective chiropractic treatment for vertigo and dizziness in Rochester Hills, MI. At Cultivate Wellness, we address the cervical-vestibular connection for lasting relief.',
   },
   intro: [
     'Vertigo and dizziness can be disabling -- making it impossible to work, drive, or even walk safely. If you\'ve been told there\'s nothing wrong or given medications that don\'t help, you haven\'t explored all your options. Many cases of vertigo and dizziness have a cervical (neck) component that responds remarkably well to chiropractic care.',
@@ -87,7 +87,7 @@ export const vertigoDizziness: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Vertigo Relief',
     description:
-      'Dr. Zach takes a thorough approach to understanding what\'s causing your dizziness and creating a targeted plan for relief.',
+      'We take a thorough approach to understanding what\'s causing your dizziness and creating a targeted plan for relief.',
     steps: [
       {
         title: 'Thorough Evaluation',
@@ -143,7 +143,7 @@ export const vertigoDizziness: ConditionPageData = {
     {
       question: 'How many visits will I need?',
       answer:
-        'Many patients feel improvement quickly, sometimes after the first visit. Most cases see significant improvement within 4-8 weeks. Long-standing cases may take longer. Dr. Zach will perform regular reassessments and adjust your care plan based on your progress.',
+        'Many patients feel improvement quickly, sometimes after the first visit. Most cases see significant improvement within 4-8 weeks. Long-standing cases may take longer. Our team will perform regular reassessments and adjust your care plan based on your progress.',
     },
     {
       question: 'Should I see an ENT first?',
@@ -160,7 +160,7 @@ export const vertigoDizziness: ConditionPageData = {
   cta: {
     title: 'Stop the Spinning',
     description:
-      'Discover how addressing the cervical-vestibular connection can restore your balance. Schedule your vertigo evaluation with Dr. Zach today.',
+      'Discover how addressing the cervical-vestibular connection can restore your balance. Schedule your vertigo evaluation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

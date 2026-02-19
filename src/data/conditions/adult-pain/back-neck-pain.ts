@@ -9,7 +9,7 @@ export const backNeckPain: ConditionPageData = {
   seo: {
     title: 'Back Pain & Neck Pain Relief | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle, drug-free chiropractic care for back pain and neck pain in Rochester Hills, MI. Dr. Zach at Cultivate Wellness addresses the root cause for lasting relief.',
+      'Gentle, drug-free chiropractic care for back pain and neck pain in Rochester Hills, MI. At Cultivate Wellness, we address the root cause for lasting relief.',
   },
   intro: [
     'Back pain and neck pain are among the most common reasons people seek chiropractic care -- and for good reason. At Cultivate Wellness, we\'ve helped countless patients find lasting relief through our gentle, neurologically-focused approach. Eighty percent of adults experience back pain at some point in their lives, and you don\'t have to accept it as a way of life.',
@@ -97,7 +97,7 @@ export const backNeckPain: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Spinal Pain',
     description:
-      'Dr. Zach takes a thorough, whole-person approach to back and neck pain that goes beyond symptom relief.',
+      'Our team takes a thorough, whole-person approach to back and neck pain that goes beyond symptom relief.',
     steps: [
       {
         title: 'Comprehensive Evaluation',
@@ -133,7 +133,7 @@ export const backNeckPain: ConditionPageData = {
     {
       question: 'Is chiropractic care safe for back and neck pain?',
       answer:
-        'Yes. Chiropractic care is widely recognized as one of the safest, most effective treatments for back and neck pain. Dr. Zach uses extremely gentle techniques with no forceful manipulation, making it safe for patients of all ages and conditions, including pregnancy and osteoporosis.',
+        'Yes. Chiropractic care is widely recognized as one of the safest, most effective treatments for back and neck pain. We use extremely gentle techniques with no forceful manipulation, making it safe for patients of all ages and conditions, including pregnancy and osteoporosis.',
     },
     {
       question: 'How is your approach different from traditional chiropractic?',
@@ -143,7 +143,7 @@ export const backNeckPain: ConditionPageData = {
     {
       question: 'How many visits will I need?',
       answer:
-        'This varies based on the severity and duration of your condition. Many patients feel improvement after their first visit. Dr. Zach will create a personalized care plan based on your evaluation findings and adjust it based on your progress. Acute conditions may resolve quickly while chronic issues typically require more visits.',
+        'This varies based on the severity and duration of your condition. Many patients feel improvement after their first visit. We will create a personalized care plan based on your evaluation findings and adjust it based on your progress. Acute conditions may resolve quickly while chronic issues typically require more visits.',
     },
     {
       question: 'Should I come in if I\'m in severe pain?',
@@ -170,7 +170,7 @@ export const backNeckPain: ConditionPageData = {
   cta: {
     title: 'Find Relief From Back & Neck Pain',
     description:
-      'Experience gentle, effective care that addresses the root cause of your pain. Schedule a consultation with Dr. Zach today.',
+      'Experience gentle, effective care that addresses the root cause of your pain. Schedule a consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

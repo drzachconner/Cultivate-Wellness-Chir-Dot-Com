@@ -9,7 +9,7 @@ export const breastfeedingLatch: ConditionPageData = {
   seo: {
     title: 'Breastfeeding & Latch Issues | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic care for breastfeeding and latch difficulties. Dr. Zach at Cultivate Wellness helps identify and release nervous system tension affecting your baby\'s ability to nurse.',
+      'Gentle chiropractic care for breastfeeding and latch difficulties. At Cultivate Wellness, we help identify and release nervous system tension affecting your baby\'s ability to nurse.',
   },
   intro: [
     'Struggling to breastfeed your newborn can be exhausting, frustrating, and heartbreaking. If you\'ve tried everything -- different positions, lactation consultants, nipple shields -- and your baby still struggles to latch or nurse effectively, there may be tension on the nervous system that gentle chiropractic care can address.',
@@ -97,7 +97,7 @@ export const breastfeedingLatch: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Nursing Difficulties',
     description:
-      'Dr. Zach provides incredibly gentle care designed specifically for newborns with feeding challenges.',
+      'We provide incredibly gentle care designed specifically for newborns with feeding challenges.',
     steps: [
       {
         title: 'Comprehensive Assessment',
@@ -143,7 +143,7 @@ export const breastfeedingLatch: ConditionPageData = {
     {
       question: 'How many visits will it take?',
       answer:
-        'Many babies show improvement within 1-4 visits. Some respond after just one session, while others need a few more visits. Dr. Zach will create a personalized plan and monitor progress closely. Sessions are brief and focused.',
+        'Many babies show improvement within 1-4 visits. Some respond after just one session, while others need a few more visits. Our team will create a personalized plan and monitor progress closely. Sessions are brief and focused.',
     },
     {
       question: 'Do you work with lactation consultants?',
@@ -165,7 +165,7 @@ export const breastfeedingLatch: ConditionPageData = {
   cta: {
     title: 'Help Your Baby Nurse Successfully',
     description:
-      'Don\'t give up on breastfeeding. Let us help identify what\'s getting in the way. Schedule a gentle evaluation with Dr. Zach today.',
+      'Don\'t give up on breastfeeding. Let us help identify what\'s getting in the way. Schedule a gentle evaluation with us today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

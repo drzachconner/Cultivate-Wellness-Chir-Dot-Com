@@ -9,7 +9,7 @@ export const postpartumRecovery: ConditionPageData = {
   seo: {
     title: 'Postpartum Recovery | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic care for postpartum recovery. Dr. Zach at Cultivate Wellness helps new moms heal from birth, relieve pain, and adapt to the physical demands of motherhood.',
+      'Gentle chiropractic care for postpartum recovery. At Cultivate Wellness, we help new moms heal from birth, relieve pain, and adapt to the physical demands of motherhood.',
   },
   intro: [
     'The postpartum period is a time of tremendous change for your body. After nine months of pregnancy and the physical demands of birth, your body needs support to recover and adapt to the new demands of motherhood. Chiropractic care can help you heal faster, feel better, and care for your baby with more comfort and energy.',
@@ -87,7 +87,7 @@ export const postpartumRecovery: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Postpartum Care',
     description:
-      'Dr. Zach provides gentle, understanding care tailored to the unique needs of new mothers.',
+      'Our team provides gentle, understanding care tailored to the unique needs of new mothers.',
     steps: [
       {
         title: 'Comprehensive Postpartum Assessment',
@@ -128,7 +128,7 @@ export const postpartumRecovery: ConditionPageData = {
     {
       question: 'Can I bring my baby to appointments?',
       answer:
-        'Absolutely! We welcome babies at appointments. Many new moms bring their infants, and Dr. Zach can even check your baby while you\'re here. Addressing newborn subluxations from birth can help with feeding, sleeping, and development.',
+        'Absolutely! We welcome babies at appointments. Many new moms bring their infants, and we can even check your baby while you\'re here. Addressing newborn subluxations from birth can help with feeding, sleeping, and development.',
     },
     {
       question: 'Is chiropractic safe while breastfeeding?',
@@ -154,7 +154,7 @@ export const postpartumRecovery: ConditionPageData = {
   cta: {
     title: 'Support Your Postpartum Recovery',
     description:
-      'You\'ve taken care of baby for 9 months. Now let us help take care of you. Schedule a postpartum consultation with Dr. Zach today.',
+      'You\'ve taken care of baby for 9 months. Now let us help take care of you. Schedule a postpartum consultation with our team today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

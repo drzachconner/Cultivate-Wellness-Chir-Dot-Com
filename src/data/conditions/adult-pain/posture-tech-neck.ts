@@ -9,7 +9,7 @@ export const postureTechNeck: ConditionPageData = {
   seo: {
     title: 'Posture Correction & Tech Neck | Chiropractic Care Rochester Hills, MI',
     description:
-      'Expert chiropractic posture correction and tech neck treatment in Rochester Hills, MI. Dr. Zach at Cultivate Wellness reverses postural damage before it becomes permanent.',
+      'Expert chiropractic posture correction and tech neck treatment in Rochester Hills, MI. At Cultivate Wellness, we reverse postural damage before it becomes permanent.',
   },
   intro: [
     'If you spend hours hunched over a computer, looking down at your phone, or sitting at a desk, you\'re not alone -- and your spine is paying the price. "Tech neck," forward head posture, and rounded shoulders have become epidemic. At Cultivate Wellness, we help reverse these postural problems before they cause permanent damage.',
@@ -97,7 +97,7 @@ export const postureTechNeck: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Posture Correction',
     description:
-      'Dr. Zach takes a comprehensive approach to posture correction that addresses the structural, neurological, and lifestyle factors contributing to your postural problems.',
+      'We take a comprehensive approach to posture correction that addresses the structural, neurological, and lifestyle factors contributing to your postural problems.',
     steps: [
       {
         title: 'Detailed Postural Assessment',
@@ -138,7 +138,7 @@ export const postureTechNeck: ConditionPageData = {
     {
       question: 'How long does posture correction take?',
       answer:
-        'This depends on the severity and duration of your postural problems. Most patients see noticeable improvement within the first few weeks. Full correction of long-standing postural issues may take several months of consistent care combined with daily exercises. Dr. Zach will create a realistic timeline based on your evaluation.',
+        'This depends on the severity and duration of your postural problems. Most patients see noticeable improvement within the first few weeks. Full correction of long-standing postural issues may take several months of consistent care combined with daily exercises. Our team will create a realistic timeline based on your evaluation.',
     },
     {
       question: 'Can you help children with tech neck?',
@@ -165,7 +165,7 @@ export const postureTechNeck: ConditionPageData = {
   cta: {
     title: 'Fix Your Posture Before It\'s Too Late',
     description:
-      'Don\'t let tech neck and poor posture cause permanent damage. Schedule your posture evaluation with Dr. Zach today.',
+      'Don\'t let tech neck and poor posture cause permanent damage. Schedule your posture evaluation with us today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {

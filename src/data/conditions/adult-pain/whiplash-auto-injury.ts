@@ -9,7 +9,7 @@ export const whiplashAutoInjury: ConditionPageData = {
   seo: {
     title: 'Whiplash & Auto Injury Recovery | Chiropractic Care Rochester Hills, MI',
     description:
-      'Gentle chiropractic care for whiplash and auto accident injuries in Rochester Hills, MI. Dr. Zach at Cultivate Wellness helps you recover without drugs or surgery.',
+      'Gentle chiropractic care for whiplash and auto accident injuries in Rochester Hills, MI. At Cultivate Wellness, we help you recover without drugs or surgery.',
   },
   intro: [
     'A car accident can change your life in seconds. Even a low-speed collision can cause significant injury to the spine, muscles, and nervous system -- and symptoms often don\'t appear until days or weeks later. At Cultivate Wellness, we specialize in helping auto accident patients recover fully using gentle, neurologically-focused chiropractic care.',
@@ -97,7 +97,7 @@ export const whiplashAutoInjury: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Auto Injury Recovery',
     description:
-      'Dr. Zach creates a personalized recovery plan based on the specific nature and severity of your injuries.',
+      'Our team creates a personalized recovery plan based on the specific nature and severity of your injuries.',
     steps: [
       {
         title: 'Thorough Injury Evaluation',
@@ -153,7 +153,7 @@ export const whiplashAutoInjury: ConditionPageData = {
     {
       question: 'How long does recovery from whiplash take?',
       answer:
-        'Recovery time varies based on the severity of injury, how quickly you begin care, and your individual health factors. Mild cases may resolve in a few weeks, while more severe injuries may take several months. Dr. Zach will give you an honest assessment and track your progress throughout care.',
+        'Recovery time varies based on the severity of injury, how quickly you begin care, and your individual health factors. Mild cases may resolve in a few weeks, while more severe injuries may take several months. Our team will give you an honest assessment and track your progress throughout care.',
     },
     {
       question: 'Can old accident injuries still be helped?',
@@ -170,7 +170,7 @@ export const whiplashAutoInjury: ConditionPageData = {
   cta: {
     title: 'Start Your Recovery Today',
     description:
-      'Don\'t let an auto accident injury become a chronic problem. Schedule your evaluation with Dr. Zach today.',
+      'Don\'t let an auto accident injury become a chronic problem. Schedule your evaluation with us today.',
     buttonText: 'Book Your Consultation',
   },
   schema: {
