@@ -180,9 +180,15 @@ export default function Header() {
             </div>
           )}
 
-          {/* Mobile Navigation */}
+          {/* Mobile Navigation Overlay + Menu */}
           {isMenuOpen && (
-            <div className="xl:hidden py-4 space-y-2 max-h-[calc(100vh-4rem)] overflow-y-auto">
+            <>
+              <div
+                className="fixed inset-0 bg-black/30 z-30 xl:hidden"
+                onClick={() => setIsMenuOpen(false)}
+                aria-hidden="true"
+              />
+              <div className="relative z-40 xl:hidden py-4 space-y-2 max-h-[calc(100vh-4rem)] overflow-y-auto bg-white">
               {navBefore.map((link) => (
                 <Link
                   key={link.to}
@@ -274,6 +280,7 @@ export default function Header() {
                 Book Appointment
               </Link>
             </div>
+            </>
           )}
         </nav>
       </header>

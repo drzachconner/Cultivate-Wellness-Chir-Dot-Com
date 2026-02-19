@@ -80,6 +80,13 @@ export default function ConditionHero({ title, subtitle, image, breadcrumbLabel 
                         ))}
                       </div>
                     ))}
+                    <Link
+                      to="/conditions"
+                      onClick={() => setIsOpen(false)}
+                      className="sticky bottom-0 block px-4 py-2 text-sm font-semibold text-primary-dark hover:bg-gray-50 border-t border-gray-100 bg-white"
+                    >
+                      View All Conditions
+                    </Link>
                   </div>
                 )}
               </div>
