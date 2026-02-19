@@ -125,7 +125,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+        <div className="border-t border-gray-800 pt-8 flex flex-col items-center gap-4 text-sm text-gray-400">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="opacity-40 hover:opacity-80 transition-opacity"
+            aria-label="Back to top"
+          >
+            <img
+              src="/images/logo-tree-white.png"
+              alt=""
+              className="h-10 w-10"
+            />
+          </button>
           <p>&copy; {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
         </div>
       </div>
