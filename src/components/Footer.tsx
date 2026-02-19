@@ -134,7 +134,7 @@ export default function Footer() {
             <img
               src="/images/logo-tree-white.png"
               alt=""
-              className="h-10 w-10"
+              className="h-12 w-12"
             />
           </button>
           <p>&copy; {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
