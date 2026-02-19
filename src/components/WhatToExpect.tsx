@@ -101,22 +101,20 @@ export default function WhatToExpect() {
               >
                 {/* Image - left on even, right on odd (desktop) */}
                 <div className={`${index % 2 === 1 ? 'md:order-2' : ''}`}>
-                  <div className="relative">
-                    <span className="absolute -top-4 -left-2 text-7xl font-bold text-primary-dark/10 select-none z-0">
-                      {step.number}
-                    </span>
-                    <img
-                      src={step.image}
-                      alt={step.imageAlt}
-                      className="relative z-10 rounded-2xl shadow-lg w-full object-cover aspect-[4/3]"
-                      loading="lazy"
-                    />
-                  </div>
+                  <img
+                    src={step.image}
+                    alt={step.imageAlt}
+                    className="rounded-2xl shadow-lg w-full object-cover aspect-[4/3]"
+                    loading="lazy"
+                  />
                 </div>
 
                 {/* Text - right on even, left on odd (desktop) */}
-                <div className={`${index % 2 === 1 ? 'md:order-1' : ''}`}>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <div className={`relative ${index % 2 === 1 ? 'md:order-1' : ''}`}>
+                  <span className="absolute -top-6 -left-3 text-8xl font-bold text-primary-dark/10 select-none pointer-events-none">
+                    {step.number}
+                  </span>
+                  <h3 className="relative text-2xl font-bold text-gray-900 mb-4">
                     {step.title}
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
