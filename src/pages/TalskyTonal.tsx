@@ -46,7 +46,7 @@ export default function TalskyTonal() {
         title="Talsky Tonal Chiropractic | Rochester Hills, MI"
         description="Talsky Tonal Chiropractic in Rochester Hills - gentle, neurologically-focused care. Our team includes certified teachers of this advanced technique. Book today!"
         canonical="/talsky-tonal-chiropractic"
-        ogImage="/images/Talsky at source2.jpg"
+        ogImage="/images/talsky-source.webp"
       />
       <JsonLd data={breadcrumbJsonLd([
         { name: 'Home', url: `https://${SITE.domain}/` },
@@ -56,7 +56,7 @@ export default function TalskyTonal() {
         data={medicalWebPageSchema({
           headline: 'Talsky Tonal Chiropractic - Neurologically-Focused Care',
           description: 'Advanced Talsky Tonal Chiropractic technique for gentle, neurologically-focused care. Release accumulated stress patterns, restore nervous system integrity, and promote never-ending optimization.',
-          image: '/images/Talsky at source2.jpg',
+          image: '/images/talsky-source.webp',
           datePublished: '2024-01-10',
           dateModified: '2025-10-20',
           author: 'Dr. Zach Conner',
@@ -71,7 +71,7 @@ export default function TalskyTonal() {
       <section className="relative py-32 bg-gray-900 min-h-[500px] flex items-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/Talsky at source2.jpg"
+            src="/images/talsky-source.webp"
             alt="Talsky Tonal Chiropractic"
             className="w-full h-full object-cover"
           />
@@ -145,11 +145,11 @@ export default function TalskyTonal() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-8">How Talsky Tonal Chiropractic Works</h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Talsky Tonal Chiropractic emphasizes spinal cord tension over spinal cord pressure, using a
-              vitalistic, moment-to-moment analysis of the entire spinal system — from tailbone through cranial
-              bones — to identify exactly where your body is holding onto tension that it no longer needs.
+              vitalistic, moment-to-moment analysis of the entire spinal system, from tailbone through cranial
+              bones, to identify exactly where your body is holding onto tension that it no longer needs.
               Instead of forceful manipulations, adjustments use a gentle pressure input with a finger contact,
-              taking only a few seconds. The corrections don't stop when you get off the table —
-              they continue working with your body's movements and breathing.
+              taking only a few seconds. The corrections don't stop when you get off the table.
+              They continue working with your body's movements and breathing.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               TTC finds this "stress stuck on" and gives your body the space, permission, and information it

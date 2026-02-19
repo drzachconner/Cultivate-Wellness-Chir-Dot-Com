@@ -171,14 +171,15 @@ export default function Home() {
           alt="Cultivate Wellness Chiropractic"
           className="w-full h-auto"
         />
-        {/* Conditions dropdown overlay */}
-        <div className="absolute top-4 left-4 z-10">
-          <ConditionsDropdown />
-        </div>
       </section>
 
+      {/* Floating conditions dropdown */}
+      <div className="fixed top-4 left-4 z-50">
+        <ConditionsDropdown />
+      </div>
+
       {/* Intro Quote */}
-      <section className="py-16 bg-white">
+      <section className="relative pt-24 pb-8 bg-white">
         <AnimateOnScroll>
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -187,35 +188,33 @@ export default function Home() {
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading font-semibold text-primary-dark mb-3">
               Helping Families Thrive Through Nervous System-Focused Chiropractic Care
             </h2>
-            <p className="text-base sm:text-lg text-gray-600 mb-8 italic">
+            <p className="text-base sm:text-lg text-gray-600 mb-0 italic">
               We are rooted in the understanding that your body has an innate ability to heal itself.
             </p>
-            <p className="text-lg sm:text-xl text-gray-700 mb-6 leading-relaxed">
-              "Our primary focus is your family's health and happiness. We specialize in <span className="text-primary-600 font-semibold">gentle, neuro-focused chiropractic care</span>. Whether the journey involves autism, epilepsy, special needs, or well baby checks and family wellness, our team is more than prepared to cultivate the best healing experience possible."
-            </p>
-            <p className="text-base text-gray-600 mb-8">
-              - Dr. Zach Conner<br />
-              <span className="text-primary-600">Rochester Hills, MI Chiropractor</span>
-            </p>
-            <Link
-              to="/events-workshops"
-              className="inline-block border-2 border-primary-dark text-primary-dark px-8 py-4 rounded-lg text-lg font-medium hover:bg-primary-dark hover:text-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
-            >
-              Workshops For Parents
-            </Link>
           </div>
         </AnimateOnScroll>
       </section>
 
-      {/* Hope. Answers. Help. */}
-      <section className="py-20 bg-white">
+      {/* Hope Card */}
+      <section className="bg-white pb-24">
         <AnimateOnScroll>
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-heading font-bold text-primary-dark leading-tight mb-8">
-              A place for Hope.<br />
-              Answers. Help.
-            </h2>
-            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white rounded-2xl px-6 sm:px-10 lg:px-16 py-10 sm:py-14 text-center" style={{ boxShadow: '0 8px 40px rgba(0, 45, 78, 0.2)' }}>
+              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-heading font-bold text-primary-dark leading-tight">
+                A place for Hope.<br />
+                Answers. Help.
+              </h2>
+            </div>
+          </div>
+        </AnimateOnScroll>
+      </section>
+
+      {/* About / Mission */}
+      <section className="relative py-20" style={{ backgroundImage: 'url(/images/background-pattern.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#5a7a99' }}>
+        <div className="absolute inset-0 z-0" style={{ backgroundColor: 'rgba(90, 122, 153, 0.85)' }} />
+        <AnimateOnScroll>
+          <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               At Cultivate Wellness, our office is intentionally designed to care
               for families and children at every stage. From well baby checks and
               family wellness care, to the toughest of cases — autism, epilepsy,
@@ -226,26 +225,6 @@ export default function Home() {
           </div>
         </AnimateOnScroll>
       </section>
-
-      {/* Gradient: white → blue CTA */}
-
-      {/* Blue CTA Band */}
-      <AnimateOnScroll>
-        <section className="relative py-20 min-h-[400px] flex items-center justify-center" style={{ backgroundImage: 'url(/images/background-pattern.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#5a7a99' }}>
-          <div className="absolute inset-0 z-0" style={{ backgroundColor: 'rgba(90, 122, 153, 0.85)' }} />
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p className="text-xl sm:text-2xl text-white mb-8 max-w-4xl mx-auto leading-relaxed">
-              Our team is skilled in <strong>Pediatric, Prenatal, and Family Chiropractic</strong>. Click the button to learn how we care for you and your family!
-            </p>
-            <Link
-              to="/new-patient-center"
-              className="inline-block bg-primary-dark text-white px-10 py-4 rounded-lg text-lg font-medium hover:bg-primary-accent transition-all duration-200 shadow-xl hover:scale-[1.02] active:scale-[0.98]"
-            >
-              New Patient Center
-            </Link>
-          </div>
-        </section>
-      </AnimateOnScroll>
 
       {/* What to Expect */}
       <WhatToExpect />
@@ -344,8 +323,9 @@ export default function Home() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-16 bg-primary text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-16 text-white" style={{ backgroundImage: 'url(/images/background-pattern.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#5a7a99' }}>
+        <div className="absolute inset-0 z-0" style={{ backgroundColor: 'rgba(90, 122, 153, 0.85)' }} />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <AnimateOnScroll direction="left">
               <div>

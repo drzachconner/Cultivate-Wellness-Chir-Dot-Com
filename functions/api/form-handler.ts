@@ -81,7 +81,7 @@ function generateGuideEmail(firstName: string, guide: { title: string; pdfUrl: s
           <!-- Header -->
           <tr>
             <td style="padding: 30px; text-align: center; background-color: #ffffff;">
-              <img src="https://www.cultivatewellnesschiro.com/images/cwc-logo-horizontal.png" alt="Cultivate Wellness Chiropractic" style="max-width: 300px; height: auto;">
+              <img src="https://www.cultivatewellnesschiro.com/images/cwc-logo-horizontal.webp" alt="Cultivate Wellness Chiropractic" style="max-width: 300px; height: auto;">
             </td>
           </tr>
 

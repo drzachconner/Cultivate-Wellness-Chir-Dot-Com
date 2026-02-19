@@ -35,8 +35,8 @@ export default function ConditionHero({ title, subtitle, image, breadcrumbLabel 
         />
       </div>
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary-dark/70 to-primary/60" />
-      {/* Breadcrumb pinned to top of hero */}
-      <nav aria-label="Breadcrumb" className="absolute top-4 left-4 sm:left-6 lg:left-8 z-20 text-sm text-white/80">
+      {/* Floating breadcrumb */}
+      <nav aria-label="Breadcrumb" className="fixed top-4 left-4 sm:left-6 lg:left-8 z-50 text-sm text-white backdrop-blur-sm bg-black/20 rounded-lg px-3 py-2">
         <ol className="flex items-center flex-wrap gap-1">
           <li className="flex items-center">
             <Link to="/" className="flex items-center hover:text-white transition-colors" aria-label="Home">

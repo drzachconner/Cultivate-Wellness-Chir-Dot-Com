@@ -15,30 +15,30 @@ interface Step {
 const steps: Step[] = [
   {
     number: '01',
-    title: 'Your First Visit — Neurological Assessment',
-    image: '/images/insight-scan-child.png',
-    imageAlt: 'Child receiving INSiGHT neurological scan with mother present',
+    title: 'Your First Visit: Neurological Assessment',
+    image: '/images/insight-scan-neck.webp',
+    imageAlt: 'INSiGHT neurological scan being performed on patient neck',
     description:
-      'Non-invasive INSiGHT neurological scans measure how the nervous system is functioning — including thermal, EMG, and HRV readings. These painless scans take just minutes and give our team a clear picture of stress patterns in your child\'s (or your) nervous system.',
+      'Non-invasive INSiGHT neurological scans measure how the nervous system is functioning, including thermal, EMG, and HRV readings. These painless scans take just minutes and give our team a clear picture of stress patterns in your child\'s (or your) nervous system.',
     expandedTitle: 'About the INSiGHT Scans',
     expandedContent: [
-      'Thermal Scan — Measures temperature differences along the spine, revealing areas where the autonomic nervous system may be under stress.',
-      'Surface EMG (sEMG) — Measures muscle tension and energy expenditure along the spine, showing how hard the body is working to maintain posture and balance.',
-      'Heart Rate Variability (HRV) — Measures the adaptability of the nervous system, indicating how well the body handles and recovers from stress.',
+      'Thermal Scan: Measures temperature differences along the spine, revealing areas where the autonomic nervous system may be under stress.',
+      'Surface EMG (sEMG): Measures muscle tension and energy expenditure along the spine, showing how hard the body is working to maintain posture and balance.',
+      'Heart Rate Variability (HRV): Measures the adaptability of the nervous system, indicating how well the body handles and recovers from stress.',
     ],
   },
   {
     number: '02',
-    title: 'Your Second Visit — Report of Findings & First Adjustment',
-    image: '/images/insight-corescore-report.jpeg',
+    title: 'Your Second Visit: Report of Findings & First Adjustment',
+    image: '/images/insight-corescore-report.webp',
     imageAlt: 'INSiGHT neurological scan report showing CORESCORE results',
     description:
-      'Our team walks you through your scan results in detail, explains what the findings mean, presents a personalized care plan tailored to your family\'s needs, and — if appropriate — performs your first gentle Talsky Tonal adjustment.',
+      'Our team walks you through your scan results in detail, explains what the findings mean, presents a personalized care plan tailored to your family\'s needs, and if appropriate, performs your first gentle Talsky Tonal adjustment.',
     expandedTitle: 'What to Expect During Your Report',
     expandedContent: [
       'A detailed walkthrough of your INSiGHT scan results with easy-to-understand visuals showing exactly where stress patterns exist in the nervous system.',
       'A personalized care plan outlining recommended visit frequency, expected milestones, and how progress will be tracked with follow-up scans.',
-      'Your first gentle Talsky Tonal adjustment — a low-force, neurologically-focused technique that works with the body\'s natural rhythms. Most patients describe it as deeply relaxing.',
+      'Your first gentle Talsky Tonal adjustment: a low-force, neurologically-focused technique that works with the body\'s natural rhythms. Most patients describe it as deeply relaxing.',
     ],
   },
 ];
@@ -54,7 +54,7 @@ const differentiators: DifferentiatorItem[] = [
     icon: ScanSearch,
     title: 'Testing, Not Guessing',
     content:
-      'Our INSiGHT scans measure stress and tension in the autonomic nervous system with precision — including thermal, surface EMG, and heart rate variability readings. Objective data means we never guess about what\'s going on inside your body.',
+      'Our INSiGHT scans measure stress and tension in the autonomic nervous system with precision, including thermal, surface EMG, and heart rate variability readings. Objective data means we never guess about what\'s going on inside your body.',
   },
   {
     icon: ClipboardList,
@@ -66,13 +66,13 @@ const differentiators: DifferentiatorItem[] = [
     icon: Hand,
     title: 'Gentle Adjustments',
     content:
-      'Our tonal adjustments work with your body\'s natural rhythms — no cracking, popping, or twisting required. This gentle, low-force approach is safe for all ages, from newborns to grandparents.',
+      'Our tonal adjustments work with your body\'s natural rhythms. No cracking, popping, or twisting required. This gentle, low-force approach is safe for all ages, from newborns to grandparents.',
   },
   {
     icon: Sparkles,
     title: 'Noticeable Results',
     content:
-      'Many families notice changes right away — improved breathing, reduced tension, better sleep patterns, and a calmer nervous system. Early shifts show your body is already beginning to function the way it was designed to.',
+      'Many families notice changes right away: improved breathing, reduced tension, better sleep patterns, and a calmer nervous system. Early shifts show your body is already beginning to function the way it was designed to.',
   },
 ];
 
