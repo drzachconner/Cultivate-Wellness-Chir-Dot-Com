@@ -56,14 +56,7 @@ export default function ConditionHero({ title, subtitle, image, breadcrumbLabel 
                 </button>
                 {isOpen && (
                   <div className="absolute top-full left-0 mt-2 w-72 bg-white rounded-lg shadow-xl border border-gray-200 z-50 flex flex-col">
-                    <Link
-                      to="/conditions"
-                      onClick={() => setIsOpen(false)}
-                      className="block px-4 py-2 text-sm font-semibold text-primary-dark hover:bg-gray-50 border-b border-gray-100 flex-shrink-0"
-                    >
-                      View All Conditions
-                    </Link>
-                    <div className="max-h-60 overflow-y-auto">
+                    <div className="max-h-64 overflow-y-auto">
                       {groups.map((group) => (
                         <div key={group.category}>
                           <p className="px-4 py-1.5 text-xs font-bold text-gray-400 uppercase tracking-wider bg-gray-50">
