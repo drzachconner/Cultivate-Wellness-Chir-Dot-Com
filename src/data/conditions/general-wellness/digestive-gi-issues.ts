@@ -13,12 +13,12 @@ export const digestiveGiIssues: ConditionPageData = {
   },
   intro: [
     'Digestive problems affect millions of people, often despite medication and dietary changes. What many do not realize is that the nervous system plays a crucial role in digestive function. At Cultivate Wellness, we address the nerve interference that may be contributing to your digestive issues.',
-    'Your digestive system is controlled by both the central nervous system and the enteric nervous system (your "second brain"). When there is interference to this communication, digestive problems often follow. Our gentle, neurologically-focused approach helps restore proper nerve signaling to your digestive organs.',
+    'Most people have heard of the gut-brain connection, but what comes first -- and is even more important -- is the brain-gut connection. Your brain sends signals down through the vagus nerve to control nearly every aspect of digestion, from stomach acid production to motility to nutrient absorption. When there is interference to this top-down communication, digestive problems often follow. Our gentle, neurologically-focused approach helps restore proper nerve signaling through the vagus nerve to your digestive organs.',
   ],
   highlightBox: {
     icon: 'brain',
-    label: 'The Gut-Brain Connection',
-    text: 'Your digestive system is controlled by both the central nervous system and the enteric nervous system (your "second brain"). When there is interference to this communication, digestive problems often follow.',
+    label: 'The Brain-Gut Connection',
+    text: 'While the gut-brain connection is well known, the brain-gut connection via the vagus nerve comes first. Your brain controls digestion top-down through the vagus nerve -- which runs from the brainstem through the upper cervical spine to your digestive organs. When spinal misalignment interferes with this pathway, digestive problems often follow.',
   },
   symptoms: {
     sectionTitle: 'Digestive Conditions We Support',

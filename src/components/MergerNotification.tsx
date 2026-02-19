@@ -127,8 +127,8 @@ export default function MergerNotification() {
         </div>
       )}
 
-      {/* Desktop: Original card design - centered at bottom */}
-      <div className="hidden md:block w-full animate-slide-in">
+      {/* Desktop: card anchored just left of chatbot button */}
+      <div className="hidden md:block fixed bottom-4 z-40 animate-slide-in max-w-sm" style={{ right: '84px' }}>
         <div
           className="bg-white rounded-lg shadow-2xl overflow-hidden border-2 transition-all duration-300"
           style={{ borderColor: '#002d4e' }}

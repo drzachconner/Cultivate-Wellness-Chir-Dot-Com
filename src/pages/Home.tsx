@@ -303,7 +303,7 @@ export default function Home() {
             <AnimateOnScroll direction="right">
               <div>
                 <p className="text-lg text-gray-700 mb-6">
-                  Cultivate Wellness is led by Dr. Zach Conner, <span className="font-semibold">an esteemed educator and practitioner of <a href="https://talskytonal.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary-accent">Talsky Tonal Chiropractic</a>, a gentle, highly effective neuro-focused approach to care.</span> From your first visit, expect to be embraced as part of our Cultivate Wellness family as we journey together towards a healthier, happier life.
+                  Cultivate Wellness is led by Dr. Zach Conner, <span className="font-semibold">an esteemed educator and practitioner of <Link to="/talsky-tonal-chiropractic" className="underline hover:text-primary-accent">Talsky Tonal Chiropractic</Link>, a gentle, highly effective neuro-focused approach to care.</span> From your first visit, expect to be embraced as part of our Cultivate Wellness family as we journey together towards a healthier, happier life.
                 </p>
                 <Link
                   to="/meet-dr-zach"

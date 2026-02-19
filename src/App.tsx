@@ -127,11 +127,8 @@ function App() {
           </main>
           <Footer />
           <MobileCTA />
-          {/* Notification stack: plain wrapper on mobile (children position themselves), fixed stack on desktop */}
-          <div className="md:fixed md:bottom-4 md:left-4 md:z-40 md:flex md:flex-col md:gap-3 md:max-w-[280px]">
-            <FloatingReviewWidget />
-            <MergerNotification />
-          </div>
+          <FloatingReviewWidget />
+          <MergerNotification />
           <ChatbotWidget />
         </div>
       </ErrorBoundary>

@@ -13,12 +13,12 @@ export const ibs: ConditionPageData = {
   },
   intro: [
     'Irritable bowel syndrome (IBS) is a frustrating condition that affects millions of people, causing abdominal pain, bloating, and unpredictable bowel habits that disrupt daily life. At Cultivate Wellness, we support patients with IBS by addressing the nervous system dysfunction that plays a central role in this gut-brain disorder.',
-    'IBS is increasingly recognized as a disorder of gut-brain communication. The enteric nervous system (your "second brain" in the gut) and the vagus nerve that connects your brain to your digestive system are directly influenced by spinal alignment and nervous system function. Our gentle, neurologically-focused approach helps optimize this communication, supporting better digestive regulation and comfort.',
+    'Most people have heard of the gut-brain connection, but what comes first -- and is even more important -- is the brain-gut connection. Your brain sends signals down through the vagus nerve to regulate nearly every aspect of digestive function. IBS is increasingly recognized as a disorder of this top-down communication. The vagus nerve and the enteric nervous system (your "second brain" in the gut) are directly influenced by spinal alignment and nervous system function. Our gentle, neurologically-focused approach helps optimize this brain-to-gut signaling, supporting better digestive regulation and comfort.',
   ],
   highlightBox: {
     icon: 'brain',
-    label: 'The Gut-Brain Axis',
-    text: 'IBS is fundamentally a gut-brain communication disorder. The vagus nerve, which runs from the brainstem through the upper cervical spine to the digestive system, is the primary pathway for this communication. Optimizing vagus nerve function may help regulate digestive patterns.',
+    label: 'The Brain-Gut Connection',
+    text: 'While the gut-brain connection is well known, the brain-gut connection via the vagus nerve comes first. Your brain controls digestive function top-down through the vagus nerve -- which runs from the brainstem through the upper cervical spine to the digestive system. IBS is fundamentally a breakdown in this communication. Optimizing vagus nerve function may help regulate digestive patterns.',
   },
   symptoms: {
     sectionTitle: 'IBS Symptoms We Support',

@@ -87,7 +87,8 @@ export default function FloatingReviewWidget() {
       <aside
         role="complementary"
         aria-label="Customer reviews"
-        className="bg-white rounded-lg shadow-xl border border-gray-200 hidden md:block w-full"
+        className="fixed bottom-4 left-4 z-40 bg-white rounded-lg shadow-xl border border-gray-200 hidden md:block"
+        style={{ maxWidth: '280px' }}
       >
         {/* Close button */}
         <button
