@@ -5,7 +5,7 @@ export const pinchedNerves: ConditionPageData = {
   title: 'Pinched Nerves',
   subtitle: 'Gentle Relief for Nerve Compression Without Drugs or Surgery',
   category: 'adult-pain',
-  heroImage: '/images/hero/dr-zach-office.webp',
+  heroImage: '/images/hero/family-beach.webp',
   seo: {
     title: 'Pinched Nerve Relief | Chiropractic Care Rochester Hills, MI',
     description:

@@ -5,7 +5,7 @@ export const whiplashAutoInjury: ConditionPageData = {
   title: 'Whiplash & Auto Injury',
   subtitle: 'Gentle, Effective Recovery After Car Accidents',
   category: 'adult-pain',
-  heroImage: '/images/hero/dr-zach-office.webp',
+  heroImage: '/images/hero/family-park-sunset.webp',
   seo: {
     title: 'Whiplash & Auto Injury Recovery | Chiropractic Care Rochester Hills, MI',
     description:
