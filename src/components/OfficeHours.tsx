@@ -20,18 +20,6 @@ export default function OfficeHours() {
             Office Hours
           </h2>
 
-          <div className="mb-8 px-4 py-5 bg-blue-50 border border-blue-200 rounded-lg">
-            <p className="text-center text-gray-800 leading-relaxed text-sm">
-              <strong className="text-blue-900">New Patients:</strong> We have merged with Van Every Family Chiropractic Center and are no longer accepting new patients at this location. To schedule a new patient appointment with Dr. Zach, please call{' '}
-              <a href="tel:+12486160900" className="text-primary-dark font-semibold hover:underline">
-                (248) 616-0900
-              </a>.<br />
-              <span className="text-xs italic mt-1 block">
-                Please mention that you were referred by Cultivate Wellness Chiropractic to see Dr. Zach.
-              </span>
-            </p>
-          </div>
-
           <div className="max-w-sm mx-auto">
             {days.map((item, i) => {
               const isOpen = item.hours !== 'Closed';
@@ -59,6 +47,18 @@ export default function OfficeHours() {
               <Phone size={16} />
               (248) 221-1118
             </a>
+          </div>
+
+          <div className="mt-8 px-4 py-5 bg-blue-50 border border-blue-200 rounded-lg">
+            <p className="text-center text-gray-800 leading-relaxed text-sm">
+              <strong className="text-blue-900">New Patients:</strong> We have merged with Van Every Family Chiropractic Center and are no longer accepting new patients at this location. To schedule a new patient appointment with Dr. Zach, please call{' '}
+              <a href="tel:+12486160900" className="text-primary-dark font-semibold hover:underline">
+                (248) 616-0900
+              </a>.<br />
+              <span className="text-xs italic mt-1 block">
+                Please mention that you were referred by Cultivate Wellness Chiropractic to see Dr. Zach.
+              </span>
+            </p>
           </div>
         </div>
       </section>
