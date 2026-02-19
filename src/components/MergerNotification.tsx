@@ -56,7 +56,7 @@ export default function MergerNotification() {
             >
               <div className="flex items-center gap-3">
                 <img
-                  src="https://doc.vortala.com/childsites/uploads/3035/files/logo2.png"
+                  src="/images/van-every-logo.png"
                   alt="Van Every Family Chiropractic Center"
                   className="h-8 w-auto bg-white rounded px-2 py-1"
                 />
@@ -140,7 +140,7 @@ export default function MergerNotification() {
           >
             <div className="flex items-center gap-3">
               <img
-                src="https://doc.vortala.com/childsites/uploads/3035/files/logo2.png"
+                src="/images/van-every-logo.png"
                 alt="Van Every Family Chiropractic Center"
                 className="h-10 w-auto bg-white rounded px-2 py-1"
               />
@@ -164,7 +164,7 @@ export default function MergerNotification() {
           {isExpanded && (
             <div className="p-4 space-y-4">
               <img
-                src="https://doc.vortala.com/childsites/uploads/3035/files/img-header-new.png"
+                src="/images/van-every-header.png"
                 alt="Van Every Chiropractic"
                 className="w-full h-auto rounded"
               />

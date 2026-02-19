@@ -1,4 +1,7 @@
-import Breadcrumbs from '../Breadcrumbs';
+import { Link } from 'react-router-dom';
+import { ChevronRight, ChevronDown, Home } from 'lucide-react';
+import { useState, useRef, useEffect } from 'react';
+import { getGroupedConditions } from '../../data/conditions';
 
 interface ConditionHeroProps {
   title: string;
@@ -8,6 +11,20 @@ interface ConditionHeroProps {
 }
 
 export default function ConditionHero({ title, subtitle, image, breadcrumbLabel }: ConditionHeroProps) {
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const groups = getGroupedConditions();
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setIsOpen(false);
+      }
+    }
+    if (isOpen) document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isOpen]);
+
   return (
     <section className="relative py-32 bg-gray-900">
       <div className="absolute inset-0 z-0">
@@ -19,13 +36,60 @@ export default function ConditionHero({ title, subtitle, image, breadcrumbLabel 
       </div>
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary-dark/70 to-primary/60" />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Breadcrumbs
-          items={[
-            { name: 'Conditions', href: '/conditions' },
-            { name: breadcrumbLabel },
-          ]}
-          className="mb-6 text-white/80 [&_a]:text-white/80 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white/50"
-        />
+        {/* Breadcrumb with conditions dropdown */}
+        <nav aria-label="Breadcrumb" className="mb-6 text-sm text-white/80">
+          <ol className="flex items-center flex-wrap gap-1">
+            <li className="flex items-center">
+              <Link to="/" className="flex items-center hover:text-white transition-colors" aria-label="Home">
+                <Home size={16} />
+              </Link>
+            </li>
+            <li className="flex items-center">
+              <ChevronRight size={16} className="mx-1 text-white/50" aria-hidden="true" />
+              <div className="relative" ref={dropdownRef}>
+                <button
+                  onClick={() => setIsOpen(!isOpen)}
+                  className="flex items-center gap-1 hover:text-white transition-colors"
+                >
+                  Conditions
+                  <ChevronDown size={14} className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {isOpen && (
+                  <div className="absolute top-full left-0 mt-2 w-72 max-h-80 overflow-y-auto bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                    <Link
+                      to="/conditions"
+                      onClick={() => setIsOpen(false)}
+                      className="block px-4 py-2 text-sm font-semibold text-primary-dark hover:bg-gray-50 border-b border-gray-100"
+                    >
+                      View All Conditions
+                    </Link>
+                    {groups.map((group) => (
+                      <div key={group.category}>
+                        <p className="px-4 py-1.5 text-xs font-bold text-gray-400 uppercase tracking-wider bg-gray-50">
+                          {group.label}
+                        </p>
+                        {group.conditions.map((c) => (
+                          <Link
+                            key={c.slug}
+                            to={`/conditions/${c.slug}`}
+                            onClick={() => setIsOpen(false)}
+                            className="block px-4 py-1.5 text-sm text-gray-700 hover:bg-primary-light/10 hover:text-primary-dark transition-colors"
+                          >
+                            {c.title}
+                          </Link>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </li>
+            <li className="flex items-center">
+              <ChevronRight size={16} className="mx-1 text-white/50" aria-hidden="true" />
+              <span className="text-white font-medium" aria-current="page">{breadcrumbLabel}</span>
+            </li>
+          </ol>
+        </nav>
         <h1 className="text-4xl sm:text-5xl font-bold text-white text-center mb-6">
           {title}
         </h1>
