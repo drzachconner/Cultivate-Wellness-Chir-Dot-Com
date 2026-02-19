@@ -132,9 +132,9 @@ export default function Footer() {
             aria-label="Back to top"
           >
             <img
-              src="/images/logo-tree-white.png"
+              src="/images/logo-tree-color.png"
               alt=""
-              className="h-12 w-12"
+              className="h-12 w-12 brightness-0 invert"
             />
           </button>
           <p>&copy; {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
