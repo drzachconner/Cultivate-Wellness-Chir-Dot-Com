@@ -16,8 +16,8 @@ const steps: Step[] = [
   {
     number: '01',
     title: 'Your First Visit — Neurological Assessment',
-    image: '/images/insight-scanners.png',
-    imageAlt: 'INSiGHT neurological scanning equipment — neuroThermal, neuroPulse, and neuroCORE devices',
+    image: '/images/insight-scan-child.png',
+    imageAlt: 'Child receiving INSiGHT neurological scan with mother present',
     description:
       'Non-invasive INSiGHT neurological scans measure how the nervous system is functioning — including thermal, EMG, and HRV readings. These painless scans take just minutes and give Dr. Zach a clear picture of stress patterns in your child\'s (or your) nervous system.',
     expandedTitle: 'About the INSiGHT Scans',
