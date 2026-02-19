@@ -1,16 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Star, X } from 'lucide-react';
 import { SITE } from '../data/site';
 
 export default function FloatingReviewWidget() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [displayIndex, setDisplayIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [isFading, setIsFading] = useState(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
 
   const reviews = SITE.testimonials;
 
   useEffect(() => {
-    // Check if user has dismissed the widget this session
     const dismissed = sessionStorage.getItem('reviewWidgetDismissed');
     if (dismissed) {
       setIsVisible(false);
@@ -21,18 +22,37 @@ export default function FloatingReviewWidget() {
     if (!isVisible) return;
 
     const interval = setInterval(() => {
-      setIsAnimating(true);
-      setTimeout(() => {
-        setCurrentIndex((prev) => (prev + 1) % reviews.length);
-        // Brief pause then slide back in
-        requestAnimationFrame(() => {
-          setIsAnimating(false);
+      // Fade out
+      setIsFading(true);
+      // After fade-out, swap content and fade back in
+      timeoutRef.current = setTimeout(() => {
+        setCurrentIndex((prev) => {
+          const next = (prev + 1) % reviews.length;
+          setDisplayIndex(next);
+          return next;
         });
-      }, 400);
+        requestAnimationFrame(() => {
+          setIsFading(false);
+        });
+      }, 300);
     }, 7000);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
   }, [isVisible, reviews.length]);
+
+  const handleDotClick = (index: number) => {
+    setIsFading(true);
+    timeoutRef.current = setTimeout(() => {
+      setCurrentIndex(index);
+      setDisplayIndex(index);
+      requestAnimationFrame(() => {
+        setIsFading(false);
+      });
+    }, 300);
+  };
 
   const handleDismiss = () => {
     setIsVisible(false);
@@ -41,7 +61,7 @@ export default function FloatingReviewWidget() {
 
   if (!isVisible || reviews.length === 0) return null;
 
-  const review = reviews[currentIndex];
+  const review = reviews[displayIndex];
   const formattedDate = new Date(review.datePublished).toLocaleDateString('en-US', {
     month: 'short',
     day: 'numeric',
@@ -63,13 +83,11 @@ export default function FloatingReviewWidget() {
 
   return (
     <>
-      {/* Desktop review card */}
+      {/* Desktop review card - box stays fixed, content fades */}
       <aside
         role="complementary"
         aria-label="Customer reviews"
-        className={`fixed bottom-4 left-4 z-40 max-w-xs bg-white rounded-lg shadow-xl border border-gray-200 transition-transform duration-400 ease-in-out hidden md:block ${
-          isAnimating ? '-translate-x-[calc(100%+2rem)]' : 'translate-x-0'
-        }`}
+        className="fixed bottom-4 left-4 z-40 max-w-xs bg-white rounded-lg shadow-xl border border-gray-200 hidden md:block"
         style={{ maxWidth: '280px' }}
       >
         {/* Close button */}
@@ -81,7 +99,7 @@ export default function FloatingReviewWidget() {
           <X size={14} className="text-gray-500" />
         </button>
 
-        <div className="p-4">
+        <div className={`p-4 transition-opacity duration-300 ease-in-out ${isFading ? 'opacity-0' : 'opacity-100'}`}>
           {/* Header with avatar, name, date */}
           <div className="flex items-center gap-3 mb-2">
             <div
@@ -126,7 +144,7 @@ export default function FloatingReviewWidget() {
             {reviews.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentIndex(index)}
+                onClick={() => handleDotClick(index)}
                 className={`w-1.5 h-1.5 rounded-full transition-colors ${
                   index === currentIndex ? 'bg-primary-dark' : 'bg-gray-300'
                 }`}
