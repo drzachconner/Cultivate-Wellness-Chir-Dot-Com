@@ -5,6 +5,7 @@ export const longCovid: ConditionPageData = {
   title: 'Long COVID & Post-Viral Recovery',
   subtitle: 'Gentle Nervous System Support for Lasting Post-Viral Symptoms',
   category: 'special-populations',
+  heroImage: '/images/hero/family-embrace.webp',
   seo: {
     title: 'Long COVID & Post-Viral Recovery | Chiropractic Care Rochester Hills, MI',
     description:

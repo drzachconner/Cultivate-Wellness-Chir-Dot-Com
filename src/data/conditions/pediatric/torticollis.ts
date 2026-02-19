@@ -5,6 +5,7 @@ export const torticollis: ConditionPageData = {
   title: 'Torticollis Treatment for Babies',
   subtitle: 'Gentle Chiropractic Care for Infant Neck Tightness',
   category: 'pediatric',
+  heroImage: '/images/hero/baby-6.webp',
   seo: {
     title: 'Torticollis Treatment for Babies | Chiropractic Care Rochester Hills, MI',
     description:

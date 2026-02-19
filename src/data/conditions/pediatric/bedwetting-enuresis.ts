@@ -5,6 +5,7 @@ export const bedwettingEnuresis: ConditionPageData = {
   title: 'Help for Bedwetting',
   subtitle: 'A Natural Approach to Childhood Enuresis',
   category: 'pediatric',
+  heroImage: '/images/hero/pediatric-child-walk.webp',
   seo: {
     title: 'Bedwetting & Enuresis | Chiropractic Care Rochester Hills, MI',
     description:

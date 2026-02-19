@@ -5,6 +5,7 @@ export const postureTechNeck: ConditionPageData = {
   title: 'Posture & Tech Neck',
   subtitle: 'Reversing the Effects of Modern Life on Your Spine',
   category: 'adult-pain',
+  heroImage: '/images/hero/family-running.webp',
   seo: {
     title: 'Posture Correction & Tech Neck | Chiropractic Care Rochester Hills, MI',
     description:

@@ -5,6 +5,7 @@ export const earInfections: ConditionPageData = {
   title: 'Ear Infections in Children',
   subtitle: 'A Natural Approach to Breaking the Cycle',
   category: 'pediatric',
+  heroImage: '/images/hero/baby-1.webp',
   seo: {
     title: 'Ear Infections in Children | Chiropractic Care Rochester Hills, MI',
     description:

@@ -5,6 +5,7 @@ export const colicInfantDigestive: ConditionPageData = {
   title: 'Colic & Infant Digestive Issues',
   subtitle: 'Relief for Baby -- and Peace of Mind for Parents',
   category: 'pediatric',
+  heroImage: '/images/hero/baby-1.webp',
   seo: {
     title: 'Colic & Infant Digestive Issues | Chiropractic Care Rochester Hills, MI',
     description:

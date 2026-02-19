@@ -5,6 +5,7 @@ export const pandasPans: ConditionPageData = {
   title: 'PANDAS & PANS Support',
   subtitle: 'Gentle Neurological Support for Children with Autoimmune-Triggered Symptoms',
   category: 'neurological',
+  heroImage: '/images/hero/family-embrace.webp',
   seo: {
     title: 'PANDAS & PANS Support | Chiropractic Care Rochester Hills, MI',
     description:

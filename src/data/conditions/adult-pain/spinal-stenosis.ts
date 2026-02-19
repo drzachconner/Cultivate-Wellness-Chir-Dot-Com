@@ -5,6 +5,7 @@ export const spinalStenosis: ConditionPageData = {
   title: 'Spinal Stenosis',
   subtitle: 'Gentle Chiropractic Support for Spinal Canal Narrowing',
   category: 'adult-pain',
+  heroImage: '/images/hero/family-multigenerational.webp',
   seo: {
     title: 'Spinal Stenosis Relief | Chiropractic Care Rochester Hills, MI',
     description:

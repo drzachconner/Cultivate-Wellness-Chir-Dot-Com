@@ -5,6 +5,7 @@ export const breastfeedingLatch: ConditionPageData = {
   title: 'Breastfeeding & Latch Issues',
   subtitle: 'Gentle Chiropractic Support for Nursing Difficulties',
   category: 'pregnancy-women',
+  heroImage: '/images/hero/baby-3.webp',
   seo: {
     title: 'Breastfeeding & Latch Issues | Chiropractic Care Rochester Hills, MI',
     description:

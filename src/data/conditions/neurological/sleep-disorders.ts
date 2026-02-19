@@ -5,6 +5,7 @@ export const sleepDisorders: ConditionPageData = {
   title: 'Sleep Disorders',
   subtitle: 'Natural Support for Restful, Restorative Sleep',
   category: 'neurological',
+  heroImage: '/images/hero/family-walking.webp',
   seo: {
     title: 'Sleep Disorders | Chiropractic Care Rochester Hills, MI',
     description:

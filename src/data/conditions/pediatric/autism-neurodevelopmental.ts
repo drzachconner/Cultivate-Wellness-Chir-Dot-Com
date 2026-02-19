@@ -5,6 +5,7 @@ export const autismNeurodevelopmental: ConditionPageData = {
   title: 'Autism & Neurodevelopmental Care',
   subtitle: 'Specialized, Compassionate Support for Neurological Differences',
   category: 'pediatric',
+  heroImage: '/images/hero/pediatric-kids-group.webp',
   seo: {
     title: 'Autism & Neurodevelopmental Care | Chiropractic Support in Rochester Hills, MI',
     description:

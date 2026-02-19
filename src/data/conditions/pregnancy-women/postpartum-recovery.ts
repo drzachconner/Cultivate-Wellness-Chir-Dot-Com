@@ -5,6 +5,7 @@ export const postpartumRecovery: ConditionPageData = {
   title: 'Postpartum Chiropractic Care',
   subtitle: 'Supporting Your Recovery After Baby',
   category: 'pregnancy-women',
+  heroImage: '/images/hero/baby-3.webp',
   seo: {
     title: 'Postpartum Recovery | Chiropractic Care Rochester Hills, MI',
     description:

@@ -5,6 +5,7 @@ export const headachesMigraines: ConditionPageData = {
   title: 'Headaches & Migraines',
   subtitle: 'Drug-Free Solutions for Lasting Relief',
   category: 'adult-pain',
+  heroImage: '/images/hero/family-walking.webp',
   seo: {
     title: 'Headaches & Migraines Relief | Chiropractic Care Rochester Hills, MI',
     description:

@@ -59,7 +59,7 @@ function ScrollToTop() {
     // Move focus to main content for accessibility (SPA navigation)
     const mainContent = document.getElementById('main');
     if (mainContent) {
-      mainContent.focus();
+      mainContent.focus({ preventScroll: true });
     }
   }, [pathname]);
 

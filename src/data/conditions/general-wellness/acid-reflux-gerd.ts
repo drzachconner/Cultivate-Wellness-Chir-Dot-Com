@@ -5,6 +5,7 @@ export const acidRefluxGerd: ConditionPageData = {
   title: 'Acid Reflux & GERD',
   subtitle: 'Natural Support for Digestive Comfort Through Nervous System Care',
   category: 'general-wellness',
+  heroImage: '/images/hero/baby-2.webp',
   seo: {
     title: 'Acid Reflux & GERD Relief | Chiropractic Care Rochester Hills, MI',
     description:

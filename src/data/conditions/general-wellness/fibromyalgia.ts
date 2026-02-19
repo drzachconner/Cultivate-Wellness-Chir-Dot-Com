@@ -5,6 +5,7 @@ export const fibromyalgia: ConditionPageData = {
   title: 'Fibromyalgia',
   subtitle: 'Gentle Care for Chronic Pain and Fatigue',
   category: 'general-wellness',
+  heroImage: '/images/hero/family-embrace.webp',
   seo: {
     title: 'Fibromyalgia Support | Chiropractic Care Rochester Hills, MI',
     description:

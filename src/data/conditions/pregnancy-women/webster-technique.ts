@@ -5,6 +5,7 @@ export const websterTechnique: ConditionPageData = {
   title: 'The Webster Technique',
   subtitle: 'Sacral Analysis & Pelvic Balance for Pregnancy',
   category: 'pregnancy-women',
+  heroImage: '/images/hero/pregnancy.webp',
   seo: {
     title: 'Webster Technique | Pregnancy Chiropractic Rochester Hills, MI',
     description:

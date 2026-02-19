@@ -5,6 +5,7 @@ export const tongueTieLipTie: ConditionPageData = {
   title: 'Tongue Tie & Lip Tie',
   subtitle: 'Chiropractic Support for Tethered Oral Tissues in Infants',
   category: 'pediatric',
+  heroImage: '/images/hero/baby-5.webp',
   seo: {
     title: 'Tongue Tie & Lip Tie Chiropractic Support | Rochester Hills, MI',
     description:

@@ -5,6 +5,7 @@ export const vertigoDizziness: ConditionPageData = {
   title: 'Vertigo & Dizziness',
   subtitle: 'Find Your Balance Again with Chiropractic Care',
   category: 'adult-pain',
+  heroImage: '/images/hero/family-forest.webp',
   seo: {
     title: 'Vertigo & Dizziness Treatment | Chiropractic Care Rochester Hills, MI',
     description:

@@ -5,6 +5,7 @@ export const arthritis: ConditionPageData = {
   title: 'Arthritis & Joint Pain',
   subtitle: 'Gentle Chiropractic Support for Joint Health & Comfort',
   category: 'general-wellness',
+  heroImage: '/images/hero/family-multigenerational.webp',
   seo: {
     title: 'Arthritis & Joint Pain Relief | Chiropractic Care Rochester Hills, MI',
     description:

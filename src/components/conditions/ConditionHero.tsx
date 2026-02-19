@@ -10,14 +10,15 @@ interface ConditionHeroProps {
 export default function ConditionHero({ title, subtitle, image, breadcrumbLabel }: ConditionHeroProps) {
   return (
     <section className="relative py-32 bg-gray-900">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-0">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover"
         />
       </div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary-dark/70 to-primary/60" />
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Breadcrumbs
           items={[
             { name: 'Conditions', href: '/conditions' },

@@ -5,6 +5,7 @@ export const adhdFocusIssues: ConditionPageData = {
   title: 'ADHD & Focus Issues',
   subtitle: 'A Neurological Approach to Attention and Concentration',
   category: 'pediatric',
+  heroImage: '/images/hero/pediatric-child-walk.webp',
   seo: {
     title: 'ADHD & Focus Issues | Chiropractic Support in Rochester Hills, MI',
     description:

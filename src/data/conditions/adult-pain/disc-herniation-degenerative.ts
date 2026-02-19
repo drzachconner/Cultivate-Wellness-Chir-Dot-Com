@@ -5,6 +5,7 @@ export const discHerniationDegenerative: ConditionPageData = {
   title: 'Disc Herniation & Degenerative Disc Disease',
   subtitle: 'Conservative Chiropractic Care for Disc Problems',
   category: 'adult-pain',
+  heroImage: '/images/hero/family-multigenerational.webp',
   seo: {
     title: 'Disc Herniation & Degenerative Disc | Chiropractic Care Rochester Hills, MI',
     description:

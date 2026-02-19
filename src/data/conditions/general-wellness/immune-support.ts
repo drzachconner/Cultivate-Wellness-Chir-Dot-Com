@@ -5,6 +5,7 @@ export const immuneSupport: ConditionPageData = {
   title: 'Immune System Support',
   subtitle: 'Boost Your Body\'s Natural Defenses Through Nervous System Care',
   category: 'general-wellness',
+  heroImage: '/images/hero/family-hearts-beach.webp',
   seo: {
     title: 'Immune System Support | Chiropractic Care Rochester Hills, MI',
     description:

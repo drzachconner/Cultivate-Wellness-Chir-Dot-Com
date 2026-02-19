@@ -5,6 +5,7 @@ export const chronicFatigue: ConditionPageData = {
   title: 'Chronic Fatigue',
   subtitle: 'Natural Approaches to Restore Your Energy Through Nervous System Care',
   category: 'general-wellness',
+  heroImage: '/images/hero/family-walking.webp',
   seo: {
     title: 'Chronic Fatigue Support | Chiropractic Care Rochester Hills, MI',
     description:

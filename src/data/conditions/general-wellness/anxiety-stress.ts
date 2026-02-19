@@ -5,6 +5,7 @@ export const anxietyStress: ConditionPageData = {
   title: 'Anxiety & Stress',
   subtitle: 'Natural Nervous System Support for a Calmer Life',
   category: 'general-wellness',
+  heroImage: '/images/hero/family-forest.webp',
   seo: {
     title: 'Anxiety & Stress Support | Chiropractic Care Rochester Hills, MI',
     description:

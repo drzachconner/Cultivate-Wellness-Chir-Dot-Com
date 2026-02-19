@@ -5,6 +5,7 @@ export const lymeDisease: ConditionPageData = {
   title: 'Lyme Disease Support',
   subtitle: 'Neurological Support for Those Battling Lyme and Co-Infections',
   category: 'special-populations',
+  heroImage: '/images/hero/family-forest.webp',
   seo: {
     title: 'Lyme Disease Support | Chiropractic Care Rochester Hills, MI',
     description:

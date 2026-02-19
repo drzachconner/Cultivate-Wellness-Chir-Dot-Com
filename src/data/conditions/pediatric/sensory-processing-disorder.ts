@@ -5,6 +5,7 @@ export const sensoryProcessing: ConditionPageData = {
   title: 'Sensory Processing Disorder (SPD)',
   subtitle: 'Helping Children Navigate Their Sensory World',
   category: 'pediatric',
+  heroImage: '/images/hero/pediatric-child-walk.webp',
   seo: {
     title: 'Sensory Processing Disorder | Chiropractic Support in Rochester Hills, MI',
     description:

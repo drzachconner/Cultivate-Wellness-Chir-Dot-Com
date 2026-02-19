@@ -5,6 +5,7 @@ export const concussionPostConcussion: ConditionPageData = {
   title: 'Concussion & Post-Concussion Syndrome',
   subtitle: 'Gentle Neurological Support for Concussion Recovery',
   category: 'special-populations',
+  heroImage: '/images/hero/family-park-sunset.webp',
   seo: {
     title: 'Concussion & Post-Concussion Recovery | Chiropractic Care Rochester Hills, MI',
     description:

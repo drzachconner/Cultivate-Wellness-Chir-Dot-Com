@@ -5,6 +5,7 @@ export const sportsPerformance: ConditionPageData = {
   title: 'Sports & Athletic Performance',
   subtitle: 'Gain the Competitive Edge Through Chiropractic Care',
   category: 'special-populations',
+  heroImage: '/images/hero/family-running.webp',
   seo: {
     title: 'Sports & Athletic Performance | Chiropractic Care Rochester Hills, MI',
     description:

@@ -5,6 +5,7 @@ export const asthma: ConditionPageData = {
   title: 'Asthma & Breathing Support',
   subtitle: 'Natural Respiratory Support Through Neurologically-Focused Chiropractic Care',
   category: 'general-wellness',
+  heroImage: '/images/hero/family-running.webp',
   seo: {
     title: 'Asthma & Breathing Support | Chiropractic Care Rochester Hills, MI',
     description:

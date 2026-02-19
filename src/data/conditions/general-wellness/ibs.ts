@@ -5,6 +5,7 @@ export const ibs: ConditionPageData = {
   title: 'IBS (Irritable Bowel Syndrome)',
   subtitle: 'Natural Nervous System Support for Digestive Comfort',
   category: 'general-wellness',
+  heroImage: '/images/hero/family-beach.webp',
   seo: {
     title: 'IBS (Irritable Bowel Syndrome) Support | Chiropractic Care Rochester Hills, MI',
     description:

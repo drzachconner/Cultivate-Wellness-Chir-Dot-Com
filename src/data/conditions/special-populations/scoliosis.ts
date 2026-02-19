@@ -5,6 +5,7 @@ export const scoliosis: ConditionPageData = {
   title: 'Scoliosis',
   subtitle: 'Conservative, Gentle Management for Spinal Curvature',
   category: 'special-populations',
+  heroImage: '/images/hero/pediatric-kids-group.webp',
   seo: {
     title: 'Scoliosis Care | Chiropractic Treatment Rochester Hills, MI',
     description:

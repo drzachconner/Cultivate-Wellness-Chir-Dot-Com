@@ -5,6 +5,7 @@ export const speechLanguageDelays: ConditionPageData = {
   title: 'Speech & Language Delays',
   subtitle: 'Neurologically-Focused Chiropractic Support for Communication Development',
   category: 'pediatric',
+  heroImage: '/images/hero/baby-1.webp',
   seo: {
     title: 'Speech & Language Delays Chiropractic Support | Rochester Hills, MI',
     description:

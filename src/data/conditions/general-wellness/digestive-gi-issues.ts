@@ -5,6 +5,7 @@ export const digestiveGiIssues: ConditionPageData = {
   title: 'Digestive & GI Issues',
   subtitle: 'Natural Support for Your Gut-Brain Connection',
   category: 'general-wellness',
+  heroImage: '/images/hero/family-park-sunset.webp',
   seo: {
     title: 'Digestive & GI Issues | Chiropractic Care Rochester Hills, MI',
     description:

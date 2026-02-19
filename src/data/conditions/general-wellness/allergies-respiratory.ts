@@ -5,6 +5,7 @@ export const allergiesRespiratory: ConditionPageData = {
   title: 'Allergies & Respiratory Support',
   subtitle: 'Natural Immune and Respiratory System Support Through Chiropractic Care',
   category: 'general-wellness',
+  heroImage: '/images/hero/family-running.webp',
   seo: {
     title: 'Allergies & Respiratory Support | Chiropractic Care Rochester Hills, MI',
     description:

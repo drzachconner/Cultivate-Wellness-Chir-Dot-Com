@@ -5,6 +5,7 @@ export const tmjJawPain: ConditionPageData = {
   title: 'TMJ & Jaw Pain',
   subtitle: 'Relief for Temporomandibular Joint Dysfunction',
   category: 'adult-pain',
+  heroImage: '/images/hero/family-embrace.webp',
   seo: {
     title: 'TMJ & Jaw Pain Treatment | Chiropractic Care Rochester Hills, MI',
     description:

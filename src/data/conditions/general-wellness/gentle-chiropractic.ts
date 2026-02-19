@@ -5,6 +5,7 @@ export const gentleChiropractic: ConditionPageData = {
   title: 'Gentle Chiropractic (No Cracking)',
   subtitle: 'No Cracking. No Twisting. No Fear. Just Results.',
   category: 'general-wellness',
+  heroImage: '/images/hero/insight-scan-girl.webp',
   seo: {
     title: 'Gentle Chiropractic - No Cracking | Chiropractic Care Rochester Hills, MI',
     description:

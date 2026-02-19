@@ -5,6 +5,7 @@ export const seniorCare: ConditionPageData = {
   title: 'Senior Care & Healthy Aging',
   subtitle: 'Gentle Chiropractic Care for Active, Independent Living',
   category: 'special-populations',
+  heroImage: '/images/hero/family-multigenerational.webp',
   seo: {
     title: 'Senior Care & Healthy Aging | Chiropractic Care Rochester Hills, MI',
     description:

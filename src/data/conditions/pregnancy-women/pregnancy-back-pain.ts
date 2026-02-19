@@ -5,6 +5,7 @@ export const pregnancyBackPain: ConditionPageData = {
   title: 'Prenatal & Pregnancy Back Pain',
   subtitle: 'Safe, Gentle Relief for Back Pain During Pregnancy',
   category: 'pregnancy-women',
+  heroImage: '/images/hero/pregnancy.webp',
   seo: {
     title: 'Pregnancy Back Pain Relief | Chiropractic Care Rochester Hills, MI',
     description:

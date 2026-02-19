@@ -5,6 +5,7 @@ export const potsDysautonomia: ConditionPageData = {
   title: 'POTS & Dysautonomia',
   subtitle: 'Natural Support for Autonomic Nervous System Dysfunction',
   category: 'special-populations',
+  heroImage: '/images/hero/family-walking.webp',
   seo: {
     title: 'POTS & Dysautonomia Support | Chiropractic Care Rochester Hills, MI',
     description:

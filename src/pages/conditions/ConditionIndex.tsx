@@ -27,14 +27,15 @@ export default function ConditionIndex() {
 
       {/* Hero */}
       <section className="relative py-32 bg-gray-900">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero-family.webp"
+            src="/images/hero/family-park-sunset.webp"
             alt="Conditions We Help"
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary-dark/70 to-primary/60" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumbs
             items={[{ name: 'Conditions' }]}
             className="mb-6 text-white/80 [&_a]:text-white/80 [&_a:hover]:text-white [&_span]:text-white [&_svg]:text-white/50"

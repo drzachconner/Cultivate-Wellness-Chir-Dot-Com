@@ -5,6 +5,7 @@ export const carpalTunnel: ConditionPageData = {
   title: 'Carpal Tunnel Syndrome',
   subtitle: 'Non-Surgical Relief for Wrist Pain, Numbness & Tingling',
   category: 'adult-pain',
+  heroImage: '/images/hero/family-park-sunset.webp',
   seo: {
     title: 'Carpal Tunnel Treatment | Chiropractic Care Rochester Hills, MI',
     description:

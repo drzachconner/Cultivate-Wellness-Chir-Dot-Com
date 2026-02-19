@@ -5,6 +5,7 @@ export const plagiocephaly: ConditionPageData = {
   title: 'Plagiocephaly (Flat Head Syndrome)',
   subtitle: 'Gentle Chiropractic Support for Your Baby\'s Head Shape',
   category: 'pediatric',
+  heroImage: '/images/hero/baby-4.webp',
   seo: {
     title: 'Plagiocephaly (Flat Head) Treatment | Chiropractic Care Rochester Hills, MI',
     description:

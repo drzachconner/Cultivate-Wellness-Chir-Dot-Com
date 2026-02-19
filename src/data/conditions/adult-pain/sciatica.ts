@@ -5,6 +5,7 @@ export const sciatica: ConditionPageData = {
   title: 'Sciatica',
   subtitle: 'Drug-Free Relief for Sciatic Nerve Pain',
   category: 'adult-pain',
+  heroImage: '/images/hero/dr-zach-office.webp',
   seo: {
     title: 'Sciatica Treatment | Chiropractic Care Rochester Hills, MI',
     description:

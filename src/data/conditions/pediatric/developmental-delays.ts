@@ -5,6 +5,7 @@ export const developmentalDelays: ConditionPageData = {
   title: 'Developmental Delays',
   subtitle: 'Gentle Chiropractic Support for Children\'s Growth & Milestones',
   category: 'pediatric',
+  heroImage: '/images/hero/baby-6.webp',
   seo: {
     title: 'Developmental Delays Chiropractic Support | Rochester Hills, MI',
     description:

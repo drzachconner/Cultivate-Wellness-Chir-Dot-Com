@@ -5,6 +5,7 @@ export const infantNewborn: ConditionPageData = {
   title: 'Infant & Newborn Chiropractic',
   subtitle: 'The Gentlest Start to Lifelong Health',
   category: 'pediatric',
+  heroImage: '/images/hero/baby-4.webp',
   seo: {
     title: 'Infant & Newborn Chiropractic Care | Rochester Hills, MI',
     description:

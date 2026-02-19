@@ -5,6 +5,7 @@ export const seizureDisorders: ConditionPageData = {
   title: 'Seizure Disorder Support',
   subtitle: 'Gentle Neurological Support for Patients with Epilepsy and Seizure Disorders',
   category: 'neurological',
+  heroImage: '/images/hero/family-forest.webp',
   seo: {
     title: 'Seizure Disorder Support | Chiropractic Care Rochester Hills, MI',
     description:

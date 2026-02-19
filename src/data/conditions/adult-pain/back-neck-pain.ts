@@ -5,6 +5,7 @@ export const backNeckPain: ConditionPageData = {
   title: 'Back Pain & Neck Pain',
   subtitle: 'Gentle, Effective Care Without Drugs or Surgery',
   category: 'adult-pain',
+  heroImage: '/images/hero/dr-zach-office.webp',
   seo: {
     title: 'Back Pain & Neck Pain Relief | Chiropractic Care Rochester Hills, MI',
     description:
