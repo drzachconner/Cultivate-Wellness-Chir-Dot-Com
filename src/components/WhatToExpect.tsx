@@ -30,8 +30,8 @@ const steps: Step[] = [
   {
     number: '02',
     title: 'Your Second Visit — Report of Findings & First Adjustment',
-    image: '/images/insight-scan-2.webp',
-    imageAlt: 'Doctor reviewing scan results with parent and child',
+    image: '/images/insight-report.jpeg',
+    imageAlt: 'INSiGHT neurological scan report showing CORESCORE results',
     description:
       'Dr. Zach walks you through your scan results in detail, explains what the findings mean, presents a personalized care plan tailored to your family\'s needs, and — if appropriate — performs your first gentle Talsky Tonal adjustment.',
     expandedTitle: 'What to Expect During Your Report',

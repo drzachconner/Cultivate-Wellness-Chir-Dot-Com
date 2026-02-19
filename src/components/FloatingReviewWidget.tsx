@@ -24,8 +24,11 @@ export default function FloatingReviewWidget() {
       setIsAnimating(true);
       setTimeout(() => {
         setCurrentIndex((prev) => (prev + 1) % reviews.length);
-        setIsAnimating(false);
-      }, 300);
+        // Brief pause then slide back in
+        requestAnimationFrame(() => {
+          setIsAnimating(false);
+        });
+      }, 400);
     }, 7000);
 
     return () => clearInterval(interval);
@@ -64,8 +67,8 @@ export default function FloatingReviewWidget() {
       <aside
         role="complementary"
         aria-label="Customer reviews"
-        className={`fixed bottom-4 left-4 z-40 max-w-xs bg-white rounded-lg shadow-xl border border-gray-200 transition-all duration-300 hidden md:block ${
-          isAnimating ? 'opacity-0 translate-y-2' : 'opacity-100 translate-y-0'
+        className={`fixed bottom-4 left-4 z-40 max-w-xs bg-white rounded-lg shadow-xl border border-gray-200 transition-transform duration-400 ease-in-out hidden md:block ${
+          isAnimating ? '-translate-x-[calc(100%+2rem)]' : 'translate-x-0'
         }`}
         style={{ maxWidth: '280px' }}
       >
@@ -151,7 +154,7 @@ export default function FloatingReviewWidget() {
         <div className="flex items-center gap-1">
           <span className="text-sm font-semibold text-gray-900">4.9</span>
           <Star size={14} className="fill-yellow-400 text-yellow-400" />
-          <span className="text-xs text-gray-500">({reviews.length})</span>
+          <span className="text-xs text-gray-500">Google</span>
         </div>
         <button
           onClick={(e) => { e.preventDefault(); e.stopPropagation(); handleDismiss(); }}

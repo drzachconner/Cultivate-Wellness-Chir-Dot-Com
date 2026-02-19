@@ -6,7 +6,7 @@ import { getGroupedConditions } from '../data/conditions';
 import ServicesGrid from '../components/ServicesGrid';
 import TestimonialSlider from '../components/TestimonialSlider';
 import CTABanner from '../components/CTABanner';
-import StatsBar from '../components/StatsBar';
+import OfficeHours from '../components/OfficeHours';
 import WhatToExpect from '../components/WhatToExpect';
 import AnimateOnScroll from '../components/AnimateOnScroll';
 import Seo from '../components/Seo';
@@ -230,9 +230,6 @@ export default function Home() {
       {/* Services */}
       <ServicesGrid />
 
-      {/* Stats Bar */}
-      <StatsBar />
-
       {/* Free Guides */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -351,28 +348,7 @@ export default function Home() {
       </section>
 
       {/* Office Hours */}
-      <AnimateOnScroll>
-        <section className="py-16 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-heading font-bold text-gray-900 mb-8 text-center">Office Hours</h2>
-            <div className="mb-8 px-4 py-6 bg-blue-50 border border-blue-200 rounded-lg">
-              <p className="text-center text-gray-800 leading-relaxed">
-                <strong className="text-blue-900">New Patients:</strong> We have merged with Van Every Family Chiropractic Center and are no longer accepting new patients at this location. To schedule a new patient appointment with Dr. Zach, please call <a href="tel:+12486160900" className="text-primary-dark font-semibold hover:underline">(248) 616-0900</a>.<br />
-                <span className="text-sm italic mt-2 block">Please mention that you were referred by Cultivate Wellness Chiropractic to see Dr. Zach.</span><br />
-                <strong className="text-blue-900 mt-4 block">For Current Practice Members:</strong> These are our office hours for existing patients.
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <img
-                src="/images/office-hours.webp"
-                alt="Office Hours Schedule"
-                className="w-full max-w-2xl rounded-xl shadow-lg"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </section>
-      </AnimateOnScroll>
+      <OfficeHours />
 
       {/* Gradient: white → gray-50 */}
       <SectionGradient from="white" to="gray-50" />

@@ -24,7 +24,7 @@ export default function TestimonialSlider() {
               <Star key={i} size={20} className="fill-yellow-400 text-yellow-400" />
             ))}
             <span className="ml-2 text-sm text-gray-600 font-medium">
-              Rated 4.9/5 from 100+ Google Reviews
+              5-Star Rated on Google
             </span>
           </div>
         </AnimateOnScroll>
