@@ -55,35 +55,37 @@ export default function ConditionHero({ title, subtitle, image, breadcrumbLabel 
                   <ChevronDown size={14} className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                 </button>
                 {isOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-72 max-h-80 overflow-y-auto bg-white rounded-lg shadow-xl border border-gray-200 z-50">
+                  <div className="absolute top-full left-0 mt-2 w-72 bg-white rounded-lg shadow-xl border border-gray-200 z-50 flex flex-col">
                     <Link
                       to="/conditions"
                       onClick={() => setIsOpen(false)}
-                      className="block px-4 py-2 text-sm font-semibold text-primary-dark hover:bg-gray-50 border-b border-gray-100"
+                      className="block px-4 py-2 text-sm font-semibold text-primary-dark hover:bg-gray-50 border-b border-gray-100 flex-shrink-0"
                     >
                       View All Conditions
                     </Link>
-                    {groups.map((group) => (
-                      <div key={group.category}>
-                        <p className="px-4 py-1.5 text-xs font-bold text-gray-400 uppercase tracking-wider bg-gray-50">
-                          {group.label}
-                        </p>
-                        {group.conditions.map((c) => (
-                          <Link
-                            key={c.slug}
-                            to={`/conditions/${c.slug}`}
-                            onClick={() => setIsOpen(false)}
-                            className="block px-4 py-1.5 text-sm text-gray-700 hover:bg-primary-light/10 hover:text-primary-dark transition-colors"
-                          >
-                            {c.title}
-                          </Link>
-                        ))}
-                      </div>
-                    ))}
+                    <div className="max-h-60 overflow-y-auto">
+                      {groups.map((group) => (
+                        <div key={group.category}>
+                          <p className="px-4 py-1.5 text-xs font-bold text-gray-400 uppercase tracking-wider bg-gray-50">
+                            {group.label}
+                          </p>
+                          {group.conditions.map((c) => (
+                            <Link
+                              key={c.slug}
+                              to={`/conditions/${c.slug}`}
+                              onClick={() => setIsOpen(false)}
+                              className="block px-4 py-1.5 text-sm text-gray-700 hover:bg-primary-light/10 hover:text-primary-dark transition-colors"
+                            >
+                              {c.title}
+                            </Link>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
                     <Link
                       to="/conditions"
                       onClick={() => setIsOpen(false)}
-                      className="sticky bottom-0 block px-4 py-2 text-sm font-semibold text-primary-dark hover:bg-gray-50 border-t border-gray-100 bg-white"
+                      className="block px-4 py-2 text-sm font-semibold text-primary-dark hover:bg-gray-50 border-t border-gray-100 flex-shrink-0"
                     >
                       View All Conditions
                     </Link>
