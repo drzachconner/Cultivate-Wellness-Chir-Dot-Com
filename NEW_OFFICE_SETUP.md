@@ -61,7 +61,7 @@ doctor: {
   lastName: 'Smith',
   honorificPrefix: 'Dr.',
   honorificSuffix: 'DC',
-  credentials: 'DC, CACCP',
+  credentials: 'DC',
   title: 'Doctor of Chiropractic',
   bio: 'Dr. Jane specializes in...',
   education: 'Palmer College of Chiropractic',

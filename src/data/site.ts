@@ -28,7 +28,7 @@ export const SITE = {
     lastName: 'Conner',
     honorificPrefix: 'Dr.',
     honorificSuffix: 'DC',
-    credentials: 'DC, CACCP',
+    credentials: 'DC',
     title: 'Neurologically-Focused Chiropractor',
     bio: 'Dr. Zach specializes in family chiropractic care with a focus on pediatric and prenatal wellness. He believes in empowering families through natural, holistic healthcare.',
     education: 'Life University College of Chiropractic',
@@ -52,7 +52,7 @@ export const SITE = {
       },
       {
         type: 'certification',
-        name: 'CACCP - Certified by the Academy Council of Chiropractic Pediatrics',
+        name: 'ICPA Webster Technique Certification',
       },
     ],
   },
