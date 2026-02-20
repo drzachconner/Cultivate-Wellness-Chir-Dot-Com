@@ -2,10 +2,10 @@
 
 ## Current Position
 
-Phase: 1 of 3 — Backend Multi-Project Support + Config
+Phase: 3 of 3 — Integration Testing + Deploy
 Plan: Not yet created
-Status: Research complete, roadmap created, ready to plan Phase 1
-Last activity: 2026-02-19 — Milestone v1.1 researched and roadmapped
+Status: IN PROGRESS — backend configured, frontend already built, testing needed
+Last activity: 2026-02-20 — Backend config + tunnel wiring completed
 
 ## Accumulated Context
 
@@ -27,7 +27,36 @@ The agent-backend already exists at https://agent.drzach.ai (Express + Claude Ag
 
 **Approach:** Add Cultivate Wellness as a new project in agent-backend's projects.json, then embed the admin frontend components in this site (same pattern as bodymind).
 
+## Completed Work (Feb 20)
+
+### Phase 1: Backend Multi-Project Support + Config — COMPLETE
+- agent-backend already had multi-project support (ported from claude-admin-template)
+- Added `cultivate-wellness` project to `data/projects.json`
+- Created `data/prompts/cultivate-wellness.md` system prompt
+- `CULTIVATE_ADMIN_PASSWORD` already in `.env`
+- Verified: `curl http://localhost:3100/api/v1/projects/cultivate-wellness/info` returns correct config
+
+### Phase 2: Embed Admin Frontend — COMPLETE
+- 14 admin components already built in `src/components/admin/`
+- AdminContext, AdminActivator, AdminOverlay already wired into App.tsx
+- `constants.ts` already configured with `cultivate-agent.drzach.ai` and `cultivate-wellness` project ID
+
+### Infrastructure: Tunnel + Decommission — COMPLETE
+- Updated `~/.cloudflared/config.yml`: `cultivate-agent.drzach.ai` → port 3100 (was 3101)
+- Decommissioned old `agent-backend-cultivate`: unloaded launchd, removed plist, deleted directory
+- Restarted cloudflared tunnel and agent-backend
+- Verified: `curl https://cultivate-agent.drzach.ai/health` returns `{"status":"ok"}`
+- Verified: project info and usage endpoints work through tunnel
+
 ## Session Continuity
 
 Started: 2026-02-19
-Context: Research of bodymind-chiro-website and claude-admin-template complete. Site codebase fully mapped.
+Last session: 2026-02-20
+
+### Remaining Work (Phase 3)
+- Test admin panel in local dev (`http://localhost:5173/admin`)
+- Test admin panel on production (`https://cultivatewellnesschiro.com/admin`)
+- Verify Claude can read/edit Cultivate Wellness site files through admin chat
+- Verify git commits + auto-deploy work from admin
+- Check no CORS errors on production
+- Check no regression in public site functionality

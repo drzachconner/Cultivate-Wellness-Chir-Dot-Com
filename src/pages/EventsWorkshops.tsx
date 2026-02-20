@@ -17,7 +17,7 @@ export default function EventsWorkshops() {
     {
       icon: Heart,
       title: "Natural Solutions for Common Childhood Issues",
-      description: "Discover drug-free approaches to managing colic, sleep issues, and behavioral challenges."
+      description: (<>Discover drug-free approaches to managing <Link to="/conditions/colic-infant-digestive" className="text-primary-dark underline hover:text-primary-accent">colic</Link>, <Link to="/conditions/sleep-disorders" className="text-primary-dark underline hover:text-primary-accent">sleep issues</Link>, and behavioral challenges.</>)
     },
     {
       icon: BookOpen,
@@ -32,7 +32,7 @@ export default function EventsWorkshops() {
     {
       icon: Calendar,
       title: "Special Needs Support Through Chiropractic",
-      description: "Explore how neurologically-focused care can support children with autism, ADHD, and sensory challenges."
+      description: (<>Explore how neurologically-focused care can support children with <Link to="/conditions/autism-neurodevelopmental" className="text-primary-dark underline hover:text-primary-accent">autism</Link>, <Link to="/conditions/adhd-focus-issues" className="text-primary-dark underline hover:text-primary-accent">ADHD</Link>, and <Link to="/conditions/sensory-processing-disorder" className="text-primary-dark underline hover:text-primary-accent">sensory challenges</Link>.</>)
     }
   ];
 

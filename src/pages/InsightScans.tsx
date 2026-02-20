@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { SITE } from '../data/site';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { medicalWebPageSchema } from '../lib/schema';
@@ -11,7 +12,13 @@ export default function InsightScans() {
     {
       icon: Activity,
       title: 'NeuroThermal Scan',
-      description: 'Provides insights into subluxation and dysautonomia, helping us understand digestive, immune, and hormonal conditions at their neurological root.',
+      description: (
+        <>
+          Provides insights into subluxation and dysautonomia, helping us understand{' '}
+          <Link to="/conditions/digestive-gi-issues" className="text-primary-dark underline hover:text-primary-accent">digestive</Link>,{' '}
+          <Link to="/conditions/immune-support" className="text-primary-dark underline hover:text-primary-accent">immune</Link>, and hormonal conditions at their neurological root.
+        </>
+      ),
     },
     {
       icon: Heart,
@@ -21,7 +28,15 @@ export default function InsightScans() {
     {
       icon: Brain,
       title: 'EMG Scan',
-      description: 'Detects neuromotor challenges, particularly useful for conditions like Autism, ADHD, and Anxiety by identifying nervous system imbalances.',
+      description: (
+        <>
+          Detects neuromotor challenges, particularly useful for conditions like{' '}
+          <Link to="/conditions/autism-neurodevelopmental" className="text-primary-dark underline hover:text-primary-accent">Autism</Link>,{' '}
+          <Link to="/conditions/adhd-focus-issues" className="text-primary-dark underline hover:text-primary-accent">ADHD</Link>, and{' '}
+          <Link to="/conditions/anxiety-stress" className="text-primary-dark underline hover:text-primary-accent">Anxiety</Link>{' '}
+          by identifying nervous system imbalances.
+        </>
+      ),
     },
   ];
 

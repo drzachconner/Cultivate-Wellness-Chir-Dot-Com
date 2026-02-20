@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
 import { SITE } from '../data/site';
@@ -11,7 +12,15 @@ export default function Prenatal() {
     {
       icon: Heart,
       title: 'Reduce Pregnancy Discomfort',
-      description: 'Alleviate back pain, pelvic pain, and sciatic nerve issues naturally.',
+      description: (
+        <>
+          Alleviate{' '}
+          <Link to="/conditions/pregnancy-back-pain" className="text-primary-dark underline hover:text-primary-accent">back pain</Link>,{' '}
+          pelvic pain, and{' '}
+          <Link to="/conditions/sciatica" className="text-primary-dark underline hover:text-primary-accent">sciatic nerve issues</Link>{' '}
+          naturally.
+        </>
+      ),
     },
     {
       icon: Baby,
@@ -75,7 +84,10 @@ export default function Prenatal() {
             Prenatal
           </h1>
           <p className="text-lg text-white text-center max-w-3xl mx-auto">
-            The cultivation of a thriving and healthy family starts during the perinatal period. Trained in the Webster Technique along with a gentle, neuro-focused approach, we provide premier care and support for moms from conception to postnatal care.
+            The cultivation of a thriving and healthy family starts during the perinatal period. Trained in the{' '}
+            <Link to="/conditions/webster-technique" className="underline hover:text-primary-light transition-colors">Webster Technique</Link>
+            {' '}along with a gentle, neuro-focused approach, we provide premier care and support for moms from conception to{' '}
+            <Link to="/conditions/postpartum-recovery" className="underline hover:text-primary-light transition-colors">postnatal care</Link>.
           </p>
         </div>
       </section>
@@ -128,12 +140,31 @@ export default function Prenatal() {
             Common Pregnancy Issues We Address
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {['Lower Back Pain', 'Pelvic Pain', 'Round Ligament Pain', 'Sciatica', 'Breech Presentation',
-              'Hip Discomfort', 'Neck Tension', 'Headaches', 'Postpartum Recovery'].map((condition) => (
-              <div key={condition} className="bg-gray-50 p-4 rounded-lg text-center font-medium text-gray-700">
-                {condition}
-              </div>
-            ))}
+            {([
+              { label: 'Lower Back Pain', slug: 'pregnancy-back-pain' },
+              { label: 'Pelvic Pain', slug: 'pregnancy-back-pain' },
+              { label: 'Round Ligament Pain', slug: '' },
+              { label: 'Sciatica', slug: 'sciatica' },
+              { label: 'Breech Presentation', slug: 'webster-technique' },
+              { label: 'Hip Discomfort', slug: '' },
+              { label: 'Neck Tension', slug: 'back-neck-pain' },
+              { label: 'Headaches', slug: 'headaches-migraines' },
+              { label: 'Postpartum Recovery', slug: 'postpartum-recovery' },
+            ]).map((condition) =>
+              condition.slug ? (
+                <Link
+                  key={condition.label}
+                  to={`/conditions/${condition.slug}`}
+                  className="bg-gray-50 p-4 rounded-lg text-center font-medium text-primary-dark hover:bg-primary-light/10 hover:shadow-md transition-all"
+                >
+                  {condition.label}
+                </Link>
+              ) : (
+                <div key={condition.label} className="bg-gray-50 p-4 rounded-lg text-center font-medium text-gray-700">
+                  {condition.label}
+                </div>
+              )
+            )}
           </div>
         </div>
       </section>

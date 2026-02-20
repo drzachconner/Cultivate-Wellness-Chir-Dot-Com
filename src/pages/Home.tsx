@@ -222,7 +222,9 @@ export default function Home() {
             <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               At Cultivate Wellness, our office is intentionally designed to care
               for families and children at every stage. From well baby checks and
-              family wellness care, to the toughest of cases — autism, epilepsy,
+              family wellness care, to the toughest of cases —{' '}
+              <Link to="/conditions/autism-neurodevelopmental" className="underline hover:text-white transition-colors">autism</Link>,{' '}
+              <Link to="/conditions/seizure-disorders" className="underline hover:text-white transition-colors">epilepsy</Link>,
               and special needs — we are ready to care for you.
             </p>
             <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed mt-4">

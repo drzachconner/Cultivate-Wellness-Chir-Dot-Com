@@ -14,7 +14,7 @@ export default defineConfig({
           res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
           res.setHeader(
             'Content-Security-Policy',
-            "default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'"
+            "default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data: https://fonts.googleapis.com https://fonts.gstatic.com; connect-src 'self' http://localhost:3100 https://cultivate-agent.drzach.ai; frame-ancestors 'none'"
           );
           next();
         });

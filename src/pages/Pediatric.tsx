@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { SITE } from '../data/site';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { Baby, Heart, Shield, Smile } from 'lucide-react';
@@ -26,7 +27,14 @@ export default function Pediatric() {
     {
       icon: Smile,
       title: 'Improve Sleep & Comfort',
-      description: 'Address common childhood issues like colic, reflux, and sleep difficulties.',
+      description: (
+        <>
+          Address common childhood issues like{' '}
+          <Link to="/conditions/colic-infant-digestive" className="text-primary-dark underline hover:text-primary-accent">colic</Link>,{' '}
+          <Link to="/conditions/acid-reflux-gerd" className="text-primary-dark underline hover:text-primary-accent">reflux</Link>, and{' '}
+          <Link to="/conditions/sleep-disorders" className="text-primary-dark underline hover:text-primary-accent">sleep difficulties</Link>.
+        </>
+      ),
     },
   ];
 
@@ -74,7 +82,12 @@ export default function Pediatric() {
             Pediatric
           </h1>
           <p className="text-lg text-white text-center max-w-3xl mx-auto">
-            What truly distinguishes Cultivate Wellness is our specialty and expertise in pediatric care. We can achieve remarkable outcomes across a range of conditions, from soothing fussy and colicky babies to aiding chronically ill children, and supporting kids and teens facing sensory and spectrum challenges.
+            What truly distinguishes Cultivate Wellness is our specialty and expertise in pediatric care. We can achieve remarkable outcomes across a range of conditions, from soothing fussy and{' '}
+            <Link to="/conditions/colic-infant-digestive" className="underline hover:text-primary-light transition-colors">colicky babies</Link>
+            {' '}to aiding chronically ill children, and supporting kids and teens facing{' '}
+            <Link to="/conditions/sensory-processing-disorder" className="underline hover:text-primary-light transition-colors">sensory</Link>
+            {' '}and{' '}
+            <Link to="/conditions/autism-neurodevelopmental" className="underline hover:text-primary-light transition-colors">spectrum challenges</Link>.
           </p>
         </div>
       </section>
@@ -108,12 +121,31 @@ export default function Pediatric() {
             Common Conditions We Help
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {['Colic', 'Reflux', 'Ear Infections', 'Sleep Issues', 'Torticollis', 'Growing Pains',
-              'Scoliosis', 'Sports Injuries', 'Posture Problems'].map((condition) => (
-              <div key={condition} className="bg-white p-4 rounded-lg text-center font-medium text-gray-700">
-                {condition}
-              </div>
-            ))}
+            {([
+              { label: 'Colic', slug: 'colic-infant-digestive' },
+              { label: 'Reflux', slug: 'acid-reflux-gerd' },
+              { label: 'Ear Infections', slug: 'ear-infections' },
+              { label: 'Sleep Issues', slug: 'sleep-disorders' },
+              { label: 'Torticollis', slug: 'torticollis' },
+              { label: 'Growing Pains', slug: '' },
+              { label: 'Scoliosis', slug: 'scoliosis' },
+              { label: 'Sports Injuries', slug: 'sports-performance' },
+              { label: 'Posture Problems', slug: 'posture-tech-neck' },
+            ]).map((condition) =>
+              condition.slug ? (
+                <Link
+                  key={condition.label}
+                  to={`/conditions/${condition.slug}`}
+                  className="bg-white p-4 rounded-lg text-center font-medium text-primary-dark hover:bg-primary-light/10 hover:shadow-md transition-all"
+                >
+                  {condition.label}
+                </Link>
+              ) : (
+                <div key={condition.label} className="bg-white p-4 rounded-lg text-center font-medium text-gray-700">
+                  {condition.label}
+                </div>
+              )
+            )}
           </div>
         </div>
       </section>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { SITE } from '../data/site';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { medicalWebPageSchema } from '../lib/schema';
@@ -183,8 +184,10 @@ export default function TalskyTonal() {
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
                 <h3 className="text-xl font-bold mb-3">Gentle & Safe</h3>
                 <p className="text-white/90">
-                  Particularly effective for children with special needs, sensory processing differences,
-                  and developmental challenges, as well as patients of all ages.
+                  Particularly effective for children with special needs,{' '}
+                  <Link to="/conditions/sensory-processing-disorder" className="underline hover:text-white transition-colors">sensory processing differences</Link>,
+                  and{' '}
+                  <Link to="/conditions/developmental-delays" className="underline hover:text-white transition-colors">developmental challenges</Link>, as well as patients of all ages.
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
@@ -215,7 +218,9 @@ export default function TalskyTonal() {
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               Our team includes one of two certified teachers of Talsky Tonal Chiropractic,
               bringing the highest level of expertise in this specialized technique to our community.
-              With a special interest in caring for children with sensory and developmental differences,
+              With a special interest in caring for children with{' '}
+              <Link to="/conditions/sensory-processing-disorder" className="text-primary-dark underline hover:text-primary-accent">sensory</Link> and{' '}
+              <Link to="/conditions/developmental-delays" className="text-primary-dark underline hover:text-primary-accent">developmental</Link> differences,
               we have witnessed the profound transformative effects this gentle approach can have
               on patients of all ages and backgrounds.
             </p>

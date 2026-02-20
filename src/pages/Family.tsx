@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
 import { SITE } from '../data/site';
@@ -112,31 +113,31 @@ export default function Family() {
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-xl font-bold text-primary-dark mb-4">Children & Teens</h3>
               <ul className="space-y-2 text-gray-700">
-                <li>Growth and development support</li>
-                <li>Sports injury prevention and care</li>
-                <li>Posture correction</li>
-                <li>Immune system support</li>
-                <li>Focus and concentration improvement</li>
+                <li><Link to="/conditions/developmental-delays" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Growth and development support</Link></li>
+                <li><Link to="/conditions/sports-performance" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Sports injury prevention and care</Link></li>
+                <li><Link to="/conditions/posture-tech-neck" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Posture correction</Link></li>
+                <li><Link to="/conditions/immune-support" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Immune system support</Link></li>
+                <li><Link to="/conditions/adhd-focus-issues" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Focus and concentration improvement</Link></li>
               </ul>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-xl font-bold text-primary-dark mb-4">Adults</h3>
               <ul className="space-y-2 text-gray-700">
-                <li>Back and neck pain relief</li>
-                <li>Headache and migraine management</li>
-                <li>Workplace injury recovery</li>
-                <li>Stress reduction</li>
-                <li>Athletic performance optimization</li>
+                <li><Link to="/conditions/back-neck-pain" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Back and neck pain relief</Link></li>
+                <li><Link to="/conditions/headaches-migraines" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Headache and migraine management</Link></li>
+                <li><Link to="/conditions/whiplash-auto-injury" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Workplace injury recovery</Link></li>
+                <li><Link to="/conditions/anxiety-stress" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Stress reduction</Link></li>
+                <li><Link to="/conditions/sports-performance" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Athletic performance optimization</Link></li>
               </ul>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-xl font-bold text-primary-dark mb-4">Seniors</h3>
               <ul className="space-y-2 text-gray-700">
-                <li>Mobility and flexibility improvement</li>
-                <li>Arthritis pain management</li>
-                <li>Balance and fall prevention</li>
-                <li>Quality of life enhancement</li>
-                <li>Natural pain relief</li>
+                <li><Link to="/conditions/senior-care" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Mobility and flexibility improvement</Link></li>
+                <li><Link to="/conditions/arthritis" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Arthritis pain management</Link></li>
+                <li><Link to="/conditions/senior-care" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Balance and fall prevention</Link></li>
+                <li><Link to="/conditions/gentle-chiropractic" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Quality of life enhancement</Link></li>
+                <li><Link to="/conditions/gentle-chiropractic" className="hover:text-primary-dark underline decoration-primary-light/40 hover:decoration-primary-dark transition-colors">Natural pain relief</Link></li>
               </ul>
             </div>
           </div>
@@ -149,12 +150,34 @@ export default function Family() {
             Common Conditions We Treat
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
-            {['Back Pain', 'Neck Pain', 'Headaches', 'Sciatica', 'Sports Injuries', 'Arthritis',
-              'Carpal Tunnel', 'Whiplash', 'Scoliosis', 'TMJ', 'Plantar Fasciitis', 'Shoulder Pain'].map((condition) => (
-              <div key={condition} className="bg-gray-50 p-4 rounded-lg text-center font-medium text-gray-700">
-                {condition}
-              </div>
-            ))}
+            {([
+              { label: 'Back Pain', slug: 'back-neck-pain' },
+              { label: 'Neck Pain', slug: 'back-neck-pain' },
+              { label: 'Headaches', slug: 'headaches-migraines' },
+              { label: 'Sciatica', slug: 'sciatica' },
+              { label: 'Sports Injuries', slug: 'sports-performance' },
+              { label: 'Arthritis', slug: 'arthritis' },
+              { label: 'Carpal Tunnel', slug: 'carpal-tunnel' },
+              { label: 'Whiplash', slug: 'whiplash-auto-injury' },
+              { label: 'Scoliosis', slug: 'scoliosis' },
+              { label: 'TMJ', slug: 'tmj-jaw-pain' },
+              { label: 'Plantar Fasciitis', slug: '' },
+              { label: 'Shoulder Pain', slug: '' },
+            ]).map((condition) =>
+              condition.slug ? (
+                <Link
+                  key={condition.label}
+                  to={`/conditions/${condition.slug}`}
+                  className="bg-gray-50 p-4 rounded-lg text-center font-medium text-primary-dark hover:bg-primary-light/10 hover:shadow-md transition-all"
+                >
+                  {condition.label}
+                </Link>
+              ) : (
+                <div key={condition.label} className="bg-gray-50 p-4 rounded-lg text-center font-medium text-gray-700">
+                  {condition.label}
+                </div>
+              )
+            )}
           </div>
         </div>
       </section>
