@@ -39,8 +39,7 @@ function sleep(ms: number): Promise<void> {
 
 // 401 handler: clear stored password and redirect to login
 function handle401(): never {
-  localStorage.removeItem('admin_password');
-  sessionStorage.removeItem('admin_password');
+  sessionStorage.removeItem('admin_auth');
   window.location.reload();
   // Never returns, but TypeScript needs this
   throw new Error('Session expired');
