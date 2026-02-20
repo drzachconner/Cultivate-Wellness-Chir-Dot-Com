@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { SITE, aggregateRating } from '../data/site';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import { getGroupedConditions } from '../data/conditions';
 import ServicesGrid from '../components/ServicesGrid';
@@ -27,6 +27,7 @@ function SectionGradient({ from = 'white', to = 'gray-50' }: { from?: string; to
 function ConditionsDropdown() {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
   const groups = getGroupedConditions();
 
   useEffect(() => {
@@ -59,9 +60,19 @@ function ConditionsDropdown() {
           </Link>
           {groups.map((group) => (
             <div key={group.category}>
-              <p className="px-4 py-1.5 text-xs font-bold text-gray-400 uppercase tracking-wider bg-gray-50">
+              <button
+                onClick={() => {
+                  setIsOpen(false);
+                  navigate(`/conditions#${group.category}`);
+                  setTimeout(() => {
+                    const el = document.getElementById(group.category);
+                    if (el) el.scrollIntoView({ behavior: 'smooth' });
+                  }, 150);
+                }}
+                className="block w-full text-left px-4 py-1.5 text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50 hover:text-primary-dark hover:bg-gray-100 transition-colors cursor-pointer"
+              >
                 {group.label}
-              </p>
+              </button>
               {group.conditions.map((c) => (
                 <Link
                   key={c.slug}
