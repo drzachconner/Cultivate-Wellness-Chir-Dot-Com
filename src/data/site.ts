@@ -1,5 +1,3 @@
-// integration-test-marker-2026-02-20
-// TEST CHANGE — delete this line to test revert
 /**
  * SITE CONFIGURATION
  *

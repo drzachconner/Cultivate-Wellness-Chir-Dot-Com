@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { X, FileText, GitCommit, RotateCcw, AlertTriangle } from 'lucide-react';
+import { X, FileText, GitCommit, RotateCcw } from 'lucide-react';
 import type { ChangeEntry } from './types';
 
 function formatDate(dateStr: string): string {
@@ -121,15 +121,15 @@ export function ChangeLogPanel({
                   {isLatestCommit && (
                     <button
                       onClick={() => handleUndo(change.gitCommitHash!, change.summary)}
-                      className={`p-1.5 rounded-lg transition-colors shrink-0 ${
+                      className={`rounded-lg transition-colors shrink-0 ${
                         confirmUndo === change.gitCommitHash
-                          ? 'bg-red-100 text-red-600'
-                          : 'hover:bg-gray-200 text-gray-400'
+                          ? 'bg-red-100 text-red-600 px-2 py-1 text-xs font-medium'
+                          : 'p-1.5 hover:bg-gray-200 text-gray-400'
                       }`}
                       title={confirmUndo === change.gitCommitHash ? 'Click to confirm undo' : 'Undo this change'}
                     >
                       {confirmUndo === change.gitCommitHash ? (
-                        <AlertTriangle className="w-4 h-4" />
+                        'Confirm?'
                       ) : (
                         <RotateCcw className="w-4 h-4" />
                       )}

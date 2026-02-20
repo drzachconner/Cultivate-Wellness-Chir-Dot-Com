@@ -495,8 +495,8 @@ export default function AdminOverlay({ panelId, panelIndex }: AdminOverlayProps)
         isMobile ? 'pt-[max(0.5rem,env(safe-area-inset-top))]' : 'cursor-grab active:cursor-grabbing'
       }`}
     >
-      {/* Conversations sidebar toggle (mobile) */}
-      {isMobile && isAuthenticated && (
+      {/* Conversations sidebar toggle */}
+      {isAuthenticated && (
         <button
           onClick={() => { loadConversations(); setSidebarOpen(true); }}
           className="w-7 h-7 rounded-md hover:bg-white/20 flex items-center justify-center"
@@ -637,6 +637,19 @@ export default function AdminOverlay({ panelId, panelIndex }: AdminOverlayProps)
         {headerBar}
         {isAuthenticated ? chatContent : passwordGate}
       </div>
+
+      {/* Conversation sidebar (desktop — renders outside the panel for proper overlay) */}
+      {isAuthenticated && (
+        <ConversationSidebar
+          conversations={conversations}
+          activeConversationId={conversationId}
+          onSelect={handleSelectConversation}
+          onNew={handleNewConversation}
+          onDelete={handleDeleteConversation}
+          isOpen={sidebarOpen}
+          onClose={() => setSidebarOpen(false)}
+        />
+      )}
 
       {/* Change log panel (desktop — renders outside the panel for proper overlay) */}
       {isAuthenticated && (
