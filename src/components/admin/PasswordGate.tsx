@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Loader2 } from 'lucide-react';
-import { fetchUsage } from './api';
+import { verifyPassword } from './api';
 
 interface PasswordGateProps {
   onAuth: (password: string) => void;
@@ -22,11 +22,11 @@ export function PasswordGate({ onAuth }: PasswordGateProps) {
     setError('');
     setLoading(true);
     try {
-      await fetchUsage(password);
+      await verifyPassword(password);
       sessionStorage.setItem('admin_auth', password);
       onAuth(password);
-    } catch {
-      setError('Incorrect password');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong');
     } finally {
       setLoading(false);
     }

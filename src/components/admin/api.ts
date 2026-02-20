@@ -186,5 +186,63 @@ export async function checkBackendHealth(): Promise<boolean> {
   }
 }
 
+// Verify password with retry and error differentiation
+// Returns usage data on success, throws with a user-friendly message on failure
+const AUTH_RETRIES = 3;
+const AUTH_RETRY_DELAY = 1500;
+
+export async function verifyPassword(
+  password: string,
+): Promise<UsageInfo> {
+  let lastError: Error | null = null;
+
+  for (let attempt = 0; attempt <= AUTH_RETRIES; attempt++) {
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 10000);
+
+      const res = await fetch(`${base}/usage`, {
+        headers: headers(password),
+        signal: controller.signal,
+      });
+
+      clearTimeout(timeoutId);
+
+      // Wrong password — don't retry
+      if (res.status === 401) {
+        throw new AuthError('Incorrect password', 'invalid_password');
+      }
+
+      // Success
+      if (res.ok) {
+        return res.json();
+      }
+
+      // Server error or tunnel flake (404, 502, 503) — retry
+      lastError = new Error(`Server error (${res.status})`);
+    } catch (error) {
+      if (error instanceof AuthError) throw error;
+      lastError = error instanceof Error ? error : new Error(String(error));
+    }
+
+    // Retry with backoff (skip on last attempt)
+    if (attempt < AUTH_RETRIES) {
+      await sleep(AUTH_RETRY_DELAY * Math.pow(1.5, attempt));
+    }
+  }
+
+  throw new AuthError(
+    'Unable to reach server. Please check your connection and try again.',
+    'network_error',
+  );
+}
+
+export class AuthError extends Error {
+  constructor(message: string, public readonly reason: 'invalid_password' | 'network_error') {
+    super(message);
+    this.name = 'AuthError';
+  }
+}
+
 // Export retry utilities for use in ChatInterface
 export { isRetryableError, sleep, MAX_RETRIES, RETRY_DELAY_MS };

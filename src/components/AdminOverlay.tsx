@@ -6,7 +6,7 @@ import { useDraggable } from '../hooks/useDraggable';
 import { useDeployPoller } from '../hooks/useDeployPoller';
 import type { Message, ToolStatus, UsageInfo, ImageAttachment, Conversation, ChangeEntry } from './admin/types';
 import { AGENT_URL, PROJECT_ID, WELCOME_MESSAGE } from './admin/constants';
-import { sendChat, fetchUsage, listConversations, getConversation, deleteConversation, listChanges } from './admin/api';
+import { sendChat, fetchUsage, verifyPassword, listConversations, getConversation, deleteConversation, listChanges } from './admin/api';
 import { parseSSEStream } from './admin/sse-parser';
 import { MessageBubble, StreamingBubble } from './admin/MessageBubble';
 import { ToolStatusBar } from './admin/ToolStatusBar';
@@ -259,16 +259,12 @@ export default function AdminOverlay({ panelId, panelIndex }: AdminOverlayProps)
     setAuthLoading(true);
     setAuthError('');
     try {
-      const res = await fetch(`${AGENT_URL}/api/v1/projects/${PROJECT_ID}/usage`, {
-        headers: { Authorization: `Bearer ${authInput.trim()}` },
-      });
-      if (!res.ok) throw new Error('Invalid password');
-      const data: UsageInfo = await res.json();
+      const data = await verifyPassword(authInput.trim());
       authenticate(authInput.trim());
       setUsage(data);
       setAuthInput('');
-    } catch {
-      setAuthError('Invalid password');
+    } catch (err) {
+      setAuthError(err instanceof Error ? err.message : 'Something went wrong');
     } finally {
       setAuthLoading(false);
     }
