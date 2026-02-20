@@ -3,9 +3,9 @@
 ## Current Position
 
 Phase: 3 of 3 — Integration Testing + Deploy
-Plan: Not yet created
-Status: IN PROGRESS — backend configured, frontend already built, testing needed
-Last activity: 2026-02-20 — Backend config + tunnel wiring completed
+Plan: 03-01 complete (pre-deploy auth cleanup)
+Status: IN PROGRESS — admin auth cleaned up, ready for integration testing
+Last activity: 2026-02-20 — Completed 03-01-PLAN.md
 
 ## Accumulated Context
 
@@ -47,6 +47,13 @@ The agent-backend already exists at https://agent.drzach.ai (Express + Claude Ag
 - Restarted cloudflared tunnel and agent-backend
 - Verified: `curl https://cultivate-agent.drzach.ai/health` returns `{"status":"ok"}`
 - Verified: project info and usage endpoints work through tunnel
+
+## Decisions
+
+- **sessionStorage-only auth**: admin_auth stored exclusively in sessionStorage (not localStorage). Closing tab forgets session — intentional security posture.
+- **Admin.tsx deleted**: orphaned page-based admin (not routed in App.tsx) removed. Production architecture is AdminActivator + AdminOverlay floating overlay.
+- **/admin excluded from crawlers**: `Disallow: /admin` added to robots.txt default User-agent block.
+- **Admin auth key is 'admin_auth'** (not 'admin_password') — corrected in api.ts handle401().
 
 ## Session Continuity
 

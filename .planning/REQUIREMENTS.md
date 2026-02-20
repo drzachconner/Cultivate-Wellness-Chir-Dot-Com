@@ -9,10 +9,10 @@
 - [ ] **BACK-04**: Cultivate Wellness project is registered with correct repo path and system prompt
 
 ### Authentication
-- [ ] **AUTH-01**: User can access admin panel at /admin route
+- [x] **AUTH-01**: User can access admin panel at /admin route
 - [ ] **AUTH-02**: User must enter password to access admin functionality
 - [ ] **AUTH-03**: Password is validated against agent-backend using Bearer token auth
-- [ ] **AUTH-04**: User can choose "Remember me" for persistent auth (localStorage vs sessionStorage)
+- [x] **AUTH-04**: User can choose "Remember me" for persistent auth (localStorage vs sessionStorage)
 
 ### Admin UI Shell
 - [ ] **UI-01**: Admin panel renders as draggable floating overlay on the site
