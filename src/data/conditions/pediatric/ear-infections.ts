@@ -12,31 +12,31 @@ export const earInfections: ConditionPageData = {
       'Drug-free chiropractic care for recurrent ear infections in children. At Cultivate Wellness, we help break the cycle with gentle, neurologically-focused adjustments.',
   },
   intro: [
-    'Ear infections (otitis media) are one of the most common reasons children visit the doctor -- and one of the top reasons for antibiotic prescriptions. But what if there was a drug-free way to help your child break the cycle of recurrent ear infections? At Cultivate Wellness, we\'ve helped countless children find relief through gentle, neurologically-focused chiropractic care.',
-    'Five out of six children will have at least one ear infection by age 3. Children are more prone because their Eustachian tubes are more horizontal, shorter, and narrower than adults\', making it harder for fluid to drain from the middle ear. When fluid can\'t drain properly, it creates a perfect environment for bacteria to grow -- leading to infection.',
+    'Ear infections (otitis media) are one of the most common reasons children visit the doctor, and one of the top reasons for antibiotic prescriptions. But what if there was a drug-free way to help your child break the cycle of recurrent ear infections? At Cultivate Wellness, we\'ve helped countless children find relief through gentle, neurologically-focused chiropractic care.',
+    'Five out of six children will have at least one ear infection by age 3. Children are more prone because their Eustachian tubes are more horizontal, shorter, and narrower than adults\', making it harder for fluid to drain from the middle ear. When fluid can\'t drain properly, it creates a perfect environment for bacteria to grow, leading to infection.',
   ],
   highlightBox: {
     icon: 'ear',
-    label: 'The Spinal Connection',
-    text: 'The upper cervical spine (neck) plays a crucial role in ear health. The nerves controlling the muscles of the Eustachian tube originate in the upper neck. When this area is misaligned, it can create the conditions that lead to recurrent ear infections -- regardless of how many rounds of antibiotics are prescribed.',
+    label: 'The Nervous System Connection',
+    text: 'The neurology in the cervical (neck) and occiput (back of head) region plays a crucial role in ear health. The nerves controlling the muscles of the Eustachian tube originate in the upper neck. When this neurology is under tension from birth and/or early life trauma (physical, chemical, and/or emotional) it can create the conditions that lead to recurrent ear infections, regardless of how many rounds of antibiotics are prescribed.',
   },
   symptoms: {
-    sectionTitle: 'How Spinal Misalignment Affects the Ears',
+    sectionTitle: 'How Neurological Tension Affects the Ears',
     items: [
       {
         icon: 'zap',
         title: 'Nerve Interference',
-        description: 'The nerves controlling the muscles of the Eustachian tube originate in the upper neck. Misalignment disrupts their function.',
+        description: 'The nerves controlling the muscles of the Eustachian tube originate in the upper neck. Tension in this area disrupts their function.',
       },
       {
         icon: 'activity',
         title: 'Muscle Tension',
-        description: 'Subluxations can cause tension in the muscles that open and close the Eustachian tube, preventing proper drainage.',
+        description: 'Neurological tension can cause tightness in the muscles that open and close the Eustachian tube, preventing proper drainage.',
       },
       {
         icon: 'droplets',
         title: 'Lymphatic Drainage',
-        description: 'Upper cervical misalignment can impede proper lymphatic drainage from the head and neck area.',
+        description: 'Upper neurological tension can impede proper lymphatic drainage from the head and neck area.',
       },
       {
         icon: 'shield',
@@ -50,27 +50,27 @@ export const earInfections: ConditionPageData = {
     items: [
       {
         icon: 'scan-line',
-        title: 'Gentle Upper Cervical Assessment',
+        title: 'INSiGHT Neurological Scanning',
         description:
-          'We carefully examine the upper neck area, looking for subluxations that may be contributing to your child\'s ear problems with a gentle, child-friendly examination.',
+          'Using INSiGHT scans, we identify where stress is stuck on in your child\'s nervous system — tension patterns from birth or early life trauma that the body hasn\'t yet learned it\'s safe to release.',
       },
       {
         icon: 'hand',
         title: 'Light-Touch Adjustments',
         description:
-          'Using our gentle, neurologically-focused approach, we deliver incredibly gentle adjustments -- so gentle that babies often sleep through them. No cracking, popping, or discomfort.',
+          'Using our gentle, neurologically-focused approach, we deliver incredibly gentle adjustments, so gentle that babies often sleep through them. No cracking, popping, or discomfort.',
       },
       {
         icon: 'droplets',
         title: 'Support Proper Drainage',
         description:
-          'By restoring proper alignment and nerve function, we help create conditions for the Eustachian tubes to function normally -- allowing fluid to drain as it should.',
+          'By releasing old tension patterns the body no longer needs to hold, we help restore normal nerve function so the Eustachian tubes can drain properly on their own.',
       },
       {
         icon: 'target',
         title: 'Address the Root Cause',
         description:
-          'Rather than treating each infection as it occurs, we address the underlying structural and neurological factors that make your child susceptible to recurrent infections.',
+          'Rather than treating each infection as it occurs, we address the underlying neurological factors that make your child susceptible to recurrent infections.',
       },
     ],
   },
@@ -87,7 +87,7 @@ export const earInfections: ConditionPageData = {
       {
         title: 'Gentle, Targeted Adjustments',
         description:
-          'Using our gentle, neurologically-focused approach, we address upper cervical misalignments that may be affecting Eustachian tube function, lymphatic drainage, and overall immune response.',
+          'Using our gentle, neurologically-focused approach, we address upper cervical neurological tension that may be affecting Eustachian tube function, lymphatic drainage, and overall immune response.',
       },
       {
         title: 'Ongoing Monitoring & Prevention',
@@ -112,7 +112,7 @@ export const earInfections: ConditionPageData = {
     {
       question: 'How does chiropractic help with ear infections?',
       answer:
-        'The upper cervical spine (neck) directly affects the nerves and muscles controlling Eustachian tube function. When this area is properly aligned, fluid can drain from the middle ear as it should, reducing the conditions that lead to infection. We address the structural root cause rather than just treating symptoms.',
+        'The neurology in the upper cervical spine (neck) and occiput directly affects the nerves and muscles controlling Eustachian tube function. When stress is stuck on in this area from birth or early life trauma, it creates tension that disrupts normal drainage. By helping the nervous system release these old patterns, we address the root cause rather than just treating symptoms.',
     },
     {
       question: 'Is this safe for young children?',
@@ -122,12 +122,12 @@ export const earInfections: ConditionPageData = {
     {
       question: 'Should we stop antibiotics?',
       answer:
-        'We are not anti-antibiotic -- sometimes they are necessary. Chiropractic care offers a complementary approach that can reduce the frequency and severity of infections, potentially reducing the need for antibiotics over time. Always consult your pediatrician regarding medication decisions.',
+        'We are not anti-antibiotic. Sometimes they are necessary. Chiropractic care offers a complementary approach that can reduce the frequency and severity of infections, potentially reducing the need for antibiotics over time. Always consult your pediatrician regarding medication decisions.',
     },
     {
       question: 'Can chiropractic help my child avoid ear tubes?',
       answer:
-        'Many parents have found that chiropractic care allowed their children to avoid or delay ear tube surgery. While tubes are sometimes necessary, it is worth trying a conservative approach first. Ear tubes don\'t address why infections keep occurring -- chiropractic care does.',
+        'Many parents have found that chiropractic care allowed their children to avoid or delay ear tube surgery. While tubes are sometimes necessary, it is worth trying a conservative approach first. Ear tubes don\'t address why infections keep occurring. Chiropractic care does.',
     },
     {
       question: 'When should I still see a pediatrician?',

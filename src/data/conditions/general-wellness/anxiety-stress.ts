@@ -13,7 +13,7 @@ export const anxietyStress: ConditionPageData = {
   },
   intro: [
     'Anxiety and chronic stress have reached epidemic proportions in our society. While there are many approaches to managing these challenges, one often-overlooked factor is the state of your nervous system. At Cultivate Wellness, we help restore balance to your nervous system, supporting your body\'s natural ability to adapt to stress.',
-    'Anxiety and stress are not just "in your head" -- they create very real physical changes in your body. Your nervous system gets stuck in "fight or flight" mode, affecting everything from your heart rate to your digestion to your sleep. Addressing the physical component through gentle, neurologically-focused chiropractic care is an essential piece of the puzzle.',
+    'Anxiety and stress are not just "in your head." They create very real physical changes in your body. Your nervous system gets stuck in "fight or flight" mode, affecting everything from your heart rate to your digestion to your sleep. Addressing the physical component through gentle, neurologically-focused chiropractic care is an essential piece of the puzzle.',
   ],
   highlightBox: {
     icon: 'brain',
@@ -87,12 +87,12 @@ export const anxietyStress: ConditionPageData = {
   approach: {
     sectionTitle: 'Our Approach to Anxiety & Stress',
     description:
-      'We use gentle techniques that are particularly well-suited for anxious patients -- no cracking, no sudden movements, no startling.',
+      'We use gentle techniques that are particularly well-suited for anxious patients: no cracking, no sudden movements, no startling.',
     steps: [
       {
         title: 'Nervous System Assessment with HRV',
         description:
-          'Our INSiGHT scanning includes Heart Rate Variability (HRV) testing -- one of the best measures of autonomic nervous system function and stress resilience. This shows us objectively how your body is handling stress and tracks your progress over time.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning with Heart Rate Variability (HRV) testing to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past trauma, chronic stress, or difficult life experiences that your body hasn\'t yet learned it\'s safe to release. This shows us exactly where your nervous system is holding onto stress, not just how you feel emotionally.',
       },
       {
         title: 'Calming, Gentle Adjustments',
@@ -123,7 +123,7 @@ export const anxietyStress: ConditionPageData = {
     {
       question: 'Can chiropractic care really help with anxiety?',
       answer:
-        'Yes. Anxiety has a significant physical component -- your autonomic nervous system gets stuck in "fight or flight" mode. Chiropractic adjustments help restore balance between the sympathetic (stress) and parasympathetic (calm) branches of your nervous system. Many patients experience meaningful improvements in anxiety symptoms through regular care.',
+        'Yes. Anxiety has a significant physical component. Your autonomic nervous system gets stuck in "fight or flight" mode. Chiropractic adjustments help restore balance between the sympathetic (stress) and parasympathetic (calm) branches of your nervous system. Many patients experience meaningful improvements in anxiety symptoms through regular care.',
     },
     {
       question: 'Is chiropractic care a replacement for therapy or medication?',

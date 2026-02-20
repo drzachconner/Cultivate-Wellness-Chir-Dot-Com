@@ -13,12 +13,12 @@ export const headachesMigraines: ConditionPageData = {
   },
   intro: [
     'Headaches and migraines can be debilitating, affecting your work, relationships, and quality of life. At Cultivate Wellness, we offer a natural, drug-free approach that addresses the underlying causes of head pain rather than just masking symptoms with medication.',
-    'Research shows that up to 95% of headaches are primary headaches -- meaning they aren\'t caused by disease but by dysfunction in the neck, muscles, or nervous system. This is exactly what chiropractic care addresses. The upper cervical spine (C1-C2) is intimately connected to head pain through blood flow, nerve supply, and brainstem proximity, and our neurologically-focused approach targets these critical connections.',
+    'Research shows that up to 95% of headaches are primary headaches, meaning they aren\'t caused by disease but by dysfunction in the neck, muscles, or nervous system. This is exactly what chiropractic care addresses. The upper cervical spine (C1-C2) is intimately connected to head pain through blood flow, nerve supply, and brainstem proximity, and our neurologically-focused approach targets these critical connections.',
   ],
   highlightBox: {
     icon: 'brain',
     label: 'The Spine-Headache Connection',
-    text: 'Vertebral arteries pass through the cervical spine to supply the brain. Upper cervical nerves directly innervate the head and face. When the upper neck is misaligned, it can create tension, nerve irritation, and vascular changes that trigger headaches.',
+    text: 'Vertebral arteries pass through the cervical spine to supply the brain. Upper cervical nerves directly innervate the head and face. When the upper neck neurology is under tension, it can create irritation, nerve irritation, and vascular changes that trigger headaches.',
   },
   symptoms: {
     sectionTitle: 'Types of Headaches We Help',
@@ -68,7 +68,7 @@ export const headachesMigraines: ConditionPageData = {
         icon: 'heart-pulse',
         title: 'Nervous System Regulation',
         description:
-          'By reducing nervous system interference, chiropractic care helps lower your trigger threshold -- making you less susceptible to headache triggers like stress, weather, and hormonal changes.',
+          'By reducing nervous system interference, chiropractic care helps lower your trigger threshold, making you less susceptible to headache triggers like stress, weather, and hormonal changes.',
       },
       {
         icon: 'hand',
@@ -92,12 +92,12 @@ export const headachesMigraines: ConditionPageData = {
       {
         title: 'Thorough Assessment',
         description:
-          'We start with a complete headache history including frequency, intensity, triggers, and patterns. This is combined with a cervical spine examination, INSiGHT scanning neurological testing, posture and ergonomic evaluation, and identification of contributing lifestyle factors.',
+          'We start with a complete headache history, then perform INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, chronic postural strain, or accumulated life stress that your body hasn\'t yet released. This reveals the neurological root of your headaches, not just where you feel pain.',
       },
       {
         title: 'Gentle Spinal Correction',
         description:
-          'Using our gentle, neurologically-focused approach, we provide precise adjustments with special attention to the upper cervical spine and cranial bone assessment. There is no cracking, popping, or twisting -- our techniques are safe for patients who have tried everything else.',
+          'Using our gentle, neurologically-focused approach, we provide precise adjustments with special attention to the upper cervical spine and cranial bone assessment. There is no cracking, popping, or twisting. Our techniques are safe for patients who have tried everything else.',
       },
       {
         title: 'Supportive Care & Prevention',
@@ -123,7 +123,7 @@ export const headachesMigraines: ConditionPageData = {
     {
       question: 'Can chiropractic really help with migraines?',
       answer:
-        'Yes. Migraines are a neurological condition, and our neurologically-focused approach is particularly well-suited for them. By addressing nervous system interference, upper cervical misalignment, and trigger sensitivity, many migraine sufferers who haven\'t found relief elsewhere discover significant improvement with chiropractic care.',
+        'Yes. Migraines are a neurological condition, and our neurologically-focused approach is particularly well-suited for them. By addressing nervous system interference, upper cervical neurological tension, and trigger sensitivity, many migraine sufferers who haven\'t found relief elsewhere discover significant improvement with chiropractic care.',
     },
     {
       question: 'How quickly will I see results?',

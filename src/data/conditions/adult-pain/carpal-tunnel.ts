@@ -12,8 +12,8 @@ export const carpalTunnel: ConditionPageData = {
       'Non-surgical chiropractic treatment for carpal tunnel syndrome in Rochester Hills, MI. At Cultivate Wellness, we address nerve compression along the entire pathway.',
   },
   intro: [
-    'If you\'re experiencing numbness, tingling, or pain in your hand and wrist, you may have been told you have carpal tunnel syndrome. Before considering surgery, discover how chiropractic care can often provide significant relief by addressing nerve interference throughout the entire pathway -- not just at the wrist.',
-    'Research has shown that many cases of "carpal tunnel syndrome" actually involve nerve compression at multiple points, a concept called "double crush syndrome." The median nerve travels from your neck, through your shoulder, down your arm, through your elbow, and finally through the carpal tunnel in your wrist. Compression at ANY point along this path can cause symptoms -- which is why wrist surgery sometimes fails.',
+    'If you\'re experiencing numbness, tingling, or pain in your hand and wrist, you may have been told you have carpal tunnel syndrome. Before considering surgery, discover how chiropractic care can often provide significant relief by addressing nerve interference throughout the entire pathway, not just at the wrist.',
+    'Research has shown that many cases of "carpal tunnel syndrome" actually involve nerve compression at multiple points, a concept called "double crush syndrome." The median nerve travels from your neck, through your shoulder, down your arm, through your elbow, and finally through the carpal tunnel in your wrist. Compression at ANY point along this path can cause symptoms, which is why wrist surgery sometimes fails.',
   ],
   highlightBox: {
     icon: 'hand',
@@ -62,19 +62,19 @@ export const carpalTunnel: ConditionPageData = {
         icon: 'scan-line',
         title: 'Whole-Pathway Evaluation',
         description:
-          'We evaluate the entire nerve pathway from cervical spine to wrist, identifying ALL sources of compression -- not just the carpal tunnel. This is why our approach often succeeds where wrist-only treatments fail.',
+          'We evaluate the entire nerve pathway from cervical spine to wrist, identifying ALL sources of compression, not just the carpal tunnel. This is why our approach often succeeds where wrist-only treatments fail.',
       },
       {
         icon: 'bone',
         title: 'Cervical Spine Correction',
         description:
-          'Many carpal tunnel cases originate with subluxations in the neck that compress nerve roots. By correcting cervical misalignments, we often see dramatic improvement in hand and wrist symptoms.',
+          'Many carpal tunnel cases originate with neurological tension in the neck that compresses nerve roots. By reducing cervical neurological tension, we often see dramatic improvement in hand and wrist symptoms.',
       },
       {
         icon: 'hand',
         title: 'Gentle, Precise Adjustments',
         description:
-          'Our gentle, neurologically-focused approach addresses subluxations throughout the entire nerve pathway -- from the cervical spine through the shoulder, elbow, and wrist -- without forceful manipulation.',
+          'Our gentle, neurologically-focused approach addresses nerve interference throughout the entire nerve pathway, from the cervical spine through the shoulder, elbow, and wrist, without forceful manipulation.',
       },
       {
         icon: 'shield',
@@ -92,12 +92,12 @@ export const carpalTunnel: ConditionPageData = {
       {
         title: 'Full Nerve Pathway Assessment',
         description:
-          'We evaluate every potential compression site: the cervical spine for subluxations compressing nerve roots, the shoulder and thoracic outlet for compression in this common trouble spot, the elbow and pronator teres, and the carpal tunnel itself. This comprehensive approach identifies the true source of your symptoms.',
+          'We perform a full nerve pathway assessment including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, repetitive strain, or life stress that your body hasn\'t yet released. We evaluate every potential compression site from the cervical spine through the shoulder, elbow, and wrist to identify the true source of your symptoms.',
       },
       {
         title: 'Targeted Gentle Corrections',
         description:
-          'Using our gentle, neurologically-focused approach, we address subluxations and restrictions throughout the entire nerve pathway. By correcting compression at ALL sites -- not just the wrist -- we provide more complete and lasting relief.',
+          'Using our gentle, neurologically-focused approach, we address areas of neurological tension and restrictions throughout the entire nerve pathway. By correcting compression at ALL sites, not just the wrist, we provide more complete and lasting relief.',
       },
       {
         title: 'Ergonomic Support & Prevention',
@@ -122,12 +122,12 @@ export const carpalTunnel: ConditionPageData = {
     {
       question: 'Can chiropractic really help carpal tunnel syndrome?',
       answer:
-        'Yes. By addressing nerve compression along the entire median nerve pathway -- from neck to wrist -- chiropractic care often provides significant relief. Many cases of carpal tunnel involve compression at multiple points (double crush syndrome), and addressing only the wrist misses the bigger picture.',
+        'Yes. By addressing nerve compression along the entire median nerve pathway, from neck to wrist, chiropractic care often provides significant relief. Many cases of carpal tunnel involve compression at multiple points (double crush syndrome), and addressing only the wrist misses the bigger picture.',
     },
     {
       question: 'Why do you focus on the neck for a wrist problem?',
       answer:
-        'The median nerve that causes carpal tunnel symptoms originates in the cervical spine. Subluxations in the neck can compress these nerve roots, making the nerve more susceptible to irritation downstream. Correcting cervical misalignments often produces dramatic improvement in hand symptoms.',
+        'The median nerve that causes carpal tunnel symptoms originates in the cervical spine. Neurological tension in the neck can compress these nerve roots, making the nerve more susceptible to irritation downstream. Reducing cervical neurological tension often produces dramatic improvement in hand symptoms.',
     },
     {
       question: 'Should I try chiropractic before surgery?',

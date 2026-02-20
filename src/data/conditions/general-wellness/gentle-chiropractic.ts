@@ -13,12 +13,12 @@ export const gentleChiropractic: ConditionPageData = {
   },
   intro: [
     'Nervous about chiropractic care because you have heard about (or experienced) the cracking, popping, and twisting of traditional adjustments? You are not alone. Many people avoid chiropractic care they desperately need because they are afraid of forceful manipulation. At Cultivate Wellness, we specialize in gentle techniques that deliver excellent results without any of the things that make people nervous.',
-    'Research shows that gentle, low-force techniques can be more effective than forceful manipulation because they work with your body rather than against it. Your nervous system responds better to precise, gentle input than to overwhelming force. Our patients often say they cannot believe how gentle the adjustments are -- and how effective.',
+    'Research shows that gentle, low-force techniques can be more effective than forceful manipulation because they work with your body rather than against it. Your nervous system responds better to precise, gentle input than to overwhelming force. Our patients often say they cannot believe how gentle the adjustments are, and how effective.',
   ],
   highlightBox: {
     icon: 'hand-heart',
     label: 'You Will Not Believe It Is Chiropractic',
-    text: 'Our patients often say they cannot believe how gentle our adjustments are -- and how effective. Babies sleep through them. Seniors feel comfortable. Even the most nervous patients relax.',
+    text: 'Our patients often say they cannot believe how gentle our adjustments are, and how effective. Babies sleep through them. Seniors feel comfortable. Even the most nervous patients relax.',
   },
   symptoms: {
     sectionTitle: 'Perfect For People Who...',
@@ -92,12 +92,12 @@ export const gentleChiropractic: ConditionPageData = {
       {
         title: 'No Cracking or Popping',
         description:
-          'You will not hear those sounds that make people cringe. Our gentle, precise adjustments deliver comfortable corrections without the snap-crackle-pop of traditional chiropractic. We never twist your neck or spine.',
+          'We start with INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, chronic strain, or life stress that your body hasn\'t yet learned it\'s safe to release. This guides our gentle, precise adjustments with no cracking, popping, or twisting.',
       },
       {
         title: 'Comfortable Positioning',
         description:
-          'You can be adjusted sitting, lying down, or standing -- whatever is most comfortable for you. We work around any mobility limitations and adapt our approach to your unique needs and preferences.',
+          'You can be adjusted sitting, lying down, or standing, whatever is most comfortable for you. We work around any mobility limitations and adapt our approach to your unique needs and preferences.',
       },
       {
         title: 'Clear Communication',
@@ -123,7 +123,7 @@ export const gentleChiropractic: ConditionPageData = {
     {
       question: 'If there is no cracking, does it really work?',
       answer:
-        'Absolutely. The cracking sound in traditional chiropractic is just gas being released from a joint -- it is not an indicator of effectiveness. Research shows gentle, low-force techniques can be equally or more effective because they work with your nervous system rather than against it. Your body responds better to precise, gentle input.',
+        'Absolutely. The cracking sound in traditional chiropractic is just gas being released from a joint. It is not an indicator of effectiveness. Research shows gentle, low-force techniques can be equally or more effective because they work with your nervous system rather than against it. Your body responds better to precise, gentle input.',
     },
     {
       question: 'What does an adjustment feel like?',
@@ -138,7 +138,7 @@ export const gentleChiropractic: ConditionPageData = {
     {
       question: 'I had a bad experience at another chiropractor. Will this be different?',
       answer:
-        'We hear this frequently, and yes -- our approach is fundamentally different. We use only gentle, instrument-based and light-touch techniques. There is no cracking, no sudden movements, and no forceful manipulation. We explain everything before we do it, and you are always in control of your care.',
+        'We hear this frequently, and yes, our approach is fundamentally different. We use only gentle, instrument-based and light-touch techniques. There is no cracking, no sudden movements, and no forceful manipulation. We explain everything before we do it, and you are always in control of your care.',
     },
     {
       question: 'Can babies and children really be adjusted?',

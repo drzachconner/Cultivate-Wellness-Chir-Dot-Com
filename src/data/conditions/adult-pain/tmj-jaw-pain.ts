@@ -18,7 +18,7 @@ export const tmjJawPain: ConditionPageData = {
   highlightBox: {
     icon: 'bone',
     label: 'More Than Just Your Jaw',
-    text: 'When the cervical spine is misaligned, it changes head position, which changes how your jaw comes together. This creates muscle imbalance, joint stress, and TMJ symptoms. Addressing the neck is often the key to lasting TMJ relief.',
+    text: 'When the cervical neurology is under tension, it affects head position, which changes how your jaw comes together. This creates muscle imbalance, joint stress, and TMJ symptoms. Addressing the neck is often the key to lasting TMJ relief.',
   },
   symptoms: {
     sectionTitle: 'Common TMJ Symptoms',
@@ -72,13 +72,13 @@ export const tmjJawPain: ConditionPageData = {
         icon: 'target',
         title: 'Addresses Root Cause',
         description:
-          'We don\'t just treat TMJ symptoms -- we identify why your jaw is dysfunctional by evaluating the relationship between your cervical spine, posture, and jaw alignment.',
+          'We don\'t just treat TMJ symptoms. We identify why your jaw is dysfunctional by evaluating the relationship between your cervical spine, posture, and jaw alignment.',
       },
       {
         icon: 'bone',
         title: 'Cervical Correction',
         description:
-          'Gentle adjustments restore proper alignment in the neck, which directly affects jaw position and function. Many patients see jaw improvement simply from cervical corrections.',
+          'Gentle adjustments release stored tension and restore normal nervous system function in the neck, which directly affects jaw position and function. Many patients see jaw improvement simply from cervical corrections.',
       },
       {
         icon: 'hand',
@@ -102,12 +102,12 @@ export const tmjJawPain: ConditionPageData = {
       {
         title: 'Comprehensive Evaluation',
         description:
-          'We assess your jaw, cervical spine, posture, and overall biomechanics to understand the full picture. This includes evaluating the TMJ joint directly, examining cervical alignment, analyzing head and neck posture, and identifying contributing factors like bruxism, stress, and injury history.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, clenching habits, or life stress that your body hasn\'t yet released. We also evaluate the TMJ joint directly, cervical alignment, and head posture to understand the full jaw-neck picture.',
       },
       {
         title: 'Cervical & TMJ Correction',
         description:
-          'Using our gentle, neurologically-focused approach, we restore proper alignment in the cervical spine to improve head position and jaw function. When appropriate, we also perform gentle work directly on the TMJ joint and address tension in the muscles of mastication and supporting structures.',
+          'Using our gentle, neurologically-focused approach, we release stored tension and restore normal nervous system function in the cervical spine to improve head position and jaw function. When appropriate, we also perform gentle work directly on the TMJ joint and address tension in the muscles of mastication and supporting structures.',
       },
       {
         title: 'Long-Term Management',
@@ -133,7 +133,7 @@ export const tmjJawPain: ConditionPageData = {
     {
       question: 'Why does my chiropractor need to look at my neck for jaw pain?',
       answer:
-        'The TMJ and upper cervical spine share nerve supply (trigeminal nerve), muscle connections, and postural relationships. When the cervical spine is misaligned, it changes head position, which changes how your jaw comes together. This creates muscle imbalance and joint stress. Addressing the neck is often essential for lasting TMJ relief.',
+        'The TMJ and upper cervical spine share nerve supply (trigeminal nerve), muscle connections, and postural relationships. When the cervical neurology is under tension, it affects head position, which changes how your jaw comes together. This creates muscle imbalance and joint stress. Addressing the neck is often essential for lasting TMJ relief.',
     },
     {
       question: 'How quickly will I see results?',
@@ -153,7 +153,7 @@ export const tmjJawPain: ConditionPageData = {
     {
       question: 'What causes TMJ problems?',
       answer:
-        'Common causes include cervical spine misalignment, trauma to the jaw or head, whiplash injuries, teeth grinding (bruxism), stress and muscle tension, poor posture (forward head position), dental work or bite changes, and arthritis in the jaw joint. We evaluate all potential contributors during your examination.',
+        'Common causes include cervical neurological tension, trauma to the jaw or head, whiplash injuries, teeth grinding (bruxism), stress and muscle tension, poor posture (forward head position), dental work or bite changes, and arthritis in the jaw joint. We evaluate all potential contributors during your examination.',
     },
   ],
   relatedConditions: [

@@ -12,13 +12,13 @@ export const lymeDisease: ConditionPageData = {
       'Gentle chiropractic support for Lyme disease recovery in Rochester Hills, MI. At Cultivate Wellness, we help optimize nervous system function alongside your medical treatment.',
   },
   intro: [
-    'Lyme disease and its co-infections can wreak havoc on the nervous system, causing a wide array of symptoms that affect every aspect of life. At Cultivate Wellness, we offer supportive care that focuses on optimizing nervous system function -- helping your body heal alongside your Lyme-literate medical treatment.',
+    'Lyme disease and its co-infections can wreak havoc on the nervous system, causing a wide array of symptoms that affect every aspect of life. At Cultivate Wellness, we offer supportive care that focuses on optimizing nervous system function, helping your body heal alongside your Lyme-literate medical treatment.',
     'Lyme disease (Borrelia burgdorferi) and common co-infections like Bartonella, Babesia, and Ehrlichia have a particular affinity for the nervous system, causing neuroborreliosis, widespread inflammation, autonomic dysfunction, pain syndromes, and cognitive issues. Our gentle, neurologically-focused approach supports your nervous system through every phase of your Lyme journey.',
   ],
   highlightBox: {
     icon: 'alert-circle',
     label: 'Important',
-    text: 'Lyme disease requires proper medical diagnosis and treatment. Chiropractic care is supportive therapy that works alongside your medical team -- it does not replace antibiotic or antimicrobial treatment.',
+    text: 'Lyme disease requires proper medical diagnosis and treatment. Our goal is not to treat Lyme itself, but to restore normal nervous system function — supporting your body\'s ability to heal alongside your Lyme-literate medical team.',
   },
   symptoms: {
     sectionTitle: 'Common Lyme Symptoms We See',
@@ -90,7 +90,7 @@ export const lymeDisease: ConditionPageData = {
         icon: 'shield',
         title: 'Immune System Support',
         description:
-          'A well-functioning nervous system supports optimal immune function -- critical when your body is fighting persistent infection. Better nerve communication means a more effective immune response.',
+          'A well-functioning nervous system supports optimal immune function, which is critical when your body is fighting persistent infection. Better nerve communication means a more effective immune response.',
       },
     ],
   },
@@ -102,7 +102,7 @@ export const lymeDisease: ConditionPageData = {
       {
         title: 'Individualized Assessment',
         description:
-          'We begin with a thorough understanding of where you are in your Lyme journey -- active treatment, die-off reactions, recovery, or maintenance. INSiGHT scanning provides objective nervous system data to guide our approach.',
+          'We begin with a thorough understanding of where you are in your Lyme journey: active treatment, die-off reactions, recovery, or maintenance. INSiGHT neurological scanning objectively assesses your nervous system function and identifies where stress is stuck on — tension from chronic infection, inflammation, or the demands of treatment that your body hasn\'t yet released. This guides our approach based on what your nervous system needs, not just your symptom list.',
       },
       {
         title: 'Ultra-Gentle Adjustments',

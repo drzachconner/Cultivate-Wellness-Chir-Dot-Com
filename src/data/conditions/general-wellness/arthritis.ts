@@ -18,7 +18,7 @@ export const arthritis: ConditionPageData = {
   highlightBox: {
     icon: 'hand',
     label: 'Gentle Enough for Arthritic Joints',
-    text: 'Traditional chiropractic manipulation can be too aggressive for arthritic joints. Our gentle, neurologically-focused approach uses light touch and precise instruments -- no cracking, twisting, or forceful manipulation. It\'s specifically suited for patients with arthritis.',
+    text: 'Traditional chiropractic manipulation can be too aggressive for arthritic joints. Our gentle, neurologically-focused approach uses light touch and precise instruments. No cracking, twisting, or forceful manipulation. It\'s specifically suited for patients with arthritis.',
   },
   symptoms: {
     sectionTitle: 'Arthritis Symptoms We Help Manage',
@@ -62,7 +62,7 @@ export const arthritis: ConditionPageData = {
         icon: 'target',
         title: 'Reduces Abnormal Joint Stress',
         description:
-          'Spinal misalignment creates uneven weight distribution and abnormal mechanical stress on joints throughout the body. Correcting alignment reduces this stress and helps slow joint deterioration.',
+          'Neurological tension creates uneven weight distribution and abnormal mechanical stress on joints throughout the body. Reducing this tension reduces stress on the joints and helps slow joint deterioration.',
       },
       {
         icon: 'brain',
@@ -80,7 +80,7 @@ export const arthritis: ConditionPageData = {
         icon: 'hand',
         title: 'Designed for Sensitivity',
         description:
-          'Our gentle techniques are specifically appropriate for patients with joint sensitivity. No cracking, no twisting -- just precise, light contact that arthritic joints tolerate well.',
+          'Our gentle techniques are specifically appropriate for patients with joint sensitivity. No cracking, no twisting, just precise, light contact that arthritic joints tolerate well.',
       },
     ],
   },
@@ -92,12 +92,12 @@ export const arthritis: ConditionPageData = {
       {
         title: 'Joint & Spinal Assessment',
         description:
-          'We evaluate your spinal alignment, joint function, range of motion, and neurological status. INSiGHT scanning technology helps us assess your autonomic nervous system balance and identify areas of nerve interference contributing to inflammation. We consider how your arthritis affects your overall posture and movement patterns.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from years of joint changes, compensations, or accumulated life stress that your body hasn\'t yet released. This reveals how your nervous system may be contributing to inflammation and joint dysfunction beyond the arthritis itself.',
       },
       {
         title: 'Gentle, Precise Adjustments',
         description:
-          'Using Talsky Tonal Chiropractic, we address spinal misalignments with extraordinary gentleness. Our approach reduces joint stress without adding more stress to sensitive joints.',
+          'Using Talsky Tonal Chiropractic, we address neurological tension with extraordinary gentleness. Our approach reduces joint stress without adding more stress to sensitive joints.',
       },
       {
         title: 'Long-Term Joint Health Management',

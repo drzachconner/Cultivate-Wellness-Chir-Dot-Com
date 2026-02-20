@@ -12,13 +12,13 @@ export const concussionPostConcussion: ConditionPageData = {
       'Gentle chiropractic support for concussion and post-concussion syndrome in Rochester Hills, MI. At Cultivate Wellness, we address the cervical spine and nervous system for better recovery.',
   },
   intro: [
-    'A concussion is more than just a bump on the head -- it\'s a traumatic brain injury that can cause symptoms lasting weeks, months, or even years. At Cultivate Wellness, we support concussion and post-concussion syndrome (PCS) recovery by addressing the cervical spine injuries and nervous system dysfunction that almost always accompany head trauma.',
-    'Any force strong enough to cause a concussion is also strong enough to misalign the upper cervical spine. Research increasingly shows that many persistent post-concussion symptoms -- headaches, dizziness, brain fog, neck pain -- are actually driven by cervical spine injury rather than the brain injury alone. Our gentle, neurologically-focused approach addresses this often-overlooked component of concussion recovery.',
+    'A concussion is more than just a bump on the head. It\'s a traumatic brain injury that can cause symptoms lasting weeks, months, or even years. At Cultivate Wellness, we support concussion and post-concussion syndrome (PCS) recovery by addressing the cervical spine injuries and nervous system dysfunction that almost always accompany head trauma.',
+    'Any force strong enough to cause a concussion is also strong enough to create neurological tension in the upper cervical spine. Research increasingly shows that many persistent post-concussion symptoms, including headaches, dizziness, brain fog, and neck pain, are actually driven by cervical spine injury rather than the brain injury alone. Our gentle, neurologically-focused approach addresses this often-overlooked component of concussion recovery.',
   ],
   highlightBox: {
     icon: 'alert-circle',
     label: 'The Cervical Connection',
-    text: 'Studies show that cervical spine injury is present in the vast majority of concussion cases. Addressing upper cervical misalignment can significantly improve recovery outcomes for headaches, dizziness, balance, and cognitive symptoms.',
+    text: 'Studies show that cervical spine injury is present in the vast majority of concussion cases. Addressing upper cervical neurological tension can significantly improve recovery outcomes for headaches, dizziness, balance, and cognitive symptoms.',
   },
   symptoms: {
     sectionTitle: 'Concussion & Post-Concussion Symptoms We Support',
@@ -67,7 +67,7 @@ export const concussionPostConcussion: ConditionPageData = {
         icon: 'brain',
         title: 'Addresses the Cervical Component',
         description:
-          'Upper cervical misalignment is present in nearly all concussion cases. Gentle correction of C1-C2 can significantly improve headaches, dizziness, and cognitive symptoms that aren\'t responding to other treatments.',
+          'Upper cervical neurological tension is present in nearly all concussion cases. Gentle adjustment of C1-C2 can significantly improve headaches, dizziness, and cognitive symptoms that aren\'t responding to other treatments.',
       },
       {
         icon: 'heart-pulse',
@@ -79,7 +79,7 @@ export const concussionPostConcussion: ConditionPageData = {
         icon: 'hand',
         title: 'Extraordinarily Gentle',
         description:
-          'Post-concussion patients are sensitive. Our techniques use light, precise contact with no cracking or forceful manipulation -- critical for patients whose nervous systems are already stressed.',
+          'Post-concussion patients are sensitive. Our techniques use light, precise contact with no cracking or forceful manipulation, which is critical for patients whose nervous systems are already stressed.',
       },
       {
         icon: 'target',
@@ -97,12 +97,12 @@ export const concussionPostConcussion: ConditionPageData = {
       {
         title: 'Comprehensive Neurological Assessment',
         description:
-          'We evaluate your upper cervical alignment, neurological function, balance, and autonomic nervous system status, including INSiGHT scanning to objectively evaluate nervous system function. We consider the mechanism of injury and your complete symptom picture.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension from the concussion impact and cervical trauma that your body hasn\'t yet released. We also evaluate balance, autonomic function, and your complete symptom picture to understand the full scope of your recovery needs.',
       },
       {
         title: 'Gentle Upper Cervical Care',
         description:
-          'Using our gentle, neurologically-focused approach, we address upper cervical misalignments that are contributing to your symptoms. Our techniques are specifically chosen for their safety and gentleness with post-concussion patients.',
+          'Using our gentle, neurologically-focused approach, we address upper cervical neurological tension that is contributing to your symptoms. Our techniques are specifically chosen for their safety and gentleness with post-concussion patients.',
       },
       {
         title: 'Collaborative Recovery',
@@ -128,7 +128,7 @@ export const concussionPostConcussion: ConditionPageData = {
     {
       question: 'Is it safe to see a chiropractor after a concussion?',
       answer:
-        'Yes -- with the right approach. Our gentle, neurologically-focused techniques are specifically safe for post-concussion patients. We never use forceful manipulation, and we adapt our care to your sensitivity level. We recommend being evaluated by a physician first to rule out more serious injury.',
+        'Yes, with the right approach. Our gentle, neurologically-focused techniques are specifically safe for post-concussion patients. We never use forceful manipulation, and we adapt our care to your sensitivity level. We recommend being evaluated by a physician first to rule out more serious injury.',
     },
     {
       question: 'How soon after a concussion can I start care?',

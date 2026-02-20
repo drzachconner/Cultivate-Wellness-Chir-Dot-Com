@@ -12,8 +12,8 @@ export const acidRefluxGerd: ConditionPageData = {
       'Natural chiropractic support for acid reflux and GERD in Rochester Hills, MI. At Cultivate Wellness, we address the nervous system connection for lasting digestive comfort.',
   },
   intro: [
-    'Acid reflux and GERD (gastroesophageal reflux disease) are more than just heartburn -- they can significantly affect your quality of life, disrupt sleep, and lead to long-term complications if left unmanaged. At Cultivate Wellness, we support patients with reflux by addressing the nervous system function that controls digestion, rather than simply suppressing acid production.',
-    'Your digestive system is controlled by the vagus nerve and the autonomic nervous system, both of which are directly influenced by spinal alignment -- particularly in the upper cervical and mid-thoracic regions. When there is interference in these nerve pathways, it can affect esophageal function, stomach acid regulation, and the coordination of the digestive process. Our gentle, neurologically-focused approach addresses these underlying connections.',
+    'Acid reflux and GERD (gastroesophageal reflux disease) are more than just heartburn. They can significantly affect your quality of life, disrupt sleep, and lead to long-term complications if left unmanaged. At Cultivate Wellness, we support patients with reflux by addressing the nervous system function that controls digestion, rather than simply suppressing acid production.',
+    'Your digestive system is controlled by the vagus nerve and the autonomic nervous system, both of which are directly influenced by spinal alignment, particularly in the upper cervical and mid-thoracic regions. When there is interference in these nerve pathways, it can affect esophageal function, stomach acid regulation, and the coordination of the digestive process. Our gentle, neurologically-focused approach addresses these underlying connections.',
   ],
   highlightBox: {
     icon: 'heart-pulse',
@@ -92,12 +92,12 @@ export const acidRefluxGerd: ConditionPageData = {
       {
         title: 'Digestive & Neurological Assessment',
         description:
-          'We evaluate your spinal alignment with focus on the upper cervical and thoracic regions that affect digestive nerve supply. INSiGHT scanning technology helps us assess your autonomic nervous system balance and identify areas of dysfunction. We discuss your history, triggers, and current management strategies.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past physical or emotional stress that your body hasn\'t yet released. This reveals how your nervous system may be contributing to digestive dysfunction, not just where you feel discomfort.',
       },
       {
         title: 'Gentle, Targeted Adjustments',
         description:
-          'Using Talsky Tonal Chiropractic, we address subluxations affecting vagus nerve function and autonomic balance. Our approach is gentle and comfortable.',
+          'Using Talsky Tonal Chiropractic, we address areas of neurological tension affecting vagus nerve function and autonomic balance. Our approach is gentle and comfortable.',
       },
       {
         title: 'Holistic Digestive Support',
@@ -132,12 +132,12 @@ export const acidRefluxGerd: ConditionPageData = {
     {
       question: 'Can chiropractic help infant reflux?',
       answer:
-        'Yes. Many parents report significant improvement in their baby\'s reflux after gentle chiropractic care. Birth trauma and upper cervical misalignment can affect vagus nerve function in infants, contributing to reflux, spitting up, and feeding difficulties.',
+        'Yes. Many parents report significant improvement in their baby\'s reflux after gentle chiropractic care. Birth trauma and upper cervical neurological tension can affect vagus nerve function in infants, contributing to reflux, spitting up, and feeding difficulties.',
     },
     {
       question: 'How does the spine affect acid reflux?',
       answer:
-        'The vagus nerve, which controls stomach acid production and the esophageal sphincter, originates in the brainstem just above the upper cervical spine. The thoracic spine supplies nerves to the stomach and diaphragm. Misalignments in these areas can interfere with proper digestive function.',
+        'The vagus nerve, which controls stomach acid production and the esophageal sphincter, originates in the brainstem just above the upper cervical spine. The thoracic spine supplies nerves to the stomach and diaphragm. Neurological tension in these areas can interfere with proper digestive function.',
     },
     {
       question: 'How many visits before I see improvement?',

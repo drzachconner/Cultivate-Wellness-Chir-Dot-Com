@@ -12,8 +12,8 @@ export const vertigoDizziness: ConditionPageData = {
       'Effective chiropractic treatment for vertigo and dizziness in Rochester Hills, MI. At Cultivate Wellness, we address the cervical-vestibular connection for lasting relief.',
   },
   intro: [
-    'Vertigo and dizziness can be disabling -- making it impossible to work, drive, or even walk safely. If you\'ve been told there\'s nothing wrong or given medications that don\'t help, you haven\'t explored all your options. Many cases of vertigo and dizziness have a cervical (neck) component that responds remarkably well to chiropractic care.',
-    'Your brain uses three systems to maintain balance: visual (what your eyes see), vestibular (inner ear balance organs), and proprioceptive (position sensors, especially in your neck). The upper cervical spine contains more proprioceptors than anywhere else in the body. When there\'s a misalignment here, the brain receives conflicting signals about body position -- resulting in dizziness, vertigo, and imbalance.',
+    'Vertigo and dizziness can be disabling, making it impossible to work, drive, or even walk safely. If you\'ve been told there\'s nothing wrong or given medications that don\'t help, you haven\'t explored all your options. Many cases of vertigo and dizziness have a cervical (neck) component that responds remarkably well to chiropractic care.',
+    'Your brain uses three systems to maintain balance: visual (what your eyes see), vestibular (inner ear balance organs), and proprioceptive (position sensors, especially in your neck). The upper cervical spine contains more proprioceptors than anywhere else in the body. When there\'s neurological tension here, the brain receives conflicting signals about body position, resulting in dizziness, vertigo, and imbalance.',
   ],
   highlightBox: {
     icon: 'eye',
@@ -46,7 +46,7 @@ export const vertigoDizziness: ConditionPageData = {
       {
         icon: 'bone',
         title: 'Cervicogenic Vertigo',
-        description: 'Dizziness originating from neck misalignments disrupting proprioceptive signals.',
+        description: 'Dizziness originating from cervical neurological tension disrupting proprioceptive signals.',
       },
       {
         icon: 'zap',
@@ -62,7 +62,7 @@ export const vertigoDizziness: ConditionPageData = {
         icon: 'bone',
         title: 'Upper Cervical Correction',
         description:
-          'The upper cervical spine is rich in proprioceptors that communicate body position to the brain. Correcting misalignments here restores accurate proprioceptive signaling, which is essential for proper balance.',
+          'The upper cervical spine is rich in proprioceptors that communicate body position to the brain. Reducing neurological tension here restores accurate proprioceptive signaling, which is essential for proper balance.',
       },
       {
         icon: 'brain',
@@ -92,12 +92,12 @@ export const vertigoDizziness: ConditionPageData = {
       {
         title: 'Thorough Evaluation',
         description:
-          'We assess your cervical spine, neurological function, and balance through a comprehensive examination including INSiGHT scanning for objective nervous system measurement, detailed cervical spine evaluation, balance and proprioceptive testing, and assessment for BPPV and other vestibular conditions.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, chronic strain, or life stress that your body hasn\'t yet released. We also perform detailed balance and proprioceptive testing and assess for BPPV and other vestibular conditions.',
       },
       {
         title: 'Gentle Cervical Correction',
         description:
-          'Using our gentle, neurologically-focused approach, we address upper cervical misalignments that disrupt proprioceptive signals and contribute to balance problems. Our techniques are perfect for sensitive vertigo patients -- no forceful manipulation that could trigger symptoms.',
+          'Using our gentle, neurologically-focused approach, we address upper cervical neurological tension that disrupts proprioceptive signals and contribute to balance problems. Our techniques are perfect for sensitive vertigo patients, with no forceful manipulation that could trigger symptoms.',
       },
       {
         title: 'Progress Monitoring & Coordination',
@@ -123,7 +123,7 @@ export const vertigoDizziness: ConditionPageData = {
     {
       question: 'How can a chiropractor help with vertigo?',
       answer:
-        'The upper cervical spine contains more proprioceptors (position sensors) than anywhere else in your body. When there\'s a misalignment in this area, the brain receives conflicting signals about body position, causing dizziness and vertigo. By correcting cervical misalignments, we restore accurate proprioceptive signaling and help resolve the balance confusion.',
+        'The upper cervical spine contains more proprioceptors (position sensors) than anywhere else in your body. When there\'s neurological tension in this area, the brain receives conflicting signals about body position, causing dizziness and vertigo. By reducing cervical neurological tension, we restore accurate proprioceptive signaling and help resolve the balance confusion.',
     },
     {
       question: 'How do I know if my vertigo is cervicogenic (neck-related)?',
@@ -133,7 +133,7 @@ export const vertigoDizziness: ConditionPageData = {
     {
       question: 'Will the adjustment make me more dizzy?',
       answer:
-        'Our gentle techniques are specifically suited for vertigo patients. Most patients feel improvement quickly -- sometimes the same day. Some may experience a temporary, mild increase in symptoms as the body adjusts to the new alignment, but this typically resolves quickly.',
+        'Our gentle techniques are specifically suited for vertigo patients. Most patients feel improvement quickly, sometimes the same day. Some may experience a temporary, mild increase in symptoms as the body adjusts to the new alignment, but this typically resolves quickly.',
     },
     {
       question: 'Can you help with BPPV?',

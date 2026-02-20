@@ -12,13 +12,13 @@ export const tongueTieLipTie: ConditionPageData = {
       'Gentle chiropractic support for babies with tongue tie and lip tie in Rochester Hills, MI. At Cultivate Wellness, we help optimize oral function and nervous system coordination for better feeding.',
   },
   intro: [
-    'Tongue tie (ankyloglossia) and lip tie are conditions where the frenulum -- the small band of tissue connecting the tongue to the floor of the mouth or the lip to the gum -- is too tight or short, restricting movement. These tethered oral tissues can significantly affect breastfeeding, bottle feeding, and your baby\'s overall comfort. At Cultivate Wellness, we provide gentle chiropractic support that complements the care your baby receives from lactation consultants and pediatric dentists.',
-    'Many parents don\'t realize that tongue and lip ties often coexist with upper cervical misalignment and tension patterns throughout the baby\'s body. Birth trauma, in-utero positioning, and compensatory tension from restricted oral tissues can all contribute to spinal misalignment that further impairs feeding ability. Our gentle, neurologically-focused approach addresses these underlying factors to support better outcomes.',
+    'Tongue tie (ankyloglossia) and lip tie are conditions where the frenulum, the small band of tissue connecting the tongue to the floor of the mouth or the lip to the gum, is too tight or short, restricting movement. These tethered oral tissues can significantly affect breastfeeding, bottle feeding, and your baby\'s overall comfort. At Cultivate Wellness, we provide gentle chiropractic support that complements the care your baby receives from lactation consultants and pediatric dentists.',
+    'Many parents don\'t realize that tongue and lip ties often coexist with upper cervical tension and tension patterns throughout the baby\'s body. Birth trauma, in-utero positioning, and compensatory tension from restricted oral tissues can all contribute to nervous system stress that further impairs feeding ability. Our gentle, neurologically-focused approach addresses these underlying factors to support better outcomes.',
   ],
   highlightBox: {
     icon: 'heart',
     label: 'Collaborative Care Approach',
-    text: 'Chiropractic care does not release tongue or lip ties -- that requires a frenectomy by a qualified provider. However, chiropractic care before and after a release can significantly improve outcomes by addressing the tension patterns and compensations that develop alongside ties.',
+    text: 'Chiropractic care does not release tongue or lip ties. That requires a frenectomy by a qualified provider. However, chiropractic care before and after a release can significantly improve outcomes by addressing the tension patterns and compensations that develop alongside ties.',
   },
   symptoms: {
     sectionTitle: 'Signs of Tongue Tie & Lip Tie',
@@ -51,7 +51,7 @@ export const tongueTieLipTie: ConditionPageData = {
       {
         icon: 'hand',
         title: 'Maternal Nipple Pain',
-        description: 'Persistent nipple pain, damage, or blanching despite correct positioning -- a common sign of tongue tie.',
+        description: 'Persistent nipple pain, damage, or blanching despite correct positioning, a common sign of tongue tie.',
       },
     ],
   },
@@ -80,7 +80,7 @@ export const tongueTieLipTie: ConditionPageData = {
         icon: 'hand',
         title: 'Ultra-Gentle for Newborns',
         description:
-          'Our techniques use only fingertip pressure -- lighter than checking a ripe tomato. No cracking, no discomfort. Babies often nurse or sleep right through their adjustments.',
+          'Our techniques use only fingertip pressure, lighter than checking a ripe tomato. No cracking, no discomfort. Babies often nurse or sleep right through their adjustments.',
       },
     ],
   },
@@ -92,12 +92,12 @@ export const tongueTieLipTie: ConditionPageData = {
       {
         title: 'Comprehensive Evaluation',
         description:
-          'We assess your baby\'s spinal alignment, muscle tone, jaw tension, and overall body tension patterns, including INSiGHT scanning to objectively measure nervous system function. We evaluate how the upper cervical spine and cranial nerves may be contributing to feeding difficulty.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning (if age-appropriate) to objectively assess your baby\'s nervous system function and identify where stress is stuck on — tension from the birth process, compensatory patterns from the tie, or early life stress that the body hasn\'t yet learned it\'s safe to release. This reveals the full picture of what is affecting feeding, not just the tie itself.',
       },
       {
         title: 'Gentle Pre- & Post-Release Care',
         description:
-          'Using our gentle, neurologically-focused approach, we address misalignments and tension patterns that interfere with proper oral function. Care before a frenectomy prepares the body; care after supports integration of the new range of motion.',
+          'Using our gentle, neurologically-focused approach, we address areas of neurological tension and stored tension patterns that interfere with proper oral function. Care before a frenectomy prepares the body; care after supports integration of the new range of motion.',
       },
       {
         title: 'Team Coordination',
@@ -122,10 +122,10 @@ export const tongueTieLipTie: ConditionPageData = {
     {
       question: 'Can chiropractic care fix a tongue tie?',
       answer:
-        'No. A tongue tie or lip tie requires a frenectomy (release procedure) performed by a qualified pediatric dentist or ENT. What chiropractic care does is address the compensatory tension patterns and spinal misalignments that develop alongside ties, which significantly improves feeding function and supports better outcomes from the release.',
+        'No. A tongue tie or lip tie requires a frenectomy (release procedure) performed by a qualified pediatric dentist or ENT. What chiropractic care does is address the compensatory tension patterns and nervous system stress that develop alongside ties, which significantly improves feeding function and supports better outcomes from the release.',
     },
     {
-      question: 'When should my baby be seen -- before or after the release?',
+      question: 'When should my baby be seen, before or after the release?',
       answer:
         'Ideally both. Care before the frenectomy helps release compensatory tension patterns, often improving feeding even before the procedure. Care after the release helps the body adapt to the new range of motion and prevents old tension patterns from limiting improvement.',
     },

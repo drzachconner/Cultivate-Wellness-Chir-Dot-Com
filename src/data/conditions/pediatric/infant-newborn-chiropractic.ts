@@ -12,13 +12,13 @@ export const infantNewborn: ConditionPageData = {
       'Ultra-gentle chiropractic care for newborns and infants. At Cultivate Wellness, we help with colic, feeding issues, torticollis, and birth trauma in Rochester Hills, MI.',
   },
   intro: [
-    'The first months and years of life are the most critical for your baby\'s development. At Cultivate Wellness, we specialize in caring for the tiniest patients -- from hours-old newborns to curious toddlers taking their first steps. Our ultra-gentle techniques ensure your baby gets the best possible start.',
-    'Birth is often the most physically traumatic event of our lives. Even "normal" deliveries involve significant forces on a baby\'s delicate spine and nervous system. Up to 60-90 lbs of force can be applied to a baby\'s head and neck during natural delivery, while C-sections, vacuum or forceps deliveries, prolonged labor, and breech positions create their own unique stresses. Even in the gentlest circumstances, birth can create misalignments that affect your baby\'s nervous system function, feeding, sleep, and development.',
+    'The first months and years of life are the most critical for your baby\'s development. At Cultivate Wellness, we specialize in caring for the tiniest patients, from hours-old newborns to curious toddlers taking their first steps. Our ultra-gentle techniques ensure your baby gets the best possible start.',
+    'Birth is often the most physically traumatic event of our lives. Even "normal" deliveries involve significant forces on a baby\'s delicate spine and nervous system. Up to 60-90 lbs of force can be applied to a baby\'s head and neck during natural delivery, while C-sections, vacuum or forceps deliveries, prolonged labor, and breech positions create their own unique stresses. Even in the gentlest circumstances, birth can create tension patterns that affect your baby\'s nervous system function, feeding, sleep, and development.',
   ],
   highlightBox: {
     icon: 'baby',
     label: 'Early Care Matters',
-    text: 'Many of our youngest patients are seen within days -- sometimes hours -- of birth. Early care can address birth trauma and support optimal development from the very beginning.',
+    text: 'Many of our youngest patients are seen within days, sometimes hours, of birth. Early care can address birth trauma and support optimal development from the very beginning.',
   },
   symptoms: {
     sectionTitle: 'Signs Your Baby May Benefit from Care',
@@ -62,7 +62,7 @@ export const infantNewborn: ConditionPageData = {
         icon: 'hand',
         title: 'Ultra-Gentle Techniques',
         description:
-          'Pressure used is about the same as checking a ripe tomato or touching your closed eyelid. No cracking or popping -- ever. Babies often sleep through adjustments.',
+          'Pressure used is about the same as checking a ripe tomato or touching your closed eyelid. No cracking or popping, ever. Babies often sleep through adjustments.',
       },
       {
         icon: 'brain',
@@ -74,7 +74,7 @@ export const infantNewborn: ConditionPageData = {
         icon: 'heart',
         title: 'Comfortable for Baby',
         description:
-          'Adjustments can be done while nursing, sleeping, or in a parent\'s arms. We work with baby\'s natural movements -- no restraint is ever needed.',
+          'Adjustments can be done while nursing, sleeping, or in a parent\'s arms. We work with baby\'s natural movements, and no restraint is ever needed.',
       },
       {
         icon: 'shield',
@@ -92,7 +92,7 @@ export const infantNewborn: ConditionPageData = {
       {
         title: 'Detailed History & Examination',
         description:
-          'We ask about pregnancy, birth, feeding, sleep, and any concerns. This is followed by a gentle examination checking spine, reflexes, and nervous system function.',
+          'We take a thorough history of pregnancy and birth, then perform a gentle examination and INSiGHT neurological scanning (if baby cooperates) to identify where stress is stuck on in your baby\'s nervous system — tension from the birth process or early life that the body hasn\'t yet learned it\'s safe to release.',
       },
       {
         title: 'INSiGHT Scanning & Assessment',
@@ -102,7 +102,7 @@ export const infantNewborn: ConditionPageData = {
       {
         title: 'Gentle Adjustment & Care Plan',
         description:
-          'If indicated, a gentle adjustment usually begins at the first visit. Infant adjustments take just seconds -- most parents say "That was it?" because of how gentle they are. We then create a tailored care plan for your baby\'s needs.',
+          'If indicated, a gentle adjustment usually begins at the first visit. Infant adjustments take just seconds. Most parents say "That was it?" because of how gentle they are. We then create a tailored care plan for your baby\'s needs.',
       },
     ],
   },
@@ -123,12 +123,12 @@ export const infantNewborn: ConditionPageData = {
     {
       question: 'Is chiropractic safe for newborns?',
       answer:
-        'Absolutely. Our doctors use techniques specifically designed for infants. The pressure is about the same as checking a ripe tomato -- incredibly light. There is no cracking or popping. Babies routinely sleep through their adjustments. Research confirms the safety of pediatric chiropractic care.',
+        'Absolutely. Our doctors use techniques specifically designed for infants. The pressure is about the same as checking a ripe tomato, incredibly light. There is no cracking or popping. Babies routinely sleep through their adjustments. Research confirms the safety of pediatric chiropractic care.',
     },
     {
       question: 'When should I bring my newborn in?',
       answer:
-        'Ideally within the first few days or weeks of life. The sooner we can address any birth-related misalignments, the better. Key times include within 72 hours of birth, when symptoms or concerns arise, after falls or accidents, and before developmental leaps.',
+        'Ideally within the first few days or weeks of life. The sooner we can address any birth-related tension patterns, the better. Key times include within 72 hours of birth, when symptoms or concerns arise, after falls or accidents, and before developmental leaps.',
     },
     {
       question: 'What conditions can chiropractic help with in infants?',
@@ -143,7 +143,7 @@ export const infantNewborn: ConditionPageData = {
     {
       question: 'Any tips for the first visit?',
       answer:
-        'Bring a fed, rested baby when possible. Many parents schedule appointments right after nursing. And don\'t worry if baby fusses -- our team is experienced at working with wiggly, crying babies!',
+        'Bring a fed, rested baby when possible. Many parents schedule appointments right after nursing. And don\'t worry if baby fusses. Our team is experienced at working with wiggly, crying babies!',
     },
   ],
   relatedConditions: [

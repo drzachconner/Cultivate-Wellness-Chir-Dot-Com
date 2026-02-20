@@ -12,13 +12,13 @@ export const pinchedNerves: ConditionPageData = {
       'Gentle chiropractic care for pinched nerves in Rochester Hills, MI. At Cultivate Wellness, we address the root cause of nerve compression for lasting relief without drugs or surgery.',
   },
   intro: [
-    'A pinched nerve can cause sharp pain, numbness, tingling, or weakness that disrupts your daily life. Whether it\'s in your neck, back, or extremities, the underlying cause is often the same: a spinal misalignment or structural issue compressing or irritating a nerve. At Cultivate Wellness, we address the root cause of nerve compression using gentle, neurologically-focused techniques.',
-    'Pinched nerves (also called nerve compression or radiculopathy) occur when surrounding structures -- vertebrae, discs, muscles, or ligaments -- put excessive pressure on a nerve. This pressure disrupts the nerve\'s normal function, causing pain, numbness, tingling, or weakness in the areas that nerve supplies. Our gentle approach reduces this pressure without forceful manipulation, helping restore normal nerve function.',
+    'A pinched nerve can cause sharp pain, numbness, tingling, or weakness that disrupts your daily life. Whether it\'s in your neck, back, or extremities, the underlying cause is often the same: neurological tension or a structural issue compressing or irritating a nerve. At Cultivate Wellness, we address the root cause of nerve compression using gentle, neurologically-focused techniques.',
+    'Pinched nerves (also called nerve compression or radiculopathy) occur when surrounding structures, such as vertebrae, discs, muscles, or ligaments, put excessive pressure on a nerve. This pressure disrupts the nerve\'s normal function, causing pain, numbness, tingling, or weakness in the areas that nerve supplies. Our gentle approach reduces this pressure without forceful manipulation, helping restore normal nerve function.',
   ],
   highlightBox: {
     icon: 'zap',
     label: 'More Than Just Pain',
-    text: 'A pinched nerve doesn\'t just cause pain -- it disrupts the nerve signals that control muscles, organs, and tissues. Addressing nerve compression restores proper communication between your brain and body, supporting health beyond just pain relief.',
+    text: 'A pinched nerve doesn\'t just cause pain. It disrupts the nerve signals that control muscles, organs, and tissues. Addressing nerve compression restores proper communication between your brain and body, supporting health beyond just pain relief.',
   },
   symptoms: {
     sectionTitle: 'Common Pinched Nerve Symptoms',
@@ -62,7 +62,7 @@ export const pinchedNerves: ConditionPageData = {
         icon: 'target',
         title: 'Addresses the Compression Source',
         description:
-          'Rather than masking symptoms with medication, we identify and correct the spinal misalignment, disc issue, or structural problem that\'s compressing the nerve.',
+          'Rather than masking symptoms with medication, we identify and correct the nerve interference, disc issue, or structural problem that\'s compressing the nerve.',
       },
       {
         icon: 'hand',
@@ -92,12 +92,12 @@ export const pinchedNerves: ConditionPageData = {
       {
         title: 'Precise Diagnosis',
         description:
-          'We perform a thorough examination including neurological testing, range of motion assessment, and spinal evaluation, with INSiGHT scanning providing objective nervous system data to guide our approach.',
+          'We perform a thorough examination including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, repetitive strain, or life stress that your body hasn\'t yet released. This helps us pinpoint the true source of nerve compression, not just where you feel symptoms.',
       },
       {
         title: 'Gentle Decompression',
         description:
-          'Using our gentle, neurologically-focused approach, we address the spinal misalignments and structural issues that are compressing the nerve. Our techniques use precise, light contact that is comfortable even in acute pain.',
+          'Using our gentle, neurologically-focused approach, we address the areas of neurological tension and structural issues that are compressing the nerve. Our techniques use precise, light contact that is comfortable even in acute pain.',
       },
       {
         title: 'Nerve Function Restoration',
@@ -127,7 +127,7 @@ export const pinchedNerves: ConditionPageData = {
     {
       question: 'Is it safe to adjust a pinched nerve?',
       answer:
-        'Yes -- our gentle approach is specifically designed for sensitive situations. Unlike forceful manipulation that could aggravate nerve compression, our neurologically-focused techniques use light, precise contact to reduce pressure on the nerve without adding stress.',
+        'Yes. Our gentle approach is specifically designed for sensitive situations. Unlike forceful manipulation that could aggravate nerve compression, our neurologically-focused techniques use light, precise contact to reduce pressure on the nerve without adding stress.',
     },
     {
       question: 'How long does a pinched nerve take to heal?',
@@ -137,7 +137,7 @@ export const pinchedNerves: ConditionPageData = {
     {
       question: 'Can a pinched nerve heal on its own?',
       answer:
-        'Some mild cases may improve with rest and time. However, if the underlying cause (spinal misalignment, disc issue) isn\'t addressed, the nerve compression often returns or worsens. Addressing the root cause provides more lasting relief.',
+        'Some mild cases may improve with rest and time. However, if the underlying cause (neurological tension, disc issue) isn\'t addressed, the nerve compression often returns or worsens. Addressing the root cause provides more lasting relief.',
     },
     {
       question: 'When should I consider surgery for a pinched nerve?',

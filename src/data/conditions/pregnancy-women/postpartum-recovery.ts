@@ -13,12 +13,12 @@ export const postpartumRecovery: ConditionPageData = {
   },
   intro: [
     'The postpartum period is a time of tremendous change for your body. After nine months of pregnancy and the physical demands of birth, your body needs support to recover and adapt to the new demands of motherhood. Chiropractic care can help you heal faster, feel better, and care for your baby with more comfort and energy.',
-    'Whether you had a vaginal birth or C-section, your body has been through an extraordinary physical journey. Hormonal changes continue affecting ligaments for months postpartum, nursing and holding baby create new postural stresses, sleep deprivation affects muscle function and healing, and your core and pelvic floor need time to recover. You matter too -- taking care of yourself helps you take better care of your little one.',
+    'Whether you had a vaginal birth or C-section, your body has been through an extraordinary physical journey. Hormonal changes continue affecting ligaments for months postpartum, nursing and holding baby create new postural stresses, sleep deprivation affects muscle function and healing, and your core and pelvic floor need time to recover. You matter too. Taking care of yourself helps you take better care of your little one.',
   ],
   highlightBox: {
     icon: 'heart',
     label: 'You Matter Too',
-    text: 'It\'s easy to focus entirely on your baby, but your health and recovery are equally important. Taking care of yourself helps you take better care of your little one. You\'ve taken care of baby for 9 months -- now let us help take care of you.',
+    text: 'It\'s easy to focus entirely on your baby, but your health and recovery are equally important. Taking care of yourself helps you take better care of your little one. You\'ve taken care of baby for 9 months. Now let us help take care of you.',
   },
   symptoms: {
     sectionTitle: 'Postpartum Concerns We Help With',
@@ -36,12 +36,12 @@ export const postpartumRecovery: ConditionPageData = {
       {
         icon: 'bone',
         title: 'Pelvic Pain & Instability',
-        description: 'Your pelvis expanded during pregnancy and birth. It needs to realign properly to prevent ongoing pain and dysfunction.',
+        description: 'Your pelvis expanded during pregnancy and birth. It needs to stabilize properly to prevent ongoing pain and dysfunction.',
       },
       {
         icon: 'hand',
         title: 'Wrist Pain ("Mom Thumb")',
-        description: 'Repetitive lifting and holding baby often causes De Quervain\'s tenosynovitis -- wrist and thumb pain from new mom activities.',
+        description: 'Repetitive lifting and holding baby often causes De Quervain\'s tenosynovitis, wrist and thumb pain from new mom activities.',
       },
       {
         icon: 'heart-pulse',
@@ -62,11 +62,11 @@ export const postpartumRecovery: ConditionPageData = {
         icon: 'sparkles',
         title: 'Faster Birth Recovery',
         description:
-          'Whether vaginal or C-section, birth is physically demanding. Chiropractic care supports your body\'s natural healing process by restoring proper alignment and nerve function.',
+          'Whether vaginal or C-section, birth is physically demanding. Chiropractic care supports your body\'s natural healing process by releasing stored tension and restoring normal nervous system function.',
       },
       {
         icon: 'bone',
-        title: 'Pelvic Realignment',
+        title: 'Pelvic Restoration',
         description:
           'Relaxin hormone continues affecting ligaments for months postpartum. Proper pelvic alignment supports core recovery, pelvic floor rehabilitation, and prevention of chronic pain.',
       },
@@ -92,12 +92,12 @@ export const postpartumRecovery: ConditionPageData = {
       {
         title: 'Comprehensive Postpartum Assessment',
         description:
-          'We evaluate your spine, pelvis, and overall alignment with consideration for your birth experience. We discuss your specific concerns -- whether it\'s back pain, nursing discomfort, or recovery from a C-section.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension from pregnancy, the birth experience, or the physical demands of new motherhood that your body hasn\'t yet released. This helps us understand the full picture of your recovery needs, not just where you feel pain.',
       },
       {
         title: 'Gentle, Restorative Adjustments',
         description:
-          'Using our gentle, neurologically-focused approach, we address spinal and pelvic misalignments, relieve tension from nursing and baby-carrying, and support your body\'s natural recovery process.',
+          'Using our gentle, neurologically-focused approach, we address spinal and pelvic tension, relieve stress from nursing and baby-carrying, and support your body\'s natural recovery process.',
       },
       {
         title: 'Postural Guidance & Ongoing Support',
@@ -123,12 +123,12 @@ export const postpartumRecovery: ConditionPageData = {
     {
       question: 'When can I start postpartum chiropractic care?',
       answer:
-        'After a vaginal birth, you can often begin care within days of delivery. After a C-section, we usually wait 4-6 weeks for incision healing, then begin gently. However, it\'s never too late -- even years postpartum, we can address lingering issues from pregnancy and birth.',
+        'After a vaginal birth, you can often begin care within days of delivery. After a C-section, we usually wait 4-6 weeks for incision healing, then begin gently. However, it\'s never too late. Even years postpartum, we can address lingering issues from pregnancy and birth.',
     },
     {
       question: 'Can I bring my baby to appointments?',
       answer:
-        'Absolutely! We welcome babies at appointments. Many new moms bring their infants, and we can even check your baby while you\'re here. Addressing newborn subluxations from birth can help with feeding, sleeping, and development.',
+        'Absolutely! We welcome babies at appointments. Many new moms bring their infants, and we can even check your baby while you\'re here. Addressing nervous system tension from birth can help with feeding, sleeping, and development.',
     },
     {
       question: 'Is chiropractic safe while breastfeeding?',

@@ -12,7 +12,7 @@ export const postureTechNeck: ConditionPageData = {
       'Expert chiropractic posture correction and tech neck treatment in Rochester Hills, MI. At Cultivate Wellness, we reverse postural damage before it becomes permanent.',
   },
   intro: [
-    'If you spend hours hunched over a computer, looking down at your phone, or sitting at a desk, you\'re not alone -- and your spine is paying the price. "Tech neck," forward head posture, and rounded shoulders have become epidemic. At Cultivate Wellness, we help reverse these postural problems before they cause permanent damage.',
+    'If you spend hours hunched over a computer, looking down at your phone, or sitting at a desk, you\'re not alone, and your spine is paying the price. "Tech neck," forward head posture, and rounded shoulders have become epidemic. At Cultivate Wellness, we help reverse these postural problems before they cause permanent damage.',
     'For every inch your head moves forward, it effectively weighs an additional 10 pounds on your neck. A normal head weighs 10-12 pounds, but at a 60-degree angle (common when texting), it\'s like carrying 60 pounds on your neck. Over time, this creates structural changes, nerve damage, and chronic pain that gets progressively worse without intervention.',
   ],
   highlightBox: {
@@ -51,7 +51,7 @@ export const postureTechNeck: ConditionPageData = {
       {
         icon: 'moon',
         title: 'Fatigue',
-        description: 'Chronic tiredness from the increased energy required to hold a misaligned posture all day.',
+        description: 'Chronic tiredness from the increased energy required to hold a stressed posture all day.',
       },
       {
         icon: 'wind',
@@ -70,7 +70,7 @@ export const postureTechNeck: ConditionPageData = {
     items: [
       {
         icon: 'bone',
-        title: 'Spinal Realignment',
+        title: 'Spinal Restoration',
         description:
           'Gentle, precise adjustments restore proper cervical and thoracic alignment, reversing the structural changes caused by poor posture and bringing the head back over the shoulders where it belongs.',
       },
@@ -102,12 +102,12 @@ export const postureTechNeck: ConditionPageData = {
       {
         title: 'Detailed Postural Assessment',
         description:
-          'We start with a thorough evaluation of your spinal alignment, including INSiGHT scanning to objectively measure spinal stress, detailed posture analysis, range of motion testing, and identification of specific postural patterns like forward head posture, rounded shoulders, and kyphosis.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from years of postural strain, device use, or accumulated life stress that your body hasn\'t yet released. This reveals how deeply poor posture has affected your nervous system, not just your alignment.',
       },
       {
         title: 'Gentle Spinal Correction',
         description:
-          'Using our gentle, neurologically-focused approach, we restore proper alignment in the cervical, thoracic, and lumbar spine. Our techniques don\'t overstimulate the nervous system and can even adjust you in your problem posture to address the exact position that causes your symptoms.',
+          'Using our gentle, neurologically-focused approach, we release stored tension and restore normal nervous system function in the cervical, thoracic, and lumbar spine. Our techniques don\'t overstimulate the nervous system and can even adjust you in your problem posture to address the exact position that causes your symptoms.',
       },
       {
         title: 'Exercise, Ergonomics & Maintenance',

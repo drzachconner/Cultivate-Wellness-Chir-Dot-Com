@@ -171,12 +171,11 @@ export default function Home() {
           alt="Cultivate Wellness Chiropractic"
           className="w-full h-auto"
         />
+        {/* Conditions dropdown overlay */}
+        <div className="absolute top-4 left-4 z-10">
+          <ConditionsDropdown />
+        </div>
       </section>
-
-      {/* Floating conditions dropdown */}
-      <div className="fixed top-4 left-4 z-50">
-        <ConditionsDropdown />
-      </div>
 
       {/* Intro Quote */}
       <section className="relative pt-24 pb-8 bg-white">
@@ -188,9 +187,15 @@ export default function Home() {
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-heading font-semibold text-primary-dark mb-3">
               Helping Families Thrive Through Nervous System-Focused Chiropractic Care
             </h2>
-            <p className="text-base sm:text-lg text-gray-600 mb-0 italic">
+            <p className="text-base sm:text-lg text-gray-600 mb-8 italic">
               We are rooted in the understanding that your body has an innate ability to heal itself.
             </p>
+            <Link
+              to="/new-patient-center"
+              className="inline-block bg-primary-dark text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-accent transition-colors duration-200 text-lg"
+            >
+              Request An Appointment
+            </Link>
           </div>
         </AnimateOnScroll>
       </section>
@@ -218,9 +223,11 @@ export default function Home() {
               At Cultivate Wellness, our office is intentionally designed to care
               for families and children at every stage. From well baby checks and
               family wellness care, to the toughest of cases — autism, epilepsy,
-              and special needs — we are ready to care for you. Our unique light
-              force, tonal chiropractic care and patient-centered approach is what
-              truly sets us apart.
+              and special needs — we are ready to care for you.
+            </p>
+            <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed mt-4">
+              Our unique light force, tonal chiropractic care and patient-centered
+              approach is what truly sets us apart.
             </p>
           </div>
         </AnimateOnScroll>

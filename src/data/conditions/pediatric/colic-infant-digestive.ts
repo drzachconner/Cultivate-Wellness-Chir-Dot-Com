@@ -3,7 +3,7 @@ import type { ConditionPageData } from '../types';
 export const colicInfantDigestive: ConditionPageData = {
   slug: 'colic-infant-digestive',
   title: 'Colic & Infant Digestive Issues',
-  subtitle: 'Relief for Baby -- and Peace of Mind for Parents',
+  subtitle: 'Relief for Baby, and Peace of Mind for Parents',
   category: 'pediatric',
   heroImage: '/images/hero/baby-1.webp',
   seo: {
@@ -13,12 +13,12 @@ export const colicInfantDigestive: ConditionPageData = {
   },
   intro: [
     'Few things are more distressing for parents than a baby who won\'t stop crying. Colic affects up to 25% of infants, leaving families exhausted and desperate for answers. At Cultivate Wellness, we offer gentle, effective care that addresses the underlying nervous system factors contributing to colic and infant digestive distress.',
-    'While the exact cause of colic isn\'t fully understood, several factors may contribute -- including an immature digestive system, nervous system overwhelm, trapped gas, food sensitivities, birth trauma, and spinal misalignment affecting nerve function to digestive organs. Our gentle, neurologically-focused approach addresses the root cause rather than masking symptoms.',
+    'While the exact cause of colic isn\'t fully understood, several factors may contribute, including an immature digestive system, nervous system overwhelm, trapped gas, food sensitivities, birth trauma, and nervous system tension affecting nerve function to digestive organs. Our gentle, neurologically-focused approach addresses the root cause rather than masking symptoms.',
   ],
   highlightBox: {
     icon: 'heart',
     label: 'The Rule of Threes',
-    text: 'Colic is typically defined as crying for more than 3 hours per day, more than 3 days per week, for more than 3 weeks -- in an otherwise healthy baby. If this sounds like your little one, gentle chiropractic care may be the answer.',
+    text: 'Colic is typically defined as crying for more than 3 hours per day, more than 3 days per week, for more than 3 weeks, in an otherwise healthy baby. If this sounds like your little one, gentle chiropractic care may be the answer.',
   },
   symptoms: {
     sectionTitle: 'Signs of Colic & Digestive Distress',
@@ -62,7 +62,7 @@ export const colicInfantDigestive: ConditionPageData = {
         icon: 'brain',
         title: 'Vagus Nerve Function',
         description:
-          'This critical nerve runs from the brain stem through the neck and controls most digestive function. Upper cervical misalignment can affect vagus nerve function and contribute to digestive issues.',
+          'This critical nerve runs from the brain stem through the neck and controls most digestive function. Upper cervical neurological tension can affect vagus nerve function and contribute to digestive issues.',
       },
       {
         icon: 'heart-pulse',
@@ -92,7 +92,7 @@ export const colicInfantDigestive: ConditionPageData = {
       {
         title: 'Detailed History & Examination',
         description:
-          'We learn your baby\'s birth story, feeding patterns, symptom timeline, and what you\'ve already tried. A gentle examination checks the spine and nervous system for areas of interference.',
+          'We take a thorough history of your baby\'s birth story and symptoms, followed by a gentle examination and INSiGHT neurological scanning (if age-appropriate) to identify where stress is stuck on in your baby\'s nervous system — tension from birth or early life that the body hasn\'t yet learned it\'s safe to release.',
       },
       {
         title: 'Gentle, Targeted Adjustments',
@@ -109,7 +109,7 @@ export const colicInfantDigestive: ConditionPageData = {
   outcomes: {
     sectionTitle: 'What Parents Often Report',
     items: [
-      'Reduced crying episodes -- often dramatically',
+      'Reduced crying episodes, often dramatically',
       'Easier feeding and better latch',
       'Less gas and bloating',
       'Reduced spitting up and reflux',

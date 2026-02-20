@@ -12,7 +12,7 @@ export const scoliosis: ConditionPageData = {
       'Gentle chiropractic scoliosis care for children and adults in Rochester Hills, MI. At Cultivate Wellness, we help reduce pain, improve function, and monitor curve progression.',
   },
   intro: [
-    'Scoliosis -- an abnormal lateral curvature of the spine, often with rotation -- affects millions of people. Whether you are a parent who just learned your child has scoliosis, a teen dealing with the condition, or an adult managing long-term scoliosis, chiropractic care can help improve function, reduce pain, and in some cases help slow curve progression.',
+    'Scoliosis, an abnormal lateral curvature of the spine often with rotation, affects millions of people. Whether you are a parent who just learned your child has scoliosis, a teen dealing with the condition, or an adult managing long-term scoliosis, chiropractic care can help improve function, reduce pain, and in some cases help slow curve progression.',
     'Scoliosis is most effectively managed when caught early, especially in growing children. At Cultivate Wellness, our gentle, neurologically-focused approach provides safe, comfortable care for scoliosis patients of all ages, from adolescents experiencing growth spurts to adults managing degenerative changes.',
   ],
   highlightBox: {
@@ -92,7 +92,7 @@ export const scoliosis: ConditionPageData = {
       {
         title: 'Thorough Evaluation & Curve Assessment',
         description:
-          'We begin by understanding your specific curve pattern, including type, severity, and any associated symptoms. For children, we evaluate growth stage and risk of progression. INSiGHT scanning provides objective nervous system data, and we coordinate with pediatricians and orthopedic specialists.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess nervous system function and identify where stress is stuck on — tension patterns from the curvature itself, compensatory strain, or accumulated life stress that the body hasn\'t yet released. We also assess curve type, severity, and for children, growth stage and progression risk, coordinating with pediatricians and orthopedic specialists.',
       },
       {
         title: 'Gentle, Full-Spine Adjustments',

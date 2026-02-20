@@ -10,6 +10,10 @@ import ErrorBoundary from './components/ErrorBoundary';
 import JsonLd from './components/JsonLd';
 import { organizationSchema, personSchema, localBusinessSchema } from './lib/schema';
 import { trackAITraffic } from './lib/analytics';
+import { AdminProvider, useAdmin } from './contexts/AdminContext';
+
+const AdminOverlay = lazy(() => import('./components/AdminOverlay'));
+const AdminActivator = lazy(() => import('./components/AdminActivator'));
 
 // Lazy-loaded pages for code splitting
 const Home = lazy(() => import('./pages/Home'));
@@ -84,55 +88,73 @@ function GlobalSchema() {
   );
 }
 
+function Layout() {
+  const { panels, hasAnyPanel } = useAdmin();
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main id="main" className="flex-grow" tabIndex={-1} style={{ outline: 'none' }}>
+        <Suspense fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/meet-dr-zach" element={<MeetDrZach />} />
+            <Route path="/pediatric" element={<Pediatric />} />
+            <Route path="/prenatal" element={<Prenatal />} />
+            <Route path="/family" element={<Family />} />
+            <Route path="/new-patient-center" element={<NewPatientCenter />} />
+            <Route path="/new-patient-forms" element={<NewPatientForms />} />
+            <Route path="/request-an-appointment" element={<ScheduleAppointment />} />
+            <Route path="/schedule-appointment" element={<ScheduleAppointment />} />
+            <Route path="/book-appointment" element={<ScheduleAppointment />} />
+            <Route path="/events-workshops" element={<EventsWorkshops />} />
+            <Route path="/contact-us" element={<Contact />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/thanks" element={<Thanks />} />
+            <Route path="/3-ways-to-poop" element={<ThreeWaysToPoop />} />
+            <Route path="/rhkn-guide" element={<RHKNGuide />} />
+            <Route path="/3-ways-to-sleep" element={<ThreeWaysToSleep />} />
+            <Route path="/free-guides-for-parents" element={<FreeGuidesForParents />} />
+            <Route path="/talsky-tonal-chiropractic" element={<TalskyTonal />} />
+            <Route path="/insight-scans" element={<InsightScans />} />
+            <Route path="/answers" element={<AnswerHub />} />
+            <Route path="/thank-you-for-your-submission" element={<ThankYouSubmission />} />
+            <Route path="/conditions" element={<ConditionIndex />} />
+            <Route path="/conditions/:slug" element={<ConditionPageWrapper />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </main>
+      <Footer />
+      <MobileCTA />
+      <FloatingReviewWidget />
+      <MergerNotification />
+      {!hasAnyPanel && <ChatbotWidget />}
+      {panels.map((panel, index) => (
+        <Suspense key={panel.id} fallback={null}>
+          <AdminOverlay panelId={panel.id} panelIndex={index} />
+        </Suspense>
+      ))}
+    </div>
+  );
+}
+
 function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <GlobalSchema />
-      <AITrafficTracker />
-      <ErrorBoundary>
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main id="main" className="flex-grow" tabIndex={-1} style={{ outline: 'none' }}>
-            <Suspense fallback={<PageLoader />}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about-us" element={<AboutUs />} />
-                <Route path="/meet-dr-zach" element={<MeetDrZach />} />
-                <Route path="/pediatric" element={<Pediatric />} />
-                <Route path="/prenatal" element={<Prenatal />} />
-                <Route path="/family" element={<Family />} />
-                <Route path="/new-patient-center" element={<NewPatientCenter />} />
-                <Route path="/new-patient-forms" element={<NewPatientForms />} />
-                <Route path="/request-an-appointment" element={<ScheduleAppointment />} />
-                <Route path="/schedule-appointment" element={<ScheduleAppointment />} />
-                <Route path="/book-appointment" element={<ScheduleAppointment />} />
-                <Route path="/events-workshops" element={<EventsWorkshops />} />
-                <Route path="/contact-us" element={<Contact />} />
-                <Route path="/privacy" element={<Privacy />} />
-                <Route path="/thanks" element={<Thanks />} />
-                <Route path="/3-ways-to-poop" element={<ThreeWaysToPoop />} />
-                <Route path="/rhkn-guide" element={<RHKNGuide />} />
-                <Route path="/3-ways-to-sleep" element={<ThreeWaysToSleep />} />
-                <Route path="/free-guides-for-parents" element={<FreeGuidesForParents />} />
-                <Route path="/talsky-tonal-chiropractic" element={<TalskyTonal />} />
-                <Route path="/insight-scans" element={<InsightScans />} />
-                <Route path="/answers" element={<AnswerHub />} />
-                <Route path="/thank-you-for-your-submission" element={<ThankYouSubmission />} />
-                <Route path="/conditions" element={<ConditionIndex />} />
-                <Route path="/conditions/:slug" element={<ConditionPageWrapper />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Suspense>
-          </main>
-          <Footer />
-          <MobileCTA />
-          <FloatingReviewWidget />
-          <MergerNotification />
-          <ChatbotWidget />
-        </div>
-      </ErrorBoundary>
-    </BrowserRouter>
+    <ErrorBoundary>
+      <BrowserRouter>
+        <AdminProvider>
+          <ScrollToTop />
+          <GlobalSchema />
+          <AITrafficTracker />
+          <Suspense fallback={null}>
+            <AdminActivator />
+          </Suspense>
+          <Layout />
+        </AdminProvider>
+      </BrowserRouter>
+    </ErrorBoundary>
   );
 }
 

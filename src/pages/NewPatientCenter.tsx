@@ -3,6 +3,7 @@ import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { MapPin, Phone, Globe } from 'lucide-react';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
+import ContactForm from '../components/ContactForm';
 
 export default function NewPatientCenter() {
   return (
@@ -20,7 +21,7 @@ export default function NewPatientCenter() {
       <section className="relative py-32 bg-gray-900 min-h-[400px] flex items-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/schedule-hero.webp"
+            src="/images/hero/family-park-sunset.webp"
             loading="eager"
             alt="New Patient Center"
             className="w-full h-full object-cover"
@@ -119,6 +120,18 @@ export default function NewPatientCenter() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-4">
+            Send Us a Message
+          </h2>
+          <p className="text-lg text-gray-600 text-center mb-8">
+            Have questions or want to request an appointment? Fill out the form below and we'll get back to you.
+          </p>
+          <ContactForm />
         </div>
       </section>
     </>

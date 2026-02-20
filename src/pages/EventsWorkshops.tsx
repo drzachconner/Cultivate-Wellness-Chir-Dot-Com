@@ -48,8 +48,13 @@ export default function EventsWorkshops() {
         { name: 'Home', url: `https://${SITE.domain}/` },
         { name: 'Workshops For Parents', url: `https://${SITE.domain}/events-workshops` },
       ])} />
-      <section className="py-16 bg-gradient-to-br from-primary to-primary-dark text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-16 text-white overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/images/hero-family.webp)' }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/85 to-primary/80" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl sm:text-5xl font-heading font-bold text-center mb-6">
             Workshops For Parents
           </h1>

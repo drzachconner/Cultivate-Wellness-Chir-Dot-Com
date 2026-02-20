@@ -12,13 +12,13 @@ export const plagiocephaly: ConditionPageData = {
       'Gentle chiropractic care for plagiocephaly (flat head syndrome) in Rochester Hills, MI. At Cultivate Wellness, we address the underlying causes to support healthy head shape development.',
   },
   intro: [
-    'If you\'ve noticed a flat spot on your baby\'s head, you\'re not alone -- plagiocephaly (flat head syndrome) affects nearly half of all infants to some degree. At Cultivate Wellness, we help address the underlying factors that contribute to uneven head shape, using extraordinarily gentle techniques designed specifically for newborns and infants.',
-    'Plagiocephaly often develops because a baby consistently lies with their head turned to one side, frequently due to torticollis (tight neck muscles) or upper cervical misalignment. Rather than simply waiting it out or relying solely on repositioning, our neurologically-focused approach addresses the root cause -- helping your baby move their head freely so the skull can develop symmetrically.',
+    'If you\'ve noticed a flat spot on your baby\'s head, you\'re not alone. Plagiocephaly (flat head syndrome) affects nearly half of all infants to some degree. At Cultivate Wellness, we help address the underlying factors that contribute to uneven head shape, using extraordinarily gentle techniques designed specifically for newborns and infants.',
+    'Plagiocephaly often develops because a baby consistently lies with their head turned to one side, frequently due to torticollis (tight neck muscles) or upper cervical tension. Rather than simply waiting it out or relying solely on repositioning, our neurologically-focused approach addresses the root cause, helping your baby move their head freely so the skull can develop symmetrically.',
   ],
   highlightBox: {
     icon: 'alert-circle',
     label: 'Early Intervention Is Key',
-    text: 'A baby\'s skull is most malleable during the first 4-6 months of life. The earlier plagiocephaly is addressed, the faster it typically improves. If you notice a flat spot developing, don\'t wait -- early chiropractic evaluation can make a significant difference.',
+    text: 'A baby\'s skull is most malleable during the first 4-6 months of life. The earlier plagiocephaly is addressed, the faster it typically improves. If you notice a flat spot developing, don\'t wait. Early chiropractic evaluation can make a significant difference.',
   },
   symptoms: {
     sectionTitle: 'Signs of Plagiocephaly',
@@ -62,13 +62,13 @@ export const plagiocephaly: ConditionPageData = {
         icon: 'target',
         title: 'Addresses the Root Cause',
         description:
-          'Repositioning and tummy time address the symptom, but if your baby can\'t turn their head freely due to a spinal misalignment, they\'ll keep favoring one side. Chiropractic care addresses the underlying restriction.',
+          'Repositioning and tummy time address the symptom, but if your baby can\'t turn their head freely due to neurological tension, they\'ll keep favoring one side. Chiropractic care addresses the underlying restriction.',
       },
       {
         icon: 'hand',
         title: 'Ultra-Gentle Techniques',
         description:
-          'We use fingertip pressure lighter than you\'d use to check a ripe tomato. No cracking, no popping -- many babies sleep through their adjustments.',
+          'We use fingertip pressure lighter than you\'d use to check a ripe tomato. No cracking, no popping. Many babies sleep through their adjustments.',
       },
       {
         icon: 'zap',
@@ -80,7 +80,7 @@ export const plagiocephaly: ConditionPageData = {
         icon: 'brain',
         title: 'Supports Neurological Development',
         description:
-          'Proper upper cervical alignment supports overall neurological development, feeding ability, and milestone achievement -- benefits that extend well beyond head shape.',
+          'Proper upper cervical alignment supports overall neurological development, feeding ability, and milestone achievement, with benefits that extend well beyond head shape.',
       },
     ],
   },
@@ -92,12 +92,12 @@ export const plagiocephaly: ConditionPageData = {
       {
         title: 'Thorough Evaluation',
         description:
-          'We assess your baby\'s head shape, neck mobility, spinal alignment, and muscle tone, including INSiGHT scanning to objectively measure nervous system function. We also evaluate for torticollis and other contributing factors like birth trauma or in-utero positioning.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning (if age-appropriate) to objectively assess your baby\'s nervous system function and identify where stress is stuck on — tension from the birth process, in-utero positioning, or early life that the body hasn\'t yet learned it\'s safe to release. This reveals the underlying factors driving the head preference, not just the flat spot itself.',
       },
       {
         title: 'Gentle Cervical Adjustments',
         description:
-          'Using our gentle, neurologically-focused approach, we address upper cervical misalignments that restrict head rotation. When your baby can turn freely in both directions, the skull can begin to reshape naturally.',
+          'Using our gentle, neurologically-focused approach, we address upper cervical neurological tension that restricts head rotation. When your baby can turn freely in both directions, the skull can begin to reshape naturally.',
       },
       {
         title: 'Home Care Guidance',
@@ -122,7 +122,7 @@ export const plagiocephaly: ConditionPageData = {
     {
       question: 'How early can my baby be checked for plagiocephaly?',
       answer:
-        'Babies can be evaluated within the first few weeks of life. In fact, the earlier we identify and address contributing factors like cervical misalignment, the faster the head shape typically improves. Our doctors regularly see newborns just days old.',
+        'Babies can be evaluated within the first few weeks of life. In fact, the earlier we identify and address contributing factors like cervical neurological tension, the faster the head shape typically improves. Our doctors regularly see newborns just days old.',
     },
     {
       question: 'Is chiropractic safe for a baby with a flat head?',
@@ -132,7 +132,7 @@ export const plagiocephaly: ConditionPageData = {
     {
       question: 'Will my baby need a helmet?',
       answer:
-        'Many babies improve with chiropractic care, repositioning, and tummy time alone -- especially when addressed early. In moderate to severe cases, helmet therapy may be recommended in addition to chiropractic care. Our team will give you an honest assessment and work alongside your pediatrician or craniofacial specialist.',
+        'Many babies improve with chiropractic care, repositioning, and tummy time alone, especially when addressed early. In moderate to severe cases, helmet therapy may be recommended in addition to chiropractic care. Our team will give you an honest assessment and work alongside your pediatrician or craniofacial specialist.',
     },
     {
       question: 'What causes plagiocephaly?',

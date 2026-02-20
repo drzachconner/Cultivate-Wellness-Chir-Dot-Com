@@ -12,7 +12,7 @@ export const spinalStenosis: ConditionPageData = {
       'Gentle chiropractic care for spinal stenosis in Rochester Hills, MI. At Cultivate Wellness, we help manage symptoms and improve mobility without surgery.',
   },
   intro: [
-    'Spinal stenosis -- the narrowing of the spinal canal that puts pressure on the spinal cord and nerves -- can cause pain, numbness, and difficulty walking that significantly impacts your quality of life. At Cultivate Wellness, we help patients with spinal stenosis manage their symptoms and improve function using gentle, conservative care.',
+    'Spinal stenosis, the narrowing of the spinal canal that puts pressure on the spinal cord and nerves, can cause pain, numbness, and difficulty walking that significantly impacts your quality of life. At Cultivate Wellness, we help patients with spinal stenosis manage their symptoms and improve function using gentle, conservative care.',
     'While chiropractic care cannot reverse the structural narrowing of the spinal canal, it can significantly reduce symptoms by optimizing spinal alignment, reducing inflammation, and improving the way your spine moves. Our gentle, neurologically-focused approach is especially well-suited for stenosis patients because it avoids forceful manipulation that could aggravate the condition.',
   ],
   highlightBox: {
@@ -92,7 +92,7 @@ export const spinalStenosis: ConditionPageData = {
       {
         title: 'Thorough Assessment',
         description:
-          'We evaluate your spinal alignment, range of motion, neurological function, and walking ability, with INSiGHT scanning providing objective nervous system data to guide our approach. We review any existing imaging and may coordinate with your medical team for additional studies if needed.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from years of spinal changes, compensations, or accumulated life stress that your body hasn\'t yet released. We also review any existing imaging and coordinate with your medical team as needed.',
       },
       {
         title: 'Gentle Spinal Optimization',
@@ -128,7 +128,7 @@ export const spinalStenosis: ConditionPageData = {
     {
       question: 'Is it safe to adjust someone with spinal stenosis?',
       answer:
-        'Yes -- with the right approach. Forceful manipulation is not appropriate for stenosis. Our gentle, neurologically-focused techniques use light, precise contact specifically suited for this condition. We evaluate each patient thoroughly and adapt care to their specific situation.',
+        'Yes, with the right approach. Forceful manipulation is not appropriate for stenosis. Our gentle, neurologically-focused techniques use light, precise contact specifically suited for this condition. We evaluate each patient thoroughly and adapt care to their specific situation.',
     },
     {
       question: 'Will I need surgery for spinal stenosis?',

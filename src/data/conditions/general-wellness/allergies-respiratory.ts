@@ -102,17 +102,17 @@ export const allergiesRespiratory: ConditionPageData = {
       {
         title: 'Full Assessment',
         description:
-          'We evaluate your entire spine with attention to areas affecting immune and respiratory function. INSiGHT scanning technology reveals autonomic nervous system balance and identifies areas of interference.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from illness, environmental exposures, or life stress that your body hasn\'t yet released. This reveals how your nervous system may be contributing to an overactive immune response.',
       },
       {
         title: 'Gentle, Precise Adjustments',
         description:
-          'Using our gentle, neurologically-focused approach, we address subluxations gently and precisely, supporting better nervous system and immune function without cracking or forceful manipulation.',
+          'Using our gentle, neurologically-focused approach, we release stored tension patterns gently and precisely, supporting better nervous system and immune function without cracking or forceful manipulation.',
       },
       {
         title: 'Holistic Immune Support',
         description:
-          'By removing nerve interference, we help your immune system function more appropriately -- neither over-reacting nor under-reacting. We also consider your whole health picture and may discuss lifestyle factors that support immune and respiratory wellness.',
+          'By removing nerve interference, we help your immune system function more appropriately, neither over-reacting nor under-reacting. We also consider your whole health picture and may discuss lifestyle factors that support immune and respiratory wellness.',
       },
     ],
   },
@@ -138,7 +138,7 @@ export const allergiesRespiratory: ConditionPageData = {
     {
       question: 'How does the spine affect allergies and breathing?',
       answer:
-        'Your nervous system controls immune function, and the nerves that regulate your immune organs and respiratory system exit from specific areas of your spine. Subluxations in the upper cervical, mid-cervical, and thoracic spine can interfere with these signals, potentially contributing to allergic reactions and breathing difficulties.',
+        'Your nervous system controls immune function, and the nerves that regulate your immune organs and respiratory system exit from specific areas of your spine. Neurological tension in the upper cervical, mid-cervical, and thoracic spine can interfere with these signals, potentially contributing to allergic reactions and breathing difficulties.',
     },
     {
       question: 'Can children benefit from chiropractic care for allergies?',

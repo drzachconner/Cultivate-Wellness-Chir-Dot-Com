@@ -12,21 +12,21 @@ export const bedwettingEnuresis: ConditionPageData = {
       'Drug-free chiropractic care for childhood bedwetting (nocturnal enuresis). At Cultivate Wellness, we address the nervous system factors controlling bladder function.',
   },
   intro: [
-    'Bedwetting (nocturnal enuresis) is stressful for children and parents alike. If your child is still wetting the bed past age 5-6, you\'re not alone -- and there may be a solution you haven\'t considered. Chiropractic care has helped many children overcome bedwetting by addressing the underlying nervous system issues that control bladder function.',
-    'Approximately 15% of 5-year-olds still wet the bed, affecting over 5 million children in the United States. Bedwetting is almost never behavioral or psychological -- it\'s typically a developmental or neurological issue. Your child isn\'t lazy or doing this on purpose. Chiropractic care addresses the physical component that may be preventing their body from controlling this natural function.',
+    'Bedwetting (nocturnal enuresis) is stressful for children and parents alike. If your child is still wetting the bed past age 5-6, you\'re not alone, and there may be a solution you haven\'t considered. Chiropractic care has helped many children overcome bedwetting by addressing the underlying nervous system issues that control bladder function.',
+    'Approximately 15% of 5-year-olds still wet the bed, affecting over 5 million children in the United States. Bedwetting is almost never behavioral or psychological. It\'s typically a developmental or neurological issue. Your child isn\'t lazy or doing this on purpose. Chiropractic care addresses the physical component that may be preventing their body from controlling this natural function.',
   ],
   highlightBox: {
     icon: 'brain',
     label: 'The Spine-Bladder Connection',
-    text: 'Bladder control requires proper communication between the brain and bladder through the nervous system. The nerves that control bladder function exit the spine in the lower back and sacral (tailbone) region. When misalignment interferes with these nerve signals, it can affect the ability to sense a full bladder, hold urine, and wake when needed.',
+    text: 'Bladder control requires proper communication between the brain and bladder through the nervous system. The nerves that control bladder function exit the spine in the lower back and sacral (tailbone) region. When neurological tension interferes with these nerve signals, it can affect the ability to sense a full bladder, hold urine, and wake when needed.',
   },
   symptoms: {
-    sectionTitle: 'What Causes Spinal Misalignments?',
+    sectionTitle: 'What Causes Nervous System Tension?',
     items: [
       {
         icon: 'baby',
         title: 'Birth Trauma',
-        description: 'Even normal births can stress the spine, creating misalignments that persist into childhood.',
+        description: 'Even normal births can stress the spine, creating tension patterns that persist into childhood.',
       },
       {
         icon: 'activity',
@@ -36,7 +36,7 @@ export const bedwettingEnuresis: ConditionPageData = {
       {
         icon: 'dumbbell',
         title: 'Sports & Active Play',
-        description: 'Active kids take their lumps -- sports and rough play can create or worsen misalignments.',
+        description: 'Active kids take their lumps. Sports and rough play can create or worsen nervous system tension.',
       },
       {
         icon: 'target',
@@ -69,7 +69,7 @@ export const bedwettingEnuresis: ConditionPageData = {
         icon: 'hand',
         title: 'Gentle & Safe',
         description:
-          'Our techniques are incredibly gentle -- children often enjoy their adjustments. There is no cracking or forceful manipulation.',
+          'Our techniques are incredibly gentle, and children often enjoy their adjustments. There is no cracking or forceful manipulation.',
       },
       {
         icon: 'check-circle',
@@ -87,17 +87,17 @@ export const bedwettingEnuresis: ConditionPageData = {
       {
         title: 'Spinal & Neurological Evaluation',
         description:
-          'We examine your child\'s spine with particular focus on the lower back and sacrum. INSiGHT scanning provides an objective assessment of nervous system function to identify areas of interference.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your child\'s nervous system function and identify where stress is stuck on — tension patterns from birth, childhood falls, or developmental stress that the body hasn\'t yet learned it\'s safe to release. This reveals how the nervous system may be affecting bladder control, not just where the problem seems to be.',
       },
       {
         title: 'Gentle, Precise Adjustments',
         description:
-          'Using our gentle, neurologically-focused approach, we deliver light-touch corrections to the lower back and sacral area -- no scary cracking sounds. Adjustments are adapted specifically for your child\'s size and comfort.',
+          'Using our gentle, neurologically-focused approach, we deliver light-touch corrections to the lower back and sacral area with no scary cracking sounds. Adjustments are adapted specifically for your child\'s size and comfort.',
       },
       {
         title: 'Progress Monitoring & Support',
         description:
-          'Results vary -- some respond quickly, others take longer. Many children see improvement within a few weeks to a few months. We track progress and adjust the care plan based on your child\'s response.',
+          'Results vary. Some respond quickly, others take longer. Many children see improvement within a few weeks to a few months. We track progress and adjust the care plan based on your child\'s response.',
       },
     ],
   },
@@ -117,12 +117,12 @@ export const bedwettingEnuresis: ConditionPageData = {
     {
       question: 'How does chiropractic help with bedwetting?',
       answer:
-        'The nerves controlling bladder function exit the spine in the lower back and sacral region. When there is a misalignment in this area, it can interfere with the nerve signals that tell the brain the bladder is full, tell the bladder muscles to hold urine, and wake the child when needed. Gentle adjustments restore proper nerve communication.',
+        'The nerves controlling bladder function exit the spine in the lower back and sacral region. When there is neurological tension in this area, it can interfere with the nerve signals that tell the brain the bladder is full, tell the bladder muscles to hold urine, and wake the child when needed. Gentle adjustments restore proper nerve communication.',
     },
     {
       question: 'Is this my child\'s fault?',
       answer:
-        'Absolutely not. Bedwetting is almost never behavioral or psychological. It is typically a developmental or neurological issue. Your child is not lazy or doing this on purpose. Being patient and supportive -- and never punishing for accidents -- is important for their self-esteem.',
+        'Absolutely not. Bedwetting is almost never behavioral or psychological. It is typically a developmental or neurological issue. Your child is not lazy or doing this on purpose. Being patient and supportive, and never punishing for accidents, is important for their self-esteem.',
     },
     {
       question: 'How many visits will my child need?',
@@ -137,7 +137,7 @@ export const bedwettingEnuresis: ConditionPageData = {
     {
       question: 'What age is bedwetting considered a problem?',
       answer:
-        'Bedwetting is considered common and normal up to around age 5-6. After that, it is worth exploring whether there is a neurological or structural component that can be addressed. The sooner it is addressed, the better -- both for results and for your child\'s confidence.',
+        'Bedwetting is considered common and normal up to around age 5-6. After that, it is worth exploring whether there is a neurological or structural component that can be addressed. The sooner it is addressed, the better, both for results and for your child\'s confidence.',
     },
   ],
   relatedConditions: [

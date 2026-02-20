@@ -12,8 +12,8 @@ export const backNeckPain: ConditionPageData = {
       'Gentle, drug-free chiropractic care for back pain and neck pain in Rochester Hills, MI. At Cultivate Wellness, we address the root cause for lasting relief.',
   },
   intro: [
-    'Back pain and neck pain are among the most common reasons people seek chiropractic care -- and for good reason. At Cultivate Wellness, we\'ve helped countless patients find lasting relief through our gentle, neurologically-focused approach. Eighty percent of adults experience back pain at some point in their lives, and you don\'t have to accept it as a way of life.',
-    'Unlike pain medications that merely mask symptoms, we find and correct the root cause of your pain. Whether you\'re dealing with lower back pain, upper back pain, neck stiffness, disc problems, or chronic spinal pain, our gentle techniques address the underlying spinal misalignments and nervous system interference that are often at the heart of your discomfort.',
+    'Back pain and neck pain are among the most common reasons people seek chiropractic care, and for good reason. At Cultivate Wellness, we\'ve helped countless patients find lasting relief through our gentle, neurologically-focused approach. Eighty percent of adults experience back pain at some point in their lives, and you don\'t have to accept it as a way of life.',
+    'Unlike pain medications that merely mask symptoms, we find and correct the root cause of your pain. Whether you\'re dealing with lower back pain, upper back pain, neck stiffness, disc problems, or chronic spinal pain, our gentle techniques address the underlying neurological tension and nervous system interference that are often at the heart of your discomfort.',
   ],
   highlightBox: {
     icon: 'bone',
@@ -78,7 +78,7 @@ export const backNeckPain: ConditionPageData = {
         icon: 'target',
         title: 'Root Cause, Not Just Symptoms',
         description:
-          'We find WHY you hurt, not just WHERE you hurt. By addressing the underlying spinal misalignments and nervous system interference, we provide lasting relief rather than temporary symptom masking.',
+          'We find WHY you hurt, not just WHERE you hurt. By addressing the underlying neurological tension and nervous system interference, we provide lasting relief rather than temporary symptom masking.',
       },
       {
         icon: 'brain',
@@ -102,7 +102,7 @@ export const backNeckPain: ConditionPageData = {
       {
         title: 'Comprehensive Evaluation',
         description:
-          'We don\'t just treat symptoms -- we find the root cause. This includes a detailed health history and pain assessment, INSiGHT scanning neurological testing, spinal examination and range of motion testing, posture analysis, and identification of lifestyle factors contributing to your pain.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, posture habits, or life stress that your body hasn\'t yet released. This helps us understand the root cause of your symptoms, not just where you feel pain.',
       },
       {
         title: 'Gentle Chiropractic Adjustments',
@@ -148,7 +148,7 @@ export const backNeckPain: ConditionPageData = {
     {
       question: 'Should I come in if I\'m in severe pain?',
       answer:
-        'Yes -- don\'t wait until pain becomes unbearable. Our gentle techniques are appropriate even for patients in significant pain. In fact, many patients experience relief during their very first visit. We\'ll adapt our approach based on your comfort level.',
+        'Yes. Don\'t wait until pain becomes unbearable. Our gentle techniques are appropriate even for patients in significant pain. In fact, many patients experience relief during their very first visit. We\'ll adapt our approach based on your comfort level.',
     },
     {
       question: 'Can you help with pain after a car accident?',

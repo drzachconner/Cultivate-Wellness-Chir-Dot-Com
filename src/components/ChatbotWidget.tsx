@@ -171,13 +171,14 @@ export default function ChatbotWidget() {
     }
   }, [isOpen]);
 
-  // Prevent body scroll when chat is open on mobile
+  // Prevent body scroll when chat is open on mobile & notify other components
   useEffect(() => {
     if (isOpen && window.innerWidth < 768) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
     }
+    window.dispatchEvent(new CustomEvent('chatbot-toggle', { detail: { isOpen } }));
     return () => {
       document.body.style.overflow = '';
     };
@@ -319,7 +320,7 @@ export default function ChatbotWidget() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-white md:inset-auto md:bottom-20 md:right-4 md:w-96 md:h-[28rem] md:rounded-lg md:shadow-2xl md:border md:border-gray-200 max-md:bottom-16">
+        <div className="fixed inset-0 z-50 flex flex-col bg-white md:inset-auto md:bottom-20 md:right-4 md:w-96 md:h-[28rem] md:rounded-lg md:shadow-2xl md:border md:border-gray-200">
           {/* Header */}
           <div className="bg-primary-dark text-white px-4 py-3 flex items-center gap-3 shrink-0">
             <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center shrink-0">

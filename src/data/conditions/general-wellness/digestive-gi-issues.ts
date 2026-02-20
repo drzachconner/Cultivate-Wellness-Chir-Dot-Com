@@ -13,12 +13,12 @@ export const digestiveGiIssues: ConditionPageData = {
   },
   intro: [
     'Digestive problems affect millions of people, often despite medication and dietary changes. What many do not realize is that the nervous system plays a crucial role in digestive function. At Cultivate Wellness, we address the nerve interference that may be contributing to your digestive issues.',
-    'Most people have heard of the gut-brain connection, but what comes first -- and is even more important -- is the brain-gut connection. Your brain sends signals down through the vagus nerve to control nearly every aspect of digestion, from stomach acid production to motility to nutrient absorption. When there is interference to this top-down communication, digestive problems often follow. Our gentle, neurologically-focused approach helps restore proper nerve signaling through the vagus nerve to your digestive organs.',
+    'Most people have heard of the gut-brain connection, but what comes first, and is even more important, is the brain-gut connection. Your brain sends signals down through the vagus nerve to control nearly every aspect of digestion, from stomach acid production to motility to nutrient absorption. When there is interference to this top-down communication, digestive problems often follow. Our gentle, neurologically-focused approach helps restore proper nerve signaling through the vagus nerve to your digestive organs.',
   ],
   highlightBox: {
     icon: 'brain',
     label: 'The Brain-Gut Connection',
-    text: 'While the gut-brain connection is well known, the brain-gut connection via the vagus nerve comes first. Your brain controls digestion top-down through the vagus nerve -- which runs from the brainstem through the upper cervical spine to your digestive organs. When spinal misalignment interferes with this pathway, digestive problems often follow.',
+    text: 'While the gut-brain connection is well known, the brain-gut connection via the vagus nerve comes first. Your brain controls digestion top-down through the vagus nerve, which runs from the brainstem through the upper cervical spine to your digestive organs. When neurological tension interferes with this pathway, digestive problems often follow.',
   },
   symptoms: {
     sectionTitle: 'Digestive Conditions We Support',
@@ -92,12 +92,12 @@ export const digestiveGiIssues: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We evaluate your entire spine with special attention to areas affecting digestive function. INSiGHT scanning technology helps us assess your autonomic nervous system balance, revealing whether you are stuck in "fight or flight" mode.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past physical or emotional stress that your body hasn\'t yet released. This reveals whether your nervous system is stuck in "fight or flight" mode and unable to properly support digestion.',
       },
       {
         title: 'Gentle, Targeted Corrections',
         description:
-          'Using our gentle, neurologically-focused approach, we identify and correct subluxations interfering with the nerves to your digestive organs -- focusing on the upper cervical spine (vagus nerve), mid-thoracic spine, and sacrum.',
+          'Using our gentle, neurologically-focused approach, we identify and release stored tension patterns interfering with the nerves to your digestive organs, focusing on the upper cervical spine (vagus nerve), mid-thoracic spine, and sacrum.',
       },
       {
         title: 'Vagal Tone & Whole-Person Support',
@@ -123,7 +123,7 @@ export const digestiveGiIssues: ConditionPageData = {
     {
       question: 'How does the spine affect digestion?',
       answer:
-        'The nerves that control your digestive organs exit from specific areas of your spine. The vagus nerve exits from the brainstem and upper cervical spine and controls stomach acid and motility. Thoracic nerves (T5-T9) supply the stomach, liver, and small intestine. Lower thoracic and lumbar nerves supply the large intestine. When subluxations occur in these areas, digestive function can be compromised.',
+        'The nerves that control your digestive organs exit from specific areas of your spine. The vagus nerve exits from the brainstem and upper cervical spine and controls stomach acid and motility. Thoracic nerves (T5-T9) supply the stomach, liver, and small intestine. Lower thoracic and lumbar nerves supply the large intestine. When neurological tension occurs in these areas, digestive function can be compromised.',
     },
     {
       question: 'Can chiropractic care help with infant digestive issues like colic?',

@@ -59,7 +59,7 @@ export default function AnswerHub() {
     },
     {
       question: 'What is Talsky Tonal Chiropractic?',
-      answer: 'Talsky Tonal Chiropractic is a neurologically-focused, non-manipulative approach that uses a vitalistic, moment-to-moment analysis to find and release accumulated stress patterns in the nervous system. Adjustments use a gentle pressure input with a finger contact — no bone cracking or forceful manipulation. Corrections continue working with your body\'s movements and breathing even after the adjustment, restoring nervous system function naturally.',
+      answer: 'Talsky Tonal Chiropractic is a neurologically-focused, non-manipulative approach that uses a vitalistic, moment-to-moment analysis to find and release accumulated stress patterns in the nervous system. Adjustments use a gentle pressure input with a finger contact,no bone cracking or forceful manipulation. Corrections continue working with your body\'s movements and breathing even after the adjustment, restoring nervous system function naturally.',
       category: 'Family Care',
     },
     {

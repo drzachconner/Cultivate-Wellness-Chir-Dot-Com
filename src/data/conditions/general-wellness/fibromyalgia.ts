@@ -13,7 +13,7 @@ export const fibromyalgia: ConditionPageData = {
   },
   intro: [
     'Living with fibromyalgia means dealing with widespread pain, fatigue, and often feeling misunderstood. At Cultivate Wellness, we recognize fibromyalgia as a real condition that affects real people. Our gentle, neurologically-focused approach can help reduce pain, improve sleep, and support your overall quality of life.',
-    'Research increasingly points to fibromyalgia as a condition of central sensitization -- the nervous system becomes hyperactive and amplifies pain signals. This is exactly where chiropractic care can help. By reducing interference to the nervous system and helping it function more normally, we may be able to help "turn down the volume" on your pain signals.',
+    'Research increasingly points to fibromyalgia as a condition of central sensitization, meaning the nervous system becomes hyperactive and amplifies pain signals. This is exactly where chiropractic care can help. By reducing interference to the nervous system and helping it function more normally, we may be able to help "turn down the volume" on your pain signals.',
   ],
   highlightBox: {
     icon: 'heart',
@@ -102,12 +102,12 @@ export const fibromyalgia: ConditionPageData = {
       {
         title: 'Sensitive Assessment',
         description:
-          'We begin with a thorough evaluation understanding your symptom patterns, triggers, and sensitivity levels. INSiGHT scanning helps us objectively assess your nervous system function and identify areas of hyperactivity.',
+          'We begin with a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past trauma, chronic stress, or accumulated life experiences that your body hasn\'t yet learned it\'s safe to release. This reveals the nervous system hyperactivity driving your pain signals, not just where you feel discomfort.',
       },
       {
         title: 'Customized Gentle Adjustments',
         description:
-          'Using our gentle, neurologically-focused approach, we address spinal subluxations contributing to nervous system dysfunction, upper cervical issues affecting brainstem function, and muscle tension -- all with pressure customized to your comfort level.',
+          'Using our gentle, neurologically-focused approach, we address areas of neurological tension contributing to nervous system dysfunction, upper cervical issues affecting brainstem function, and muscle tension, all with pressure customized to your comfort level.',
       },
       {
         title: 'Ongoing Support & Realistic Goals',
@@ -143,7 +143,7 @@ export const fibromyalgia: ConditionPageData = {
     {
       question: 'How is your approach different from regular chiropractic?',
       answer:
-        'Traditional chiropractic often uses high-velocity thrusts that create cracking sounds. Our gentle, neurologically-focused approach uses light touch and precise instrument adjustments that are much gentler. There is no cracking, no twisting, and no forceful manipulation -- which is essential for fibromyalgia patients.',
+        'Traditional chiropractic often uses high-velocity thrusts that create cracking sounds. Our gentle, neurologically-focused approach uses light touch and precise instrument adjustments that are much gentler. There is no cracking, no twisting, and no forceful manipulation, which is essential for fibromyalgia patients.',
     },
     {
       question: 'How often will I need to come in?',

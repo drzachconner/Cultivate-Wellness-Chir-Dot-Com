@@ -18,7 +18,7 @@ export const adhdFocusIssues: ConditionPageData = {
   highlightBox: {
     icon: 'brain',
     label: 'Important Note',
-    text: 'Chiropractic care doesn\'t "treat" ADHD as a disease -- it optimizes nervous system function, which can support better focus, attention, and self-regulation naturally.',
+    text: 'Chiropractic care doesn\'t "treat" ADHD as a disease. It optimizes nervous system function, which can support better focus, attention, and self-regulation naturally.',
   },
   symptoms: {
     sectionTitle: 'Common Signs & Symptoms',
@@ -78,7 +78,7 @@ export const adhdFocusIssues: ConditionPageData = {
         icon: 'heart-pulse',
         title: 'Autonomic Nervous System Balance',
         description:
-          'Many ADHD symptoms relate to autonomic imbalance -- sympathetic dominance leads to hyperactivity, anxiety, and sleep problems, while poor parasympathetic function makes calming down difficult. Chiropractic care helps restore balance between these systems.',
+          'Many ADHD symptoms relate to autonomic imbalance. Sympathetic dominance leads to hyperactivity, anxiety, and sleep problems, while poor parasympathetic function makes calming down difficult. Chiropractic care helps restore balance between these systems.',
       },
       {
         icon: 'sparkles',
@@ -102,12 +102,12 @@ export const adhdFocusIssues: ConditionPageData = {
       {
         title: 'Comprehensive Neurological Assessment',
         description:
-          'We begin with a thorough evaluation including a detailed history of symptoms, birth, and development; neurological scanning to measure nervous system function objectively; spinal examination to identify areas of misalignment; and assessment of autonomic nervous system balance.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your child\'s nervous system function and identify where stress is stuck on — tension patterns from birth, early life experiences, or accumulated physical and emotional stress that the body hasn\'t yet learned it\'s safe to release. This reveals the neurological root of focus and attention challenges, not just the behaviors you see.',
       },
       {
         title: 'Gentle, Precise Adjustments',
         description:
-          'Using our gentle, neurologically-focused approach, we address upper cervical misalignments affecting brain stem function, areas of spinal tension creating nervous system interference, patterns of stored stress in the body, and structural imbalances affecting neurological function.',
+          'Using our gentle, neurologically-focused approach, we address upper cervical neurological tension affecting brain stem function, areas of spinal tension creating nervous system interference, patterns of stored stress in the body, and structural imbalances affecting neurological function.',
       },
       {
         title: 'Ongoing Support & Monitoring',
@@ -153,7 +153,7 @@ export const adhdFocusIssues: ConditionPageData = {
     {
       question: 'Do you work with adults who have ADHD?',
       answer:
-        'Yes. ADHD doesn\'t just affect children -- many adults struggle with focus, time management, organization, and impulsive decisions. Adults can benefit from the same neurologically-focused chiropractic care we provide to children.',
+        'Yes. ADHD doesn\'t just affect children. Many adults struggle with focus, time management, organization, and impulsive decisions. Adults can benefit from the same neurologically-focused chiropractic care we provide to children.',
     },
     {
       question: 'What should I expect at the first visit?',

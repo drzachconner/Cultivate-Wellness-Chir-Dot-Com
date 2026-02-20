@@ -12,8 +12,8 @@ export const sciatica: ConditionPageData = {
       'Drug-free chiropractic relief for sciatica and sciatic nerve pain in Rochester Hills, MI. At Cultivate Wellness, we address the root cause for lasting relief.',
   },
   intro: [
-    'Sciatica can be debilitating -- that shooting pain down your leg that makes it hard to sit, stand, walk, or sleep. At Cultivate Wellness, we\'ve helped many patients find lasting relief from sciatica without drugs or surgery, using gentle techniques that address the root cause of your pain.',
-    'Sciatica refers to pain that radiates along the path of the sciatic nerve -- the longest nerve in your body. It runs from your lower back through your hips and buttocks, then down each leg. Sciatica typically affects only one side of your body and can range from a mild ache to sharp, burning pain or even debilitating discomfort that makes daily activities nearly impossible.',
+    'Sciatica can be debilitating. That shooting pain down your leg that makes it hard to sit, stand, walk, or sleep. At Cultivate Wellness, we\'ve helped many patients find lasting relief from sciatica without drugs or surgery, using gentle techniques that address the root cause of your pain.',
+    'Sciatica refers to pain that radiates along the path of the sciatic nerve, the longest nerve in your body. It runs from your lower back through your hips and buttocks, then down each leg. Sciatica typically affects only one side of your body and can range from a mild ache to sharp, burning pain or even debilitating discomfort that makes daily activities nearly impossible.',
   ],
   highlightBox: {
     icon: 'zap',
@@ -62,19 +62,19 @@ export const sciatica: ConditionPageData = {
         icon: 'target',
         title: 'Addresses the Root Cause',
         description:
-          'Unlike pain medications that merely mask symptoms, chiropractic care identifies and corrects the underlying cause of your sciatica -- whether it\'s a herniated disc, subluxation, spinal stenosis, or piriformis syndrome.',
+          'Unlike pain medications that merely mask symptoms, chiropractic care identifies and corrects the underlying cause of your sciatica, whether it\'s a herniated disc, neurological tension, spinal stenosis, or piriformis syndrome.',
       },
       {
         icon: 'hand',
         title: 'Gentle, Precise Corrections',
         description:
-          'Our gentle, neurologically-focused approach provides relief without forceful manipulation. We locate specific subluxations affecting the sciatic nerve and make precise corrections.',
+          'Our gentle, neurologically-focused approach provides relief without forceful manipulation. We locate specific areas of neurological tension affecting the sciatic nerve and make precise corrections.',
       },
       {
         icon: 'sparkles',
         title: 'Natural Healing',
         description:
-          'By restoring proper alignment and reducing nerve interference, we help your body heal naturally -- often providing lasting relief where other treatments have failed.',
+          'By restoring proper alignment and reducing nerve interference, we help your body heal naturally, often providing lasting relief where other treatments have failed.',
       },
       {
         icon: 'trending-up',
@@ -92,12 +92,12 @@ export const sciatica: ConditionPageData = {
       {
         title: 'Comprehensive Evaluation',
         description:
-          'We identify exactly what\'s causing your sciatica through a detailed examination, orthopedic and neurological testing, INSiGHT scanning, and assessment of your spinal alignment, disc health, and nerve function. Understanding the root cause is essential for effective treatment.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, compensations, or life stress that your body hasn\'t yet released. This helps us find the true root cause of your sciatica, not just where you feel pain.',
       },
       {
         title: 'Gentle, Targeted Adjustments',
         description:
-          'Using our gentle, neurologically-focused approach, we make precise corrections to address the specific subluxations and misalignments affecting your sciatic nerve. There is no forceful manipulation -- our gentle techniques provide relief without additional pain or discomfort.',
+          'Using our gentle, neurologically-focused approach, we make precise corrections to address the specific areas of neurological tension and structural issues affecting your sciatic nerve. There is no forceful manipulation. Our gentle techniques provide relief without additional pain or discomfort.',
       },
       {
         title: 'Recovery & Prevention',
@@ -122,7 +122,7 @@ export const sciatica: ConditionPageData = {
     {
       question: 'What causes sciatica?',
       answer:
-        'The most common causes include herniated or bulging discs pressing on the sciatic nerve, spinal stenosis (narrowing of the spinal canal), subluxation (vertebral misalignment) irritating the nerve roots, and piriformis syndrome (the piriformis muscle in the buttock spasming and irritating the sciatic nerve).',
+        'The most common causes include herniated or bulging discs pressing on the sciatic nerve, spinal stenosis (narrowing of the spinal canal), neurological tension irritating the nerve roots, and piriformis syndrome (the piriformis muscle in the buttock spasming and irritating the sciatic nerve).',
     },
     {
       question: 'How quickly will I feel better?',

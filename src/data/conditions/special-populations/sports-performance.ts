@@ -13,12 +13,12 @@ export const sportsPerformance: ConditionPageData = {
   },
   intro: [
     'Whether you are a professional athlete, weekend warrior, or youth sports participant, chiropractic care can help you perform at your best, recover faster, and prevent injuries. At Cultivate Wellness, we use advanced techniques that give athletes a real competitive advantage.',
-    'Nearly all NFL teams, most NBA teams, and countless Olympic athletes have chiropractors as part of their healthcare team. Chiropractic care is not just for injuries -- it is a performance enhancer. Proper spinal alignment ensures optimal nerve communication, allowing your muscles to fire more effectively, your reactions to be faster, and your body to recover more efficiently.',
+    'Nearly all NFL teams, most NBA teams, and countless Olympic athletes have chiropractors as part of their healthcare team. Chiropractic care is not just for injuries. It is a performance enhancer. Proper spinal alignment ensures optimal nerve communication, allowing your muscles to fire more effectively, your reactions to be faster, and your body to recover more efficiently.',
   ],
   highlightBox: {
     icon: 'zap',
     label: 'Performance Fact',
-    text: 'Nearly all NFL teams, most NBA teams, and countless Olympic athletes have chiropractors as part of their healthcare team. Chiropractic care is not just for injuries -- it is a proven performance enhancer.',
+    text: 'Nearly all NFL teams, most NBA teams, and countless Olympic athletes have chiropractors as part of their healthcare team. Chiropractic care is not just for injuries. It is a proven performance enhancer.',
   },
   symptoms: {
     sectionTitle: 'Common Sports Injuries We Address',
@@ -92,12 +92,12 @@ export const sportsPerformance: ConditionPageData = {
       {
         title: 'Biomechanical Assessment',
         description:
-          'We evaluate your movement patterns, identify structural imbalances, and understand the specific demands of your sport. INSiGHT scanning reveals how your nervous system is functioning and where interference may be limiting your performance.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension from training demands, past injuries, or repetitive strain that your body hasn\'t yet released. This reveals where nervous system interference may be limiting your performance, not just where you feel tightness or pain.',
       },
       {
         title: 'Correction & Performance Optimization',
         description:
-          'Using our gentle, precise adjustments, we correct subluxations and restore optimal nervous system function. Our approach allows us to address issues in sport-specific positions -- correcting problems where they actually occur during your movements.',
+          'Using our gentle, precise adjustments, we release stored tension patterns and restore optimal nervous system function. Our approach allows us to address issues in sport-specific positions, correcting problems where they actually occur during your movements.',
       },
       {
         title: 'Prevention & Maintenance',

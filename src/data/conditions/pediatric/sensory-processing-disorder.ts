@@ -13,12 +13,12 @@ export const sensoryProcessing: ConditionPageData = {
   },
   intro: [
     'Sensory Processing Disorder affects how the brain receives and responds to information from the senses. For children with SPD, everyday experiences can be overwhelming, confusing, or underwhelming. At Cultivate Wellness, we specialize in supporting children with sensory differences through gentle, neurologically-focused care.',
-    'SPD is not about the senses themselves working incorrectly -- it\'s about how the brain processes the information it receives. The brain must receive sensory input, filter what\'s important, integrate information from multiple senses, generate appropriate responses, and regulate arousal levels. This is fundamentally a nervous system function, which is why supporting nervous system health can be so helpful.',
+    'SPD is not about the senses themselves working incorrectly. It\'s about how the brain processes the information it receives. The brain must receive sensory input, filter what\'s important, integrate information from multiple senses, generate appropriate responses, and regulate arousal levels. This is fundamentally a nervous system function, which is why supporting nervous system health can be so helpful.',
   ],
   highlightBox: {
     icon: 'puzzle',
     label: 'Understanding SPD',
-    text: 'When the spine is misaligned, it creates interference in the nervous system\'s communication. Chiropractic care removes this interference, allowing the nervous system to process sensory information more effectively. Research shows spinal adjustments can influence brain wave patterns, autonomic nervous system balance, and sensory processing in the brain.',
+    text: 'When the neurology of the spine is under tension, it creates interference in the nervous system\'s communication. Chiropractic care removes this interference, allowing the nervous system to process sensory information more effectively. Research shows spinal adjustments can influence brain wave patterns, autonomic nervous system balance, and sensory processing in the brain.',
   },
   symptoms: {
     sectionTitle: 'Common Signs of SPD in Children',
@@ -31,7 +31,7 @@ export const sensoryProcessing: ConditionPageData = {
       {
         icon: 'hand',
         title: 'Touch Aversion or Seeking',
-        description: 'Either dislikes being touched, hugged, or certain textures -- or constantly touches people and objects seeking input.',
+        description: 'Either dislikes being touched, hugged, or certain textures, or constantly touches people and objects seeking input.',
       },
       {
         icon: 'eye',
@@ -90,7 +90,7 @@ export const sensoryProcessing: ConditionPageData = {
         icon: 'hand',
         title: 'Ultra-Gentle Techniques',
         description:
-          'Our gentle, neurologically-focused approach is exceptionally light-touch -- perfect for children who are touch-sensitive. We read your child\'s cues and respect their boundaries.',
+          'Our gentle, neurologically-focused approach is exceptionally light-touch, perfect for children who are touch-sensitive. We read your child\'s cues and respect their boundaries.',
       },
     ],
   },
@@ -102,7 +102,7 @@ export const sensoryProcessing: ConditionPageData = {
       {
         title: 'Sensory-Sensitive Evaluation',
         description:
-          'We start with a detailed conversation about your child\'s sensory profile and challenges. The examination happens at your child\'s pace -- we never rush. INSiGHT scanning is used if your child tolerates it. Building trust always comes first.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning (at your child\'s pace) to objectively assess your child\'s nervous system function and identify where stress is stuck on — tension patterns from birth, early life experiences, or sensory overwhelm that the body hasn\'t yet learned it\'s safe to release. Building trust always comes first, and we never rush.',
       },
       {
         title: 'Gentle, Individualized Adjustments',
@@ -133,7 +133,7 @@ export const sensoryProcessing: ConditionPageData = {
     {
       question: 'How does chiropractic help with sensory processing?',
       answer:
-        'Sensory processing is a nervous system function. The brain must receive, filter, integrate, and respond to sensory input. When the spine is misaligned, it creates interference in this communication system. Chiropractic care removes the interference, allowing the nervous system to process sensory information more effectively.',
+        'Sensory processing is a nervous system function. The brain must receive, filter, integrate, and respond to sensory input. When the neurology of the spine is under tension, it creates interference in this communication system. Chiropractic care removes the interference, allowing the nervous system to process sensory information more effectively.',
     },
     {
       question: 'My child is very touch-sensitive. How do you handle that?',

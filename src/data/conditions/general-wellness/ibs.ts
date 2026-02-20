@@ -13,12 +13,12 @@ export const ibs: ConditionPageData = {
   },
   intro: [
     'Irritable bowel syndrome (IBS) is a frustrating condition that affects millions of people, causing abdominal pain, bloating, and unpredictable bowel habits that disrupt daily life. At Cultivate Wellness, we support patients with IBS by addressing the nervous system dysfunction that plays a central role in this gut-brain disorder.',
-    'Most people have heard of the gut-brain connection, but what comes first -- and is even more important -- is the brain-gut connection. Your brain sends signals down through the vagus nerve to regulate nearly every aspect of digestive function. IBS is increasingly recognized as a disorder of this top-down communication. The vagus nerve and the enteric nervous system (your "second brain" in the gut) are directly influenced by spinal alignment and nervous system function. Our gentle, neurologically-focused approach helps optimize this brain-to-gut signaling, supporting better digestive regulation and comfort.',
+    'Most people have heard of the gut-brain connection, but what comes first, and is even more important, is the brain-gut connection. Your brain sends signals down through the vagus nerve to regulate nearly every aspect of digestive function. IBS is increasingly recognized as a disorder of this top-down communication. The vagus nerve and the enteric nervous system (your "second brain" in the gut) are directly influenced by spinal alignment and nervous system function. Our gentle, neurologically-focused approach helps optimize this brain-to-gut signaling, supporting better digestive regulation and comfort.',
   ],
   highlightBox: {
     icon: 'brain',
     label: 'The Brain-Gut Connection',
-    text: 'While the gut-brain connection is well known, the brain-gut connection via the vagus nerve comes first. Your brain controls digestive function top-down through the vagus nerve -- which runs from the brainstem through the upper cervical spine to the digestive system. IBS is fundamentally a breakdown in this communication. Optimizing vagus nerve function may help regulate digestive patterns.',
+    text: 'While the gut-brain connection is well known, the brain-gut connection via the vagus nerve comes first. Your brain controls digestive function top-down through the vagus nerve, which runs from the brainstem through the upper cervical spine to the digestive system. IBS is fundamentally a breakdown in this communication. Optimizing vagus nerve function may help regulate digestive patterns.',
   },
   symptoms: {
     sectionTitle: 'IBS Symptoms We Support',
@@ -51,7 +51,7 @@ export const ibs: ConditionPageData = {
       {
         icon: 'heart-pulse',
         title: 'Stress-Related Flares',
-        description: 'IBS symptoms that worsen during stress, anxiety, or emotional upset -- reflecting the gut-brain connection.',
+        description: 'IBS symptoms that worsen during stress, anxiety, or emotional upset, reflecting the gut-brain connection.',
       },
     ],
   },
@@ -68,7 +68,7 @@ export const ibs: ConditionPageData = {
         icon: 'heart-pulse',
         title: 'Autonomic Nervous System Balance',
         description:
-          'IBS is closely linked to autonomic imbalance -- often too much sympathetic ("fight-or-flight") activity. Our approach helps shift toward parasympathetic ("rest-and-digest") dominance.',
+          'IBS is closely linked to autonomic imbalance, often too much sympathetic ("fight-or-flight") activity. Our approach helps shift toward parasympathetic ("rest-and-digest") dominance.',
       },
       {
         icon: 'shield',
@@ -92,12 +92,12 @@ export const ibs: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We evaluate your spinal alignment with focus on the upper cervical, thoracic, and lumbar regions that affect digestive nerve supply. INSiGHT scanning technology helps us assess your autonomic nervous system balance and identify areas of nerve interference. We discuss your IBS history, triggers, and current management strategies.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from chronic stress, past trauma, or accumulated life pressure that your body hasn\'t yet released. This reveals how your nervous system may be driving your digestive dysfunction, not just where you feel symptoms.',
       },
       {
         title: 'Gentle Nervous System Care',
         description:
-          'Using Talsky Tonal Chiropractic, we address subluxations affecting vagus nerve function and autonomic balance. Our approach is gentle, precise, and comfortable.',
+          'Using Talsky Tonal Chiropractic, we address areas of neurological tension affecting vagus nerve function and autonomic balance. Our approach is gentle, precise, and comfortable.',
       },
       {
         title: 'Holistic Digestive Wellness',
@@ -128,7 +128,7 @@ export const ibs: ConditionPageData = {
     {
       question: 'How does the spine affect digestion?',
       answer:
-        'The vagus nerve controls much of your digestive function and runs from the brainstem through the upper cervical spine. The thoracic and lumbar spine supply nerves to the stomach, intestines, and colon. Spinal misalignments in these areas can interfere with the nerve signals that regulate digestion.',
+        'The vagus nerve controls much of your digestive function and runs from the brainstem through the upper cervical spine. The thoracic and lumbar spine supply nerves to the stomach, intestines, and colon. Neurological tension in these areas can interfere with the nerve signals that regulate digestion.',
     },
     {
       question: 'Should I continue seeing my gastroenterologist?',

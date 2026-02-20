@@ -35,8 +35,8 @@ export default function ConditionHero({ title, subtitle, image, breadcrumbLabel 
         />
       </div>
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary-dark/70 to-primary/60" />
-      {/* Floating breadcrumb */}
-      <nav aria-label="Breadcrumb" className="fixed top-4 left-4 sm:left-6 lg:left-8 z-50 text-sm text-white backdrop-blur-sm bg-black/20 rounded-lg px-3 py-2">
+      {/* Breadcrumb pinned to top of hero */}
+      <nav aria-label="Breadcrumb" className="absolute top-4 left-4 sm:left-6 lg:left-8 z-20 text-sm text-white/80">
         <ol className="flex items-center flex-wrap gap-1">
           <li className="flex items-center">
             <Link to="/" className="flex items-center hover:text-white transition-colors" aria-label="Home">
@@ -55,6 +55,13 @@ export default function ConditionHero({ title, subtitle, image, breadcrumbLabel 
               </button>
               {isOpen && (
                 <div className="absolute top-full left-0 mt-2 w-72 bg-white rounded-lg shadow-xl border border-gray-200 z-50 flex flex-col">
+                  <Link
+                    to="/conditions"
+                    onClick={() => setIsOpen(false)}
+                    className="block px-4 py-2 text-sm font-semibold text-primary-dark hover:bg-gray-50 border-b border-gray-100 flex-shrink-0"
+                  >
+                    View All Conditions
+                  </Link>
                   <div className="max-h-64 overflow-y-auto">
                     {groups.map((group) => (
                       <div key={group.category}>

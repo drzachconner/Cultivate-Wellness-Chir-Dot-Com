@@ -13,7 +13,7 @@ export const asthma: ConditionPageData = {
   },
   intro: [
     'Asthma and breathing difficulties affect millions of people of all ages, often requiring daily medication and limiting activity. While chiropractic care does not treat asthma directly, it supports the nervous system function that controls your respiratory system. At Cultivate Wellness, many patients report significant improvement in their breathing after beginning our gentle, neurologically-focused care.',
-    'Your ability to breathe freely depends on proper nerve signaling between your brain and your respiratory system. The nerves that control your diaphragm (the phrenic nerve from C3-C5), the muscles between your ribs, and the bronchial tubes all exit from your spine. When spinal misalignments interfere with these nerve signals, it can contribute to breathing difficulties, increased inflammation, and heightened airway reactivity.',
+    'Your ability to breathe freely depends on proper nerve signaling between your brain and your respiratory system. The nerves that control your diaphragm (the phrenic nerve from C3-C5), the muscles between your ribs, and the bronchial tubes all exit from your spine. When neurological tension interferes with these nerve signals, it can contribute to breathing difficulties, increased inflammation, and heightened airway reactivity.',
   ],
   highlightBox: {
     icon: 'wind',
@@ -62,7 +62,7 @@ export const asthma: ConditionPageData = {
         icon: 'brain',
         title: 'Optimizes Respiratory Nerve Function',
         description:
-          'Gentle adjustments address subluxations in the cervical and thoracic spine that may interfere with the nerves controlling your lungs, diaphragm, and airways.',
+          'Gentle adjustments address neurological tension in the cervical and thoracic spine that may interfere with the nerves controlling your lungs, diaphragm, and airways.',
       },
       {
         icon: 'heart-pulse',
@@ -92,12 +92,12 @@ export const asthma: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We evaluate your entire spine with particular attention to the cervical (C3-C5) and thoracic regions that directly affect respiratory function through a comprehensive neurological evaluation. INSiGHT scanning technology helps us assess your autonomic nervous system balance and identify areas of nerve interference affecting respiratory control.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from illness, environmental stress, or accumulated life pressure that your body hasn\'t yet released. This reveals how your nervous system may be contributing to airway reactivity and breathing difficulties.',
       },
       {
         title: 'Gentle, Targeted Adjustments',
         description:
-          'Using Talsky Tonal Chiropractic, we address subluxations affecting respiratory nerve supply. Our approach is gentle and comfortable, with no cracking or forceful manipulation.',
+          'Using Talsky Tonal Chiropractic, we address areas of neurological tension affecting respiratory nerve supply. Our approach is gentle and comfortable, with no cracking or forceful manipulation.',
       },
       {
         title: 'Holistic Respiratory Wellness',
@@ -136,9 +136,9 @@ export const asthma: ConditionPageData = {
         'Yes. Children respond particularly well to gentle chiropractic care. Many parents report significant improvement in their child\'s asthma symptoms, reduced need for medications, and fewer respiratory infections after beginning care with us.',
     },
     {
-      question: 'How does a spinal misalignment affect breathing?',
+      question: 'How does neurological tension affect breathing?',
       answer:
-        'The nerves controlling your diaphragm exit from C3-C5, the nerves to your lungs exit from the thoracic spine, and the autonomic nervous system that regulates airway inflammation runs along your entire spine. Misalignments in these areas can interfere with nerve signaling, potentially contributing to breathing difficulties.',
+        'The nerves controlling your diaphragm exit from C3-C5, the nerves to your lungs exit from the thoracic spine, and the autonomic nervous system that regulates airway inflammation runs along your entire spine. Neurological tension in these areas can interfere with nerve signaling, potentially contributing to breathing difficulties.',
     },
     {
       question: 'How many visits before I notice improvement?',

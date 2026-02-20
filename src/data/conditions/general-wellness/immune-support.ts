@@ -13,7 +13,7 @@ export const immuneSupport: ConditionPageData = {
   },
   intro: [
     'Your immune system is your body\'s defense force, protecting you from illness and infection. But did you know that your nervous system directly controls and coordinates your immune response? At Cultivate Wellness, we help optimize your nervous system function to support a healthy, responsive immune system.',
-    'Research has established clear connections between the nervous system and immune function. Immune organs like the thymus, spleen, and lymph nodes are directly innervated by nerves. The brain and immune system constantly communicate. When there is interference in the nervous system, your immune system may not function optimally -- leaving you more vulnerable to illness.',
+    'Research has established clear connections between the nervous system and immune function. Immune organs like the thymus, spleen, and lymph nodes are directly innervated by nerves. The brain and immune system constantly communicate. When there is interference in the nervous system, your immune system may not function optimally, leaving you more vulnerable to illness.',
   ],
   highlightBox: {
     icon: 'shield',
@@ -92,12 +92,12 @@ export const immuneSupport: ConditionPageData = {
       {
         title: 'Nervous System Evaluation',
         description:
-          'We use INSiGHT scanning technology to objectively measure your nervous system function, identifying areas of interference that may be affecting your immune organs and stress response.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from illness, chronic stress, or accumulated life experiences that your body hasn\'t yet released. This reveals how your nervous system may be compromising your immune response.',
       },
       {
         title: 'Targeted Gentle Adjustments',
         description:
-          'Using our gentle, neurologically-focused approach, we identify and correct subluxations affecting immune function, paying special attention to areas that innervate immune organs like the thymus, spleen, and lymph nodes.',
+          'Using our gentle, neurologically-focused approach, we identify and address areas of neurological tension affecting immune function, paying special attention to areas that innervate immune organs like the thymus, spleen, and lymph nodes.',
       },
       {
         title: 'Ongoing Wellness Support',
@@ -131,7 +131,7 @@ export const immuneSupport: ConditionPageData = {
     {
       question: 'How often should I get adjusted for immune support?',
       answer:
-        'The frequency depends on your individual needs and health goals. Our team will recommend a care plan based on your initial evaluation. Many patients seeking wellness and immune support find that regular visits -- weekly or biweekly -- help maintain optimal nervous system function.',
+        'The frequency depends on your individual needs and health goals. Our team will recommend a care plan based on your initial evaluation. Many patients seeking wellness and immune support find that regular visits, weekly or biweekly, help maintain optimal nervous system function.',
     },
     {
       question: 'Can my whole family benefit from immune-supporting chiropractic care?',

@@ -18,7 +18,7 @@ export const websterTechnique: ConditionPageData = {
   highlightBox: {
     icon: 'shield',
     label: 'Scope of Practice',
-    text: 'As chiropractors, we provide care for the mother. We do not turn, reposition, or treat the fetus -- that is outside the scope of chiropractic practice. The Webster Technique specifically addresses the mother\'s sacral alignment, pelvic biomechanics, and associated soft tissues. Any physiological changes that occur are a result of the mother\'s body functioning more optimally.',
+    text: 'As chiropractors, we provide care for the mother. We do not turn, reposition, or treat the fetus. That is outside the scope of chiropractic practice. The Webster Technique specifically addresses the mother\'s sacral alignment, pelvic biomechanics, and associated soft tissues. Any physiological changes that occur are a result of the mother\'s body functioning more optimally.',
   },
   symptoms: {
     sectionTitle: 'Common Reasons Mothers Seek Webster Care',
@@ -62,7 +62,7 @@ export const websterTechnique: ConditionPageData = {
         icon: 'bone',
         title: 'Reduced Sacral Subluxation',
         description:
-          'Addressing misalignment of the sacrum that commonly occurs during pregnancy due to postural and hormonal changes.',
+          'Addressing sacral tension and dysfunction that commonly occurs during pregnancy due to postural and hormonal changes.',
       },
       {
         icon: 'target',
@@ -128,7 +128,7 @@ export const websterTechnique: ConditionPageData = {
     {
       question: 'Does the Webster Technique turn breech babies?',
       answer:
-        'No. As chiropractors, we care for the mother -- not the baby. We do not turn, reposition, or treat the fetus in any way. The Webster Technique optimizes the mother\'s pelvic biomechanics and nervous system function. When the mother\'s pelvis is properly aligned and functioning optimally, her body is better able to support a healthy pregnancy. Any changes in fetal positioning occur naturally as a result of the mother\'s improved physiology.',
+        'No. As chiropractors, we care for the mother, not the baby. We do not turn, reposition, or treat the fetus in any way. The Webster Technique optimizes the mother\'s pelvic biomechanics and nervous system function. When the mother\'s pelvis is properly aligned and functioning optimally, her body is better able to support a healthy pregnancy. Any changes in fetal positioning occur naturally as a result of the mother\'s improved physiology.',
     },
     {
       question: 'When should I start Webster Technique care?',

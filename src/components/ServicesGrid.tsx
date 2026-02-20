@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Baby, Heart, Users, ArrowRight } from 'lucide-react';
+import { Baby, Heart, Users, ArrowRight, BookOpen } from 'lucide-react';
 import { services } from '../data/services';
 import AnimateOnScroll from './AnimateOnScroll';
 
@@ -52,6 +52,18 @@ export default function ServicesGrid() {
             );
           })}
         </div>
+
+        <AnimateOnScroll delay={450}>
+          <div className="text-center mt-10">
+            <Link
+              to="/events-workshops"
+              className="inline-flex items-center gap-2 bg-primary-dark text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-accent transition-colors duration-200 text-lg"
+            >
+              <BookOpen size={20} />
+              Workshops for Parents
+            </Link>
+          </div>
+        </AnimateOnScroll>
       </div>
     </section>
   );

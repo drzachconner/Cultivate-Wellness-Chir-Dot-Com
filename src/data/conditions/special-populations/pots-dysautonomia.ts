@@ -12,13 +12,13 @@ export const potsDysautonomia: ConditionPageData = {
       'Gentle chiropractic support for POTS and dysautonomia in Rochester Hills, MI. At Cultivate Wellness, we help improve autonomic nervous system function naturally.',
   },
   intro: [
-    'POTS (Postural Orthostatic Tachycardia Syndrome) and other forms of dysautonomia affect the autonomic nervous system -- the part of your nervous system that controls involuntary functions like heart rate, blood pressure, digestion, and temperature regulation. At Cultivate Wellness, we offer supportive care that addresses the underlying nervous system dysfunction contributing to these challenging conditions.',
+    'POTS (Postural Orthostatic Tachycardia Syndrome) and other forms of dysautonomia affect the autonomic nervous system, the part of your nervous system that controls involuntary functions like heart rate, blood pressure, digestion, and temperature regulation. At Cultivate Wellness, we offer supportive care that addresses the underlying nervous system dysfunction contributing to these challenging conditions.',
     'Dysautonomia is an umbrella term for conditions involving dysfunction of the autonomic nervous system (ANS). The ANS controls vital automatic body functions including heart rate and blood pressure regulation, breathing, digestion, temperature regulation, sleep-wake cycles, and more. Our gentle, neurologically-focused approach helps support healthier autonomic function.',
   ],
   highlightBox: {
     icon: 'alert-circle',
     label: 'Important Note',
-    text: 'We work alongside your medical team. Chiropractic care is a supportive therapy that can help improve nervous system function -- it does not replace medical diagnosis or treatment for POTS and dysautonomia.',
+    text: 'POTS and dysautonomia require proper medical diagnosis and treatment. Our goal is not to treat these conditions, but to restore normal nervous system function — supporting your body\'s ability to regulate alongside your medical team.',
   },
   symptoms: {
     sectionTitle: 'Common Symptoms We See',
@@ -84,7 +84,7 @@ export const potsDysautonomia: ConditionPageData = {
         icon: 'scan-line',
         title: 'Objective HRV Monitoring',
         description:
-          'Our INSiGHT scanning includes Heart Rate Variability (HRV) testing -- a direct measure of autonomic nervous system function. We can track improvements over time and adjust care based on your response.',
+          'Our INSiGHT scanning includes Heart Rate Variability (HRV) testing, a direct measure of autonomic nervous system function. We can track improvements over time and adjust care based on your response.',
       },
       {
         icon: 'hand-heart',
@@ -102,12 +102,12 @@ export const potsDysautonomia: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We evaluate your entire spine with particular attention to areas affecting autonomic function: upper cervical, thoracic spine, and sacrum. INSiGHT scanning with HRV testing provides objective data about your autonomic nervous system balance.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning with HRV testing to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from viral illness, injury, or accumulated life stress that your body hasn\'t yet released. We pay particular attention to areas affecting autonomic function: upper cervical spine, thoracic spine, and sacrum.',
       },
       {
         title: 'Gentle, Precise Adjustments',
         description:
-          'Using our gentle, neurologically-focused approach, we address subluxations affecting autonomic function -- gentle, precise, and effective without causing the stress response that can trigger symptoms. We can adjust you in any comfortable position.',
+          'Using our gentle, neurologically-focused approach, we address areas of neurological tension affecting autonomic function. These adjustments are gentle, precise, and effective without causing the stress response that can trigger symptoms. We can adjust you in any comfortable position.',
       },
       {
         title: 'Paced Care & Collaboration',
@@ -133,7 +133,7 @@ export const potsDysautonomia: ConditionPageData = {
     {
       question: 'How does the spine affect the autonomic nervous system?',
       answer:
-        'The autonomic nervous system is intimately connected to the spine. The brainstem (ANS control center) sits at the base of the skull, the vagus nerve passes through the upper cervical spine, the sympathetic chain runs alongside the thoracic spine, and sacral nerves contribute to parasympathetic function. Spinal misalignments can interfere with all of these structures.',
+        'The autonomic nervous system is intimately connected to the spine. The brainstem (ANS control center) sits at the base of the skull, the vagus nerve passes through the upper cervical spine, the sympathetic chain runs alongside the thoracic spine, and sacral nerves contribute to parasympathetic function. Neurological tension can interfere with all of these structures.',
     },
     {
       question: 'What types of dysautonomia do you see?',

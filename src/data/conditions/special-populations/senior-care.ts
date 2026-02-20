@@ -12,7 +12,7 @@ export const seniorCare: ConditionPageData = {
       'Gentle chiropractic care for seniors in Rochester Hills, MI. At Cultivate Wellness, our team helps maintain mobility, reduce pain, improve balance, and support independent living.',
   },
   intro: [
-    'Aging does not have to mean declining health, chronic pain, or loss of independence. At Cultivate Wellness, we help seniors maintain mobility, reduce pain, improve balance, and enjoy a better quality of life -- all through gentle, safe chiropractic care tailored specifically for mature bodies.',
+    'Aging does not have to mean declining health, chronic pain, or loss of independence. At Cultivate Wellness, we help seniors maintain mobility, reduce pain, improve balance, and enjoy a better quality of life, all through gentle, safe chiropractic care tailored specifically for mature bodies.',
     'We regularly care for patients in their 70s, 80s, and beyond. Our gentle, neurologically-focused approach uses light-touch methods that are perfectly suited for seniors, including those with osteoporosis or other bone density concerns. You are never too old to benefit from chiropractic care.',
   ],
   highlightBox: {
@@ -36,7 +36,7 @@ export const seniorCare: ConditionPageData = {
       {
         icon: 'footprints',
         title: 'Balance Issues',
-        description: 'Impaired proprioception and stability that increase fall risk -- a serious concern for seniors.',
+        description: 'Impaired proprioception and stability that increase fall risk, a serious concern for seniors.',
       },
       {
         icon: 'moon',
@@ -62,13 +62,13 @@ export const seniorCare: ConditionPageData = {
         icon: 'trending-up',
         title: 'Improved Mobility & Independence',
         description:
-          'Better spinal alignment means easier movement, more independence, and the ability to keep doing the activities you love -- driving, gardening, playing with grandchildren.',
+          'Better spinal alignment means easier movement, more independence, and the ability to keep doing the activities you love, like driving, gardening, playing with grandchildren.',
       },
       {
         icon: 'shield',
         title: 'Better Balance & Fall Prevention',
         description:
-          'Chiropractic care improves proprioception and nervous system function, reducing fall risk -- a critical concern for seniors. Falls are the leading cause of injury in older adults.',
+          'Chiropractic care improves proprioception and nervous system function, reducing fall risk, a critical concern for seniors. Falls are the leading cause of injury in older adults.',
       },
       {
         icon: 'heart',
@@ -92,7 +92,7 @@ export const seniorCare: ConditionPageData = {
       {
         title: 'Thorough, Age-Appropriate Evaluation',
         description:
-          'We take time to understand your health background, concerns, and goals. Our gentle examination is adapted for your comfort, and we explain everything in plain terms. INSiGHT scanning provides objective nervous system data.',
+          'We take time to understand your health background, concerns, and goals. Our evaluation includes INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension from decades of accumulated wear, past injuries, or life stress that your body hasn\'t yet released. This reveals the neurological picture behind your symptoms, not just where you feel pain.',
       },
       {
         title: 'Gentle, Safe Adjustments',
@@ -102,7 +102,7 @@ export const seniorCare: ConditionPageData = {
       {
         title: 'Realistic Goals & Ongoing Support',
         description:
-          'We set goals focused on what matters most to you -- maintaining independence, reducing pain, staying active. We provide gradual, progressive care and maintenance visits to preserve your gains over time.',
+          'We set goals focused on what matters most to you, such as maintaining independence, reducing pain, staying active. We provide gradual, progressive care and maintenance visits to preserve your gains over time.',
       },
     ],
   },
@@ -133,7 +133,7 @@ export const seniorCare: ConditionPageData = {
     {
       question: 'How does chiropractic help with balance?',
       answer:
-        'Chiropractic care improves proprioception -- your body\'s awareness of its position in space. The spine contains a dense network of sensors that communicate balance information to the brain. When spinal function improves, so does the quality of this information, leading to better balance and reduced fall risk.',
+        'Chiropractic care improves proprioception, your body\'s awareness of its position in space. The spine contains a dense network of sensors that communicate balance information to the brain. When spinal function improves, so does the quality of this information, leading to better balance and reduced fall risk.',
     },
     {
       question: 'Do you accept Medicare?',
@@ -143,7 +143,7 @@ export const seniorCare: ConditionPageData = {
     {
       question: 'What if I have limited mobility and cannot lie on a table?',
       answer:
-        'No problem. Our techniques allow us to adjust you in any comfortable position -- sitting in a chair, standing, or lying down. We work around any mobility limitations and never ask you to do anything that causes discomfort.',
+        'No problem. Our techniques allow us to adjust you in any comfortable position, whether sitting in a chair, standing, or lying down. We work around any mobility limitations and never ask you to do anything that causes discomfort.',
     },
   ],
   relatedConditions: [

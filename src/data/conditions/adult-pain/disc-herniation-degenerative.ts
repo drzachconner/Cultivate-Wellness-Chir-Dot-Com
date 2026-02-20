@@ -92,12 +92,12 @@ export const discHerniationDegenerative: ConditionPageData = {
       {
         title: 'Comprehensive Evaluation',
         description:
-          'We perform a thorough examination including orthopedic and neurological testing to assess the location and severity of your disc problem, including INSiGHT scanning to objectively evaluate nervous system function. We review any existing imaging (MRI, X-ray) and may recommend additional studies if needed.',
+          'We perform a thorough examination including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, compensations, or accumulated life stress that your body hasn\'t yet released. We also review any existing imaging (MRI, X-ray) and may recommend additional studies to understand the full scope of your disc condition.',
       },
       {
         title: 'Gentle Spinal Correction',
         description:
-          'Using our gentle, neurologically-focused approach, we carefully address spinal misalignments that contribute to disc stress. Our techniques are specifically chosen for their safety and effectiveness with disc conditions.',
+          'Using our gentle, neurologically-focused approach, we carefully address areas of neurological tension that contribute to disc stress. Our techniques are specifically chosen for their safety and effectiveness with disc conditions.',
       },
       {
         title: 'Recovery & Prevention',
@@ -123,7 +123,7 @@ export const discHerniationDegenerative: ConditionPageData = {
     {
       question: 'Is chiropractic safe for a herniated disc?',
       answer:
-        'Yes -- our gentle approach is specifically designed for disc conditions. Unlike forceful manipulation, our neurologically-focused techniques use light, precise contact that reduces disc pressure without risk of worsening the herniation. We always evaluate thoroughly before beginning care.',
+        'Yes. Our gentle approach is specifically designed for disc conditions. Unlike forceful manipulation, our neurologically-focused techniques use light, precise contact that reduces disc pressure without risk of worsening the herniation. We always evaluate thoroughly before beginning care.',
     },
     {
       question: 'Can a herniated disc heal without surgery?',
@@ -138,7 +138,7 @@ export const discHerniationDegenerative: ConditionPageData = {
     {
       question: 'Can degenerative disc disease be reversed?',
       answer:
-        'Disc degeneration itself is a natural part of aging and cannot be fully reversed. However, the symptoms of degenerative disc disease -- pain, stiffness, nerve compression -- can often be significantly improved. Proper spinal alignment and movement help manage the condition and slow further progression.',
+        'Disc degeneration itself is a natural part of aging and cannot be fully reversed. However, the symptoms of degenerative disc disease, including pain, stiffness, and nerve compression, can often be significantly improved. Proper spinal alignment and movement help manage the condition and slow further progression.',
     },
     {
       question: 'How many visits will I need?',

@@ -12,13 +12,13 @@ export const whiplashAutoInjury: ConditionPageData = {
       'Gentle chiropractic care for whiplash and auto accident injuries in Rochester Hills, MI. At Cultivate Wellness, we help you recover without drugs or surgery.',
   },
   intro: [
-    'A car accident can change your life in seconds. Even a low-speed collision can cause significant injury to the spine, muscles, and nervous system -- and symptoms often don\'t appear until days or weeks later. At Cultivate Wellness, we specialize in helping auto accident patients recover fully using gentle, neurologically-focused chiropractic care.',
-    'Whiplash occurs when the head is suddenly thrown forward and backward (or side to side), damaging the delicate structures of the cervical spine. This rapid motion can misalign vertebrae, strain ligaments and muscles, irritate nerves, and create inflammation that leads to pain, stiffness, headaches, and a host of other symptoms. Our gentle approach addresses the underlying spinal injuries without adding more stress to an already traumatized body.',
+    'A car accident can change your life in seconds. Even a low-speed collision can cause significant injury to the spine, muscles, and nervous system, and symptoms often don\'t appear until days or weeks later. At Cultivate Wellness, we specialize in helping auto accident patients recover fully using gentle, neurologically-focused chiropractic care.',
+    'Whiplash occurs when the head is suddenly thrown forward and backward (or side to side), damaging the delicate structures of the cervical spine. This rapid motion can create tension in the spine, strain ligaments and muscles, irritate nerves, and create inflammation that leads to pain, stiffness, headaches, and a host of other symptoms. Our gentle approach addresses the underlying spinal injuries without adding more stress to an already traumatized body.',
   ],
   highlightBox: {
     icon: 'alert-circle',
     label: 'Don\'t Wait for Symptoms',
-    text: 'Many whiplash symptoms don\'t appear until 24-72 hours after an accident -- sometimes even weeks later. Early evaluation and care can prevent acute injuries from becoming chronic problems. If you\'ve been in an accident, get evaluated promptly.',
+    text: 'Many whiplash symptoms don\'t appear until 24-72 hours after an accident, sometimes even weeks later. Early evaluation and care can prevent acute injuries from becoming chronic problems. If you\'ve been in an accident, get evaluated promptly.',
   },
   symptoms: {
     sectionTitle: 'Common Auto Injury Symptoms',
@@ -26,7 +26,7 @@ export const whiplashAutoInjury: ConditionPageData = {
       {
         icon: 'bone',
         title: 'Neck Pain & Stiffness',
-        description: 'The hallmark of whiplash -- pain, tightness, and limited range of motion in the neck.',
+        description: 'The hallmark of whiplash: pain, tightness, and limited range of motion in the neck.',
       },
       {
         icon: 'brain',
@@ -41,7 +41,7 @@ export const whiplashAutoInjury: ConditionPageData = {
       {
         icon: 'zap',
         title: 'Arm Tingling or Numbness',
-        description: 'Nerve compression or irritation from cervical misalignment causing symptoms down the arm.',
+        description: 'Nerve compression or irritation from cervical neurological tension causing symptoms down the arm.',
       },
       {
         icon: 'eye',
@@ -51,7 +51,7 @@ export const whiplashAutoInjury: ConditionPageData = {
       {
         icon: 'flame',
         title: 'Jaw Pain (TMJ)',
-        description: 'The force of impact can misalign the jaw, causing TMJ pain, clicking, or difficulty chewing.',
+        description: 'The force of impact can stress the jaw, causing TMJ pain, clicking, or difficulty chewing.',
       },
       {
         icon: 'moon',
@@ -72,13 +72,13 @@ export const whiplashAutoInjury: ConditionPageData = {
         icon: 'hand',
         title: 'Gentle on Injured Tissues',
         description:
-          'After a car accident, your body is already traumatized. Our gentle, neurologically-focused approach doesn\'t add further stress -- no cracking, no twisting, no forceful manipulation of injured structures.',
+          'After a car accident, your body is already traumatized. Our gentle, neurologically-focused approach doesn\'t add further stress. No cracking, no twisting, no forceful manipulation of injured structures.',
       },
       {
         icon: 'target',
         title: 'Addresses the Root Cause',
         description:
-          'Pain medications mask symptoms but don\'t fix the underlying spinal misalignments and nerve damage. We find and correct the structural and neurological issues causing your symptoms.',
+          'Pain medications mask symptoms but don\'t address the underlying neurological tension and nerve damage. We find and correct the root issues causing your symptoms.',
       },
       {
         icon: 'shield',
@@ -90,7 +90,7 @@ export const whiplashAutoInjury: ConditionPageData = {
         icon: 'trending-up',
         title: 'Documented Care for Claims',
         description:
-          'We provide thorough documentation of your injuries, treatment, and progress -- important for insurance claims and legal proceedings if applicable.',
+          'We provide thorough documentation of your injuries, treatment, and progress, which is important for insurance claims and legal proceedings if applicable.',
       },
     ],
   },
@@ -102,12 +102,12 @@ export const whiplashAutoInjury: ConditionPageData = {
       {
         title: 'Thorough Injury Evaluation',
         description:
-          'We perform a comprehensive examination including range of motion testing, neurological evaluation, and spinal assessment, including INSiGHT scanning to objectively evaluate nervous system function. We identify all areas of injury -- not just where it hurts, since referred pain patterns can be misleading.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension from the accident trauma that your body hasn\'t yet learned it\'s safe to release. This reveals all areas of neurological impact, not just where you feel pain, since referred pain patterns can be misleading.',
       },
       {
         title: 'Gentle, Progressive Care',
         description:
-          'Using our gentle, neurologically-focused approach, we address spinal misalignments and nerve interference without adding stress to injured tissues. Care is adapted at each visit based on how your body is responding.',
+          'Using our gentle, neurologically-focused approach, we address neurological tension and nerve interference without adding stress to injured tissues. Care is adapted at each visit based on how your body is responding.',
       },
       {
         title: 'Full Recovery Support',
@@ -158,7 +158,7 @@ export const whiplashAutoInjury: ConditionPageData = {
     {
       question: 'Can old accident injuries still be helped?',
       answer:
-        'Yes. Even if your accident was months or years ago, chiropractic care can help address lingering misalignments and chronic problems that developed after the initial injury. It\'s never too late to address the underlying cause of persistent post-accident symptoms.',
+        'Yes. Even if your accident was months or years ago, chiropractic care can help address lingering tension patterns and chronic problems that developed after the initial injury. It\'s never too late to address the underlying cause of persistent post-accident symptoms.',
     },
   ],
   relatedConditions: [

@@ -12,7 +12,7 @@ export const pregnancyBackPain: ConditionPageData = {
       'Safe, gentle chiropractic care for back pain during pregnancy in Rochester Hills, MI. At Cultivate Wellness, we provide drug-free relief that supports you and your baby.',
   },
   intro: [
-    'Back pain during pregnancy is incredibly common -- up to 70% of pregnant women experience it. But "common" doesn\'t mean you have to suffer through it. At Cultivate Wellness, we provide safe, gentle, drug-free relief for pregnancy-related back pain that is specifically adapted for the needs of expectant mothers.',
+    'Back pain during pregnancy is incredibly common. Up to 70% of pregnant women experience it. But "common" doesn\'t mean you have to suffer through it. At Cultivate Wellness, we provide safe, gentle, drug-free relief for pregnancy-related back pain that is specifically adapted for the needs of expectant mothers.',
     'As your body changes during pregnancy, your center of gravity shifts forward, hormonal changes loosen ligaments, and your growing baby adds stress to your spine and pelvis. These changes often cause lower back pain, sacroiliac joint pain, round ligament pain, and sciatica. Our gentle, neurologically-focused approach addresses these issues safely and effectively, supporting a more comfortable pregnancy.',
   ],
   highlightBox: {
@@ -92,12 +92,12 @@ export const pregnancyBackPain: ConditionPageData = {
       {
         title: 'Prenatal Evaluation',
         description:
-          'We assess your spinal and pelvic alignment, including INSiGHT scanning to objectively assess nervous system function, identifying areas of misalignment and nerve interference that are contributing to your pain. We consider how your pregnancy stage affects your body mechanics.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from the physical changes of pregnancy, prior injuries, or accumulated life stress that your body hasn\'t yet released. This helps us understand the root of your pregnancy discomfort, not just where you feel pain.',
       },
       {
         title: 'Gentle Adjustments',
         description:
-          'Using Talsky Tonal Chiropractic, we gently correct misalignments. Our approach requires no face-down positioning and is comfortable with your growing belly. Many patients feel relief from their first visit.',
+          'Using Talsky Tonal Chiropractic, we gently reduce neurological tension. Our approach requires no face-down positioning and is comfortable with your growing belly. Many patients feel relief from their first visit.',
       },
       {
         title: 'Ongoing Pregnancy Support',
@@ -143,7 +143,7 @@ export const pregnancyBackPain: ConditionPageData = {
     {
       question: 'Can chiropractic help turn a breech baby?',
       answer:
-        'While chiropractic care does not directly turn babies, the Webster Technique (which we offer) addresses sacral misalignment and pelvic balance. This can reduce constraint on the uterus, giving baby more room to move into an optimal head-down position. See our Webster Technique page for more details.',
+        'While chiropractic care does not directly turn babies, the Webster Technique (which we offer) addresses sacral tension and pelvic balance. This can reduce constraint on the uterus, giving baby more room to move into an optimal head-down position. See our Webster Technique page for more details.',
     },
     {
       question: 'Does insurance cover prenatal chiropractic?',

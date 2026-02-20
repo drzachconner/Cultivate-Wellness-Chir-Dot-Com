@@ -12,8 +12,8 @@ export const sleepDisorders: ConditionPageData = {
       'Natural, drug-free chiropractic support for sleep disorders in Rochester Hills, MI. At Cultivate Wellness, we address the nervous system factors disrupting your sleep.',
   },
   intro: [
-    'Quality sleep is essential for health, healing, and wellbeing -- yet millions struggle with sleep problems. While there are many causes of poor sleep, nervous system dysfunction is often an overlooked contributor. At Cultivate Wellness, we help address the neurological factors that may be keeping you from the rest you need.',
-    'Your body does its most important repair work during sleep. Chronic sleep problems don\'t just make you tired -- they affect your immune system, mental health, weight, cardiovascular health, and virtually every aspect of your wellbeing. By supporting proper nervous system function, we help create the conditions your body needs for deep, restorative sleep.',
+    'Quality sleep is essential for health, healing, and wellbeing, yet millions struggle with sleep problems. While there are many causes of poor sleep, nervous system dysfunction is often an overlooked contributor. At Cultivate Wellness, we help address the neurological factors that may be keeping you from the rest you need.',
+    'Your body does its most important repair work during sleep. Chronic sleep problems don\'t just make you tired. They affect your immune system, mental health, weight, cardiovascular health, and virtually every aspect of your wellbeing. By supporting proper nervous system function, we help create the conditions your body needs for deep, restorative sleep.',
   ],
   highlightBox: {
     icon: 'moon',
@@ -72,7 +72,7 @@ export const sleepDisorders: ConditionPageData = {
         icon: 'heart-pulse',
         title: 'Nervous System Balance',
         description:
-          'Chiropractic care helps shift your nervous system from sympathetic dominance to parasympathetic balance -- essential for your body to relax into quality, restorative sleep.',
+          'Chiropractic care helps shift your nervous system from sympathetic dominance to parasympathetic balance, essential for your body to relax into quality, restorative sleep.',
       },
       {
         icon: 'shield',
@@ -102,12 +102,12 @@ export const sleepDisorders: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We evaluate your spine and nervous system function using INSiGHT scanning technology, including HRV testing that shows your autonomic nervous system balance. This helps us understand whether sympathetic dominance is preventing your body from shifting into sleep mode.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning with HRV testing to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past trauma, chronic stress, or life experiences that your body hasn\'t yet learned it\'s safe to release. This reveals what is keeping your nervous system stuck in "fight or flight" mode and unable to shift into restful sleep.',
       },
       {
         title: 'Gentle, Targeted Adjustments',
         description:
-          'Using our gentle, neurologically-focused approach, we address upper cervical misalignments affecting brainstem and sleep-wake regulation, vagus nerve interference that impacts relaxation, and areas of spinal tension creating nervous system stress -- all without overstimulating the nervous system.',
+          'Using our gentle, neurologically-focused approach, we address upper cervical neurological tension affecting brainstem and sleep-wake regulation, vagus nerve interference that impacts relaxation, and areas of spinal tension creating nervous system stress, all without overstimulating the nervous system.',
       },
       {
         title: 'Progress Tracking & Lifestyle Support',
@@ -133,12 +133,12 @@ export const sleepDisorders: ConditionPageData = {
     {
       question: 'How can a chiropractor help with sleep?',
       answer:
-        'Sleep requires your nervous system to shift into parasympathetic (rest) mode. Spinal misalignments, especially in the upper cervical area, can keep your nervous system stuck in sympathetic (fight or flight) mode. By restoring proper alignment and reducing nervous system interference, chiropractic care supports your body\'s natural ability to relax into deep, restorative sleep.',
+        'Sleep requires your nervous system to shift into parasympathetic (rest) mode. Neurological tension, especially in the upper cervical area, can keep your nervous system stuck in sympathetic (fight or flight) mode. By reducing nervous system interference and restoring proper function, chiropractic care supports your body\'s natural ability to relax into deep, restorative sleep.',
     },
     {
       question: 'Can chiropractic help my child sleep better?',
       answer:
-        'Yes. Sleep problems in children are increasingly common, and chiropractic can help. Birth trauma and childhood falls can create subluxations that affect sleep regulation. Our gentle techniques often produce remarkable improvements in children\'s sleep, from infants who won\'t settle to teens with disrupted sleep patterns.',
+        'Yes. Sleep problems in children are increasingly common, and chiropractic can help. Birth trauma and childhood falls can create neurological tension patterns that affect sleep regulation. Our gentle techniques often produce remarkable improvements in children\'s sleep, from infants who won\'t settle to teens with disrupted sleep patterns.',
     },
     {
       question: 'How quickly will I see sleep improvements?',

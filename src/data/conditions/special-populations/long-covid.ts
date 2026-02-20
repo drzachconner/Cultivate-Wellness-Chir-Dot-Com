@@ -12,7 +12,7 @@ export const longCovid: ConditionPageData = {
       'Gentle chiropractic support for long COVID and post-viral recovery in Rochester Hills, MI. At Cultivate Wellness, we address nervous system dysfunction for better recovery.',
   },
   intro: [
-    'If you\'re dealing with persistent symptoms months after a COVID-19 infection or other viral illness -- fatigue, brain fog, heart palpitations, and more -- you\'re not alone, and you\'re not imagining it. At Cultivate Wellness, we support patients with long COVID and post-viral syndromes by addressing the nervous system dysfunction that plays a central role in these conditions.',
+    'If you\'re dealing with persistent symptoms months after a COVID-19 infection or other viral illness, including fatigue, brain fog, heart palpitations, and more, you\'re not alone, and you\'re not imagining it. At Cultivate Wellness, we support patients with long COVID and post-viral syndromes by addressing the nervous system dysfunction that plays a central role in these conditions.',
     'Long COVID and other post-viral syndromes share a common feature: dysregulation of the autonomic nervous system. The vagus nerve, which regulates heart rate, breathing, digestion, and immune function, often becomes dysfunctional following viral infection. Our gentle, neurologically-focused approach supports autonomic recovery and helps your body find its way back to balance.',
   ],
   highlightBox: {
@@ -97,12 +97,12 @@ export const longCovid: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We evaluate your spinal alignment, autonomic nervous system function, and overall neurological status through a comprehensive assessment, including INSiGHT scanning to objectively evaluate nervous system function.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning with HRV testing to objectively assess your nervous system function and identify where stress is stuck on — tension from the viral illness, autonomic dysregulation, or accumulated life stress that your body hasn\'t yet released. This reveals how deeply post-viral dysfunction has affected your nervous system, not just your individual symptoms.',
       },
       {
         title: 'Gentle Autonomic Support',
         description:
-          'Using Talsky Tonal Chiropractic, we gently address subluxations affecting autonomic function. Care is conservative and carefully paced to avoid triggering symptom flares.',
+          'Using Talsky Tonal Chiropractic, we gently address areas of neurological tension affecting autonomic function. Care is conservative and carefully paced to avoid triggering symptom flares.',
       },
       {
         title: 'Gradual Recovery Support',

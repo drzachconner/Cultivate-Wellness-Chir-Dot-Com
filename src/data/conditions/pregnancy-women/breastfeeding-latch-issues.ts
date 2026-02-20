@@ -12,13 +12,13 @@ export const breastfeedingLatch: ConditionPageData = {
       'Gentle chiropractic care for breastfeeding and latch difficulties. At Cultivate Wellness, we help identify and release nervous system tension affecting your baby\'s ability to nurse.',
   },
   intro: [
-    'Struggling to breastfeed your newborn can be exhausting, frustrating, and heartbreaking. If you\'ve tried everything -- different positions, lactation consultants, nipple shields -- and your baby still struggles to latch or nurse effectively, there may be tension on the nervous system that gentle chiropractic care can address.',
-    'Effective breastfeeding requires coordinated movement of the jaw, tongue, neck, and cranial bones. Birth -- especially long, difficult, or assisted deliveries -- can create "stress stuck on" in the neurospinal system, particularly around the brainstem, that interferes with the nerves involved in sucking, swallowing, and jaw function. Releasing this held tension can be the key to a successful breastfeeding journey.',
+    'Struggling to breastfeed your newborn can be exhausting, frustrating, and heartbreaking. If you\'ve tried everything, from different positions to lactation consultants to nipple shields, and your baby still struggles to latch or nurse effectively, there may be tension on the nervous system that gentle chiropractic care can address.',
+    'Effective breastfeeding requires coordinated movement of the jaw, tongue, neck, and cranial bones. Birth, especially long, difficult, or assisted deliveries, can create "stress stuck on" in the neurospinal system, particularly around the brainstem, that interferes with the nerves involved in sucking, swallowing, and jaw function. Releasing this held tension can be the key to a successful breastfeeding journey.',
   ],
   highlightBox: {
     icon: 'heart',
     label: 'Important Reminder',
-    text: 'Breastfeeding shouldn\'t hurt. If nursing is painful or your baby is struggling, there\'s often a fixable reason. Birth can leave "stress stuck on" in the nervous system, creating held tension patterns that interfere with the nerves needed for effective nursing. Don\'t give up -- let us help identify what\'s getting in the way.',
+    text: 'Breastfeeding shouldn\'t hurt. If nursing is painful or your baby is struggling, there\'s often a fixable reason. Birth can leave "stress stuck on" in the nervous system, creating held tension patterns that interfere with the nerves needed for effective nursing. Don\'t give up. Let us help identify what\'s getting in the way.',
   },
   symptoms: {
     sectionTitle: 'Signs Your Baby May Have Nervous System Tension Affecting Nursing',
@@ -46,7 +46,7 @@ export const breastfeedingLatch: ConditionPageData = {
       {
         icon: 'ear',
         title: 'Clicking Sounds',
-        description: 'Makes clicking noises while nursing from repeatedly breaking suction -- a sign of jaw or tongue dysfunction.',
+        description: 'Makes clicking noises while nursing from repeatedly breaking suction, a sign of jaw or tongue dysfunction.',
       },
       {
         icon: 'moon',
@@ -102,12 +102,12 @@ export const breastfeedingLatch: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We evaluate your baby\'s nervous system using INSiGHT scans and assess jaw, neck, and cranial mobility. We take a detailed history of the birth and feeding patterns to understand where "stress stuck on" may be creating tension that\'s contributing to the difficulty.',
+          'We take a thorough history of your baby\'s birth and feeding patterns, followed by a gentle examination and INSiGHT neurological scanning to identify where stress is stuck on in your baby\'s nervous system — tension from the birth process or early life that the body hasn\'t yet learned it\'s safe to release. This reveals how nervous system interference may be affecting the jaw, neck, and cranial mobility needed for effective nursing.',
       },
       {
         title: 'Ultra-Gentle Adjustments',
         description:
-          'Using lighter pressure than you\'d use to check a ripe tomato, we address cervical misalignments, jaw tension, and cranial restrictions while releasing held tension patterns in the neurospinal system. There is no cracking or popping -- ever. Baby often sleeps through adjustments.',
+          'Using lighter pressure than you\'d use to check a ripe tomato, we address cervical tension, jaw tension, and cranial restrictions while releasing held tension patterns in the neurospinal system. There is no cracking or popping. Baby often sleeps through adjustments.',
       },
       {
         title: 'Team Coordination & Follow-Up',
@@ -133,7 +133,7 @@ export const breastfeedingLatch: ConditionPageData = {
     {
       question: 'How gentle is the treatment for newborns?',
       answer:
-        'Extremely gentle. The pressure used is lighter than what you\'d use to check a ripe tomato. There is no cracking or forceful manipulation -- ever. Baby often sleeps through the adjustment. Parents stay with their baby the entire time and care is adapted to baby\'s comfort level.',
+        'Extremely gentle. The pressure used is lighter than what you\'d use to check a ripe tomato. There is no cracking or forceful manipulation. Baby often sleeps through the adjustment. Parents stay with their baby the entire time and care is adapted to baby\'s comfort level.',
     },
     {
       question: 'How does chiropractic help with tongue tie?',
@@ -153,7 +153,7 @@ export const breastfeedingLatch: ConditionPageData = {
     {
       question: 'When should I bring my baby in?',
       answer:
-        'As soon as you notice feeding difficulties. Newborns are welcome at any age -- we see babies as young as hours old. The sooner nervous system tension is addressed, the sooner breastfeeding can improve. Don\'t wait until you\'re at the point of giving up.',
+        'As soon as you notice feeding difficulties. Newborns are welcome at any age. We see babies as young as hours old. The sooner nervous system tension is addressed, the sooner breastfeeding can improve. Don\'t wait until you\'re at the point of giving up.',
     },
   ],
   relatedConditions: [

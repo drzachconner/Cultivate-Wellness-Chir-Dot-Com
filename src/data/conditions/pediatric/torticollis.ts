@@ -12,7 +12,7 @@ export const torticollis: ConditionPageData = {
       'Gentle chiropractic care for infant torticollis (wry neck). At Cultivate Wellness, we use ultra-gentle techniques to help your baby move freely and develop properly.',
   },
   intro: [
-    'Is your baby\'s head always tilted to one side? Do they have trouble turning their head both ways? Your baby may have torticollis -- a common condition that responds remarkably well to gentle chiropractic care. At Cultivate Wellness, we specialize in helping infants with torticollis using extremely gentle techniques.',
+    'Is your baby\'s head always tilted to one side? Do they have trouble turning their head both ways? Your baby may have torticollis, a common condition that responds remarkably well to gentle chiropractic care. At Cultivate Wellness, we specialize in helping infants with torticollis using extremely gentle techniques.',
     'Torticollis (also called "wry neck") is a condition where a baby\'s neck muscles are tight or shortened on one side, causing the head to tilt in one direction while the chin points the other way. It is one of the most common musculoskeletal conditions in infants, often caused by birth trauma, in-utero positioning, breech presentation, or C-section delivery.',
   ],
   highlightBox: {
@@ -62,7 +62,7 @@ export const torticollis: ConditionPageData = {
         icon: 'target',
         title: 'Addresses the Root Cause',
         description:
-          'While stretching exercises only address muscle tightness, chiropractic care addresses the underlying misalignment in the upper cervical spine that is causing the muscle to guard and tighten.',
+          'While stretching exercises only address muscle tightness, chiropractic care addresses the underlying neurological tension in the upper cervical spine that is causing the muscle to guard and tighten.',
       },
       {
         icon: 'zap',
@@ -74,7 +74,7 @@ export const torticollis: ConditionPageData = {
         icon: 'hand',
         title: 'Ultra-Gentle Approach',
         description:
-          'Fingertip pressure only -- about the pressure you\'d use to check a ripe tomato. No cracking or popping, ever. Many babies fall asleep during adjustments.',
+          'Fingertip pressure only, about the pressure you\'d use to check a ripe tomato. No cracking or popping, ever. Many babies fall asleep during adjustments.',
       },
       {
         icon: 'brain',
@@ -92,12 +92,12 @@ export const torticollis: ConditionPageData = {
       {
         title: 'Thorough Evaluation',
         description:
-          'We take a detailed health history, examine your baby\'s neck mobility, muscle tone, and spinal alignment, and assess for any associated conditions like plagiocephaly or breastfeeding difficulties.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning (if age-appropriate) to objectively assess your baby\'s nervous system function and identify where stress is stuck on — tension from the birth process, in-utero positioning, or delivery that the body hasn\'t yet learned it\'s safe to release. We also assess for associated conditions like plagiocephaly or breastfeeding difficulties.',
       },
       {
         title: 'Gentle Adjustments',
         description:
-          'Using our gentle, neurologically-focused approach, we address the underlying cervical misalignment. We work at your baby\'s pace -- you\'re with your baby the entire time, and baby often sleeps right through it.',
+          'Using our gentle, neurologically-focused approach, we address the underlying cervical neurological tension. We work at your baby\'s pace. You\'re with your baby the entire time, and baby often sleeps right through it.',
       },
       {
         title: 'Home Care & Coordination',
@@ -123,17 +123,17 @@ export const torticollis: ConditionPageData = {
     {
       question: 'Is chiropractic safe for my baby\'s torticollis?',
       answer:
-        'Yes. Our doctors use incredibly gentle techniques designed specifically for infants. The pressure is about what you\'d use to check a ripe tomato -- lighter than light. There is no cracking or popping. Babies often fall asleep during their adjustments. Parents are with their baby the entire time.',
+        'Yes. Our doctors use incredibly gentle techniques designed specifically for infants. The pressure is about what you\'d use to check a ripe tomato, lighter than light. There is no cracking or popping. Babies often fall asleep during their adjustments. Parents are with their baby the entire time.',
     },
     {
       question: 'What causes torticollis?',
       answer:
-        'Torticollis is commonly caused by birth trauma (difficult delivery, vacuum or forceps use, prolonged labor), in-utero positioning (cramped quarters), breech presentation, multiple births, and C-section delivery. Any of these can create tightness or misalignment in the upper cervical spine.',
+        'Torticollis is commonly caused by birth trauma (difficult delivery, vacuum or forceps use, prolonged labor), in-utero positioning (cramped quarters), breech presentation, multiple births, and C-section delivery. Any of these can create tightness or neurological tension in the upper cervical spine.',
     },
     {
       question: 'How is chiropractic different from stretching exercises?',
       answer:
-        'Stretching exercises address the muscle tightness but not the underlying cause. In many cases, the muscle is tight because there is a spinal misalignment causing it to guard. Chiropractic addresses that root cause, which is why it often works faster and more completely. The two approaches work well together.',
+        'Stretching exercises address the muscle tightness but not the underlying cause. In many cases, the muscle is tight because there is neurological tension causing it to guard. Chiropractic addresses that root cause, which is why it often works faster and more completely. The two approaches work well together.',
     },
     {
       question: 'How many visits will my baby need?',

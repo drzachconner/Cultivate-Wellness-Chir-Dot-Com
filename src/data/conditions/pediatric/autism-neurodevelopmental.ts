@@ -13,7 +13,7 @@ export const autismNeurodevelopmental: ConditionPageData = {
   },
   intro: [
     'At Cultivate Wellness, we have deep expertise and genuine passion for caring for children and adults with autism spectrum disorder (ASD), sensory processing differences, and other neurodevelopmental conditions. Our gentle, neurologically-focused approach helps optimize nervous system function, supporting better regulation, communication, and quality of life.',
-    'Autism and neurodevelopmental conditions are fundamentally neurological in nature. While chiropractic care does not "treat" or "cure" autism, it can profoundly support nervous system function. The nervous system controls everything -- sensory processing, motor control, digestion, sleep, emotional regulation, and immune function. When spinal misalignments create interference, they disrupt the flow of information between brain and body. Removing that interference supports better overall function.',
+    'Autism and neurodevelopmental conditions are fundamentally neurological in nature. While chiropractic care does not "treat" or "cure" autism, it can profoundly support nervous system function. The nervous system controls everything: sensory processing, motor control, digestion, sleep, emotional regulation, and immune function. When neurological tension creates interference, it disrupts the flow of information between brain and body. Removing that interference supports better overall function.',
   ],
   highlightBox: {
     icon: 'brain',
@@ -74,13 +74,13 @@ export const autismNeurodevelopmental: ConditionPageData = {
         icon: 'hand',
         title: 'Ultra-Gentle Techniques',
         description:
-          'Our gentle, neurologically-focused approach is exceptionally light -- perfect for children who are touch-sensitive or have had negative healthcare experiences.',
+          'Our gentle, neurologically-focused approach is exceptionally light, perfect for children who are touch-sensitive or have had negative healthcare experiences.',
       },
       {
         icon: 'scan-line',
         title: 'Objective Testing',
         description:
-          'Our INSiGHT scanning technology provides objective measurements of nervous system function -- no guesswork.',
+          'Our INSiGHT scanning technology provides objective measurements of nervous system function, with no guesswork.',
       },
     ],
   },
@@ -92,12 +92,12 @@ export const autismNeurodevelopmental: ConditionPageData = {
       {
         title: 'Getting Comfortable First',
         description:
-          'We listen to what your child is communicating -- verbal or non-verbal -- and adjust our approach accordingly. It\'s okay if the first visit is just getting comfortable in our space. We can do "practice visits" to build familiarity before any adjusting.',
+          'We listen to what your child is communicating, verbal or non-verbal, and adjust our approach accordingly. It\'s okay if the first visit is just getting comfortable in our space. We can do "practice visits" to build familiarity before any adjusting.',
       },
       {
         title: 'Comprehensive Neurological Assessment',
         description:
-          'We begin with a detailed consultation about your child\'s history and current challenges, followed by a gentle examination and non-invasive neurological testing at your child\'s pace. We provide a clear explanation of findings and recommendations.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning (at your child\'s pace) to objectively assess your child\'s nervous system function and identify where stress is stuck on — tension patterns from birth, early development, or sensory overwhelm that the body hasn\'t yet learned it\'s safe to release. This reveals the neurological patterns driving your child\'s challenges, not just the behaviors you observe.',
       },
       {
         title: 'Gentle, Precise Adjustments',
@@ -128,7 +128,7 @@ export const autismNeurodevelopmental: ConditionPageData = {
     {
       question: 'Is chiropractic safe for children with autism?',
       answer:
-        'Yes. Our doctors use extremely gentle techniques that are specifically adapted for children with sensory sensitivities. There is no cracking or forceful manipulation. Our gentle, patient approach and deep understanding of sensory sensitivities make us exceptionally effective with this population -- including many children who have struggled with other healthcare experiences.',
+        'Yes. Our doctors use extremely gentle techniques that are specifically adapted for children with sensory sensitivities. There is no cracking or forceful manipulation. Our gentle, patient approach and deep understanding of sensory sensitivities make us exceptionally effective with this population, including many children who have struggled with other healthcare experiences.',
     },
     {
       question: 'How do you handle children who are sensitive to touch?',
@@ -143,7 +143,7 @@ export const autismNeurodevelopmental: ConditionPageData = {
     {
       question: 'What should I bring or prepare for our first visit?',
       answer:
-        'Let us know about any sensory sensitivities in advance. Bring comfort items if your child has them. Try to visit at a time of day when your child is typically at their best. Siblings are welcome. It\'s okay if the first visit is just getting comfortable -- building trust comes first.',
+        'Let us know about any sensory sensitivities in advance. Bring comfort items if your child has them. Try to visit at a time of day when your child is typically at their best. Siblings are welcome. It\'s okay if the first visit is just getting comfortable. Building trust comes first.',
     },
   ],
   relatedConditions: [

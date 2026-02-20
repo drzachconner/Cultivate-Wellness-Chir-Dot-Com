@@ -12,13 +12,13 @@ export const developmentalDelays: ConditionPageData = {
       'Gentle chiropractic care to support children with developmental delays in Rochester Hills, MI. At Cultivate Wellness, we help optimize nervous system function for better milestone achievement.',
   },
   intro: [
-    'When your child isn\'t meeting developmental milestones on time, it can be an anxious and confusing experience. At Cultivate Wellness, we support children with developmental delays by optimizing the nervous system that drives every aspect of growth -- from rolling over and crawling to walking, talking, and social engagement.',
+    'When your child isn\'t meeting developmental milestones on time, it can be an anxious and confusing experience. At Cultivate Wellness, we support children with developmental delays by optimizing the nervous system that drives every aspect of growth, from rolling over and crawling to walking, talking, and social engagement.',
     'Developmental delays can involve motor skills, speech and language, cognitive abilities, or social-emotional development. While chiropractic care does not treat developmental delays directly, it addresses nervous system interference that may be limiting your child\'s ability to reach their full potential. Our gentle, neurologically-focused approach works alongside your child\'s medical team, therapists, and specialists.',
   ],
   highlightBox: {
     icon: 'brain',
     label: 'The Nervous System Connection',
-    text: 'Every developmental milestone -- from lifting the head to speaking first words -- is driven by the nervous system. When there is interference to nervous system function, particularly in the upper cervical spine, it can affect the brain-body communication that drives development.',
+    text: 'Every developmental milestone, from lifting the head to speaking first words, is driven by the nervous system. When there is interference to nervous system function, particularly in the upper cervical spine, it can affect the brain-body communication that drives development.',
   },
   symptoms: {
     sectionTitle: 'Types of Developmental Delays We Support',
@@ -92,12 +92,12 @@ export const developmentalDelays: ConditionPageData = {
       {
         title: 'Comprehensive Evaluation',
         description:
-          'We assess your child\'s spinal alignment, nervous system function, primitive reflex integration, muscle tone, and overall development through a thorough neurological evaluation, including INSiGHT scanning to objectively measure nervous system function.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your child\'s nervous system function and identify where stress is stuck on — tension patterns from birth, early life experiences, or developmental challenges that the body hasn\'t yet learned it\'s safe to release. This reveals the neurological interference that may be limiting your child\'s ability to reach their milestones.',
       },
       {
         title: 'Gentle, Neurologically-Focused Adjustments',
         description:
-          'Using Talsky Tonal Chiropractic, we address subluxations that interfere with nervous system function. Our approach is gentle, precise, and adapted to your child\'s needs.',
+          'Using Talsky Tonal Chiropractic, we address areas of neurological tension that interfere with nervous system function. Our approach is gentle, precise, and adapted to your child\'s needs.',
       },
       {
         title: 'Collaborative Care',
@@ -131,9 +131,9 @@ export const developmentalDelays: ConditionPageData = {
         'Yes. Our doctors use extraordinarily gentle techniques that are adapted to each child\'s age, size, and needs. There is no cracking or forceful manipulation. The techniques we use are safe for children of all ages and developmental levels.',
     },
     {
-      question: 'How does a spinal misalignment affect development?',
+      question: 'How does neurological tension affect development?',
       answer:
-        'The nervous system controls and coordinates every function in the body, including development. When spinal misalignments create interference in nerve signaling -- particularly in the upper cervical spine near the brainstem -- it can affect motor control, sensory processing, autonomic regulation, and brain-body communication.',
+        'The nervous system controls and coordinates every function in the body, including development. When neurological tension creates interference in nerve signaling, particularly in the upper cervical spine near the brainstem, it can affect motor control, sensory processing, autonomic regulation, and brain-body communication.',
     },
     {
       question: 'Will chiropractic care replace my child\'s other therapies?',

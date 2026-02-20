@@ -12,13 +12,13 @@ export const seizureDisorders: ConditionPageData = {
       'Gentle, complementary chiropractic support for seizure disorders and epilepsy in Rochester Hills, MI. At Cultivate Wellness, our team optimizes nervous system function alongside medical care.',
   },
   intro: [
-    'Seizure disorders, including epilepsy, are neurological conditions characterized by abnormal electrical activity in the brain. At Cultivate Wellness, we offer gentle, supportive care that focuses on optimizing nervous system function -- a complementary approach that many families find helpful alongside their medical treatment.',
-    'The premise behind chiropractic support for seizure disorders is straightforward: the spine protects the spinal cord, a direct extension of the brain, and spinal misalignments can affect nerve function and potentially influence neurological activity. Improved nervous system communication may support overall neurological health, and reducing physical stress on the nervous system may help lower seizure thresholds for some patients.',
+    'Seizure disorders, including epilepsy, are neurological conditions characterized by abnormal electrical activity in the brain. At Cultivate Wellness, we offer gentle, supportive care that focuses on optimizing nervous system function, a complementary approach that many families find helpful alongside their medical treatment.',
+    'The premise behind chiropractic support for seizure disorders is straightforward: the spine protects the spinal cord, a direct extension of the brain, and neurological tension in the spine can affect nerve function and potentially influence neurological activity. Improved nervous system communication may support overall neurological health, and reducing physical stress on the nervous system may help lower seizure thresholds for some patients.',
   ],
   highlightBox: {
     icon: 'alert-circle',
     label: 'Important Medical Disclaimer',
-    text: 'Seizure disorders require proper medical diagnosis and treatment. Chiropractic care does NOT replace anti-seizure medications or neurological care. We work alongside your neurologist as a supportive, complementary therapy. Never discontinue medications without medical supervision.',
+    text: 'Seizure disorders require proper medical diagnosis and treatment. Our goal is not to treat seizures, but to restore normal nervous system function — supporting your body alongside your neurologist and medical team. Never discontinue medications without medical supervision.',
   },
   symptoms: {
     sectionTitle: 'Seizure Types We Support',
@@ -92,12 +92,12 @@ export const seizureDisorders: ConditionPageData = {
       {
         title: 'Thorough Evaluation & Safety Planning',
         description:
-          'We begin with a comprehensive assessment of your spine and nervous system function, including INSiGHT scanning, detailed health history, and communication with your neurologist. We take extra safety precautions including careful monitoring during and after adjustments.',
+          'We begin with a comprehensive evaluation including INSiGHT neurological scanning to objectively assess nervous system function and identify where stress is stuck on — tension patterns from past trauma, injury, or accumulated stress that the body hasn\'t yet learned it\'s safe to release. We also coordinate with your neurologist and take extra safety precautions throughout care.',
       },
       {
         title: 'Extremely Gentle Adjustments',
         description:
-          'We use our gentlest techniques with no forceful manipulation that could potentially trigger seizure activity in sensitive patients. Our gentle, neurologically-focused approach addresses upper cervical misalignments, areas of spinal tension, and patterns of stored stress.',
+          'We use our gentlest techniques with no forceful manipulation that could potentially trigger seizure activity in sensitive patients. Our gentle, neurologically-focused approach addresses upper cervical neurological tension, areas of spinal stress, and patterns of stored tension.',
       },
       {
         title: 'Ongoing Monitoring & Collaboration',

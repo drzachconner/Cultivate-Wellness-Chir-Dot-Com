@@ -12,13 +12,13 @@ export const speechLanguageDelays: ConditionPageData = {
       'Gentle chiropractic care to support children with speech and language delays in Rochester Hills, MI. At Cultivate Wellness, we optimize nervous system function for better communication.',
   },
   intro: [
-    'When your child struggles to communicate -- whether they\'re late to talk, hard to understand, or having difficulty processing language -- it affects every aspect of their life. At Cultivate Wellness, we support children with speech and language delays by addressing the nervous system function that underlies all communication.',
-    'Speech and language depend on complex coordination between the brain, cranial nerves, muscles of the mouth and throat, and the sensory systems. When there is interference in the nervous system -- particularly in the upper cervical spine and brainstem area -- it can affect the neurological foundation that speech and language development requires. Our gentle approach works alongside your child\'s speech therapist to support better outcomes.',
+    'When your child struggles to communicate, whether they\'re late to talk, hard to understand, or having difficulty processing language, it affects every aspect of their life. At Cultivate Wellness, we support children with speech and language delays by addressing the nervous system function that underlies all communication.',
+    'Speech and language depend on complex coordination between the brain, cranial nerves, muscles of the mouth and throat, and the sensory systems. When there is interference in the nervous system, particularly in the upper cervical spine and brainstem area, it can affect the neurological foundation that speech and language development requires. Our gentle approach works alongside your child\'s speech therapist to support better outcomes.',
   ],
   highlightBox: {
     icon: 'brain',
     label: 'The Brainstem Connection',
-    text: 'The cranial nerves that control the muscles of the tongue, lips, jaw, palate, and throat all originate in the brainstem, which sits directly above the upper cervical spine. Misalignment in this critical area can affect the nerve signaling needed for clear speech.',
+    text: 'The cranial nerves that control the muscles of the tongue, lips, jaw, palate, and throat all originate in the brainstem, which sits directly above the upper cervical spine. Neurological tension in this critical area can affect the nerve signaling needed for clear speech.',
   },
   symptoms: {
     sectionTitle: 'Communication Challenges We Support',
@@ -92,12 +92,12 @@ export const speechLanguageDelays: ConditionPageData = {
       {
         title: 'Neurological Assessment',
         description:
-          'We evaluate your child\'s spinal alignment, particularly the upper cervical spine and its relationship to brainstem and cranial nerve function, including INSiGHT scanning to objectively measure nervous system function. Our thorough neurological evaluation reveals nervous system balance and identifies areas of interference.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your child\'s nervous system function and identify where stress is stuck on — tension patterns from birth, early development, or accumulated life stress that the body hasn\'t yet learned it\'s safe to release. This reveals the neurological interference that may be limiting your child\'s communication development.',
       },
       {
         title: 'Gentle, Targeted Adjustments',
         description:
-          'Using Talsky Tonal Chiropractic, we gently address subluxations in the upper cervical spine and other areas affecting nervous system function. Our approach is precise and comfortable.',
+          'Using Talsky Tonal Chiropractic, we gently address areas of neurological tension in the upper cervical spine and other areas affecting nervous system function. Our approach is precise and comfortable.',
       },
       {
         title: 'Progress Monitoring & Collaboration',
@@ -123,12 +123,12 @@ export const speechLanguageDelays: ConditionPageData = {
     {
       question: 'Can chiropractic care teach my child to talk?',
       answer:
-        'No. Chiropractic care does not teach speech or language skills -- that\'s the role of a speech-language pathologist. What chiropractic care does is optimize the nervous system function that underlies the ability to develop speech and language. Many parents report that their children begin making faster progress in speech therapy after starting chiropractic care.',
+        'No. Chiropractic care does not teach speech or language skills. That\'s the role of a speech-language pathologist. What chiropractic care does is optimize the nervous system function that underlies the ability to develop speech and language. Many parents report that their children begin making faster progress in speech therapy after starting chiropractic care.',
     },
     {
       question: 'How does the spine affect speech?',
       answer:
-        'The cranial nerves that control the tongue, lips, jaw, palate, and throat originate in the brainstem, which sits directly above the upper cervical spine (C1-C2). Misalignment in this area can create interference in the nerve signaling needed for speech production and language processing.',
+        'The cranial nerves that control the tongue, lips, jaw, palate, and throat originate in the brainstem, which sits directly above the upper cervical spine (C1-C2). Neurological tension in this area can create interference in the nerve signaling needed for speech production and language processing.',
     },
     {
       question: 'Is this safe for toddlers and young children?',

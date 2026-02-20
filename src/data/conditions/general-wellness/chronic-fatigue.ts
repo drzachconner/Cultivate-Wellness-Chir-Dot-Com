@@ -18,7 +18,7 @@ export const chronicFatigue: ConditionPageData = {
   highlightBox: {
     icon: 'heart',
     label: 'You Are Not Imagining It',
-    text: 'Chronic fatigue is real, and it is not "just" being tired. If your energy levels are affecting your daily life, you deserve answers and support -- not dismissal. We take your symptoms seriously.',
+    text: 'Chronic fatigue is real, and it is not "just" being tired. If your energy levels are affecting your daily life, you deserve answers and support, not dismissal. We take your symptoms seriously.',
   },
   symptoms: {
     sectionTitle: 'Common Fatigue Symptoms',
@@ -92,7 +92,7 @@ export const chronicFatigue: ConditionPageData = {
       {
         title: 'Nervous System Assessment',
         description:
-          'INSiGHT scanning including Heart Rate Variability (HRV) testing to objectively measure your nervous system\'s stress load and recovery capacity. This gives us a clear picture of where your nervous system stands and guides our care plan.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning with Heart Rate Variability (HRV) testing to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from illness, past trauma, or accumulated life stress that your body hasn\'t yet learned it\'s safe to release. This reveals the nervous system burden draining your energy, not just where you feel tired.',
       },
       {
         title: 'Gentle, Paced Corrections',
@@ -128,7 +128,7 @@ export const chronicFatigue: ConditionPageData = {
     {
       question: 'How long before I start feeling better?',
       answer:
-        'Chronic conditions take time to improve -- expect weeks to months for meaningful changes. Some patients notice subtle improvements early, while for others it takes longer. We will track your progress objectively and adjust your care plan as needed. Healing is not always linear.',
+        'Chronic conditions take time to improve. Expect weeks to months for meaningful changes. Some patients notice subtle improvements early, while for others it takes longer. We will track your progress objectively and adjust your care plan as needed. Healing is not always linear.',
     },
     {
       question: 'Will the adjustments make me more tired at first?',

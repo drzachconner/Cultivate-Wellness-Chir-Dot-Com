@@ -18,7 +18,7 @@ export const pandasPans: ConditionPageData = {
   highlightBox: {
     icon: 'alert-circle',
     label: 'Important Note',
-    text: 'PANDAS and PANS require medical diagnosis and treatment. Chiropractic care is supportive therapy that works alongside your child\'s medical team -- it does not replace medical care for these conditions.',
+    text: 'PANDAS and PANS require proper medical diagnosis and treatment. Our goal is not to treat these conditions, but to restore normal nervous system function — supporting your child\'s ability to heal alongside their medical team.',
   },
   symptoms: {
     sectionTitle: 'Common Signs & Symptoms',
@@ -102,7 +102,7 @@ export const pandasPans: ConditionPageData = {
       {
         title: 'Comprehensive Neurological Assessment',
         description:
-          'We begin with a thorough evaluation including detailed symptom history, INSiGHT scanning technology to objectively measure nervous system function, and assessment of the upper cervical spine, cranial bones, and areas affecting vagal tone.',
+          'We begin with a thorough evaluation including INSiGHT neurological scanning to objectively assess your child\'s nervous system function and identify where stress is stuck on — tension patterns from infection, immune response, or early life experiences that the body hasn\'t yet learned it\'s safe to release. This reveals the neurological burden driving your child\'s symptoms, not just the behaviors you see.',
       },
       {
         title: 'Extremely Gentle Adjustments',
