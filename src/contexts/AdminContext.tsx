@@ -57,7 +57,7 @@ export function AdminProvider({ children }: { children: ReactNode }) {
 
   // Rehydrate auth from storage
   useEffect(() => {
-    const stored = localStorage.getItem('admin_auth') || sessionStorage.getItem('admin_auth');
+    const stored = sessionStorage.getItem('admin_auth');
     if (stored) {
       setPassword(stored);
       setIsAuthenticated(true);
@@ -110,7 +110,6 @@ export function AdminProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const signOut = useCallback(() => {
-    localStorage.removeItem('admin_auth');
     sessionStorage.removeItem('admin_auth');
     setIsAuthenticated(false);
     setPassword(null);
