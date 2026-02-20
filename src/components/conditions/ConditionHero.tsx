@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ChevronRight, ChevronDown, Home } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 import { getGroupedConditions } from '../../data/conditions';
@@ -13,7 +13,6 @@ interface ConditionHeroProps {
 export default function ConditionHero({ title, subtitle, image, breadcrumbLabel }: ConditionHeroProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const navigate = useNavigate();
   const groups = getGroupedConditions();
 
   useEffect(() => {
@@ -66,19 +65,13 @@ export default function ConditionHero({ title, subtitle, image, breadcrumbLabel 
                   <div className="max-h-64 overflow-y-auto">
                     {groups.map((group) => (
                       <div key={group.category}>
-                        <button
-                          onClick={() => {
-                            setIsOpen(false);
-                            navigate(`/conditions#${group.category}`);
-                            setTimeout(() => {
-                              const el = document.getElementById(group.category);
-                              if (el) el.scrollIntoView({ behavior: 'smooth' });
-                            }, 150);
-                          }}
-                          className="block w-full text-left px-4 py-1.5 text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50 hover:text-primary-dark hover:bg-gray-100 transition-colors cursor-pointer"
+                        <Link
+                          to={`/conditions#${group.category}`}
+                          onClick={() => setIsOpen(false)}
+                          className="block px-4 py-1.5 text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50 hover:text-primary-dark hover:bg-gray-100 transition-colors"
                         >
                           {group.label}
-                        </button>
+                        </Link>
                         {group.conditions.map((c) => (
                           <Link
                             key={c.slug}
