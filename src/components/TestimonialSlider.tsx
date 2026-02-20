@@ -1,3 +1,4 @@
+import { useRef, useCallback, useEffect, useState } from 'react';
 import { Star } from 'lucide-react';
 import { SITE } from '../data/site';
 import AnimateOnScroll from './AnimateOnScroll';
@@ -6,6 +7,72 @@ export default function TestimonialSlider() {
   const testimonials = SITE.testimonials;
   // Duplicate for seamless infinite scroll
   const doubled = [...testimonials, ...testimonials];
+
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
+  const dragStart = useRef({ x: 0, scrollLeft: 0 });
+
+  // When hovering, pause animation and switch to scroll-based positioning
+  // On mouse leave, resume animation from current visual position
+  const syncScrollToAnimation = useCallback(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    // Get computed transform to find current animation offset
+    const style = getComputedStyle(track);
+    const matrix = new DOMMatrix(style.transform);
+    const currentX = matrix.m41; // translateX value
+    // Convert animation offset to scroll position
+    track.parentElement!.scrollLeft = -currentX;
+  }, []);
+
+  const handleMouseEnter = useCallback(() => {
+    setIsHovering(true);
+    syncScrollToAnimation();
+  }, [syncScrollToAnimation]);
+
+  const handleMouseLeave = useCallback(() => {
+    setIsHovering(false);
+    setIsDragging(false);
+  }, []);
+
+  const handlePointerDown = useCallback((e: React.PointerEvent) => {
+    if (!isHovering) return;
+    const container = trackRef.current?.parentElement;
+    if (!container) return;
+    setIsDragging(true);
+    dragStart.current = { x: e.clientX, scrollLeft: container.scrollLeft };
+    (e.target as HTMLElement).setPointerCapture(e.pointerId);
+  }, [isHovering]);
+
+  const handlePointerMove = useCallback((e: React.PointerEvent) => {
+    if (!isDragging) return;
+    const container = trackRef.current?.parentElement;
+    if (!container) return;
+    const dx = e.clientX - dragStart.current.x;
+    container.scrollLeft = dragStart.current.scrollLeft - dx;
+  }, [isDragging]);
+
+  const handlePointerUp = useCallback(() => {
+    setIsDragging(false);
+  }, []);
+
+  // Infinite scroll loop: when scrolled past halfway, jump back
+  useEffect(() => {
+    if (!isHovering) return;
+    const container = trackRef.current?.parentElement;
+    if (!container) return;
+    const handleScroll = () => {
+      const halfWidth = container.scrollWidth / 2;
+      if (container.scrollLeft >= halfWidth) {
+        container.scrollLeft -= halfWidth;
+      } else if (container.scrollLeft <= 0) {
+        container.scrollLeft += halfWidth;
+      }
+    };
+    container.addEventListener('scroll', handleScroll);
+    return () => container.removeEventListener('scroll', handleScroll);
+  }, [isHovering]);
 
   return (
     <section className="py-16 bg-gray-50 overflow-hidden">
@@ -30,9 +97,21 @@ export default function TestimonialSlider() {
         </AnimateOnScroll>
       </div>
 
-      {/* Marquee track */}
-      <div className="group relative">
-        <div className="flex animate-marquee group-hover:[animation-play-state:paused] w-max">
+      {/* Marquee track — auto-scrolls, drag-scrollable on hover */}
+      <div
+        className={`relative overflow-x-hidden ${isHovering ? 'overflow-x-auto scrollbar-hide' : ''}`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        onPointerDown={handlePointerDown}
+        onPointerMove={handlePointerMove}
+        onPointerUp={handlePointerUp}
+        style={{ cursor: isHovering ? (isDragging ? 'grabbing' : 'grab') : 'default' }}
+      >
+        <div
+          ref={trackRef}
+          className={`flex w-max ${isHovering ? '' : 'animate-marquee'}`}
+          style={{ userSelect: isDragging ? 'none' : 'auto' }}
+        >
           {doubled.map((testimonial, i) => (
             <div
               key={`${testimonial.id}-${i}`}
