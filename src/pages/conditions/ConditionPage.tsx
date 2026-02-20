@@ -14,6 +14,40 @@ import ConditionFAQ from '../../components/conditions/ConditionFAQ';
 import RelatedConditions from '../../components/conditions/RelatedConditions';
 import { resolveIcon } from '../../data/conditions/icon-map';
 
+/** Pick a different image in the same category so hero and FAQ never match. */
+const FAQ_ALT_IMAGE: Record<string, string> = {
+  // Baby — cycle to a different baby
+  '/images/hero/baby-1.webp': '/images/hero/baby-2.webp',
+  '/images/hero/baby-2.webp': '/images/hero/baby-3.webp',
+  '/images/hero/baby-3.webp': '/images/hero/baby-1.webp',
+  '/images/hero/baby-4.webp': '/images/hero/baby-5.webp',
+  '/images/hero/baby-5.webp': '/images/hero/baby-6.webp',
+  '/images/hero/baby-6.webp': '/images/hero/baby-4.webp',
+  // Family — cycle within family shots
+  '/images/hero/family-beach.webp': '/images/hero/family-embrace.webp',
+  '/images/hero/family-embrace.webp': '/images/hero/family-forest.webp',
+  '/images/hero/family-forest.webp': '/images/hero/family-park-sunset.webp',
+  '/images/hero/family-hearts-beach.webp': '/images/hero/family-running.webp',
+  '/images/hero/family-multigenerational.webp': '/images/hero/family-hearts-beach.webp',
+  '/images/hero/family-park-sunset.webp': '/images/hero/family-walking.webp',
+  '/images/hero/family-running.webp': '/images/hero/family-multigenerational.webp',
+  '/images/hero/family-walking.webp': '/images/hero/family-beach.webp',
+  // Pediatric — swap between the two
+  '/images/hero/pediatric-child-walk.webp': '/images/hero/pediatric-kids-group.webp',
+  '/images/hero/pediatric-kids-group.webp': '/images/hero/pediatric-child-walk.webp',
+  // Pregnancy — only one, use a baby image
+  '/images/hero/pregnancy.webp': '/images/hero/baby-3.webp',
+  // Insight — use a family image
+  '/images/hero/insight-scan-girl.webp': '/images/hero/family-embrace.webp',
+  '/images/hero/insight-scanner.webp': '/images/hero/family-forest.webp',
+  // Default fallback
+  '/images/hero-family.webp': '/images/hero/family-walking.webp',
+};
+
+function getFaqImage(heroImage: string): string {
+  return FAQ_ALT_IMAGE[heroImage] || '/images/hero/family-park-sunset.webp';
+}
+
 interface Props {
   data: ConditionPageData;
 }
@@ -106,7 +140,7 @@ export default function ConditionPage({ data }: Props) {
       {data.outcomes && <ConditionOutcomes data={data.outcomes} />}
       {data.faqs && data.faqs.length > 0 && <ConditionFAQ faqs={data.faqs} />}
       {data.relatedConditions && data.relatedConditions.length > 0 && (
-        <RelatedConditions conditions={data.relatedConditions} />
+        <RelatedConditions conditions={data.relatedConditions} backgroundImage={getFaqImage(heroImage)} />
       )}
 
       <CTABanner
