@@ -7,6 +7,7 @@ Allow: /
 Disallow: /thanks
 Disallow: /thank-you-for-your-submission
 Disallow: /guides/
+Disallow: /admin
 
 # Google Search - Full access
 User-agent: Googlebot
