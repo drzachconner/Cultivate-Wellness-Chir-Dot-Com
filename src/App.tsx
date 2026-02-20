@@ -56,16 +56,27 @@ function PageLoader() {
 }
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (hash) {
+      // Scroll to hash target after a brief delay to allow render
+      setTimeout(() => {
+        const el = document.getElementById(hash.slice(1));
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+          return;
+        }
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
     // Move focus to main content for accessibility (SPA navigation)
     const mainContent = document.getElementById('main');
     if (mainContent) {
       mainContent.focus({ preventScroll: true });
     }
-  }, [pathname]);
+  }, [pathname, hash]);
 
   return null;
 }

@@ -53,7 +53,7 @@ export default function ConditionIndex() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {groups.map((group) => (
-            <div key={group.category} className="mb-12 last:mb-0">
+            <div key={group.category} id={group.category} className="mb-12 last:mb-0 scroll-mt-20">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-primary-light/30">
                 {group.label}
               </h2>

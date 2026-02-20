@@ -65,9 +65,13 @@ export default function ConditionHero({ title, subtitle, image, breadcrumbLabel 
                   <div className="max-h-64 overflow-y-auto">
                     {groups.map((group) => (
                       <div key={group.category}>
-                        <p className="px-4 py-1.5 text-xs font-bold text-gray-400 uppercase tracking-wider bg-gray-50">
+                        <Link
+                          to={`/conditions#${group.category}`}
+                          onClick={() => setIsOpen(false)}
+                          className="block px-4 py-1.5 text-xs font-bold text-gray-500 uppercase tracking-wider bg-gray-50 hover:text-primary-dark hover:bg-gray-100 transition-colors"
+                        >
                           {group.label}
-                        </p>
+                        </Link>
                         {group.conditions.map((c) => (
                           <Link
                             key={c.slug}
