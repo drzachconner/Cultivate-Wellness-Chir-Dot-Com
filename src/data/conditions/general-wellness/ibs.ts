@@ -143,7 +143,7 @@ export const ibs: ConditionPageData = {
     {
       question: 'How many visits before I notice digestive improvement?',
       answer:
-        'Results vary. Some patients notice changes within the first few visits, while chronic IBS may take longer. Our team evaluates your progress regularly. Many patients report gradual but meaningful improvement over the first 4-8 weeks of care.',
+        'Results vary from person to person, and we don\'t predict specific timelines until after completing a comprehensive history, consultation, and INSiGHT Scans. This evaluation allows our team to understand the nervous system factors driving your digestive issues and build a care plan around your specific needs. Chronic IBS may require ongoing support, and we evaluate your progress regularly.',
     },
   ],
   relatedConditions: [

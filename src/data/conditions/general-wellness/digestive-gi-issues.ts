@@ -138,7 +138,7 @@ export const digestiveGiIssues: ConditionPageData = {
     {
       question: 'How quickly will my digestion improve?',
       answer:
-        'Every person responds differently. Some patients notice improvement in digestive symptoms within the first few visits, while chronic conditions may take longer. We will track your progress through regular re-evaluations and adjust your care plan accordingly.',
+        'Every person responds differently, which is why we don\'t discuss specific timelines until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans. This evaluation helps our team understand the nervous system factors affecting your digestion and develop a care plan tailored to your situation. Chronic conditions may require ongoing support, and we track your progress through regular re-evaluations.',
     },
     {
       question: 'Is chiropractic care safe if I have Crohn\'s or colitis?',

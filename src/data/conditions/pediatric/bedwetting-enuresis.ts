@@ -97,7 +97,7 @@ export const bedwettingEnuresis: ConditionPageData = {
       {
         title: 'Progress Monitoring & Support',
         description:
-          'Results vary. Some respond quickly, others take longer. Many children see improvement within a few weeks to a few months. We track progress and adjust the care plan based on your child\'s response.',
+          'Results vary from child to child. We track progress and adjust the care plan based on your child\'s response. The specifics of care are determined after a comprehensive evaluation.',
       },
     ],
   },
@@ -127,7 +127,7 @@ export const bedwettingEnuresis: ConditionPageData = {
     {
       question: 'How many visits will my child need?',
       answer:
-        'Every child is different. Some respond quickly within a few weeks, while others may take a few months. We will track progress and adjust the care plan based on your child\'s response. Consistency with appointments is important for the best results.',
+        'Every child is different, and we don\'t quote specific timelines until after completing a comprehensive history, consultation, and INSiGHT Scans. This helps our team understand the underlying factors and create a care plan specific to your child. Consistency with appointments is important for the best results.',
     },
     {
       question: 'What can we do at home to help?',

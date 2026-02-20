@@ -143,7 +143,7 @@ export const anxietyStress: ConditionPageData = {
     {
       question: 'How often should I be adjusted for anxiety and stress?',
       answer:
-        'The frequency depends on your individual needs and how your nervous system responds. Our team will recommend a personalized care plan based on your initial evaluation. Many patients with anxiety benefit from more frequent visits initially, tapering as their nervous system stabilizes.',
+        'The frequency depends on your individual needs and how your nervous system responds. We determine the right approach after completing a comprehensive history, consultation, and INSiGHT Scans with HRV testing. This evaluation gives our team the information needed to recommend a personalized care plan based on your specific nervous system findings.',
     },
   ],
   relatedConditions: [

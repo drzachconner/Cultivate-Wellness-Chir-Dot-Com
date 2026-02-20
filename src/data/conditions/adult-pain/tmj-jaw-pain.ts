@@ -138,7 +138,7 @@ export const tmjJawPain: ConditionPageData = {
     {
       question: 'How quickly will I see results?',
       answer:
-        'Most patients notice improvement within 4-6 visits. Some experience relief after their first adjustment, especially when cervical correction improves jaw alignment. Chronic TMJ cases may take longer, but our team will track your progress and adjust the plan accordingly.',
+        'Every case is different, so we don\'t discuss specific timelines until after completing a comprehensive history, consultation, and INSiGHT Scans. This gives our team the information needed to create a care plan specific to your situation. Chronic TMJ cases may require more time, and we track your progress and adjust the plan accordingly.',
     },
     {
       question: 'Is the treatment painful?',

@@ -143,7 +143,7 @@ export const sleepDisorders: ConditionPageData = {
     {
       question: 'How quickly will I see sleep improvements?',
       answer:
-        'Many patients notice sleep improvements within the first few visits. Some experience better sleep the very first night after an adjustment. However, chronic sleep problems may take longer to fully resolve as the nervous system rebalances. Our team will track your progress and adjust care accordingly.',
+        'Because every person\'s situation is unique, we don\'t predict specific timelines until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans. This allows our team to understand the factors affecting your sleep and develop a care plan tailored to your needs. Chronic sleep problems may take longer to fully resolve as the nervous system rebalances. We track your progress and adjust care accordingly.',
     },
     {
       question: 'Can I stop taking sleep medications?',

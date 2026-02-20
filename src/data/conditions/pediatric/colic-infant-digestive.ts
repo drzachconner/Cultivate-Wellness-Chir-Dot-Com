@@ -102,7 +102,7 @@ export const colicInfantDigestive: ConditionPageData = {
       {
         title: 'Home Support & Monitoring',
         description:
-          'We provide tips for comfort between visits and closely monitor your baby\'s response. Improvement is often noticed within 1 to 3 visits, though every baby is unique.',
+          'We provide tips for comfort between visits and closely monitor your baby\'s response. Every baby is unique, and we tailor the care plan based on their individual needs and progress.',
       },
     ],
   },
@@ -116,7 +116,7 @@ export const colicInfantDigestive: ConditionPageData = {
       'More regular bowel movements',
       'Better sleep for baby and the whole family',
       'A calmer, happier baby overall',
-      'Improvement often noticed within 1-3 visits',
+      'Many parents notice improvement early in the care process',
     ],
   },
   faqs: [
@@ -128,7 +128,7 @@ export const colicInfantDigestive: ConditionPageData = {
     {
       question: 'How quickly will we see results?',
       answer:
-        'While every baby is unique, many parents notice improvement within 1 to 3 visits. Some babies show dramatic reduction in crying after the very first adjustment. We will create a care plan tailored to your baby and monitor progress closely.',
+        'Every baby is unique, so we determine the right approach after completing a thorough history, consultation, and gentle examination. Some babies respond very quickly while others need more time. We create a care plan tailored to your baby\'s specific needs and monitor progress closely.',
     },
     {
       question: 'What other digestive issues can chiropractic help with?',

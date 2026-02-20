@@ -112,7 +112,7 @@ export const breastfeedingLatch: ConditionPageData = {
       {
         title: 'Team Coordination & Follow-Up',
         description:
-          'We coordinate with lactation consultants (IBCLCs), pediatricians, pediatric dentists (for tongue tie evaluation), and feeding therapists. Many babies show improvement within 1-4 visits, and we monitor progress closely.',
+          'We coordinate with lactation consultants (IBCLCs), pediatricians, pediatric dentists (for tongue tie evaluation), and feeding therapists. We monitor progress closely and adjust care based on your baby\'s response.',
       },
     ],
   },
@@ -143,7 +143,7 @@ export const breastfeedingLatch: ConditionPageData = {
     {
       question: 'How many visits will it take?',
       answer:
-        'Many babies show improvement within 1-4 visits. Some respond after just one session, while others need a few more visits. Our team will create a personalized plan and monitor progress closely. Sessions are brief and focused.',
+        'Every baby\'s situation is different, so we determine the right care plan after a thorough history, consultation, and gentle evaluation. This lets our team understand the specific factors affecting your baby\'s nursing and create a personalized plan. Sessions are brief and focused, and we monitor progress closely.',
     },
     {
       question: 'Do you work with lactation consultants?',

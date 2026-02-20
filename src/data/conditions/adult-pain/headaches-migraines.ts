@@ -128,7 +128,7 @@ export const headachesMigraines: ConditionPageData = {
     {
       question: 'How quickly will I see results?',
       answer:
-        'Many patients notice a reduction in headache frequency and intensity within the first few weeks of care. Some experience relief after their very first visit. Chronic headache sufferers may take longer, but we will track your progress and adjust the care plan accordingly.',
+        'Every patient is different, so we don\'t predict specific timelines until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans. This initial evaluation allows our team to understand the neurological root of your headaches and create a personalized care plan. Chronic headache sufferers may need more time, and we track your progress and adjust the plan accordingly.',
     },
     {
       question: 'Can children receive chiropractic care for headaches?',

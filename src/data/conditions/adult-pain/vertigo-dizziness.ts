@@ -143,7 +143,7 @@ export const vertigoDizziness: ConditionPageData = {
     {
       question: 'How many visits will I need?',
       answer:
-        'Many patients feel improvement quickly, sometimes after the first visit. Most cases see significant improvement within 4-8 weeks. Long-standing cases may take longer. Our team will perform regular reassessments and adjust your care plan based on your progress.',
+        'We don\'t quote a specific number of visits until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans. This evaluation helps our team understand the factors contributing to your vertigo and design a care plan tailored to your situation. Long-standing cases may take more time, and we perform regular reassessments to track your progress.',
     },
     {
       question: 'Should I see an ENT first?',

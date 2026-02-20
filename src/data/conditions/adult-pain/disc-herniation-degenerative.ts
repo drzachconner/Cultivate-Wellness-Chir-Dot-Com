@@ -143,7 +143,7 @@ export const discHerniationDegenerative: ConditionPageData = {
     {
       question: 'How many visits will I need?',
       answer:
-        'Disc conditions vary widely in severity. Mild cases may improve in a few weeks, while more significant herniations may require several months of care. Our team will give you a realistic assessment and track your progress at regular intervals.',
+        'Disc conditions vary widely in severity, so we don\'t provide specific timelines until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans. This evaluation lets our team understand the full scope of your disc condition and create a realistic, personalized care plan. We track your progress at regular intervals and adjust care as you improve.',
     },
   ],
   relatedConditions: [

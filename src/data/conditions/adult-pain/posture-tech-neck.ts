@@ -138,7 +138,7 @@ export const postureTechNeck: ConditionPageData = {
     {
       question: 'How long does posture correction take?',
       answer:
-        'This depends on the severity and duration of your postural problems. Most patients see noticeable improvement within the first few weeks. Full correction of long-standing postural issues may take several months of consistent care combined with daily exercises. Our team will create a realistic timeline based on your evaluation.',
+        'This depends on the severity and duration of your postural problems, which is why we don\'t discuss specific timelines until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans. This evaluation allows our team to understand how deeply poor posture has affected your nervous system and create a realistic, personalized care plan. Consistent care combined with daily exercises is important for lasting correction.',
     },
     {
       question: 'Can you help children with tech neck?',

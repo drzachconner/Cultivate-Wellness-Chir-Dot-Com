@@ -131,7 +131,7 @@ export const immuneSupport: ConditionPageData = {
     {
       question: 'How often should I get adjusted for immune support?',
       answer:
-        'The frequency depends on your individual needs and health goals. Our team will recommend a care plan based on your initial evaluation. Many patients seeking wellness and immune support find that regular visits, weekly or biweekly, help maintain optimal nervous system function.',
+        'The right frequency depends on your individual needs and health goals. We don\'t recommend a specific schedule until after completing a comprehensive history, consultation, and INSiGHT Scans. This evaluation helps our team understand your nervous system function and create a care plan that supports your wellness goals.',
     },
     {
       question: 'Can my whole family benefit from immune-supporting chiropractic care?',

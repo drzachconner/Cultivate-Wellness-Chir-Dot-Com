@@ -123,7 +123,7 @@ export const postpartumRecovery: ConditionPageData = {
     {
       question: 'When can I start postpartum chiropractic care?',
       answer:
-        'After a vaginal birth, you can often begin care within days of delivery. After a C-section, we usually wait 4-6 weeks for incision healing, then begin gently. However, it\'s never too late. Even years postpartum, we can address lingering issues from pregnancy and birth.',
+        'After a vaginal birth, you can often begin care within days of delivery. After a C-section, we typically recommend allowing time for your incision to heal before beginning care -- your medical provider can advise on when it is safe. However, it\'s never too late. Even years postpartum, we can address lingering issues from pregnancy and birth.',
     },
     {
       question: 'Can I bring my baby to appointments?',

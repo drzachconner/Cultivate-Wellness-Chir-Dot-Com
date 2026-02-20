@@ -142,7 +142,7 @@ export const plagiocephaly: ConditionPageData = {
     {
       question: 'How many visits will my baby need?',
       answer:
-        'Most babies show visible improvement within 4-8 visits, especially when started early. We monitor progress at each visit and adjust the care plan based on your baby\'s response. Frequency is typically 1-2 visits per week initially.',
+        'Since every baby is different, we determine the right care plan after completing a thorough history, consultation, and INSiGHT Scans (if age-appropriate). This allows us to understand your baby\'s unique situation and recommend a plan tailored to their needs. We monitor progress at each visit and adjust accordingly. Early intervention typically leads to faster improvement.',
     },
     {
       question: 'Does plagiocephaly cause developmental problems?',

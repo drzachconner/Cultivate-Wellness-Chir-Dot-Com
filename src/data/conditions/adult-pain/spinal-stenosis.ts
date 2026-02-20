@@ -138,7 +138,7 @@ export const spinalStenosis: ConditionPageData = {
     {
       question: 'How often will I need to come in?',
       answer:
-        'Since spinal stenosis is a chronic, degenerative condition, ongoing care is often beneficial. After an initial phase of more frequent visits to reduce symptoms, many patients transition to a maintenance schedule of 1-2 visits per month. Our team will recommend a plan based on your specific needs.',
+        'Since spinal stenosis is a chronic, degenerative condition, ongoing care is often beneficial. We determine the right approach and frequency after completing a comprehensive history, consultation, and INSiGHT Scans. This allows our team to develop a management plan based on your specific needs and response to care.',
     },
     {
       question: 'Does spinal stenosis always get worse?',

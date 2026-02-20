@@ -142,7 +142,7 @@ export const acidRefluxGerd: ConditionPageData = {
     {
       question: 'How many visits before I see improvement?',
       answer:
-        'Every person responds differently. Some patients notice improvement within the first few visits, while chronic GERD may take longer. We will evaluate your progress regularly and adjust care accordingly.',
+        'Every person responds differently, so we don\'t provide specific timelines until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans. This evaluation helps our team understand the nervous system factors contributing to your reflux and create a care plan tailored to your needs. Chronic GERD may require ongoing support, and we evaluate your progress regularly.',
     },
   ],
   relatedConditions: [

@@ -68,7 +68,7 @@ export const torticollis: ConditionPageData = {
         icon: 'zap',
         title: 'Faster Results',
         description:
-          'Many babies show significant improvement within 4-8 visits. Chiropractic care often achieves faster results than stretching alone.',
+          'Many babies respond quickly to gentle chiropractic care, often achieving faster results than stretching alone. Your baby\'s care plan will be determined after a thorough evaluation.',
       },
       {
         icon: 'hand',
@@ -116,7 +116,7 @@ export const torticollis: ConditionPageData = {
       'Better sleep positioning and quality',
       'Improved tummy time tolerance',
       'Meeting developmental milestones more easily',
-      'Significant improvement typically within 4-8 visits',
+      'Significant improvement as care progresses',
     ],
   },
   faqs: [
@@ -138,7 +138,7 @@ export const torticollis: ConditionPageData = {
     {
       question: 'How many visits will my baby need?',
       answer:
-        'Most babies show significant improvement within 4-8 visits, typically scheduled 1-2 times per week initially. Our team will monitor progress and adjust the care plan based on your baby\'s response.',
+        'Every baby responds differently, so we don\'t provide specific visit numbers or schedules until we\'ve completed a thorough history, consultation, and evaluation. This allows our team to create a care plan tailored to your baby\'s specific needs. We monitor progress closely and adjust the plan as your baby improves.',
     },
     {
       question: 'What other issues can torticollis cause?',

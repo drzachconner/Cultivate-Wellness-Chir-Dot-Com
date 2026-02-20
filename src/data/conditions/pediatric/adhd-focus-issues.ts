@@ -148,7 +148,7 @@ export const adhdFocusIssues: ConditionPageData = {
     {
       question: 'How many visits will my child need before seeing improvement?',
       answer:
-        'Every child is different. Some families notice improvements within the first few weeks, while others may take longer. Our team will perform regular progress evaluations and adjust the care plan based on your child\'s response. A typical initial care plan involves visits two to three times per week for the first several weeks.',
+        'Every child is different, so we don\'t discuss specific visit frequency or timelines until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans. This allows our team to develop a care plan tailored to your child\'s unique neurological needs. We perform regular progress evaluations and adjust the plan based on your child\'s response.',
     },
     {
       question: 'Do you work with adults who have ADHD?',

@@ -132,7 +132,7 @@ export const pinchedNerves: ConditionPageData = {
     {
       question: 'How long does a pinched nerve take to heal?',
       answer:
-        'Many patients experience significant relief within a few weeks of care. The timeline depends on the cause and severity of compression, how long the nerve has been compressed, and your overall health. We will give you a realistic expectation based on your specific findings.',
+        'The timeline depends on many factors, including the cause and severity of compression, how long the nerve has been compressed, and your overall health. We don\'t provide specific estimates until after a comprehensive history, consultation, and INSiGHT Scans, which give our team the information needed to develop a care plan tailored to your specific findings.',
     },
     {
       question: 'Can a pinched nerve heal on its own?',

@@ -18,7 +18,7 @@ export const sciatica: ConditionPageData = {
   highlightBox: {
     icon: 'zap',
     label: 'Don\'t Suffer Needlessly',
-    text: 'Many sciatica sufferers wait months or years before seeking chiropractic care, relying on pain medications that only mask symptoms. Our patients often experience significant improvement within their first few visits.',
+    text: 'Many sciatica sufferers wait months or years before seeking chiropractic care, relying on pain medications that only mask symptoms. Our patients often wish they had started sooner.',
   },
   symptoms: {
     sectionTitle: 'Common Sciatica Symptoms',
@@ -127,7 +127,7 @@ export const sciatica: ConditionPageData = {
     {
       question: 'How quickly will I feel better?',
       answer:
-        'Many patients feel improvement after their first visit. Most sciatica cases respond well within 4-8 weeks of care. Our gentle techniques mean no additional pain or discomfort during treatment. However, every case is different and our team will give you an honest assessment of your expected timeline.',
+        'Every case is different, and we don\'t provide specific recovery timelines until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans. This evaluation helps our team understand the root cause of your sciatica and develop a care plan tailored to your needs. Our gentle techniques mean no additional pain or discomfort during treatment, and we track your progress closely.',
     },
     {
       question: 'Is your approach safe for severe sciatica?',

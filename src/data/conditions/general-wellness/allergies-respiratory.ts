@@ -153,7 +153,7 @@ export const allergiesRespiratory: ConditionPageData = {
     {
       question: 'How many visits before I notice improvement in my allergies?',
       answer:
-        'Every person responds differently. Some patients notice improvements within the first few weeks, while others may take longer. Our team will perform regular evaluations and adjust your care plan based on your progress.',
+        'Every person responds differently, so we don\'t estimate specific timelines until after completing a comprehensive history, consultation, and INSiGHT Scans. This initial evaluation helps our team understand how your nervous system may be contributing to your symptoms and develop a care plan tailored to your needs. We perform regular evaluations to track your progress.',
     },
   ],
   relatedConditions: [

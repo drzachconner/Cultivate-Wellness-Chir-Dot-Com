@@ -153,7 +153,7 @@ export const potsDysautonomia: ConditionPageData = {
     {
       question: 'How long does it take to see improvement?',
       answer:
-        'Every patient is different. Some notice improvements within the first few weeks, while others take longer. Dysautonomia is a complex condition, and improvement is often gradual. We use objective HRV testing to track your progress and adjust your care plan accordingly.',
+        'Every patient is different, and dysautonomia is a complex condition. We don\'t discuss specific timelines until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans with HRV testing. This evaluation gives our team the objective data needed to create a care plan tailored to your autonomic nervous system needs. Improvement is often gradual, and we use HRV testing to track your progress and adjust care accordingly.',
     },
   ],
   relatedConditions: [

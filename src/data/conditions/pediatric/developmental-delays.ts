@@ -143,7 +143,7 @@ export const developmentalDelays: ConditionPageData = {
     {
       question: 'How many visits before we see improvement?',
       answer:
-        'Every child responds differently. Some parents notice changes within the first few visits, while others see gradual improvement over weeks. We perform regular evaluations and adjust the care plan based on your child\'s progress.',
+        'Every child responds differently, which is why we don\'t provide specific visit estimates until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans. This initial evaluation gives our team the information needed to develop a care plan tailored to your child\'s specific needs and goals. We perform regular evaluations and adjust the plan based on your child\'s progress.',
     },
   ],
   relatedConditions: [

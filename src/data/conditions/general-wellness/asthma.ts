@@ -143,7 +143,7 @@ export const asthma: ConditionPageData = {
     {
       question: 'How many visits before I notice improvement?',
       answer:
-        'Results vary. Some patients notice easier breathing within the first few visits, while chronic asthma may take longer to show improvement. Our team will evaluate your progress regularly and adjust your care plan accordingly.',
+        'Results vary from person to person, and we determine the right approach after completing a comprehensive history, consultation, and INSiGHT Scans. This lets our team understand the nervous system factors affecting your respiratory function and create a personalized care plan. Chronic asthma may require ongoing support, and we evaluate your progress regularly.',
     },
   ],
   relatedConditions: [

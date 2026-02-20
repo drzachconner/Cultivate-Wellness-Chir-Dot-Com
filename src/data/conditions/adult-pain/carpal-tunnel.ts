@@ -142,7 +142,7 @@ export const carpalTunnel: ConditionPageData = {
     {
       question: 'How many visits will I need?',
       answer:
-        'This varies based on the severity and duration of your symptoms and how many compression sites are involved. Many patients notice improvement within the first few visits. Our team will create a personalized care plan and monitor your progress closely.',
+        'This varies based on the severity and duration of your symptoms and how many compression sites are involved. We don\'t provide specific visit estimates until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans. This lets our team create a personalized care plan based on your specific findings. We monitor your progress closely and adjust as needed.',
     },
   ],
   relatedConditions: [

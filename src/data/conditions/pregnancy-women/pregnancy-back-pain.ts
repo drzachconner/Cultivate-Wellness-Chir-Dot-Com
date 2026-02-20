@@ -133,7 +133,7 @@ export const pregnancyBackPain: ConditionPageData = {
     {
       question: 'How often should I come in during pregnancy?',
       answer:
-        'This depends on your symptoms and stage of pregnancy. Many patients start with weekly visits during symptomatic phases and adjust frequency as they improve. Our team will recommend a plan based on your specific needs.',
+        'We don\'t recommend a specific schedule until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans. This helps our team understand your unique needs and create a personalized care plan. Your plan may adapt as your body changes throughout pregnancy.',
     },
     {
       question: 'Will I need to lie face-down?',

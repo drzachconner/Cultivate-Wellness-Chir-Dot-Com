@@ -128,7 +128,7 @@ export const chronicFatigue: ConditionPageData = {
     {
       question: 'How long before I start feeling better?',
       answer:
-        'Chronic conditions take time to improve. Expect weeks to months for meaningful changes. Some patients notice subtle improvements early, while for others it takes longer. We will track your progress objectively and adjust your care plan as needed. Healing is not always linear.',
+        'Chronic conditions are complex, and we don\'t predict specific timelines until we\'ve completed a comprehensive history, consultation, and INSiGHT Scans with HRV testing. This allows our team to understand the nervous system burden draining your energy and create a care plan designed for your specific situation. Healing is not always linear, and we track your progress objectively to adjust care as needed.',
     },
     {
       question: 'Will the adjustments make me more tired at first?',
