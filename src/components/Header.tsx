@@ -1,6 +1,6 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import { SITE } from '../data/site';
 import { getGroupedConditions } from '../data/conditions';
 
@@ -9,10 +9,26 @@ export default function Header() {
   const [isConditionsOpen, setIsConditionsOpen] = useState(false);
   const [isMobileConditionsOpen, setIsMobileConditionsOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const conditionsRef = useRef<HTMLDivElement>(null);
   const conditionsButtonRef = useRef<HTMLButtonElement>(null);
 
   const groupedConditions = getGroupedConditions();
+
+  const navigateToCategory = useCallback((category: string) => {
+    setIsConditionsOpen(false);
+    setIsMenuOpen(false);
+    setIsMobileConditionsOpen(false);
+    const target = `/conditions#${category}`;
+    if (location.pathname === '/conditions') {
+      // Same page — scroll directly
+      const el = document.getElementById(category);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+      window.history.replaceState(null, '', target);
+    } else {
+      navigate(target);
+    }
+  }, [location.pathname, navigate]);
 
   const navLinks = [
     { to: '/about-us', label: 'About Us' },
@@ -149,13 +165,12 @@ export default function Header() {
               <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
                 {groupedConditions.map((group) => (
                   <div key={group.category}>
-                    <Link
-                      to={`/conditions#${group.category}`}
-                      onClick={() => setIsConditionsOpen(false)}
-                      className="block text-sm font-bold text-primary-dark uppercase tracking-wide mb-2 hover:text-primary-accent transition-colors"
+                    <button
+                      onClick={() => navigateToCategory(group.category)}
+                      className="block text-sm font-bold text-primary-dark uppercase tracking-wide mb-2 hover:text-primary-accent transition-colors cursor-pointer text-left"
                     >
                       {group.label}
-                    </Link>
+                    </button>
                     <ul className="space-y-0.5">
                       {group.conditions.map((condition) => (
                         <li key={condition.slug}>
@@ -229,16 +244,12 @@ export default function Header() {
                   <div className="pl-4 pr-2 py-2 space-y-3">
                     {groupedConditions.map((group) => (
                       <div key={group.category}>
-                        <Link
-                          to={`/conditions#${group.category}`}
-                          onClick={() => {
-                            setIsMenuOpen(false);
-                            setIsMobileConditionsOpen(false);
-                          }}
-                          className="block text-xs font-bold text-primary-dark uppercase tracking-wide mb-1 px-4 hover:text-primary-accent transition-colors"
+                        <button
+                          onClick={() => navigateToCategory(group.category)}
+                          className="block text-xs font-bold text-primary-dark uppercase tracking-wide mb-1 px-4 hover:text-primary-accent transition-colors cursor-pointer text-left"
                         >
                           {group.label}
-                        </Link>
+                        </button>
                         {group.conditions.map((condition) => (
                           <Link
                             key={condition.slug}
