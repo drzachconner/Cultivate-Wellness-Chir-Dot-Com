@@ -3,15 +3,15 @@
 ## v1.1 Requirements
 
 ### Backend Multi-Project
-- [ ] **BACK-01**: Agent-backend supports multiple projects via project registry (projects.json)
-- [ ] **BACK-02**: Each project has its own REPO_PATH, SYSTEM_PROMPT, and config
-- [ ] **BACK-03**: CORS origins are configurable per project
-- [ ] **BACK-04**: Cultivate Wellness project is registered with correct repo path and system prompt
+- [x] **BACK-01**: Agent-backend supports multiple projects via project registry (projects.json)
+- [x] **BACK-02**: Each project has its own REPO_PATH, SYSTEM_PROMPT, and config
+- [x] **BACK-03**: CORS origins are configurable per project
+- [x] **BACK-04**: Cultivate Wellness project is registered with correct repo path and system prompt
 
 ### Authentication
 - [x] **AUTH-01**: User can access admin panel at /admin route
-- [ ] **AUTH-02**: User must enter password to access admin functionality
-- [ ] **AUTH-03**: Password is validated against agent-backend using Bearer token auth
+- [x] **AUTH-02**: User must enter password to access admin functionality
+- [x] **AUTH-03**: Password is validated against agent-backend using Bearer token auth
 - [x] **AUTH-04**: User can choose "Remember me" for persistent auth (localStorage vs sessionStorage)
 
 ### Admin UI Shell
@@ -22,7 +22,7 @@
 - [ ] **UI-05**: Public chatbot is hidden when admin panel is active
 
 ### Chat Interface
-- [ ] **CHAT-01**: User can send messages to Claude via streaming chat
+- [x] **CHAT-01**: User can send messages to Claude via streaming chat
 - [ ] **CHAT-02**: User can see real-time tool status (reading files, editing, committing)
 - [ ] **CHAT-03**: User can view and switch between conversation history
 - [ ] **CHAT-04**: User can delete past conversations
@@ -33,9 +33,9 @@
 - [ ] **TRACK-02**: Deploy countdown shows after successful git push
 
 ### Configuration
-- [ ] **CONFIG-01**: Welcome message is customized for Dr. Zach / Cultivate Wellness
-- [ ] **CONFIG-02**: Quick actions are relevant to Cultivate Wellness site management
-- [ ] **CONFIG-03**: System prompt includes Cultivate Wellness tech stack, brand, and content conventions
+- [x] **CONFIG-01**: Welcome message is customized for Dr. Zach / Cultivate Wellness
+- [x] **CONFIG-02**: Quick actions are relevant to Cultivate Wellness site management
+- [x] **CONFIG-03**: System prompt includes Cultivate Wellness tech stack, brand, and content conventions
 
 ## Future Requirements
 - Form submission viewer (requires persistent storage of form submissions)

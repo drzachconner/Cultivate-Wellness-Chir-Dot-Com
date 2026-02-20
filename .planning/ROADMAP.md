@@ -71,7 +71,7 @@ Add a full-featured admin dashboard to Cultivate Wellness Chiropractic, powered 
 5. No regression in public site functionality
 6. No CORS errors between production frontend and agent.drzach.ai
 
-**Plans:** 1/3 plans executed
+**Plans:** 2/3 plans executed
 
 Plans:
 - [ ] 03-01-PLAN.md — Pre-deploy code fixes (sessionStorage-only auth, robots.txt /admin exclusion, delete orphaned Admin.tsx)

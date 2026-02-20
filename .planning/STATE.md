@@ -3,9 +3,9 @@
 ## Current Position
 
 Phase: 3 of 3 — Integration Testing + Deploy
-Plan: 03-01 complete (pre-deploy auth cleanup)
-Status: IN PROGRESS — admin auth cleaned up, ready for integration testing
-Last activity: 2026-02-20 — Completed 03-01-PLAN.md
+Plan: 03-02 at checkpoint (Tasks 1-2 complete, Task 3 awaiting human browser verification)
+Status: AT CHECKPOINT — all API tests pass, awaiting browser round-trip test (edit-commit-revert)
+Last activity: 2026-02-20 — Completed 03-02 Tasks 1+2, paused at checkpoint:human-verify
 
 ## Accumulated Context
 
@@ -48,12 +48,26 @@ The agent-backend already exists at https://agent.drzach.ai (Express + Claude Ag
 - Verified: `curl https://cultivate-agent.drzach.ai/health` returns `{"status":"ok"}`
 - Verified: project info and usage endpoints work through tunnel
 
+### Phase 3 Plan 01: Pre-Deploy Auth Cleanup — COMPLETE
+- sessionStorage-only auth enforced across all admin code paths
+- Admin.tsx orphaned page deleted
+- robots.txt: `Disallow: /admin` added
+
+### Phase 3 Plan 02: Local Integration Tests — Tasks 1+2 COMPLETE
+- Port 3100 conflict resolved (Social-Media-Scaling killed, agent-backend restarted)
+- All API tests pass: health, project info, auth, CORS, conversations, chat SSE (10/10)
+- `scripts/test-local-admin.sh` created — repeatable integration test suite
+- Chat SSE confirmed working: agent-backend -> Claude -> `data: {"text":"hello"}` returned
+- Cloudflare tunnel live: cultivate-agent.drzach.ai -> port 3100 (200 OK)
+
 ## Decisions
 
 - **sessionStorage-only auth**: admin_auth stored exclusively in sessionStorage (not localStorage). Closing tab forgets session — intentional security posture.
 - **Admin.tsx deleted**: orphaned page-based admin (not routed in App.tsx) removed. Production architecture is AdminActivator + AdminOverlay floating overlay.
 - **/admin excluded from crawlers**: `Disallow: /admin` added to robots.txt default User-agent block.
 - **Admin auth key is 'admin_auth'** (not 'admin_password') — corrected in api.ts handle401().
+- **conversationId omitted in chat tests**: passing unknown UUID causes FOREIGN KEY constraint failure; auto-creation is correct.
+- **SSE capture via temp file**: `$(curl ...)` subshell drops streaming content; must use `mktemp` + file output.
 
 ## Session Continuity
 
@@ -61,9 +75,5 @@ Started: 2026-02-19
 Last session: 2026-02-20
 
 ### Remaining Work (Phase 3)
-- Test admin panel in local dev (`http://localhost:5173/admin`)
-- Test admin panel on production (`https://cultivatewellnesschiro.com/admin`)
-- Verify Claude can read/edit Cultivate Wellness site files through admin chat
-- Verify git commits + auto-deploy work from admin
-- Check no CORS errors on production
-- Check no regression in public site functionality
+- **NEXT**: Task 3 checkpoint — browser round-trip test at localhost:5173/admin (edit-commit-revert)
+- After checkpoint: production deploy / smoke test on cultivatewellnesschiro.com/admin
