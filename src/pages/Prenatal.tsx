@@ -120,15 +120,14 @@ export default function Prenatal() {
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">The Webster Technique</h2>
           <div className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-sm">
             <p className="text-gray-700 mb-4">
-              We specialize in the Webster Technique, a specific chiropractic analysis and adjustment
-              that helps optimize pelvic balance and function during pregnancy.
+              During pregnancy, there is inevitably a degree of asymmetry in the tension of the pelvic muscles and ligaments. In conjunction with gentle tonal chiropractic adjustments, we use a specific analysis to identify this imbalance and gently engage certain muscles and ligaments to help restore proper balance and normal function.
             </p>
             <p className="text-gray-700 mb-4">
-              This gentle technique has been shown to reduce the need for interventions during birth
-              and support optimal fetal positioning.
+              Many mothers experience improved comfort, and the technique is often associated with encouraging optimal positioning of the baby.
             </p>
             <p className="text-gray-700 font-medium text-primary-dark">
-              Safe for all stages of pregnancy and recommended by midwives and OB-GYNs.
+              Safe for all stages of pregnancy. Our doctors are{' '}
+              <Link to="/conditions/webster-technique" className="underline hover:text-primary-accent">ICPA Webster Certified</Link>.
             </p>
           </div>
         </div>
@@ -145,7 +144,7 @@ export default function Prenatal() {
               { label: 'Pelvic Pain', slug: 'pregnancy-back-pain' },
               { label: 'Round Ligament Pain', slug: '' },
               { label: 'Sciatica', slug: 'sciatica' },
-              { label: 'Breech Presentation', slug: 'webster-technique' },
+              { label: 'Pelvic Balance', slug: 'webster-technique' },
               { label: 'Hip Discomfort', slug: '' },
               { label: 'Neck Tension', slug: 'back-neck-pain' },
               { label: 'Headaches', slug: 'headaches-migraines' },

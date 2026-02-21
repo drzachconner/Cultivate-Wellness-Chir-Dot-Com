@@ -357,7 +357,7 @@ PEDIATRIC CONDITIONS:
 
 - Sensory Processing Disorder (/conditions/sensory-processing-disorder): Helping children navigate their sensory world. Key signs: sound sensitivity, touch aversion/seeking, visual sensitivity, meltdowns, constant motion, balance issues, sleep problems, picky eating. How we help: nervous system optimization through Talsky Tonal Chiropractic, INSiGHT scan tracking. Outcomes: less sensory overwhelm, fewer meltdowns, better sleep, improved attention.
 
-- Torticollis (/conditions/torticollis): Gentle care for infant neck tightness. Key signs: head tilt, limited rotation, feeding preference, flat spot developing. How we help: addresses root cause (underlying cervical tension), ultra-gentle approach. Improvement typically within 4-8 visits.
+- Torticollis (/conditions/torticollis): Gentle care for infant neck tightness. Key signs: head tilt, limited rotation, feeding preference, flat spot developing. How we help: addresses root cause (underlying cervical tension), ultra-gentle approach. Each child's care plan is tailored after a comprehensive history, consultation, and INSiGHT Scans.
 
 PREGNANCY & WOMEN'S HEALTH:
 
@@ -365,7 +365,7 @@ PREGNANCY & WOMEN'S HEALTH:
 
 - Postpartum Recovery (/conditions/postpartum-recovery): Supporting recovery after baby. Key concerns: back/neck/shoulder strain, pelvic pain/instability, wrist pain, nursing posture pain, fatigue. Outcomes: reduced pain, comfortable breastfeeding, improved pelvic stability, better energy, faster recovery.
 
-- Webster Technique (/conditions/webster-technique): Sacral analysis and pelvic balance for pregnancy. Dr. Zach is Webster Technique trained. Reduces effects of sacral subluxation and SI joint dysfunction to improve neurobiomechanical function in pelvis. Outcomes: reduced pain, improved pelvic balance, greater comfort throughout pregnancy.
+- Webster Technique (/conditions/webster-technique): Pelvic balance for pregnancy. Our doctors are ICPA Webster Certified. During pregnancy there is naturally some asymmetry in pelvic muscle and ligament tension. We use a specific analysis to identify this imbalance and, in conjunction with gentle tonal chiropractic adjustments, gently engage certain muscles and ligaments to restore proper balance and function. Often associated with encouraging optimal baby positioning. We do NOT turn or reposition babies — we care for the mother. Outcomes: reduced pain, improved pelvic balance, greater comfort throughout pregnancy.
 
 NEUROLOGICAL CONDITIONS:
 

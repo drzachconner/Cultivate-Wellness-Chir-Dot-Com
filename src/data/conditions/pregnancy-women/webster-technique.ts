@@ -3,22 +3,22 @@ import type { ConditionPageData } from '../types';
 export const websterTechnique: ConditionPageData = {
   slug: 'webster-technique',
   title: 'The Webster Technique',
-  subtitle: 'Sacral Analysis & Pelvic Balance for Pregnancy',
+  subtitle: 'Pelvic Balance for a More Comfortable Pregnancy',
   category: 'pregnancy-women',
   heroImage: '/images/hero/pregnancy.webp',
   seo: {
     title: 'Webster Technique | Pregnancy Chiropractic Rochester Hills, MI',
     description:
-      'ICPA Webster Certified chiropractic care for pregnant mothers. At Cultivate Wellness, our team provides gentle sacral analysis and pelvic balancing throughout pregnancy.',
+      'ICPA Webster Certified chiropractic care for pregnant mothers. At Cultivate Wellness, our team uses gentle tonal chiropractic and a specific pelvic analysis to support balance and comfort throughout pregnancy.',
   },
   intro: [
-    'The Webster Technique is a specific chiropractic sacral analysis and diversified adjustment designed to reduce the effects of sacral subluxation and improve neurobiomechanical function in the mother\'s pelvis. At Cultivate Wellness, our doctors are certified in the Webster Technique through the International Chiropractic Pediatric Association (ICPA).',
-    'As defined by the ICPA: "The Webster Technique is a specific chiropractic sacral analysis and diversified adjustment. The goal of the adjustment is to reduce the effects of sacral subluxation and/or SI joint dysfunction. In so doing, neurobiomechanical function in the sacral/pelvic region is improved." This technique can be beneficial throughout all trimesters of pregnancy to support pelvic function as the mother\'s body changes.',
+    'During pregnancy, there is inevitably a degree of asymmetry in the tension of the pelvic muscles and ligaments as your body adapts to support your growing baby. At Cultivate Wellness, our doctors are certified in the Webster Technique through the International Chiropractic Pediatric Association (ICPA) and use a specific analysis to identify this imbalance.',
+    'In conjunction with gentle tonal chiropractic adjustments, we use this analysis to identify areas of pelvic imbalance and gently engage certain muscles and ligaments to help restore proper balance and normal function. Many mothers experience improved comfort throughout their pregnancy, and the technique is often associated with encouraging optimal positioning of the baby.',
   ],
   highlightBox: {
     icon: 'shield',
     label: 'Scope of Practice',
-    text: 'As chiropractors, we provide care for the mother. We do not turn, reposition, or treat the fetus. That is outside the scope of chiropractic practice. The Webster Technique specifically addresses the mother\'s sacral alignment, pelvic biomechanics, and associated soft tissues. Any physiological changes that occur are a result of the mother\'s body functioning more optimally.',
+    text: 'As chiropractors, we provide care for the mother. We do not turn, reposition, or treat the fetus — that is outside the scope of chiropractic practice. The Webster Technique specifically addresses the mother\'s pelvic balance, associated muscles and ligaments, and nervous system function. Any physiological changes that occur are a result of the mother\'s body functioning more optimally.',
   },
   symptoms: {
     sectionTitle: 'Common Reasons Mothers Seek Webster Care',
@@ -30,13 +30,13 @@ export const websterTechnique: ConditionPageData = {
       },
       {
         icon: 'activity',
-        title: 'Sacroiliac Joint Discomfort',
-        description: 'SI joint pain or instability caused by the expanding pelvis and the effects of relaxin hormone on joint structures.',
+        title: 'Pelvic Discomfort & Instability',
+        description: 'Pain or instability in the pelvis and SI joints caused by the expanding pelvis and the effects of relaxin hormone on joint structures.',
       },
       {
         icon: 'flame',
-        title: 'Hip & Pelvic Pain',
-        description: 'Discomfort in the hips or pelvis that increases as pregnancy progresses, making daily activities and sleep difficult.',
+        title: 'Hip Pain',
+        description: 'Discomfort in the hips that increases as pregnancy progresses, making daily activities and sleep difficult.',
       },
       {
         icon: 'heart-pulse',
@@ -51,7 +51,7 @@ export const websterTechnique: ConditionPageData = {
       {
         icon: 'sparkles',
         title: 'Pelvic Balance Maintenance',
-        description: 'Proactive care to maintain optimal pelvic alignment and biomechanics as the body changes throughout pregnancy.',
+        description: 'Proactive care to maintain proper pelvic balance as the body changes throughout pregnancy.',
       },
     ],
   },
@@ -59,57 +59,57 @@ export const websterTechnique: ConditionPageData = {
     sectionTitle: 'Benefits for the Mother',
     items: [
       {
-        icon: 'bone',
-        title: 'Reduced Sacral Subluxation',
-        description:
-          'Addressing sacral tension and dysfunction that commonly occurs during pregnancy due to postural and hormonal changes.',
-      },
-      {
         icon: 'target',
-        title: 'Improved Pelvic Balance',
+        title: 'Restored Pelvic Balance',
         description:
-          'Better SI joint function and overall pelvic biomechanics for greater comfort, stability, and optimal function throughout pregnancy.',
+          'Addressing the asymmetry in pelvic muscle and ligament tension that naturally develops during pregnancy, helping restore proper balance and function.',
       },
       {
         icon: 'brain',
         title: 'Nervous System Optimization',
         description:
-          'Reducing interference to the nervous system supports optimal body function during pregnancy, benefiting both mother and developing baby.',
+          'Gentle tonal chiropractic adjustments reduce interference to the nervous system, supporting optimal body function during pregnancy for both mother and baby.',
       },
       {
         icon: 'smile',
-        title: 'Reduced Discomfort',
+        title: 'Improved Comfort',
         description:
           'Many mothers experience meaningful relief from low back pain, hip discomfort, and pelvic pain that are common during pregnancy.',
+      },
+      {
+        icon: 'baby',
+        title: 'Support for Optimal Baby Positioning',
+        description:
+          'When the mother\'s pelvis is properly balanced and functioning well, the body is better able to support the natural processes of pregnancy, which is often associated with encouraging optimal positioning of the baby.',
       },
     ],
   },
   approach: {
-    sectionTitle: 'The Webster Technique Process',
+    sectionTitle: 'Our Approach to Pelvic Balance',
     description:
-      'Our doctors are ICPA Webster Certified, ensuring proper knowledge and skill in this specific sacral analysis and adjustment technique.',
+      'Our doctors are ICPA Webster Certified, with specialized training in this specific pelvic analysis technique used alongside our gentle, tonal chiropractic approach.',
     steps: [
       {
-        title: 'Sacral Analysis & Assessment',
+        title: 'Pelvic Analysis & Assessment',
         description:
-          'We evaluate the position and movement of your sacrum (the triangular bone at the base of your spine), along with your pelvis, associated muscles, and ligaments. You\'ll be positioned safely and comfortably using pregnancy pillows or specialized tables.',
+          'We evaluate the balance and tension of your pelvic muscles and ligaments, identifying areas of asymmetry. You\'ll be positioned safely and comfortably using pregnancy pillows or specialized tables.',
       },
       {
-        title: 'Gentle Sacral Adjustment & Soft Tissue Work',
+        title: 'Tonal Adjustment & Gentle Engagement',
         description:
-          'A specific, gentle adjustment is made to address sacral subluxation, followed by evaluation and gentle attention to associated pelvic muscles and ligaments including the round ligament. The goal is improved neurobiomechanical function in your sacral and pelvic region.',
+          'Using gentle tonal chiropractic adjustments along with specific, light engagement of the associated pelvic muscles and ligaments — including the round ligament — we work to restore proper balance and normal function to the pelvic region.',
       },
       {
         title: 'Ongoing Care Throughout Pregnancy',
         description:
-          'Frequency is determined based on your individual needs and response to care. The technique is beneficial throughout all trimesters, helping maintain pelvic balance as your body changes and adapts to your growing baby.',
+          'After a comprehensive history, consultation, and evaluation, our team will develop a care plan tailored to your individual needs. The technique is beneficial throughout all trimesters, helping maintain pelvic balance as your body adapts to your growing baby.',
       },
     ],
   },
   outcomes: {
     sectionTitle: 'What Mothers Often Experience',
     items: [
-      'Reduced lower back and sacroiliac pain',
+      'Reduced lower back and pelvic pain',
       'Improved pelvic balance and stability',
       'Greater overall comfort during pregnancy',
       'Better sleep from reduced pain and discomfort',
@@ -123,12 +123,12 @@ export const websterTechnique: ConditionPageData = {
     {
       question: 'What exactly is the Webster Technique?',
       answer:
-        'The Webster Technique is a specific chiropractic sacral analysis and diversified adjustment. It focuses on reducing the effects of sacral subluxation and SI joint dysfunction, improving neurobiomechanical function in the sacral and pelvic region. It was developed specifically for pregnant mothers and is taught through the International Chiropractic Pediatric Association (ICPA).',
+        'The Webster Technique is a specific chiropractic analysis used to assess pelvic balance during pregnancy. At our office, we use this analysis in conjunction with gentle tonal chiropractic adjustments to identify and address asymmetry in the tension of the pelvic muscles and ligaments, helping restore proper balance and normal function. Our doctors are certified through the International Chiropractic Pediatric Association (ICPA).',
     },
     {
       question: 'Does the Webster Technique turn breech babies?',
       answer:
-        'No. As chiropractors, we care for the mother, not the baby. We do not turn, reposition, or treat the fetus in any way. The Webster Technique optimizes the mother\'s pelvic biomechanics and nervous system function. When the mother\'s pelvis is properly aligned and functioning optimally, her body is better able to support a healthy pregnancy. Any changes in fetal positioning occur naturally as a result of the mother\'s improved physiology.',
+        'No. As chiropractors, we care for the mother, not the baby. We do not turn, reposition, or treat the fetus in any way. What we do is work to restore proper pelvic balance and nervous system function for the mother. When the pelvis is balanced and functioning well, the body is better able to support the natural processes of pregnancy. The technique is often associated with encouraging optimal positioning, but any changes occur naturally as a result of the mother\'s improved function.',
     },
     {
       question: 'When should I start Webster Technique care?',
@@ -138,7 +138,7 @@ export const websterTechnique: ConditionPageData = {
     {
       question: 'Is the Webster Technique safe during pregnancy?',
       answer:
-        'Yes. The technique is gentle and specifically designed for pregnant mothers. You\'ll be positioned safely and comfortably throughout the adjustment. Our doctors have completed specialized ICPA training to ensure proper technique and safety.',
+        'Yes. The technique is gentle and specifically designed for pregnant mothers. You\'ll be positioned safely and comfortably throughout the process. Our doctors have completed specialized ICPA training to ensure proper technique and safety.',
     },
     {
       question: 'Do you work with my OB or midwife?',
@@ -159,23 +159,23 @@ export const websterTechnique: ConditionPageData = {
   cta: {
     title: 'Support Your Body During Pregnancy',
     description:
-      'Schedule your Webster Technique consultation with our team today. ICPA Webster Certified care for a more comfortable, balanced pregnancy.',
+      'Schedule your consultation with our Webster Certified team today. Gentle, tonal chiropractic care for a more comfortable, balanced pregnancy.',
     buttonText: 'Book Your Consultation',
   },
   schema: {
     condition: {
-      name: 'Sacral Subluxation in Pregnancy',
+      name: 'Pelvic Imbalance in Pregnancy',
       description:
-        'Misalignment of the sacrum and SI joint dysfunction commonly occurring during pregnancy due to postural changes, hormonal effects on ligaments, and the demands of supporting a growing baby.',
+        'Asymmetry in pelvic muscle and ligament tension commonly occurring during pregnancy due to postural changes, hormonal effects on ligaments, and the demands of supporting a growing baby.',
       wikipediaUrl: 'https://en.wikipedia.org/wiki/Sacroiliac_joint_dysfunction',
     },
     therapy: {
       name: 'Webster Technique',
       description:
-        'A specific chiropractic sacral analysis and diversified adjustment developed for pregnant mothers, aimed at reducing sacral subluxation and improving neurobiomechanical function in the pelvic region.',
+        'A specific chiropractic pelvic analysis developed for pregnant mothers, used in conjunction with gentle tonal adjustments to restore pelvic balance and support normal function during pregnancy.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-02-21',
     wordCount: 1500,
   },
 };
