@@ -57,15 +57,15 @@ export function ConversationSidebar({
 
   return (
     <>
-      {/* Mobile backdrop */}
+      {/* Backdrop */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black/30 z-40 lg:hidden" onClick={onClose} />
+        <div className="fixed inset-0 bg-black/30 z-40" onClick={onClose} />
       )}
 
       {/* Sidebar */}
       <div
-        className={`fixed lg:static inset-y-0 left-0 z-50 w-[280px] bg-white border-r border-gray-200 flex flex-col transition-transform duration-200 ${
-          isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
+        className={`fixed inset-y-0 left-0 z-50 w-[calc(100vw-1rem)] max-w-[280px] bg-white border-r border-gray-200 shadow-xl flex flex-col transition-transform duration-200 ${
+          isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
         {/* Header */}
@@ -81,7 +81,7 @@ export function ConversationSidebar({
             </button>
             <button
               onClick={onClose}
-              className="p-1.5 rounded-lg hover:bg-gray-100 text-gray-500 lg:hidden transition-colors"
+              className="p-1.5 rounded-lg hover:bg-gray-100 text-gray-500 transition-colors"
             >
               <X className="w-4 h-4" />
             </button>
