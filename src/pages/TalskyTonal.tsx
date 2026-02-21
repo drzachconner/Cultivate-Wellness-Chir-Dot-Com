@@ -2,8 +2,7 @@ import { Link } from 'react-router-dom';
 import { SITE } from '../data/site';
 import { breadcrumbJsonLd } from '../lib/breadcrumbs';
 import { medicalWebPageSchema } from '../lib/schema';
-import { Brain, Heart, Users, Sparkles, Activity, Target } from 'lucide-react';
-import CTABanner from '../components/CTABanner';
+import { Brain, Heart, Users, Sparkles, Activity, Target, ArrowRight } from 'lucide-react';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
 
@@ -244,12 +243,33 @@ export default function TalskyTonal() {
         </div>
       </section>
 
-      <CTABanner
-        title="Ready to Experience Talsky Tonal Chiropractic?"
-        description="Schedule a consultation to learn how this gentle, neurologically-focused approach can help you and your family."
-        buttonText="Schedule Consultation"
-        buttonLink="/schedule-appointment"
-      />
+      {/* CTA — liquid glass style */}
+      <section className="relative py-16 bg-gray-900">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/talsky-tonal-adjustment.jpg"
+            alt="Dr. Talsky performing a tonal chiropractic adjustment"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary-dark/80 to-primary/70" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            Ready to Experience Talsky Tonal Chiropractic?
+          </h2>
+          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+            Schedule a consultation to learn how this gentle, neurologically-focused approach can help you and your family.
+          </p>
+          <Link
+            to="/schedule-appointment"
+            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white border border-white/20 px-8 py-4 rounded-xl text-lg font-medium hover:bg-white/20 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]"
+          >
+            Schedule Consultation
+            <ArrowRight size={20} />
+          </Link>
+        </div>
+      </section>
     </>
   );
 }

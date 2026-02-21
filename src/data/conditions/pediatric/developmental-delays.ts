@@ -92,7 +92,7 @@ export const developmentalDelays: ConditionPageData = {
       {
         title: 'Comprehensive Evaluation',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your child\'s nervous system function and identify where stress is stuck on — tension patterns from birth, early life experiences, or developmental challenges that the body hasn\'t yet learned it\'s safe to release. This reveals the neurological interference that may be limiting your child\'s ability to reach their milestones.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your child\'s nervous system function and identify where stress is stuck on. These are tension patterns from birth, early life experiences, or developmental challenges that the body hasn\'t yet learned it\'s safe to release. This reveals the neurological interference that may be limiting your child\'s ability to reach their milestones.',
       },
       {
         title: 'Gentle, Neurologically-Focused Adjustments',

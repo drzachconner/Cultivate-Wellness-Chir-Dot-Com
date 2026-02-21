@@ -63,7 +63,7 @@ export default function AboutUs() {
                 Our Promise
               </p>
               <p className="text-lg text-gray-800 leading-relaxed">
-                Join our extended family and discover the Cultivate Wellness difference — where every visit feels like coming home.
+                Join our extended family and discover the Cultivate Wellness difference, where every visit feels like coming home.
               </p>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function AboutUs() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-heading font-bold text-gray-900 mb-4">Nerve First: Our Unique Approach</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              We take a "nerve first" approach through our specialized practice of Talsky Tonal Chiropractic — a unique, gentle yet powerful technique that respects the intelligence of the body.
+              We take a "nerve first" approach through our specialized practice of Talsky Tonal Chiropractic, a unique, gentle yet powerful technique that respects the intelligence of the body.
             </p>
           </div>
 
@@ -139,7 +139,7 @@ export default function AboutUs() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Designed for Families</h3>
                 <p className="text-gray-700">
-                  Specializing in pediatrics, prenatal, and family care — whether you have a child with special needs, are expecting, or have a new baby, our space is welcoming for all.
+                  Specializing in pediatrics, prenatal, and family care. Whether you have a child with special needs, are expecting, or have a new baby, our space is welcoming for all.
                 </p>
               </div>
             </div>

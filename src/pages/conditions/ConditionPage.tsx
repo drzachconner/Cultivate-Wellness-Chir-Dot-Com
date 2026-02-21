@@ -21,8 +21,8 @@ const FAQ_ALT_IMAGE: Record<string, string> = {
   '/images/hero/baby-2.webp': '/images/hero/baby-3.webp',
   '/images/hero/baby-3.webp': '/images/hero/baby-1.webp',
   '/images/hero/baby-4.webp': '/images/hero/baby-5.webp',
-  '/images/hero/baby-5.webp': '/images/hero/baby-6.webp',
-  '/images/hero/baby-6.webp': '/images/hero/baby-4.webp',
+  '/images/hero/baby-5.webp': '/images/hero/baby-4.webp',
+  '/images/hero/baby-6.webp': '/images/hero/baby-5.webp',
   // Family — cycle within family shots
   '/images/hero/family-beach.webp': '/images/hero/family-embrace.webp',
   '/images/hero/family-embrace.webp': '/images/hero/family-forest.webp',

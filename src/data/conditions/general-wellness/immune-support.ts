@@ -92,7 +92,7 @@ export const immuneSupport: ConditionPageData = {
       {
         title: 'Nervous System Evaluation',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from illness, chronic stress, or accumulated life experiences that your body hasn\'t yet released. This reveals how your nervous system may be compromising your immune response.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from illness, chronic stress, or accumulated life experiences that your body hasn\'t yet released. This reveals how your nervous system may be compromising your immune response.',
       },
       {
         title: 'Targeted Gentle Adjustments',

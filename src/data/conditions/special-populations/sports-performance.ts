@@ -92,7 +92,7 @@ export const sportsPerformance: ConditionPageData = {
       {
         title: 'Biomechanical Assessment',
         description:
-          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension from training demands, past injuries, or repetitive strain that your body hasn\'t yet released. This reveals where nervous system interference may be limiting your performance, not just where you feel tightness or pain.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from training demands, past injuries, or repetitive strain that your body hasn\'t yet released. This reveals where nervous system interference may be limiting your performance, not just where you feel tightness or pain.',
       },
       {
         title: 'Correction & Performance Optimization',

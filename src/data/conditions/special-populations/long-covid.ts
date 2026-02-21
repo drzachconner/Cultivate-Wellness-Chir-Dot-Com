@@ -97,7 +97,7 @@ export const longCovid: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We perform a comprehensive evaluation including INSiGHT neurological scanning with HRV testing to objectively assess your nervous system function and identify where stress is stuck on — tension from the viral illness, autonomic dysregulation, or accumulated life stress that your body hasn\'t yet released. This reveals how deeply post-viral dysfunction has affected your nervous system, not just your individual symptoms.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning with HRV testing to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from the viral illness, autonomic dysregulation, or accumulated life stress that your body hasn\'t yet released. This reveals how deeply post-viral dysfunction has affected your nervous system, not just your individual symptoms.',
       },
       {
         title: 'Gentle Autonomic Support',

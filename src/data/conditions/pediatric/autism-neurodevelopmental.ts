@@ -97,7 +97,7 @@ export const autismNeurodevelopmental: ConditionPageData = {
       {
         title: 'Comprehensive Neurological Assessment',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning (at your child\'s pace) to objectively assess your child\'s nervous system function and identify where stress is stuck on — tension patterns from birth, early development, or sensory overwhelm that the body hasn\'t yet learned it\'s safe to release. This reveals the neurological patterns driving your child\'s challenges, not just the behaviors you observe.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning (at your child\'s pace) to objectively assess your child\'s nervous system function and identify where stress is stuck on. These are tension patterns from birth, early development, or sensory overwhelm that the body hasn\'t yet learned it\'s safe to release. This reveals the neurological patterns driving your child\'s challenges, not just the behaviors you observe.',
       },
       {
         title: 'Gentle, Precise Adjustments',

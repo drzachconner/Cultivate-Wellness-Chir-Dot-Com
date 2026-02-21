@@ -85,7 +85,7 @@ export default function MeetDrZach() {
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Certified Talsky Tonal Teacher</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  My passion for this gentle, neurologically-focused approach led me to become one of only two authorized teachers for this work — bringing advanced expertise in a technique that has profound effects on people of all ages and backgrounds.
+                  My passion for this gentle, neurologically-focused approach led me to become one of only two authorized teachers for this work, bringing advanced expertise in a technique that has profound effects on people of all ages and backgrounds.
                 </p>
               </div>
             </div>

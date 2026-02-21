@@ -102,7 +102,7 @@ export const postureTechNeck: ConditionPageData = {
       {
         title: 'Detailed Postural Assessment',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from years of postural strain, device use, or accumulated life stress that your body hasn\'t yet released. This reveals how deeply poor posture has affected your nervous system, not just your alignment.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from years of postural strain, device use, or accumulated life stress that your body hasn\'t yet released. This reveals how deeply poor posture has affected your nervous system, not just your alignment.',
       },
       {
         title: 'Gentle Spinal Correction',

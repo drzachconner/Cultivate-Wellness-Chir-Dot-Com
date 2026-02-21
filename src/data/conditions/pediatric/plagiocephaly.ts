@@ -5,7 +5,7 @@ export const plagiocephaly: ConditionPageData = {
   title: 'Plagiocephaly (Flat Head Syndrome)',
   subtitle: 'Gentle Chiropractic Support for Your Baby\'s Head Shape',
   category: 'pediatric',
-  heroImage: '/images/hero/baby-4.webp',
+  heroImage: '/images/hero/baby-6.webp',
   seo: {
     title: 'Plagiocephaly (Flat Head) Treatment | Chiropractic Care Rochester Hills, MI',
     description:
@@ -92,7 +92,7 @@ export const plagiocephaly: ConditionPageData = {
       {
         title: 'Thorough Evaluation',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning (if age-appropriate) to objectively assess your baby\'s nervous system function and identify where stress is stuck on — tension from the birth process, in-utero positioning, or early life that the body hasn\'t yet learned it\'s safe to release. This reveals the underlying factors driving the head preference, not just the flat spot itself.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning (if age-appropriate) to objectively assess your baby\'s nervous system function and identify where stress is stuck on. These are tension patterns from the birth process, in-utero positioning, or early life that the body hasn\'t yet learned it\'s safe to release. This reveals the underlying factors driving the head preference, not just the flat spot itself.',
       },
       {
         title: 'Gentle Cervical Adjustments',

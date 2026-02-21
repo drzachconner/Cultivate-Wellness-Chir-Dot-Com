@@ -92,7 +92,7 @@ export const discHerniationDegenerative: ConditionPageData = {
       {
         title: 'Comprehensive Evaluation',
         description:
-          'We perform a thorough examination including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, compensations, or accumulated life stress that your body hasn\'t yet released. We also review any existing imaging (MRI, X-ray) and may recommend additional studies to understand the full scope of your disc condition.',
+          'We perform a thorough examination including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from past injuries, compensations, or accumulated life stress that your body hasn\'t yet released. We also review any existing imaging (MRI, X-ray) and may recommend additional studies to understand the full scope of your disc condition.',
       },
       {
         title: 'Gentle Spinal Correction',

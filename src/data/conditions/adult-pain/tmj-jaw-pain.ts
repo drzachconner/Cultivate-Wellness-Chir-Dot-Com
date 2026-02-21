@@ -102,7 +102,7 @@ export const tmjJawPain: ConditionPageData = {
       {
         title: 'Comprehensive Evaluation',
         description:
-          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, clenching habits, or life stress that your body hasn\'t yet released. We also evaluate the TMJ joint directly, cervical alignment, and head posture to understand the full jaw-neck picture.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from past injuries, clenching habits, or life stress that your body hasn\'t yet released. We also evaluate the TMJ joint directly, cervical alignment, and head posture to understand the full jaw-neck picture.',
       },
       {
         title: 'Cervical & TMJ Correction',

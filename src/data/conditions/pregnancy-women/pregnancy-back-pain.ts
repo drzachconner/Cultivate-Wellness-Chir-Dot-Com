@@ -92,7 +92,7 @@ export const pregnancyBackPain: ConditionPageData = {
       {
         title: 'Prenatal Evaluation',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from the physical changes of pregnancy, prior injuries, or accumulated life stress that your body hasn\'t yet released. This helps us understand the root of your pregnancy discomfort, not just where you feel pain.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from the physical changes of pregnancy, prior injuries, or accumulated life stress that your body hasn\'t yet released. This helps us understand the root of your pregnancy discomfort, not just where you feel pain.',
       },
       {
         title: 'Gentle Adjustments',

@@ -92,7 +92,7 @@ export const speechLanguageDelays: ConditionPageData = {
       {
         title: 'Neurological Assessment',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your child\'s nervous system function and identify where stress is stuck on — tension patterns from birth, early development, or accumulated life stress that the body hasn\'t yet learned it\'s safe to release. This reveals the neurological interference that may be limiting your child\'s communication development.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your child\'s nervous system function and identify where stress is stuck on. These are tension patterns from birth, early development, or accumulated life stress that the body hasn\'t yet learned it\'s safe to release. This reveals the neurological interference that may be limiting your child\'s communication development.',
       },
       {
         title: 'Gentle, Targeted Adjustments',

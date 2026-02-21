@@ -18,7 +18,7 @@ export const lymeDisease: ConditionPageData = {
   highlightBox: {
     icon: 'alert-circle',
     label: 'Important',
-    text: 'Lyme disease requires proper medical diagnosis and treatment. Our goal is not to treat Lyme itself, but to restore normal nervous system function — supporting your body\'s ability to heal alongside your Lyme-literate medical team.',
+    text: 'Lyme disease requires proper medical diagnosis and treatment. Our goal is not to treat Lyme itself, but to restore normal nervous system function, supporting your body\'s ability to heal alongside your Lyme-literate medical team.',
   },
   symptoms: {
     sectionTitle: 'Common Lyme Symptoms We See',
@@ -102,7 +102,7 @@ export const lymeDisease: ConditionPageData = {
       {
         title: 'Individualized Assessment',
         description:
-          'We begin with a thorough understanding of where you are in your Lyme journey: active treatment, die-off reactions, recovery, or maintenance. INSiGHT neurological scanning objectively assesses your nervous system function and identifies where stress is stuck on — tension from chronic infection, inflammation, or the demands of treatment that your body hasn\'t yet released. This guides our approach based on what your nervous system needs, not just your symptom list.',
+          'We begin with a thorough understanding of where you are in your Lyme journey: active treatment, die-off reactions, recovery, or maintenance. INSiGHT neurological scanning objectively assesses your nervous system function and identifies where stress is stuck on. These are tension patterns from chronic infection, inflammation, or the demands of treatment that your body hasn\'t yet released. This guides our approach based on what your nervous system needs, not just your symptom list.',
       },
       {
         title: 'Ultra-Gentle Adjustments',

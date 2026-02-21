@@ -18,7 +18,7 @@ export const potsDysautonomia: ConditionPageData = {
   highlightBox: {
     icon: 'alert-circle',
     label: 'Important Note',
-    text: 'POTS and dysautonomia require proper medical diagnosis and treatment. Our goal is not to treat these conditions, but to restore normal nervous system function — supporting your body\'s ability to regulate alongside your medical team.',
+    text: 'POTS and dysautonomia require proper medical diagnosis and treatment. Our goal is not to treat these conditions, but to restore normal nervous system function, supporting your body\'s ability to regulate alongside your medical team.',
   },
   symptoms: {
     sectionTitle: 'Common Symptoms We See',
@@ -102,7 +102,7 @@ export const potsDysautonomia: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We perform a comprehensive evaluation including INSiGHT neurological scanning with HRV testing to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from viral illness, injury, or accumulated life stress that your body hasn\'t yet released. We pay particular attention to areas affecting autonomic function: upper cervical spine, thoracic spine, and sacrum.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning with HRV testing to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from viral illness, injury, or accumulated life stress that your body hasn\'t yet released. We pay particular attention to areas affecting autonomic function: upper cervical spine, thoracic spine, and sacrum.',
       },
       {
         title: 'Gentle, Precise Adjustments',

@@ -92,7 +92,7 @@ export const acidRefluxGerd: ConditionPageData = {
       {
         title: 'Digestive & Neurological Assessment',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past physical or emotional stress that your body hasn\'t yet released. This reveals how your nervous system may be contributing to digestive dysfunction, not just where you feel discomfort.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from past physical or emotional stress that your body hasn\'t yet released. This reveals how your nervous system may be contributing to digestive dysfunction, not just where you feel discomfort.',
       },
       {
         title: 'Gentle, Targeted Adjustments',

@@ -92,7 +92,7 @@ export const headachesMigraines: ConditionPageData = {
       {
         title: 'Thorough Assessment',
         description:
-          'We start with a complete headache history, then perform INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, chronic postural strain, or accumulated life stress that your body hasn\'t yet released. This reveals the neurological root of your headaches, not just where you feel pain.',
+          'We start with a complete headache history, then perform INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from past injuries, chronic postural strain, or accumulated life stress that your body hasn\'t yet released. This reveals the neurological root of your headaches, not just where you feel pain.',
       },
       {
         title: 'Gentle Spinal Correction',

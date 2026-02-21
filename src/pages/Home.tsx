@@ -189,7 +189,7 @@ export default function Home() {
       </section>
 
       {/* Intro Quote */}
-      <section className="relative pt-24 pb-8 bg-white">
+      <section className="relative pt-16 pb-10 bg-white">
         <AnimateOnScroll>
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -212,7 +212,7 @@ export default function Home() {
       </section>
 
       {/* Hope Card */}
-      <section className="bg-white pb-24">
+      <section className="bg-white pt-2 pb-16">
         <AnimateOnScroll>
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-2xl px-6 sm:px-10 lg:px-16 py-10 sm:py-14 text-center" style={{ boxShadow: '0 8px 40px rgba(0, 45, 78, 0.2)' }}>
@@ -233,10 +233,10 @@ export default function Home() {
             <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               At Cultivate Wellness, our office is intentionally designed to care
               for families and children at every stage. From well baby checks and
-              family wellness care, to the toughest of cases —{' '}
+              family wellness care, to the toughest of cases like{' '}
               <Link to="/conditions/autism-neurodevelopmental" className="underline hover:text-white transition-colors">autism</Link>,{' '}
               <Link to="/conditions/seizure-disorders" className="underline hover:text-white transition-colors">epilepsy</Link>,
-              and special needs — we are ready to care for you.
+              and special needs, we are ready to care for you.
             </p>
             <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto leading-relaxed mt-4">
               Our unique light force, tonal chiropractic care and patient-centered

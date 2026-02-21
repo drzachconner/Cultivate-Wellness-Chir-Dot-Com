@@ -92,7 +92,7 @@ export const ibs: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from chronic stress, past trauma, or accumulated life pressure that your body hasn\'t yet released. This reveals how your nervous system may be driving your digestive dysfunction, not just where you feel symptoms.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from chronic stress, past trauma, or accumulated life pressure that your body hasn\'t yet released. This reveals how your nervous system may be driving your digestive dysfunction, not just where you feel symptoms.',
       },
       {
         title: 'Gentle Nervous System Care',

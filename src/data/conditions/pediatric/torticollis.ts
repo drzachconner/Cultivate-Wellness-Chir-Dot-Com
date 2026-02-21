@@ -92,7 +92,7 @@ export const torticollis: ConditionPageData = {
       {
         title: 'Thorough Evaluation',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning (if age-appropriate) to objectively assess your baby\'s nervous system function and identify where stress is stuck on — tension from the birth process, in-utero positioning, or delivery that the body hasn\'t yet learned it\'s safe to release. We also assess for associated conditions like plagiocephaly or breastfeeding difficulties.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning (if age-appropriate) to objectively assess your baby\'s nervous system function and identify where stress is stuck on. These are tension patterns from the birth process, in-utero positioning, or delivery that the body hasn\'t yet learned it\'s safe to release. We also assess for associated conditions like plagiocephaly or breastfeeding difficulties.',
       },
       {
         title: 'Gentle Adjustments',

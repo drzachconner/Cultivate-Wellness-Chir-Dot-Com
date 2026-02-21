@@ -92,7 +92,7 @@ export const colicInfantDigestive: ConditionPageData = {
       {
         title: 'Detailed History & Examination',
         description:
-          'We take a thorough history of your baby\'s birth story and symptoms, followed by a gentle examination and INSiGHT neurological scanning (if age-appropriate) to identify where stress is stuck on in your baby\'s nervous system — tension from birth or early life that the body hasn\'t yet learned it\'s safe to release.',
+          'We take a thorough history of your baby\'s birth story and symptoms, followed by a gentle examination and INSiGHT neurological scanning (if age-appropriate) to identify where stress is stuck on in your baby\'s nervous system. These are tension patterns from birth or early life that the body hasn\'t yet learned it\'s safe to release.',
       },
       {
         title: 'Gentle, Targeted Adjustments',
@@ -128,7 +128,7 @@ export const colicInfantDigestive: ConditionPageData = {
     {
       question: 'How quickly will we see results?',
       answer:
-        'Your baby\'s frequency of care is determined after a detailed history, consultation, and gentle examination, including [INSiGHT neurological scanning](/insight-scans) when age-appropriate. Every baby is unique — some respond very quickly while others need more time. We create a care plan tailored to your baby\'s specific needs and monitor progress closely.',
+        'Your baby\'s frequency of care is determined after a detailed history, consultation, and gentle examination, including [INSiGHT neurological scanning](/insight-scans) when age-appropriate. Every baby is unique. Some respond very quickly while others need more time. We create a care plan tailored to your baby\'s specific needs and monitor progress closely.',
     },
     {
       question: 'What other digestive issues can chiropractic help with?',

@@ -92,7 +92,7 @@ export const pinchedNerves: ConditionPageData = {
       {
         title: 'Precise Diagnosis',
         description:
-          'We perform a thorough examination including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, repetitive strain, or life stress that your body hasn\'t yet released. This helps us pinpoint the true source of nerve compression, not just where you feel symptoms.',
+          'We perform a thorough examination including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from past injuries, repetitive strain, or life stress that your body hasn\'t yet released. This helps us pinpoint the true source of nerve compression, not just where you feel symptoms.',
       },
       {
         title: 'Gentle Decompression',

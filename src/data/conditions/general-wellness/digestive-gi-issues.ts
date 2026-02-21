@@ -92,7 +92,7 @@ export const digestiveGiIssues: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past physical or emotional stress that your body hasn\'t yet released. This reveals whether your nervous system is stuck in "fight or flight" mode and unable to properly support digestion.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from past physical or emotional stress that your body hasn\'t yet released. This reveals whether your nervous system is stuck in "fight or flight" mode and unable to properly support digestion.',
       },
       {
         title: 'Gentle, Targeted Corrections',

@@ -92,7 +92,7 @@ export const gentleChiropractic: ConditionPageData = {
       {
         title: 'No Cracking or Popping',
         description:
-          'We start with INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, chronic strain, or life stress that your body hasn\'t yet learned it\'s safe to release. This guides our gentle, precise adjustments with no cracking, popping, or twisting.',
+          'We start with INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from past injuries, chronic strain, or life stress that your body hasn\'t yet learned it\'s safe to release. This guides our gentle, precise adjustments with no cracking, popping, or twisting.',
       },
       {
         title: 'Comfortable Positioning',

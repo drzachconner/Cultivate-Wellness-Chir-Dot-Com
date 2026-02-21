@@ -102,7 +102,7 @@ export const allergiesRespiratory: ConditionPageData = {
       {
         title: 'Full Assessment',
         description:
-          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from illness, environmental exposures, or life stress that your body hasn\'t yet released. This reveals how your nervous system may be contributing to an overactive immune response.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from illness, environmental exposures, or life stress that your body hasn\'t yet released. This reveals how your nervous system may be contributing to an overactive immune response.',
       },
       {
         title: 'Gentle, Precise Adjustments',

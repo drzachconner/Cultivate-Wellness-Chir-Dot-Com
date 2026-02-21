@@ -18,7 +18,7 @@ export const seizureDisorders: ConditionPageData = {
   highlightBox: {
     icon: 'alert-circle',
     label: 'Important Medical Disclaimer',
-    text: 'Seizure disorders require proper medical diagnosis and treatment. Our goal is not to treat seizures, but to restore normal nervous system function — supporting your body alongside your neurologist and medical team. Never discontinue medications without medical supervision.',
+    text: 'Seizure disorders require proper medical diagnosis and treatment. Our goal is not to treat seizures, but to restore normal nervous system function, supporting your body alongside your neurologist and medical team. Never discontinue medications without medical supervision.',
   },
   symptoms: {
     sectionTitle: 'Seizure Types We Support',
@@ -92,7 +92,7 @@ export const seizureDisorders: ConditionPageData = {
       {
         title: 'Thorough Evaluation & Safety Planning',
         description:
-          'We begin with a comprehensive evaluation including INSiGHT neurological scanning to objectively assess nervous system function and identify where stress is stuck on — tension patterns from past trauma, injury, or accumulated stress that the body hasn\'t yet learned it\'s safe to release. We also coordinate with your neurologist and take extra safety precautions throughout care.',
+          'We begin with a comprehensive evaluation including INSiGHT neurological scanning to objectively assess nervous system function and identify where stress is stuck on. These are tension patterns from past trauma, injury, or accumulated stress that the body hasn\'t yet learned it\'s safe to release. We also coordinate with your neurologist and take extra safety precautions throughout care.',
       },
       {
         title: 'Extremely Gentle Adjustments',

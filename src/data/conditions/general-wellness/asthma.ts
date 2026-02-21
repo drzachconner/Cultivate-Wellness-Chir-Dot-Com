@@ -92,7 +92,7 @@ export const asthma: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from illness, environmental stress, or accumulated life pressure that your body hasn\'t yet released. This reveals how your nervous system may be contributing to airway reactivity and breathing difficulties.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from illness, environmental stress, or accumulated life pressure that your body hasn\'t yet released. This reveals how your nervous system may be contributing to airway reactivity and breathing difficulties.',
       },
       {
         title: 'Gentle, Targeted Adjustments',

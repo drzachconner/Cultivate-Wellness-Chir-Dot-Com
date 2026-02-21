@@ -5,7 +5,7 @@ export const infantNewborn: ConditionPageData = {
   title: 'Infant & Newborn Chiropractic',
   subtitle: 'The Gentlest Start to Lifelong Health',
   category: 'pediatric',
-  heroImage: '/images/hero/baby-4.webp',
+  heroImage: '/images/hero/baby-6.webp',
   seo: {
     title: 'Infant & Newborn Chiropractic Care | Rochester Hills, MI',
     description:
@@ -92,7 +92,7 @@ export const infantNewborn: ConditionPageData = {
       {
         title: 'Detailed History & Examination',
         description:
-          'We take a thorough history of pregnancy and birth, then perform a gentle examination and INSiGHT neurological scanning (if baby cooperates) to identify where stress is stuck on in your baby\'s nervous system — tension from the birth process or early life that the body hasn\'t yet learned it\'s safe to release.',
+          'We take a thorough history of pregnancy and birth, then perform a gentle examination and INSiGHT neurological scanning (if baby cooperates) to identify where stress is stuck on in your baby\'s nervous system. These are tension patterns from the birth process or early life that the body hasn\'t yet learned it\'s safe to release.',
       },
       {
         title: 'INSiGHT Scanning & Assessment',
@@ -138,7 +138,7 @@ export const infantNewborn: ConditionPageData = {
     {
       question: 'How many visits will my baby need?',
       answer:
-        'Your baby\'s frequency of care is determined after a detailed history, consultation, and evaluation, including [INSiGHT neurological scanning](/insight-scans) when age-appropriate. Every baby is different — some respond quickly while others benefit from regular care over several weeks. We create a plan tailored to your baby\'s specific needs and adjust it based on their response.',
+        'Your baby\'s frequency of care is determined after a detailed history, consultation, and evaluation, including [INSiGHT neurological scanning](/insight-scans) when age-appropriate. Every baby is different. Some respond quickly while others benefit from regular care over several weeks. We create a plan tailored to your baby\'s specific needs and adjust it based on their response.',
     },
     {
       question: 'Any tips for the first visit?',

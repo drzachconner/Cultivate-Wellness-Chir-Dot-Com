@@ -97,7 +97,7 @@ export const websterTechnique: ConditionPageData = {
       {
         title: 'Tonal Adjustment & Gentle Engagement',
         description:
-          'Using gentle tonal chiropractic adjustments along with specific, light engagement of the associated pelvic muscles and ligaments — including the round ligament — we work to restore proper balance and normal function to the pelvic region.',
+          'Using gentle tonal chiropractic adjustments along with specific, light engagement of the associated pelvic muscles and ligaments, including the round ligament, we work to restore proper balance and normal function to the pelvic region.',
       },
       {
         title: 'Ongoing Care Throughout Pregnancy',

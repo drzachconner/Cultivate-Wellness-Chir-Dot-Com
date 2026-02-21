@@ -92,7 +92,7 @@ export const vertigoDizziness: ConditionPageData = {
       {
         title: 'Thorough Evaluation',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, chronic strain, or life stress that your body hasn\'t yet released. We also perform detailed balance and proprioceptive testing and assess for BPPV and other vestibular conditions.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from past injuries, chronic strain, or life stress that your body hasn\'t yet released. We also perform detailed balance and proprioceptive testing and assess for BPPV and other vestibular conditions.',
       },
       {
         title: 'Gentle Cervical Correction',

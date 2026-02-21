@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronDown, ScanSearch, ClipboardList, Hand, Sparkles } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
 
@@ -10,14 +11,15 @@ interface Step {
   description: string;
   expandedTitle: string;
   expandedContent: string[];
+  expandedLink?: { text: string; to: string };
 }
 
 const steps: Step[] = [
   {
     number: '01',
     title: 'Your First Visit: Neurological Assessment',
-    image: '/images/insight-scan-neck.webp',
-    imageAlt: 'INSiGHT neurological scan being performed on patient neck',
+    image: '/images/insight-semg-scan-child.webp',
+    imageAlt: 'INSiGHT neuroCORE sEMG scan being performed on a child',
     description:
       'Non-invasive INSiGHT neurological scans measure how the nervous system is functioning, including thermal, EMG, and HRV readings. These painless scans take just minutes and give our team a clear picture of stress patterns in your child\'s (or your) nervous system.',
     expandedTitle: 'About the INSiGHT Scans',
@@ -26,6 +28,7 @@ const steps: Step[] = [
       'Surface EMG (sEMG): Measures muscle tension and energy expenditure along the spine, showing how hard the body is working to maintain posture and balance.',
       'Heart Rate Variability (HRV): Measures the adaptability of the nervous system, indicating how well the body handles and recovers from stress.',
     ],
+    expandedLink: { text: 'Learn more about the INSiGHT Scans', to: '/insight-scans' },
   },
   {
     number: '02',
@@ -76,7 +79,7 @@ const differentiators: DifferentiatorItem[] = [
   },
 ];
 
-function StepAccordion({ title, items }: { title: string; items: string[] }) {
+function StepAccordion({ title, items, link }: { title: string; items: string[]; link?: { text: string; to: string } }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -104,6 +107,14 @@ function StepAccordion({ title, items }: { title: string; items: string[] }) {
             </li>
           ))}
         </ul>
+        {link && (
+          <Link
+            to={link.to}
+            className="inline-block mt-4 text-sm font-semibold text-primary-dark hover:text-primary-accent transition-colors underline underline-offset-2"
+          >
+            {link.text} →
+          </Link>
+        )}
       </div>
     </div>
   );
@@ -155,7 +166,7 @@ export default function WhatToExpect() {
                   <p className="text-gray-700 leading-relaxed">
                     {step.description}
                   </p>
-                  <StepAccordion title={step.expandedTitle} items={step.expandedContent} />
+                  <StepAccordion title={step.expandedTitle} items={step.expandedContent} link={step.expandedLink} />
                 </div>
               </div>
             </AnimateOnScroll>

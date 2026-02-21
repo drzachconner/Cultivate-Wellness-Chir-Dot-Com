@@ -92,7 +92,7 @@ export const carpalTunnel: ConditionPageData = {
       {
         title: 'Full Nerve Pathway Assessment',
         description:
-          'We perform a full nerve pathway assessment including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, repetitive strain, or life stress that your body hasn\'t yet released. We evaluate every potential compression site from the cervical spine through the shoulder, elbow, and wrist to identify the true source of your symptoms.',
+          'We perform a full nerve pathway assessment including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from past injuries, repetitive strain, or life stress that your body hasn\'t yet released. We evaluate every potential compression site from the cervical spine through the shoulder, elbow, and wrist to identify the true source of your symptoms.',
       },
       {
         title: 'Targeted Gentle Corrections',

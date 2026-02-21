@@ -102,7 +102,7 @@ export const sleepDisorders: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We perform a comprehensive evaluation including INSiGHT neurological scanning with HRV testing to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past trauma, chronic stress, or life experiences that your body hasn\'t yet learned it\'s safe to release. This reveals what is keeping your nervous system stuck in "fight or flight" mode and unable to shift into restful sleep.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning with HRV testing to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from past trauma, chronic stress, or life experiences that your body hasn\'t yet learned it\'s safe to release. This reveals what is keeping your nervous system stuck in "fight or flight" mode and unable to shift into restful sleep.',
       },
       {
         title: 'Gentle, Targeted Adjustments',

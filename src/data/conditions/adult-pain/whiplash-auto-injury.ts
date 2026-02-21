@@ -102,7 +102,7 @@ export const whiplashAutoInjury: ConditionPageData = {
       {
         title: 'Thorough Injury Evaluation',
         description:
-          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension from the accident trauma that your body hasn\'t yet learned it\'s safe to release. This reveals all areas of neurological impact, not just where you feel pain, since referred pain patterns can be misleading.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from the accident trauma that your body hasn\'t yet learned it\'s safe to release. This reveals all areas of neurological impact, not just where you feel pain, since referred pain patterns can be misleading.',
       },
       {
         title: 'Gentle, Progressive Care',

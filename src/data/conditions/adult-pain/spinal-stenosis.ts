@@ -92,7 +92,7 @@ export const spinalStenosis: ConditionPageData = {
       {
         title: 'Thorough Assessment',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from years of spinal changes, compensations, or accumulated life stress that your body hasn\'t yet released. We also review any existing imaging and coordinate with your medical team as needed.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from years of spinal changes, compensations, or accumulated life stress that your body hasn\'t yet released. We also review any existing imaging and coordinate with your medical team as needed.',
       },
       {
         title: 'Gentle Spinal Optimization',

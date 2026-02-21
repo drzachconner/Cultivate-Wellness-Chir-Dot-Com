@@ -92,7 +92,7 @@ export const tongueTieLipTie: ConditionPageData = {
       {
         title: 'Comprehensive Evaluation',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning (if age-appropriate) to objectively assess your baby\'s nervous system function and identify where stress is stuck on — tension from the birth process, compensatory patterns from the tie, or early life stress that the body hasn\'t yet learned it\'s safe to release. This reveals the full picture of what is affecting feeding, not just the tie itself.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning (if age-appropriate) to objectively assess your baby\'s nervous system function and identify where stress is stuck on. These are tension patterns from the birth process, compensatory patterns from the tie, or early life stress that the body hasn\'t yet learned it\'s safe to release. This reveals the full picture of what is affecting feeding, not just the tie itself.',
       },
       {
         title: 'Gentle Pre- & Post-Release Care',

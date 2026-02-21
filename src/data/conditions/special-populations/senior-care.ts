@@ -92,7 +92,7 @@ export const seniorCare: ConditionPageData = {
       {
         title: 'Thorough, Age-Appropriate Evaluation',
         description:
-          'We take time to understand your health background, concerns, and goals. Our evaluation includes INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension from decades of accumulated wear, past injuries, or life stress that your body hasn\'t yet released. This reveals the neurological picture behind your symptoms, not just where you feel pain.',
+          'We take time to understand your health background, concerns, and goals. Our evaluation includes INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from decades of accumulated wear, past injuries, or life stress that your body hasn\'t yet released. This reveals the neurological picture behind your symptoms, not just where you feel pain.',
       },
       {
         title: 'Gentle, Safe Adjustments',

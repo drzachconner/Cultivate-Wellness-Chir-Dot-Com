@@ -92,7 +92,7 @@ export const anxietyStress: ConditionPageData = {
       {
         title: 'Nervous System Assessment with HRV',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning with Heart Rate Variability (HRV) testing to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past trauma, chronic stress, or difficult life experiences that your body hasn\'t yet learned it\'s safe to release. This shows us exactly where your nervous system is holding onto stress, not just how you feel emotionally.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning with Heart Rate Variability (HRV) testing to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from past trauma, chronic stress, or difficult life experiences that your body hasn\'t yet learned it\'s safe to release. This shows us exactly where your nervous system is holding onto stress, not just how you feel emotionally.',
       },
       {
         title: 'Calming, Gentle Adjustments',

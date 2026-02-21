@@ -97,7 +97,7 @@ export const concussionPostConcussion: ConditionPageData = {
       {
         title: 'Comprehensive Neurological Assessment',
         description:
-          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension from the concussion impact and cervical trauma that your body hasn\'t yet released. We also evaluate balance, autonomic function, and your complete symptom picture to understand the full scope of your recovery needs.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from the concussion impact and cervical trauma that your body hasn\'t yet released. We also evaluate balance, autonomic function, and your complete symptom picture to understand the full scope of your recovery needs.',
       },
       {
         title: 'Gentle Upper Cervical Care',

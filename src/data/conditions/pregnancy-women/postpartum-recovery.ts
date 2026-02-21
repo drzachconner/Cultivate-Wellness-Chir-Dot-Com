@@ -92,7 +92,7 @@ export const postpartumRecovery: ConditionPageData = {
       {
         title: 'Comprehensive Postpartum Assessment',
         description:
-          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension from pregnancy, the birth experience, or the physical demands of new motherhood that your body hasn\'t yet released. This helps us understand the full picture of your recovery needs, not just where you feel pain.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from pregnancy, the birth experience, or the physical demands of new motherhood that your body hasn\'t yet released. This helps us understand the full picture of your recovery needs, not just where you feel pain.',
       },
       {
         title: 'Gentle, Restorative Adjustments',

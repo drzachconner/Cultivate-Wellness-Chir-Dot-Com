@@ -102,7 +102,7 @@ export const adhdFocusIssues: ConditionPageData = {
       {
         title: 'Comprehensive Neurological Assessment',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your child\'s nervous system function and identify where stress is stuck on — tension patterns from birth, early life experiences, or accumulated physical and emotional stress that the body hasn\'t yet learned it\'s safe to release. This reveals the neurological root of focus and attention challenges, not just the behaviors you see.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your child\'s nervous system function and identify where stress is stuck on. These are tension patterns from birth, early life experiences, or accumulated physical and emotional stress that the body hasn\'t yet learned it\'s safe to release. This reveals the neurological root of focus and attention challenges, not just the behaviors you see.',
       },
       {
         title: 'Gentle, Precise Adjustments',

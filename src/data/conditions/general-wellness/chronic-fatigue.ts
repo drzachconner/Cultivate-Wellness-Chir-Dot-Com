@@ -92,7 +92,7 @@ export const chronicFatigue: ConditionPageData = {
       {
         title: 'Nervous System Assessment',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning with Heart Rate Variability (HRV) testing to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from illness, past trauma, or accumulated life stress that your body hasn\'t yet learned it\'s safe to release. This reveals the nervous system burden draining your energy, not just where you feel tired.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning with Heart Rate Variability (HRV) testing to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from illness, past trauma, or accumulated life stress that your body hasn\'t yet learned it\'s safe to release. This reveals the nervous system burden draining your energy, not just where you feel tired.',
       },
       {
         title: 'Gentle, Paced Corrections',

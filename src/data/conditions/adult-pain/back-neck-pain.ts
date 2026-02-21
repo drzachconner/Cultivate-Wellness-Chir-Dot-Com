@@ -102,7 +102,7 @@ export const backNeckPain: ConditionPageData = {
       {
         title: 'Comprehensive Evaluation',
         description:
-          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past injuries, posture habits, or life stress that your body hasn\'t yet released. This helps us understand the root cause of your symptoms, not just where you feel pain.',
+          'We perform a comprehensive evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from past injuries, posture habits, or life stress that your body hasn\'t yet released. This helps us understand the root cause of your symptoms, not just where you feel pain.',
       },
       {
         title: 'Gentle Chiropractic Adjustments',

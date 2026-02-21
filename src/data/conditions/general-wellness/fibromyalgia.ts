@@ -102,7 +102,7 @@ export const fibromyalgia: ConditionPageData = {
       {
         title: 'Sensitive Assessment',
         description:
-          'We begin with a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from past trauma, chronic stress, or accumulated life experiences that your body hasn\'t yet learned it\'s safe to release. This reveals the nervous system hyperactivity driving your pain signals, not just where you feel discomfort.',
+          'We begin with a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from past trauma, chronic stress, or accumulated life experiences that your body hasn\'t yet learned it\'s safe to release. This reveals the nervous system hyperactivity driving your pain signals, not just where you feel discomfort.',
       },
       {
         title: 'Customized Gentle Adjustments',

@@ -92,7 +92,7 @@ export const arthritis: ConditionPageData = {
       {
         title: 'Joint & Spinal Assessment',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on — tension patterns from years of joint changes, compensations, or accumulated life stress that your body hasn\'t yet released. This reveals how your nervous system may be contributing to inflammation and joint dysfunction beyond the arthritis itself.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your nervous system function and identify where stress is stuck on. These are tension patterns from years of joint changes, compensations, or accumulated life stress that your body hasn\'t yet released. This reveals how your nervous system may be contributing to inflammation and joint dysfunction beyond the arthritis itself.',
       },
       {
         title: 'Gentle, Precise Adjustments',

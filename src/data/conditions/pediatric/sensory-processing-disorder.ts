@@ -102,7 +102,7 @@ export const sensoryProcessing: ConditionPageData = {
       {
         title: 'Sensory-Sensitive Evaluation',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning (at your child\'s pace) to objectively assess your child\'s nervous system function and identify where stress is stuck on — tension patterns from birth, early life experiences, or sensory overwhelm that the body hasn\'t yet learned it\'s safe to release. Building trust always comes first, and we never rush.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning (at your child\'s pace) to objectively assess your child\'s nervous system function and identify where stress is stuck on. These are tension patterns from birth, early life experiences, or sensory overwhelm that the body hasn\'t yet learned it\'s safe to release. Building trust always comes first, and we never rush.',
       },
       {
         title: 'Gentle, Individualized Adjustments',

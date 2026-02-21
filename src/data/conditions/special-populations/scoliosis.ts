@@ -92,7 +92,7 @@ export const scoliosis: ConditionPageData = {
       {
         title: 'Thorough Evaluation & Curve Assessment',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess nervous system function and identify where stress is stuck on — tension patterns from the curvature itself, compensatory strain, or accumulated life stress that the body hasn\'t yet released. We also assess curve type, severity, and for children, growth stage and progression risk, coordinating with pediatricians and orthopedic specialists.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess nervous system function and identify where stress is stuck on. These are tension patterns from the curvature itself, compensatory strain, or accumulated life stress that the body hasn\'t yet released. We also assess curve type, severity, and for children, growth stage and progression risk, coordinating with pediatricians and orthopedic specialists.',
       },
       {
         title: 'Gentle, Full-Spine Adjustments',

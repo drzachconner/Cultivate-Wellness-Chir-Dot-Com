@@ -52,7 +52,7 @@ export const earInfections: ConditionPageData = {
         icon: 'scan-line',
         title: 'INSiGHT Neurological Scanning',
         description:
-          'Using INSiGHT scans, we identify where stress is stuck on in your child\'s nervous system — tension patterns from birth or early life trauma that the body hasn\'t yet learned it\'s safe to release.',
+          'Using INSiGHT scans, we identify where stress is stuck on in your child\'s nervous system. These are tension patterns from birth or early life trauma that the body hasn\'t yet learned it\'s safe to release.',
       },
       {
         icon: 'hand',

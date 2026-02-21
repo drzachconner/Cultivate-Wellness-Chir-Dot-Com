@@ -102,7 +102,7 @@ export const breastfeedingLatch: ConditionPageData = {
       {
         title: 'Comprehensive Assessment',
         description:
-          'We take a thorough history of your baby\'s birth and feeding patterns, followed by a gentle examination and INSiGHT neurological scanning to identify where stress is stuck on in your baby\'s nervous system — tension from the birth process or early life that the body hasn\'t yet learned it\'s safe to release. This reveals how nervous system interference may be affecting the jaw, neck, and cranial mobility needed for effective nursing.',
+          'We take a thorough history of your baby\'s birth and feeding patterns, followed by a gentle examination and INSiGHT neurological scanning to identify where stress is stuck on in your baby\'s nervous system. These are tension patterns from the birth process or early life that the body hasn\'t yet learned it\'s safe to release. This reveals how nervous system interference may be affecting the jaw, neck, and cranial mobility needed for effective nursing.',
       },
       {
         title: 'Ultra-Gentle Adjustments',

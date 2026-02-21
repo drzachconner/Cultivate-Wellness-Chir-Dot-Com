@@ -87,7 +87,7 @@ export const bedwettingEnuresis: ConditionPageData = {
       {
         title: 'Spinal & Neurological Evaluation',
         description:
-          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your child\'s nervous system function and identify where stress is stuck on — tension patterns from birth, childhood falls, or developmental stress that the body hasn\'t yet learned it\'s safe to release. This reveals how the nervous system may be affecting bladder control, not just where the problem seems to be.',
+          'We perform a thorough evaluation including INSiGHT neurological scanning to objectively assess your child\'s nervous system function and identify where stress is stuck on. These are tension patterns from birth, childhood falls, or developmental stress that the body hasn\'t yet learned it\'s safe to release. This reveals how the nervous system may be affecting bladder control, not just where the problem seems to be.',
       },
       {
         title: 'Gentle, Precise Adjustments',
