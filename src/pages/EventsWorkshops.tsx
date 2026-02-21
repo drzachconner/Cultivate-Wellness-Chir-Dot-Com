@@ -51,7 +51,7 @@ export default function EventsWorkshops() {
       <section className="relative py-16 text-white overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/hero-family.webp)' }}
+          style={{ backgroundImage: 'url(/images/hero/family-hearts-beach.webp)' }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/85 to-primary/80" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
