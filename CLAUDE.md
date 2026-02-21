@@ -48,17 +48,21 @@ Chiropractic clinic website for Dr. Zach Conner. React + TypeScript + Vite + Tai
 - `public/_redirects` handles SPA fallback
 - `public/_headers` handles security and caching headers
 
-## Status (as of Feb 14, 2026)
+## Status (as of Feb 21, 2026)
 - Site is LIVE on both cultivatewellnesschiro.com and www.cultivatewellnesschiro.com
 - SSL working, auto-deploy working (GitHub Actions)
 - Migrated from Netlify to Cloudflare Pages (completed)
+- Admin panel live: floating overlay powered by agent-backend at cultivate-agent.drzach.ai
+- GSD Milestone v1.1 (Admin Panel) ~95% complete — Phase 3 needs final verification + close-out
+- INSiGHT Scans page rewritten through tonal neurospinal lens (all ages, official scan names)
+- FAQ "frequency of care" update deployed across 8 condition pages with INSiGHT Scans links
+- FAQ inline markdown link system added (`[text](url)` in FAQ answer strings)
 
 ## Still TODO
-- Verify chatbot and contact form work on custom domain
 - Rotate API keys (Groq, Resend, Brevo) — current ones in .env may be exposed in git history
 - Re-enable SSG prerendering once basic build works (change build command back to `build:ssg`)
 - Data inconsistency: site.ts still has old Rochester Hills address, but merger notification references new Royal Oak location
-- Cancel Netlify subscription after both sites fully verified on Cloudflare
+- Close out GSD Milestone v1.1 (final human verification + `/gsd:complete-milestone`)
 
 ## Directory Structure
 
@@ -110,6 +114,7 @@ Cultivate-Wellness-Chir-Dot-Com/
 - **SEO**: Every page includes `<Seo>` and `<JsonLd>` components
 - **SSG**: Custom Puppeteer prerender script (`scripts/prerender.js`) — currently disabled, to be re-enabled
 - **Condition pages**: 7 reusable components in `src/components/conditions/` (Hero, Approach, Benefits, FAQ, Outcomes, Symptoms, Related)
+- **FAQ inline links**: FAQ answer strings support `[text](url)` markdown syntax. `src/lib/render-inline-links.tsx` parses these — internal links render as `<Link>`, external as `<a>`. `stripInlineLinks()` cleans them for Schema.org output in `schema.ts`
 
 ## Workflow
 
@@ -159,6 +164,25 @@ node scripts/prerender.js
 | `browser-navigator` | Test chatbot widget, contact form, guide download, floating review widget |
 | `docs-weaver` | After adding new pages or modifying API endpoints |
 | `performance-profiler` | After adding new lazy-loaded routes or enabling SSG prerendering |
+
+## GSD + Teams Strategy
+
+**Project complexity**: Medium — React SPA with serverless functions (same architecture as bodymind-chiro)
+
+**GSD Phase Structure** (for major feature work):
+
+| Phase | Work | Team Approach |
+|-------|------|---------------|
+| New pages/conditions | Component + route + SEO + schema | Main agent (sequential — site.ts coupling) |
+| Serverless function changes | chat.ts / form-handler.ts | Main agent (small surface area) |
+| Full redesign | Multiple components + styles | Teams: component specialists |
+| SSG re-enablement | Prerender script + build config | Main agent (sequential) |
+
+**Context Management**:
+- `src/data/site.ts` is the coupling point — any teammate touching content needs this file
+- Schema.org changes in `src/lib/schema.ts` must stay synchronized with `site.ts`
+- Condition page components (`src/components/conditions/`) are independent — safe to parallelize
+- Use `/gsd:resume-work` when resuming multi-session work
 
 ## MCP Connections
 

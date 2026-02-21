@@ -143,7 +143,7 @@ export const breastfeedingLatch: ConditionPageData = {
     {
       question: 'How many visits will it take?',
       answer:
-        'Every baby\'s situation is different, so we determine the right care plan after a thorough history, consultation, and gentle evaluation. This lets our team understand the specific factors affecting your baby\'s nursing and create a personalized plan. Sessions are brief and focused, and we monitor progress closely.',
+        'Your baby\'s frequency of care is determined after a detailed history, consultation, and gentle evaluation, including [INSiGHT neurological scanning](/insight-scans) when age-appropriate. Every baby\'s situation is different, and this process lets our team understand the specific factors affecting your baby\'s nursing and create a personalized plan. Sessions are brief and focused, and we monitor progress closely.',
     },
     {
       question: 'Do you work with lactation consultants?',

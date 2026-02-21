@@ -143,7 +143,7 @@ export const backNeckPain: ConditionPageData = {
     {
       question: 'How many visits will I need?',
       answer:
-        'This varies based on the severity and duration of your condition. Many patients feel improvement after their first visit. We will create a personalized care plan based on your evaluation findings and adjust it based on your progress. Acute conditions may resolve quickly while chronic issues typically require more visits.',
+        'Your frequency of care is determined after a detailed history, consultation, and after we study the results of your non-invasive, non-radiating comprehensive neurological [INSiGHT Scans](/insight-scans). Many patients feel improvement after their first visit. We create a personalized care plan based on your findings and adjust it based on your progress. Acute conditions may resolve quickly while chronic issues typically require more visits.',
     },
     {
       question: 'Should I come in if I\'m in severe pain?',

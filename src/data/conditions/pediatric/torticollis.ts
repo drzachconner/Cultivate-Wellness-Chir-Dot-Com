@@ -138,7 +138,7 @@ export const torticollis: ConditionPageData = {
     {
       question: 'How many visits will my baby need?',
       answer:
-        'Every baby responds differently, so we don\'t provide specific visit numbers or schedules until we\'ve completed a thorough history, consultation, and evaluation. This allows our team to create a care plan tailored to your baby\'s specific needs. We monitor progress closely and adjust the plan as your baby improves.',
+        'Your baby\'s frequency of care is determined after a detailed history, consultation, and evaluation, including [INSiGHT neurological scanning](/insight-scans) when age-appropriate. Every baby responds differently, and this allows our team to create a care plan tailored to your baby\'s specific needs. We monitor progress closely and adjust the plan as your baby improves.',
     },
     {
       question: 'What other issues can torticollis cause?',

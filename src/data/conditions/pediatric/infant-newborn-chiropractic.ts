@@ -138,7 +138,7 @@ export const infantNewborn: ConditionPageData = {
     {
       question: 'How many visits will my baby need?',
       answer:
-        'Every baby is different. Some respond quickly with just a few visits, while others benefit from regular care over several weeks. We will create a plan tailored to your baby\'s specific needs and adjust it based on their response.',
+        'Your baby\'s frequency of care is determined after a detailed history, consultation, and evaluation, including [INSiGHT neurological scanning](/insight-scans) when age-appropriate. Every baby is different — some respond quickly while others benefit from regular care over several weeks. We create a plan tailored to your baby\'s specific needs and adjust it based on their response.',
     },
     {
       question: 'Any tips for the first visit?',

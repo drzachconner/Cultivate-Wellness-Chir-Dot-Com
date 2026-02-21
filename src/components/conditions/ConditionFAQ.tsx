@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import { renderInlineLinks } from '../../lib/render-inline-links';
 
 interface FAQ {
   question: string;
@@ -41,7 +42,7 @@ export default function ConditionFAQ({ faqs }: ConditionFAQProps) {
               </button>
               {openIndex === index && (
                 <div className="px-6 pb-5">
-                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                  <p className="text-gray-700 leading-relaxed">{renderInlineLinks(faq.answer)}</p>
                 </div>
               )}
             </div>

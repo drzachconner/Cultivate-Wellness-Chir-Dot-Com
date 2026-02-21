@@ -148,7 +148,7 @@ export const pandasPans: ConditionPageData = {
     {
       question: 'How many visits will my child need?',
       answer:
-        'Every child with PANDAS/PANS is different, and symptoms can fluctuate. Our team will create an individualized care plan and perform regular progress evaluations. We adapt the frequency and intensity of care based on your child\'s response and current symptom levels.',
+        'Your child\'s frequency of care is determined after a detailed history, consultation, and after we study the results of your child\'s non-invasive, non-radiating comprehensive neurological [INSiGHT Scans](/insight-scans). Every child with PANDAS/PANS is different, and symptoms can fluctuate. We adapt the frequency of care based on your child\'s response and current symptom levels.',
     },
     {
       question: 'Will you communicate with our child\'s other doctors?',

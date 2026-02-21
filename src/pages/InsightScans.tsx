@@ -11,30 +11,34 @@ export default function InsightScans() {
   const scanTypes = [
     {
       icon: Activity,
-      title: 'NeuroThermal Scan',
+      title: 'neuroTHERMAL Scan',
       description: (
         <>
-          Provides insights into subluxation and dysautonomia, helping us understand{' '}
+          Measures temperature differences along the spine to identify areas of autonomic nervous system imbalance. These patterns reveal subluxation and dysautonomia — showing us how neurospinal stress is affecting{' '}
           <Link to="/conditions/digestive-gi-issues" className="text-primary-dark underline hover:text-primary-accent">digestive</Link>,{' '}
-          <Link to="/conditions/immune-support" className="text-primary-dark underline hover:text-primary-accent">immune</Link>, and hormonal conditions at their neurological root.
+          <Link to="/conditions/immune-support" className="text-primary-dark underline hover:text-primary-accent">immune</Link>, and hormonal regulation at their neurological root. Quick, painless, and safe for all ages.
         </>
       ),
     },
     {
       icon: Heart,
-      title: 'HRV (Heart Rate Variability) Scan',
-      description: 'Indicates your body\'s adaptability to stress and measures how well your nervous system responds to daily challenges.',
+      title: 'neuroPULSE (HRV) Scan',
+      description: (
+        <>
+          Heart Rate Variability measures your body's ability to adapt to stress by analyzing the balance between your sympathetic ("gas pedal") and parasympathetic ("brake pedal") nervous system. A low HRV score reveals a nervous system stuck in{' '}
+          <Link to="/conditions/anxiety-stress" className="text-primary-dark underline hover:text-primary-accent">stress mode</Link> — unable to recover, rest, or heal efficiently. This scan takes just a few minutes and provides a window into your overall resilience.
+        </>
+      ),
     },
     {
       icon: Brain,
-      title: 'EMG Scan',
+      title: 'neuroCORE (sEMG) Scan',
       description: (
         <>
-          Detects neuromotor challenges, particularly useful for conditions like{' '}
-          <Link to="/conditions/autism-neurodevelopmental" className="text-primary-dark underline hover:text-primary-accent">Autism</Link>,{' '}
-          <Link to="/conditions/adhd-focus-issues" className="text-primary-dark underline hover:text-primary-accent">ADHD</Link>, and{' '}
-          <Link to="/conditions/anxiety-stress" className="text-primary-dark underline hover:text-primary-accent">Anxiety</Link>{' '}
-          by identifying nervous system imbalances.
+          Surface electromyography measures the electrical activity in the muscles along your spine, revealing where your body is holding tension, guarding, and wasting energy. Patterns of imbalance here are closely tied to conditions like{' '}
+          <Link to="/conditions/adhd-focus-issues" className="text-primary-dark underline hover:text-primary-accent">ADHD</Link>,{' '}
+          <Link to="/conditions/anxiety-stress" className="text-primary-dark underline hover:text-primary-accent">anxiety</Link>, and{' '}
+          <Link to="/conditions/autism-neurodevelopmental" className="text-primary-dark underline hover:text-primary-accent">neurodevelopmental challenges</Link> — showing us exactly where the nervous system is working too hard or not hard enough.
         </>
       ),
     },
@@ -43,8 +47,8 @@ export default function InsightScans() {
   return (
     <>
       <Seo
-        title="INSiGHT Scans - Advanced Nervous System Assessment"
-        description="We don't guess, we test. Using INSiGHT Scans, we craft tailored care plans for your child's unique neurological needs through advanced scanning technology."
+        title="INSiGHT Scans - Comprehensive Neurological Assessment"
+        description="Non-invasive, non-radiating INSiGHT neurological scans for the whole family. neuroTHERMAL, neuroPULSE, and neuroCORE scans reveal how your nervous system is truly functioning — from newborns to seniors."
         canonical="/insight-scans"
         ogImage="/images/insight-hero.webp"
       />
@@ -54,20 +58,22 @@ export default function InsightScans() {
       ])} />
       <JsonLd
         data={medicalWebPageSchema({
-          headline: 'INSiGHT Scans - Advanced Nervous System Assessment',
-          description: 'State-of-the-art INSiGHT scanning technology for objective nervous system assessment. NeuroThermal, HRV, and EMG scans provide the CORE Score to guide personalized chiropractic care plans.',
+          headline: 'INSiGHT Scans - Comprehensive Neurological Assessment',
+          description: 'Non-invasive, non-radiating INSiGHT scanning technology for objective nervous system assessment. neuroTHERMAL, neuroPULSE (HRV), and neuroCORE (sEMG) scans provide the CORE Score to guide personalized tonal chiropractic care plans for patients of all ages.',
           image: '/images/insight-hero.webp',
           datePublished: '2024-01-10',
-          dateModified: '2025-10-20',
+          dateModified: '2026-02-21',
           author: 'Dr. Zach Conner',
           url: '/insight-scans',
           therapy: {
             name: 'INSiGHT Nervous System Scanning',
-            description: 'Non-invasive NeuroThermal, HRV, and EMG scanning technology to measure nervous system function and create personalized care plans',
+            description: 'Non-invasive neuroTHERMAL, neuroPULSE (HRV), and neuroCORE (sEMG) scanning technology to measure nervous system function and create personalized tonal chiropractic care plans for patients of all ages',
           },
-          wordCount: 1000,
+          wordCount: 1200,
         })}
       />
+
+      {/* Hero */}
       <section className="relative py-32 bg-gray-900 min-h-[500px] flex items-center">
         <div className="absolute inset-0 z-0">
           <img
@@ -82,32 +88,38 @@ export default function InsightScans() {
             INSiGHT Scans
           </h1>
           <p className="text-xl sm:text-2xl text-white max-w-4xl mx-auto leading-relaxed">
-            We don't guess, we test. Using INSiGHT Scans, we craft tailored care plans
-            for your child's unique neurological needs.
+            Non-invasive, non-radiating neurological scans that reveal how your
+            nervous system is truly functioning — so we never have to guess.
           </p>
         </div>
       </section>
 
+      {/* Intro — Why Objective Measurement Matters */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              The Power of The Central Nervous System
+              Why We Scan: Seeing What Symptoms Can't Tell Us
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Your central nervous system is the command center that coordinates your body's internal
-              functions, perceives your environment, and coordinates cell function. It is crucial for
-              overall health and well-being.
+              Your nervous system controls and coordinates every function in your body — from
+              digestion and immune response to mood, sleep, and how you handle stress. When
+              subluxation (neurospinal stress) is present, it disrupts this communication and
+              your body begins to compensate. You may not feel it right away, but the effects
+              accumulate over time.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Understanding how well your nervous system is functioning is essential to creating an
-              effective care plan. That's why we use state-of-the-art INSiGHT scanning technology to
-              measure your nervous system function accurately and objectively.
+              That's why we don't rely on symptoms alone. Symptoms are the last thing to show
+              up and the first thing to go away — they're an unreliable measure of how your
+              nervous system is actually performing. INSiGHT scans give us an objective,
+              reproducible window into what's really happening, so we can build a care plan
+              based on data, not guesswork.
             </p>
           </div>
         </div>
       </section>
 
+      {/* Three Scans Grid */}
       <section className="py-16 bg-gradient-to-br from-primary-light/10 to-primary-light/10/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
@@ -127,34 +139,37 @@ export default function InsightScans() {
         </div>
       </section>
 
+      {/* CORE Score */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img
                 src="/images/insight-scan-1.webp"
-                alt="INSiGHT Scan Example"
+                alt="CORE Score INSiGHT Scan Results"
                 className="rounded-xl shadow-lg"
               />
             </div>
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                The CORE Score: Your Health Indicator
+                The CORE Score: Your Neural Efficiency Index
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                The CORE Score is a comprehensive health score that reflects how well your body
-                is adapting to stress. It serves as an indicator of your neurological health and
-                overall well-being.
+                By combining the data from all three INSiGHT scans, we generate your
+                personalized CORE Score — a single number that reflects how efficiently your
+                nervous system is functioning overall. Think of it as a report card for your
+                neurospinal health.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                By combining data from all three INSiGHT scans, we generate your personalized CORE
-                Score, which helps us track your progress throughout your care journey and make
-                data-driven decisions about your treatment plan.
+                The CORE Score moves the conversation from "How do you feel?" to "How is your
+                nervous system performing?" This allows us to track real, measurable progress
+                over time — not just symptom relief, but genuine improvement in how your body
+                adapts, heals, and functions.
               </p>
               <div className="bg-primary-light/10 border-l-4 border-primary-dark p-6 rounded-lg">
                 <p className="text-lg text-gray-900 font-medium">
-                  Regular scanning allows us to monitor changes and optimize your care for the best
-                  possible outcomes.
+                  Regular re-scanning shows us exactly how your nervous system is responding to
+                  care, so we can adjust your plan for the best possible outcomes.
                 </p>
               </div>
             </div>
@@ -162,32 +177,35 @@ export default function InsightScans() {
         </div>
       </section>
 
+      {/* Safe for All Ages */}
       <section className="py-16 bg-primary-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center mb-8">
               <TrendingUp size={48} className="text-primary-light" />
             </div>
-            <h2 className="text-3xl font-bold mb-8 text-center">Our Commitment</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Safe for the Whole Family</h2>
             <p className="text-xl text-white/90 text-center leading-relaxed mb-8">
-              At Cultivate Wellness Chiropractic, we are committed to providing the highest quality,
-              evidence-based care. Our INSiGHT scanning technology ensures that we understand exactly
-              what's happening in your nervous system, so we can provide the most effective care
-              possible for you and your family.
+              INSiGHT scans are completely non-invasive and emit zero radiation. There is
+              nothing to swallow, no needles, and no discomfort. The scans are safe and
+              appropriate for everyone — from newborns just hours old to active seniors.
+              That's why we use them as the foundation of every care plan we create.
             </p>
             <div className="grid md:grid-cols-2 gap-8 mt-12">
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-3">Non-Invasive & Safe</h3>
+                <h3 className="text-xl font-bold mb-3">Non-Invasive & No Radiation</h3>
                 <p className="text-white/90">
-                  Our scanning technology is completely safe, non-invasive, and appropriate for
-                  patients of all ages, from newborns to seniors.
+                  Our scans use surface sensors that simply rest on the skin. There is nothing
+                  invasive about the process, and no radiation of any kind is emitted. Parents
+                  can hold their baby throughout the entire scan.
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-3">Objective Measurements</h3>
+                <h3 className="text-xl font-bold mb-3">Objective & Reproducible</h3>
                 <p className="text-white/90">
-                  We don't rely on guesswork. Our scans provide objective data about your nervous
-                  system function, ensuring precise and personalized care.
+                  Unlike subjective assessments, INSiGHT scans produce objective, measurable
+                  data. This means your results are consistent, comparable over time, and not
+                  influenced by how you're feeling on a given day.
                 </p>
               </div>
             </div>
@@ -195,28 +213,32 @@ export default function InsightScans() {
         </div>
       </section>
 
+      {/* What Scans Reveal */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Experience the Difference
+                From Scan Results to Tonal Adjustments
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Discover how INSiGHT scanning technology can help us understand your unique
-                neurological needs and create a personalized care plan that addresses the root
-                cause of your health concerns.
+                Your INSiGHT scan results reveal patterns of neurospinal stress — areas where
+                your nervous system is stuck in tension, unable to adapt, or wasting energy on
+                compensation. These patterns are what guide our gentle, tonal chiropractic
+                adjustments.
               </p>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Whether you're seeking care for yourself or your child, our advanced scanning
-                technology ensures we have the information needed to provide the most effective,
-                targeted chiropractic care.
+                Rather than chasing symptoms, we use your scan data to target the specific areas
+                of subluxation that are interfering with your body's ability to function, heal,
+                and thrive. Whether you're a newborn with birth-related stress, a child
+                struggling with focus, or an adult dealing with chronic tension — the scans show
+                us where to focus and how to measure your progress.
               </p>
             </div>
             <div className="order-1 md:order-2">
               <img
                 src="/images/insight-scan-2.webp"
-                alt="INSiGHT Technology"
+                alt="INSiGHT Scan Technology in Use"
                 className="rounded-xl shadow-lg"
               />
             </div>
@@ -225,9 +247,9 @@ export default function InsightScans() {
       </section>
 
       <CTABanner
-        title="Ready to Learn More About Your Nervous System?"
-        description="Schedule a consultation to experience our INSiGHT scanning technology and discover how we can help you achieve optimal health."
-        buttonText="Schedule Consultation"
+        title="Ready to See What Your Nervous System Is Telling Us?"
+        description="Schedule a consultation to experience our INSiGHT scanning technology. Discover what's really happening in your nervous system — and what we can do about it."
+        buttonText="Schedule Your Scans"
         buttonLink="/schedule-appointment"
       />
     </>

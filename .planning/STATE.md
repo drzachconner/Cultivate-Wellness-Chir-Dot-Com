@@ -79,6 +79,29 @@ The agent-backend already exists at https://agent.drzach.ai (Express + Claude Ag
 6. **CSP blocking Cloudflare Analytics** — `static.cloudflareinsights.com` not in script-src. Added to CSP
 7. **Smoke test false positives** — `/conditions` 308 redirect, SPA JSON-LD check, CORS pipe issue. All fixed
 
+### Post-Milestone Content Work (Feb 21, 2026)
+
+**FAQ "Frequency of Care" + INSiGHT Scans Updates:**
+- Created `src/lib/render-inline-links.tsx` — parses `[text](url)` in FAQ answer strings, renders `<Link>` for internal, `<a>` for external
+- Updated `src/components/conditions/ConditionFAQ.tsx` to use `renderInlineLinks()`
+- Updated `src/lib/schema.ts` — `faqSchema()` uses `stripInlineLinks()` to keep Schema.org clean
+- Updated 8 FAQ files to use "frequency of care" language + link to `/insight-scans`:
+  - Adult/general (full INSiGHT mention): webster-technique, back-neck-pain, fibromyalgia, pandas-pans
+  - Infant/baby (softer "when age-appropriate"): breastfeeding-latch-issues, colic-infant-digestive, torticollis, infant-newborn-chiropractic
+- **INSiGHT Scans page full rewrite** (`src/pages/InsightScans.tsx`):
+  - All-ages messaging (was child-only)
+  - Official scan names: neuroTHERMAL, neuroPULSE (HRV), neuroCORE (sEMG)
+  - CORE Score as neural efficiency index
+  - Tonal chiropractic neurospinal lens throughout
+  - Both images preserved (insight-scan-1.webp, insight-scan-2.webp)
+  - Updated SEO meta description
+- TypeScript and production build both pass clean
+
+**Pre-existing uncommitted changes (from prior session):**
+- Deleted 30 stale `public/conditions/*.html` files (prerendered HTML no longer needed)
+- CLAUDE.md updates
+- package.json / package-lock.json updates
+
 ## Remaining Work
 
 ### Known Issues (not blockers)
@@ -89,8 +112,8 @@ The agent-backend already exists at https://agent.drzach.ai (Express + Claude Ag
 ### Phase 3 Checkpoint Status
 - Automated smoke test: PASS (24/24)
 - Playwright E2E: 17/19 (chat response timeout + console error were the 2 failures, both addressed)
-- Human verification: NOT YET COMPLETED (user about to start fresh session)
-- 03-03-SUMMARY.md: NEEDS WRITING (mostly done, pending final verification)
+- Human verification: NOT YET COMPLETED
+- 03-03-SUMMARY.md: NEEDS WRITING (pending final verification)
 
 ## Decisions
 
@@ -109,8 +132,9 @@ Last session: 2026-02-21
 
 ### For Next Session
 - Run `/gsd:resume-work` to restore GSD context
+- **Uncommitted work**: FAQ inline links, INSiGHT Scans rewrite, FAQ frequency-of-care updates, stale HTML deletions, CLAUDE.md updates — all need to be committed and pushed
 - Phase 3 is ~95% complete — just needs final human verification on production
 - The Playwright test (`npx tsx scripts/e2e-admin-verify.ts`) can automate most verification
 - After verification, write 03-03-SUMMARY.md and close out Phase 3
 - Then run `/gsd:verify-work` and `/gsd:complete-milestone` to close Milestone v1.1
-- User mentioned: "i'm going to start a fresh session that will have many major dynamic changes based off of deep research conducted"
+- **User plans major dynamic changes** based on deep research — new session will have significant content/structure modifications

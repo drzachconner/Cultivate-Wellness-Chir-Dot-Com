@@ -148,7 +148,7 @@ export const websterTechnique: ConditionPageData = {
     {
       question: 'How often will I need to come in?',
       answer:
-        'We determine the right frequency after completing a comprehensive history, consultation, and evaluation. Every mother\'s needs are different, and the appropriate schedule depends on your individual situation and response to care. Our team will recommend a plan that works best for you.',
+        'Your frequency of care is determined after a detailed history, consultation, and after we study the results of your non-invasive, non-radiating comprehensive neurological [INSiGHT Scans](/insight-scans). Every mother\'s needs are different, and the recommended frequency of care depends on your individual situation and how your nervous system responds. Our team will recommend a plan that works best for you.',
     },
   ],
   relatedConditions: [

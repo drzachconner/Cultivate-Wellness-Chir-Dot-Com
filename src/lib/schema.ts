@@ -1,4 +1,5 @@
 import { SITE, aggregateRating as siteAggregateRating, activeSocials } from '../data/site';
+import { stripInlineLinks } from './render-inline-links';
 
 /**
  * Schema.org structured data generators
@@ -158,7 +159,7 @@ export function faqSchema(faqs: Array<{ question: string; answer: string }>) {
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: faq.answer,
+        text: stripInlineLinks(faq.answer),
       },
     })),
   };

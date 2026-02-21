@@ -148,7 +148,7 @@ export const fibromyalgia: ConditionPageData = {
     {
       question: 'How often will I need to come in?',
       answer:
-        'Every fibromyalgia patient is different. We will recommend a care plan based on your initial evaluation and adjust it as you progress. We typically start gently and increase frequency only as your body demonstrates it can handle more. Results vary from person to person.',
+        'Your frequency of care is determined after a detailed history, consultation, and after we study the results of your non-invasive, non-radiating comprehensive neurological [INSiGHT Scans](/insight-scans). Every fibromyalgia patient is different. We typically start gently and adjust the frequency of care as your body demonstrates it can handle more. Results vary from person to person.',
     },
     {
       question: 'Do you work with my other doctors?',

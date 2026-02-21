@@ -128,7 +128,7 @@ export const colicInfantDigestive: ConditionPageData = {
     {
       question: 'How quickly will we see results?',
       answer:
-        'Every baby is unique, so we determine the right approach after completing a thorough history, consultation, and gentle examination. Some babies respond very quickly while others need more time. We create a care plan tailored to your baby\'s specific needs and monitor progress closely.',
+        'Your baby\'s frequency of care is determined after a detailed history, consultation, and gentle examination, including [INSiGHT neurological scanning](/insight-scans) when age-appropriate. Every baby is unique — some respond very quickly while others need more time. We create a care plan tailored to your baby\'s specific needs and monitor progress closely.',
     },
     {
       question: 'What other digestive issues can chiropractic help with?',
