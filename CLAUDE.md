@@ -17,6 +17,15 @@ Chiropractic clinic website for Dr. Zach Conner. React + TypeScript + Vite + Tai
 - `functions/api/chat.ts` — AI chatbot powered by OpenAI (Cloudflare Pages Function)
 - All pages lazy-loaded via React.lazy() in App.tsx
 
+## Email Architecture
+- **Resend**: Transactional email (form notifications, guide delivery). No "Sent with" badge. Domain: `forms@cultivatewellnesschiro.com`.
+- **Brevo**: CRM/contact storage + marketing campaigns. Contacts tagged with segmentation attributes:
+  - `FIRSTNAME` — first name from form
+  - `SOURCE` — `guide_download`, `appointment_request`, or `contact_form`
+  - `GUIDE_NAME` — title of downloaded guide (only for guide downloads)
+  - `FORM_DATE` — ISO date of form submission
+- Each client owns their own Resend + Brevo accounts. Agent backend automates post-account-creation setup.
+
 ## Brand Colors (Tailwind)
 - `primary-dark`: #002d4e (navy) — primary buttons, headers
 - `primary`: #6383ab (soft blue)
@@ -38,7 +47,7 @@ Chiropractic clinic website for Dr. Zach Conner. React + TypeScript + Vite + Tai
 - **Compatibility**: `nodejs_compat` flag, date `2024-09-23`
 - **DNS zone**: cultivatewellnesschiro.com (zone ID: 00d364c0d7d8bae4f050fc53e14a2ffb)
 - **Cloudflare account ID**: a353a0ba5d6753a262466e799f1d960c
-- **Env vars set in Cloudflare Pages**: OPENAI_API_KEY, RESEND_API_KEY, BREVO_API_KEY, NOTIFICATION_EMAIL
+- **Env vars set in Cloudflare Pages**: OPENAI_API_KEY, RESEND_API_KEY, BREVO_API_KEY, NOTIFICATION_EMAIL, BREVO_LIST_ID
 
 ## Cloudflare Pages Functions
 - Functions use the `onRequestPost` / `onRequestOptions` export pattern
@@ -142,6 +151,7 @@ node scripts/prerender.js
 | `RESEND_API_KEY` | Cloudflare Pages | Transactional email via Resend |
 | `BREVO_API_KEY` | Cloudflare Pages | Email marketing list signup |
 | `NOTIFICATION_EMAIL` | Cloudflare Pages | Contact form notification recipient |
+| `BREVO_LIST_ID` | Cloudflare Pages | Brevo marketing list ID |
 | `CLOUDFLARE_API_TOKEN` | GitHub Secrets | Deploy to Cloudflare Pages |
 | `CLOUDFLARE_ACCOUNT_ID` | GitHub Secrets | Cloudflare account identifier |
 

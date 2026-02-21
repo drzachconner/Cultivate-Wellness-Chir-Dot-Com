@@ -5,6 +5,7 @@ interface Env {
   RESEND_API_KEY: string;
   NOTIFICATION_EMAIL?: string;
   BREVO_API_KEY?: string;
+  BREVO_LIST_ID?: string;
 }
 
 const SITE_URL = 'https://www.cultivatewellnesschiro.com';
@@ -37,9 +38,23 @@ const GUIDES: Record<string, { title: string; pdfUrl: string; subject: string }>
   },
 };
 
-// Add contact to Brevo
-async function addToBrevo(email: string, firstName: string, brevoApiKey: string, listId: number = 2) {
+// Add contact to Brevo with segmentation attributes
+async function addToBrevo(
+  email: string,
+  firstName: string,
+  brevoApiKey: string,
+  listId: number,
+  source: string,
+  guideName?: string
+) {
   try {
+    const attributes: Record<string, string> = {
+      FIRSTNAME: firstName,
+      SOURCE: source,
+      FORM_DATE: new Date().toISOString().split('T')[0],
+    };
+    if (guideName) attributes.GUIDE_NAME = guideName;
+
     const response = await fetch('https://api.brevo.com/v3/contacts', {
       method: 'POST',
       headers: {
@@ -49,7 +64,7 @@ async function addToBrevo(email: string, firstName: string, brevoApiKey: string,
       },
       body: JSON.stringify({
         email,
-        attributes: { FIRSTNAME: firstName },
+        attributes,
         listIds: [listId],
         updateEnabled: true,
       }),
@@ -266,9 +281,14 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       });
     }
 
-    // Add to Brevo contact list
+    // Add to Brevo contact list with segmentation attributes
     if (context.env.BREVO_API_KEY) {
-      await addToBrevo(email, firstName, context.env.BREVO_API_KEY);
+      const brevoListId = parseInt(context.env.BREVO_LIST_ID || '2', 10);
+      const source = formType === 'guide' ? 'guide_download'
+        : formType === 'appointment' ? 'appointment_request'
+        : 'contact_form';
+      const guideName = formType === 'guide' ? (GUIDES[data._guideId]?.title || undefined) : undefined;
+      await addToBrevo(email, firstName, context.env.BREVO_API_KEY, brevoListId, source, guideName);
     }
 
     return new Response(JSON.stringify({ success: true }), {
