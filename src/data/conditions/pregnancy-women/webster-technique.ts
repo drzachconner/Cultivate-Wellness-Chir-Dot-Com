@@ -18,7 +18,7 @@ export const websterTechnique: ConditionPageData = {
   highlightBox: {
     icon: 'shield',
     label: 'Scope of Practice',
-    text: 'As chiropractors, we provide care for the mother. We do not turn, reposition, or treat the fetus — that is outside the scope of chiropractic practice. The Webster Technique specifically addresses the mother\'s pelvic balance, associated muscles and ligaments, and nervous system function. Any physiological changes that occur are a result of the mother\'s body functioning more optimally.',
+    text: 'As chiropractors, we provide care for the mother. We do not use intent with our analysis or application to turn, reposition, or treat the baby in any way. The Webster Technique specifically addresses the mother\'s pelvic balance, associated muscles and ligaments, and nervous system function. Any physiological changes that occur are a result of the mother\'s body functioning more optimally.',
   },
   symptoms: {
     sectionTitle: 'Common Reasons Mothers Seek Webster Care',
@@ -128,7 +128,7 @@ export const websterTechnique: ConditionPageData = {
     {
       question: 'Does the Webster Technique turn breech babies?',
       answer:
-        'No. As chiropractors, we care for the mother, not the baby. We do not turn, reposition, or treat the fetus in any way. What we do is work to restore proper pelvic balance and nervous system function for the mother. When the pelvis is balanced and functioning well, the body is better able to support the natural processes of pregnancy. The technique is often associated with encouraging optimal positioning, but any changes occur naturally as a result of the mother\'s improved function.',
+        'As chiropractors, we care for the mother, not the baby. We do not use intent with our analysis or application to turn, reposition, or treat the baby in any way. What we do is work to restore proper pelvic balance and nervous system function for the mother. When the pelvis is balanced and functioning well, the body is better able to support the natural processes of pregnancy. The technique is often associated with encouraging optimal positioning, but any changes occur naturally as a result of the mother\'s improved function.',
     },
     {
       question: 'When should I start Webster Technique care?',
