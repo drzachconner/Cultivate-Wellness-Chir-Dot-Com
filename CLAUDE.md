@@ -57,12 +57,19 @@ Chiropractic clinic website for Dr. Zach Conner. React + TypeScript + Vite + Tai
 - `public/_redirects` handles SPA fallback
 - `public/_headers` handles security and caching headers
 
+## Admin Panel (Shared)
+- **Source**: ~/Code/admin-agent/ (frontend + backend)
+- **Hosted URL**: agent.drzach.ai/admin/cultivate-wellness
+- **Local redirect**: `/admin` → agent.drzach.ai/admin/cultivate-wellness (via `AdminRedirect.tsx`)
+- **Do NOT** create admin components in this repo — admin panel lives in admin-agent
+- **Save/Discard workflow**: Agent makes file changes → user previews diff → Save (commit+push) or Discard (revert)
+- **Post-save**: Hard refresh production site (Cmd+Shift+R / Ctrl+Shift+R), changes live in 1-2 min
+
 ## Status (as of Feb 21, 2026)
 - Site is LIVE on both cultivatewellnesschiro.com and www.cultivatewellnesschiro.com
 - SSL working, auto-deploy working (GitHub Actions)
 - Migrated from Netlify to Cloudflare Pages (completed)
-- Admin panel live: floating overlay powered by agent-backend at cultivate-agent.drzach.ai
-- GSD Milestone v1.1 (Admin Panel) ~95% complete — Phase 3 needs final verification + close-out
+- Admin panel consolidated into admin-agent (standalone SPA at agent.drzach.ai/admin/cultivate-wellness)
 - INSiGHT Scans page rewritten through tonal neurospinal lens (all ages, official scan names)
 - FAQ "frequency of care" update deployed across 8 condition pages with INSiGHT Scans links
 - FAQ inline markdown link system added (`[text](url)` in FAQ answer strings)
@@ -71,7 +78,6 @@ Chiropractic clinic website for Dr. Zach Conner. React + TypeScript + Vite + Tai
 - Rotate API keys (Groq, Resend, Brevo) — current ones in .env may be exposed in git history
 - Re-enable SSG prerendering once basic build works (change build command back to `build:ssg`)
 - Data inconsistency: site.ts still has old Rochester Hills address, but merger notification references new Royal Oak location
-- Close out GSD Milestone v1.1 (final human verification + `/gsd:complete-milestone`)
 
 ## Directory Structure
 
@@ -95,6 +101,7 @@ Cultivate-Wellness-Chir-Dot-Com/
 │   │   ├── conditions/            # Condition-specific page components (7 files)
 │   │   ├── Header.tsx / Footer.tsx
 │   │   ├── ChatbotWidget.tsx      # Public AI chatbot
+│   │   ├── AdminRedirect.tsx      # Redirects /admin → agent.drzach.ai/admin/cultivate-wellness
 │   │   ├── ContactForm.tsx / GuideForm.tsx
 │   │   ├── Hero.tsx / CTABanner.tsx
 │   │   ├── FloatingReviewWidget.tsx
@@ -200,3 +207,26 @@ node scripts/prerender.js
 |--------|---------|
 | `filesystem` | Read/write project files during development |
 | `gdrive-mcp` | Access Google Drive assets (images, documents) if needed |
+
+## Known Issues
+
+- **API keys may be in early git history**: Groq, Resend, and Brevo keys may have been exposed in early commits. Rotation is pending (see "Still TODO" section above).
+- **SSG prerendering disabled**: `build:ssg` script exists but is currently disabled. Re-enable once basic build is verified — change build command back to `build:ssg` in Cloudflare Pages dashboard.
+- **Address inconsistency in site.ts**: `src/data/site.ts` still contains the old Rochester Hills address, but the merger notification banner references the new Royal Oak location. These must be reconciled before removing the merger banner.
+- **Supabase directory**: A `supabase/` directory exists in the repo but is not actively used. Verify before removing.
+
+## Completed Work
+
+- Site live on cultivatewellnesschiro.com and www.cultivatewellnesschiro.com (SSL active, both domains resolving)
+- Migrated from Netlify to Cloudflare Pages (completed Feb 2026)
+- GitHub Actions auto-deploy pipeline active (push to main → Cloudflare Pages in ~1-2 min)
+- Admin panel integrated at agent.drzach.ai/admin/cultivate-wellness (standalone SPA from admin-agent repo)
+- AdminRedirect.tsx component routes `/admin` → agent.drzach.ai/admin/cultivate-wellness
+- AI chatbot active at `/api/chat` (OpenAI GPT-5 Mini via Cloudflare Pages Function)
+- Contact form + guide download email handler active at `/api/form-handler` (Resend + Brevo)
+- INSiGHT Scans page rewritten through tonal neurospinal lens (all ages, official scan names)
+- FAQ "frequency of care" update deployed across 8 condition pages with INSiGHT Scans links
+- FAQ inline markdown link system implemented (`[text](url)` in FAQ answer strings via `src/lib/render-inline-links.tsx`)
+- MergerNotification banner live (practice merger announcement)
+- FloatingReviewWidget component active
+- Schema.org structured data generators in `src/lib/schema.ts` fully integrated with `src/data/site.ts`
