@@ -1,8 +1,12 @@
 // All routes for SSG pre-rendering
+// Generated from SITE.pages config + conditions data
+import { SITE } from './data/site';
+import { getAllConditions } from './data/conditions';
+
 export const routes = [
+  // Shared routes (identical across all sites)
   '/',
   '/about-us',
-  '/meet-dr-zach',
   '/pediatric',
   '/prenatal',
   '/family',
@@ -16,66 +20,25 @@ export const routes = [
   '/privacy',
   '/thanks',
   '/3-ways-to-poop',
-
   '/rhkn-guide',
   '/3-ways-to-sleep',
   '/free-guides-for-parents',
   '/talsky-tonal-chiropractic',
-  '/insight-scans',
   '/answers',
+  '/thank-you-for-your-submission',
+
+  // Dynamic: Doctor page
+  SITE.pages.doctor.slug,
+
+  // Dynamic: Technique pages (excluding TalskyTonal which is shared above)
+  ...SITE.pages.techniques
+    .filter((t) => t.slug !== '/talsky-tonal-chiropractic')
+    .map((t) => t.slug),
+
+  // Dynamic: Site-specific pages
+  ...SITE.pages.siteSpecific.map((p) => p.slug),
+
+  // Conditions (data-driven)
   '/conditions',
-  // Pediatric
-  '/conditions/adhd-focus-issues',
-  '/conditions/autism-neurodevelopmental',
-  '/conditions/infant-newborn-chiropractic',
-  '/conditions/colic-infant-digestive',
-  '/conditions/ear-infections',
-  '/conditions/bedwetting-enuresis',
-  '/conditions/torticollis',
-  '/conditions/sensory-processing-disorder',
-  '/conditions/plagiocephaly',
-  '/conditions/tongue-tie-lip-tie',
-  '/conditions/developmental-delays',
-  '/conditions/speech-language-delays',
-  // Pregnancy & Women
-  '/conditions/breastfeeding-latch-issues',
-  '/conditions/postpartum-recovery',
-  '/conditions/webster-technique',
-  '/conditions/pregnancy-back-pain',
-  // Neurological
-  '/conditions/pandas-pans',
-  '/conditions/seizure-disorders',
-  '/conditions/sleep-disorders',
-  // Adult Pain
-  '/conditions/back-neck-pain',
-  '/conditions/headaches-migraines',
-  '/conditions/sciatica',
-  '/conditions/carpal-tunnel',
-  '/conditions/tmj-jaw-pain',
-  '/conditions/posture-tech-neck',
-  '/conditions/vertigo-dizziness',
-  '/conditions/whiplash-auto-injury',
-  '/conditions/pinched-nerves',
-  '/conditions/disc-herniation-degenerative',
-  '/conditions/spinal-stenosis',
-  // General Wellness
-  '/conditions/allergies-respiratory',
-  '/conditions/digestive-gi-issues',
-  '/conditions/immune-support',
-  '/conditions/anxiety-stress',
-  '/conditions/chronic-fatigue',
-  '/conditions/fibromyalgia',
-  '/conditions/gentle-chiropractic',
-  '/conditions/asthma',
-  '/conditions/acid-reflux-gerd',
-  '/conditions/ibs',
-  '/conditions/arthritis',
-  // Special Populations
-  '/conditions/senior-care',
-  '/conditions/pots-dysautonomia',
-  '/conditions/sports-performance',
-  '/conditions/lyme-disease',
-  '/conditions/scoliosis',
-  '/conditions/concussion-post-concussion',
-  '/conditions/long-covid',
+  ...getAllConditions().map((c) => `/conditions/${c.slug}`),
 ];

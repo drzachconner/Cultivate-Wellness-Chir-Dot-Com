@@ -1,42 +1,37 @@
 import { Resend } from 'resend';
 import { isAllowed, getClientIP } from '../lib/rate-limit';
+import { SITE_CONFIG } from '../lib/site-config';
 
-interface Env {
-  RESEND_API_KEY: string;
-  NOTIFICATION_EMAIL?: string;
-  BREVO_API_KEY?: string;
-  BREVO_LIST_ID?: string;
-}
+// Rate limit: 10 form submissions per minute per IP.
+// No real person submits 10 forms in 60 seconds.
+const FORM_RATE_LIMIT = 10;
+const FORM_RATE_WINDOW = 60 * 1000;
 
-const SITE_URL = 'https://www.cultivatewellnesschiro.com';
-
-function escapeHtml(str: string): string {
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
-}
-
-// Guide configuration
+// Guide configuration — PDF URLs point to this site's public/guides/ directory
 const GUIDES: Record<string, { title: string; pdfUrl: string; subject: string }> = {
   'rhkn-guide': {
     title: 'Raising Healthy Kids Naturally',
-    pdfUrl: `${SITE_URL}/guides/raising-healthy-kids-naturally.pdf`,
-    subject: '\u{1F33F} FREE PDF: Raising Healthy Kids Naturally',
+    pdfUrl: `${SITE_CONFIG.siteUrl}/guides/raising-healthy-kids-naturally.pdf`,
+    subject: 'FREE PDF: Raising Healthy Kids Naturally',
   },
   '3-ways-to-sleep': {
-    title: '3 Ways to Improve Your Child\'s Sleep',
-    pdfUrl: `${SITE_URL}/guides/3-ways-to-sleep.pdf`,
-    subject: '\u{1F634} 3 Ways to Improve Your Child\'s Sleep (Free PDF)',
+    title: "3 Ways to Improve Your Child's Sleep",
+    pdfUrl: `${SITE_CONFIG.siteUrl}/guides/3-ways-to-sleep.pdf`,
+    subject: "3 Ways to Improve Your Child's Sleep (Free PDF)",
   },
   '3-ways-to-poop': {
     title: '3 Ways to Get Your Child Pooping',
-    pdfUrl: `${SITE_URL}/guides/3-ways-to-poop.pdf`,
-    subject: '\u{1F476} 3 Ways to Get Your Child Pooping (Free PDF)',
+    pdfUrl: `${SITE_CONFIG.siteUrl}/guides/3-ways-to-poop.pdf`,
+    subject: '3 Ways to Get Your Child Pooping (Free PDF)',
   },
 };
+
+interface Env {
+  RESEND_API_KEY: string;
+  NOTIFICATION_EMAIL: string;
+  BREVO_API_KEY: string;
+  BREVO_LIST_ID: string;
+}
 
 // Add contact to Brevo with segmentation attributes
 async function addToBrevo(
@@ -47,6 +42,8 @@ async function addToBrevo(
   source: string,
   guideName?: string
 ) {
+  if (!brevoApiKey) return;
+
   try {
     const attributes: Record<string, string> = {
       FIRSTNAME: firstName,
@@ -79,7 +76,7 @@ async function addToBrevo(
   }
 }
 
-// Generate guide download email HTML
+// Generate guide download email HTML (branded via SITE_CONFIG)
 function generateGuideEmail(firstName: string, guide: { title: string; pdfUrl: string }) {
   return `
 <!DOCTYPE html>
@@ -96,14 +93,14 @@ function generateGuideEmail(firstName: string, guide: { title: string; pdfUrl: s
           <!-- Header -->
           <tr>
             <td style="padding: 30px; text-align: center; background-color: #ffffff;">
-              <img src="https://www.cultivatewellnesschiro.com/images/cwc-logo-horizontal.webp" alt="Cultivate Wellness Chiropractic" style="max-width: 300px; height: auto;">
+              <img src="${SITE_CONFIG.emailLogoUrl}" alt="${SITE_CONFIG.emailLogoAlt}" style="max-width: 300px; height: auto;">
             </td>
           </tr>
 
           <!-- Content -->
           <tr>
             <td style="padding: 40px 30px;">
-              <h1 style="color: #264b7f; font-size: 24px; margin: 0 0 20px 0; text-align: center;">
+              <h1 style="color: ${SITE_CONFIG.emailBrandColor}; font-size: 24px; margin: 0 0 20px 0; text-align: center;">
                 ${guide.title}
               </h1>
 
@@ -119,7 +116,7 @@ function generateGuideEmail(firstName: string, guide: { title: string; pdfUrl: s
               <table width="100%" cellpadding="0" cellspacing="0">
                 <tr>
                   <td align="center">
-                    <a href="${guide.pdfUrl}" style="display: inline-block; background-color: #264b7f; color: #ffffff; text-decoration: none; padding: 15px 40px; border-radius: 5px; font-size: 16px; font-weight: bold;">
+                    <a href="${guide.pdfUrl}" style="display: inline-block; background-color: ${SITE_CONFIG.emailBrandColor}; color: #ffffff; text-decoration: none; padding: 15px 40px; border-radius: 5px; font-size: 16px; font-weight: bold;">
                       DOWNLOAD
                     </a>
                   </td>
@@ -127,7 +124,7 @@ function generateGuideEmail(firstName: string, guide: { title: string; pdfUrl: s
               </table>
 
               <p style="color: #555555; font-size: 14px; line-height: 1.6; margin: 30px 0 0 0; text-align: center;">
-                At Cultivate Wellness Chiropractic we are Experts in Drug-Free Pediatric, Prenatal, and Family Health Care!
+                ${SITE_CONFIG.emailTagline}
               </p>
             </td>
           </tr>
@@ -136,8 +133,7 @@ function generateGuideEmail(firstName: string, guide: { title: string; pdfUrl: s
           <tr>
             <td style="padding: 20px 30px; background-color: #f8f8f8; text-align: center;">
               <p style="color: #888888; font-size: 12px; margin: 0;">
-                Cultivate Wellness Chiropractic<br>
-                Royal Oak, MI
+                ${SITE_CONFIG.emailFooterAddress}
               </p>
             </td>
           </tr>
@@ -148,6 +144,16 @@ function generateGuideEmail(firstName: string, guide: { title: string; pdfUrl: s
 </body>
 </html>
   `.trim();
+}
+
+// Escape HTML entities to prevent injection in email templates
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 // Generate notification email for owner
@@ -164,23 +170,24 @@ function generateNotificationEmail(formType: string, data: Record<string, string
   <meta charset="utf-8">
 </head>
 <body style="font-family: Arial, sans-serif; padding: 20px;">
-  <h2 style="color: #002d4e;">New ${formType} Submission</h2>
+  <h2 style="color: ${SITE_CONFIG.emailBrandColor};">New ${formType} Submission</h2>
   <table style="border-collapse: collapse; width: 100%; max-width: 600px;">
     ${fields}
   </table>
   <p style="color: #888; font-size: 12px; margin-top: 20px;">
     Submitted at: ${new Date().toLocaleString('en-US', { timeZone: 'America/Detroit' })}
   </p>
+  <p style="color: #888; font-size: 12px;">
+    ${SITE_CONFIG.emailFooterAddress}
+  </p>
 </body>
 </html>
   `.trim();
 }
 
-const allowedOrigins = ['https://www.cultivatewellnesschiro.com', 'https://cultivatewellnesschiro.com'];
-
 function getCorsOrigin(request: Request): string {
   const origin = request.headers.get('Origin') || '';
-  return allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
+  return SITE_CONFIG.allowedOrigins.includes(origin) ? origin : SITE_CONFIG.allowedOrigins[0];
 }
 
 export const onRequestOptions: PagesFunction<Env> = async (context) => {
@@ -203,9 +210,8 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     'Content-Type': 'application/json',
   };
 
-  // Rate limit: 10 requests per minute per IP
   const clientIP = getClientIP(context.request);
-  if (!isAllowed(`form:${clientIP}`, 10, 60_000)) {
+  if (!isAllowed(`form:${clientIP}`, FORM_RATE_LIMIT, FORM_RATE_WINDOW)) {
     return new Response(JSON.stringify({ error: 'Too many submissions. Please wait a moment.' }), {
       status: 429,
       headers: { ...headers, 'Retry-After': '60' },
@@ -213,25 +219,13 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   }
 
   try {
-    const resend = new Resend(context.env.RESEND_API_KEY);
-    const notificationEmail = context.env.NOTIFICATION_EMAIL || 'zachary.riles.conner@gmail.com';
-
-    const data = await context.request.json() as Record<string, any>;
+    const data = await context.request.json() as Record<string, string>;
     const formType = data._formType || 'contact';
-    const firstName = data.firstName || data.name?.split(' ')[0] || 'Parent';
+    const firstName = data.firstName || data.name?.split(' ')[0] || 'Friend';
     const email = data.email;
 
-    if (!email) {
-      return new Response(JSON.stringify({ error: 'Email is required' }), {
-        status: 400,
-        headers,
-      });
-    }
-
-    // Server-side validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return new Response(JSON.stringify({ error: 'Invalid email format' }), {
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return new Response(JSON.stringify({ error: 'A valid email is required' }), {
         status: 400,
         headers,
       });
@@ -247,11 +241,15 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
 
     const message = data.message || '';
     if (message.length > 5000) {
-      return new Response(JSON.stringify({ error: 'Message is too long' }), {
+      return new Response(JSON.stringify({ error: 'Message is too long (max 5000 characters)' }), {
         status: 400,
         headers,
       });
     }
+
+    // Instantiate Resend inside handler since env vars come from context
+    const resend = new Resend(context.env.RESEND_API_KEY);
+    const notificationEmail = context.env.NOTIFICATION_EMAIL || SITE_CONFIG.fallbackNotificationEmail;
 
     // Send notification email to owner
     const notificationSubject = formType === 'guide'
@@ -260,21 +258,20 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       ? 'New Contact Form Submission'
       : formType === 'appointment'
       ? 'New Appointment Request'
-      : 'New Workshop Signup';
+      : `New ${formType} Submission`;
 
     await resend.emails.send({
-      from: 'Cultivate Wellness <forms@cultivatewellnesschiro.com>',
+      from: SITE_CONFIG.emailFromForms,
       to: notificationEmail,
       subject: notificationSubject,
       html: generateNotificationEmail(formType, data),
     });
 
-    // For guide downloads, send auto-response with PDF
+    // For guide downloads, send auto-response with PDF link
     if (formType === 'guide' && data._guideId && GUIDES[data._guideId]) {
       const guide = GUIDES[data._guideId];
-
       await resend.emails.send({
-        from: 'Cultivate Wellness Chiropractic <guides@cultivatewellnesschiro.com>',
+        from: SITE_CONFIG.emailFromGuides,
         to: email,
         subject: guide.subject,
         html: generateGuideEmail(firstName, guide),
@@ -282,14 +279,12 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     }
 
     // Add to Brevo contact list with segmentation attributes
-    if (context.env.BREVO_API_KEY) {
-      const brevoListId = parseInt(context.env.BREVO_LIST_ID || '2', 10);
-      const source = formType === 'guide' ? 'guide_download'
-        : formType === 'appointment' ? 'appointment_request'
-        : 'contact_form';
-      const guideName = formType === 'guide' ? (GUIDES[data._guideId]?.title || undefined) : undefined;
-      await addToBrevo(email, firstName, context.env.BREVO_API_KEY, brevoListId, source, guideName);
-    }
+    const brevoListId = parseInt(context.env.BREVO_LIST_ID || '2', 10);
+    const source = formType === 'guide' ? 'guide_download'
+      : formType === 'appointment' ? 'appointment_request'
+      : 'contact_form';
+    const guideName = formType === 'guide' ? (GUIDES[data._guideId]?.title || undefined) : undefined;
+    await addToBrevo(email, firstName, context.env.BREVO_API_KEY, brevoListId, source, guideName);
 
     return new Response(JSON.stringify({ success: true }), {
       status: 200,

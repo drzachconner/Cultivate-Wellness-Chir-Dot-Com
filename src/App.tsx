@@ -1,9 +1,8 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect, lazy, Suspense } from 'react';
+import { useEffect, lazy, Suspense, ComponentType } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MobileCTA from './components/MobileCTA';
-import MergerNotification from './components/MergerNotification';
 import FloatingReviewWidget from './components/FloatingReviewWidget';
 import ChatbotWidget from './components/ChatbotWidget';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -11,11 +10,43 @@ import JsonLd from './components/JsonLd';
 import { organizationSchema, personSchema, localBusinessSchema } from './lib/schema';
 import { trackAITraffic } from './lib/analytics';
 import AdminRedirect from './components/AdminRedirect';
+import { SITE } from './data/site';
 
-// Lazy-loaded pages for code splitting
+// ============================================
+// DYNAMIC PAGE LOADING
+// import.meta.glob gives us a map of all page/component files
+// so we can load them by name from SITE.pages config
+// ============================================
+const pageModules = import.meta.glob('./pages/*.tsx') as Record<
+  string,
+  () => Promise<{ default: ComponentType }>
+>;
+
+const componentModules = import.meta.glob('./components/*.tsx') as Record<
+  string,
+  () => Promise<{ default: ComponentType }>
+>;
+
+function lazyPage(name: string) {
+  const path = `./pages/${name}.tsx`;
+  if (!pageModules[path]) {
+    console.warn(`Page module not found: ${path}`);
+    return lazy(() => import('./pages/NotFound'));
+  }
+  return lazy(pageModules[path]);
+}
+
+function lazyComponent(name: string) {
+  const path = `./components/${name}.tsx`;
+  if (!componentModules[path]) return null;
+  return lazy(componentModules[path]);
+}
+
+// ============================================
+// SHARED PAGES (identical across all sites)
+// ============================================
 const Home = lazy(() => import('./pages/Home'));
 const AboutUs = lazy(() => import('./pages/AboutUs'));
-const MeetDrZach = lazy(() => import('./pages/MeetDrZach'));
 const Pediatric = lazy(() => import('./pages/Pediatric'));
 const Prenatal = lazy(() => import('./pages/Prenatal'));
 const Family = lazy(() => import('./pages/Family'));
@@ -27,16 +58,35 @@ const Contact = lazy(() => import('./pages/Contact'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Thanks = lazy(() => import('./pages/Thanks'));
 const NotFound = lazy(() => import('./pages/NotFound'));
-const ThreeWaysToPoop = lazy(() => import('./pages/ThreeWaysToPoop'));
 const RHKNGuide = lazy(() => import('./pages/RHKNGuide'));
 const ThreeWaysToSleep = lazy(() => import('./pages/ThreeWaysToSleep'));
+const ThreeWaysToPoop = lazy(() => import('./pages/ThreeWaysToPoop'));
 const FreeGuidesForParents = lazy(() => import('./pages/FreeGuidesForParents'));
 const TalskyTonal = lazy(() => import('./pages/TalskyTonal'));
-const InsightScans = lazy(() => import('./pages/InsightScans'));
 const AnswerHub = lazy(() => import('./pages/AnswerHub'));
 const ThankYouSubmission = lazy(() => import('./pages/ThankYouSubmission'));
 const ConditionIndex = lazy(() => import('./pages/conditions/ConditionIndex'));
 const ConditionPageWrapper = lazy(() => import('./pages/conditions/ConditionPageWrapper'));
+
+// ============================================
+// DYNAMIC PAGES (driven by SITE.pages config)
+// ============================================
+const DoctorPage = lazyPage(SITE.pages.doctor.component);
+
+const techniquePages = SITE.pages.techniques.map((t) => ({
+  slug: t.slug,
+  Component: lazyPage(t.component),
+}));
+
+const siteSpecificPages = SITE.pages.siteSpecific.map((p) => ({
+  slug: p.slug,
+  Component: lazyPage(p.component),
+}));
+
+// Layout extras (components rendered in Layout, not routes)
+const layoutExtras = SITE.pages.layoutExtras
+  .map((name) => lazyComponent(name))
+  .filter((c): c is NonNullable<typeof c> => c !== null);
 
 // Loading fallback for lazy-loaded pages
 function PageLoader() {
@@ -103,9 +153,9 @@ function Layout() {
       <main id="main" className="flex-grow" tabIndex={-1} style={{ outline: 'none' }}>
         <Suspense fallback={<PageLoader />}>
           <Routes>
+            {/* Shared routes */}
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/meet-dr-zach" element={<MeetDrZach />} />
             <Route path="/pediatric" element={<Pediatric />} />
             <Route path="/prenatal" element={<Prenatal />} />
             <Route path="/family" element={<Family />} />
@@ -123,11 +173,26 @@ function Layout() {
             <Route path="/3-ways-to-sleep" element={<ThreeWaysToSleep />} />
             <Route path="/free-guides-for-parents" element={<FreeGuidesForParents />} />
             <Route path="/talsky-tonal-chiropractic" element={<TalskyTonal />} />
-            <Route path="/insight-scans" element={<InsightScans />} />
             <Route path="/answers" element={<AnswerHub />} />
             <Route path="/thank-you-for-your-submission" element={<ThankYouSubmission />} />
             <Route path="/conditions" element={<ConditionIndex />} />
             <Route path="/conditions/:slug" element={<ConditionPageWrapper />} />
+
+            {/* Dynamic: Doctor page */}
+            <Route path={SITE.pages.doctor.slug} element={<DoctorPage />} />
+
+            {/* Dynamic: Technique pages (excluding TalskyTonal which is shared) */}
+            {techniquePages
+              .filter((t) => t.slug !== '/talsky-tonal-chiropractic')
+              .map((t) => (
+                <Route key={t.slug} path={t.slug} element={<t.Component />} />
+              ))}
+
+            {/* Dynamic: Site-specific pages */}
+            {siteSpecificPages.map((p) => (
+              <Route key={p.slug} path={p.slug} element={<p.Component />} />
+            ))}
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
@@ -135,7 +200,12 @@ function Layout() {
       <Footer />
       <MobileCTA />
       <FloatingReviewWidget />
-      <MergerNotification />
+      {/* Dynamic: Layout extras (e.g., MergerNotification for Cultivate) */}
+      {layoutExtras.map((Extra, i) => (
+        <Suspense key={i} fallback={null}>
+          <Extra />
+        </Suspense>
+      ))}
       <ChatbotWidget />
     </div>
   );

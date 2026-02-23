@@ -258,6 +258,29 @@ export const SITE = {
     // Does this office have downloadable guides?
     freeGuides: true,
   },
+
+  // ============================================
+  // DEPLOYMENT CONFIG (used by build tooling + admin panel)
+  // ============================================
+  deployment: {
+    projectName: 'cultivate-wellness-chiro',
+    adminProjectId: 'cultivate-wellness',
+    agentBackendUrl: 'https://cultivate-agent.drzach.ai',
+    ga4MeasurementId: 'G-049Q1RESRW',
+  },
+
+  // ============================================
+  // PAGE ROUTING CONFIG (used by App.tsx for dynamic routing)
+  // ============================================
+  pages: {
+    doctor: { component: 'MeetDrZach', slug: '/meet-dr-zach', label: 'Meet Dr. Zach' },
+    techniques: [
+      { component: 'TalskyTonal', slug: '/talsky-tonal-chiropractic', label: 'Talsky Tonal Chiropractic' },
+      { component: 'InsightScans', slug: '/insight-scans', label: 'INSiGHT Scans' },
+    ],
+    siteSpecific: [],
+    layoutExtras: ['MergerNotification'],
+  },
 } as const;
 
 // ============================================
