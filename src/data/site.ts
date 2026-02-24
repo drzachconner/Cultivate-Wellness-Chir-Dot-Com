@@ -265,7 +265,7 @@ export const SITE = {
   deployment: {
     projectName: 'cultivate-wellness-chiro',
     adminProjectId: 'cultivate-wellness',
-    agentBackendUrl: 'https://cultivate-agent.drzach.ai',
+    agentBackendUrl: 'https://agent.drzach.ai',
     ga4MeasurementId: 'G-049Q1RESRW',
   },
 
