@@ -192,6 +192,7 @@ function Layout() {
               <Route key={p.slug} path={p.slug} element={<p.Component />} />
             ))}
 
+            <Route path="/admin" element={<Home />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
