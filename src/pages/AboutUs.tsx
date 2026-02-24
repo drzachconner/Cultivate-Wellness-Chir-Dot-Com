@@ -1,6 +1,6 @@
 import { SITE } from '../data/site';
 import { Link } from 'react-router-dom';
-import { breadcrumbJsonLd } from '../lib/breadcrumbs';
+import { breadcrumbJsonLd } from '@drzach/website-toolkit';
 import CTABanner from '../components/CTABanner';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';

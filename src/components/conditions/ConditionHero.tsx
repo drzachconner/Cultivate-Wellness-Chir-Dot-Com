@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { ChevronRight, ChevronDown, Home } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
+import { responsiveSrc } from '@drzach/website-toolkit';
 import { getGroupedConditions } from '../../data/conditions';
 
 interface ConditionHeroProps {
@@ -15,6 +16,7 @@ export default function ConditionHero({ title, subtitle, image, breadcrumbLabel 
   const dropdownRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
   const groups = getGroupedConditions();
+  const imgProps = responsiveSrc(image);
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -30,7 +32,9 @@ export default function ConditionHero({ title, subtitle, image, breadcrumbLabel 
     <section className="relative py-32 bg-gray-900">
       <div className="absolute inset-0 z-0">
         <img
-          src={image}
+          src={imgProps.src}
+          srcSet={imgProps.srcSet}
+          sizes={imgProps.sizes}
           alt={title}
           className="w-full h-full object-cover"
         />

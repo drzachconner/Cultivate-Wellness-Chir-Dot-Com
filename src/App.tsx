@@ -8,8 +8,7 @@ import ChatbotWidget from './components/ChatbotWidget';
 import ErrorBoundary from './components/ErrorBoundary';
 import JsonLd from './components/JsonLd';
 import { organizationSchema, personSchema, localBusinessSchema } from './lib/schema';
-import { trackAITraffic } from './lib/analytics';
-import AdminRedirect from './components/AdminRedirect';
+import { trackAITraffic, AdminRedirect } from '@drzach/website-toolkit';
 import { SITE } from './data/site';
 
 // ============================================
@@ -218,7 +217,7 @@ function App() {
         <ScrollToTop />
         <GlobalSchema />
         <AITrafficTracker />
-        <AdminRedirect />
+        <AdminRedirect adminProjectId={SITE.deployment.adminProjectId} />
         <Layout />
       </BrowserRouter>
     </ErrorBoundary>

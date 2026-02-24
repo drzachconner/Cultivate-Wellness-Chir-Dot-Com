@@ -1,5 +1,5 @@
 import { SITE } from '../data/site';
-import { breadcrumbJsonLd } from '../lib/breadcrumbs';
+import { breadcrumbJsonLd } from '@drzach/website-toolkit';
 import CTABanner from '../components/CTABanner';
 import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';

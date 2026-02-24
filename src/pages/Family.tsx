@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
 import { SITE } from '../data/site';
-import { breadcrumbJsonLd } from '../lib/breadcrumbs';
+import { breadcrumbJsonLd } from '@drzach/website-toolkit';
 import { medicalWebPageSchema } from '../lib/schema';
 import { Users, Heart, Shield, Sparkles } from 'lucide-react';
 import CTABanner from '../components/CTABanner';

@@ -1,8 +1,11 @@
 import { StrictMode } from 'react';
 import { hydrateRoot, createRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
+import { initWebVitals } from '@drzach/website-toolkit';
 import App from './App.tsx';
 import './index.css';
+
+initWebVitals();
 
 const container = document.getElementById('root')!;
 

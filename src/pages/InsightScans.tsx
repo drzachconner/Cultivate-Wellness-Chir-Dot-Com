@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SITE } from '../data/site';
-import { breadcrumbJsonLd } from '../lib/breadcrumbs';
+import { breadcrumbJsonLd } from '@drzach/website-toolkit';
 import { medicalWebPageSchema } from '../lib/schema';
 import { TrendingUp } from 'lucide-react';
 import CTABanner from '../components/CTABanner';

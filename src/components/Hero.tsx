@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { responsiveSrc } from '@drzach/website-toolkit';
 
 interface HeroProps {
   title: string;
@@ -9,13 +10,17 @@ interface HeroProps {
 }
 
 export default function Hero({ title, subtitle, ctaText, ctaLink, backgroundImage }: HeroProps) {
+  const imgProps = backgroundImage ? responsiveSrc(backgroundImage) : null;
+
   return (
     <section className={`relative py-20 sm:py-28 ${ backgroundImage ? 'min-h-[500px] flex items-center' : 'bg-white'}`}>
-      {backgroundImage && (
+      {backgroundImage && imgProps && (
         <>
           <div className="absolute inset-0 z-0">
             <img
-              src={backgroundImage}
+              src={imgProps.src}
+              srcSet={imgProps.srcSet}
+              sizes={imgProps.sizes}
               alt="Hero background"
               className="w-full h-full object-cover"
             />

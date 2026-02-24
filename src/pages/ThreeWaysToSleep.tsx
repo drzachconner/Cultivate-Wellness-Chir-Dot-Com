@@ -1,5 +1,5 @@
 import { SITE } from '../data/site';
-import { breadcrumbJsonLd } from '../lib/breadcrumbs';
+import { breadcrumbJsonLd } from '@drzach/website-toolkit';
 import { articleSchema, howToSchema } from '../lib/schema';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';

@@ -2,7 +2,7 @@ import Seo from '../../components/Seo';
 import JsonLd from '../../components/JsonLd';
 import CTABanner from '../../components/CTABanner';
 import { SITE } from '../../data/site';
-import { breadcrumbJsonLd } from '../../lib/breadcrumbs';
+import { breadcrumbJsonLd } from '@drzach/website-toolkit';
 import { medicalWebPageSchema, faqSchema } from '../../lib/schema';
 import type { ConditionPageData } from '../../data/conditions/types';
 import ConditionHero from '../../components/conditions/ConditionHero';

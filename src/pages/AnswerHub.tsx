@@ -1,6 +1,6 @@
 import { SITE } from '../data/site';
 import { Link } from 'react-router-dom';
-import { breadcrumbJsonLd } from '../lib/breadcrumbs';
+import { breadcrumbJsonLd } from '@drzach/website-toolkit';
 import { faqSchema, articleSchema } from '../lib/schema';
 import { HelpCircle, Baby, Users, Heart } from 'lucide-react';
 import AuthorByline from '../components/AuthorByline';

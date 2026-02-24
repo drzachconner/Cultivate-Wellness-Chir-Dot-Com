@@ -1,6 +1,9 @@
 import { Helmet } from 'react-helmet-async';
-import { getSeoData, SeoProps } from '../hooks/useSeo';
+import { createSeoHelper } from '@drzach/website-toolkit';
+import type { SeoProps } from '@drzach/website-toolkit';
 import { SITE } from '../data/site';
+
+const getSeoData = createSeoHelper(SITE);
 
 export default function Seo(props: SeoProps) {
   const { fullTitle, metaDescription, canonical, ogImage, robotsContent } = getSeoData(props);

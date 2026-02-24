@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SITE } from '../data/site';
-import { breadcrumbJsonLd } from '../lib/breadcrumbs';
+import { breadcrumbJsonLd } from '@drzach/website-toolkit';
 import { Baby, Heart, Shield, Smile } from 'lucide-react';
 import CTABanner from '../components/CTABanner';
 import { medicalWebPageSchema } from '../lib/schema';
