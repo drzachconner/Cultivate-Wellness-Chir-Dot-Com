@@ -99,10 +99,12 @@ export default function TalskyTonal() {
               before developing this unique tonal method.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              This technique represents a paradigm shift in chiropractic care. Rather than simply addressing
-              symptoms, Talsky Tonal Chiropractic focuses on finding and releasing accumulated stress patterns
-              in the body, restoring the integrity and function of your nervous system so your body can heal
-              and perform at its optimal level.
+              Talsky Tonal Chiropractic represents a complete paradigm shift into tonal chiropractic
+              awareness. Rather than viewing the spine as isolated segments, TTC evaluates the entire
+              neurospinal system as a dynamic, integrated whole, addressing spinal cord tension rather
+              than just spinal pressure. By engaging the nervous system more directly, this expanded
+              approach facilitates the body's innate ability to self-adjust, self-correct, and return
+              to wholeness, opening the door to never-ending neurological optimization.
             </p>
           </div>
         </div>
