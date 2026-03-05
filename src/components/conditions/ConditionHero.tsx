@@ -30,16 +30,14 @@ export default function ConditionHero({ title, subtitle, image, breadcrumbLabel 
 
   return (
     <section className="relative py-32 bg-gray-900">
-      <div className="absolute inset-0 z-0">
-        <img
-          src={imgProps.src}
-          srcSet={imgProps.srcSet}
-          sizes={imgProps.sizes}
-          alt={title}
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary-dark/70 to-primary/60" />
+      <img
+        src={imgProps.src}
+        srcSet={imgProps.srcSet}
+        sizes={imgProps.sizes}
+        alt={title}
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-primary-dark/60 to-primary/40" />
       {/* Breadcrumb pinned to top of hero */}
       <nav aria-label="Breadcrumb" className="absolute top-4 left-4 sm:left-6 lg:left-8 z-20 text-sm text-white/80">
         <ol className="flex items-center flex-wrap gap-1">
