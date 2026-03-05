@@ -100,9 +100,9 @@ export const infantNewborn: ConditionPageData = {
           'Non-invasive nervous system scanning (if baby cooperates!). We\'ll show you exactly what we find and explain our recommendations clearly.',
       },
       {
-        title: 'Gentle Adjustment & Care Plan',
+        title: 'Report of Findings & First Adjustment',
         description:
-          'If indicated, a gentle adjustment usually begins at the first visit. Infant adjustments take just seconds. Most parents say "That was it?" because of how gentle they are. We then create a tailored care plan for your baby\'s needs.',
+          'At the second visit, we walk you through your baby\'s scan results and present a tailored care plan. If indicated, a gentle adjustment begins at this visit. Infant adjustments take just seconds. Most parents say "That was it?" because of how gentle they are.',
       },
     ],
   },

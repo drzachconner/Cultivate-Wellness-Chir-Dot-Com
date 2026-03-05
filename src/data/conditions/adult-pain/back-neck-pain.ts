@@ -143,12 +143,12 @@ export const backNeckPain: ConditionPageData = {
     {
       question: 'How many visits will I need?',
       answer:
-        'Your frequency of care is determined after a detailed history, consultation, and after we study the results of your non-invasive, non-radiating comprehensive neurological [INSiGHT Scans](/insight-scans). Many patients feel improvement after their first visit. We create a personalized care plan based on your findings and adjust it based on your progress. Acute conditions may resolve quickly while chronic issues typically require more visits.',
+        'Your frequency of care is determined after a detailed history, consultation, and after we study the results of your non-invasive, non-radiating comprehensive neurological [INSiGHT Scans](/insight-scans). Many patients feel improvement after their first adjustment (which takes place at the second visit, during the Report of Findings). We create a personalized care plan based on your findings and adjust it based on your progress. Acute conditions may resolve quickly while chronic issues typically require more visits.',
     },
     {
       question: 'Should I come in if I\'m in severe pain?',
       answer:
-        'Yes. Don\'t wait until pain becomes unbearable. Our gentle techniques are appropriate even for patients in significant pain. In fact, many patients experience relief during their very first visit. We\'ll adapt our approach based on your comfort level.',
+        'Yes. Don\'t wait until pain becomes unbearable. Our gentle techniques are appropriate even for patients in significant pain. In fact, many patients experience relief during their first adjustment. We\'ll adapt our approach based on your comfort level.',
     },
     {
       question: 'Can you help with pain after a car accident?',

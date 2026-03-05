@@ -18,7 +18,7 @@ export const pregnancyBackPain: ConditionPageData = {
   highlightBox: {
     icon: 'flower',
     label: 'Safe Throughout Pregnancy',
-    text: 'Our gentle techniques are safe throughout all trimesters of pregnancy. There is no cracking, twisting, or forceful manipulation. We use comfortable positioning that accommodates your growing belly, and many patients experience relief from their very first visit.',
+    text: 'Our gentle techniques are safe throughout all trimesters of pregnancy. There is no cracking, twisting, or forceful manipulation. We use comfortable positioning that accommodates your growing belly, and many patients experience relief from their first adjustment.',
   },
   symptoms: {
     sectionTitle: 'Pregnancy Pain We Help With',
@@ -97,7 +97,7 @@ export const pregnancyBackPain: ConditionPageData = {
       {
         title: 'Gentle Adjustments',
         description:
-          'Using Talsky Tonal Chiropractic, we gently reduce neurological tension. Our approach requires no face-down positioning and is comfortable with your growing belly. Many patients feel relief from their first visit.',
+          'Using Talsky Tonal Chiropractic, we gently reduce neurological tension. Our approach requires no face-down positioning and is comfortable with your growing belly. Many patients feel relief from their first adjustment.',
       },
       {
         title: 'Ongoing Pregnancy Support',

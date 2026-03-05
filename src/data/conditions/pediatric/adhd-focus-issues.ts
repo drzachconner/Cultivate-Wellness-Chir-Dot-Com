@@ -156,9 +156,9 @@ export const adhdFocusIssues: ConditionPageData = {
         'Yes. ADHD doesn\'t just affect children. Many adults struggle with focus, time management, organization, and impulsive decisions. Adults can benefit from the same neurologically-focused chiropractic care we provide to children.',
     },
     {
-      question: 'What should I expect at the first visit?',
+      question: 'What should I expect at the first two visits?',
       answer:
-        'The first visit includes a comprehensive consultation where we will review your child\'s history, concerns, and goals. This is followed by a neurological evaluation including scanning technology to objectively measure nervous system function. Our team will then explain the findings and recommend a personalized care plan.',
+        'The first visit includes a comprehensive consultation where we review your child\'s history, concerns, and goals, followed by non-invasive INSiGHT neurological scans to objectively measure nervous system function. At the second visit (Report of Findings), our team walks you through the scan results in detail, presents a personalized care plan, and performs the first gentle adjustment.',
     },
   ],
   relatedConditions: [
