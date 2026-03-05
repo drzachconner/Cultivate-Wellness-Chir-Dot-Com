@@ -15,7 +15,7 @@ export const SITE = {
   shortName: 'Cultivate Wellness', // Used for alternate name in schema
   domain: 'cultivatewellnesschiro.com',
   description: 'Pediatric, prenatal & family chiropractor in Rochester Hills, MI. Our team provides gentle, neuro-focused care for children and families.',
-  tagline: 'Helping Your Family Thrive, Naturally',
+  tagline: 'Helping Your Family Thrive, Naturally!',
   foundingYear: '2020',
   priceRange: '$$',
 
