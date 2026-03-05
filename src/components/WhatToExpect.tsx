@@ -36,7 +36,7 @@ const steps: Step[] = [
     image: '/images/insight-corescore-report.webp',
     imageAlt: 'INSiGHT neurological scan report showing CORESCORE results',
     description:
-      'We will walk you through your scan results in detail, explains what the findings mean, presents a personalized care plan tailored to your family\'s needs, and if appropriate, performs your first gentle Talsky Tonal adjustment.',
+      'Our team walks you through your scan results in detail, explains what the findings mean, presents a personalized care plan tailored to your family\'s needs, and if appropriate, performs your first gentle Talsky Tonal adjustment.',
     expandedTitle: 'What to Expect During Your Report',
     expandedContent: [
       'A detailed walkthrough of your INSiGHT scan results with easy-to-understand visuals showing exactly where stress patterns exist in the nervous system.',
