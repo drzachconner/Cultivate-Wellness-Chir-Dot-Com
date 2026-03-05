@@ -199,7 +199,7 @@ export default function Home() {
               Helping Families Thrive Through Nervous System-Focused Chiropractic Care
             </h2>
             <p className="text-base sm:text-lg text-gray-600 mb-8 italic">
-              We are rooted in the understanding that your body has an innate ability to heal itself.
+              We are grounded in the understanding that your body has an innate ability to heal itself.
             </p>
             <Link
               to="/new-patient-center"
