@@ -218,7 +218,7 @@ function App() {
         <ScrollToTop />
         <GlobalSchema />
         <AITrafficTracker />
-        <AdminRedirect adminProjectId={SITE.deployment.adminProjectId} />
+        <AdminRedirect adminProjectId={SITE.deployment.adminProjectId} previewHostname={SITE.deployment.previewHostname} />
         <Layout />
       </BrowserRouter>
     </ErrorBoundary>
