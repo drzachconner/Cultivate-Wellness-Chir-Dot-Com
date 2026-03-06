@@ -5,8 +5,16 @@ import AnimateOnScroll from './AnimateOnScroll';
 
 export default function TestimonialSlider() {
   const testimonials = SITE.testimonials;
-  // Duplicate for seamless infinite scroll
-  const doubled = [...testimonials, ...testimonials];
+
+  // For seamless infinite scroll, one "half" of the track must exceed the widest viewport.
+  // Each card ≈ 374px (350px + 24px margins). We target 2560px (ultrawide) as the max viewport.
+  const cardWidth = 374;
+  const copiesPerHalf = Math.max(2, Math.ceil(2560 / (testimonials.length * cardWidth)));
+  const oneSet = Array.from({ length: copiesPerHalf }, () => testimonials).flat();
+  // Duplicate so animation can scroll through the first half, then snap back seamlessly
+  const track = [...oneSet, ...oneSet];
+  // Scale duration proportionally so scroll speed stays consistent regardless of copy count
+  const animationDuration = copiesPerHalf * 30;
 
   const trackRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -110,9 +118,12 @@ export default function TestimonialSlider() {
         <div
           ref={trackRef}
           className={`flex w-max ${isHovering ? '' : 'animate-marquee'}`}
-          style={{ userSelect: isDragging ? 'none' : 'auto' }}
+          style={{
+            userSelect: isDragging ? 'none' : 'auto',
+            animationDuration: `${animationDuration}s`,
+          }}
         >
-          {doubled.map((testimonial, i) => (
+          {track.map((testimonial, i) => (
             <div
               key={`${testimonial.id}-${i}`}
               className="flex-shrink-0 w-[350px] mx-3"
