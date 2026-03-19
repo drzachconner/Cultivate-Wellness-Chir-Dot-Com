@@ -17,7 +17,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run build
+      - run: npm run build:ssg
 
       - uses: cloudflare/wrangler-action@v3
         with:
