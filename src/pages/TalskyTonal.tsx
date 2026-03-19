@@ -1,10 +1,34 @@
 import { Link } from 'react-router-dom';
 import { SITE } from '../data/site';
 import { breadcrumbJsonLd } from '@drzach/website-toolkit';
-import { medicalWebPageSchema } from '../lib/schema';
+import { medicalWebPageSchema, faqSchema } from '../lib/schema';
 import { Brain, Heart, Users, Sparkles, Activity, Target, ArrowRight } from 'lucide-react';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
+import AuthorByline from '../components/AuthorByline';
+
+const talskyFaqs = [
+  {
+    question: 'What is Talsky Tonal Chiropractic and how is it different from traditional chiropractic?',
+    answer: 'Talsky Tonal Chiropractic (TTC) is an advanced neurologically-focused technique developed by Dr. Marvin Talsky in 2001. Unlike traditional chiropractic, there is no bone cracking, high-velocity manipulation, or forceful adjustments. Instead, TTC uses a gentle pressure input with a finger contact and a vitalistic, moment-to-moment analysis of the entire spinal system — from the tailbone through the cranial bones — to identify and release accumulated tension patterns (called "stress stuck on" or subluxation). Corrections continue working with the body\'s movements and breathing long after you leave the table.',
+  },
+  {
+    question: 'Is Dr. Zach Conner trained in Talsky Tonal Chiropractic?',
+    answer: 'Yes. Dr. Zach Conner is one of only two certified teachers of Talsky Tonal Chiropractic worldwide. He trained directly with Dr. Marvin Talsky and has dedicated his career to this technique. His expertise means Cultivate Wellness patients receive the highest level of Talsky Tonal care available anywhere.',
+  },
+  {
+    question: 'What does a Talsky Tonal adjustment feel like?',
+    answer: 'A Talsky Tonal adjustment is extremely gentle — most patients describe it as feeling a light finger touch along specific areas of the spine. There is no twisting, cracking, or discomfort. Many patients feel a sense of relaxation during and after the adjustment. The nervous system often responds with subtle involuntary movements, breathing changes, or a feeling of release as tension patterns clear.',
+  },
+  {
+    question: 'Who can benefit from Talsky Tonal Chiropractic?',
+    answer: 'Because of its gentle, non-manipulative nature, Talsky Tonal Chiropractic is suitable for everyone — from newborns and infants to pregnant women, children with special needs, adults dealing with chronic stress or pain, athletes, and seniors. It is particularly effective for children with sensory processing differences, autism spectrum, ADHD, and developmental challenges, as well as adults experiencing anxiety, chronic tension, fatigue, and nervous system dysregulation.',
+  },
+  {
+    question: 'What is "stress stuck on" and how does Talsky Tonal help?',
+    answer: 'When the body experiences stress — physical, chemical, or emotional — it increases tension to protect itself. If that stress becomes overwhelming, the body can get "stuck" holding that tension pattern even after the stressor is gone. TTC refers to this as "stress stuck on" or subluxation. These layers accumulate over time and interfere with the nervous system\'s ability to properly communicate with the body. Talsky Tonal adjustments give the body the information it needs to safely release these stored tension patterns, layer by layer, facilitating what Dr. Talsky calls never-ending neurological optimization.',
+  },
+];
 
 export default function TalskyTonal() {
   const principles = [
@@ -52,13 +76,14 @@ export default function TalskyTonal() {
         { name: 'Home', url: `https://${SITE.domain}/` },
         { name: 'Talsky Tonal Chiropractic', url: `https://${SITE.domain}/talsky-tonal-chiropractic` },
       ])} />
+      <JsonLd data={faqSchema(talskyFaqs)} />
       <JsonLd
         data={medicalWebPageSchema({
           headline: 'Talsky Tonal Chiropractic - Neurologically-Focused Care',
           description: 'Advanced Talsky Tonal Chiropractic technique for gentle, neurologically-focused care. Release accumulated stress patterns, restore nervous system integrity, and promote never-ending optimization.',
           image: '/images/talsky-source.webp',
           datePublished: '2024-01-10',
-          dateModified: '2025-10-20',
+          dateModified: '2026-03-19',
           author: 'Dr. Zach Conner',
           url: '/talsky-tonal-chiropractic',
           therapy: {
@@ -242,6 +267,12 @@ export default function TalskyTonal() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-4 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AuthorByline publishDate="2024-01-10" modifiedDate="2026-03-19" />
         </div>
       </section>
 

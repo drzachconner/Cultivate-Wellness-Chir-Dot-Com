@@ -3,9 +3,33 @@ import { SITE } from '../data/site';
 import { breadcrumbJsonLd } from '@drzach/website-toolkit';
 import { Baby, Heart, Shield, Smile } from 'lucide-react';
 import CTABanner from '../components/CTABanner';
-import { medicalWebPageSchema } from '../lib/schema';
+import { medicalWebPageSchema, faqSchema } from '../lib/schema';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
+import AuthorByline from '../components/AuthorByline';
+
+const pediatricFaqs = [
+  {
+    question: 'Is chiropractic care safe for infants and newborns?',
+    answer: 'Yes. Pediatric chiropractic uses extremely gentle, low-force techniques — about the same pressure you would use to test a ripe tomato. There is no cracking, popping, or forceful manipulation. Dr. Zach Conner uses Talsky Tonal Chiropractic, a non-manipulative approach specifically suited for babies and young children. The care is safe from birth and is regularly provided to newborns at Cultivate Wellness Chiropractic.',
+  },
+  {
+    question: 'What conditions can pediatric chiropractic help with?',
+    answer: 'Pediatric chiropractic at Cultivate Wellness addresses a wide range of childhood conditions including colic, reflux, and digestive issues in infants; sleep difficulties; ear infections; torticollis (head tilt); plagiocephaly (flat head); tongue and lip ties; sensory processing disorder; ADHD and focus challenges; autism spectrum and neurodevelopmental differences; developmental and speech delays; bedwetting; scoliosis; and general wellness and immune support.',
+  },
+  {
+    question: 'How does chiropractic care help children with autism or sensory processing issues?',
+    answer: 'Neurologically-focused chiropractic care works by reducing subluxation (neurospinal stress) that interferes with the nervous system\'s ability to properly receive and process sensory input. By restoring nervous system integrity through gentle tonal adjustments and INSiGHT scanning, we help children regulate their nervous systems more effectively. Many families report improvements in sleep, focus, emotional regulation, and sensory tolerance with consistent care.',
+  },
+  {
+    question: 'At what age can a child start chiropractic care?',
+    answer: 'Children can begin chiropractic care from birth. In fact, the birth process — even natural deliveries — can create neurospinal stress in newborns. Dr. Zach regularly cares for babies as young as a few days old. The techniques used are adapted to each child\'s age, size, and developmental stage. Care is appropriate from newborns through teens and into adulthood.',
+  },
+  {
+    question: 'How many visits will my child need?',
+    answer: 'Every child is different, so the frequency and number of visits depends on the specific concerns and how the child responds to care. Dr. Zach always starts with an INSiGHT neurological scan to get an objective baseline of how your child\'s nervous system is functioning. After the initial evaluation, he creates a personalized care plan. Some children see significant changes within a few visits; others benefit from longer wellness care. Progress is tracked objectively with re-scans.',
+  },
+];
 
 export default function Pediatric() {
   const benefits = [
@@ -58,7 +82,7 @@ export default function Pediatric() {
           description: 'Specialized chiropractic care for infants and children, supporting healthy nervous system development, addressing colic, sleep issues, developmental challenges, and promoting overall wellness from birth through adolescence.',
           image: '/images/pediatric-care.webp',
           datePublished: '2024-01-10',
-          dateModified: '2025-10-20',
+          dateModified: '2026-03-19',
           author: 'Dr. Zach Conner',
           url: '/pediatric',
           therapy: {
@@ -68,6 +92,7 @@ export default function Pediatric() {
           wordCount: 1200,
         })}
       />
+      <JsonLd data={faqSchema(pediatricFaqs)} />
 
       <section className="relative py-32 bg-gray-900">
         <div className="absolute inset-0">
@@ -147,6 +172,12 @@ export default function Pediatric() {
               )
             )}
           </div>
+        </div>
+      </section>
+
+      <section className="py-4 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AuthorByline publishDate="2024-01-10" modifiedDate="2026-03-19" />
         </div>
       </section>
 

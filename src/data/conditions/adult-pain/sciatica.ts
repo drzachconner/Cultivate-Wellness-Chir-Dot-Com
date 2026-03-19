@@ -170,7 +170,7 @@ export const sciatica: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at correcting spinal misalignments and reducing sciatic nerve compression for lasting pain relief.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1400,
   },
 };

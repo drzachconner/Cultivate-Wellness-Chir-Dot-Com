@@ -176,7 +176,7 @@ export const vertigoDizziness: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments targeting the upper cervical spine to restore proper proprioceptive signaling and resolve balance disorders.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1500,
   },
 };

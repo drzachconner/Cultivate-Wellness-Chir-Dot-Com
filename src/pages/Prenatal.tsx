@@ -3,9 +3,33 @@ import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
 import { SITE } from '../data/site';
 import { breadcrumbJsonLd } from '@drzach/website-toolkit';
-import { medicalWebPageSchema } from '../lib/schema';
+import { medicalWebPageSchema, faqSchema } from '../lib/schema';
 import { Heart, Baby, Smile, Activity } from 'lucide-react';
 import CTABanner from '../components/CTABanner';
+import AuthorByline from '../components/AuthorByline';
+
+const prenatalFaqs = [
+  {
+    question: 'Is chiropractic care safe during pregnancy?',
+    answer: 'Yes, chiropractic care is safe throughout all stages of pregnancy when provided by a trained practitioner. At Cultivate Wellness, Dr. Zach Conner uses the Talsky Tonal technique — a gentle, non-manipulative approach with no forceful adjustments. He is also certified in the Webster Technique through the ICPA (International Chiropractic Pediatric Association). Adjusting tables are adapted for pregnant patients, and care is customized for each trimester.',
+  },
+  {
+    question: 'What is the Webster Technique and how does it help during pregnancy?',
+    answer: 'The Webster Technique is a specific chiropractic analysis and adjustment developed for pregnant women. It focuses on reducing sacral and pelvic imbalance by addressing tension in the muscles and ligaments of the pelvis. This gentle approach can help the pelvis achieve better balance and function, which may encourage optimal fetal positioning for a smoother labor and delivery. Dr. Zach is ICPA Webster Certified and uses this technique alongside Talsky Tonal Chiropractic throughout pregnancy.',
+  },
+  {
+    question: 'Can chiropractic care help with pregnancy back pain and sciatica?',
+    answer: 'Yes. Back pain, pelvic pain, and sciatica are among the most common complaints during pregnancy, and chiropractic care is one of the safest, most effective natural approaches. By addressing the neurospinal stress contributing to these symptoms — without drugs or surgery — Dr. Zach helps expectant mothers find relief and maintain comfort throughout pregnancy. Many patients report significant improvement after just a few visits.',
+  },
+  {
+    question: 'When should I start prenatal chiropractic care?',
+    answer: 'You can begin prenatal chiropractic care at any point during pregnancy — many women start in the first trimester and continue through postpartum recovery. Starting early allows more time to build pelvic balance and nervous system function before the demands of late pregnancy and delivery. Postpartum care is also highly beneficial for recovery, especially after C-sections or challenging deliveries.',
+  },
+  {
+    question: 'Does chiropractic care help after pregnancy too?',
+    answer: 'Absolutely. Postpartum chiropractic care supports recovery after the physical demands of pregnancy and childbirth. Whether you had a vaginal delivery or C-section, the body goes through significant changes, and the nervous system and pelvis benefit from re-balancing. Many new mothers also find that chiropractic care helps with postpartum fatigue, sleep support, and breastfeeding challenges related to neck and shoulder tension.',
+  },
+];
 
 export default function Prenatal() {
   const benefits = [
@@ -59,7 +83,7 @@ export default function Prenatal() {
           description: 'Safe, gentle chiropractic care for pregnancy including the Webster Technique. Support optimal fetal positioning, reduce pregnancy discomfort, and prepare for easier labor and delivery.',
           image: '/images/prenatal-care.webp',
           datePublished: '2024-01-10',
-          dateModified: '2025-10-20',
+          dateModified: '2026-03-19',
           author: 'Dr. Zach Conner',
           url: '/prenatal',
           therapy: {
@@ -69,6 +93,7 @@ export default function Prenatal() {
           wordCount: 800,
         })}
       />
+      <JsonLd data={faqSchema(prenatalFaqs)} />
 
       <section className="relative py-32 bg-gray-900">
         <div className="absolute inset-0">
@@ -165,6 +190,12 @@ export default function Prenatal() {
               )
             )}
           </div>
+        </div>
+      </section>
+
+      <section className="py-4 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AuthorByline publishDate="2024-01-10" modifiedDate="2026-03-19" />
         </div>
       </section>
 

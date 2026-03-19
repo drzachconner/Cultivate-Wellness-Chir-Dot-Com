@@ -169,7 +169,7 @@ export const immuneSupport: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at optimizing nervous system function to support healthy immune response and overall wellness.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1400,
   },
 };

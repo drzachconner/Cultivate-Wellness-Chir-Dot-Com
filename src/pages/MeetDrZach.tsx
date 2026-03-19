@@ -5,6 +5,27 @@ import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
 import { GraduationCap, Heart, Sparkles, Users, Award } from 'lucide-react';
+import { medicalWebPageSchema, faqSchema } from '../lib/schema';
+import AuthorByline from '../components/AuthorByline';
+
+const drZachFaqs = [
+  {
+    question: 'What is Dr. Zach Conner\'s chiropractic specialty?',
+    answer: 'Dr. Zach Conner is a neurologically-focused chiropractor specializing in pediatric, prenatal, and family chiropractic care. He uses Talsky Tonal Chiropractic — a gentle, non-manipulative technique — and is one of only two certified teachers of this approach worldwide. He also holds certification in the Webster Technique through the ICPA for prenatal care, and uses INSiGHT scanning technology to objectively measure nervous system function.',
+  },
+  {
+    question: 'Where did Dr. Zach Conner receive his chiropractic training?',
+    answer: 'Dr. Zach Conner earned his Doctor of Chiropractic degree from Life University College of Chiropractic in Marietta, Georgia — one of the largest and most well-known chiropractic universities in the world. During his time at Life University, he attended over 60 seminars on various chiropractic techniques and was drawn to Talsky Tonal Chiropractic for its respect for the body\'s innate intelligence and its highly effective yet gentle application.',
+  },
+  {
+    question: 'Does Dr. Zach work with children with autism, ADHD, or special needs?',
+    answer: 'Yes, this is a core focus of Dr. Zach\'s practice. He completed an internship at a neurologically-focused office specializing in children with special needs, which solidified his commitment to this population. He regularly works with children diagnosed with autism spectrum disorder, ADHD, sensory processing disorder, developmental delays, and other neurodevelopmental differences. His gentle, tonal approach is particularly well-suited for children who are sensitive to touch or have had negative experiences with traditional healthcare.',
+  },
+  {
+    question: 'Is Dr. Zach still seeing patients in Rochester Hills?',
+    answer: 'Dr. Zach has merged his Cultivate Wellness Chiropractic practice with Van Every Family Chiropractic Center in Royal Oak, MI. Current patients continue to be seen at the Rochester Hills location (1460 Walton Blvd., Ste. 210, Rochester Hills, MI 48309) during existing hours (Friday 3–6:30 PM, Saturday 8 AM–1 PM). New patients are scheduled at the Van Every location at 4203 Rochester Rd, Royal Oak, MI 48073 — call (248) 616-0900 to book.',
+  },
+];
 
 export default function MeetDrZach() {
   return (
@@ -19,6 +40,17 @@ export default function MeetDrZach() {
         { name: 'Home', url: `https://${SITE.domain}/` },
         { name: 'Meet Dr. Zach', url: `https://${SITE.domain}/meet-dr-zach` },
       ])} />
+      <JsonLd data={medicalWebPageSchema({
+        headline: 'Meet Dr. Zach Conner, DC — Rochester Hills Chiropractor',
+        description: 'Dr. Zach Conner is a neurologically-focused chiropractor and certified Talsky Tonal teacher specializing in pediatric, prenatal, and family care in Rochester Hills, MI.',
+        image: '/images/dr-zach.webp',
+        datePublished: '2024-01-10',
+        dateModified: '2026-03-19',
+        author: 'Dr. Zach Conner',
+        url: '/meet-dr-zach',
+        wordCount: 600,
+      })} />
+      <JsonLd data={faqSchema(drZachFaqs)} />
 
       {/* Hero with gradient overlay */}
       <section className="relative py-32 bg-gray-900">
@@ -157,6 +189,12 @@ export default function MeetDrZach() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-4 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AuthorByline publishDate="2024-01-10" modifiedDate="2026-03-19" />
         </div>
       </section>
 

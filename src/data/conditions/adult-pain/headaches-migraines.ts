@@ -171,7 +171,7 @@ export const headachesMigraines: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments targeting the upper cervical spine and nervous system to reduce headache frequency, intensity, and duration.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1600,
   },
 };

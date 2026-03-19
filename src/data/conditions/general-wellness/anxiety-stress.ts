@@ -171,7 +171,7 @@ export const anxietyStress: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at restoring autonomic nervous system balance to support the body\'s natural stress response and promote relaxation.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1600,
   },
 };

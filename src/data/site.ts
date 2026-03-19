@@ -260,6 +260,18 @@ export const SITE = {
   },
 
   // ============================================
+  // DIRECTORY LINKS (sameAs in schema.org — add when claimed)
+  // ============================================
+  directoryLinks: [
+    // Add URLs here as profiles are claimed:
+    // 'https://www.healthgrades.com/chiropractor/dr-zach-conner-XXXXX',
+    // 'https://www.yelp.com/biz/cultivate-wellness-chiropractic-rochester-hills',
+    // 'https://www.zocdoc.com/doctor/zach-conner-dc-XXXXX',
+    // 'https://www.psychology-today.com/profile/XXXXX',
+    // 'https://www.vitals.com/doctors/Dr_Zach_Conner.html',
+  ] as string[],
+
+  // ============================================
   // DEPLOYMENT CONFIG (used by build tooling + admin panel)
   // ============================================
   deployment: {

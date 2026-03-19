@@ -165,7 +165,7 @@ export const gentleChiropractic: ConditionPageData = {
         'Low-force, instrument-assisted and light-touch chiropractic techniques that deliver effective spinal corrections without cracking, twisting, or forceful manipulation.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1400,
   },
 };

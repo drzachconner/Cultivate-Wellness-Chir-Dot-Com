@@ -171,7 +171,7 @@ export const chronicFatigue: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at reducing nervous system stress and supporting the body\'s natural energy production and recovery mechanisms.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1500,
   },
 };

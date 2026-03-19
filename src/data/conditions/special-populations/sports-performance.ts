@@ -171,7 +171,7 @@ export const sportsPerformance: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at optimizing athletic performance, accelerating recovery, and preventing sports injuries through better nervous system function.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1500,
   },
 };

@@ -171,7 +171,7 @@ export const torticollis: ConditionPageData = {
         'Ultra-gentle chiropractic adjustments for infants addressing upper cervical misalignment that causes muscle guarding and neck tightness associated with torticollis.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1300,
   },
 };

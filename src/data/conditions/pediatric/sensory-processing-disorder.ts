@@ -180,7 +180,7 @@ export const sensoryProcessing: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at optimizing nervous system function to support better sensory processing, integration, and regulation.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1500,
   },
 };

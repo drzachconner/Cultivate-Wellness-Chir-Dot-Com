@@ -164,7 +164,7 @@ export const bedwettingEnuresis: ConditionPageData = {
         'Gentle chiropractic adjustments focused on the lower back and sacral region to restore proper nerve communication with the bladder and support nighttime bladder control.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1300,
   },
 };

@@ -181,7 +181,7 @@ export const breastfeedingLatch: ConditionPageData = {
         'Ultra-gentle neurologically-focused chiropractic care for infants, releasing held tension patterns in the neurospinal system that interfere with the nerves involved in sucking, swallowing, and effective breastfeeding.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1500,
   },
 };

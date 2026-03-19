@@ -171,7 +171,7 @@ export const digestiveGiIssues: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at optimizing the gut-brain connection and supporting healthy digestive function through nervous system optimization.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1500,
   },
 };

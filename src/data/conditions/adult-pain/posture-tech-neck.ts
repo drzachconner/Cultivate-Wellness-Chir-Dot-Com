@@ -181,7 +181,7 @@ export const postureTechNeck: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments combined with postural exercises and ergonomic guidance to restore proper spinal alignment and prevent degenerative changes.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1500,
   },
 };

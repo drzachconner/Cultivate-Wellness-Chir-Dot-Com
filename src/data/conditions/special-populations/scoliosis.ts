@@ -176,7 +176,7 @@ export const scoliosis: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at improving spinal function, reducing pain, and supporting management of scoliosis through conservative, non-surgical care.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1600,
   },
 };

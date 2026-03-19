@@ -1,5 +1,5 @@
 # Cultivate Wellness Chiropractic - Robots Configuration
-# Last updated: 2025-10-20
+# Last updated: 2026-03-19
 
 # Default crawlers - Allow all content except private pages
 User-agent: *
@@ -55,22 +55,46 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-# Additional AI search crawlers (can be enabled as needed)
-# User-agent: Applebot-Extended
-# Allow: /
+# Apple Search / Siri
+User-agent: Applebot
+Allow: /
 
-# User-agent: FacebookBot
-# Allow: /
+User-agent: Applebot-Extended
+Allow: /
 
-# User-agent: cohere-ai
-# Allow: /
+# Meta / Facebook AI
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Microsoft Copilot / Bing AI
+User-agent: CopilotBot
+Allow: /
+
+# You.com AI Search
+User-agent: YouBot
+Allow: /
+
+# ByteDance / TikTok AI
+User-agent: Bytespider
+Allow: /
+
+# Common Crawl (used by many AI companies)
+User-agent: CCBot
+Allow: /
 
 # ====================================================================
 # SITEMAPS & HOST INFORMATION
 # ====================================================================
 
-Sitemap: https://cultivatewellnesschiro.com/sitemap.xml
-Host: https://cultivatewellnesschiro.com
+Sitemap: https://www.cultivatewellnesschiro.com/sitemap.xml
+Host: https://www.cultivatewellnesschiro.com
 
 # ====================================================================
 # AI DISCOVERY FILES
@@ -79,4 +103,4 @@ Host: https://cultivatewellnesschiro.com
 # See: https://llmstxt.org/
 
 # LLMs.txt location (for AI discoverability)
-# https://cultivatewellnesschiro.com/llms.txt
+# https://www.cultivatewellnesschiro.com/llms.txt

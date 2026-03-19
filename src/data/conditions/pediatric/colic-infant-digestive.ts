@@ -171,7 +171,7 @@ export const colicInfantDigestive: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments for infants aimed at addressing spinal misalignments that may interfere with digestive nerve pathways and contribute to colic symptoms.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1400,
   },
 };

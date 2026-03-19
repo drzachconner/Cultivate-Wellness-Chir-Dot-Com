@@ -181,7 +181,7 @@ export const pandasPans: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at supporting nervous system function as a complementary therapy alongside medical treatment for PANDAS/PANS.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1500,
   },
 };

@@ -171,7 +171,7 @@ export const infantNewborn: ConditionPageData = {
         'Ultra-gentle chiropractic adjustments designed specifically for infants, using fingertip pressure to address birth-related spinal misalignments and support optimal nervous system development.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1500,
   },
 };

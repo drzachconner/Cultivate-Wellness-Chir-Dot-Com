@@ -160,7 +160,7 @@ export const earInfections: ConditionPageData = {
         'Gentle upper cervical chiropractic adjustments aimed at restoring proper nerve function and Eustachian tube drainage to reduce the frequency of ear infections in children.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1400,
   },
 };

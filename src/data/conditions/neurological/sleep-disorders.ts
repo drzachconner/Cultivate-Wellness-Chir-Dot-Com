@@ -181,7 +181,7 @@ export const sleepDisorders: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at restoring nervous system balance to support natural, restorative sleep.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1500,
   },
 };

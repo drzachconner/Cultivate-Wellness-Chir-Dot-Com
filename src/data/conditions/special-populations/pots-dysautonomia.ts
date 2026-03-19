@@ -181,7 +181,7 @@ export const potsDysautonomia: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at supporting autonomic nervous system function and restoring balance between sympathetic and parasympathetic activity.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1600,
   },
 };

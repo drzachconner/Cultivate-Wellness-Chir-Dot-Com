@@ -181,7 +181,7 @@ export const lymeDisease: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at supporting nervous system function and immune response as a complementary therapy alongside medical Lyme disease treatment.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1600,
   },
 };

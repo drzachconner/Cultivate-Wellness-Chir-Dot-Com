@@ -171,7 +171,7 @@ export const autismNeurodevelopmental: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at optimizing nervous system function to support better regulation, communication, and quality of life for individuals with neurodevelopmental conditions.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1600,
   },
 };

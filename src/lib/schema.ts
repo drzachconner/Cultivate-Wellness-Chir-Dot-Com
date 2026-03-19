@@ -51,6 +51,7 @@ export function organizationSchema() {
     })),
     sameAs: [
       ...activeSocials.map((s) => s.url),
+      ...(SITE.directoryLinks || []),
       `https://www.google.com/maps/place/?q=place_id:${SITE.googlePlaceId}`,
     ],
     hasMap: `https://www.google.com/maps/place/${encodeURIComponent(SITE.name)}/@${SITE.geo.latitude},${SITE.geo.longitude}`,

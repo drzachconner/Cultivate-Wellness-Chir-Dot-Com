@@ -1,6 +1,66 @@
 {
   "updates": [
     {
+      "url": "/conditions/*",
+      "dateModified": "2026-03-19",
+      "change": "Refreshed dateModified on all 48 condition pages to 2026-03-19 for freshness signals",
+      "type": "content-refresh"
+    },
+    {
+      "url": "/sitemap.xml",
+      "dateModified": "2026-03-19",
+      "change": "Added all 48 condition page URLs, updated all lastmod dates to 2026-03-19, corrected domain to www subdomain",
+      "type": "seo-update"
+    },
+    {
+      "url": "/llms.txt",
+      "dateModified": "2026-03-19",
+      "change": "Expanded to comprehensive AIO/GEO format: full business info, doctor profile, all services, all 48 condition pages with descriptions, FAQs, and social links",
+      "type": "content-new"
+    },
+    {
+      "url": "/robots.txt",
+      "dateModified": "2026-03-19",
+      "change": "Added AI crawlers: Applebot, Applebot-Extended, FacebookBot, meta-externalagent, cohere-ai, CopilotBot, YouBot, Bytespider, CCBot",
+      "type": "seo-update"
+    },
+    {
+      "url": "/pediatric",
+      "dateModified": "2026-03-19",
+      "change": "Added FAQPage schema (5 pediatric FAQs) and AuthorByline component for E-E-A-T signals",
+      "type": "schema-update"
+    },
+    {
+      "url": "/prenatal",
+      "dateModified": "2026-03-19",
+      "change": "Added FAQPage schema (5 prenatal FAQs) and AuthorByline component for E-E-A-T signals",
+      "type": "schema-update"
+    },
+    {
+      "url": "/family",
+      "dateModified": "2026-03-19",
+      "change": "Added FAQPage schema (5 family care FAQs) and AuthorByline component for E-E-A-T signals",
+      "type": "schema-update"
+    },
+    {
+      "url": "/talsky-tonal-chiropractic",
+      "dateModified": "2026-03-19",
+      "change": "Added FAQPage schema (5 Talsky Tonal FAQs) and AuthorByline component for E-E-A-T signals",
+      "type": "schema-update"
+    },
+    {
+      "url": "/insight-scans",
+      "dateModified": "2026-03-19",
+      "change": "Added FAQPage schema (5 INSiGHT scan FAQs) and AuthorByline component for E-E-A-T signals",
+      "type": "schema-update"
+    },
+    {
+      "url": "/meet-dr-zach",
+      "dateModified": "2026-03-19",
+      "change": "Added FAQPage schema (4 doctor bio FAQs) and AuthorByline component for E-E-A-T signals",
+      "type": "schema-update"
+    },
+    {
       "url": "/answers",
       "dateModified": "2025-10-20",
       "change": "Added comprehensive FAQ page with 10 detailed answers covering pediatric, prenatal, and family chiropractic care",
@@ -25,8 +85,8 @@
       "type": "schema-update"
     }
   ],
-  "lastGenerated": "2025-10-20T14:32:00Z",
-  "version": "1.0.0",
+  "lastGenerated": "2026-03-19T00:00:00Z",
+  "version": "1.2.0",
   "site": "Cultivate Wellness Chiropractic",
-  "totalPages": 19
+  "totalPages": 71
 }

@@ -181,7 +181,7 @@ export const tmjJawPain: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments addressing the cervical spine and TMJ to restore proper jaw alignment and function.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1500,
   },
 };

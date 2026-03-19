@@ -170,7 +170,7 @@ export const carpalTunnel: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments addressing nerve compression along the entire median nerve pathway from cervical spine to wrist.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1400,
   },
 };

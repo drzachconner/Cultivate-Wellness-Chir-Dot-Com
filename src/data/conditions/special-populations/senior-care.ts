@@ -171,7 +171,7 @@ export const seniorCare: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments adapted for senior patients to support mobility, reduce pain, improve balance, and maintain independence.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1500,
   },
 };

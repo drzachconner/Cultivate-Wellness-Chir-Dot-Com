@@ -181,7 +181,7 @@ export const fibromyalgia: ConditionPageData = {
         'Gentle, neurologically-focused chiropractic adjustments aimed at calming an overactive nervous system and reducing central sensitization to support pain relief and improved quality of life.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1500,
   },
 };

@@ -3,9 +3,33 @@ import Seo from '../components/Seo';
 import JsonLd from '../components/JsonLd';
 import { SITE } from '../data/site';
 import { breadcrumbJsonLd } from '@drzach/website-toolkit';
-import { medicalWebPageSchema } from '../lib/schema';
+import { medicalWebPageSchema, faqSchema } from '../lib/schema';
 import { Users, Heart, Shield, Sparkles } from 'lucide-react';
 import CTABanner from '../components/CTABanner';
+import AuthorByline from '../components/AuthorByline';
+
+const familyFaqs = [
+  {
+    question: 'Can the whole family be seen at the same appointment?',
+    answer: 'Yes! Cultivate Wellness Chiropractic is a true family practice. Dr. Zach sees patients of all ages — from newborns to grandparents — and families are welcome to come in together. Care is adapted to each family member\'s age, size, and health goals. Many families find it more convenient to schedule multiple family members on the same visit.',
+  },
+  {
+    question: 'What are the benefits of regular family chiropractic care?',
+    answer: 'Regular chiropractic care for the whole family supports optimal nervous system function, which influences everything from immune response and sleep quality to stress resilience and energy levels. For children, it supports healthy growth and development. For adults, it helps maintain mobility, manage stress, and prevent pain from accumulating. For seniors, it improves balance, flexibility, and quality of life. Proactive care tends to produce better long-term results than reactive symptom management.',
+  },
+  {
+    question: 'Does chiropractic care help with stress and anxiety for adults?',
+    answer: 'Yes. The nervous system regulates the body\'s stress response. When subluxation (neurospinal stress) is present, it can keep the nervous system in a chronic "fight-or-flight" state, contributing to anxiety, poor sleep, digestive issues, and low energy. Tonal chiropractic adjustments help restore nervous system balance, shifting the body toward a parasympathetic (rest and heal) state. Many patients report calmer mood, better sleep, and improved stress resilience with consistent care.',
+  },
+  {
+    question: 'Is chiropractic care safe for seniors?',
+    answer: 'Absolutely. Dr. Zach uses the Talsky Tonal technique — a gentle, non-manipulative approach — that is particularly well-suited for older adults. There is no high-velocity manipulation, cracking, or twisting. The light-touch adjustments are safe and effective for seniors managing arthritis, balance issues, reduced mobility, and chronic pain. Care is always tailored to each individual\'s health status and comfort level.',
+  },
+  {
+    question: 'How often should my family come in for chiropractic care?',
+    answer: 'Frequency depends on each family member\'s goals and current health. Dr. Zach creates individualized care plans after an initial INSiGHT neurological scan. Acute concerns may benefit from more frequent visits initially, while families in maintenance care often visit weekly or bi-weekly. Many families use chiropractic care as a preventative wellness tool — similar to regular dental checkups — to maintain nervous system health and catch problems early.',
+  },
+];
 
 export default function Family() {
   const benefits = [
@@ -51,7 +75,7 @@ export default function Family() {
           description: 'Comprehensive neuro-focused chiropractic care for the whole family. From newborns to grandparents, we provide age-appropriate care promoting wellness, natural healing, and enhanced quality of life.',
           image: '/images/family-care.webp',
           datePublished: '2024-01-10',
-          dateModified: '2025-10-20',
+          dateModified: '2026-03-19',
           author: 'Dr. Zach Conner',
           url: '/family',
           therapy: {
@@ -61,6 +85,7 @@ export default function Family() {
           wordCount: 900,
         })}
       />
+      <JsonLd data={faqSchema(familyFaqs)} />
 
       <section className="relative py-32 bg-gray-900">
         <div className="absolute inset-0">
@@ -179,6 +204,12 @@ export default function Family() {
               )
             )}
           </div>
+        </div>
+      </section>
+
+      <section className="py-4 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AuthorByline publishDate="2024-01-10" modifiedDate="2026-03-19" />
         </div>
       </section>
 

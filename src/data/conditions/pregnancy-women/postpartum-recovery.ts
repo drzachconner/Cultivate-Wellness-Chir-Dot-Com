@@ -170,7 +170,7 @@ export const postpartumRecovery: ConditionPageData = {
         'Gentle chiropractic adjustments designed for postpartum mothers to support spinal and pelvic realignment, relieve pain from nursing and baby-carrying, and facilitate faster recovery from birth.',
     },
     datePublished: '2026-02-12',
-    dateModified: '2026-02-12',
+    dateModified: '2026-03-19',
     wordCount: 1400,
   },
 };
